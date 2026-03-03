@@ -21,30 +21,30 @@
     <meta property="article:tag" content="Force-Data">
     <meta itemprop="name" content="What is included in the raw data export :: Swing Catalyst Support">
     <meta itemprop="description" content="This guide will help you understand the key components of your raw data export, which is provided as TSV (Tab-Separated Values) files.">
-    <meta itemprop="wordCount" content="290">
+    <meta itemprop="wordCount" content="289">
     <meta itemprop="keywords" content="Pressure-Data,Force-Data">
     <title>What is included in the raw data export :: Swing Catalyst Support</title>
-    <link href="/sc-support/images/favicon.png?1772555966" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772555966" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/search.min.js?1772555966" defer></script>
+    <link href="/sc-support/images/favicon.png?1772558801" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772558801" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/search.min.js?1772558801" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772555966";
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772558801";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/lunr/lunr.en.min.js?1772555966" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772558801" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772555966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772555966" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772555966" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772555966" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772555966" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772558801" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772558801" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772558801" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772558801" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772558801" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -184,99 +184,158 @@
 <p>This guide will help you understand the key components of your raw data export, which is provided as TSV (Tab-Separated Values) files.</p>
 <h2 id="whats-included-in-the-raw-data-export">What&rsquo;s included in the Raw Data Export?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
-<li>
-<p>Raw data files from external sensors such as force plates and or pressure plates, in their respective files.</p>
-</li>
-<li>
-<p>Bookmark information, position of each bookmark in time.</p>
-</li>
-<li>
-<p>CoP Velocity</p>
-</li>
-<li>
-<p>CoP Distribution</p>
-</li>
-<li>
-<p>Combined force data (for multi plate setups).</p>
-</li>
-<li>
-<p>Video files (each camera angle).</p>
-</li>
+<li>Raw data files from external sensors such as force plates and or pressure plates, in their respective files.</li>
+<li>Bookmark information, position of each bookmark in time.</li>
+<li>CoP Velocity</li>
+<li>CoP Distribution</li>
+<li>Combined force data (for multi plate setups).</li>
+<li>Video files (each camera angle).</li>
 </ul>
 <p>Your data file includes several columns, each representing different measurements:</p>
 <p><strong>Fx, Fy, Fz</strong>: These are the <strong>force measurements</strong> along the X, Y, and Z axes.</p>
 <p><strong>Mx, My, Mz</strong>: These are the <strong>moment (torque) measurements</strong> around the X, Y, and Z axes.</p>
 <p><strong>CoPx, CoPy</strong>: <em>Center of Pressure</em> in the X and Y directions.</p>
 <h3 id="force-data">Force Data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Channel / Type
-Explanation</p>
-<p>**Time
-**
-Indicates when the data was collected</p>
-<p><strong>Fx</strong>
-Force applied left or right.</p>
-<p><strong>Fy</strong>
-Force applied forward or backward.</p>
-<p><strong>Fz</strong>
-Force applied up or down (vertical force).</p>
-<p><strong>Mx</strong>
-Torque around the X-axis (twisting left or right).</p>
-<p><strong>My</strong>
-Torque around the Y-axis (tilting forward or backward).</p>
-<p><strong>Mz</strong>
-Torque around the Z-axis (spinning on the spot).</p>
-<p><strong>CoPx</strong>
-Where the force is applied left-to-right on the plate.</p>
-<p><strong>CoPy</strong>
-Where the force is applied front-to-back on the plate.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Channel / Type</th>
+          <th>Explanation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Time</strong></td>
+          <td>Indicates when the data was collected</td>
+      </tr>
+      <tr>
+          <td><strong>Fx</strong></td>
+          <td>Force applied left or right.</td>
+      </tr>
+      <tr>
+          <td><strong>Fy</strong></td>
+          <td>Force applied forward or backward.</td>
+      </tr>
+      <tr>
+          <td><strong>Fz</strong></td>
+          <td>Force applied up or down (vertical force).</td>
+      </tr>
+      <tr>
+          <td><strong>Mx</strong></td>
+          <td>Torque around the X-axis (twisting left or right).</td>
+      </tr>
+      <tr>
+          <td><strong>My</strong></td>
+          <td>Torque around the Y-axis (tilting forward or backward).</td>
+      </tr>
+      <tr>
+          <td><strong>Mz</strong></td>
+          <td>Torque around the Z-axis (spinning on the spot).</td>
+      </tr>
+      <tr>
+          <td><strong>CoPx</strong></td>
+          <td>Where the force is applied left-to-right on the plate.</td>
+      </tr>
+      <tr>
+          <td><strong>CoPy</strong></td>
+          <td>Where the force is applied front-to-back on the plate.</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="pressure-data">Pressure Data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Type
-Explanation
-Example data</p>
-<p><strong>Time</strong>
-Indicates when the data was collected
-00:00:00.0243827</p>
-<p><strong>Rows</strong>
-The number of rows
-32</p>
-<p><strong>Columns</strong>
-The number of columns
-64</p>
-<p><strong>Unit</strong>
-The unit type used
-PoundForcePerSquareInch</p>
-<p><strong>Scale</strong>
-The scale value
-100</p>
-<p><strong>Row</strong>
-The row that contains data
-14</p>
-<p><strong>RowValues</strong>
-The values at the respective row
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,189,715,434,310,350,386,479,115,99,238,641,840,759,285,68,0,0,0,0,0,0,0,0,0,0,0,0,0</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Explanation</th>
+          <th>Example data</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Time</strong></td>
+          <td>Indicates when the data was collected</td>
+          <td>00:00:00.0243827</td>
+      </tr>
+      <tr>
+          <td><strong>Rows</strong></td>
+          <td>The number of rows</td>
+          <td>32</td>
+      </tr>
+      <tr>
+          <td><strong>Columns</strong></td>
+          <td>The number of columns</td>
+          <td>64</td>
+      </tr>
+      <tr>
+          <td><strong>Unit</strong></td>
+          <td>The unit type used</td>
+          <td>PoundForcePerSquareInch</td>
+      </tr>
+      <tr>
+          <td><strong>Scale</strong></td>
+          <td>The scale value</td>
+          <td>100</td>
+      </tr>
+      <tr>
+          <td><strong>Row</strong></td>
+          <td>The row that contains data</td>
+          <td>14</td>
+      </tr>
+      <tr>
+          <td><strong>RowValues</strong></td>
+          <td>The values at the respective row</td>
+          <td>0,0,0,0,0,0,&hellip;,189,715,434,&hellip;</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="cop-velocity">CoP Velocity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Time
-Velocity X Axis (m/s)</p>
-<p>00:00:00.0001328
--0.6511174631650407</p>
-<p>00:00:00.0011328
--0.6511174631650407</p>
+<table>
+  <thead>
+      <tr>
+          <th>Time</th>
+          <th>Velocity X Axis (m/s)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>00:00:00.0001328</td>
+          <td>-0.6511174631650407</td>
+      </tr>
+      <tr>
+          <td>00:00:00.0011328</td>
+          <td>-0.6511174631650407</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="cop-distribution">CoP Distribution<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Time
-Left
-Right
-Heel
-Toe</p>
-<p>00:00:00.0001328
-0.4906523614545872
-0.5093476385454128
-0
-1</p>
-<p>00:00:00.0011328
-0.4904213261855285
-0.5095786738144714
-0
-1</p>
+<table>
+  <thead>
+      <tr>
+          <th>Time</th>
+          <th>Left</th>
+          <th>Right</th>
+          <th>Heel</th>
+          <th>Toe</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>00:00:00.0001328</td>
+          <td>0.4906523614545872</td>
+          <td>0.5093476385454128</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>00:00:00.0011328</td>
+          <td>0.4904213261855285</td>
+          <td>0.5095786738144714</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
 
   <footer class="footline">
@@ -389,8 +448,8 @@ Toe</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772555966" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772558801" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

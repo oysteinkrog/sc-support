@@ -26,27 +26,27 @@
     <meta itemprop="wordCount" content="1091">
     <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
     <title>Frontal Plane Torque Analysis - User Guide :: Swing Catalyst Support</title>
-    <link href="/sc-support/images/favicon.png?1772555966" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772555966" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/search.min.js?1772555966" defer></script>
+    <link href="/sc-support/images/favicon.png?1772558801" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772558801" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/search.min.js?1772558801" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772555966";
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772558801";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/lunr/lunr.en.min.js?1772555966" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772558801" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772555966" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772555966" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772555966" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772555966" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772555966" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772558801" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772558801" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772558801" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772558801" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772558801" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -269,24 +269,42 @@
 </ul>
 <h3 id="required-data">Required Data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>For FPT analysis to work properly, your recording must include:</p>
-<p>Data Type
-Required
-Purpose</p>
-<p>Force plate data
-Yes
-Provides ground reaction forces (Fx, Fz) and center of pressure</p>
-<p>Motion capture
-Yes
-Provides center of mass position for torque calculation and 3D visualization</p>
-<p>Body weight
-Yes
-Used to normalize torque values for comparison</p>
-<p>Camera calibration
-Yes
-Required for proper 3D alignment</p>
-<p>Impact bookmark
-Recommended
-Enables timing metrics relative to ball contact</p>
+<table>
+  <thead>
+      <tr>
+          <th>Data Type</th>
+          <th>Required</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Force plate data</td>
+          <td>Yes</td>
+          <td>Provides ground reaction forces (Fx, Fz) and center of pressure</td>
+      </tr>
+      <tr>
+          <td>Motion capture</td>
+          <td>Yes</td>
+          <td>Provides center of mass position for torque calculation and 3D visualization</td>
+      </tr>
+      <tr>
+          <td>Body weight</td>
+          <td>Yes</td>
+          <td>Used to normalize torque values for comparison</td>
+      </tr>
+      <tr>
+          <td>Camera calibration</td>
+          <td>Yes</td>
+          <td>Required for proper 3D alignment</td>
+      </tr>
+      <tr>
+          <td>Impact bookmark</td>
+          <td>Recommended</td>
+          <td>Enables timing metrics relative to ball contact</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
 <h2 id="understanding-the-display">Understanding the Display<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="the-graph">The Graph<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -322,70 +340,134 @@ Enables timing metrics relative to ball contact</p>
 <h2 id="3d-visualization">3D Visualization<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="moment-arm-visualization">Moment Arm Visualization<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The moment arm visualization shows the biomechanical leverage relationship between your center of mass (COM) and the ground reaction force.</p>
-<p>Element
-Appearance
-What It Shows</p>
-<p><strong>Moment Arm Line</strong>
-Orange solid line
-The perpendicular distance from your COM to the line of action</p>
-<p><strong>Line of Action</strong>
-Orange dashed line
-The extended line along which the force acts</p>
-<p><strong>Distance Label</strong>
-White text on dark background
-The moment arm distance in centimeters (±X.X cm)</p>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>Appearance</th>
+          <th>What It Shows</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Moment Arm Line</strong></td>
+          <td>Orange solid line</td>
+          <td>The perpendicular distance from your COM to the line of action</td>
+      </tr>
+      <tr>
+          <td><strong>Line of Action</strong></td>
+          <td>Orange dashed line</td>
+          <td>The extended line along which the force acts</td>
+      </tr>
+      <tr>
+          <td><strong>Distance Label</strong></td>
+          <td>White text on dark background</td>
+          <td>The moment arm distance in centimeters (±X.X cm)</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="force-vector-decomposition">Force Vector Decomposition<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The force decomposition visualization breaks down the total ground reaction force into three perpendicular components. The colors always represent the same physical force direction regardless of camera view:</p>
-<p>Component
-Color
-Physical Direction
-What It Shows</p>
-<p><strong>X Component</strong>
-Pink
-Side-to-side (mediolateral)
-Lateral force distribution</p>
-<p><strong>Y Component</strong>
-Teal
-Up-down (vertical)
-Vertical force distribution</p>
-<p><strong>Z Component</strong>
-Green
-Front-back (anteroposterior)
-Forward/backward force distribution</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Color</th>
+          <th>Physical Direction</th>
+          <th>What It Shows</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>X Component</strong></td>
+          <td>Pink</td>
+          <td>Side-to-side (mediolateral)</td>
+          <td>Lateral force distribution</td>
+      </tr>
+      <tr>
+          <td><strong>Y Component</strong></td>
+          <td>Teal</td>
+          <td>Up-down (vertical)</td>
+          <td>Vertical force distribution</td>
+      </tr>
+      <tr>
+          <td><strong>Z Component</strong></td>
+          <td>Green</td>
+          <td>Front-back (anteroposterior)</td>
+          <td>Forward/backward force distribution</td>
+      </tr>
+  </tbody>
+</table>
 <p>Each component arrow also displays a <strong>percentage label</strong> showing what portion of the total force is in that direction.</p>
 <h4 id="camera-view-behavior">Camera View Behavior<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The force vectors are displayed relative to your camera view. Components that would appear as depth (going into/out of the screen) are hidden for clarity:</p>
-<p>Camera View
-Visible Components
-Hidden Component</p>
-<p><strong>Face-On</strong>
-X (Pink, horizontal), Y (Teal, vertical)
-Z (Green, depth)</p>
-<p><strong>Down-the-Line</strong>
-Z (Green, horizontal), Y (Teal, vertical)
-X (Pink, depth)</p>
+<table>
+  <thead>
+      <tr>
+          <th>Camera View</th>
+          <th>Visible Components</th>
+          <th>Hidden Component</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Face-On</strong></td>
+          <td>X (Pink, horizontal), Y (Teal, vertical)</td>
+          <td>Z (Green, depth)</td>
+      </tr>
+      <tr>
+          <td><strong>Down-the-Line</strong></td>
+          <td>Z (Green, horizontal), Y (Teal, vertical)</td>
+          <td>X (Pink, depth)</td>
+      </tr>
+  </tbody>
+</table>
 <p><strong>Note</strong>: The colors always represent the same physical direction - Pink is always mediolateral force, Teal is always vertical force, and Green is always anteroposterior force. Only the screen position changes based on camera angle.</p>
 <h3 id="3d-visualization-settings">3D Visualization Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <h4 id="moment-arm-settings">Moment Arm Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p>Setting
-Default
-Description</p>
-<p><strong>Show Moment Arm</strong>
-Off
-Toggles the orange solid line from COM to the force line</p>
-<p><strong>Show Line of Action</strong>
-Off
-Toggles the orange dashed line showing the force direction extension</p>
-<p><strong>Show Distance Label</strong>
-Off
-Toggles the distance value label (±X.X cm)</p>
+<table>
+  <thead>
+      <tr>
+          <th>Setting</th>
+          <th>Default</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Show Moment Arm</strong></td>
+          <td>Off</td>
+          <td>Toggles the orange solid line from COM to the force line</td>
+      </tr>
+      <tr>
+          <td><strong>Show Line of Action</strong></td>
+          <td>Off</td>
+          <td>Toggles the orange dashed line showing the force direction extension</td>
+      </tr>
+      <tr>
+          <td><strong>Show Distance Label</strong></td>
+          <td>Off</td>
+          <td>Toggles the distance value label (±X.X cm)</td>
+      </tr>
+  </tbody>
+</table>
 <h4 id="force-decomposition-settings">Force Decomposition Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p>Setting
-Default
-Description</p>
-<p><strong>Show X/Y/Z Components</strong>
-Off
-Toggles all three component arrows and percentage labels</p>
+<table>
+  <thead>
+      <tr>
+          <th>Setting</th>
+          <th>Default</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Show X/Y/Z Components</strong></td>
+          <td>Off</td>
+          <td>Toggles all three component arrows and percentage labels</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
 <h2 id="configuration-options-graph">Configuration Options (Graph)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Show % (Percentage Axis)</strong>: Default On - Toggles normalized torque (Nm/kg)</p>
@@ -534,8 +616,8 @@ Toggles all three component arrows and percentage labels</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772555966" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772555966" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772558801" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772558801" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 
