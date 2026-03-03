@@ -174,22 +174,21 @@ button::after,
 }
 
 /* ================================================================
-   HERO SECTION
+   HERO SECTION — always dark branded background (#151926)
    ================================================================ */
 
 .sc-hero {
   position: relative;
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: 70vh;
+  min-height: 70svh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem 2rem 6rem;
+  padding: 5rem 2rem 6rem;
   margin: -1rem -0.8rem 0;
   overflow: hidden;
-  background: var(--INTERNAL-MAIN-BG-color);
-  border-bottom: 1px solid color-mix(in srgb, var(--INTERNAL-MAIN-TEXT-color) 12%, transparent);
+  background: #151926;
 }
 
 .sc-hero::before {
@@ -197,8 +196,8 @@ button::after,
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background:
-    radial-gradient(ellipse at 20% 20%, color-mix(in srgb, var(--sc-accent) 5%, transparent) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, color-mix(in srgb, var(--sc-accent) 3%, transparent) 0%, transparent 50%);
+    radial-gradient(ellipse at 30% 20%, rgba(255, 92, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(255, 92, 0, 0.04) 0%, transparent 50%);
   pointer-events: none;
   z-index: 1;
 }
@@ -216,30 +215,15 @@ button::after,
 }
 
 .sc-hero__logo svg {
-  width: 72px;
-  height: 72px;
-  color: var(--INTERNAL-MAIN-TEXT-color);
-  filter: drop-shadow(0 4px 20px color-mix(in srgb, var(--sc-accent) 30%, transparent));
-}
-
-.sc-hero__badge {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  background: color-mix(in srgb, var(--sc-accent) 15%, transparent);
-  border: 1px solid color-mix(in srgb, var(--sc-accent) 30%, transparent);
-  border-radius: 20px;
-  color: var(--sc-accent);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 4px 24px rgba(255, 92, 0, 0.4));
 }
 
 .sc-hero__title {
   font-size: clamp(2.5rem, 7vw, 4.2rem);
   font-weight: 900;
-  color: var(--INTERNAL-MAIN-TEXT-color);
+  color: #f0f0f4;
   margin: 0 0 0.8rem;
   letter-spacing: -0.04em;
   line-height: 1.1;
@@ -248,16 +232,18 @@ button::after,
 }
 
 .sc-hero__title-swing {
-  color: var(--sc-accent);
-  text-shadow: 0 0 40px color-mix(in srgb, var(--sc-accent) 40%, transparent);
+  color: #FF5C00;
+  text-shadow: 0 0 40px rgba(255, 92, 0, 0.4);
 }
 
 .sc-hero__subtitle {
-  color: var(--INTERNAL-MAIN-TEXT-color);
-  opacity: 0.65;
+  color: rgba(240, 240, 244, 0.6);
   font-size: 1.15rem;
-  margin: 0 0 2rem;
+  margin: 0 0 2.5rem;
   font-weight: 300;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sc-hero__search {
@@ -265,22 +251,23 @@ button::after,
   align-items: center;
   max-width: 540px;
   margin: 0 auto;
-  background: var(--INTERNAL-MAIN-BG-color);
-  border: 1px solid color-mix(in srgb, var(--INTERNAL-MAIN-TEXT-color) 15%, transparent);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
-  padding: 0.7rem 1.2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .sc-hero__search:focus-within {
-  border-color: var(--sc-accent);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--sc-accent) 20%, transparent), 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 92, 0, 0.6);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 4px rgba(255, 92, 0, 0.15), 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .sc-hero__search-label {
-  color: var(--INTERNAL-MAIN-TEXT-color);
-  opacity: 0.4;
+  color: rgba(240, 240, 244, 0.4);
   display: flex;
   align-items: center;
   margin-right: 0.6rem;
@@ -290,15 +277,14 @@ button::after,
   flex: 1;
   background: transparent;
   border: none;
-  color: var(--INTERNAL-MAIN-TEXT-color);
+  color: #f0f0f4;
   font-size: 1rem;
   font-family: inherit;
   outline: none;
 }
 
 .sc-hero__search-input::placeholder {
-  color: var(--INTERNAL-MAIN-TEXT-color);
-  opacity: 0.4;
+  color: rgba(240, 240, 244, 0.35);
 }
 
 .sc-hero__particles {
@@ -324,8 +310,7 @@ button::after,
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: var(--INTERNAL-MAIN-TEXT-color);
-  opacity: 0.4;
+  color: rgba(240, 240, 244, 0.4);
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -337,6 +322,16 @@ button::after,
   width: 20px;
   height: 20px;
   stroke: currentColor;
+}
+
+/* ================================================================
+   HOME CONTENT AREA — warm off-white background
+   ================================================================ */
+
+.sc-home-content {
+  padding: 3rem 2rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* ================================================================
@@ -1042,28 +1037,27 @@ body.sc-homepage #R-body-overlay {
 
 @media (max-width: 1024px) {
   .sc-categories { grid-template-columns: repeat(2, 1fr); }
-  .sc-hero { padding: 3rem 1.5rem 5rem; }
+  .sc-hero { padding: 4rem 1.5rem 5rem; }
   .sc-hero__title { font-size: clamp(2.2rem, 6vw, 3.4rem); }
+  .sc-home-content { padding: 2rem 1.5rem; }
 }
 
 @media (max-width: 768px) {
-  .sc-hero { padding: 2.5rem 1rem 5rem; }
-  .sc-hero__logo svg { width: 56px; height: 56px; }
+  .sc-hero { padding: 3rem 1rem 4rem; min-height: 60vh; }
+  .sc-hero__logo svg { width: 64px; height: 64px; }
   .sc-hero__title { font-size: clamp(2rem, 5vw, 2.8rem); }
   .sc-categories { grid-template-columns: 1fr; }
   .sc-quick-links__grid, .sc-popular__grid { grid-template-columns: 1fr; }
-  .sc-cta__content { flex-direction: column; text-align: center; }
   .sc-section-title { font-size: 1.3rem; }
   .sc-404 h1 { font-size: 4rem; }
+  .sc-home-content { padding: 1.5rem 1rem; }
 }
 
 @media (max-width: 480px) {
-  .sc-hero { padding: 2rem 0.75rem 4rem; }
-  .sc-hero__badge { font-size: 0.65rem; padding: 0.25rem 0.75rem; }
+  .sc-hero { padding: 2.5rem 0.75rem 3.5rem; }
   .sc-hero__subtitle { font-size: 1rem; }
   .sc-hero__search { padding: 0.5rem 0.8rem; }
   .sc-card { padding: 1.2rem; }
-  .sc-cta__content { padding: 1rem 1.2rem; }
   .sc-related__grid { grid-template-columns: 1fr; }
   .sc-hero__scroll { bottom: 1.2rem; }
 }
