@@ -79,61 +79,68 @@
 }
 
 /* ================================================================
-   TYPOGRAPHY — PT Serif headings, Montserrat body (SC brand)
+   TYPOGRAPHY — Inter body + Source Serif 4 headings
+   Inspired by Anthropic support: clean, spacious, editorial
    ================================================================ */
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1, "cv11" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #1a1a20;
+}
 
 h1, h2, h3, h4, h5, h6,
 .sc-section-title {
-  font-family: 'PT Serif', Georgia, serif;
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 
 .sc-card__title,
 .sc-quick-link__text {
-  font-family: 'Montserrat', 'Trebuchet MS', sans-serif;
-}
-
-body {
-  font-family: 'Montserrat', 'Trebuchet MS', sans-serif;
-  font-feature-settings: "kern" 1, "liga" 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 #R-body-inner, #body-inner {
-  line-height: 1.7;
+  line-height: 1.65;
+  font-size: 0.9375rem; /* 15px — clean reading size */
 }
 
 /* Content width for readability */
 #R-body .flex-block-wrapper {
-  max-width: 52rem;
+  max-width: 48rem;
 }
 
 #R-body-inner p, #body-inner p {
-  margin-bottom: 1.15em;
+  margin-bottom: 1.25em;
 }
 
 #R-body-inner h1,
 #body-inner h1 {
-  border-bottom: 2px solid var(--sc-accent);
-  padding-bottom: 0.5rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.2;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  line-height: 1.25;
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 #R-body-inner h2, #body-inner h2 {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.01em;
-  line-height: 1.25;
+  line-height: 1.3;
+  font-size: 1.35rem;
   margin-top: 2.5rem;
   margin-bottom: 0.75rem;
 }
 
 #R-body-inner h3, #body-inner h3 {
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.35;
+  font-size: 1.1rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -170,15 +177,13 @@ button::after,
 #R-body-inner img,
 #body-inner img {
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   cursor: zoom-in;
 }
 
 #R-body-inner img:hover,
 #body-inner img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ================================================================
@@ -233,12 +238,13 @@ button::after,
 
 .sc-hero__subtitle {
   color: rgba(26, 26, 32, 0.55);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   margin: 0 0 2.5rem;
   font-weight: 400;
   max-width: 36rem;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
 }
 
 .sc-hero__search {
@@ -457,9 +463,9 @@ body.sc-homepage #R-body-overlay {
 }
 
 .sc-card:hover {
-  transform: translateY(-6px) scale(1.01);
+  transform: translateY(-3px);
   border-color: color-mix(in srgb, var(--sc-accent) 30%, transparent);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 0 30px color-mix(in srgb, var(--sc-accent) 10%, transparent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .sc-card:hover::before {
@@ -477,18 +483,19 @@ body.sc-homepage #R-body-overlay {
 }
 
 .sc-card__title {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   margin: 0 0 0.4rem;
   color: var(--INTERNAL-MAIN-TEXT-color);
 }
 
 .sc-card__desc {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--INTERNAL-MAIN-TEXT-color);
   opacity: 0.6;
   margin: 0 0 0.8rem;
   flex: 1;
+  line-height: 1.5;
 }
 
 .sc-card__count {
@@ -976,6 +983,54 @@ body.sc-homepage #R-body-overlay {
   max-height: calc(100vh - 4rem);
   overflow-y: auto;
   scrollbar-width: thin;
+}
+
+/* ================================================================
+   SIDEBAR — refined typography
+   ================================================================ */
+
+#R-sidebar,
+#sidebar {
+  font-size: 0.875rem;
+}
+
+#R-sidebar .padding,
+#sidebar .padding {
+  padding-top: 1.5rem;
+}
+
+/* Sidebar menu items */
+#R-sidebar ul li,
+#sidebar ul li {
+  line-height: 1.5;
+}
+
+/* Table styling — clean borders */
+#R-body-inner table,
+#body-inner table {
+  font-size: 0.875rem;
+  border-collapse: collapse;
+}
+
+#R-body-inner th,
+#body-inner th {
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Lists — tighter spacing */
+#R-body-inner li,
+#body-inner li {
+  margin-bottom: 0.3em;
+}
+
+/* Code — subtle background */
+#R-body-inner code,
+#body-inner code {
+  font-size: 0.85em;
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
 }
 
 /* ================================================================
