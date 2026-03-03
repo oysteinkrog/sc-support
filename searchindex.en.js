@@ -86,11 +86,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/advanced-camera-settings/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: App",
+    "title": "Tag :: App",
     "uri": "/sc-support/en/tags/app/index.html"
   },
   {
@@ -105,11 +105,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/lens-distortion-correction/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Backup",
+    "title": "Tag :: Backup",
     "uri": "/sc-support/en/tags/backup/index.html"
   },
   {
@@ -149,20 +149,12 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/hardware/balance-plate-warranty/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Balance-Plate",
+    "title": "Tag :: Balance-Plate",
     "uri": "/sc-support/en/tags/balance-plate/index.html"
-  },
-  {
-    "breadcrumb": "Swing Catalyst Support",
-    "content": "Browse by Tags This page lists all articles organized by topic tags. Click on any tag to see related articles.\n[TAGS]",
-    "description": "Browse support articles by topic",
-    "tags": [],
-    "title": "Browse by Tags",
-    "uri": "/sc-support/en/tags/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
@@ -176,11 +168,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/account-setup/cancel-subscription-paypal/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Changelog",
+    "title": "Tag :: Changelog",
     "uri": "/sc-support/en/tags/changelog/index.html"
   },
   {
@@ -195,11 +187,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/halcon-bluescreen-fix/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Database",
+    "title": "Tag :: Database",
     "uri": "/sc-support/en/tags/database/index.html"
   },
   {
@@ -244,11 +236,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/export-recordings/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Flir",
+    "title": "Tag :: Flir",
     "uri": "/sc-support/en/tags/flir/index.html"
   },
   {
@@ -301,19 +293,19 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/hardware/force-plate-troubleshooting/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Force-Data",
+    "title": "Tag :: Force-Data",
     "uri": "/sc-support/en/tags/force-data/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Fox-Camera",
+    "title": "Tag :: Fox-Camera",
     "uri": "/sc-support/en/tags/fox-camera/index.html"
   },
   {
@@ -355,11 +347,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/getting-started/swing-catalyst-home/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Getting-Started",
+    "title": "Tag :: Getting-Started",
     "uri": "/sc-support/en/tags/getting-started/index.html"
   },
   {
@@ -376,19 +368,19 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/gige-network-setup/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Gige-Camera",
+    "title": "Tag :: Gige-Camera",
     "uri": "/sc-support/en/tags/gige-camera/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Home",
+    "title": "Tag :: Home",
     "uri": "/sc-support/en/tags/home/index.html"
   },
   {
@@ -1201,27 +1193,27 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/keyboard-shortcuts/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Launch-Monitor",
+    "title": "Tag :: Launch-Monitor",
     "uri": "/sc-support/en/tags/launch-monitor/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Licensing",
+    "title": "Tag :: Licensing",
     "uri": "/sc-support/en/tags/licensing/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Lynx-Camera",
+    "title": "Tag :: Lynx-Camera",
     "uri": "/sc-support/en/tags/lynx-camera/index.html"
   },
   {
@@ -1233,19 +1225,19 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/minimum-distances/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Motion-Capture",
+    "title": "Tag :: Motion-Capture",
     "uri": "/sc-support/en/tags/motion-capture/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Motion-Plate",
+    "title": "Tag :: Motion-Plate",
     "uri": "/sc-support/en/tags/motion-plate/index.html"
   },
   {
@@ -1271,11 +1263,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/body-weight-measurement/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Online",
+    "title": "Tag :: Online",
     "uri": "/sc-support/en/tags/online/index.html"
   },
   {
@@ -1287,11 +1279,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/404/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Pressure-Data",
+    "title": "Tag :: Pressure-Data",
     "uri": "/sc-support/en/tags/pressure-data/index.html"
   },
   {
@@ -1427,11 +1419,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/reference/changelog-legacy/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Subscription",
+    "title": "Tag :: Subscription",
     "uri": "/sc-support/en/tags/subscription/index.html"
   },
   {
@@ -1517,6 +1509,14 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/index.html"
   },
   {
+    "breadcrumb": "Swing Catalyst Support",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tags",
+    "uri": "/sc-support/en/tags/index.html"
+  },
+  {
     "breadcrumb": "Swing Catalyst Support \u003e Hardware",
     "content": "TrackMan connectivity issues troubleshooting guide You’re having the following problem:\nTrackman is connected and displays data in TPS but Swing Catalyst isn’t triggered and no data is present within Swing Catalyst.\nReboot the Trackman unit itself.\nCheck if you are receiving data in TPS, if not double check the calibration.\nVerify that “Enable SDK Output” / “Legacy SDK” is enabled in TPS Settings.\nIn Swing Catalyst 9.7.8 and 9.7.9 this issue has been improved further. If you have followed these instructions without luck making sure that you are running 9.7.9 or newer can help mitigate the delay.\nSwing Catalyst Launch Monitor delay compensation If you are getting data but Swing Catalyst is not triggering a recording, try changing the “Trigger delay” value to 1400.\nTrackman 3e You can also check if “legacy SDK” is enabled from the device’s web interface. You can go to the web interface from TPS Settings, force operator and check under Setup.\nIf SDK output is set in TPS and on device and you’re still not getting data, try to connect to the unit or SDK with a tool called Hercules.\nMonitor the output from the unit / TPS software:\nMake sure TPS is running and receiving data from the unit.\nDownload and run Hercules.\nNavigate to the TCP Client tab.\nEnter the IP and port below and click connect.\nWiFi \u0026 USB IP Addresses Trackman 4\nEthernet: Not supported.\nUSB address 169.254.0.1 port: 52950\nWiFi address 172.30.20.1 port: 52950\nUnknown address source: 169.254.88.214\nTrackman 3e:\nUSB address 169.254.0.1 port: 52950\nWiFi address 172.30.20.1 port: 52950\nTrackman 2:\nConnect directly to the TPS SDK server on 127.0.0.1 port: 52950 If connected properly in Hercules you should see the following output when you hit the connect button.\nIf you do not, then try restarting the Trackman device itself, the Trackman Legacy SDK is not outputting data.\nIf you’re able to connect you should receive data as well as shot data as soon as a shot is tracked.\nThis is the same data Swing Catalyst receives, and is a good way of making sure that TPS and the Trackman is in fact sending data.\nIf you’re unable to connect, check the firewall, if connected over WiFi the Trackman can be identified as a public network which could be an issue with certain firewalls; try turning the firewall off for public networks and check again, do you now get data? If so, make sure TPS and Swing / Motion Catalyst is allowed in the Windows Firewall.\nCheck Swing Catalyst’s log file:\nC:\\ProgramData\\Swing Catalyst\\logs\\log.txt If you see the following message in the log, the TrackMan OEM Service is running, and needs to be disabled.\nLaunchMonitorNetworkClientBase.OnTryConnectCompleted(): Successfully connected to [Trackman] on [127.0.0.1:8000].\nLast updated: 2024-11-13 | View on official support site",
     "description": "You're having the following problem:",
@@ -1530,11 +1530,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/hardware/trackman-troubleshooting/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Troubleshooting",
+    "title": "Tag :: Troubleshooting",
     "uri": "/sc-support/en/tags/troubleshooting/index.html"
   },
   {
@@ -1549,11 +1549,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/flir-firmware-upgrade/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: Usb-Camera",
+    "title": "Tag :: Usb-Camera",
     "uri": "/sc-support/en/tags/usb-camera/index.html"
   },
   {
@@ -1578,11 +1578,11 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/reference/user-guide-online/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
+    "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
     "tags": [],
-    "title": "%!s() :: User-Guide",
+    "title": "Tag :: User-Guide",
     "uri": "/sc-support/en/tags/user-guide/index.html"
   },
   {
