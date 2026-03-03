@@ -1271,14 +1271,6 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/tags/online/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support",
-    "content": "404 That shot went out of bounds The page you’re looking for has either been moved, deleted, or never existed. Don’t worry — even the pros hit a bad one now and then.\nBack to Home{ .md-button .md-button–primary } Browse All Articles{ .md-button }\nTry These Instead Getting Started Guide User Guide Supported Cameras FAQ",
-    "description": "404 That shot went out of bounds The page you’re looking for has either been moved, deleted, or never existed. Don’t worry — even the pros hit a bad one now and then.\nBack to Home{ .md-button .md-button–primary } Browse All Articles{ .md-button }",
-    "tags": [],
-    "title": "Page Not Found",
-    "uri": "/sc-support/en/404/index.html"
-  },
-  {
     "breadcrumb": "Swing Catalyst Support \u003e Tags",
     "content": "",
     "description": "",
