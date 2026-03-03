@@ -1,615 +1,105 @@
-<!DOCTYPE html>
-<html id="R-html" lang="zh-Hant" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.145.0">
-    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
-    <meta name="description" content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述">
-    <meta name="author" content="">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援">
-    <meta name="twitter:description" content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述">
-    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html">
-    <meta property="og:site_name" content="Swing Catalyst 支援">
-    <meta property="og:title" content="使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援">
-    <meta property="og:description" content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述">
-    <meta property="og:locale" content="zh_Hant">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="軟體與功能">
-    <meta property="article:tag" content="Troubleshooting">
-    <meta property="article:tag" content="Database">
-    <meta property="article:tag" content="Motion-Capture">
-    <meta itemprop="name" content="使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援">
-    <meta itemprop="description" content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述">
-    <meta itemprop="wordCount" content="525">
-    <meta itemprop="keywords" content="Troubleshooting,Database,Motion-Capture">
-    <title>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援</title>
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="es">
-    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="de">
-    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fr">
-    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="it">
-    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pt">
-    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ru">
-    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ja">
-    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ko">
-    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh">
-    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hi">
-    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ar">
-    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh-Hant">
-    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="th">
-    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sv">
-    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nb">
-    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="da">
-    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="is">
-    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="id">
-    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="vi">
-    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nl">
-    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="tr">
-    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pl">
-    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fi">
-    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="uk">
-    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ro">
-    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="el">
-    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="cs">
-    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hu">
-    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="bg">
-    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hr">
-    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sr">
-    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sk">
-    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lt">
-    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lv">
-    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772560869" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772560869" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772560869" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772560869" defer></script>
-    <script src="/sc-support/js/search.min.js?1772560869" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772560869";
-    </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772560869" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772560869" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772560869" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772560869" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.contentLangs=['zh'];
-    </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560869" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560869" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772560869" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772560869" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772560869" rel="stylesheet" id="R-format-style">
-    <script>
-      window.relearn = window.relearn || {};
-      // configuration
-      window.relearn.min = `.min`;
-      window.relearn.path='\/software-features\/markerless-motion-capture\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
-      window.relearn.disableInlineCopyToClipboard=false;
-      window.relearn.enableBlockCodeWrap=true;
-      // translations
-      window.T_Copy_to_clipboard = `複製文字到剪貼簿`;
-      window.T_Copied_to_clipboard = `文字已複製到剪貼簿！`;
-      window.T_Link_copied_to_clipboard = `連結已複製到剪貼簿！`;
-      window.T_Reset_view = `重置檢視`;
-      window.T_View_reset = `查看重置！`;
-      window.T_No_results_found = `找不到"{0}"的結果`;
-      window.T_N_results_found = `為"{0}"找到 {1} 個結果`;
-      window.T_Browser_unsupported_feature = `此瀏覽器不支援此功能`;
-      // variant stuff
-      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
-      window.relearn.customvariantprefix = "my-custom-";
-      window.relearn.changeVariant = function(variant) {
-        var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        document.documentElement.dataset.rThemeVariant = variant;
-        if (oldVariant != variant) {
-          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
-          window.relearn.markVariant();
-        }
-      }
-      window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
-      }
-      window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
-        if( !variant ||
-            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
-            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
-          variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        }
-        document.documentElement.dataset.rThemeVariant = variant;
-      }
-      window.relearn.initVariant();
-      window.relearn.markVariant();
-    </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-<style>
-  .sc-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
-    z-index: 9999;
-    transition: width 0.1s linear;
-    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
-    pointer-events: none;
-  }
-</style>
-<div class="sc-progress" id="sc-progress"></div>
-
-  </head>
-  <body class="mobile-support html" data-origin="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html">
-    <div id="R-body" class="default-animation">
-      <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
-        <div class="topbar-wrapper default-animation">
-          <div class="topbar-sidebar-divider default-animation"></div>
-          <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="導航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
-            </div>
-            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目錄 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/index.html"><span itemprop="name">Swing Catalyst 支援</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/software-features/index.html"><span itemprop="name">軟體與功能</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</span><meta itemprop="position" content="3"></li>
-          </ol>
-          <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh-hant/software-features/change-recording-user/index.html" title="如何變更現有錄製的使用者 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh-hant/software-features/ios-app-sharing/index.html" title="使用 Swing Catalyst iOS 應用程式分享錄製的影片 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-                  <div class="topbar-area topbar-area-more" data-area="more">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
-        <div class="flex-block-wrapper">
-<article class="default">
-  <header class="headline">
-<div class="R-taxonomy taxonomy-tags cstyle tags" title="標籤" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <i class="fa-fw fas fa-layer-group"></i>
-  <ul>
-    <li><a class="term-link" href="/sc-support/zh-hant/tags/database/index.html">Database</a></li>
-    <li><a class="term-link" href="/sc-support/zh-hant/tags/motion-capture/index.html">Motion-Capture</a></li>
-    <li><a class="term-link" href="/sc-support/zh-hant/tags/troubleshooting/index.html">Troubleshooting</a></li>
-  </ul>
-</div>
-  </header>
-<h1 id="使用-rtmpose-和-rtmdet-增強高爾夫和棒球揮桿無標記動作擷取由上而下方法">使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</h1>
-
-<p><strong>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</strong></p>
-<p><strong>摘要</strong></p>
-<p>本技術白皮書記錄了 RTMPose 和 RTMDet 在高爾夫和棒球揮桿的精確且高效姿態估計中的應用。這些模型利用針對即時性能優化的最先進技術，能夠詳細追蹤高爾夫和棒球揮桿期間的身體動作——這是改進運動分析性能的關鍵功能。我們強調由上而下方法的優勢，其中現成的 RTMDet 偵測器在每個幀中識別高爾夫球手和棒球選手，而 RTMPose 估計關鍵身體關節的位置。</p>
-<p><strong>1. 簡介</strong></p>
-<p>姿態估計已成為運動性能分析的關鍵，能夠精確追蹤運動員的動作。在高爾夫和棒球運動中，捕捉選手揮桿的生物力學數據可提供對揮桿動力學的寶貴見解，幫助專業人士和業餘愛好者改進其技術。傳統的 2D 姿態估計方法常面臨延遲和精度挑戰，特別是在即時場景中。本論文提出在 mmpose Framework 中使用 RTMPose 和 RTMDet 進行高爾夫和棒球揮桿期間詳細姿態估計的解決方案。</p>
-<p><strong>2. 背景</strong></p>
-<p>高爾夫和棒球揮桿的複雜性需要精確測量身體動作。現有的姿態估計方法可能無法為即時性能提供必要的精度。深度學習和電腦視覺的進展引入了 RTMPose 和 RTMDet 等模型，它們提供了改進的精度和效率。</p>
-<p><strong>3. 搭配 RTMdet 和 RTMpose 的由上而下方法</strong></p>
-<p>&ndash;插入圖表&ndash;</p>
-<p><strong>3. RTMPose：高性能姿態估計模型</strong></p>
-<p>RTMPose [1] 專為高性能、即時姿態估計而設計，經過優化以在有限硬體上高效運行。</p>
-<p><strong>主要特性：</strong></p>
-<p><strong>模型架構和效率</strong>：RTMpose 使用 CSPNeXt 作為其骨幹網路 [1, 2]，在速度和精度之間取得平衡。CSPNeXt 針對密集預測任務（例如姿態估計和物體偵測）進行了優化，提供高解析度和精度，同時保持計算效率。</p>
-<p><strong>關鍵點預測</strong>：採用基於 SimCC 的演算法 [1, 3]，將關鍵點的水平和垂直位置視為獨立的分類任務。這種緊湊的表示法降低了計算負載，適合在各種裝置上部署。</p>
-<p><strong>4. RTMDet：偵測骨幹</strong></p>
-<p>RTMDet [4] 在由上而下管線中充當 RTMPose 之前的偵測器，識別每一幀中高爾夫球手或棒球選手的位置。</p>
-<p><strong>主要特性：</strong></p>
-<p><strong>模型架構和效率</strong>：RTMDet 利用經過修改的 CSPDarkNet [5] 版本，比許多 YOLO 模型更具可訓練性和精度。修改後的版本利用大核心深度卷積來平衡複雜性和速度，在 GPU 和 CPU 上都很高效。它非常適合運動性能追蹤等即時應用。</p>
-<p><strong>多功能性</strong>：處理各種物體偵測任務，包括實例分割和旋轉物體偵測。確保即使在動態場景中也能精確定位選手。</p>
-<p><strong>5. 在高爾夫和棒球揮桿分析中使用 RTMDet 和 RTMPose 的優勢</strong></p>
-<p><strong>5.1 在非擁擠場景中的更高精度</strong></p>
-<p>在典型的高爾夫/棒球設定中，幀內只有少數個人，RTMDet 隔離高爾夫球手/棒球選手，使 RTMPose 能以高精度處理每個檢測到的人。這避免了同時處理幀內所有人的所有關鍵點的自下而上方法的複雜性。由上而下方法還可以在執行姿態估計之前包含 RTMdet 的後期處理演算法，以識別正確的人（即高爾夫球手或棒球選手）。此外，RTMPose 已在包含以下內容的擴展影像素材上進行了預訓練</p>
-<p><strong>5.2 高效計算和即時性能</strong></p>
-<p>使用輕量級模型（如 RTMdet 和 RTMpose）可保持低延遲，在消費級硬體上實現即時揮桿分析。這對於在教練或訓練課程中提供即時回饋特別有用。Swing Catalyst 無標記動作擷取系統是少數幾個為高爾夫球手和棒球選手提供即時動作擷取回饋的工作室系統之一。</p>
-<p><strong>5.3 詳細的關鍵點分析</strong></p>
-<p>RTMPose 檢測到 26 個身體關鍵點的設置 [6]，如下圖 1 所示，對於分析高爾夫和棒球揮桿運動學至關重要。Halpe26 是一個擴展設置，與具有 17 個標記的更標準的 COCO 設置相比，在腳部和頭部包含了額外的標記點。</p>
-<p>&ndash;插入圖表&ndash;</p>
-<p><strong>6. 高爾夫和棒球揮桿無標記動作擷取的方法論</strong></p>
-<p><strong>6.1 偵測階段：RTMDet</strong></p>
-<p>應用於高爾夫球手或棒球選手的視頻幀，RTMDet 生成圍繞選手的邊界框，這些邊界框被傳遞給 RTMPose。這將姿態估計集中在相關影像區域，減少計算負載。</p>
-<p>&ndash;插入影像&ndash;</p>
-<p><strong>6.2 姿態估計階段：RTMPose</strong></p>
-<p>RTMPose 估計邊界框內的關鍵點位置。高爾夫和棒球揮桿分析的關鍵關節包括腕部、肘部、肩膀、髖部和膝蓋。這些關鍵點評估揮桿階段（後揮、下揮桿和隨揮）期間的身體角度和位置。</p>
-<p>&ndash;插入影像&ndash;</p>
-<p><strong>6.3 性能指標</strong></p>
-<p>RTMPose 的一般性能使用指標（如姿態估計基準上的平均精度 (AP)，例如 MS COCO）進行衡量。以下是常用 COCO 基準上排名最靠前的模型的性能。在 MS COCO val Dataset 上，RTMPose-X 是性能最佳的模型，能夠提供即時回饋，在消費級 GPU 上達到高達 75.8% AP 和超過 ?? FPS 的幀速率，非常適合高速運動分析。</p>
-<p>排名
+<!doctype html><html id=R-html lang=zh-Hant dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援"><meta name=twitter:description content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html"><meta property="og:site_name" content="Swing Catalyst 支援"><meta property="og:title" content="使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援"><meta property="og:description" content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述"><meta property="og:locale" content="zh_Hant"><meta property="og:type" content="article"><meta property="article:section" content="軟體與功能"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Database"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援"><meta itemprop=description content="RTMPose 和 RTMDet 在高爾夫和棒球揮桿分析中無標記動作擷取的技術概述"><meta itemprop=wordCount content="525"><meta itemprop=keywords content="Troubleshooting,Database,Motion-Capture"><title>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法 :: Swing Catalyst 支援</title>
+<link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html rel=alternate hreflang=et><link href=/sc-support/images/favicon.png?1772565156 rel=icon type=image/png><link href=/sc-support/css/auto-complete/auto-complete.min.css?1772565156 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1772565156 defer></script><script src=/sc-support/js/search-lunr.min.js?1772565156 defer></script><script src=/sc-support/js/search.min.js?1772565156 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772565156"</script><script src=/sc-support/js/lunr/lunr.min.js?1772565156 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1772565156 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1772565156 defer></script><script src=/sc-support/js/lunr/lunr.zh.min.js?1772565156 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["zh"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565156 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565156 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772565156 rel=stylesheet><link href=/sc-support/css/theme.min.css?1772565156 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1772565156 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/markerless-motion-capture/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`複製文字到剪貼簿`,window.T_Copied_to_clipboard=`文字已複製到剪貼簿！`,window.T_Link_copied_to_clipboard=`連結已複製到剪貼簿！`,window.T_Reset_view=`重置檢視`,window.T_View_reset=`查看重置！`,window.T_No_results_found=`找不到"{0}"的結果`,window.T_N_results_found=`為"{0}"找到 {1} 個結果`,window.T_Browser_unsupported_feature=`此瀏覽器不支援此功能`,window.relearn.themevariants=["auto","sc-dark","sc-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel=stylesheet><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--INTERNAL-PRIMARY-HOVER-color,#CC4A00),var(--INTERNAL-PRIMARY-color,#FF5C00));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px color-mix(in srgb,var(--INTERNAL-PRIMARY-color,#FF5C00) 60%,transparent);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="導航 (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="目錄 (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh-hant/index.html><span itemprop=name>Swing Catalyst 支援</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh-hant/software-features/index.html><span itemprop=name>軟體與功能</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh-hant/software-features/change-recording-user/index.html title="如何變更現有錄製的使用者 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh-hant/software-features/ios-app-sharing/index.html title="使用 Swing Catalyst iOS 應用程式分享錄製的影片 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=更多><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=標籤 style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/zh-hant/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/zh-hant/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/zh-hant/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=使用-rtmpose-和-rtmdet-增強高爾夫和棒球揮桿無標記動作擷取由上而下方法>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</h1><p><strong>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</strong></p><p><strong>摘要</strong></p><p>本技術白皮書記錄了 RTMPose 和 RTMDet 在高爾夫和棒球揮桿的精確且高效姿態估計中的應用。這些模型利用針對即時性能優化的最先進技術，能夠詳細追蹤高爾夫和棒球揮桿期間的身體動作——這是改進運動分析性能的關鍵功能。我們強調由上而下方法的優勢，其中現成的 RTMDet 偵測器在每個幀中識別高爾夫球手和棒球選手，而 RTMPose 估計關鍵身體關節的位置。</p><p><strong>1. 簡介</strong></p><p>姿態估計已成為運動性能分析的關鍵，能夠精確追蹤運動員的動作。在高爾夫和棒球運動中，捕捉選手揮桿的生物力學數據可提供對揮桿動力學的寶貴見解，幫助專業人士和業餘愛好者改進其技術。傳統的 2D 姿態估計方法常面臨延遲和精度挑戰，特別是在即時場景中。本論文提出在 mmpose Framework 中使用 RTMPose 和 RTMDet 進行高爾夫和棒球揮桿期間詳細姿態估計的解決方案。</p><p><strong>2. 背景</strong></p><p>高爾夫和棒球揮桿的複雜性需要精確測量身體動作。現有的姿態估計方法可能無法為即時性能提供必要的精度。深度學習和電腦視覺的進展引入了 RTMPose 和 RTMDet 等模型，它們提供了改進的精度和效率。</p><p><strong>3. 搭配 RTMdet 和 RTMpose 的由上而下方法</strong></p><p>&ndash;插入圖表&ndash;</p><p><strong>3. RTMPose：高性能姿態估計模型</strong></p><p>RTMPose [1] 專為高性能、即時姿態估計而設計，經過優化以在有限硬體上高效運行。</p><p><strong>主要特性：</strong></p><p><strong>模型架構和效率</strong>：RTMpose 使用 CSPNeXt 作為其骨幹網路 [1, 2]，在速度和精度之間取得平衡。CSPNeXt 針對密集預測任務（例如姿態估計和物體偵測）進行了優化，提供高解析度和精度，同時保持計算效率。</p><p><strong>關鍵點預測</strong>：採用基於 SimCC 的演算法 [1, 3]，將關鍵點的水平和垂直位置視為獨立的分類任務。這種緊湊的表示法降低了計算負載，適合在各種裝置上部署。</p><p><strong>4. RTMDet：偵測骨幹</strong></p><p>RTMDet [4] 在由上而下管線中充當 RTMPose 之前的偵測器，識別每一幀中高爾夫球手或棒球選手的位置。</p><p><strong>主要特性：</strong></p><p><strong>模型架構和效率</strong>：RTMDet 利用經過修改的 CSPDarkNet [5] 版本，比許多 YOLO 模型更具可訓練性和精度。修改後的版本利用大核心深度卷積來平衡複雜性和速度，在 GPU 和 CPU 上都很高效。它非常適合運動性能追蹤等即時應用。</p><p><strong>多功能性</strong>：處理各種物體偵測任務，包括實例分割和旋轉物體偵測。確保即使在動態場景中也能精確定位選手。</p><p><strong>5. 在高爾夫和棒球揮桿分析中使用 RTMDet 和 RTMPose 的優勢</strong></p><p><strong>5.1 在非擁擠場景中的更高精度</strong></p><p>在典型的高爾夫/棒球設定中，幀內只有少數個人，RTMDet 隔離高爾夫球手/棒球選手，使 RTMPose 能以高精度處理每個檢測到的人。這避免了同時處理幀內所有人的所有關鍵點的自下而上方法的複雜性。由上而下方法還可以在執行姿態估計之前包含 RTMdet 的後期處理演算法，以識別正確的人（即高爾夫球手或棒球選手）。此外，RTMPose 已在包含以下內容的擴展影像素材上進行了預訓練</p><p><strong>5.2 高效計算和即時性能</strong></p><p>使用輕量級模型（如 RTMdet 和 RTMpose）可保持低延遲，在消費級硬體上實現即時揮桿分析。這對於在教練或訓練課程中提供即時回饋特別有用。Swing Catalyst 無標記動作擷取系統是少數幾個為高爾夫球手和棒球選手提供即時動作擷取回饋的工作室系統之一。</p><p><strong>5.3 詳細的關鍵點分析</strong></p><p>RTMPose 檢測到 26 個身體關鍵點的設置 [6]，如下圖 1 所示，對於分析高爾夫和棒球揮桿運動學至關重要。Halpe26 是一個擴展設置，與具有 17 個標記的更標準的 COCO 設置相比，在腳部和頭部包含了額外的標記點。</p><p>&ndash;插入圖表&ndash;</p><p><strong>6. 高爾夫和棒球揮桿無標記動作擷取的方法論</strong></p><p><strong>6.1 偵測階段：RTMDet</strong></p><p>應用於高爾夫球手或棒球選手的視頻幀，RTMDet 生成圍繞選手的邊界框，這些邊界框被傳遞給 RTMPose。這將姿態估計集中在相關影像區域，減少計算負載。</p><p>&ndash;插入影像&ndash;</p><p><strong>6.2 姿態估計階段：RTMPose</strong></p><p>RTMPose 估計邊界框內的關鍵點位置。高爾夫和棒球揮桿分析的關鍵關節包括腕部、肘部、肩膀、髖部和膝蓋。這些關鍵點評估揮桿階段（後揮、下揮桿和隨揮）期間的身體角度和位置。</p><p>&ndash;插入影像&ndash;</p><p><strong>6.3 性能指標</strong></p><p>RTMPose 的一般性能使用指標（如姿態估計基準上的平均精度 (AP)，例如 MS COCO）進行衡量。以下是常用 COCO 基準上排名最靠前的模型的性能。在 MS COCO val Dataset 上，RTMPose-X 是性能最佳的模型，能夠提供即時回饋，在消費級 GPU 上達到高達 75.8% AP 和超過 ?? FPS 的幀速率，非常適合高速運動分析。</p><p>排名
 模型
 解析度
 大小/參數（百萬）
 AP
-即時推理</p>
-<p>1
+即時推理</p><p>1
 Sapiens-2B
 1024x768
 2000
 82.2
-否</p>
-<p>2
+否</p><p>2
 Sapiens-1B
 1024x768
 1000
 82.1
-否</p>
-<p>3
+否</p><p>3
 Sapiens-0.6B
 1024x768
 600
 81.2
-否</p>
-<p>4
+否</p><p>4
 Sapiens-0.3B
 1024x768
 300
 79.6
-否</p>
-<p>5
+否</p><p>5
 VitPose-H
 256x192
 632
 79.4
-否</p>
-<p><strong>6</strong>
+否</p><p><strong>6</strong>
 <strong>RTMPose-X</strong>
 <strong>384x288</strong>
 <strong>49</strong>
 <strong>78.8</strong>
-<strong>是</strong></p>
-<p>7
+<strong>是</strong></p><p>7
 VitPose-L
 256x192
 307
 78.6
-否</p>
-<p>8
+否</p><p>8
 RTMPose-L
 384x288
 28
 78.3
-是</p>
-<p>9
+是</p><p>9
 HRFormer
 256x192
 43
 77.2
-否</p>
-<p>10
+否</p><p>10
 HRNet-UDP
 384x288
 64
 77.2
-是</p>
-<p>11
+是</p><p>11
 VitPose-B
 256x192
 86
 77.0
-是</p>
-<p>12
+是</p><p>12
 RTMPose-L
 256x198
 28
 76.7
-是</p>
-<p>13
+是</p><p>13
 RTMPose-M
 384x288
 14
 76.6
-是</p>
-<p>14
+是</p><p>14
 HRNet
 384x288
 64
 76.3
-是</p>
-<p>15
+是</p><p>15
 VitPose-S
 256x192
 43
 75.8
-是</p>
-<p>16
+是</p><p>16
 RTMPose-M
 256x192
 14
 74.9
-是</p>
-<p>17
+是</p><p>17
 SimpleBaseline
 256x192
 60
 73.5
-是</p>
-<p>18
+是</p><p>18
 FastPose
 256x192
 79
 73.3
-是</p>
-<p><strong>7. 在高爾夫揮桿分析中的應用</strong></p>
-<p>藉由應用 RTMPose-X 和 RTMDet-M 框架：</p>
-<p><strong>逐影格追蹤關節運動</strong>：提供全面的資料來分析揮桿的各個階段。</p>
-<p><strong>提供即時反饋</strong>：在訓練過程中能夠立即提供對揮桿姿態和動作形式的見解。</p>
-<p><strong>與理想力學進行比較</strong>：允許與理想揮桿運動學進行比較，以找出需要改進的領域。</p>
-<p><strong>8. 結論</strong></p>
-<p>RTMPose-X 和 RTMDet-M 的整合為即時高爾夫揮桿分析提供了強大的解決方案。具有高精度、低延遲以及跨各種硬體平台的相容性，這種由上而下方法能夠提供對揮桿力學的詳細見解。它在幫助業餘和職業高爾夫球手提升性能方面具有顯著潛力。</p>
-<p><strong>9. 未來工作</strong></p>
-<p>未來的發展可能涉及：</p>
-<p><strong>整合機器學習演算法</strong>：提供預測性分析並建議調整方案以改進揮桿效率。</p>
-<p><strong>擴展至多人場景</strong>：增強在團隊運動或群組訓練環境中的適用性。</p>
-<p><strong>開發使用者友善介面</strong>：建立應用程式或工具，使沒有技術專業知識的教練和運動員也能使用此技術。</p>
-<p><strong>附錄</strong></p>
-<p><strong>詳細方法論：使用 RTMPose-X 和 RTMDet-M 進行高爾夫揮桿姿態估計的由上而下方法</strong></p>
-<p><strong>概述</strong></p>
-<p>此處所述的方法論概述了利用 RTMPose 進行關鍵點定位和 RTMDet 進行物體偵測的優勢，進行高爾夫和棒球揮桿即時姿態估計的由上而下方法所涉及的詳細步驟。此過程分為多個階段：偵測、關鍵點定位和後期處理，每個階段都有助於精確有效地估計高爾夫揮桿中的身體關節，以進行生物力學分析。</p>
-<p>&ndash;插入圖示&ndash;</p>
-<p><strong>1. 偵測階段：使用 RTMDet-M 進行即時定位</strong></p>
-<p>由上而下方法的第一個階段涉及在影片的每一影格中偵測高爾夫球手。在運動場景中，特別是高爾夫運動中，場景通常只包含一名球員，相比於人群場景，簡化了偵測任務。</p>
-<p><strong>1.1 模型架構</strong></p>
-<p>RTMDet-M 在管線中用作物體偵測器。它採用卷積神經網路 (CNN) 骨幹，特別是 CSPNeXt 骨幹，設計目的是在保持速度和精度平衡的同時最佳化即時物體偵測性能。架構的主要方面包括：</p>
-<p><strong>大核深度分離卷積</strong>：在骨幹和頸部層中使用，增加感受野同時保持低計算成本。</p>
-<p><strong>特徵金字塔網路 (FPN)</strong>：一種多尺度特徵萃取技術，允許在各種尺度上偵測物體，確保無論高爾夫球手距離相機多遠都能被偵測到。</p>
-<p><strong>1.2 動態標籤指派</strong></p>
-<p>RTMDet-M 利用動態標籤指派策略，根據分類和定位損失的組合將軟標籤指派給物體，以提高偵測精度。標籤指派由 SimOTA 演算法控制，該演算法根據與地面真實物體匹配的可能性動態選擇正樣本。這種方法確保在戶外高爾夫場景中經常遇到的不同光照和環境條件下的強健偵測。</p>
-<p><strong>1.3 邊界框預測</strong></p>
-<p>偵測器在每一幀中輸出包圍高爾夫球手的邊界框。這些邊界框提供空間約束，姿態估計模型將在其中運作，透過僅關注幀的相關區域來減少後續姿態估計階段的計算負載。在此背景下，RTMDet-M 在高效能硬體上以超過 300 FPS 的速度即時生成邊界框，確保能夠跟上高爾夫揮桿的快速動態。</p>
-<p><strong>1.4 人物非最大抑制 (NMS)</strong></p>
-<p>在多人設定中（雖然在高爾夫揮桿分析中很少見），RTMDet-M 採用姿態非最大抑制 (NMS) 演算法，消除冗餘的關鍵點偵測，確保只保留最可信的偵測結果。在擁擠場景或影片序列中可能偵測到重疊邊界框的情況下，這一點至關重要。</p>
-<p><strong>1.5 訓練 Dataset 與性能</strong></p>
-<p>RTMDet-M 在 Object356 Dataset 中的人物實例上進行二元分類任務的訓練。</p>
-<p><strong>2. 姿態估計階段：RTMPose-X 關鍵點定位</strong></p>
-<p>一旦確立了高爾夫球手的邊界框，下一階段涉及估計此區域內關鍵身體關節的精確位置。高效能姿態估計模型 RTMPose-X 被用於此目的。</p>
-<p><strong>2.1 基於 SimCC 的關鍵點定位</strong></p>
-<p>RTMPose-X 採用 SimCC（簡單座標分類）演算法，將關鍵點定位視為分類問題。與傳統的熱力圖方法相比，SimCC 將每個關鍵點的 x 和 y 座標分為多個箱體，並分類每個關鍵點所在的精確箱體。這種方法大幅降低計算複雜度，提高推理速度，同時為人體姿態估計任務維持高精度。</p>
-<p><strong>2.2 CSPNeXt 骨幹網路</strong></p>
-<p>與 RTMDet-M 類似，RTMPose-X 也使用 CSPNeXt 骨幹網路，其針對姿態估計等密集預測任務量身訂製。CSPNeXt 骨幹網路在此場景中的優勢如下：</p>
-<p><strong>輕量級架構</strong>：模型架構設計用於在最小化參數數量的同時最大化吞吐量，非常適合即時應用。</p>
-<p><strong>高效特徵擷取</strong>：CSPNeXt 的特徵擷取層經過最佳化以處理高解析度影像，這對於在高爾夫揮桿期間偵測快速移動身體部位（如腕部、肘部和膝蓋）的細微細節至關重要。</p>
-<p><strong>2.3 關鍵點表示</strong></p>
-<p>RTMPose-X 為所有相關身體部位輸出關鍵點位置，包括：</p>
-<p><strong>上身關節</strong>：肩膀、肘部、腕部和頸部</p>
-<p><strong>下身關節</strong>：髖部、膝蓋和踝關節</p>
-<p><strong>附加關節</strong>：頭部、脊柱和其他與揮桿分析相關的關鍵點</p>
-<p>384x288 的輸入影像解析度確保即使是關節中的細微動作也能被精確捕捉，同時也保持系統即時運行的能力。</p>
-<p><strong>2.4 RTMPose 前處理：無偏數據處理 (UDP)</strong></p>
-<p>在裁剪影像進入 RTMpose 模型之前，執行無偏數據處理 (UDP) 步驟。UDP 處理 RTMpose 在訓練和測試期間的數據處理中的關鍵偏差，特別是在座標系統和關鍵點格式轉換中。在傳統人體姿態估計管線中，標準操作（如翻轉和調整大小）通常會導致輸出偏差，特別是由於像素基轉換，導致精度損失和翻轉影像的不對齊。UDP 透過建立無偏座標系統轉換來修正這些問題，在關鍵操作（裁剪、調整大小、旋轉、翻轉）中保持語義對齊。UDP 還透過將關鍵點編碼為熱力圖而不引入位置偏差，進一步透過高斯分佈感知解碼程序精化，從而引入無偏關鍵點格式轉換。這種數據處理方法系統性地改進模型性能，如在 COCO 和 CrowdPose Dataset 上的廣泛測試所示，在由上而下和由下而上模型中實現了增強的精度和降低的推理延遲 [Ref]。</p>
-<p><strong>3. 後期處理和姿態精化</strong></p>
-<p>一旦預測關鍵點，應用多個後期處理步驟來精化姿態估計並確保幀間穩定性。</p>
-<p><strong>3.1 姿態平滑</strong></p>
-<p>高爾夫揮桿涉及快速運動，這可能會在多幀中引入估計關鍵點位置的雜訊或波動。為了緩解這一問題，應用 <strong>One-Euro 濾波器</strong>以隨時間平滑關鍵點軌跡，確保消除關鍵點預測中的細微非物理波動。One-Euro 濾波器運作方式是根據動作速度動態調整濾波器的頻寬，這非常適合高爾夫揮桿等場景，其中動作在不同階段（後揮、下揮桿和隨揮）的速度差異很大。</p>
-<p><strong>3.2 跳幀機制</strong></p>
-<p>為進一步最佳化，實施 <strong>跳幀機制</strong>，其中偵測僅在關鍵幀上執行，姿態估計針對中間幀進行插值。在幀間動作有限的場景中（例如高爾夫揮桿的慢動作分析），這大幅減少計算負載而不犧牲精度。</p>
-<p><strong>4. 時間追蹤和序列一致性</strong></p>
-<p>鑑於高爾夫揮桿本質上是序列性的，在姿態估計中維持時間一致性至關重要。RTMPose-X 透過時間追蹤技術解決這個問題，確保關鍵點預測在連續幀間保持一致。這涉及隨時間追蹤關鍵點位置，並確保其軌跡遵循基於生物力學約束的現實動作模式。</p>
-<p><strong>4.1 關鍵點速度和加速度分析</strong></p>
-<p>除了追蹤關鍵點位置外，RTMPose-X 還估計每個關鍵點的速度和加速度。此資訊對於分析高爾夫揮桿的動態至關重要，提供對關鍵性能指標的見解，例如：</p>
-<p><strong>揮桿速度</strong>：根據下揮桿期間腕部速度計算。</p>
-<p><strong>髖部旋轉</strong>：透過髖關節的旋轉速度分析。</p>
-<p><strong>球桿路徑和頭部速度</strong>：從腕部和肘部軌跡間接推斷。</p>
-<p>這些指標可與專業基準進行比較，以提供關於球手揮桿力學的反饋。</p>
-<p><strong>5. 推理和即時性能</strong></p>
-<p>整個由上而下管線經過最佳化以提供即時性能，在現代 GPU 上可以以超過 90 FPS 進行姿態估計。使用高效模型架構 (CSPNeXt) 和快速推理技術 (SimCC) 確保系統能夠處理高幀速率影片輸入，使其適合在訓練課程中提供即時反饋。</p>
-<p><strong>6. 評估和驗證</strong></p>
-<p>RTMPose-X 和 RTMDet-M 模型在 COCO 和 MPII 等標準 Dataset 上進行評估，在 COCO Dataset 的身體關鍵點上顯示出強大性能，平均精度 (AP) 為 75.8%。這些結果根據高爾夫揮桿 Dataset 中的地面真值標註進行驗證，確保模型在捕捉動態運動動作中的穩健性。</p>
-<p><strong>6.1 性能指標</strong></p>
-<p><strong>均方誤差 (MSE)</strong>：用於量化關鍵點預測相對於地面真實標註的準確度。</p>
-<p><strong>平均精度 (AP)</strong>：評估姿態估計模型的整體性能。</p>
-<p><strong>幀處理時間</strong>：基準測試以確保系統滿足即時需求（每幀 &lt;10 毫秒）。</p>
-<p><strong>7. 結論</strong></p>
-<p>使用 RTMPose-X 和 RTMDet-M 的由上而下方法為運動分析（特別是高爾夫揮桿分析）中的即時姿態估計提供了高效且準確的方法。憑藉強大的關鍵點偵測、時間追蹤和即時推理，此方法論提供了對高爾夫揮桿動力學的詳細生物力學見解，有助於改善性能和預防傷害。</p>
-<p>參考資料</p>
-<p>[1] RTMpose <a href="https://arxiv.org/pdf/2303.07399" rel="external">https://arxiv.org/pdf/2303.07399</a></p>
-<p>[2] CSPNeXt <a href="https://www.sciencedirect.com/science/article/pii/S0952197624000447" rel="external">https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p>
-<p>[3] SIMCC <a href="https://arxiv.org/abs/2107.03332" rel="external">https://arxiv.org/abs/2107.03332</a></p>
-<p>[4] RTMdet <a href="https://arxiv.org/pdf/2212.07784" rel="external">https://arxiv.org/pdf/2212.07784</a></p>
-<p>[5] CSPDarkNet</p>
-<p>[6] Halpe26</p>
-<p>[] AI 挑戰 Dataset：</p>
-<p>[] MS Coco Dataset：</p>
-<p>[7] Crowdpose Dataset：<a href="https://arxiv.org/pdf/1812.00324" rel="external">https://arxiv.org/pdf/1812.00324</a></p>
-<p>[] MPII Dataset：</p>
-<p>[] sub-JHMBD Dataset：</p>
-<p>[] Halpe Dataset：</p>
-<p>[] PoseTrack18 Dataset：</p>
-<p>Object365 資料庫：<a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf" rel="external">https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p>
-<p><em>最後更新：2025-03-05</em> | <a href="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html">在官方支援網站檢視</a></p>
-
-  <footer class="footline">
-  </footer>
-</article>
-        </div>
-      </main>
-    </div>
-    <aside id="R-sidebar" class="default-animation">
-      <div id="R-header-topbar" class="default-animation"></div>
-      <div id="R-header-wrapper" class="default-animation">
-        <a id="R-logo" class="R-default direction-row" href="/sc-support/zh-hant/index.html">
-          <span class="logo-title default-animation">Swing Catalyst 支援</span>
-        </a>
-        <search>
-          <div class="searchbox default-animation">
-            <i class="fas fa-fw fa-search" title="搜尋 (CTRL+ALT+f)"></i>
-            <label class="a11y-only" for="R-search-by">搜尋</label>
-            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜尋...">
-            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-fw fa-times" title="清除搜索"></i></button>
-          </div>
-        </search>
-      </div>
-      <div id="R-homelinks" class="default-animation">
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
-          <ul class="">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-      </div>
-      <div id="R-content-wrapper" class="highlightable">
-        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
-          <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/sc-support/zh-hant/getting-started/index.html"><a class="padding default-animation" href="/sc-support/zh-hant/getting-started/index.html">入門指南</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/zh-hant/cameras-video/index.html">相機與影片</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/hardware/index.html"><a class="padding default-animation" href="/sc-support/zh-hant/hardware/index.html">硬體</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/sc-support/zh-hant/software-features/index.html"><a class="padding default-animation" href="/sc-support/zh-hant/software-features/index.html">軟體與功能</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/motion-capture-guide/index.html">Swing Catalyst 動作擷取使用者指南</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/motion-capture-faq/index.html">Swing Catalyst 動作擷取常見問題</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/motion-capture-settings/index.html">Swing Catalyst 動作擷取設定</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/motion-capture-disclosures/index.html">SwingCatalyst 動作擷取工具使用者重要聲明</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/force-graph-phases/index.html">力圖表階段</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/bookmarks/index.html">什麼是書籤？</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/body-weight-measurement/index.html">全新體重測量功能</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/multiple-forces-graph/index.html">多重力量圖表</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/email-sharing/index.html">如何在 Swing Catalyst 中設定電子郵件分享</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/multiple-displays/index.html">如何在 SwingCatalyst 中設定多個顯示器</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/motion-capture-install/index.html">如何安裝 Swing Catalyst 動作擷取元件</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/swing-catalyst-online/index.html">如何使用 Swing Catalyst Online</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/force-vectors/index.html">如何使用力向量</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/microphone-trigger/index.html">如何使用麥克風作為捕捉觸發器</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/remote-support/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/remote-support/index.html">如何使用遠端支援</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/pressure-distribution-overlay/index.html">如何使用壓力分佈視頻疊加功能</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/explorer/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/explorer/index.html">如何使用檔案總管</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/import-from-v1/index.html">如何從 V1 匯入影片</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/feedback-screen/index.html">如何設定回饋螢幕</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/export-raw-data/index.html">如何匯出原始資料</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/export-contacts/index.html">如何匯出學生聯絡資訊</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/record-a-lesson/index.html">如何錄製課程</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/change-recording-user/index.html">如何變更現有錄製的使用者</a></li>
-            <li class="active " data-nav-id="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html">使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/ios-app-sharing/index.html">使用 Swing Catalyst iOS 應用程式分享錄製的影片</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/pressure-stance-settings/index.html">使用新的 Pressure 與站姿設定</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/graph-library/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/graph-library/index.html">使用圖表庫</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/raw-data-export-guide/index.html">原始資料匯出包含哪些內容</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/export-recordings/index.html">匯出錄製</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/keyboard-shortcuts/index.html">鍵盤快速鍵與熱鍵</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/frontal-plane-torque/index.html">額狀平面扭矩分析 - 使用者指南</a></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/zh-hant/software-features/key-metrics/index.html">關鍵指標</a></li></ul></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/account-setup/index.html"><a class="padding default-animation" href="/sc-support/zh-hant/account-setup/index.html">帳戶與擊球準備</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/zh-hant/reference/index.html"><a class="padding default-animation" href="/sc-support/zh-hant/reference/index.html">參考</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
-          </ul>
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div id="R-footer-margin" class="default-animation"></div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
-          <ul class="">
-			<li class="R-languageswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-language"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-language">語言</label>
-                  <select id="R-select-language">
-                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/markerless-motion-capture/index.html" lang="es">Español</option>
-                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/markerless-motion-capture/index.html" lang="de">Deutsch</option>
-                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/markerless-motion-capture/index.html" lang="fr">Français</option>
-                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/markerless-motion-capture/index.html" lang="it">Italiano</option>
-                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/markerless-motion-capture/index.html" lang="pt">Português</option>
-                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/markerless-motion-capture/index.html" lang="ru">Русский</option>
-                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/markerless-motion-capture/index.html" lang="ja">日本語</option>
-                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/markerless-motion-capture/index.html" lang="ko">한국어</option>
-                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/markerless-motion-capture/index.html" lang="zh">简体中文</option>
-                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/markerless-motion-capture/index.html" lang="hi">हिन्दी</option>
-                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/markerless-motion-capture/index.html" lang="ar">العربية</option>
-                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" lang="zh-Hant" selected data-selected>繁體中文</option>
-                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/markerless-motion-capture/index.html" lang="th">ไทย</option>
-                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/markerless-motion-capture/index.html" lang="sv">Svenska</option>
-                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/markerless-motion-capture/index.html" lang="nb">Norsk Bokmål</option>
-                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/markerless-motion-capture/index.html" lang="da">Dansk</option>
-                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/markerless-motion-capture/index.html" lang="is">Íslenska</option>
-                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/markerless-motion-capture/index.html" lang="id">Bahasa Indonesia</option>
-                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/markerless-motion-capture/index.html" lang="vi">Tiếng Việt</option>
-                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/markerless-motion-capture/index.html" lang="nl">Nederlands</option>
-                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/markerless-motion-capture/index.html" lang="tr">Türkçe</option>
-                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/markerless-motion-capture/index.html" lang="pl">Polski</option>
-                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/markerless-motion-capture/index.html" lang="fi">Suomi</option>
-                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/markerless-motion-capture/index.html" lang="uk">Українська</option>
-                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/markerless-motion-capture/index.html" lang="ro">Română</option>
-                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/markerless-motion-capture/index.html" lang="el">Ελληνικά</option>
-                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/markerless-motion-capture/index.html" lang="cs">Čeština</option>
-                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/markerless-motion-capture/index.html" lang="hu">Magyar</option>
-                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/markerless-motion-capture/index.html" lang="bg">Български</option>
-                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/markerless-motion-capture/index.html" lang="hr">Hrvatski</option>
-                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/markerless-motion-capture/index.html" lang="sr">Српски</option>
-                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/markerless-motion-capture/index.html" lang="sk">Slovenčina</option>
-                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/markerless-motion-capture/index.html" lang="lt">Lietuvių</option>
-                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/markerless-motion-capture/index.html" lang="lv">Latviešu</option>
-                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/markerless-motion-capture/index.html" lang="et">Eesti</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li class="R-variantswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-paint-brush"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-variant">主題</label>
-                  <select id="R-select-variant">
-                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
-                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
-                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.relearn.markVariant();</script>
-            </li>
-          </ul>
-        </div>
-<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
-      </div>
-    </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772560869" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772560869" defer></script>
-<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
-<script src="/sc-support/js/sc-extras.js"></script>
-
-    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
-  </body>
-</html>
+是</p><p><strong>7. 在高爾夫揮桿分析中的應用</strong></p><p>藉由應用 RTMPose-X 和 RTMDet-M 框架：</p><p><strong>逐影格追蹤關節運動</strong>：提供全面的資料來分析揮桿的各個階段。</p><p><strong>提供即時反饋</strong>：在訓練過程中能夠立即提供對揮桿姿態和動作形式的見解。</p><p><strong>與理想力學進行比較</strong>：允許與理想揮桿運動學進行比較，以找出需要改進的領域。</p><p><strong>8. 結論</strong></p><p>RTMPose-X 和 RTMDet-M 的整合為即時高爾夫揮桿分析提供了強大的解決方案。具有高精度、低延遲以及跨各種硬體平台的相容性，這種由上而下方法能夠提供對揮桿力學的詳細見解。它在幫助業餘和職業高爾夫球手提升性能方面具有顯著潛力。</p><p><strong>9. 未來工作</strong></p><p>未來的發展可能涉及：</p><p><strong>整合機器學習演算法</strong>：提供預測性分析並建議調整方案以改進揮桿效率。</p><p><strong>擴展至多人場景</strong>：增強在團隊運動或群組訓練環境中的適用性。</p><p><strong>開發使用者友善介面</strong>：建立應用程式或工具，使沒有技術專業知識的教練和運動員也能使用此技術。</p><p><strong>附錄</strong></p><p><strong>詳細方法論：使用 RTMPose-X 和 RTMDet-M 進行高爾夫揮桿姿態估計的由上而下方法</strong></p><p><strong>概述</strong></p><p>此處所述的方法論概述了利用 RTMPose 進行關鍵點定位和 RTMDet 進行物體偵測的優勢，進行高爾夫和棒球揮桿即時姿態估計的由上而下方法所涉及的詳細步驟。此過程分為多個階段：偵測、關鍵點定位和後期處理，每個階段都有助於精確有效地估計高爾夫揮桿中的身體關節，以進行生物力學分析。</p><p>&ndash;插入圖示&ndash;</p><p><strong>1. 偵測階段：使用 RTMDet-M 進行即時定位</strong></p><p>由上而下方法的第一個階段涉及在影片的每一影格中偵測高爾夫球手。在運動場景中，特別是高爾夫運動中，場景通常只包含一名球員，相比於人群場景，簡化了偵測任務。</p><p><strong>1.1 模型架構</strong></p><p>RTMDet-M 在管線中用作物體偵測器。它採用卷積神經網路 (CNN) 骨幹，特別是 CSPNeXt 骨幹，設計目的是在保持速度和精度平衡的同時最佳化即時物體偵測性能。架構的主要方面包括：</p><p><strong>大核深度分離卷積</strong>：在骨幹和頸部層中使用，增加感受野同時保持低計算成本。</p><p><strong>特徵金字塔網路 (FPN)</strong>：一種多尺度特徵萃取技術，允許在各種尺度上偵測物體，確保無論高爾夫球手距離相機多遠都能被偵測到。</p><p><strong>1.2 動態標籤指派</strong></p><p>RTMDet-M 利用動態標籤指派策略，根據分類和定位損失的組合將軟標籤指派給物體，以提高偵測精度。標籤指派由 SimOTA 演算法控制，該演算法根據與地面真實物體匹配的可能性動態選擇正樣本。這種方法確保在戶外高爾夫場景中經常遇到的不同光照和環境條件下的強健偵測。</p><p><strong>1.3 邊界框預測</strong></p><p>偵測器在每一幀中輸出包圍高爾夫球手的邊界框。這些邊界框提供空間約束，姿態估計模型將在其中運作，透過僅關注幀的相關區域來減少後續姿態估計階段的計算負載。在此背景下，RTMDet-M 在高效能硬體上以超過 300 FPS 的速度即時生成邊界框，確保能夠跟上高爾夫揮桿的快速動態。</p><p><strong>1.4 人物非最大抑制 (NMS)</strong></p><p>在多人設定中（雖然在高爾夫揮桿分析中很少見），RTMDet-M 採用姿態非最大抑制 (NMS) 演算法，消除冗餘的關鍵點偵測，確保只保留最可信的偵測結果。在擁擠場景或影片序列中可能偵測到重疊邊界框的情況下，這一點至關重要。</p><p><strong>1.5 訓練 Dataset 與性能</strong></p><p>RTMDet-M 在 Object356 Dataset 中的人物實例上進行二元分類任務的訓練。</p><p><strong>2. 姿態估計階段：RTMPose-X 關鍵點定位</strong></p><p>一旦確立了高爾夫球手的邊界框，下一階段涉及估計此區域內關鍵身體關節的精確位置。高效能姿態估計模型 RTMPose-X 被用於此目的。</p><p><strong>2.1 基於 SimCC 的關鍵點定位</strong></p><p>RTMPose-X 採用 SimCC（簡單座標分類）演算法，將關鍵點定位視為分類問題。與傳統的熱力圖方法相比，SimCC 將每個關鍵點的 x 和 y 座標分為多個箱體，並分類每個關鍵點所在的精確箱體。這種方法大幅降低計算複雜度，提高推理速度，同時為人體姿態估計任務維持高精度。</p><p><strong>2.2 CSPNeXt 骨幹網路</strong></p><p>與 RTMDet-M 類似，RTMPose-X 也使用 CSPNeXt 骨幹網路，其針對姿態估計等密集預測任務量身訂製。CSPNeXt 骨幹網路在此場景中的優勢如下：</p><p><strong>輕量級架構</strong>：模型架構設計用於在最小化參數數量的同時最大化吞吐量，非常適合即時應用。</p><p><strong>高效特徵擷取</strong>：CSPNeXt 的特徵擷取層經過最佳化以處理高解析度影像，這對於在高爾夫揮桿期間偵測快速移動身體部位（如腕部、肘部和膝蓋）的細微細節至關重要。</p><p><strong>2.3 關鍵點表示</strong></p><p>RTMPose-X 為所有相關身體部位輸出關鍵點位置，包括：</p><p><strong>上身關節</strong>：肩膀、肘部、腕部和頸部</p><p><strong>下身關節</strong>：髖部、膝蓋和踝關節</p><p><strong>附加關節</strong>：頭部、脊柱和其他與揮桿分析相關的關鍵點</p><p>384x288 的輸入影像解析度確保即使是關節中的細微動作也能被精確捕捉，同時也保持系統即時運行的能力。</p><p><strong>2.4 RTMPose 前處理：無偏數據處理 (UDP)</strong></p><p>在裁剪影像進入 RTMpose 模型之前，執行無偏數據處理 (UDP) 步驟。UDP 處理 RTMpose 在訓練和測試期間的數據處理中的關鍵偏差，特別是在座標系統和關鍵點格式轉換中。在傳統人體姿態估計管線中，標準操作（如翻轉和調整大小）通常會導致輸出偏差，特別是由於像素基轉換，導致精度損失和翻轉影像的不對齊。UDP 透過建立無偏座標系統轉換來修正這些問題，在關鍵操作（裁剪、調整大小、旋轉、翻轉）中保持語義對齊。UDP 還透過將關鍵點編碼為熱力圖而不引入位置偏差，進一步透過高斯分佈感知解碼程序精化，從而引入無偏關鍵點格式轉換。這種數據處理方法系統性地改進模型性能，如在 COCO 和 CrowdPose Dataset 上的廣泛測試所示，在由上而下和由下而上模型中實現了增強的精度和降低的推理延遲 [Ref]。</p><p><strong>3. 後期處理和姿態精化</strong></p><p>一旦預測關鍵點，應用多個後期處理步驟來精化姿態估計並確保幀間穩定性。</p><p><strong>3.1 姿態平滑</strong></p><p>高爾夫揮桿涉及快速運動，這可能會在多幀中引入估計關鍵點位置的雜訊或波動。為了緩解這一問題，應用 <strong>One-Euro 濾波器</strong>以隨時間平滑關鍵點軌跡，確保消除關鍵點預測中的細微非物理波動。One-Euro 濾波器運作方式是根據動作速度動態調整濾波器的頻寬，這非常適合高爾夫揮桿等場景，其中動作在不同階段（後揮、下揮桿和隨揮）的速度差異很大。</p><p><strong>3.2 跳幀機制</strong></p><p>為進一步最佳化，實施 <strong>跳幀機制</strong>，其中偵測僅在關鍵幀上執行，姿態估計針對中間幀進行插值。在幀間動作有限的場景中（例如高爾夫揮桿的慢動作分析），這大幅減少計算負載而不犧牲精度。</p><p><strong>4. 時間追蹤和序列一致性</strong></p><p>鑑於高爾夫揮桿本質上是序列性的，在姿態估計中維持時間一致性至關重要。RTMPose-X 透過時間追蹤技術解決這個問題，確保關鍵點預測在連續幀間保持一致。這涉及隨時間追蹤關鍵點位置，並確保其軌跡遵循基於生物力學約束的現實動作模式。</p><p><strong>4.1 關鍵點速度和加速度分析</strong></p><p>除了追蹤關鍵點位置外，RTMPose-X 還估計每個關鍵點的速度和加速度。此資訊對於分析高爾夫揮桿的動態至關重要，提供對關鍵性能指標的見解，例如：</p><p><strong>揮桿速度</strong>：根據下揮桿期間腕部速度計算。</p><p><strong>髖部旋轉</strong>：透過髖關節的旋轉速度分析。</p><p><strong>球桿路徑和頭部速度</strong>：從腕部和肘部軌跡間接推斷。</p><p>這些指標可與專業基準進行比較，以提供關於球手揮桿力學的反饋。</p><p><strong>5. 推理和即時性能</strong></p><p>整個由上而下管線經過最佳化以提供即時性能，在現代 GPU 上可以以超過 90 FPS 進行姿態估計。使用高效模型架構 (CSPNeXt) 和快速推理技術 (SimCC) 確保系統能夠處理高幀速率影片輸入，使其適合在訓練課程中提供即時反饋。</p><p><strong>6. 評估和驗證</strong></p><p>RTMPose-X 和 RTMDet-M 模型在 COCO 和 MPII 等標準 Dataset 上進行評估，在 COCO Dataset 的身體關鍵點上顯示出強大性能，平均精度 (AP) 為 75.8%。這些結果根據高爾夫揮桿 Dataset 中的地面真值標註進行驗證，確保模型在捕捉動態運動動作中的穩健性。</p><p><strong>6.1 性能指標</strong></p><p><strong>均方誤差 (MSE)</strong>：用於量化關鍵點預測相對於地面真實標註的準確度。</p><p><strong>平均精度 (AP)</strong>：評估姿態估計模型的整體性能。</p><p><strong>幀處理時間</strong>：基準測試以確保系統滿足即時需求（每幀 &lt;10 毫秒）。</p><p><strong>7. 結論</strong></p><p>使用 RTMPose-X 和 RTMDet-M 的由上而下方法為運動分析（特別是高爾夫揮桿分析）中的即時姿態估計提供了高效且準確的方法。憑藉強大的關鍵點偵測、時間追蹤和即時推理，此方法論提供了對高爾夫揮桿動力學的詳細生物力學見解，有助於改善性能和預防傷害。</p><p>參考資料</p><p>[1] RTMpose <a href=https://arxiv.org/pdf/2303.07399 rel=external>https://arxiv.org/pdf/2303.07399</a></p><p>[2] CSPNeXt <a href=https://www.sciencedirect.com/science/article/pii/S0952197624000447 rel=external>https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p><p>[3] SIMCC <a href=https://arxiv.org/abs/2107.03332 rel=external>https://arxiv.org/abs/2107.03332</a></p><p>[4] RTMdet <a href=https://arxiv.org/pdf/2212.07784 rel=external>https://arxiv.org/pdf/2212.07784</a></p><p>[5] CSPDarkNet</p><p>[6] Halpe26</p><p>[] AI 挑戰 Dataset：</p><p>[] MS Coco Dataset：</p><p>[7] Crowdpose Dataset：<a href=https://arxiv.org/pdf/1812.00324 rel=external>https://arxiv.org/pdf/1812.00324</a></p><p>[] MPII Dataset：</p><p>[] sub-JHMBD Dataset：</p><p>[] Halpe Dataset：</p><p>[] PoseTrack18 Dataset：</p><p>Object365 資料庫：<a href=https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf rel=external>https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p><p><em>最後更新：2025-03-05</em> | <a href=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html>在官方支援網站檢視</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/zh-hant/index.html><span class="logo-title default-animation">Swing Catalyst 支援</span>
+</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="搜尋 (CTRL+ALT+f)"></i>
+<label class=a11y-only for=R-search-by>搜尋</label>
+<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=搜尋...>
+<button class=search-clear type=button data-search-clear title=清除搜索><i class="fas fa-fw fa-times" title=清除搜索></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/zh-hant/getting-started/index.html><a class="padding default-animation" href=/sc-support/zh-hant/getting-started/index.html>入門指南</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh-hant/cameras-video/index.html><a class="padding default-animation" href=/sc-support/zh-hant/cameras-video/index.html>相機與影片</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh-hant/hardware/index.html><a class="padding default-animation" href=/sc-support/zh-hant/hardware/index.html>硬體</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/zh-hant/software-features/index.html><a class="padding default-animation" href=/sc-support/zh-hant/software-features/index.html>軟體與功能</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/zh-hant/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/zh-hant/software-features/motion-capture-guide/index.html>Swing Catalyst 動作擷取使用者指南</a></li><li data-nav-id=/sc-support/zh-hant/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/zh-hant/software-features/motion-capture-faq/index.html>Swing Catalyst 動作擷取常見問題</a></li><li data-nav-id=/sc-support/zh-hant/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/zh-hant/software-features/motion-capture-settings/index.html>Swing Catalyst 動作擷取設定</a></li><li data-nav-id=/sc-support/zh-hant/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/zh-hant/software-features/motion-capture-disclosures/index.html>SwingCatalyst 動作擷取工具使用者重要聲明</a></li><li data-nav-id=/sc-support/zh-hant/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/zh-hant/software-features/force-graph-phases/index.html>力圖表階段</a></li><li data-nav-id=/sc-support/zh-hant/software-features/bookmarks/index.html><a class=padding href=/sc-support/zh-hant/software-features/bookmarks/index.html>什麼是書籤？</a></li><li data-nav-id=/sc-support/zh-hant/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/zh-hant/software-features/body-weight-measurement/index.html>全新體重測量功能</a></li><li data-nav-id=/sc-support/zh-hant/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/zh-hant/software-features/multiple-forces-graph/index.html>多重力量圖表</a></li><li data-nav-id=/sc-support/zh-hant/software-features/email-sharing/index.html><a class=padding href=/sc-support/zh-hant/software-features/email-sharing/index.html>如何在 Swing Catalyst 中設定電子郵件分享</a></li><li data-nav-id=/sc-support/zh-hant/software-features/multiple-displays/index.html><a class=padding href=/sc-support/zh-hant/software-features/multiple-displays/index.html>如何在 SwingCatalyst 中設定多個顯示器</a></li><li data-nav-id=/sc-support/zh-hant/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/zh-hant/software-features/motion-capture-install/index.html>如何安裝 Swing Catalyst 動作擷取元件</a></li><li data-nav-id=/sc-support/zh-hant/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/zh-hant/software-features/swing-catalyst-online/index.html>如何使用 Swing Catalyst Online</a></li><li data-nav-id=/sc-support/zh-hant/software-features/force-vectors/index.html><a class=padding href=/sc-support/zh-hant/software-features/force-vectors/index.html>如何使用力向量</a></li><li data-nav-id=/sc-support/zh-hant/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/zh-hant/software-features/microphone-trigger/index.html>如何使用麥克風作為捕捉觸發器</a></li><li data-nav-id=/sc-support/zh-hant/software-features/remote-support/index.html><a class=padding href=/sc-support/zh-hant/software-features/remote-support/index.html>如何使用遠端支援</a></li><li data-nav-id=/sc-support/zh-hant/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/zh-hant/software-features/pressure-distribution-overlay/index.html>如何使用壓力分佈視頻疊加功能</a></li><li data-nav-id=/sc-support/zh-hant/software-features/explorer/index.html><a class=padding href=/sc-support/zh-hant/software-features/explorer/index.html>如何使用檔案總管</a></li><li data-nav-id=/sc-support/zh-hant/software-features/import-from-v1/index.html><a class=padding href=/sc-support/zh-hant/software-features/import-from-v1/index.html>如何從 V1 匯入影片</a></li><li data-nav-id=/sc-support/zh-hant/software-features/feedback-screen/index.html><a class=padding href=/sc-support/zh-hant/software-features/feedback-screen/index.html>如何設定回饋螢幕</a></li><li data-nav-id=/sc-support/zh-hant/software-features/export-raw-data/index.html><a class=padding href=/sc-support/zh-hant/software-features/export-raw-data/index.html>如何匯出原始資料</a></li><li data-nav-id=/sc-support/zh-hant/software-features/export-contacts/index.html><a class=padding href=/sc-support/zh-hant/software-features/export-contacts/index.html>如何匯出學生聯絡資訊</a></li><li data-nav-id=/sc-support/zh-hant/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/zh-hant/software-features/record-a-lesson/index.html>如何錄製課程</a></li><li data-nav-id=/sc-support/zh-hant/software-features/change-recording-user/index.html><a class=padding href=/sc-support/zh-hant/software-features/change-recording-user/index.html>如何變更現有錄製的使用者</a></li><li class=active data-nav-id=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html>使用 RTMPose 和 RTMDet 增強高爾夫和棒球揮桿無標記動作擷取：由上而下方法</a></li><li data-nav-id=/sc-support/zh-hant/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/zh-hant/software-features/ios-app-sharing/index.html>使用 Swing Catalyst iOS 應用程式分享錄製的影片</a></li><li data-nav-id=/sc-support/zh-hant/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/zh-hant/software-features/pressure-stance-settings/index.html>使用新的 Pressure 與站姿設定</a></li><li data-nav-id=/sc-support/zh-hant/software-features/graph-library/index.html><a class=padding href=/sc-support/zh-hant/software-features/graph-library/index.html>使用圖表庫</a></li><li data-nav-id=/sc-support/zh-hant/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/zh-hant/software-features/raw-data-export-guide/index.html>原始資料匯出包含哪些內容</a></li><li data-nav-id=/sc-support/zh-hant/software-features/export-recordings/index.html><a class=padding href=/sc-support/zh-hant/software-features/export-recordings/index.html>匯出錄製</a></li><li data-nav-id=/sc-support/zh-hant/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/zh-hant/software-features/keyboard-shortcuts/index.html>鍵盤快速鍵與熱鍵</a></li><li data-nav-id=/sc-support/zh-hant/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/zh-hant/software-features/frontal-plane-torque/index.html>額狀平面扭矩分析 - 使用者指南</a></li><li data-nav-id=/sc-support/zh-hant/software-features/key-metrics/index.html><a class=padding href=/sc-support/zh-hant/software-features/key-metrics/index.html>關鍵指標</a></li></ul></li><li data-nav-id=/sc-support/zh-hant/account-setup/index.html><a class="padding default-animation" href=/sc-support/zh-hant/account-setup/index.html>帳戶與擊球準備</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh-hant/reference/index.html><a class="padding default-animation" href=/sc-support/zh-hant/reference/index.html>參考</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>語言</label>
+<select id=R-select-language><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/markerless-motion-capture/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/markerless-motion-capture/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/markerless-motion-capture/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/markerless-motion-capture/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/markerless-motion-capture/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/markerless-motion-capture/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/markerless-motion-capture/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/markerless-motion-capture/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/markerless-motion-capture/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/markerless-motion-capture/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/markerless-motion-capture/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html lang=zh-Hant selected data-selected>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/markerless-motion-capture/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/markerless-motion-capture/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/markerless-motion-capture/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/markerless-motion-capture/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/markerless-motion-capture/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/markerless-motion-capture/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/markerless-motion-capture/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/markerless-motion-capture/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/markerless-motion-capture/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/markerless-motion-capture/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/markerless-motion-capture/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/markerless-motion-capture/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/markerless-motion-capture/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/markerless-motion-capture/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/markerless-motion-capture/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/markerless-motion-capture/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/markerless-motion-capture/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/markerless-motion-capture/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/markerless-motion-capture/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/markerless-motion-capture/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/markerless-motion-capture/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/markerless-motion-capture/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/markerless-motion-capture/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>主題</label>
+<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-sc-dark value=sc-dark>Sc Dark</option><option id=R-select-variant-sc-light value=sc-light>Sc Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772565156 defer></script><script src=/sc-support/js/theme.min.js?1772565156 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>

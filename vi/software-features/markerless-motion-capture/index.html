@@ -1,615 +1,105 @@
-<!DOCTYPE html>
-<html id="R-html" lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.145.0">
-    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
-    <meta name="description" content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball">
-    <meta name="author" content="">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst">
-    <meta name="twitter:description" content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball">
-    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html">
-    <meta property="og:site_name" content="Hỗ trợ Swing Catalyst">
-    <meta property="og:title" content="Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst">
-    <meta property="og:description" content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball">
-    <meta property="og:locale" content="vi">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="Phần mềm & Tính năng">
-    <meta property="article:tag" content="Troubleshooting">
-    <meta property="article:tag" content="Database">
-    <meta property="article:tag" content="Motion-Capture">
-    <meta itemprop="name" content="Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst">
-    <meta itemprop="description" content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball">
-    <meta itemprop="wordCount" content="4024">
-    <meta itemprop="keywords" content="Troubleshooting,Database,Motion-Capture">
-    <title>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="es">
-    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="de">
-    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fr">
-    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="it">
-    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pt">
-    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ru">
-    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ja">
-    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ko">
-    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh">
-    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hi">
-    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ar">
-    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh-Hant">
-    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="th">
-    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sv">
-    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nb">
-    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="da">
-    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="is">
-    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="id">
-    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="vi">
-    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nl">
-    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="tr">
-    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pl">
-    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fi">
-    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="uk">
-    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ro">
-    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="el">
-    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="cs">
-    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hu">
-    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="bg">
-    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hr">
-    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sr">
-    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sk">
-    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lt">
-    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lv">
-    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772560875" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772560875" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772560875" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772560875" defer></script>
-    <script src="/sc-support/js/search.min.js?1772560875" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772560875";
-    </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772560875" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772560875" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772560875" defer></script>
-    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772560875" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.contentLangs=['vi'];
-    </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560875" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560875" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772560875" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772560875" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772560875" rel="stylesheet" id="R-format-style">
-    <script>
-      window.relearn = window.relearn || {};
-      // configuration
-      window.relearn.min = `.min`;
-      window.relearn.path='\/software-features\/markerless-motion-capture\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
-      window.relearn.disableInlineCopyToClipboard=false;
-      window.relearn.enableBlockCodeWrap=true;
-      // translations
-      window.T_Copy_to_clipboard = `Sao chép văn bản vào bảng tạm`;
-      window.T_Copied_to_clipboard = `Văn bản đã sao chép vào bảng tạm!`;
-      window.T_Link_copied_to_clipboard = `Liên kết đã sao chép vào bảng tạm!`;
-      window.T_Reset_view = `Đặt lại dạng xem`;
-      window.T_View_reset = `Xem đặt lại!`;
-      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
-      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
-      window.T_Browser_unsupported_feature = `Trình duyệt này không hỗ trợ tính năng này`;
-      // variant stuff
-      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
-      window.relearn.customvariantprefix = "my-custom-";
-      window.relearn.changeVariant = function(variant) {
-        var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        document.documentElement.dataset.rThemeVariant = variant;
-        if (oldVariant != variant) {
-          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
-          window.relearn.markVariant();
-        }
-      }
-      window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
-      }
-      window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
-        if( !variant ||
-            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
-            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
-          variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        }
-        document.documentElement.dataset.rThemeVariant = variant;
-      }
-      window.relearn.initVariant();
-      window.relearn.markVariant();
-    </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-<style>
-  .sc-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
-    z-index: 9999;
-    transition: width 0.1s linear;
-    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
-    pointer-events: none;
-  }
-</style>
-<div class="sc-progress" id="sc-progress"></div>
-
-  </head>
-  <body class="mobile-support html" data-origin="/sc-support/vi/software-features/markerless-motion-capture/index.html">
-    <div id="R-body" class="default-animation">
-      <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
-        <div class="topbar-wrapper default-animation">
-          <div class="topbar-sidebar-divider default-animation"></div>
-          <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
-            </div>
-            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/index.html"><span itemprop="name">Hỗ Trợ Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/software-features/index.html"><span itemprop="name">Phần mềm &amp; Tính năng</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</span><meta itemprop="position" content="3"></li>
-          </ol>
-          <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/vi/software-features/motion-capture-guide/index.html" title="Hướng Dẫn Sử Dụng Swing Catalyst Motion Capture cho Người Dùng (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/vi/software-features/raw-data-export-guide/index.html" title="Những gì được bao gồm trong xuất dữ liệu thô (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-                  <div class="topbar-area topbar-area-more" data-area="more">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
-        <div class="flex-block-wrapper">
-<article class="default">
-  <header class="headline">
-<div class="R-taxonomy taxonomy-tags cstyle tags" title="Thẻ" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <i class="fa-fw fas fa-layer-group"></i>
-  <ul>
-    <li><a class="term-link" href="/sc-support/vi/tags/database/index.html">Database</a></li>
-    <li><a class="term-link" href="/sc-support/vi/tags/motion-capture/index.html">Motion-Capture</a></li>
-    <li><a class="term-link" href="/sc-support/vi/tags/troubleshooting/index.html">Troubleshooting</a></li>
-  </ul>
-</div>
-  </header>
-<h1 id="nâng-cao-chụp-chuyển-động-không-đánh-dấu-cú-gôn-golf-và-baseball-sử-dụng-rtmpose-và-rtmdet-phương-pháp-từ-trên-xuống">Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</h1>
-
-<p><strong>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</strong></p>
-<p><strong>Tóm Tắt</strong></p>
-<p>Bài viết này trình bày ứng dụng của RTMPose và RTMDet để ước lượng tư thế chính xác và hiệu quả cho cú gôn golf và baseball. Tận dụng các kỹ thuật tiên tiến được tối ưu hóa cho hiệu suất thời gian thực, các mô hình này cho phép theo dõi chi tiết chuyển động của cơ thể trong quá trình cú gôn golf và baseball—một tính năng quan trọng để cải thiện hiệu suất trong phân tích thể thao. Chúng tôi nhấn mạnh những lợi thế của phương pháp từ trên xuống, trong đó bộ phát hiện RTMDet sẵn có xác định golfer và cầu thủ baseball trong mỗi khung hình, và RTMPose ước lượng vị trí của các khớp chính của cơ thể.</p>
-<p><strong>1. Giới Thiệu</strong></p>
-<p>Ước lượng tư thế đã trở thành then chốt trong phân tích hiệu suất thể thao, cho phép theo dõi chính xác chuyển động của vận động viên. Trong golf và baseball, việc ghi lại dữ liệu sinh biomechanics của cú gôn của cầu thủ cung cấp những hiểu biết quý giá về động lực học của cú gôn, giúp các chuyên gia và những người chơi sở thích cải thiện kỹ thuật của họ. Các phương pháp ước lượng tư thế 2D truyền thống thường gặp phải thách thức về độ trễ và độ chính xác, đặc biệt trong các tình huống thời gian thực. Bài viết này đề xuất một giải pháp sử dụng RTMPose và RTMDet trong mmpose Framework để ước lượng tư thế chi tiết trong quá trình cú gôn golf và baseball.</p>
-<p><strong>2. Nền Tảng</strong></p>
-<p>Tính phức tạp của cú gôn golf và baseball đòi hỏi phải đo lường chính xác chuyển động của cơ thể. Các phương pháp ước lượng tư thế hiện tại có thể không cung cấp độ chính xác cần thiết cho hiệu suất thời gian thực. Những tiến bộ trong học sâu và thị giác máy tính đã giới thiệu các mô hình như RTMPose và RTMDet, giúp cải thiện độ chính xác và hiệu quả.</p>
-<p><strong>3. Phương Pháp Từ Trên Xuống Với RTMDet Và RTMPose</strong></p>
-<p>&ndash;insert figure&ndash;</p>
-<p><strong>3. RTMPose: Mô Hình Ước Lượng Tư Thế Hiệu Suất Cao</strong></p>
-<p>RTMPose [1] được thiết kế cho ước lượng tư thế thời gian thực hiệu suất cao, được tối ưu hóa để chạy hiệu quả trên phần cứng hạn chế.</p>
-<p><strong>Các Tính Năng Chính:</strong></p>
-<p><strong>Kiến Trúc Mô Hình và Hiệu Quả</strong>: RTMpose sử dụng CSPNeXt làm backbone [1, 2], cân bằng giữa tốc độ và độ chính xác. CSPNeXt được tối ưu hóa cho các tác vụ dự đoán dày đặc như ước lượng tư thế và phát hiện đối tượng, cung cấp độ phân giải cao và độ chính xác trong khi duy trì hiệu quả tính toán.</p>
-<p><strong>Dự Đoán Điểm Chính</strong>: Sử dụng thuật toán dựa trên SimCC [1, 3], coi vị trí ngang và phương thẳng đứng của các điểm chính là các tác vụ phân loại riêng biệt. Biểu diễn nhỏ gọn này giảm tải tính toán và phù hợp với triển khai trên các thiết bị khác nhau.</p>
-<p><strong>4. RTMDet: Backbone Phát Hiện</strong></p>
-<p>RTMDet [4] hoạt động như bộ phát hiện trước RTMPose trong đường ống từ trên xuống, xác định vị trí của golfer hoặc cầu thủ baseball trong mỗi khung hình.</p>
-<p><strong>Các Tính Năng Chính:</strong></p>
-<p><strong>Kiến Trúc Mô Hình và Hiệu Quả</strong>: RTMDet sử dụng phiên bản được sửa đổi của CSPDarkNet [5] có tính huấn luyện cao và chính xác hơn nhiều mô hình YOLO. Phiên bản được sửa đổi tận dụng các tích chập depth-wise với kernel lớn để cân bằng độ phức tạp và tốc độ, và hiệu quả trên cả GPU và CPU. Nó lý tưởng cho các ứng dụng thời gian thực như theo dõi hiệu suất thể thao.</p>
-<p><strong>Tính Linh Hoạt</strong>: Xử lý nhiều tác vụ phát hiện đối tượng khác nhau, bao gồm phân đoạn thực thể và phát hiện đối tượng xoay. Đảm bảo định vị chính xác của cầu thủ, ngay cả trong các cảnh động.</p>
-<p><strong>5. Những Lợi Thế Của Việc Sử Dụng RTMDet Và RTMPose Trong Phân Tích Cú Gôn Golf và Baseball</strong></p>
-<p><strong>5.1 Độ Chính Xác Cao Hơn Trong Các Cảnh Không Đông Đúc</strong></p>
-<p>Trong các cài đặt golf/baseball điển hình với ít cá nhân trong khung hình, RTMDet cách ly golfer/cầu thủ baseball, cho phép RTMPose xử lý từng người được phát hiện với độ chính xác cao. Điều này tránh được tính phức tạp của các phương pháp từ dưới lên xử lý tất cả các điểm chính cho tất cả những người trong khung hình cùng một lúc. Phương pháp từ trên xuống cũng có thể bao gồm thuật toán xử lý hậu kỳ của RTMdet nhằm xác định người đúng (tức là golfer hoặc cầu thủ baseball) trước khi thực hiện ước lượng tư thế. Ngoài ra, RTMPose đã được huấn luyện trước trên tài liệu hình ảnh mở rộng chứa</p>
-<p><strong>5.2 Tính Toán Hiệu Quả và Hiệu Suất Thời Gian Thực</strong></p>
-<p>Sử dụng các mô hình nhẹ như RTMdet và RTMpose, duy trì độ trễ thấp, cho phép phân tích cú gôn thời gian thực trên phần cứng cấp tiêu dùng. Điều này đặc biệt hữu ích để cung cấp phản hồi trực tiếp trong quá trình coaching hoặc các phiên tập luyện. Hệ thống chụp chuyển động không đánh dấu SwingCatalyst là một trong số ít hệ thống studio cung cấp phản hồi chụp chuyển động trực tiếp cho golfers và cầu thủ baseball.</p>
-<p><strong>5.3 Phân Tích Điểm Chính Chi Tiết</strong></p>
-<p>RTMPose phát hiện một bộ 26 điểm chính cơ thể [6] được hiển thị trong hình 1 dưới đây cần thiết để phân tích động học cú gôn golf và baseball. Halpe26 là một bộ mở rộng bao gồm các điểm đánh dấu bổ sung trên bàn chân và đầu so với bộ Coco tiêu chuẩn hơn với 17 điểm đánh dấu.</p>
-<p>&ndash;Insert Figure&ndash;</p>
-<p><strong>6. Phương Pháp Luận Cho Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball</strong></p>
-<p><strong>6.1 Giai Đoạn Phát Hiện: RTMDet</strong></p>
-<p>Được áp dụng cho các khung hình video của golfer hoặc cầu thủ baseball, RTMDet tạo ra các hộp giới hạn quanh cầu thủ, được chuyển đến RTMPose. Điều này tập trung ước lượng tư thế vào các vùng hình ảnh liên quan, giảm tải tính toán.</p>
-<p>&ndash;Insert Image&ndash;</p>
-<p><strong>6.2 Giai Đoạn Ước Lượng Tư Thế: RTMPose</strong></p>
-<p>RTMPose ước lượng vị trí điểm chính trong hộp giới hạn. Các khớp quan trọng để phân tích cú gôn golf và baseball bao gồm cổ tay, khuỷu tay, vai, hông và đầu gối. Các điểm chính này đánh giá các góc và vị trí cơ thể trong các giai đoạn của cú gôn: lật gậy, swing xuống và follow-through.</p>
-<p>&ndash;Insert Image&ndash;</p>
-<p><strong>6.3 Các Chỉ Số Hiệu Suất</strong></p>
-<p>Hiệu suất chung của RTMPose được đo lường bằng các chỉ số như Average Precision (AP) trên các điểm chuẩn ước lượng tư thế như MS COCO. Dưới đây là hiệu suất của các mô hình được xếp hạng cao nhất trên điểm chuẩn Coco thường được sử dụng. Trên dataset MS COCO val, RTMPose-X là mô hình hoạt động tốt nhất có khả năng cung cấp phản hồi thời gian thực và đạt tới 75.8% AP với tốc độ khung hình vượt quá ?? FPS trên GPU cấp tiêu dùng, phù hợp cho phân tích thể thao tốc độ cao.</p>
-<p>Xếp Hạng
+<!doctype html><html id=R-html lang=vi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst"><meta name=twitter:description content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html"><meta property="og:site_name" content="Hỗ trợ Swing Catalyst"><meta property="og:title" content="Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst"><meta property="og:description" content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball"><meta property="og:locale" content="vi"><meta property="og:type" content="article"><meta property="article:section" content="Phần mềm & Tính năng"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Database"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst"><meta itemprop=description content="Tổng quan kỹ thuật về RTMPose và RTMDet cho chụp chuyển động không đánh dấu trong phân tích cú gôn golf và baseball"><meta itemprop=wordCount content="4024"><meta itemprop=keywords content="Troubleshooting,Database,Motion-Capture"><title>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống :: Hỗ trợ Swing Catalyst</title>
+<link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html rel=alternate hreflang=et><link href=/sc-support/images/favicon.png?1772565166 rel=icon type=image/png><link href=/sc-support/css/auto-complete/auto-complete.min.css?1772565166 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1772565166 defer></script><script src=/sc-support/js/search-lunr.min.js?1772565166 defer></script><script src=/sc-support/js/search.min.js?1772565166 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772565166"</script><script src=/sc-support/js/lunr/lunr.min.js?1772565166 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1772565166 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1772565166 defer></script><script src=/sc-support/js/lunr/lunr.vi.min.js?1772565166 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["vi"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565166 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565166 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772565166 rel=stylesheet><link href=/sc-support/css/theme.min.css?1772565166 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1772565166 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/markerless-motion-capture/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Sao chép văn bản vào bảng tạm`,window.T_Copied_to_clipboard=`Văn bản đã sao chép vào bảng tạm!`,window.T_Link_copied_to_clipboard=`Liên kết đã sao chép vào bảng tạm!`,window.T_Reset_view=`Đặt lại dạng xem`,window.T_View_reset=`Xem đặt lại!`,window.T_No_results_found=`Không tìm thấy kết quả nào cho "{0}"`,window.T_N_results_found=`{1} kết quả được tìm thấy cho "{0}"`,window.T_Browser_unsupported_feature=`Trình duyệt này không hỗ trợ tính năng này`,window.relearn.themevariants=["auto","sc-dark","sc-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel=stylesheet><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--INTERNAL-PRIMARY-HOVER-color,#CC4A00),var(--INTERNAL-PRIMARY-color,#FF5C00));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px color-mix(in srgb,var(--INTERNAL-PRIMARY-color,#FF5C00) 60%,transparent);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/vi/software-features/markerless-motion-capture/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Mục lục (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/vi/index.html><span itemprop=name>Hỗ Trợ Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/vi/software-features/index.html><span itemprop=name>Phần mềm & Tính năng</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/vi/software-features/motion-capture-guide/index.html title="Hướng Dẫn Sử Dụng Swing Catalyst Motion Capture cho Người Dùng (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/vi/software-features/raw-data-export-guide/index.html title="Những gì được bao gồm trong xuất dữ liệu thô (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Thẻ style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/vi/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/vi/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/vi/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=nâng-cao-chụp-chuyển-động-không-đánh-dấu-cú-gôn-golf-và-baseball-sử-dụng-rtmpose-và-rtmdet-phương-pháp-từ-trên-xuống>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</h1><p><strong>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</strong></p><p><strong>Tóm Tắt</strong></p><p>Bài viết này trình bày ứng dụng của RTMPose và RTMDet để ước lượng tư thế chính xác và hiệu quả cho cú gôn golf và baseball. Tận dụng các kỹ thuật tiên tiến được tối ưu hóa cho hiệu suất thời gian thực, các mô hình này cho phép theo dõi chi tiết chuyển động của cơ thể trong quá trình cú gôn golf và baseball—một tính năng quan trọng để cải thiện hiệu suất trong phân tích thể thao. Chúng tôi nhấn mạnh những lợi thế của phương pháp từ trên xuống, trong đó bộ phát hiện RTMDet sẵn có xác định golfer và cầu thủ baseball trong mỗi khung hình, và RTMPose ước lượng vị trí của các khớp chính của cơ thể.</p><p><strong>1. Giới Thiệu</strong></p><p>Ước lượng tư thế đã trở thành then chốt trong phân tích hiệu suất thể thao, cho phép theo dõi chính xác chuyển động của vận động viên. Trong golf và baseball, việc ghi lại dữ liệu sinh biomechanics của cú gôn của cầu thủ cung cấp những hiểu biết quý giá về động lực học của cú gôn, giúp các chuyên gia và những người chơi sở thích cải thiện kỹ thuật của họ. Các phương pháp ước lượng tư thế 2D truyền thống thường gặp phải thách thức về độ trễ và độ chính xác, đặc biệt trong các tình huống thời gian thực. Bài viết này đề xuất một giải pháp sử dụng RTMPose và RTMDet trong mmpose Framework để ước lượng tư thế chi tiết trong quá trình cú gôn golf và baseball.</p><p><strong>2. Nền Tảng</strong></p><p>Tính phức tạp của cú gôn golf và baseball đòi hỏi phải đo lường chính xác chuyển động của cơ thể. Các phương pháp ước lượng tư thế hiện tại có thể không cung cấp độ chính xác cần thiết cho hiệu suất thời gian thực. Những tiến bộ trong học sâu và thị giác máy tính đã giới thiệu các mô hình như RTMPose và RTMDet, giúp cải thiện độ chính xác và hiệu quả.</p><p><strong>3. Phương Pháp Từ Trên Xuống Với RTMDet Và RTMPose</strong></p><p>&ndash;insert figure&ndash;</p><p><strong>3. RTMPose: Mô Hình Ước Lượng Tư Thế Hiệu Suất Cao</strong></p><p>RTMPose [1] được thiết kế cho ước lượng tư thế thời gian thực hiệu suất cao, được tối ưu hóa để chạy hiệu quả trên phần cứng hạn chế.</p><p><strong>Các Tính Năng Chính:</strong></p><p><strong>Kiến Trúc Mô Hình và Hiệu Quả</strong>: RTMpose sử dụng CSPNeXt làm backbone [1, 2], cân bằng giữa tốc độ và độ chính xác. CSPNeXt được tối ưu hóa cho các tác vụ dự đoán dày đặc như ước lượng tư thế và phát hiện đối tượng, cung cấp độ phân giải cao và độ chính xác trong khi duy trì hiệu quả tính toán.</p><p><strong>Dự Đoán Điểm Chính</strong>: Sử dụng thuật toán dựa trên SimCC [1, 3], coi vị trí ngang và phương thẳng đứng của các điểm chính là các tác vụ phân loại riêng biệt. Biểu diễn nhỏ gọn này giảm tải tính toán và phù hợp với triển khai trên các thiết bị khác nhau.</p><p><strong>4. RTMDet: Backbone Phát Hiện</strong></p><p>RTMDet [4] hoạt động như bộ phát hiện trước RTMPose trong đường ống từ trên xuống, xác định vị trí của golfer hoặc cầu thủ baseball trong mỗi khung hình.</p><p><strong>Các Tính Năng Chính:</strong></p><p><strong>Kiến Trúc Mô Hình và Hiệu Quả</strong>: RTMDet sử dụng phiên bản được sửa đổi của CSPDarkNet [5] có tính huấn luyện cao và chính xác hơn nhiều mô hình YOLO. Phiên bản được sửa đổi tận dụng các tích chập depth-wise với kernel lớn để cân bằng độ phức tạp và tốc độ, và hiệu quả trên cả GPU và CPU. Nó lý tưởng cho các ứng dụng thời gian thực như theo dõi hiệu suất thể thao.</p><p><strong>Tính Linh Hoạt</strong>: Xử lý nhiều tác vụ phát hiện đối tượng khác nhau, bao gồm phân đoạn thực thể và phát hiện đối tượng xoay. Đảm bảo định vị chính xác của cầu thủ, ngay cả trong các cảnh động.</p><p><strong>5. Những Lợi Thế Của Việc Sử Dụng RTMDet Và RTMPose Trong Phân Tích Cú Gôn Golf và Baseball</strong></p><p><strong>5.1 Độ Chính Xác Cao Hơn Trong Các Cảnh Không Đông Đúc</strong></p><p>Trong các cài đặt golf/baseball điển hình với ít cá nhân trong khung hình, RTMDet cách ly golfer/cầu thủ baseball, cho phép RTMPose xử lý từng người được phát hiện với độ chính xác cao. Điều này tránh được tính phức tạp của các phương pháp từ dưới lên xử lý tất cả các điểm chính cho tất cả những người trong khung hình cùng một lúc. Phương pháp từ trên xuống cũng có thể bao gồm thuật toán xử lý hậu kỳ của RTMdet nhằm xác định người đúng (tức là golfer hoặc cầu thủ baseball) trước khi thực hiện ước lượng tư thế. Ngoài ra, RTMPose đã được huấn luyện trước trên tài liệu hình ảnh mở rộng chứa</p><p><strong>5.2 Tính Toán Hiệu Quả và Hiệu Suất Thời Gian Thực</strong></p><p>Sử dụng các mô hình nhẹ như RTMdet và RTMpose, duy trì độ trễ thấp, cho phép phân tích cú gôn thời gian thực trên phần cứng cấp tiêu dùng. Điều này đặc biệt hữu ích để cung cấp phản hồi trực tiếp trong quá trình coaching hoặc các phiên tập luyện. Hệ thống chụp chuyển động không đánh dấu SwingCatalyst là một trong số ít hệ thống studio cung cấp phản hồi chụp chuyển động trực tiếp cho golfers và cầu thủ baseball.</p><p><strong>5.3 Phân Tích Điểm Chính Chi Tiết</strong></p><p>RTMPose phát hiện một bộ 26 điểm chính cơ thể [6] được hiển thị trong hình 1 dưới đây cần thiết để phân tích động học cú gôn golf và baseball. Halpe26 là một bộ mở rộng bao gồm các điểm đánh dấu bổ sung trên bàn chân và đầu so với bộ Coco tiêu chuẩn hơn với 17 điểm đánh dấu.</p><p>&ndash;Insert Figure&ndash;</p><p><strong>6. Phương Pháp Luận Cho Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball</strong></p><p><strong>6.1 Giai Đoạn Phát Hiện: RTMDet</strong></p><p>Được áp dụng cho các khung hình video của golfer hoặc cầu thủ baseball, RTMDet tạo ra các hộp giới hạn quanh cầu thủ, được chuyển đến RTMPose. Điều này tập trung ước lượng tư thế vào các vùng hình ảnh liên quan, giảm tải tính toán.</p><p>&ndash;Insert Image&ndash;</p><p><strong>6.2 Giai Đoạn Ước Lượng Tư Thế: RTMPose</strong></p><p>RTMPose ước lượng vị trí điểm chính trong hộp giới hạn. Các khớp quan trọng để phân tích cú gôn golf và baseball bao gồm cổ tay, khuỷu tay, vai, hông và đầu gối. Các điểm chính này đánh giá các góc và vị trí cơ thể trong các giai đoạn của cú gôn: lật gậy, swing xuống và follow-through.</p><p>&ndash;Insert Image&ndash;</p><p><strong>6.3 Các Chỉ Số Hiệu Suất</strong></p><p>Hiệu suất chung của RTMPose được đo lường bằng các chỉ số như Average Precision (AP) trên các điểm chuẩn ước lượng tư thế như MS COCO. Dưới đây là hiệu suất của các mô hình được xếp hạng cao nhất trên điểm chuẩn Coco thường được sử dụng. Trên dataset MS COCO val, RTMPose-X là mô hình hoạt động tốt nhất có khả năng cung cấp phản hồi thời gian thực và đạt tới 75.8% AP với tốc độ khung hình vượt quá ?? FPS trên GPU cấp tiêu dùng, phù hợp cho phân tích thể thao tốc độ cao.</p><p>Xếp Hạng
 Mô Hình
 Độ Phân Giải
 Kích Thước/Tham Số (Triệu)
 AP
-Suy Luận Thời Gian Thực</p>
-<p>1
+Suy Luận Thời Gian Thực</p><p>1
 Sapiens-2B
 1024x768
 2000
 82.2
-Không</p>
-<p>2
+Không</p><p>2
 Sapiens-1B
 1024x768
 1000
 82.1
-Không</p>
-<p>3
+Không</p><p>3
 Sapiens-0.6B
 1024x768
 600
 81.2
-Không</p>
-<p>4
+Không</p><p>4
 Sapiens-0.3B
 1024x768
 300
 79.6
-Không</p>
-<p>5
+Không</p><p>5
 VitPose-H
 256x192
 632
 79.4
-Không</p>
-<p><strong>6</strong>
+Không</p><p><strong>6</strong>
 <strong>RTMPose-X</strong>
 <strong>384x288</strong>
 <strong>49</strong>
 <strong>78.8</strong>
-<strong>Có</strong></p>
-<p>7
+<strong>Có</strong></p><p>7
 VitPose-L
 256x192
 307
 78.6
-Không</p>
-<p>8
+Không</p><p>8
 RTMPose-L
 384x288
 28
 78.3
-Có</p>
-<p>9
+Có</p><p>9
 HRFormer
 256x192
 43
 77.2
-Không</p>
-<p>10
+Không</p><p>10
 HRNet-UDP
 384x288
 64
 77.2
-Có</p>
-<p>11
+Có</p><p>11
 VitPose-B
 256x192
 86
 77.0
-Có</p>
-<p>12
+Có</p><p>12
 RTMPose-L
 256x198
 28
 76.7
-Có</p>
-<p>13
+Có</p><p>13
 RTMPose-M
 384x288
 14
 76.6
-Có</p>
-<p>14
+Có</p><p>14
 HRNet
 384x288
 64
 76.3
-Có</p>
-<p>15
+Có</p><p>15
 VitPose-S
 256x192
 43
 75.8
-Có</p>
-<p>16
+Có</p><p>16
 RTMPose-M
 256x192
 14
 74.9
-Có</p>
-<p>17
+Có</p><p>17
 SimpleBaseline
 256x192
 60
 73.5
-Có</p>
-<p>18
+Có</p><p>18
 FastPose
 256x192
 79
 73.3
-Có</p>
-<p><strong>7. Ứng Dụng trong Phân Tích Cú Gôn</strong></p>
-<p>Bằng cách áp dụng framework RTMPose-X và RTMDet-M:</p>
-<p><strong>Theo Dõi Chuyển Động Khớp Theo Từng Khung Hình</strong>: Cung cấp dữ liệu toàn diện để phân tích từng giai đoạn của cú gôn.</p>
-<p><strong>Cung Cấp Phản Hồi Theo Thời Gian Thực</strong>: Cho phép nhận được thông tin tức thì về tư thế và kỹ thuật swing trong các phiên tập luyện.</p>
-<p><strong>So Sánh với Cơ Học Lý Tưởng</strong>: Cho phép so sánh với cơ học swing lý tưởng để xác định các lĩnh vực cần cải thiện.</p>
-<p><strong>8. Kết Luận</strong></p>
-<p>Sự tích hợp của RTMPose-X và RTMDet-M cung cấp một giải pháp mạnh mẽ cho phân tích cú gôn theo thời gian thực. Với độ chính xác cao, độ trễ thấp và khả năng tương thích trên nhiều nền tảng phần cứng, phương pháp từ trên xuống này cung cấp những thông tin chi tiết về cơ học cú gôn. Nó có tiềm năng to lớn để hỗ trợ cả các golfer nghiệp dư và chuyên nghiệp trong việc nâng cao hiệu suất của họ.</p>
-<p><strong>9. Hướng Phát Triển Tương Lai</strong></p>
-<p>Những phát triển trong tương lai có thể bao gồm:</p>
-<p><strong>Tích Hợp Các Thuật Toán Học Máy</strong>: Để cung cấp phân tích dự báo và gợi ý các điều chỉnh nhằm cải thiện hiệu quả cú gôn.</p>
-<p><strong>Mở Rộng sang Các Tình Huống Đa Người</strong>: Nâng cao khả năng ứng dụng trong các môn thể thao tập thể hoặc môi trường tập luyện nhóm.</p>
-<p><strong>Phát Triển Giao Diện Thân Thiện với Người Dùng</strong>: Tạo các ứng dụng hoặc công cụ giúp công nghệ này dễ tiếp cận với huấn luyện viên và vận động viên mà không cần chuyên môn kỹ thuật.</p>
-<p><strong>Phụ Lục</strong></p>
-<p><strong>Phương Pháp Chi Tiết: Phương Pháp Từ Trên Xuống cho Ước Lượng Tư Thế Cú Gôn Sử Dụng RTMPose-X và RTMDet-M</strong></p>
-<p><strong>Tổng Quan</strong></p>
-<p>Phương pháp được mô tả ở đây nêu ra các bước chi tiết liên quan đến phương pháp từ trên xuống cho ước lượng tư thế theo thời gian thực của một cú gôn, tận dụng sức mạnh của RTMPose để định vị điểm chính và RTMDet để phát hiện đối tượng. Quá trình được chia thành nhiều giai đoạn: phát hiện, định vị điểm chính và xử lý hậu kỳ, mỗi giai đoạn đều góp phần vào việc ước lượng chính xác và hiệu quả các khớp cơ thể trong cú gôn để phân tích sinh học.</p>
-<p>&ndash;Chèn hình ảnh&ndash;</p>
-<p><strong>1. Giai Đoạn Phát Hiện: Định Vị Theo Thời Gian Thực với RTMDet-M</strong></p>
-<p>Giai đoạn đầu tiên của phương pháp từ trên xuống liên quan đến việc phát hiện golfer trong mỗi khung hình của video. Trong các tình huống thể thao, đặc biệt là gôn, cảnh thường bao gồm một người chơi duy nhất, đơn giản hóa nhiệm vụ phát hiện so với các cảnh đông đúc.</p>
-<p><strong>1.1 Kiến Trúc Mô Hình</strong></p>
-<p>RTMDet-M được sử dụng làm bộ phát hiện đối tượng trong pipeline. Nó sử dụng một mạng nơ-ron tích chập (CNN) backbone, cụ thể là backbone CSPNeXt, được thiết kế để tối ưu hóa hiệu suất phát hiện đối tượng theo thời gian thực trong khi duy trì sự cân bằng giữa tốc độ và độ chính xác. Các khía cạnh chính của kiến trúc bao gồm:</p>
-<p><strong>Các phép tích chập theo chiều sâu kernel lớn</strong>: Chúng được sử dụng trong các lớp backbone và neck, tăng trường tiếp nhận trong khi duy trì chi phí tính toán thấp.</p>
-<p><strong>Mạng kim tự tháp đặc trưng (FPN)</strong>: Một kỹ thuật trích xuất đặc trưng đa tỷ lệ cho phép phát hiện các đối tượng ở các tỷ lệ khác nhau, đảm bảo rằng golfer có thể được phát hiện bất kể khoảng cách của họ từ máy ảnh.</p>
-<p><strong>1.2 Gán Nhãn Động</strong></p>
-<p>RTMDet-M tận dụng chiến lược gán nhãn động cải thiện độ chính xác phát hiện bằng cách gán nhãn mềm cho các đối tượng dựa trên sự kết hợp của lỗi phân loại và định vị. Gán nhãn được điều chỉnh bởi thuật toán SimOTA, động lực chọn các mẫu dương dựa trên khả năng khớp của chúng với đối tượng giá trị thực. Phương pháp này đảm bảo phát hiện mạnh mẽ trong các điều kiện ánh sáng và môi trường khác nhau thường gặp phải trong các cảnh gôn ngoài trời.</p>
-<p><strong>1.3 Dự Đoán Hộp Giới Hạn</strong></p>
-<p>Bộ phát hiện xuất ra các Hộp Giới Hạn bao quanh Golfer trong mỗi Khung Hình. Những Hộp Giới Hạn này cung cấp các ràng buộc không gian trong đó mô hình ước lượng Tư Thế sẽ hoạt động, giảm tải tính toán cho giai đoạn ước lượng Tư Thế tiếp theo bằng cách chỉ tập trung vào các khu vực liên quan của Khung Hình. Trong bối cảnh này, RTMDet-M tạo ra các Hộp Giới Hạn theo thời gian thực với tốc độ trên 300 FPS trên phần cứng hiệu suất cao, đảm bảo rằng nó có thể theo kịp động lực nhanh chóng của một Cú Gôn.</p>
-<p><strong>1.4 Loại Bỏ Những Phát Hiện Không Cực Đại của Người (NMS)</strong></p>
-<p>Trong các bối cảnh đa người (mặc dù hiếm trong phân tích Cú Gôn), RTMDet-M kết hợp một thuật toán Loại Bỏ Những Phát Hiện Không Cực Đại (NMS) của Tư Thế loại bỏ các phát hiện Điểm Chính dư thừa, đảm bảo rằng chỉ những phát hiện có độ tin cậy cao nhất được giữ lại cho mọi người. Điều này rất quan trọng trong các trường hợp có thể phát hiện các Hộp Giới Hạn chồng lấp trong các cảnh đông người hoặc các chuỗi video.</p>
-<p><strong>1.5 Dataset Dữ Liệu Huấn Luyện và Hiệu Suất</strong></p>
-<p>RTMDet-M được huấn luyện trên một tác vụ phân loại nhị phân trên các đối tượng người trong Dataset Object356.</p>
-<p><strong>2. Giai đoạn Ước Lượng Tư Thế: Định Vị Điểm Chính RTMPose-X</strong></p>
-<p>Sau khi Hộp Giới Hạn của Golfer đã được thiết lập, giai đoạn tiếp theo liên quan đến việc ước lượng vị trí chính xác của các khớp cơ thể chính trong khu vực này. RTMPose-X, một mô hình ước lượng Tư Thế có hiệu suất cao, được sử dụng cho mục đích này.</p>
-<p><strong>2.1 Định Vị Điểm Chính Dựa Trên SimCC</strong></p>
-<p>RTMPose-X sử dụng thuật toán SimCC (Simple Coordinate Classification), xử lý định vị Điểm Chính như một bài toán phân loại. Trái ngược với các phương pháp dựa trên Bản Đồ Nhiệt truyền thống, SimCC chia các Tọa độ x và y của mỗi Điểm Chính thành các thùng và phân loại thùng chính xác nơi mỗi Điểm Chính nằm. Cách tiếp cận này giảm đáng kể độ phức tạp tính toán và cải thiện tốc độ suy luận trong khi duy trì độ chính xác cao cho các tác vụ ước lượng Tư Thế của con người.</p>
-<p><strong>2.2 Xương Sống CSPNeXt</strong></p>
-<p>Tương tự như RTMDet-M, RTMPose-X cũng sử dụng xương sống CSPNeXt, được điều chỉnh cho các tác vụ dự đoán dày đặc như ước lượng Tư Thế. Xương sống CSPNeXt có lợi trong kịch bản này vì những lý do sau:</p>
-<p><strong>Kiến trúc nhẹ</strong>: Kiến trúc mô hình được thiết kế để giảm thiểu số lượng tham số trong khi tối đa hóa thông lượng, làm cho nó lý tưởng cho các ứng dụng thời gian thực.</p>
-<p><strong>Trích xuất đặc trưng hiệu quả</strong>: Các lớp trích xuất đặc trưng của CSPNeXt được tối ưu hóa để xử lý hình ảnh độ phân giải cao, rất quan trọng để phát hiện các chi tiết nhỏ trong các bộ phận cơ thể chuyển động nhanh trong một Cú Gôn, chẳng hạn như cổ tay, Khuỷu tay và Đầu Gối.</p>
-<p><strong>2.3 Biểu Diễn Điểm Chính</strong></p>
-<p>RTMPose-X xuất ra các vị trí Điểm Chính cho tất cả các bộ phận cơ thể liên quan, bao gồm:</p>
-<p><strong>Các khớp nửa thân trên</strong>: Vai, Khuỷu tay, Cổ tay và Cổ</p>
-<p><strong>Các khớp phần thân dưới</strong>: Hông, Đầu Gối và Mắt cá chân</p>
-<p><strong>Các khớp bổ sung</strong>: Đầu, Cột sống và các Điểm Chính khác liên quan đến phân tích Cú Gôn</p>
-<p>Độ phân giải 384x288 cho các hình ảnh đầu vào đảm bảo rằng ngay cả những chuyển động tinh tế trong các khớp cũng có thể được ghi lại chính xác, trong khi vẫn duy trì khả năng của hệ thống hoạt động theo thời gian thực.</p>
-<p><strong>2.4 Xử lý Trước RTMPose: Xử Lý Dữ Liệu Không Thiên Vị (UDP)</strong></p>
-<p>Trước khi hình ảnh được cắt nhỏ được đưa vào mô hình RTMpose, một bước Xử Lý Dữ Liệu Không Thiên Vị (UDP) được thực hiện. UDP giải quyết các thiên vị quan trọng trong xử lý dữ liệu của RTMpose trong quá trình huấn luyện và thử nghiệm, đặc biệt là trong các phép biến đổi Hệ tọa độ và định dạng Điểm Chính. Trong các quy trình ước lượng Tư Thế của con người thông thường, các hoạt động tiêu chuẩn như lật và thay đổi kích thước thường không căn chỉnh các đầu ra, đặc biệt là do các phép biến đổi dựa trên pixel, dẫn đến mất độ chính xác và không căn chỉnh các hình ảnh bị lật. UDP sửa chữa những điều này bằng cách thiết lập Biến đổi hệ tọa độ không thiên vị, bảo tồn Căn chỉnh ngữ nghĩa trên các không gian Tọa độ khác nhau trong các hoạt động thiết yếu (cắt nhỏ, thay đổi kích thước, xoay, lật). UDP cũng giới thiệu Biến đổi định dạng Điểm Chính không thiên vị bằng cách mã hóa Điểm Chính thành các Bản Đồ Nhiệt mà không giới thiệu thiên vị vị trí, được tinh chỉnh thêm thông qua một quy trình giải mã nhận biết phân bố Gaussian. Cách tiếp cận xử lý dữ liệu này cải thiện một cách có hệ thống hiệu suất mô hình, như được thể hiện trong các thử nghiệm rộng rãi trên các Dataset COCO và CrowdPose, nơi nó đạt được độ chính xác được cải thiện và giảm độ trễ suy luận trên các mô hình từ trên xuống và từ dưới lên [Ref].</p>
-<p><strong>3. Xử Lý Hậu Kỳ và Tinh Chỉnh Tư Thế</strong></p>
-<p>Sau khi các Điểm Chính được dự đoán, một số bước Xử Lý Hậu Kỳ được áp dụng để tinh chỉnh ước lượng Tư Thế và đảm bảo tính ổn định trên các Khung Hình.</p>
-<p><strong>3.1 Làm Mịn Tư Thế</strong></p>
-<p>Các Cú Gôn liên quan đến chuyển động nhanh chóng, có thể giới thiệu nhiễu hoặc biến động trong các vị trí Điểm Chính được ước lượng trên các Khung Hình. Để giảm thiểu điều này, một <strong>Bộ Lọc One-Euro</strong> được áp dụng để làm mịn các quỹ đạo Điểm Chính theo thời gian, đảm bảo rằng các biến động nhỏ, không phải vật lý trong các dự đoán Điểm Chính bị loại bỏ. Bộ Lọc One-Euro hoạt động bằng cách điều chỉnh động tính băng thông của Bộ Lọc dựa trên tốc độ chuyển động, lý tưởng cho các kịch bản như Cú Gôn, nơi chuyển động thay đổi đáng kể về tốc độ trên các giai đoạn khác nhau (Lật Gậy, Swing Xuống và Follow-Through).</p>
-<p><strong>3.2 Cơ Chế Bỏ Qua Khung Hình</strong></p>
-<p>Để tối ưu hóa thêm, một <strong>cơ chế bỏ qua Khung Hình</strong> được triển khai, trong đó phát hiện được thực hiện chỉ trên các Khung Hình chính, và ước lượng Tư Thế được nội suy cho các Khung Hình trung gian. Điều này làm giảm đáng kể tải tính toán mà không hy sinh độ chính xác trong các kịch bản với chuyển động hạn chế giữa các Khung Hình, chẳng hạn như phân tích chuyển động chậm của một Cú Gôn.</p>
-<p><strong>4. Theo Dõi Thời Gian và Tính Nhất Quán Chuỗi</strong></p>
-<p>Với các Cú Gôn vốn dĩ là tuần tự, duy trì tính nhất quán thời gian trong ước lượng Tư Thế là rất quan trọng. RTMPose-X giải quyết điều này thông qua các kỹ thuật theo dõi thời gian, đảm bảo rằng các dự đoán Điểm Chính nhất quán trên các Khung Hình liên tiếp. Điều này liên quan đến việc theo dõi các vị trí Điểm Chính theo thời gian và đảm bảo rằng các quỹ đạo của chúng tuân theo các mẫu chuyển động thực tế dựa trên các ràng buộc sinh học.</p>
-<p><strong>4.1 Phân Tích Vận Tốc và Gia Tốc Điểm Chính</strong></p>
-<p>Ngoài việc theo dõi các vị trí Điểm Chính, RTMPose-X cũng ước lượng Vận tốc và Gia tốc của mỗi Điểm Chính. Thông tin này rất quan trọng để phân tích động lực của một Cú Gôn, cung cấp cái nhìn sâu sắc về các Chỉ Số hiệu suất chính như:</p>
-<p><strong>Tốc độ swing</strong>: Được tính toán dựa trên Vận tốc cổ tay trong Swing Xuống.</p>
-<p><strong>Xoay Hông</strong>: Được phân tích thông qua Vận Tốc Góc của các khớp Hông.</p>
-<p><strong>Đường dẫn Gậy và tốc độ đầu</strong>: Được suy ra gián tiếp từ các quỹ đạo Cổ tay và Khuỷu tay.</p>
-<p>Những Chỉ Số này có thể được so sánh với các tiêu chuẩn chuyên nghiệp để đưa ra phản hồi về Cơ Học Cú Gôn của một vận động viên.</p>
-<p><strong>5. Suy Luận và Hiệu Suất Thời Gian Thực</strong></p>
-<p>Toàn bộ quy trình từ trên xuống được tối ưu hóa cho hiệu suất thời gian thực, cho phép ước lượng Tư Thế với tốc độ trên 90 FPS trên các GPU hiện đại. Việc sử dụng các kiến trúc mô hình cực kỳ hiệu quả (CSPNeXt) và các kỹ thuật suy luận nhanh (SimCC) đảm bảo rằng hệ thống có thể xử lý đầu vào video với tốc độ Khung hình cao, làm cho nó phù hợp cho phản hồi thời gian thực trong các phiên huấn luyện.</p>
-<p><strong>6. Đánh Giá và Xác Thực</strong></p>
-<p>Các mô hình RTMPose-X và RTMDet-M được đánh giá trên các Dataset tiêu chuẩn như COCO và MPII, cho thấy hiệu suất mạnh mẽ với độ chính xác trung bình (AP) 75,8% trên Dataset COCO cho các Điểm Chính cơ thể. Những kết quả này được xác thực dựa trên các chú thích giá trị cơ bản trong các Dataset Cú Gôn, đảm bảo sự mạnh mẽ của mô hình trong việc ghi lại các chuyển động thể thao động.</p>
-<p><strong>6.1 Các Chỉ Số Hiệu Suất</strong></p>
-<p><strong>Mean Squared Error (MSE)</strong>: Được sử dụng để định lượng độ chính xác của các dự đoán Điểm Chính so với các chú thích giá trị tham chiếu.</p>
-<p><strong>Average Precision (AP)</strong>: Đánh giá hiệu suất tổng thể của mô hình Ước Lượng Tư Thế.</p>
-<p><strong>Thời Gian Xử Lý Khung Hình</strong>: Được chuẩn hóa để đảm bảo hệ thống đáp ứng các yêu cầu thời gian thực (&lt;10 ms trên mỗi Khung hình).</p>
-<p><strong>7. Kết Luận</strong></p>
-<p>Phương pháp từ trên xuống sử dụng RTMPose-X và RTMDet-M cung cấp một phương pháp hiệu quả và chính xác để Ước Lượng Tư Thế thời gian thực trong phân tích thể thao, đặc biệt là phân tích Cú Gôn Golf. Với phát hiện Điểm Chính mạnh mẽ, theo dõi thời gian và suy luận thời gian thực, phương pháp này cung cấp những hiểu biết sâu sắc về Cơ học về động lực học Cú Gôn Golf, hỗ trợ cải thiện hiệu suất và phòng chống chấn thương.</p>
-<p>Tài Liệu Tham Khảo</p>
-<p>[1] RTMpose <a href="https://arxiv.org/pdf/2303.07399" rel="external">https://arxiv.org/pdf/2303.07399</a></p>
-<p>[2] CSPNeXt <a href="https://www.sciencedirect.com/science/article/pii/S0952197624000447" rel="external">https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p>
-<p>[3] SIMCC <a href="https://arxiv.org/abs/2107.03332" rel="external">https://arxiv.org/abs/2107.03332</a></p>
-<p>[4] RTMdet <a href="https://arxiv.org/pdf/2212.07784" rel="external">https://arxiv.org/pdf/2212.07784</a></p>
-<p>[5] CSPDarkNet</p>
-<p>[6] Halpe26</p>
-<p>[] Dataset thách thức AI:</p>
-<p>[] Dataset MS Coco:</p>
-<p>[7] Dataset Crowdpose: <a href="https://arxiv.org/pdf/1812.00324" rel="external">https://arxiv.org/pdf/1812.00324</a></p>
-<p>[] Dataset MPII:</p>
-<p>[] Dataset sub-JHMBD:</p>
-<p>[] Dataset Halpe:</p>
-<p>[] Dataset PoseTrack18:</p>
-<p>Cơ sở dữ liệu Object365: <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf" rel="external">https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p>
-<p><em>Cập nhật lần cuối: 2025-03-05</em> | <a href="/sc-support/vi/software-features/markerless-motion-capture/index.html">Xem trên trang hỗ trợ chính thức</a></p>
-
-  <footer class="footline">
-  </footer>
-</article>
-        </div>
-      </main>
-    </div>
-    <aside id="R-sidebar" class="default-animation">
-      <div id="R-header-topbar" class="default-animation"></div>
-      <div id="R-header-wrapper" class="default-animation">
-        <a id="R-logo" class="R-default direction-row" href="/sc-support/vi/index.html">
-          <span class="logo-title default-animation">Hỗ trợ Swing Catalyst</span>
-        </a>
-        <search>
-          <div class="searchbox default-animation">
-            <i class="fas fa-fw fa-search" title="Tìm kiếm (CTRL+ALT+f)"></i>
-            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
-            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
-            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-fw fa-times" title="Xóa tìm kiếm"></i></button>
-          </div>
-        </search>
-      </div>
-      <div id="R-homelinks" class="default-animation">
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
-          <ul class="">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-      </div>
-      <div id="R-content-wrapper" class="highlightable">
-        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
-          <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/sc-support/vi/getting-started/index.html"><a class="padding default-animation" href="/sc-support/vi/getting-started/index.html">Bắt Đầu Sử Dụng</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/vi/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/vi/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/vi/hardware/index.html"><a class="padding default-animation" href="/sc-support/vi/hardware/index.html">Phần cứng</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/sc-support/vi/software-features/index.html"><a class="padding default-animation" href="/sc-support/vi/software-features/index.html">Phần mềm &amp; Tính năng</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
-            <li class="" data-nav-id="/sc-support/vi/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/vi/software-features/multiple-forces-graph/index.html">Biểu Đồ Nhiều Lực</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/vi/software-features/key-metrics/index.html">Các Chỉ Số Chính</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/vi/software-features/force-graph-phases/index.html">Các Giai đoạn trong biểu đồ lực</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-disclosures/index.html">Các Thông Báo Quan Trọng Dành Cho Người Dùng Công Cụ Chụp Chuyển Động Swing Catalyst</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-install/index.html">Cách cài đặt các thành phần Chụp Chuyển Động của Swing Catalyst</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/vi/software-features/feedback-screen/index.html">Cách cài đặt Màn Hình Phản Hồi</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/vi/software-features/multiple-displays/index.html">Cách cài đặt nhiều màn hình với Swing Catalyst</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/vi/software-features/record-a-lesson/index.html">Cách ghi lại một Bài Học</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/vi/software-features/import-from-v1/index.html">Cách nhập video từ V1</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/vi/software-features/pressure-distribution-overlay/index.html">Cách sử dụng chức năng Phủ Xen Phân phối Áp suất</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/remote-support/index.html"><a class="padding" href="/sc-support/vi/software-features/remote-support/index.html">Cách Sử Dụng Hỗ Trợ Từ Xa</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/vi/software-features/microphone-trigger/index.html">Cách sử dụng micrô làm Kích Hoạt ghi lại</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/vi/software-features/swing-catalyst-online/index.html">Cách sử dụng Swing Catalyst Online</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/explorer/index.html"><a class="padding" href="/sc-support/vi/software-features/explorer/index.html">Cách sử dụng Trình Duyệt</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/vi/software-features/force-vectors/index.html">Cách sử dụng Véc tơ Lực</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/vi/software-features/change-recording-user/index.html">Cách thay đổi người dùng trên một bản ghi hiện có</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/vi/software-features/email-sharing/index.html">Cách thiết lập chia sẻ qua email trong Swing Catalyst</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/vi/software-features/export-raw-data/index.html">Cách xuất dữ liệu thô</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/vi/software-features/export-contacts/index.html">Cách xuất thông tin liên hệ của Học Viên</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-settings/index.html">Cài Đặt Chụp Chuyển Động trong Swing Catalyst</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/vi/software-features/ios-app-sharing/index.html">Chia sẻ video đã quay với ứng dụng Swing Catalyst cho iOS</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/vi/software-features/body-weight-measurement/index.html">Chức năng đo Cân Nặng Cơ Thể mới</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/vi/software-features/bookmarks/index.html">Dấu Trang là gì?</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-guide/index.html">Hướng Dẫn Sử Dụng Swing Catalyst Motion Capture cho Người Dùng</a></li>
-            <li class="active " data-nav-id="/sc-support/vi/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/vi/software-features/markerless-motion-capture/index.html">Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/vi/software-features/raw-data-export-guide/index.html">Những gì được bao gồm trong xuất dữ liệu thô</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/vi/software-features/frontal-plane-torque/index.html">Phân Tích Mô-Men Xoắn Mặt Phẳng Trán - Hướng Dẫn Người Dùng</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/vi/software-features/keyboard-shortcuts/index.html">Phím tắt và Phím nóng</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/vi/software-features/pressure-stance-settings/index.html">Sử dụng các cài đặt Áp lực và Tư Thế Đứng mới</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/graph-library/index.html"><a class="padding" href="/sc-support/vi/software-features/graph-library/index.html">Sử dụng thư viện biểu đồ</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
-            <li class="" data-nav-id="/sc-support/vi/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/vi/software-features/export-recordings/index.html">Xuất Bản Ghi</a></li></ul></li>
-            <li class="" data-nav-id="/sc-support/vi/account-setup/index.html"><a class="padding default-animation" href="/sc-support/vi/account-setup/index.html">Tài khoản &amp; Chuẩn bị</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/vi/reference/index.html"><a class="padding default-animation" href="/sc-support/vi/reference/index.html">Tham khảo</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
-          </ul>
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div id="R-footer-margin" class="default-animation"></div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
-          <ul class="">
-			<li class="R-languageswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-language"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
-                  <select id="R-select-language">
-                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/markerless-motion-capture/index.html" lang="es">Español</option>
-                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/markerless-motion-capture/index.html" lang="de">Deutsch</option>
-                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/markerless-motion-capture/index.html" lang="fr">Français</option>
-                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/markerless-motion-capture/index.html" lang="it">Italiano</option>
-                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/markerless-motion-capture/index.html" lang="pt">Português</option>
-                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/markerless-motion-capture/index.html" lang="ru">Русский</option>
-                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/markerless-motion-capture/index.html" lang="ja">日本語</option>
-                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/markerless-motion-capture/index.html" lang="ko">한국어</option>
-                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/markerless-motion-capture/index.html" lang="zh">简体中文</option>
-                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/markerless-motion-capture/index.html" lang="hi">हिन्दी</option>
-                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/markerless-motion-capture/index.html" lang="ar">العربية</option>
-                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" lang="zh-Hant">繁體中文</option>
-                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/markerless-motion-capture/index.html" lang="th">ไทย</option>
-                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/markerless-motion-capture/index.html" lang="sv">Svenska</option>
-                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/markerless-motion-capture/index.html" lang="nb">Norsk Bokmål</option>
-                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/markerless-motion-capture/index.html" lang="da">Dansk</option>
-                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/markerless-motion-capture/index.html" lang="is">Íslenska</option>
-                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/markerless-motion-capture/index.html" lang="id">Bahasa Indonesia</option>
-                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/markerless-motion-capture/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
-                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/markerless-motion-capture/index.html" lang="nl">Nederlands</option>
-                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/markerless-motion-capture/index.html" lang="tr">Türkçe</option>
-                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/markerless-motion-capture/index.html" lang="pl">Polski</option>
-                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/markerless-motion-capture/index.html" lang="fi">Suomi</option>
-                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/markerless-motion-capture/index.html" lang="uk">Українська</option>
-                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/markerless-motion-capture/index.html" lang="ro">Română</option>
-                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/markerless-motion-capture/index.html" lang="el">Ελληνικά</option>
-                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/markerless-motion-capture/index.html" lang="cs">Čeština</option>
-                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/markerless-motion-capture/index.html" lang="hu">Magyar</option>
-                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/markerless-motion-capture/index.html" lang="bg">Български</option>
-                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/markerless-motion-capture/index.html" lang="hr">Hrvatski</option>
-                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/markerless-motion-capture/index.html" lang="sr">Српски</option>
-                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/markerless-motion-capture/index.html" lang="sk">Slovenčina</option>
-                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/markerless-motion-capture/index.html" lang="lt">Lietuvių</option>
-                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/markerless-motion-capture/index.html" lang="lv">Latviešu</option>
-                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/markerless-motion-capture/index.html" lang="et">Eesti</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li class="R-variantswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-paint-brush"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-variant">Đề tài</label>
-                  <select id="R-select-variant">
-                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
-                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
-                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.relearn.markVariant();</script>
-            </li>
-          </ul>
-        </div>
-<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
-      </div>
-    </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772560875" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772560875" defer></script>
-<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
-<script src="/sc-support/js/sc-extras.js"></script>
-
-    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
-  </body>
-</html>
+Có</p><p><strong>7. Ứng Dụng trong Phân Tích Cú Gôn</strong></p><p>Bằng cách áp dụng framework RTMPose-X và RTMDet-M:</p><p><strong>Theo Dõi Chuyển Động Khớp Theo Từng Khung Hình</strong>: Cung cấp dữ liệu toàn diện để phân tích từng giai đoạn của cú gôn.</p><p><strong>Cung Cấp Phản Hồi Theo Thời Gian Thực</strong>: Cho phép nhận được thông tin tức thì về tư thế và kỹ thuật swing trong các phiên tập luyện.</p><p><strong>So Sánh với Cơ Học Lý Tưởng</strong>: Cho phép so sánh với cơ học swing lý tưởng để xác định các lĩnh vực cần cải thiện.</p><p><strong>8. Kết Luận</strong></p><p>Sự tích hợp của RTMPose-X và RTMDet-M cung cấp một giải pháp mạnh mẽ cho phân tích cú gôn theo thời gian thực. Với độ chính xác cao, độ trễ thấp và khả năng tương thích trên nhiều nền tảng phần cứng, phương pháp từ trên xuống này cung cấp những thông tin chi tiết về cơ học cú gôn. Nó có tiềm năng to lớn để hỗ trợ cả các golfer nghiệp dư và chuyên nghiệp trong việc nâng cao hiệu suất của họ.</p><p><strong>9. Hướng Phát Triển Tương Lai</strong></p><p>Những phát triển trong tương lai có thể bao gồm:</p><p><strong>Tích Hợp Các Thuật Toán Học Máy</strong>: Để cung cấp phân tích dự báo và gợi ý các điều chỉnh nhằm cải thiện hiệu quả cú gôn.</p><p><strong>Mở Rộng sang Các Tình Huống Đa Người</strong>: Nâng cao khả năng ứng dụng trong các môn thể thao tập thể hoặc môi trường tập luyện nhóm.</p><p><strong>Phát Triển Giao Diện Thân Thiện với Người Dùng</strong>: Tạo các ứng dụng hoặc công cụ giúp công nghệ này dễ tiếp cận với huấn luyện viên và vận động viên mà không cần chuyên môn kỹ thuật.</p><p><strong>Phụ Lục</strong></p><p><strong>Phương Pháp Chi Tiết: Phương Pháp Từ Trên Xuống cho Ước Lượng Tư Thế Cú Gôn Sử Dụng RTMPose-X và RTMDet-M</strong></p><p><strong>Tổng Quan</strong></p><p>Phương pháp được mô tả ở đây nêu ra các bước chi tiết liên quan đến phương pháp từ trên xuống cho ước lượng tư thế theo thời gian thực của một cú gôn, tận dụng sức mạnh của RTMPose để định vị điểm chính và RTMDet để phát hiện đối tượng. Quá trình được chia thành nhiều giai đoạn: phát hiện, định vị điểm chính và xử lý hậu kỳ, mỗi giai đoạn đều góp phần vào việc ước lượng chính xác và hiệu quả các khớp cơ thể trong cú gôn để phân tích sinh học.</p><p>&ndash;Chèn hình ảnh&ndash;</p><p><strong>1. Giai Đoạn Phát Hiện: Định Vị Theo Thời Gian Thực với RTMDet-M</strong></p><p>Giai đoạn đầu tiên của phương pháp từ trên xuống liên quan đến việc phát hiện golfer trong mỗi khung hình của video. Trong các tình huống thể thao, đặc biệt là gôn, cảnh thường bao gồm một người chơi duy nhất, đơn giản hóa nhiệm vụ phát hiện so với các cảnh đông đúc.</p><p><strong>1.1 Kiến Trúc Mô Hình</strong></p><p>RTMDet-M được sử dụng làm bộ phát hiện đối tượng trong pipeline. Nó sử dụng một mạng nơ-ron tích chập (CNN) backbone, cụ thể là backbone CSPNeXt, được thiết kế để tối ưu hóa hiệu suất phát hiện đối tượng theo thời gian thực trong khi duy trì sự cân bằng giữa tốc độ và độ chính xác. Các khía cạnh chính của kiến trúc bao gồm:</p><p><strong>Các phép tích chập theo chiều sâu kernel lớn</strong>: Chúng được sử dụng trong các lớp backbone và neck, tăng trường tiếp nhận trong khi duy trì chi phí tính toán thấp.</p><p><strong>Mạng kim tự tháp đặc trưng (FPN)</strong>: Một kỹ thuật trích xuất đặc trưng đa tỷ lệ cho phép phát hiện các đối tượng ở các tỷ lệ khác nhau, đảm bảo rằng golfer có thể được phát hiện bất kể khoảng cách của họ từ máy ảnh.</p><p><strong>1.2 Gán Nhãn Động</strong></p><p>RTMDet-M tận dụng chiến lược gán nhãn động cải thiện độ chính xác phát hiện bằng cách gán nhãn mềm cho các đối tượng dựa trên sự kết hợp của lỗi phân loại và định vị. Gán nhãn được điều chỉnh bởi thuật toán SimOTA, động lực chọn các mẫu dương dựa trên khả năng khớp của chúng với đối tượng giá trị thực. Phương pháp này đảm bảo phát hiện mạnh mẽ trong các điều kiện ánh sáng và môi trường khác nhau thường gặp phải trong các cảnh gôn ngoài trời.</p><p><strong>1.3 Dự Đoán Hộp Giới Hạn</strong></p><p>Bộ phát hiện xuất ra các Hộp Giới Hạn bao quanh Golfer trong mỗi Khung Hình. Những Hộp Giới Hạn này cung cấp các ràng buộc không gian trong đó mô hình ước lượng Tư Thế sẽ hoạt động, giảm tải tính toán cho giai đoạn ước lượng Tư Thế tiếp theo bằng cách chỉ tập trung vào các khu vực liên quan của Khung Hình. Trong bối cảnh này, RTMDet-M tạo ra các Hộp Giới Hạn theo thời gian thực với tốc độ trên 300 FPS trên phần cứng hiệu suất cao, đảm bảo rằng nó có thể theo kịp động lực nhanh chóng của một Cú Gôn.</p><p><strong>1.4 Loại Bỏ Những Phát Hiện Không Cực Đại của Người (NMS)</strong></p><p>Trong các bối cảnh đa người (mặc dù hiếm trong phân tích Cú Gôn), RTMDet-M kết hợp một thuật toán Loại Bỏ Những Phát Hiện Không Cực Đại (NMS) của Tư Thế loại bỏ các phát hiện Điểm Chính dư thừa, đảm bảo rằng chỉ những phát hiện có độ tin cậy cao nhất được giữ lại cho mọi người. Điều này rất quan trọng trong các trường hợp có thể phát hiện các Hộp Giới Hạn chồng lấp trong các cảnh đông người hoặc các chuỗi video.</p><p><strong>1.5 Dataset Dữ Liệu Huấn Luyện và Hiệu Suất</strong></p><p>RTMDet-M được huấn luyện trên một tác vụ phân loại nhị phân trên các đối tượng người trong Dataset Object356.</p><p><strong>2. Giai đoạn Ước Lượng Tư Thế: Định Vị Điểm Chính RTMPose-X</strong></p><p>Sau khi Hộp Giới Hạn của Golfer đã được thiết lập, giai đoạn tiếp theo liên quan đến việc ước lượng vị trí chính xác của các khớp cơ thể chính trong khu vực này. RTMPose-X, một mô hình ước lượng Tư Thế có hiệu suất cao, được sử dụng cho mục đích này.</p><p><strong>2.1 Định Vị Điểm Chính Dựa Trên SimCC</strong></p><p>RTMPose-X sử dụng thuật toán SimCC (Simple Coordinate Classification), xử lý định vị Điểm Chính như một bài toán phân loại. Trái ngược với các phương pháp dựa trên Bản Đồ Nhiệt truyền thống, SimCC chia các Tọa độ x và y của mỗi Điểm Chính thành các thùng và phân loại thùng chính xác nơi mỗi Điểm Chính nằm. Cách tiếp cận này giảm đáng kể độ phức tạp tính toán và cải thiện tốc độ suy luận trong khi duy trì độ chính xác cao cho các tác vụ ước lượng Tư Thế của con người.</p><p><strong>2.2 Xương Sống CSPNeXt</strong></p><p>Tương tự như RTMDet-M, RTMPose-X cũng sử dụng xương sống CSPNeXt, được điều chỉnh cho các tác vụ dự đoán dày đặc như ước lượng Tư Thế. Xương sống CSPNeXt có lợi trong kịch bản này vì những lý do sau:</p><p><strong>Kiến trúc nhẹ</strong>: Kiến trúc mô hình được thiết kế để giảm thiểu số lượng tham số trong khi tối đa hóa thông lượng, làm cho nó lý tưởng cho các ứng dụng thời gian thực.</p><p><strong>Trích xuất đặc trưng hiệu quả</strong>: Các lớp trích xuất đặc trưng của CSPNeXt được tối ưu hóa để xử lý hình ảnh độ phân giải cao, rất quan trọng để phát hiện các chi tiết nhỏ trong các bộ phận cơ thể chuyển động nhanh trong một Cú Gôn, chẳng hạn như cổ tay, Khuỷu tay và Đầu Gối.</p><p><strong>2.3 Biểu Diễn Điểm Chính</strong></p><p>RTMPose-X xuất ra các vị trí Điểm Chính cho tất cả các bộ phận cơ thể liên quan, bao gồm:</p><p><strong>Các khớp nửa thân trên</strong>: Vai, Khuỷu tay, Cổ tay và Cổ</p><p><strong>Các khớp phần thân dưới</strong>: Hông, Đầu Gối và Mắt cá chân</p><p><strong>Các khớp bổ sung</strong>: Đầu, Cột sống và các Điểm Chính khác liên quan đến phân tích Cú Gôn</p><p>Độ phân giải 384x288 cho các hình ảnh đầu vào đảm bảo rằng ngay cả những chuyển động tinh tế trong các khớp cũng có thể được ghi lại chính xác, trong khi vẫn duy trì khả năng của hệ thống hoạt động theo thời gian thực.</p><p><strong>2.4 Xử lý Trước RTMPose: Xử Lý Dữ Liệu Không Thiên Vị (UDP)</strong></p><p>Trước khi hình ảnh được cắt nhỏ được đưa vào mô hình RTMpose, một bước Xử Lý Dữ Liệu Không Thiên Vị (UDP) được thực hiện. UDP giải quyết các thiên vị quan trọng trong xử lý dữ liệu của RTMpose trong quá trình huấn luyện và thử nghiệm, đặc biệt là trong các phép biến đổi Hệ tọa độ và định dạng Điểm Chính. Trong các quy trình ước lượng Tư Thế của con người thông thường, các hoạt động tiêu chuẩn như lật và thay đổi kích thước thường không căn chỉnh các đầu ra, đặc biệt là do các phép biến đổi dựa trên pixel, dẫn đến mất độ chính xác và không căn chỉnh các hình ảnh bị lật. UDP sửa chữa những điều này bằng cách thiết lập Biến đổi hệ tọa độ không thiên vị, bảo tồn Căn chỉnh ngữ nghĩa trên các không gian Tọa độ khác nhau trong các hoạt động thiết yếu (cắt nhỏ, thay đổi kích thước, xoay, lật). UDP cũng giới thiệu Biến đổi định dạng Điểm Chính không thiên vị bằng cách mã hóa Điểm Chính thành các Bản Đồ Nhiệt mà không giới thiệu thiên vị vị trí, được tinh chỉnh thêm thông qua một quy trình giải mã nhận biết phân bố Gaussian. Cách tiếp cận xử lý dữ liệu này cải thiện một cách có hệ thống hiệu suất mô hình, như được thể hiện trong các thử nghiệm rộng rãi trên các Dataset COCO và CrowdPose, nơi nó đạt được độ chính xác được cải thiện và giảm độ trễ suy luận trên các mô hình từ trên xuống và từ dưới lên [Ref].</p><p><strong>3. Xử Lý Hậu Kỳ và Tinh Chỉnh Tư Thế</strong></p><p>Sau khi các Điểm Chính được dự đoán, một số bước Xử Lý Hậu Kỳ được áp dụng để tinh chỉnh ước lượng Tư Thế và đảm bảo tính ổn định trên các Khung Hình.</p><p><strong>3.1 Làm Mịn Tư Thế</strong></p><p>Các Cú Gôn liên quan đến chuyển động nhanh chóng, có thể giới thiệu nhiễu hoặc biến động trong các vị trí Điểm Chính được ước lượng trên các Khung Hình. Để giảm thiểu điều này, một <strong>Bộ Lọc One-Euro</strong> được áp dụng để làm mịn các quỹ đạo Điểm Chính theo thời gian, đảm bảo rằng các biến động nhỏ, không phải vật lý trong các dự đoán Điểm Chính bị loại bỏ. Bộ Lọc One-Euro hoạt động bằng cách điều chỉnh động tính băng thông của Bộ Lọc dựa trên tốc độ chuyển động, lý tưởng cho các kịch bản như Cú Gôn, nơi chuyển động thay đổi đáng kể về tốc độ trên các giai đoạn khác nhau (Lật Gậy, Swing Xuống và Follow-Through).</p><p><strong>3.2 Cơ Chế Bỏ Qua Khung Hình</strong></p><p>Để tối ưu hóa thêm, một <strong>cơ chế bỏ qua Khung Hình</strong> được triển khai, trong đó phát hiện được thực hiện chỉ trên các Khung Hình chính, và ước lượng Tư Thế được nội suy cho các Khung Hình trung gian. Điều này làm giảm đáng kể tải tính toán mà không hy sinh độ chính xác trong các kịch bản với chuyển động hạn chế giữa các Khung Hình, chẳng hạn như phân tích chuyển động chậm của một Cú Gôn.</p><p><strong>4. Theo Dõi Thời Gian và Tính Nhất Quán Chuỗi</strong></p><p>Với các Cú Gôn vốn dĩ là tuần tự, duy trì tính nhất quán thời gian trong ước lượng Tư Thế là rất quan trọng. RTMPose-X giải quyết điều này thông qua các kỹ thuật theo dõi thời gian, đảm bảo rằng các dự đoán Điểm Chính nhất quán trên các Khung Hình liên tiếp. Điều này liên quan đến việc theo dõi các vị trí Điểm Chính theo thời gian và đảm bảo rằng các quỹ đạo của chúng tuân theo các mẫu chuyển động thực tế dựa trên các ràng buộc sinh học.</p><p><strong>4.1 Phân Tích Vận Tốc và Gia Tốc Điểm Chính</strong></p><p>Ngoài việc theo dõi các vị trí Điểm Chính, RTMPose-X cũng ước lượng Vận tốc và Gia tốc của mỗi Điểm Chính. Thông tin này rất quan trọng để phân tích động lực của một Cú Gôn, cung cấp cái nhìn sâu sắc về các Chỉ Số hiệu suất chính như:</p><p><strong>Tốc độ swing</strong>: Được tính toán dựa trên Vận tốc cổ tay trong Swing Xuống.</p><p><strong>Xoay Hông</strong>: Được phân tích thông qua Vận Tốc Góc của các khớp Hông.</p><p><strong>Đường dẫn Gậy và tốc độ đầu</strong>: Được suy ra gián tiếp từ các quỹ đạo Cổ tay và Khuỷu tay.</p><p>Những Chỉ Số này có thể được so sánh với các tiêu chuẩn chuyên nghiệp để đưa ra phản hồi về Cơ Học Cú Gôn của một vận động viên.</p><p><strong>5. Suy Luận và Hiệu Suất Thời Gian Thực</strong></p><p>Toàn bộ quy trình từ trên xuống được tối ưu hóa cho hiệu suất thời gian thực, cho phép ước lượng Tư Thế với tốc độ trên 90 FPS trên các GPU hiện đại. Việc sử dụng các kiến trúc mô hình cực kỳ hiệu quả (CSPNeXt) và các kỹ thuật suy luận nhanh (SimCC) đảm bảo rằng hệ thống có thể xử lý đầu vào video với tốc độ Khung hình cao, làm cho nó phù hợp cho phản hồi thời gian thực trong các phiên huấn luyện.</p><p><strong>6. Đánh Giá và Xác Thực</strong></p><p>Các mô hình RTMPose-X và RTMDet-M được đánh giá trên các Dataset tiêu chuẩn như COCO và MPII, cho thấy hiệu suất mạnh mẽ với độ chính xác trung bình (AP) 75,8% trên Dataset COCO cho các Điểm Chính cơ thể. Những kết quả này được xác thực dựa trên các chú thích giá trị cơ bản trong các Dataset Cú Gôn, đảm bảo sự mạnh mẽ của mô hình trong việc ghi lại các chuyển động thể thao động.</p><p><strong>6.1 Các Chỉ Số Hiệu Suất</strong></p><p><strong>Mean Squared Error (MSE)</strong>: Được sử dụng để định lượng độ chính xác của các dự đoán Điểm Chính so với các chú thích giá trị tham chiếu.</p><p><strong>Average Precision (AP)</strong>: Đánh giá hiệu suất tổng thể của mô hình Ước Lượng Tư Thế.</p><p><strong>Thời Gian Xử Lý Khung Hình</strong>: Được chuẩn hóa để đảm bảo hệ thống đáp ứng các yêu cầu thời gian thực (&lt;10 ms trên mỗi Khung hình).</p><p><strong>7. Kết Luận</strong></p><p>Phương pháp từ trên xuống sử dụng RTMPose-X và RTMDet-M cung cấp một phương pháp hiệu quả và chính xác để Ước Lượng Tư Thế thời gian thực trong phân tích thể thao, đặc biệt là phân tích Cú Gôn Golf. Với phát hiện Điểm Chính mạnh mẽ, theo dõi thời gian và suy luận thời gian thực, phương pháp này cung cấp những hiểu biết sâu sắc về Cơ học về động lực học Cú Gôn Golf, hỗ trợ cải thiện hiệu suất và phòng chống chấn thương.</p><p>Tài Liệu Tham Khảo</p><p>[1] RTMpose <a href=https://arxiv.org/pdf/2303.07399 rel=external>https://arxiv.org/pdf/2303.07399</a></p><p>[2] CSPNeXt <a href=https://www.sciencedirect.com/science/article/pii/S0952197624000447 rel=external>https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p><p>[3] SIMCC <a href=https://arxiv.org/abs/2107.03332 rel=external>https://arxiv.org/abs/2107.03332</a></p><p>[4] RTMdet <a href=https://arxiv.org/pdf/2212.07784 rel=external>https://arxiv.org/pdf/2212.07784</a></p><p>[5] CSPDarkNet</p><p>[6] Halpe26</p><p>[] Dataset thách thức AI:</p><p>[] Dataset MS Coco:</p><p>[7] Dataset Crowdpose: <a href=https://arxiv.org/pdf/1812.00324 rel=external>https://arxiv.org/pdf/1812.00324</a></p><p>[] Dataset MPII:</p><p>[] Dataset sub-JHMBD:</p><p>[] Dataset Halpe:</p><p>[] Dataset PoseTrack18:</p><p>Cơ sở dữ liệu Object365: <a href=https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf rel=external>https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p><p><em>Cập nhật lần cuối: 2025-03-05</em> | <a href=/sc-support/vi/software-features/markerless-motion-capture/index.html>Xem trên trang hỗ trợ chính thức</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/vi/index.html><span class="logo-title default-animation">Hỗ trợ Swing Catalyst</span>
+</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Tìm kiếm (CTRL+ALT+f)"></i>
+<label class=a11y-only for=R-search-by>Tìm kiếm</label>
+<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder="Tìm kiếm...">
+<button class=search-clear type=button data-search-clear title="Xóa tìm kiếm"><i class="fas fa-fw fa-times" title="Xóa tìm kiếm"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/vi/getting-started/index.html><a class="padding default-animation" href=/sc-support/vi/getting-started/index.html>Bắt Đầu Sử Dụng</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/cameras-video/index.html><a class="padding default-animation" href=/sc-support/vi/cameras-video/index.html>Cameras & Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/hardware/index.html><a class="padding default-animation" href=/sc-support/vi/hardware/index.html>Phần cứng</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/vi/software-features/index.html><a class="padding default-animation" href=/sc-support/vi/software-features/index.html>Phần mềm & Tính năng</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/vi/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/vi/software-features/multiple-forces-graph/index.html>Biểu Đồ Nhiều Lực</a></li><li data-nav-id=/sc-support/vi/software-features/key-metrics/index.html><a class=padding href=/sc-support/vi/software-features/key-metrics/index.html>Các Chỉ Số Chính</a></li><li data-nav-id=/sc-support/vi/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/vi/software-features/force-graph-phases/index.html>Các Giai đoạn trong biểu đồ lực</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-disclosures/index.html>Các Thông Báo Quan Trọng Dành Cho Người Dùng Công Cụ Chụp Chuyển Động Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-install/index.html>Cách cài đặt các thành phần Chụp Chuyển Động của Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/feedback-screen/index.html><a class=padding href=/sc-support/vi/software-features/feedback-screen/index.html>Cách cài đặt Màn Hình Phản Hồi</a></li><li data-nav-id=/sc-support/vi/software-features/multiple-displays/index.html><a class=padding href=/sc-support/vi/software-features/multiple-displays/index.html>Cách cài đặt nhiều màn hình với Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/vi/software-features/record-a-lesson/index.html>Cách ghi lại một Bài Học</a></li><li data-nav-id=/sc-support/vi/software-features/import-from-v1/index.html><a class=padding href=/sc-support/vi/software-features/import-from-v1/index.html>Cách nhập video từ V1</a></li><li data-nav-id=/sc-support/vi/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/vi/software-features/pressure-distribution-overlay/index.html>Cách sử dụng chức năng Phủ Xen Phân phối Áp suất</a></li><li data-nav-id=/sc-support/vi/software-features/remote-support/index.html><a class=padding href=/sc-support/vi/software-features/remote-support/index.html>Cách Sử Dụng Hỗ Trợ Từ Xa</a></li><li data-nav-id=/sc-support/vi/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/vi/software-features/microphone-trigger/index.html>Cách sử dụng micrô làm Kích Hoạt ghi lại</a></li><li data-nav-id=/sc-support/vi/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/vi/software-features/swing-catalyst-online/index.html>Cách sử dụng Swing Catalyst Online</a></li><li data-nav-id=/sc-support/vi/software-features/explorer/index.html><a class=padding href=/sc-support/vi/software-features/explorer/index.html>Cách sử dụng Trình Duyệt</a></li><li data-nav-id=/sc-support/vi/software-features/force-vectors/index.html><a class=padding href=/sc-support/vi/software-features/force-vectors/index.html>Cách sử dụng Véc tơ Lực</a></li><li data-nav-id=/sc-support/vi/software-features/change-recording-user/index.html><a class=padding href=/sc-support/vi/software-features/change-recording-user/index.html>Cách thay đổi người dùng trên một bản ghi hiện có</a></li><li data-nav-id=/sc-support/vi/software-features/email-sharing/index.html><a class=padding href=/sc-support/vi/software-features/email-sharing/index.html>Cách thiết lập chia sẻ qua email trong Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/export-raw-data/index.html><a class=padding href=/sc-support/vi/software-features/export-raw-data/index.html>Cách xuất dữ liệu thô</a></li><li data-nav-id=/sc-support/vi/software-features/export-contacts/index.html><a class=padding href=/sc-support/vi/software-features/export-contacts/index.html>Cách xuất thông tin liên hệ của Học Viên</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-settings/index.html>Cài Đặt Chụp Chuyển Động trong Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/vi/software-features/ios-app-sharing/index.html>Chia sẻ video đã quay với ứng dụng Swing Catalyst cho iOS</a></li><li data-nav-id=/sc-support/vi/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/vi/software-features/body-weight-measurement/index.html>Chức năng đo Cân Nặng Cơ Thể mới</a></li><li data-nav-id=/sc-support/vi/software-features/bookmarks/index.html><a class=padding href=/sc-support/vi/software-features/bookmarks/index.html>Dấu Trang là gì?</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-guide/index.html>Hướng Dẫn Sử Dụng Swing Catalyst Motion Capture cho Người Dùng</a></li><li class=active data-nav-id=/sc-support/vi/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/vi/software-features/markerless-motion-capture/index.html>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</a></li><li data-nav-id=/sc-support/vi/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/vi/software-features/raw-data-export-guide/index.html>Những gì được bao gồm trong xuất dữ liệu thô</a></li><li data-nav-id=/sc-support/vi/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/vi/software-features/frontal-plane-torque/index.html>Phân Tích Mô-Men Xoắn Mặt Phẳng Trán - Hướng Dẫn Người Dùng</a></li><li data-nav-id=/sc-support/vi/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/vi/software-features/keyboard-shortcuts/index.html>Phím tắt và Phím nóng</a></li><li data-nav-id=/sc-support/vi/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/vi/software-features/pressure-stance-settings/index.html>Sử dụng các cài đặt Áp lực và Tư Thế Đứng mới</a></li><li data-nav-id=/sc-support/vi/software-features/graph-library/index.html><a class=padding href=/sc-support/vi/software-features/graph-library/index.html>Sử dụng thư viện biểu đồ</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-faq/index.html>Swing Catalyst Motion Capture FAQ</a></li><li data-nav-id=/sc-support/vi/software-features/export-recordings/index.html><a class=padding href=/sc-support/vi/software-features/export-recordings/index.html>Xuất Bản Ghi</a></li></ul></li><li data-nav-id=/sc-support/vi/account-setup/index.html><a class="padding default-animation" href=/sc-support/vi/account-setup/index.html>Tài khoản & Chuẩn bị</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/reference/index.html><a class="padding default-animation" href=/sc-support/vi/reference/index.html>Tham khảo</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Ngôn ngữ</label>
+<select id=R-select-language><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/markerless-motion-capture/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/markerless-motion-capture/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/markerless-motion-capture/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/markerless-motion-capture/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/markerless-motion-capture/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/markerless-motion-capture/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/markerless-motion-capture/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/markerless-motion-capture/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/markerless-motion-capture/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/markerless-motion-capture/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/markerless-motion-capture/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/markerless-motion-capture/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/markerless-motion-capture/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/markerless-motion-capture/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/markerless-motion-capture/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/markerless-motion-capture/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/markerless-motion-capture/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/markerless-motion-capture/index.html lang=vi selected data-selected>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/markerless-motion-capture/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/markerless-motion-capture/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/markerless-motion-capture/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/markerless-motion-capture/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/markerless-motion-capture/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/markerless-motion-capture/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/markerless-motion-capture/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/markerless-motion-capture/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/markerless-motion-capture/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/markerless-motion-capture/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/markerless-motion-capture/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/markerless-motion-capture/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/markerless-motion-capture/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/markerless-motion-capture/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/markerless-motion-capture/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/markerless-motion-capture/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Đề tài</label>
+<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-sc-dark value=sc-dark>Sc Dark</option><option id=R-select-variant-sc-light value=sc-light>Sc Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772565166 defer></script><script src=/sc-support/js/theme.min.js?1772565166 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>

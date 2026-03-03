@@ -1,616 +1,105 @@
-<!DOCTYPE html>
-<html id="R-html" lang="ja" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.145.0">
-    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
-    <meta name="description" content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要">
-    <meta name="author" content="">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート">
-    <meta name="twitter:description" content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要">
-    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html">
-    <meta property="og:site_name" content="Swing Catalyst サポート">
-    <meta property="og:title" content="RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート">
-    <meta property="og:description" content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要">
-    <meta property="og:locale" content="ja">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="ソフトウェアと機能">
-    <meta property="article:tag" content="Troubleshooting">
-    <meta property="article:tag" content="Database">
-    <meta property="article:tag" content="Motion-Capture">
-    <meta itemprop="name" content="RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート">
-    <meta itemprop="description" content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要">
-    <meta itemprop="wordCount" content="355">
-    <meta itemprop="keywords" content="Troubleshooting,Database,Motion-Capture">
-    <title>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート</title>
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="es">
-    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="de">
-    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fr">
-    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="it">
-    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pt">
-    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ru">
-    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ja">
-    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ko">
-    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh">
-    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hi">
-    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ar">
-    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh-Hant">
-    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="th">
-    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sv">
-    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nb">
-    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="da">
-    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="is">
-    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="id">
-    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="vi">
-    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nl">
-    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="tr">
-    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pl">
-    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fi">
-    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="uk">
-    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ro">
-    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="el">
-    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="cs">
-    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hu">
-    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="bg">
-    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hr">
-    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sr">
-    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sk">
-    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lt">
-    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lv">
-    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772560865" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772560865" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772560865" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772560865" defer></script>
-    <script src="/sc-support/js/search.min.js?1772560865" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ja.js?1772560865";
-    </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772560865" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772560865" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772560865" defer></script>
-    <script src="/sc-support/js/lunr/tinyseg.js?1772560865" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ja.min.js?1772560865" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.contentLangs=['ja'];
-    </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560865" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560865" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772560865" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772560865" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772560865" rel="stylesheet" id="R-format-style">
-    <script>
-      window.relearn = window.relearn || {};
-      // configuration
-      window.relearn.min = `.min`;
-      window.relearn.path='\/software-features\/markerless-motion-capture\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
-      window.relearn.disableInlineCopyToClipboard=false;
-      window.relearn.enableBlockCodeWrap=true;
-      // translations
-      window.T_Copy_to_clipboard = `テキストをクリップボードにコピー`;
-      window.T_Copied_to_clipboard = `テキストをクリップボードにコピーしました!`;
-      window.T_Link_copied_to_clipboard = `リンクをクリップボードにコピーしました!`;
-      window.T_Reset_view = `ビューのリセット`;
-      window.T_View_reset = `リセットを見る`;
-      window.T_No_results_found = `"{0}" の結果が見つかりません`;
-      window.T_N_results_found = `"{0}" で {1} 件の結果が見つかりました`;
-      window.T_Browser_unsupported_feature = `このブラウザはこの機能をサポートしていません`;
-      // variant stuff
-      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
-      window.relearn.customvariantprefix = "my-custom-";
-      window.relearn.changeVariant = function(variant) {
-        var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        document.documentElement.dataset.rThemeVariant = variant;
-        if (oldVariant != variant) {
-          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
-          window.relearn.markVariant();
-        }
-      }
-      window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
-      }
-      window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
-        if( !variant ||
-            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
-            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
-          variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        }
-        document.documentElement.dataset.rThemeVariant = variant;
-      }
-      window.relearn.initVariant();
-      window.relearn.markVariant();
-    </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-<style>
-  .sc-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
-    z-index: 9999;
-    transition: width 0.1s linear;
-    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
-    pointer-events: none;
-  }
-</style>
-<div class="sc-progress" id="sc-progress"></div>
-
-  </head>
-  <body class="mobile-support html" data-origin="/sc-support/ja/software-features/markerless-motion-capture/index.html">
-    <div id="R-body" class="default-animation">
-      <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
-        <div class="topbar-wrapper default-animation">
-          <div class="topbar-sidebar-divider default-animation"></div>
-          <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="メニュー (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
-            </div>
-            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目次 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ja/index.html"><span itemprop="name">Swing Catalyst サポート</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ja/software-features/index.html"><span itemprop="name">ソフトウェアと機能</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</span><meta itemprop="position" content="3"></li>
-          </ol>
-          <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/ja/software-features/multiple-forces-graph/index.html" title="Multiple Forces Graph (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/ja/software-features/ios-app-sharing/index.html" title="Swing Catalyst iOSアプリで録画した動画を共有する (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="更に"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-                  <div class="topbar-area topbar-area-more" data-area="more">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
-        <div class="flex-block-wrapper">
-<article class="default">
-  <header class="headline">
-<div class="R-taxonomy taxonomy-tags cstyle tags" title="タグ" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <i class="fa-fw fas fa-layer-group"></i>
-  <ul>
-    <li><a class="term-link" href="/sc-support/ja/tags/database/index.html">Database</a></li>
-    <li><a class="term-link" href="/sc-support/ja/tags/motion-capture/index.html">Motion-Capture</a></li>
-    <li><a class="term-link" href="/sc-support/ja/tags/troubleshooting/index.html">Troubleshooting</a></li>
-  </ul>
-</div>
-  </header>
-<h1 id="rtmposeとrtmdetを用いたゴルフ野球スイングのマーカーレスモーションキャプチャの向上トップダウンアプローチ">RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</h1>
-
-<p><strong>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</strong></p>
-<p><strong>概要</strong></p>
-<p>本ホワイトペーパーは、ゴルフおよび野球スイングの正確で効率的な姿勢推定のためのRTMPoseとRTMDetの応用について記述しています。リアルタイムパフォーマンスに最適化された最先端技術を活用して、これらのモデルはゴルフおよび野球スイング中の身体の動きの詳細な追跡を実現します。これはスポーツ分析でのパフォーマンス向上に不可欠な機能です。トップダウンアプローチの利点を強調します。このアプローチでは、既製のRTMDet検出器が各フレーム内のゴルファーと野球選手を特定し、RTMPoseが主要な身体関節の位置を推定します。</p>
-<p><strong>1. はじめに</strong></p>
-<p>姿勢推定はスポーツパフォーマンス分析の中核となり、アスリートの動きの正確な追跡を可能にしています。ゴルフと野球では、選手のスイングのバイオメカニクスデータをキャプチャすることで、スイングダイナミクスについての貴重な洞察が得られ、専門家とアマチュアの両方がテクニックを磨くのに役立ちます。従来の2D姿勢推定方法は、特にリアルタイムシナリオでは遅延と精度の課題に直面することがあります。本論文は、MMPose frameworkを用いたRTMPoseとRTMDetを使用し、ゴルフおよび野球スイング中の詳細な姿勢推定の解決策を提案します。</p>
-<p><strong>2. 背景</strong></p>
-<p>ゴルフおよび野球スイングの複雑性には、身体の動きの正確な測定が必要です。既存の姿勢推定方法は、リアルタイムパフォーマンスに必要な精度を提供できない場合があります。深層学習とコンピュータビジョンの進展により、RTMPoseおよびRTMDetなどのモデルが導入され、精度と効率が向上しています。</p>
-<p><strong>3. RTMdetおよびRTMposeを用いたトップダウンアプローチ</strong></p>
-<p>&ndash;図を挿入&ndash;</p>
-<p><strong>3. RTMPose：高性能な姿勢推定モデル</strong></p>
-<p>RTMPose [1] は高性能でリアルタイムな姿勢推定用に設計されており、制限されたハードウェア上で効率的に実行するよう最適化されています。</p>
-<p><strong>主な特徴：</strong></p>
-<p><strong>モデルアーキテクチャと効率性</strong>：RTMposeはバックボーンとしてCSPNeXtを使用しており [1, 2]、速度と精度のバランスが取れています。CSPNeXtは姿勢推定と物体検出のような密度予測タスクに最適化されており、高い解像度と精度を提供しながら計算効率を維持しています。</p>
-<p><strong>キーポイント予測</strong>：SimCCベースのアルゴリズムを採用しており [1, 3]、キーポイントの水平および鉛直位置をそれぞれ分類タスクとして扱います。このコンパクトな表現は計算負荷を削減し、様々なデバイスへのデプロイメントに適しています。</p>
-<p><strong>4. RTMDet：検出バックボーン</strong></p>
-<p>RTMDet [4] はトップダウンパイプラインでRTMPoseに先行する検出器として機能し、各フレーム内でゴルファーまたは野球選手の位置を特定します。</p>
-<p><strong>主な特徴：</strong></p>
-<p><strong>モデルアーキテクチャと効率性</strong>：RTMDetは多くのYOLOモデルよりもトレーニング可能で正確なCSPDarkNetの改良版を使用しています。改良版は大規模カーネルの深度方向畳み込みを活用して、複雑性と速度のバランスを取り、GPUとCPUの両方で効率的です。スポーツパフォーマンストラッキングのようなリアルタイムアプリケーションに理想的です。</p>
-<p><strong>多用途性</strong>：インスタンスセグメンテーションや回転物体検出を含む様々な物体検出タスクを処理します。動的なシーンでも選手の正確な位置特定を保証します。</p>
-<p><strong>5. ゴルフおよび野球スイング分析においてRTMDetおよびRTMPoseを使用する利点</strong></p>
-<p><strong>5.1 混雑していないシーンにおける高い精度</strong></p>
-<p>フレーム内に少数の個人しかいない典型的なゴルフ/野球の設定では、RTMDetはゴルファー/野球選手を特定し、RTMPoseが各検出された人物を高精度で処理できます。これにより、フレーム内のすべての人物に対してすべてのキーポイントを同時に処理するボトムアップ方法の複雑さを回避します。トップダウンアプローチは、姿勢推定を実行する前に、正しい人物（つまり、ゴルファーまたは野球選手）を特定するRTMdetの後処理アルゴリズムを含めることもできます。さらに、RTMPoseは拡張されたイメージマテリアルに含まれるものに事前に学習されています。</p>
-<p><strong>5.2 効率的な計算とリアルタイムパフォーマンス</strong></p>
-<p>RTMdetおよびRTMposeのような軽量モデルを使用することで、低レイテンシを維持し、コンシューマーグレードのハードウェアでのリアルタイムスイング分析を実現します。これは、コーチングやトレーニングセッション中に即座のライブフィードバックを提供する場合に特に有用です。Swing Catalystマーカーレスモーションキャプチャシステムは、ゴルファーと野球選手にライブモーションキャプチャフィードバックを提供する数少ないスタジオシステムの一つです。</p>
-<p><strong>5.3 詳細なキーポイント分析</strong></p>
-<p>RTMPoseはゴルフおよび野球スイングキネマティクス分析に不可欠な26個のボディキーポイント [6] のセットアップを検出し、以下の図1に表示されています。Halはより標準的な17個のマーカーを持つCocoセットアップと比較して、足と頭部に追加のマーカーを含む拡張セットアップです。</p>
-<p>&ndash;図を挿入&ndash;</p>
-<p><strong>6. ゴルフおよび野球スイングマーカーレスモーションキャプチャの方法論</strong></p>
-<p><strong>6.1 検出フェーズ：RTMDet</strong></p>
-<p>ゴルファーまたは野球選手のビデオフレームに適用すると、RTMDetは選手周辺のバウンディングボックスを生成し、RTMPoseに渡されます。これにより、姿勢推定を関連する画像領域に焦点を当て、計算負荷を削減します。</p>
-<p>&ndash;画像を挿入&ndash;</p>
-<p><strong>6.2 姿勢推定フェーズ：RTMPose</strong></p>
-<p>RTMPoseはバウンディングボックス内のキーポイント位置を推定します。ゴルフおよび野球スイング分析の重要な関節には、手首、肘、肩関節、股関節、および膝が含まれます。これらのキーポイントは、スイングのフェーズ：バックスウィング、ダウンスウィング、およびフォロースルー中の身体の角度と位置を評価します。</p>
-<p>&ndash;画像を挿入&ndash;</p>
-<p><strong>6.3 パフォーマンスメトリクス</strong></p>
-<p>RTMPoseの一般的なパフォーマンスは、MS COCOなどの姿勢推定ベンチマークのAverage Precision（AP）などのメトリクスを使用して測定されます。以下は、一般的に使用されるCocoベンチマークで最高ランクのモデルのパフォーマンスです。MS COCO valデータセットで、RTMPose-Xは最高パフォーマンスモデルであり、リアルタイムフィードバックを提供でき、コンシューマーグレードのGPU上で75.8%のAPを達成し、フレームレートが??FPSを超えており、高速スポーツ分析に適しています。</p>
-<p>ランク
+<!doctype html><html id=R-html lang=ja dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート"><meta name=twitter:description content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html"><meta property="og:site_name" content="Swing Catalyst サポート"><meta property="og:title" content="RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート"><meta property="og:description" content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="ソフトウェアと機能"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Database"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート"><meta itemprop=description content="ゴルフおよび野球スイング分析におけるマーカーレスモーションキャプチャのためのRTMPoseとRTMDetの技術概要"><meta itemprop=wordCount content="355"><meta itemprop=keywords content="Troubleshooting,Database,Motion-Capture"><title>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ :: Swing Catalyst サポート</title>
+<link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html rel=alternate hreflang=et><link href=/sc-support/images/favicon.png?1772565149 rel=icon type=image/png><link href=/sc-support/css/auto-complete/auto-complete.min.css?1772565149 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1772565149 defer></script><script src=/sc-support/js/search-lunr.min.js?1772565149 defer></script><script src=/sc-support/js/search.min.js?1772565149 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.ja.js?1772565149"</script><script src=/sc-support/js/lunr/lunr.min.js?1772565149 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1772565149 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1772565149 defer></script><script src=/sc-support/js/lunr/tinyseg.js?1772565149 defer></script><script src=/sc-support/js/lunr/lunr.ja.min.js?1772565149 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["ja"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565149 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565149 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772565149 rel=stylesheet><link href=/sc-support/css/theme.min.css?1772565149 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1772565149 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/markerless-motion-capture/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`テキストをクリップボードにコピー`,window.T_Copied_to_clipboard=`テキストをクリップボードにコピーしました!`,window.T_Link_copied_to_clipboard=`リンクをクリップボードにコピーしました!`,window.T_Reset_view=`ビューのリセット`,window.T_View_reset=`リセットを見る`,window.T_No_results_found=`"{0}" の結果が見つかりません`,window.T_N_results_found=`"{0}" で {1} 件の結果が見つかりました`,window.T_Browser_unsupported_feature=`このブラウザはこの機能をサポートしていません`,window.relearn.themevariants=["auto","sc-dark","sc-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel=stylesheet><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--INTERNAL-PRIMARY-HOVER-color,#CC4A00),var(--INTERNAL-PRIMARY-color,#FF5C00));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px color-mix(in srgb,var(--INTERNAL-PRIMARY-color,#FF5C00) 60%,transparent);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/ja/software-features/markerless-motion-capture/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="メニュー (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="目次 (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/ja/index.html><span itemprop=name>Swing Catalyst サポート</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/ja/software-features/index.html><span itemprop=name>ソフトウェアと機能</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/ja/software-features/multiple-forces-graph/index.html title="Multiple Forces Graph (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/ja/software-features/ios-app-sharing/index.html title="Swing Catalyst iOSアプリで録画した動画を共有する (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=更に><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=タグ style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/ja/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/ja/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/ja/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=rtmposeとrtmdetを用いたゴルフ野球スイングのマーカーレスモーションキャプチャの向上トップダウンアプローチ>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</h1><p><strong>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</strong></p><p><strong>概要</strong></p><p>本ホワイトペーパーは、ゴルフおよび野球スイングの正確で効率的な姿勢推定のためのRTMPoseとRTMDetの応用について記述しています。リアルタイムパフォーマンスに最適化された最先端技術を活用して、これらのモデルはゴルフおよび野球スイング中の身体の動きの詳細な追跡を実現します。これはスポーツ分析でのパフォーマンス向上に不可欠な機能です。トップダウンアプローチの利点を強調します。このアプローチでは、既製のRTMDet検出器が各フレーム内のゴルファーと野球選手を特定し、RTMPoseが主要な身体関節の位置を推定します。</p><p><strong>1. はじめに</strong></p><p>姿勢推定はスポーツパフォーマンス分析の中核となり、アスリートの動きの正確な追跡を可能にしています。ゴルフと野球では、選手のスイングのバイオメカニクスデータをキャプチャすることで、スイングダイナミクスについての貴重な洞察が得られ、専門家とアマチュアの両方がテクニックを磨くのに役立ちます。従来の2D姿勢推定方法は、特にリアルタイムシナリオでは遅延と精度の課題に直面することがあります。本論文は、MMPose frameworkを用いたRTMPoseとRTMDetを使用し、ゴルフおよび野球スイング中の詳細な姿勢推定の解決策を提案します。</p><p><strong>2. 背景</strong></p><p>ゴルフおよび野球スイングの複雑性には、身体の動きの正確な測定が必要です。既存の姿勢推定方法は、リアルタイムパフォーマンスに必要な精度を提供できない場合があります。深層学習とコンピュータビジョンの進展により、RTMPoseおよびRTMDetなどのモデルが導入され、精度と効率が向上しています。</p><p><strong>3. RTMdetおよびRTMposeを用いたトップダウンアプローチ</strong></p><p>&ndash;図を挿入&ndash;</p><p><strong>3. RTMPose：高性能な姿勢推定モデル</strong></p><p>RTMPose [1] は高性能でリアルタイムな姿勢推定用に設計されており、制限されたハードウェア上で効率的に実行するよう最適化されています。</p><p><strong>主な特徴：</strong></p><p><strong>モデルアーキテクチャと効率性</strong>：RTMposeはバックボーンとしてCSPNeXtを使用しており [1, 2]、速度と精度のバランスが取れています。CSPNeXtは姿勢推定と物体検出のような密度予測タスクに最適化されており、高い解像度と精度を提供しながら計算効率を維持しています。</p><p><strong>キーポイント予測</strong>：SimCCベースのアルゴリズムを採用しており [1, 3]、キーポイントの水平および鉛直位置をそれぞれ分類タスクとして扱います。このコンパクトな表現は計算負荷を削減し、様々なデバイスへのデプロイメントに適しています。</p><p><strong>4. RTMDet：検出バックボーン</strong></p><p>RTMDet [4] はトップダウンパイプラインでRTMPoseに先行する検出器として機能し、各フレーム内でゴルファーまたは野球選手の位置を特定します。</p><p><strong>主な特徴：</strong></p><p><strong>モデルアーキテクチャと効率性</strong>：RTMDetは多くのYOLOモデルよりもトレーニング可能で正確なCSPDarkNetの改良版を使用しています。改良版は大規模カーネルの深度方向畳み込みを活用して、複雑性と速度のバランスを取り、GPUとCPUの両方で効率的です。スポーツパフォーマンストラッキングのようなリアルタイムアプリケーションに理想的です。</p><p><strong>多用途性</strong>：インスタンスセグメンテーションや回転物体検出を含む様々な物体検出タスクを処理します。動的なシーンでも選手の正確な位置特定を保証します。</p><p><strong>5. ゴルフおよび野球スイング分析においてRTMDetおよびRTMPoseを使用する利点</strong></p><p><strong>5.1 混雑していないシーンにおける高い精度</strong></p><p>フレーム内に少数の個人しかいない典型的なゴルフ/野球の設定では、RTMDetはゴルファー/野球選手を特定し、RTMPoseが各検出された人物を高精度で処理できます。これにより、フレーム内のすべての人物に対してすべてのキーポイントを同時に処理するボトムアップ方法の複雑さを回避します。トップダウンアプローチは、姿勢推定を実行する前に、正しい人物（つまり、ゴルファーまたは野球選手）を特定するRTMdetの後処理アルゴリズムを含めることもできます。さらに、RTMPoseは拡張されたイメージマテリアルに含まれるものに事前に学習されています。</p><p><strong>5.2 効率的な計算とリアルタイムパフォーマンス</strong></p><p>RTMdetおよびRTMposeのような軽量モデルを使用することで、低レイテンシを維持し、コンシューマーグレードのハードウェアでのリアルタイムスイング分析を実現します。これは、コーチングやトレーニングセッション中に即座のライブフィードバックを提供する場合に特に有用です。Swing Catalystマーカーレスモーションキャプチャシステムは、ゴルファーと野球選手にライブモーションキャプチャフィードバックを提供する数少ないスタジオシステムの一つです。</p><p><strong>5.3 詳細なキーポイント分析</strong></p><p>RTMPoseはゴルフおよび野球スイングキネマティクス分析に不可欠な26個のボディキーポイント [6] のセットアップを検出し、以下の図1に表示されています。Halはより標準的な17個のマーカーを持つCocoセットアップと比較して、足と頭部に追加のマーカーを含む拡張セットアップです。</p><p>&ndash;図を挿入&ndash;</p><p><strong>6. ゴルフおよび野球スイングマーカーレスモーションキャプチャの方法論</strong></p><p><strong>6.1 検出フェーズ：RTMDet</strong></p><p>ゴルファーまたは野球選手のビデオフレームに適用すると、RTMDetは選手周辺のバウンディングボックスを生成し、RTMPoseに渡されます。これにより、姿勢推定を関連する画像領域に焦点を当て、計算負荷を削減します。</p><p>&ndash;画像を挿入&ndash;</p><p><strong>6.2 姿勢推定フェーズ：RTMPose</strong></p><p>RTMPoseはバウンディングボックス内のキーポイント位置を推定します。ゴルフおよび野球スイング分析の重要な関節には、手首、肘、肩関節、股関節、および膝が含まれます。これらのキーポイントは、スイングのフェーズ：バックスウィング、ダウンスウィング、およびフォロースルー中の身体の角度と位置を評価します。</p><p>&ndash;画像を挿入&ndash;</p><p><strong>6.3 パフォーマンスメトリクス</strong></p><p>RTMPoseの一般的なパフォーマンスは、MS COCOなどの姿勢推定ベンチマークのAverage Precision（AP）などのメトリクスを使用して測定されます。以下は、一般的に使用されるCocoベンチマークで最高ランクのモデルのパフォーマンスです。MS COCO valデータセットで、RTMPose-Xは最高パフォーマンスモデルであり、リアルタイムフィードバックを提供でき、コンシューマーグレードのGPU上で75.8%のAPを達成し、フレームレートが??FPSを超えており、高速スポーツ分析に適しています。</p><p>ランク
 モデル
 解像度
 サイズ/パラメータ（百万）
 AP
-リアルタイム推論</p>
-<p>1
+リアルタイム推論</p><p>1
 Sapiens-2B
 1024x768
 2000
 82.2
-いいえ</p>
-<p>2
+いいえ</p><p>2
 Sapiens-1B
 1024x768
 1000
 82.1
-いいえ</p>
-<p>3
+いいえ</p><p>3
 Sapiens-0.6B
 1024x768
 600
 81.2
-いいえ</p>
-<p>4
+いいえ</p><p>4
 Sapiens-0.3B
 1024x768
 300
 79.6
-No</p>
-<p>5
+No</p><p>5
 VitPose-H
 256x192
 632
 79.4
-No</p>
-<p><strong>6</strong>
+No</p><p><strong>6</strong>
 <strong>RTMPose-X</strong>
 <strong>384x288</strong>
 <strong>49</strong>
 <strong>78.8</strong>
-<strong>Yes</strong></p>
-<p>7
+<strong>Yes</strong></p><p>7
 VitPose-L
 256x192
 307
 78.6
-No</p>
-<p>8
+No</p><p>8
 RTMPose-L
 384x288
 28
 78.3
-Yes</p>
-<p>9
+Yes</p><p>9
 HRFormer
 256x192
 43
 77.2
-No</p>
-<p>10
+No</p><p>10
 HRNet-UDP
 384x288
 64
 77.2
-Yes</p>
-<p>11
+Yes</p><p>11
 VitPose-B
 256x192
 86
 77.0
-Yes</p>
-<p>12
+Yes</p><p>12
 RTMPose-L
 256x198
 28
 76.7
-Yes</p>
-<p>13
+Yes</p><p>13
 RTMPose-M
 384x288
 14
 76.6
-Yes</p>
-<p>14
+Yes</p><p>14
 HRNet
 384x288
 64
 76.3
-Yes</p>
-<p>15
+Yes</p><p>15
 VitPose-S
 256x192
 43
 75.8
-Yes</p>
-<p>16
+Yes</p><p>16
 RTMPose-M
 256x192
 14
 74.9
-Yes</p>
-<p>17
+Yes</p><p>17
 SimpleBaseline
 256x192
 60
 73.5
-Yes</p>
-<p>18
+Yes</p><p>18
 FastPose
 256x192
 79
 73.3
-Yes</p>
-<p><strong>7. ゴルフスイング分析への応用</strong></p>
-<p>RTMPose-XおよびRTMDet-Mフレームワークを適用することで:</p>
-<p><strong>関節の動きをフレームごとに追跡</strong>: スイングの各フェーズを分析するための包括的なデータを提供します。</p>
-<p><strong>リアルタイムフィードバックを提供</strong>: トレーニングセッション中のスイング姿勢とフォームについて、即座にインサイトを得られます。</p>
-<p><strong>理想的なメカニクスとの比較</strong>: 理想的なスイングキネマティクスと比較し、改善すべき領域を特定できます。</p>
-<p><strong>8. 結論</strong></p>
-<p>RTMPose-XおよびRTMDet-Mの統合は、リアルタイムゴルフスイング分析のための強力なソリューションを提供します。高精度、低遅延、多様なハードウェアプラットフォーム対応により、このトップダウンアプローチはスイングメカニクスに関する詳細なインサイトを実現します。アマチュアおよびプロのゴルファーがパフォーマンス向上を支援する大きな可能性を秘めています。</p>
-<p><strong>9. 今後の展開</strong></p>
-<p>将来の開発には以下が含まれる可能性があります:</p>
-<p><strong>機械学習アルゴリズムの統合</strong>: 予測分析を提供し、スイング効率向上のための調整案を提示します。</p>
-<p><strong>複数人シナリオへの拡張</strong>: チームスポーツまたはグループトレーニング環境での適用可能性を高めます。</p>
-<p><strong>ユーザーフレンドリーなインターフェイスの開発</strong>: コーチやアスリートが技術的専門知識なしにアクセスできるアプリケーションやツールを作成します。</p>
-<p><strong>付録</strong></p>
-<p><strong>詳細な方法論: RTMPose-XおよびRTMDet-Mを用いたゴルフスイング姿勢推定のためのトップダウンアプローチ</strong></p>
-<p><strong>概要</strong></p>
-<p>ここで説明する方法論は、RTMPoseのキーポイント定位とRTMDetの物体検出の強みを活用した、ゴルフおよび野球スイングのリアルタイム姿勢推定に対するトップダウンアプローチの詳細なステップを概説しています。このプロセスは検出、キーポイント定位、後処理のいくつかのステージに分かれており、各ステージが生体力学分析のためのゴルフスイングにおける身体関節の正確かつ効率的な推定に貢献します。</p>
-<p>&ndash;図を挿入&ndash;</p>
-<p><strong>1. 検出フェーズ: RTMDet-Mによるリアルタイム定位</strong></p>
-<p>トップダウンアプローチの最初のステージでは、ビデオの各フレーム内でゴルファーを検出します。特にゴルフなどのスポーツシナリオでは、シーン通常は単一のプレイヤーで構成されており、群衆シーンと比較して検出タスクが簡素化されます。</p>
-<p><strong>1.1 モデルアーキテクチャ</strong></p>
-<p>RTMDet-Mはパイプラインの物体検出器として採用されています。リアルタイム物体検出パフォーマンスを最適化するために設計された畳み込みニューラルネットワーク(CNN)バックボーン、特にCSPNeXtバックボーンを使用し、速度と精度のバランスを保ちます。アーキテクチャの主要な側面には以下が含まれます:</p>
-<p><strong>大カーネルの深度方向畳み込み</strong>: バックボーンおよびネックレイヤーで利用され、計算コストを低く抑えながら受容野を拡大します。</p>
-<p><strong>特徴ピラミッドネットワーク(FPN)</strong>: 様々なスケールでのオブジェクト検出を可能にするマルチスケール特徴抽出技術で、カメラからの距離に関わらずゴルファーを検出できることを保証します。</p>
-<p><strong>1.2 動的ラベル割り当て</strong></p>
-<p>RTMDet-Mは動的ラベル割り当て戦略を活用し、分類と定位ロスの組み合わせに基づいてオブジェクトにソフトラベルを割り当てることで検出精度を向上させます。ラベル割り当てはSimOTAアルゴリズムによって制御され、グラウンドトゥルースオブジェクトとマッチする可能性に基づいて動的にポジティブサンプルを選択します。この方法は、屋外のゴルフシーンでよく見られる様々な照明および環境条件での堅牢な検出を保証します。</p>
-<p><strong>1.3 バウンディングボックス予測</strong></p>
-<p>検出器は各フレームでゴルファーを囲むバウンディングボックスを出力します。これらのバウンディングボックスは、姿勢推定モデルが動作する空間的制約を提供し、フレームの関連領域のみに焦点を当てることで、後続の姿勢推定フェーズの計算負荷を軽減します。このコンテキストでは、RTMDet-Mは高性能ハードウェア上で300 FPS以上のリアルタイム処理でバウンディングボックスを生成し、ゴルフスウィングの高速ダイナミクスに対応できることを保証します。</p>
-<p><strong>1.4 人物非最大値抑制（NMS）</strong></p>
-<p>マルチパーソン設定（ゴルフスウィング分析ではまれですが）では、RTMDet-Mは姿勢非最大値抑制（NMS）アルゴリズムを組み込んでおり、冗長なキーポイント検出を排除し、最も信頼度の高い検出のみが全員に対して保持されるようにします。これは、混雑したシーンやビデオシーケンスで重複するバウンディングボックスが検出される可能性がある場合に重要です。</p>
-<p><strong>1.5 トレーニングDatasetとパフォーマンス</strong></p>
-<p>RTMDet-Mは、Object356 Dataset内の人物インスタンスに対するバイナリ分類タスクでトレーニングされています。</p>
-<p><strong>2. 姿勢推定フェーズ：RTMPose-X キーポイント位置特定</strong></p>
-<p>ゴルファーのバウンディングボックスが確立されると、次のフェーズでは、この領域内の主要な身体関節の正確な位置を推定します。高性能な姿勢推定モデルであるRTMPose-Xが、この目的のために利用されます。</p>
-<p><strong>2.1 SimCC ベースのキーポイント位置特定</strong></p>
-<p>RTMPose-Xは、SimCC（Simple Coordinate Classification）アルゴリズムを採用しており、キーポイント位置特定を分類問題として扱います。従来のヒートマップベースの方法とは対照的に、SimCCは各キーポイントのx座標とy座標をビンに分割し、各キーポイントが存在する正確なビンを分類します。このアプローチは計算複雑性を大幅に軽減し、推論速度を向上させながら、人体姿勢推定タスクで高い精度を維持します。</p>
-<p><strong>2.2 CSPNeXt バックボーン</strong></p>
-<p>RTMDet-Mと同様に、RTMPose-Xもまた、姿勢推定などの密集予測タスク用にカスタマイズされたCSPNeXtバックボーンを使用しています。CSPNeXtバックボーンは、このシナリオで次の理由により有利です：</p>
-<p><strong>軽量アーキテクチャ</strong>：モデルのアーキテクチャは、パラメーター数を最小化しながら、スループットを最大化するように設計されており、リアルタイムアプリケーションに最適です。</p>
-<p><strong>効率的な特徴抽出</strong>：CSPNeXtの特徴抽出層は高解像度画像を処理するために最適化されており、ゴルフスウィング中の手首、肘、膝などの高速移動する身体部位の小さな詳細を検出するために重要です。</p>
-<p><strong>2.3 キーポイント表現</strong></p>
-<p>RTMPose-Xは、以下を含むすべての関連する身体部位のキーポイント位置を出力します：</p>
-<p><strong>上半身の関節</strong>：肩関節、肘、手首、および首</p>
-<p><strong>下半身の関節</strong>：股関節、膝、および足首</p>
-<p><strong>追加の関節</strong>：頭部、脊椎、およびスウィング分析に関連するその他の主要ポイント</p>
-<p>入力画像の384x288の解像度は、関節の微妙な動きでさえ正確にキャプチャできることを保証しながら、システムのリアルタイム実行能力を維持します。</p>
-<p><strong>2.4 RTMPose 前処理：不偏データ処理（UDP）</strong></p>
-<p>トリミングされた画像がRTMPoseモデルに入力される前に、不偏データ処理（UDP）ステップが実行されます。UDPは、座標系およびキーポイント形式変換における、トレーニングとテスト中のRTMPoseのデータ処理の重大なバイアスに対応します。従来の人体姿勢推定パイプラインでは、フリップやリサイズなどの標準的な操作は、特にピクセルベースの変換によって出力を誤整列させることが多く、精度低下と反転画像の非整列につながります。UDPは、不偏座標系変換を確立することでこれを修正し、重要な操作（クロップ、リサイズ、回転、フリップ）全体で異なる座標空間間のセマンティック整列を保証します。UDPはまた、不偏キーポイント形式変換を導入することで、位置バイアスを導入することなくキーポイントをヒートマップに符号化し、ガウス分布対応デコーディングプロセスを通じて進一步精製されます。このデータ処理アプローチは、COCOおよびCrowdPoseデータセット上の広範なテストで示されているように、モデルパフォーマンスを体系的に向上させ、トップダウンおよびボトムアップモデル全体で精度の向上と推論レイテンシの削減を達成しました [Ref]。</p>
-<p><strong>3. 後処理と姿勢精製</strong></p>
-<p>キーポイントが予測されると、いくつかの後処理ステップが適用され、姿勢推定を精製し、フレーム全体での安定性を確保します。</p>
-<p><strong>3.1 姿勢スムージング</strong></p>
-<p>ゴルフスウィングは急速な動きを伴うため、フレーム全体で推定されたキーポイント位置にノイズや変動が生じる可能性があります。これを軽減するために、<strong>One-Euro フィルター</strong>が適用され、キーポイント軌跡がtime経時的にスムージングされ、キーポイント予測の小さく非物理的な変動が排除されることを保証します。One-Euro フィルターは、モーションの速度に基づいてフィルターの帯域幅を動的に調整することで動作し、バックスウィング、ダウンスウィング、フォロースルーなどのフェーズ全体で速度が大きく異なるゴルフスウィングなどのシナリオに最適です。</p>
-<p><strong>3.2 フレームスキップメカニズム</strong></p>
-<p>さらなる最適化のために、<strong>フレームスキップメカニズム</strong>が実装され、キーフレームのみで検出が実行され、姿勢推定は中間フレーム用に補間されます。これにより、スローモーション分析などのフレーム間のモーション制限されたシナリオで、計算負荷を大幅に軽減し、精度を損なわないようにします。</p>
-<p><strong>4. 時間的追跡とシーケンス一貫性</strong></p>
-<p>ゴルフスウィングは本質的にシーケンシャルであるため、姿勢推定における時間的一貫性の維持は重要です。RTMPose-Xは時間的追跡テクニックを通じてこれに対応し、キーポイント予測が連続フレーム間で一貫していることを保証します。これには、時間経過に伴うキーポイント位置の追跡と、生物力学的制約に基づいた現実的なモーションパターンに従うことを確認することが含まれます。</p>
-<p><strong>4.1 キーポイント速度と加速度分析</strong></p>
-<p>キーポイント位置の追跡に加えて、RTMPose-Xは各キーポイントの速度と加速度も推定します。この情報は、ゴルフスウィングのダイナミクスを分析するために重要であり、以下を含む主要なパフォーマンスメトリクスへの洞察を提供します：</p>
-<p><strong>スイング速度</strong>：ダウンスウィング中の手首速度に基づいて計算されます。</p>
-<p><strong>股関節の回転</strong>：股関節の回転角速度を通じて分析されます。</p>
-<p><strong>クラブパスとヘッドスピード</strong>：手首と肘の軌跡から間接的に推定されます。</p>
-<p>これらのメトリクスは、プロのベンチマークと比較して、プレイヤーのスイングメカニクスに関するフィードバックを提供できます。</p>
-<p><strong>5. 推論とリアルタイムパフォーマンス</strong></p>
-<p>トップダウンパイプライン全体は、リアルタイムパフォーマンスのために最適化されており、最新のGPU上で90 FPS以上での姿勢推定を可能にします。高度に効率的なモデルアーキテクチャ（CSPNeXt）と高速推論テクニック（SimCC）の使用により、システムは高いフレームレートのビデオ入力を処理でき、トレーニングセッション中のリアルタイムフィードバックに適しています。</p>
-<p><strong>6. 評価と検証</strong></p>
-<p>RTMPose-XおよびRTMDet-Mモデルは、COCOおよびMPIIなどの標準データセット上で評価され、身体キーポイントのCOCOデータセット上で平均精度（AP）75.8%と強力なパフォーマンスを示しています。これらの結果は、ゴルフスウィングデータセット内のグラウンドトゥルース注釈に対して検証され、ダイナミックスポーツの動きをキャプチャする際のモデルのロバスト性を確保します。</p>
-<p><strong>6.1 パフォーマンスメトリクス</strong></p>
-<p><strong>平均二乗誤差 (MSE)</strong>: キーポイント予測の精度を定量化し、グラウンドトゥルースアノテーションと比較するために使用されます。</p>
-<p><strong>平均適合率 (AP)</strong>: 姿勢推定モデルの全体的なパフォーマンスを評価します。</p>
-<p><strong>フレーム処理時間</strong>: システムがリアルタイム要件 (フレームあたり 10 ms 未満) を満たしていることを確認するためにベンチマークされます。</p>
-<p><strong>7. 結論</strong></p>
-<p>RTMPose-X と RTMDet-M を使用したトップダウンアプローチにより、スポーツ分析、特にゴルフスイング分析におけるリアルタイム姿勢推定の効率的で正確な方法が提供されます。堅牢なキーポイント検出、時間的トラッキング、リアルタイム推論により、このメソドロジーはゴルフスイングダイナミクスの詳細なバイオメカニクス分析を提供し、パフォーマンス向上と怪我の予防に役立ちます。</p>
-<p>参考文献</p>
-<p>[1] RTMpose <a href="https://arxiv.org/pdf/2303.07399" rel="external">https://arxiv.org/pdf/2303.07399</a></p>
-<p>[2] CSPNeXt <a href="https://www.sciencedirect.com/science/article/pii/S0952197624000447" rel="external">https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p>
-<p>[3] SIMCC <a href="https://arxiv.org/abs/2107.03332" rel="external">https://arxiv.org/abs/2107.03332</a></p>
-<p>[4] RTMdet <a href="https://arxiv.org/pdf/2212.07784" rel="external">https://arxiv.org/pdf/2212.07784</a></p>
-<p>[5] CSPDarkNet</p>
-<p>[6] Halpe26</p>
-<p>[] AI チャレンジデータセット:</p>
-<p>[] MS Coco データセット:</p>
-<p>[7] Crowdpose データセット: <a href="https://arxiv.org/pdf/1812.00324" rel="external">https://arxiv.org/pdf/1812.00324</a></p>
-<p>[] MPII データセット:</p>
-<p>[] sub-JHMBD データセット:</p>
-<p>[] Halpe データセット:</p>
-<p>[] PoseTrack18 データセット:</p>
-<p>Object365 データベース: <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf" rel="external">https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p>
-<p><em>最終更新: 2025-03-05</em> | <a href="/sc-support/ja/software-features/markerless-motion-capture/index.html">公式サポートサイトで表示</a></p>
-
-  <footer class="footline">
-  </footer>
-</article>
-        </div>
-      </main>
-    </div>
-    <aside id="R-sidebar" class="default-animation">
-      <div id="R-header-topbar" class="default-animation"></div>
-      <div id="R-header-wrapper" class="default-animation">
-        <a id="R-logo" class="R-default direction-row" href="/sc-support/ja/index.html">
-          <span class="logo-title default-animation">Swing Catalyst サポート</span>
-        </a>
-        <search>
-          <div class="searchbox default-animation">
-            <i class="fas fa-fw fa-search" title="検索 (CTRL+ALT+f)"></i>
-            <label class="a11y-only" for="R-search-by">検索</label>
-            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="検索...">
-            <button class="search-clear" type="button" data-search-clear="" title="検索をクリア"><i class="fas fa-fw fa-times" title="検索をクリア"></i></button>
-          </div>
-        </search>
-      </div>
-      <div id="R-homelinks" class="default-animation">
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
-          <ul class="">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-      </div>
-      <div id="R-content-wrapper" class="highlightable">
-        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
-          <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/sc-support/ja/getting-started/index.html"><a class="padding default-animation" href="/sc-support/ja/getting-started/index.html">はじめに</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/ja/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/ja/cameras-video/index.html">カメラ・映像</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/ja/hardware/index.html"><a class="padding default-animation" href="/sc-support/ja/hardware/index.html">ハードウェア</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/sc-support/ja/software-features/index.html"><a class="padding default-animation" href="/sc-support/ja/software-features/index.html">ソフトウェアと機能</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
-            <li class="" data-nav-id="/sc-support/ja/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/ja/software-features/multiple-forces-graph/index.html">Multiple Forces Graph</a></li>
-            <li class="active " data-nav-id="/sc-support/ja/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/ja/software-features/markerless-motion-capture/index.html">RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/ja/software-features/ios-app-sharing/index.html">Swing Catalyst iOSアプリで録画した動画を共有する</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/ja/software-features/swing-catalyst-online/index.html">Swing Catalyst Online の使い方</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/ja/software-features/motion-capture-guide/index.html">Swing Catalyst モーションキャプチャ ユーザーガイド</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/ja/software-features/motion-capture-install/index.html">Swing Catalyst モーションキャプチャ コンポーネントのインストール方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/ja/software-features/motion-capture-faq/index.html">Swing Catalyst モーションキャプチャ よくある質問</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/ja/software-features/motion-capture-settings/index.html">Swing Catalyst モーションキャプチャ設定</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/ja/software-features/email-sharing/index.html">Swing Catalyst でメール共有を設定する方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/ja/software-features/multiple-displays/index.html">Swing Catalystで複数のディスプレイをセットアップする方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/ja/software-features/motion-capture-disclosures/index.html">SwingCatalyst モーションキャプチャツールご利用者への重要な開示事項</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/ja/software-features/import-from-v1/index.html">V1からビデオをインポートする方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/ja/software-features/keyboard-shortcuts/index.html">キーボードショートカットとホットキー</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/ja/software-features/key-metrics/index.html">キーメトリクス</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/explorer/index.html"><a class="padding" href="/sc-support/ja/software-features/explorer/index.html">エクスプローラーの使い方</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/graph-library/index.html"><a class="padding" href="/sc-support/ja/software-features/graph-library/index.html">グラフライブラリの使い方</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/ja/software-features/feedback-screen/index.html">フィードバック画面のセットアップ方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/ja/software-features/bookmarks/index.html">ブックマークとは何ですか？</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/ja/software-features/microphone-trigger/index.html">マイクをキャプチャトリガーとして使用する方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/remote-support/index.html"><a class="padding" href="/sc-support/ja/software-features/remote-support/index.html">リモートサポートの使い方</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/ja/software-features/record-a-lesson/index.html">レッスンを記録する方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/ja/software-features/pressure-distribution-overlay/index.html">圧力分布オーバーレイ機能の使い方</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/ja/software-features/change-recording-user/index.html">既存の記録のユーザーを変更する方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/ja/software-features/export-recordings/index.html">記録のエクスポート</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/ja/software-features/force-graph-phases/index.html">床反力グラフのフェーズ</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/ja/software-features/pressure-stance-settings/index.html">新しい圧力とスタンスの設定を使用する</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/ja/software-features/body-weight-measurement/index.html">新しい体重測定機能</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/ja/software-features/raw-data-export-guide/index.html">生データエクスポートに含まれる内容</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/ja/software-features/export-raw-data/index.html">生データのエクスポート方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/ja/software-features/export-contacts/index.html">生徒の連絡先情報をエクスポートする方法</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/ja/software-features/frontal-plane-torque/index.html">前額面トルク分析 - ユーザーガイド</a></li>
-            <li class="" data-nav-id="/sc-support/ja/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/ja/software-features/force-vectors/index.html">力ベクトルの使い方</a></li></ul></li>
-            <li class="" data-nav-id="/sc-support/ja/account-setup/index.html"><a class="padding default-animation" href="/sc-support/ja/account-setup/index.html">アカウント &amp; セットアップ</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/ja/reference/index.html"><a class="padding default-animation" href="/sc-support/ja/reference/index.html">リファレンス</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
-          </ul>
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div id="R-footer-margin" class="default-animation"></div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
-          <ul class="">
-			<li class="R-languageswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-language"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-language">言語</label>
-                  <select id="R-select-language">
-                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/markerless-motion-capture/index.html" lang="es">Español</option>
-                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/markerless-motion-capture/index.html" lang="de">Deutsch</option>
-                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/markerless-motion-capture/index.html" lang="fr">Français</option>
-                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/markerless-motion-capture/index.html" lang="it">Italiano</option>
-                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/markerless-motion-capture/index.html" lang="pt">Português</option>
-                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/markerless-motion-capture/index.html" lang="ru">Русский</option>
-                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/markerless-motion-capture/index.html" lang="ja" selected data-selected>日本語</option>
-                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/markerless-motion-capture/index.html" lang="ko">한국어</option>
-                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/markerless-motion-capture/index.html" lang="zh">简体中文</option>
-                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/markerless-motion-capture/index.html" lang="hi">हिन्दी</option>
-                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/markerless-motion-capture/index.html" lang="ar">العربية</option>
-                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" lang="zh-Hant">繁體中文</option>
-                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/markerless-motion-capture/index.html" lang="th">ไทย</option>
-                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/markerless-motion-capture/index.html" lang="sv">Svenska</option>
-                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/markerless-motion-capture/index.html" lang="nb">Norsk Bokmål</option>
-                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/markerless-motion-capture/index.html" lang="da">Dansk</option>
-                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/markerless-motion-capture/index.html" lang="is">Íslenska</option>
-                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/markerless-motion-capture/index.html" lang="id">Bahasa Indonesia</option>
-                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/markerless-motion-capture/index.html" lang="vi">Tiếng Việt</option>
-                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/markerless-motion-capture/index.html" lang="nl">Nederlands</option>
-                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/markerless-motion-capture/index.html" lang="tr">Türkçe</option>
-                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/markerless-motion-capture/index.html" lang="pl">Polski</option>
-                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/markerless-motion-capture/index.html" lang="fi">Suomi</option>
-                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/markerless-motion-capture/index.html" lang="uk">Українська</option>
-                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/markerless-motion-capture/index.html" lang="ro">Română</option>
-                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/markerless-motion-capture/index.html" lang="el">Ελληνικά</option>
-                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/markerless-motion-capture/index.html" lang="cs">Čeština</option>
-                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/markerless-motion-capture/index.html" lang="hu">Magyar</option>
-                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/markerless-motion-capture/index.html" lang="bg">Български</option>
-                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/markerless-motion-capture/index.html" lang="hr">Hrvatski</option>
-                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/markerless-motion-capture/index.html" lang="sr">Српски</option>
-                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/markerless-motion-capture/index.html" lang="sk">Slovenčina</option>
-                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/markerless-motion-capture/index.html" lang="lt">Lietuvių</option>
-                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/markerless-motion-capture/index.html" lang="lv">Latviešu</option>
-                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/markerless-motion-capture/index.html" lang="et">Eesti</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li class="R-variantswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-paint-brush"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-variant">テーマ</label>
-                  <select id="R-select-variant">
-                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
-                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
-                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.relearn.markVariant();</script>
-            </li>
-          </ul>
-        </div>
-<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
-      </div>
-    </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772560865" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772560865" defer></script>
-<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
-<script src="/sc-support/js/sc-extras.js"></script>
-
-    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
-  </body>
-</html>
+Yes</p><p><strong>7. ゴルフスイング分析への応用</strong></p><p>RTMPose-XおよびRTMDet-Mフレームワークを適用することで:</p><p><strong>関節の動きをフレームごとに追跡</strong>: スイングの各フェーズを分析するための包括的なデータを提供します。</p><p><strong>リアルタイムフィードバックを提供</strong>: トレーニングセッション中のスイング姿勢とフォームについて、即座にインサイトを得られます。</p><p><strong>理想的なメカニクスとの比較</strong>: 理想的なスイングキネマティクスと比較し、改善すべき領域を特定できます。</p><p><strong>8. 結論</strong></p><p>RTMPose-XおよびRTMDet-Mの統合は、リアルタイムゴルフスイング分析のための強力なソリューションを提供します。高精度、低遅延、多様なハードウェアプラットフォーム対応により、このトップダウンアプローチはスイングメカニクスに関する詳細なインサイトを実現します。アマチュアおよびプロのゴルファーがパフォーマンス向上を支援する大きな可能性を秘めています。</p><p><strong>9. 今後の展開</strong></p><p>将来の開発には以下が含まれる可能性があります:</p><p><strong>機械学習アルゴリズムの統合</strong>: 予測分析を提供し、スイング効率向上のための調整案を提示します。</p><p><strong>複数人シナリオへの拡張</strong>: チームスポーツまたはグループトレーニング環境での適用可能性を高めます。</p><p><strong>ユーザーフレンドリーなインターフェイスの開発</strong>: コーチやアスリートが技術的専門知識なしにアクセスできるアプリケーションやツールを作成します。</p><p><strong>付録</strong></p><p><strong>詳細な方法論: RTMPose-XおよびRTMDet-Mを用いたゴルフスイング姿勢推定のためのトップダウンアプローチ</strong></p><p><strong>概要</strong></p><p>ここで説明する方法論は、RTMPoseのキーポイント定位とRTMDetの物体検出の強みを活用した、ゴルフおよび野球スイングのリアルタイム姿勢推定に対するトップダウンアプローチの詳細なステップを概説しています。このプロセスは検出、キーポイント定位、後処理のいくつかのステージに分かれており、各ステージが生体力学分析のためのゴルフスイングにおける身体関節の正確かつ効率的な推定に貢献します。</p><p>&ndash;図を挿入&ndash;</p><p><strong>1. 検出フェーズ: RTMDet-Mによるリアルタイム定位</strong></p><p>トップダウンアプローチの最初のステージでは、ビデオの各フレーム内でゴルファーを検出します。特にゴルフなどのスポーツシナリオでは、シーン通常は単一のプレイヤーで構成されており、群衆シーンと比較して検出タスクが簡素化されます。</p><p><strong>1.1 モデルアーキテクチャ</strong></p><p>RTMDet-Mはパイプラインの物体検出器として採用されています。リアルタイム物体検出パフォーマンスを最適化するために設計された畳み込みニューラルネットワーク(CNN)バックボーン、特にCSPNeXtバックボーンを使用し、速度と精度のバランスを保ちます。アーキテクチャの主要な側面には以下が含まれます:</p><p><strong>大カーネルの深度方向畳み込み</strong>: バックボーンおよびネックレイヤーで利用され、計算コストを低く抑えながら受容野を拡大します。</p><p><strong>特徴ピラミッドネットワーク(FPN)</strong>: 様々なスケールでのオブジェクト検出を可能にするマルチスケール特徴抽出技術で、カメラからの距離に関わらずゴルファーを検出できることを保証します。</p><p><strong>1.2 動的ラベル割り当て</strong></p><p>RTMDet-Mは動的ラベル割り当て戦略を活用し、分類と定位ロスの組み合わせに基づいてオブジェクトにソフトラベルを割り当てることで検出精度を向上させます。ラベル割り当てはSimOTAアルゴリズムによって制御され、グラウンドトゥルースオブジェクトとマッチする可能性に基づいて動的にポジティブサンプルを選択します。この方法は、屋外のゴルフシーンでよく見られる様々な照明および環境条件での堅牢な検出を保証します。</p><p><strong>1.3 バウンディングボックス予測</strong></p><p>検出器は各フレームでゴルファーを囲むバウンディングボックスを出力します。これらのバウンディングボックスは、姿勢推定モデルが動作する空間的制約を提供し、フレームの関連領域のみに焦点を当てることで、後続の姿勢推定フェーズの計算負荷を軽減します。このコンテキストでは、RTMDet-Mは高性能ハードウェア上で300 FPS以上のリアルタイム処理でバウンディングボックスを生成し、ゴルフスウィングの高速ダイナミクスに対応できることを保証します。</p><p><strong>1.4 人物非最大値抑制（NMS）</strong></p><p>マルチパーソン設定（ゴルフスウィング分析ではまれですが）では、RTMDet-Mは姿勢非最大値抑制（NMS）アルゴリズムを組み込んでおり、冗長なキーポイント検出を排除し、最も信頼度の高い検出のみが全員に対して保持されるようにします。これは、混雑したシーンやビデオシーケンスで重複するバウンディングボックスが検出される可能性がある場合に重要です。</p><p><strong>1.5 トレーニングDatasetとパフォーマンス</strong></p><p>RTMDet-Mは、Object356 Dataset内の人物インスタンスに対するバイナリ分類タスクでトレーニングされています。</p><p><strong>2. 姿勢推定フェーズ：RTMPose-X キーポイント位置特定</strong></p><p>ゴルファーのバウンディングボックスが確立されると、次のフェーズでは、この領域内の主要な身体関節の正確な位置を推定します。高性能な姿勢推定モデルであるRTMPose-Xが、この目的のために利用されます。</p><p><strong>2.1 SimCC ベースのキーポイント位置特定</strong></p><p>RTMPose-Xは、SimCC（Simple Coordinate Classification）アルゴリズムを採用しており、キーポイント位置特定を分類問題として扱います。従来のヒートマップベースの方法とは対照的に、SimCCは各キーポイントのx座標とy座標をビンに分割し、各キーポイントが存在する正確なビンを分類します。このアプローチは計算複雑性を大幅に軽減し、推論速度を向上させながら、人体姿勢推定タスクで高い精度を維持します。</p><p><strong>2.2 CSPNeXt バックボーン</strong></p><p>RTMDet-Mと同様に、RTMPose-Xもまた、姿勢推定などの密集予測タスク用にカスタマイズされたCSPNeXtバックボーンを使用しています。CSPNeXtバックボーンは、このシナリオで次の理由により有利です：</p><p><strong>軽量アーキテクチャ</strong>：モデルのアーキテクチャは、パラメーター数を最小化しながら、スループットを最大化するように設計されており、リアルタイムアプリケーションに最適です。</p><p><strong>効率的な特徴抽出</strong>：CSPNeXtの特徴抽出層は高解像度画像を処理するために最適化されており、ゴルフスウィング中の手首、肘、膝などの高速移動する身体部位の小さな詳細を検出するために重要です。</p><p><strong>2.3 キーポイント表現</strong></p><p>RTMPose-Xは、以下を含むすべての関連する身体部位のキーポイント位置を出力します：</p><p><strong>上半身の関節</strong>：肩関節、肘、手首、および首</p><p><strong>下半身の関節</strong>：股関節、膝、および足首</p><p><strong>追加の関節</strong>：頭部、脊椎、およびスウィング分析に関連するその他の主要ポイント</p><p>入力画像の384x288の解像度は、関節の微妙な動きでさえ正確にキャプチャできることを保証しながら、システムのリアルタイム実行能力を維持します。</p><p><strong>2.4 RTMPose 前処理：不偏データ処理（UDP）</strong></p><p>トリミングされた画像がRTMPoseモデルに入力される前に、不偏データ処理（UDP）ステップが実行されます。UDPは、座標系およびキーポイント形式変換における、トレーニングとテスト中のRTMPoseのデータ処理の重大なバイアスに対応します。従来の人体姿勢推定パイプラインでは、フリップやリサイズなどの標準的な操作は、特にピクセルベースの変換によって出力を誤整列させることが多く、精度低下と反転画像の非整列につながります。UDPは、不偏座標系変換を確立することでこれを修正し、重要な操作（クロップ、リサイズ、回転、フリップ）全体で異なる座標空間間のセマンティック整列を保証します。UDPはまた、不偏キーポイント形式変換を導入することで、位置バイアスを導入することなくキーポイントをヒートマップに符号化し、ガウス分布対応デコーディングプロセスを通じて進一步精製されます。このデータ処理アプローチは、COCOおよびCrowdPoseデータセット上の広範なテストで示されているように、モデルパフォーマンスを体系的に向上させ、トップダウンおよびボトムアップモデル全体で精度の向上と推論レイテンシの削減を達成しました [Ref]。</p><p><strong>3. 後処理と姿勢精製</strong></p><p>キーポイントが予測されると、いくつかの後処理ステップが適用され、姿勢推定を精製し、フレーム全体での安定性を確保します。</p><p><strong>3.1 姿勢スムージング</strong></p><p>ゴルフスウィングは急速な動きを伴うため、フレーム全体で推定されたキーポイント位置にノイズや変動が生じる可能性があります。これを軽減するために、<strong>One-Euro フィルター</strong>が適用され、キーポイント軌跡がtime経時的にスムージングされ、キーポイント予測の小さく非物理的な変動が排除されることを保証します。One-Euro フィルターは、モーションの速度に基づいてフィルターの帯域幅を動的に調整することで動作し、バックスウィング、ダウンスウィング、フォロースルーなどのフェーズ全体で速度が大きく異なるゴルフスウィングなどのシナリオに最適です。</p><p><strong>3.2 フレームスキップメカニズム</strong></p><p>さらなる最適化のために、<strong>フレームスキップメカニズム</strong>が実装され、キーフレームのみで検出が実行され、姿勢推定は中間フレーム用に補間されます。これにより、スローモーション分析などのフレーム間のモーション制限されたシナリオで、計算負荷を大幅に軽減し、精度を損なわないようにします。</p><p><strong>4. 時間的追跡とシーケンス一貫性</strong></p><p>ゴルフスウィングは本質的にシーケンシャルであるため、姿勢推定における時間的一貫性の維持は重要です。RTMPose-Xは時間的追跡テクニックを通じてこれに対応し、キーポイント予測が連続フレーム間で一貫していることを保証します。これには、時間経過に伴うキーポイント位置の追跡と、生物力学的制約に基づいた現実的なモーションパターンに従うことを確認することが含まれます。</p><p><strong>4.1 キーポイント速度と加速度分析</strong></p><p>キーポイント位置の追跡に加えて、RTMPose-Xは各キーポイントの速度と加速度も推定します。この情報は、ゴルフスウィングのダイナミクスを分析するために重要であり、以下を含む主要なパフォーマンスメトリクスへの洞察を提供します：</p><p><strong>スイング速度</strong>：ダウンスウィング中の手首速度に基づいて計算されます。</p><p><strong>股関節の回転</strong>：股関節の回転角速度を通じて分析されます。</p><p><strong>クラブパスとヘッドスピード</strong>：手首と肘の軌跡から間接的に推定されます。</p><p>これらのメトリクスは、プロのベンチマークと比較して、プレイヤーのスイングメカニクスに関するフィードバックを提供できます。</p><p><strong>5. 推論とリアルタイムパフォーマンス</strong></p><p>トップダウンパイプライン全体は、リアルタイムパフォーマンスのために最適化されており、最新のGPU上で90 FPS以上での姿勢推定を可能にします。高度に効率的なモデルアーキテクチャ（CSPNeXt）と高速推論テクニック（SimCC）の使用により、システムは高いフレームレートのビデオ入力を処理でき、トレーニングセッション中のリアルタイムフィードバックに適しています。</p><p><strong>6. 評価と検証</strong></p><p>RTMPose-XおよびRTMDet-Mモデルは、COCOおよびMPIIなどの標準データセット上で評価され、身体キーポイントのCOCOデータセット上で平均精度（AP）75.8%と強力なパフォーマンスを示しています。これらの結果は、ゴルフスウィングデータセット内のグラウンドトゥルース注釈に対して検証され、ダイナミックスポーツの動きをキャプチャする際のモデルのロバスト性を確保します。</p><p><strong>6.1 パフォーマンスメトリクス</strong></p><p><strong>平均二乗誤差 (MSE)</strong>: キーポイント予測の精度を定量化し、グラウンドトゥルースアノテーションと比較するために使用されます。</p><p><strong>平均適合率 (AP)</strong>: 姿勢推定モデルの全体的なパフォーマンスを評価します。</p><p><strong>フレーム処理時間</strong>: システムがリアルタイム要件 (フレームあたり 10 ms 未満) を満たしていることを確認するためにベンチマークされます。</p><p><strong>7. 結論</strong></p><p>RTMPose-X と RTMDet-M を使用したトップダウンアプローチにより、スポーツ分析、特にゴルフスイング分析におけるリアルタイム姿勢推定の効率的で正確な方法が提供されます。堅牢なキーポイント検出、時間的トラッキング、リアルタイム推論により、このメソドロジーはゴルフスイングダイナミクスの詳細なバイオメカニクス分析を提供し、パフォーマンス向上と怪我の予防に役立ちます。</p><p>参考文献</p><p>[1] RTMpose <a href=https://arxiv.org/pdf/2303.07399 rel=external>https://arxiv.org/pdf/2303.07399</a></p><p>[2] CSPNeXt <a href=https://www.sciencedirect.com/science/article/pii/S0952197624000447 rel=external>https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p><p>[3] SIMCC <a href=https://arxiv.org/abs/2107.03332 rel=external>https://arxiv.org/abs/2107.03332</a></p><p>[4] RTMdet <a href=https://arxiv.org/pdf/2212.07784 rel=external>https://arxiv.org/pdf/2212.07784</a></p><p>[5] CSPDarkNet</p><p>[6] Halpe26</p><p>[] AI チャレンジデータセット:</p><p>[] MS Coco データセット:</p><p>[7] Crowdpose データセット: <a href=https://arxiv.org/pdf/1812.00324 rel=external>https://arxiv.org/pdf/1812.00324</a></p><p>[] MPII データセット:</p><p>[] sub-JHMBD データセット:</p><p>[] Halpe データセット:</p><p>[] PoseTrack18 データセット:</p><p>Object365 データベース: <a href=https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf rel=external>https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p><p><em>最終更新: 2025-03-05</em> | <a href=/sc-support/ja/software-features/markerless-motion-capture/index.html>公式サポートサイトで表示</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/ja/index.html><span class="logo-title default-animation">Swing Catalyst サポート</span>
+</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="検索 (CTRL+ALT+f)"></i>
+<label class=a11y-only for=R-search-by>検索</label>
+<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=検索...>
+<button class=search-clear type=button data-search-clear title=検索をクリア><i class="fas fa-fw fa-times" title=検索をクリア></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/ja/getting-started/index.html><a class="padding default-animation" href=/sc-support/ja/getting-started/index.html>はじめに</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/ja/cameras-video/index.html><a class="padding default-animation" href=/sc-support/ja/cameras-video/index.html>カメラ・映像</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/ja/hardware/index.html><a class="padding default-animation" href=/sc-support/ja/hardware/index.html>ハードウェア</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/ja/software-features/index.html><a class="padding default-animation" href=/sc-support/ja/software-features/index.html>ソフトウェアと機能</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/ja/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/ja/software-features/multiple-forces-graph/index.html>Multiple Forces Graph</a></li><li class=active data-nav-id=/sc-support/ja/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/ja/software-features/markerless-motion-capture/index.html>RTMPoseとRTMDetを用いたゴルフ・野球スイングのマーカーレスモーションキャプチャの向上：トップダウンアプローチ</a></li><li data-nav-id=/sc-support/ja/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/ja/software-features/ios-app-sharing/index.html>Swing Catalyst iOSアプリで録画した動画を共有する</a></li><li data-nav-id=/sc-support/ja/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/ja/software-features/swing-catalyst-online/index.html>Swing Catalyst Online の使い方</a></li><li data-nav-id=/sc-support/ja/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/ja/software-features/motion-capture-guide/index.html>Swing Catalyst モーションキャプチャ ユーザーガイド</a></li><li data-nav-id=/sc-support/ja/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/ja/software-features/motion-capture-install/index.html>Swing Catalyst モーションキャプチャ コンポーネントのインストール方法</a></li><li data-nav-id=/sc-support/ja/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/ja/software-features/motion-capture-faq/index.html>Swing Catalyst モーションキャプチャ よくある質問</a></li><li data-nav-id=/sc-support/ja/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/ja/software-features/motion-capture-settings/index.html>Swing Catalyst モーションキャプチャ設定</a></li><li data-nav-id=/sc-support/ja/software-features/email-sharing/index.html><a class=padding href=/sc-support/ja/software-features/email-sharing/index.html>Swing Catalyst でメール共有を設定する方法</a></li><li data-nav-id=/sc-support/ja/software-features/multiple-displays/index.html><a class=padding href=/sc-support/ja/software-features/multiple-displays/index.html>Swing Catalystで複数のディスプレイをセットアップする方法</a></li><li data-nav-id=/sc-support/ja/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/ja/software-features/motion-capture-disclosures/index.html>SwingCatalyst モーションキャプチャツールご利用者への重要な開示事項</a></li><li data-nav-id=/sc-support/ja/software-features/import-from-v1/index.html><a class=padding href=/sc-support/ja/software-features/import-from-v1/index.html>V1からビデオをインポートする方法</a></li><li data-nav-id=/sc-support/ja/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/ja/software-features/keyboard-shortcuts/index.html>キーボードショートカットとホットキー</a></li><li data-nav-id=/sc-support/ja/software-features/key-metrics/index.html><a class=padding href=/sc-support/ja/software-features/key-metrics/index.html>キーメトリクス</a></li><li data-nav-id=/sc-support/ja/software-features/explorer/index.html><a class=padding href=/sc-support/ja/software-features/explorer/index.html>エクスプローラーの使い方</a></li><li data-nav-id=/sc-support/ja/software-features/graph-library/index.html><a class=padding href=/sc-support/ja/software-features/graph-library/index.html>グラフライブラリの使い方</a></li><li data-nav-id=/sc-support/ja/software-features/feedback-screen/index.html><a class=padding href=/sc-support/ja/software-features/feedback-screen/index.html>フィードバック画面のセットアップ方法</a></li><li data-nav-id=/sc-support/ja/software-features/bookmarks/index.html><a class=padding href=/sc-support/ja/software-features/bookmarks/index.html>ブックマークとは何ですか？</a></li><li data-nav-id=/sc-support/ja/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/ja/software-features/microphone-trigger/index.html>マイクをキャプチャトリガーとして使用する方法</a></li><li data-nav-id=/sc-support/ja/software-features/remote-support/index.html><a class=padding href=/sc-support/ja/software-features/remote-support/index.html>リモートサポートの使い方</a></li><li data-nav-id=/sc-support/ja/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/ja/software-features/record-a-lesson/index.html>レッスンを記録する方法</a></li><li data-nav-id=/sc-support/ja/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/ja/software-features/pressure-distribution-overlay/index.html>圧力分布オーバーレイ機能の使い方</a></li><li data-nav-id=/sc-support/ja/software-features/change-recording-user/index.html><a class=padding href=/sc-support/ja/software-features/change-recording-user/index.html>既存の記録のユーザーを変更する方法</a></li><li data-nav-id=/sc-support/ja/software-features/export-recordings/index.html><a class=padding href=/sc-support/ja/software-features/export-recordings/index.html>記録のエクスポート</a></li><li data-nav-id=/sc-support/ja/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/ja/software-features/force-graph-phases/index.html>床反力グラフのフェーズ</a></li><li data-nav-id=/sc-support/ja/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/ja/software-features/pressure-stance-settings/index.html>新しい圧力とスタンスの設定を使用する</a></li><li data-nav-id=/sc-support/ja/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/ja/software-features/body-weight-measurement/index.html>新しい体重測定機能</a></li><li data-nav-id=/sc-support/ja/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/ja/software-features/raw-data-export-guide/index.html>生データエクスポートに含まれる内容</a></li><li data-nav-id=/sc-support/ja/software-features/export-raw-data/index.html><a class=padding href=/sc-support/ja/software-features/export-raw-data/index.html>生データのエクスポート方法</a></li><li data-nav-id=/sc-support/ja/software-features/export-contacts/index.html><a class=padding href=/sc-support/ja/software-features/export-contacts/index.html>生徒の連絡先情報をエクスポートする方法</a></li><li data-nav-id=/sc-support/ja/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/ja/software-features/frontal-plane-torque/index.html>前額面トルク分析 - ユーザーガイド</a></li><li data-nav-id=/sc-support/ja/software-features/force-vectors/index.html><a class=padding href=/sc-support/ja/software-features/force-vectors/index.html>力ベクトルの使い方</a></li></ul></li><li data-nav-id=/sc-support/ja/account-setup/index.html><a class="padding default-animation" href=/sc-support/ja/account-setup/index.html>アカウント & セットアップ</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/ja/reference/index.html><a class="padding default-animation" href=/sc-support/ja/reference/index.html>リファレンス</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>言語</label>
+<select id=R-select-language><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/markerless-motion-capture/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/markerless-motion-capture/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/markerless-motion-capture/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/markerless-motion-capture/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/markerless-motion-capture/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/markerless-motion-capture/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/markerless-motion-capture/index.html lang=ja selected data-selected>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/markerless-motion-capture/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/markerless-motion-capture/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/markerless-motion-capture/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/markerless-motion-capture/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/markerless-motion-capture/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/markerless-motion-capture/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/markerless-motion-capture/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/markerless-motion-capture/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/markerless-motion-capture/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/markerless-motion-capture/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/markerless-motion-capture/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/markerless-motion-capture/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/markerless-motion-capture/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/markerless-motion-capture/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/markerless-motion-capture/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/markerless-motion-capture/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/markerless-motion-capture/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/markerless-motion-capture/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/markerless-motion-capture/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/markerless-motion-capture/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/markerless-motion-capture/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/markerless-motion-capture/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/markerless-motion-capture/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/markerless-motion-capture/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/markerless-motion-capture/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/markerless-motion-capture/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/markerless-motion-capture/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>テーマ</label>
+<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-sc-dark value=sc-dark>Sc Dark</option><option id=R-select-variant-sc-light value=sc-light>Sc Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772565149 defer></script><script src=/sc-support/js/theme.min.js?1772565149 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>

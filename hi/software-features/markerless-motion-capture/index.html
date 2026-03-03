@@ -1,616 +1,105 @@
-<!DOCTYPE html>
-<html id="R-html" lang="hi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.145.0">
-    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
-    <meta name="description" content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन">
-    <meta name="author" content="">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता">
-    <meta name="twitter:description" content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन">
-    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html">
-    <meta property="og:site_name" content="Swing Catalyst सहायता">
-    <meta property="og:title" content="RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता">
-    <meta property="og:description" content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन">
-    <meta property="og:locale" content="hi">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="सॉफ़्टवेयर और सुविधाएँ">
-    <meta property="article:tag" content="Troubleshooting">
-    <meta property="article:tag" content="Database">
-    <meta property="article:tag" content="Motion-Capture">
-    <meta itemprop="name" content="RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता">
-    <meta itemprop="description" content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन">
-    <meta itemprop="wordCount" content="3208">
-    <meta itemprop="keywords" content="Troubleshooting,Database,Motion-Capture">
-    <title>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता</title>
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="es">
-    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="de">
-    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fr">
-    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="it">
-    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pt">
-    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ru">
-    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ja">
-    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ko">
-    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh">
-    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hi">
-    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ar">
-    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh-Hant">
-    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="th">
-    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sv">
-    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nb">
-    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="da">
-    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="is">
-    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="id">
-    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="vi">
-    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nl">
-    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="tr">
-    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pl">
-    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fi">
-    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="uk">
-    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ro">
-    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="el">
-    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="cs">
-    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hu">
-    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="bg">
-    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hr">
-    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sr">
-    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sk">
-    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lt">
-    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lv">
-    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772560867" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772560867" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772560867" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772560867" defer></script>
-    <script src="/sc-support/js/search.min.js?1772560867" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.hi.js?1772560867";
-    </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772560867" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772560867" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772560867" defer></script>
-    <script src="/sc-support/js/lunr/wordcut.js?1772560867" defer></script>
-    <script src="/sc-support/js/lunr/lunr.hi.min.js?1772560867" defer></script>
-    <script>
-      window.relearn = window.relearn || {};
-      window.relearn.contentLangs=['hi'];
-    </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560867" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772560867" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772560867" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772560867" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772560867" rel="stylesheet" id="R-format-style">
-    <script>
-      window.relearn = window.relearn || {};
-      // configuration
-      window.relearn.min = `.min`;
-      window.relearn.path='\/software-features\/markerless-motion-capture\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
-      window.relearn.disableInlineCopyToClipboard=false;
-      window.relearn.enableBlockCodeWrap=true;
-      // translations
-      window.T_Copy_to_clipboard = `क्लिपबोर्ड पर टेक्स्ट की प्रतिलिपि बनाएँ`;
-      window.T_Copied_to_clipboard = `टेक्स्ट क्लिपबोर्ड पर कॉपी किया गया!`;
-      window.T_Link_copied_to_clipboard = `लिंक क्लिपबोर्ड पर कॉपी किया गया!`;
-      window.T_Reset_view = `दृश्य रीसेट करें`;
-      window.T_View_reset = `देखें रीसेट!`;
-      window.T_No_results_found = `"{0}" के लिए कोई परिणाम नहीं मिला`;
-      window.T_N_results_found = `"{0}" के लिए {1} परिणाम मिले`;
-      window.T_Browser_unsupported_feature = `यह ब्राउज़र इस सुविधा का समर्थन नहीं करता है`;
-      // variant stuff
-      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
-      window.relearn.customvariantprefix = "my-custom-";
-      window.relearn.changeVariant = function(variant) {
-        var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        document.documentElement.dataset.rThemeVariant = variant;
-        if (oldVariant != variant) {
-          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
-          window.relearn.markVariant();
-        }
-      }
-      window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
-      }
-      window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
-        if( !variant ||
-            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
-            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
-          variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
-        }
-        document.documentElement.dataset.rThemeVariant = variant;
-      }
-      window.relearn.initVariant();
-      window.relearn.markVariant();
-    </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-<style>
-  .sc-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
-    z-index: 9999;
-    transition: width 0.1s linear;
-    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
-    pointer-events: none;
-  }
-</style>
-<div class="sc-progress" id="sc-progress"></div>
-
-  </head>
-  <body class="mobile-support html" data-origin="/sc-support/hi/software-features/markerless-motion-capture/index.html">
-    <div id="R-body" class="default-animation">
-      <div id="R-body-overlay"></div>
-      <nav id="R-topbar" class="default-animation">
-        <div class="topbar-wrapper default-animation">
-          <div class="topbar-sidebar-divider default-animation"></div>
-          <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
-            </div>
-            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="विषयसूची (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hi/index.html"><span itemprop="name">Swing Catalyst सहायता</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hi/software-features/index.html"><span itemprop="name">सॉफ़्टवेयर और सुविधाएँ</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</span><meta itemprop="position" content="3"></li>
-          </ol>
-          <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/hi/software-features/multiple-forces-graph/index.html" title="Multiple Forces Graph (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/hi/software-features/ios-app-sharing/index.html" title="Swing Catalyst iOS ऐप से रिकॉर्ड किए गए वीडियो साझा करना (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
-            </div>
-            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="अधिक सामग्री दिखाएं"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-                  <div class="topbar-area topbar-area-more" data-area="more">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
-        <div class="flex-block-wrapper">
-<article class="default">
-  <header class="headline">
-<div class="R-taxonomy taxonomy-tags cstyle tags" title="टैग" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <i class="fa-fw fas fa-layer-group"></i>
-  <ul>
-    <li><a class="term-link" href="/sc-support/hi/tags/database/index.html">Database</a></li>
-    <li><a class="term-link" href="/sc-support/hi/tags/motion-capture/index.html">Motion-Capture</a></li>
-    <li><a class="term-link" href="/sc-support/hi/tags/troubleshooting/index.html">Troubleshooting</a></li>
-  </ul>
-</div>
-  </header>
-<h1 id="rtmpose-और-rtmdet-क-उपयग-करक-गलफ-और-बसबल-सवग-मरकरलस-मशन-कपचर-क-बढन-ऊपर-स-नच-दषटकण">RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</h1>
-
-<p><strong>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</strong></p>
-<p><strong>सारांश</strong></p>
-<p>यह श्वेतपत्र गोल्फ और बेसबॉल स्विंग के सटीक और कुशल पोज़ अनुमान के लिए RTMPose और RTMDet के अनुप्रयोग को दस्तावेज़ित करता है। अत्याधुनिक तकनीकों का लाभ उठाते हुए जो वास्तविक समय के परफॉर्मेंस के लिए अनुकूलित हैं, ये मॉडल गोल्फ और बेसबॉल स्विंग के दौरान शरीर की गतिविधियों की विस्तृत ट्रैकिंग सक्षम करते हैं—यह खेल विश्लेषण में परफॉर्मेंस में सुधार के लिए एक महत्वपूर्ण विशेषता है। हम एक ऊपर से नीचे दृष्टिकोण के लाभों को उजागर करते हैं, जहां एक तैयार RTMDet डिटेक्टर प्रत्येक फ्रेम में गोल्फर और बेसबॉल खिलाड़ी की पहचान करता है, और RTMPose मुख्य शरीर जोड़ों की स्थिति का अनुमान लगाता है।</p>
-<p><strong>1. परिचय</strong></p>
-<p>पोज़ अनुमान खेल परफॉर्मेंस विश्लेषण में केंद्रीय हो गया है, जो एथलीटों की गतिविधियों की सटीक ट्रैकिंग की अनुमति देता है। गोल्फ और बेसबॉल में, एक खिलाड़ी के स्विंग के बायोमैकेनिकल डेटा को कैप्चर करने से स्विंग गतिविज्ञान के बारे में मूल्यवान अंतर्दृष्टि मिलती है, जो पेशेवरों और शौकीनों दोनों को उनकी तकनीकों को परिष्कृत करने में सहायता करती है। पारंपरिक 2D पोज़ अनुमान विधियां अक्सर विलंबता और सटीकता की चुनौतियों का सामना करती हैं, विशेषकर वास्तविक समय के परिदृश्यों में। यह पत्र गोल्फ और बेसबॉल स्विंग के दौरान विस्तृत पोज़ अनुमान के लिए MMPose फ्रेमवर्क के भीतर RTMPose और RTMDet का उपयोग करके एक समाधान प्रस्तावित करता है।</p>
-<p><strong>2. पृष्ठभूमि</strong></p>
-<p>गोल्फ और बेसबॉल स्विंग की जटिलता को शरीर की गतिविधियों के सटीक माप की आवश्यकता है। मौजूदा पोज़ अनुमान विधियां वास्तविक समय के परफॉर्मेंस के लिए आवश्यक सटीकता प्रदान नहीं कर सकती हैं। गहन शिक्षा और कंप्यूटर दृष्टि में प्रगति ने RTMPose और RTMDet जैसे मॉडल पेश किए हैं, जो बेहतर सटीकता और दक्षता प्रदान करते हैं।</p>
-<p><strong>3. RTMdet और RTMpose के साथ ऊपर से नीचे दृष्टिकोण</strong></p>
-<p>&ndash;insert figure&ndash;</p>
-<p><strong>3. RTMPose: एक उच्च-परफॉर्मेंस पोज़ अनुमान मॉडल</strong></p>
-<p>RTMPose [1] उच्च-परफॉर्मेंस, वास्तविक समय पोज़ अनुमान के लिए डिज़ाइन किया गया है, जो सीमित हार्डवेयर पर कुशलतापूर्वक चलने के लिए अनुकूलित है।</p>
-<p><strong>मुख्य विशेषताएँ:</strong></p>
-<p><strong>मॉडल आर्किटेक्चर और दक्षता</strong>: RTMpose CSPNeXt को अपनी रीढ़ के रूप में उपयोग करता है [1, 2], गति और सटीकता को संतुलित करता है। CSPNeXt पोज़ अनुमान और वस्तु पहचान जैसे घने भविष्यवाणी कार्यों के लिए अनुकूलित है, उच्च रिज़ॉल्यूशन और सटीकता प्रदान करते हुए कम्प्यूटेशनल दक्षता बनाए रखता है।</p>
-<p><strong>मुख्य बिंदु भविष्यवाणी</strong>: एक SimCC-आधारित एल्गोरिथ्म [1, 3] का उपयोग करता है, मुख्य बिंदुओं की क्षैतिज और ऊर्ध्वाधर स्थिति को अलग वर्गीकरण कार्य के रूप में मानता है। यह कॉम्पैक्ट प्रतिनिधित्व कम्प्यूटेशनल लोड को कम करता है और विभिन्न डिवाइसों पर तैनाती के लिए उपयुक्त है।</p>
-<p><strong>4. RTMDet: डिटेक्शन बैकबोन</strong></p>
-<p>RTMDet [4] ऊपर से नीचे पाइपलाइन में RTMPose से पहले डिटेक्टर के रूप में कार्य करता है, प्रत्येक फ्रेम के भीतर गोल्फर या बेसबॉल खिलाड़ी के स्थान की पहचान करता है।</p>
-<p><strong>मुख्य विशेषताएँ:</strong></p>
-<p><strong>मॉडल आर्किटेक्चर और दक्षता</strong>: RTMDet CSPDarkNet के एक संशोधित संस्करण का उपयोग करता है [5], जो कई YOLO मॉडलों की तुलना में अधिक प्रशिक्षित और सटीक है। संशोधित संस्करण बड़े-कर्नेल गहराई-वार कनवोल्यूशन का लाभ उठाता है जो जटिलता और गति को संतुलित करता है और GPU और CPU दोनों पर कुशल है। यह खेल परफॉर्मेंस ट्रैकिंग जैसे वास्तविक समय अनुप्रयोगों के लिए आदर्श है।</p>
-<p><strong>बहुमुखी प्रतिभा</strong>: विभिन्न वस्तु पहचान कार्यों को संभालता है, जिसमें इंस्टेंस खंडन और घूर्णित वस्तु पहचान शामिल है। गतिशील दृश्यों में भी खिलाड़ी का सटीक स्थानीयकरण सुनिश्चित करता है।</p>
-<p><strong>5. गोल्फ और बेसबॉल स्विंग विश्लेषण में RTMDet और RTMPose का उपयोग करने के लाभ</strong></p>
-<p><strong>5.1 भीड़-रहित दृश्यों में उच्च सटीकता</strong></p>
-<p>गोल्फ/बेसबॉल की सामान्य सेटिंग्स में फ्रेम में कम व्यक्तियों के साथ, RTMDet गोल्फर/बेसबॉल खिलाड़ी को अलग करता है, RTMPose को प्रत्येक पहचाने गए व्यक्ति को उच्च सटीकता के साथ प्रक्रिया करने की अनुमति देता है। यह नीचे से ऊपर विधियों की जटिलता से बचाता है जो फ्रेम में सभी व्यक्तियों के लिए सभी मुख्य बिंदुओं को एक साथ प्रक्रिया करते हैं। ऊपर से नीचे दृष्टिकोण RTMdet के पोस्ट-प्रोसेसिंग एल्गोरिथ्म को भी शामिल कर सकता है जो पोज़ अनुमान करने से पहले सही व्यक्ति (अर्थात्, गोल्फर या बेसबॉल खिलाड़ी) की पहचान करता है। इसके अलावा, RTMPose को विस्तृत छवि सामग्री पर पूर्व-प्रशिक्षित किया गया है जिसमें</p>
-<p><strong>5.2 कुशल गणना और वास्तविक समय परफॉर्मेंस</strong></p>
-<p>RTMdet और RTMpose जैसे हल्के मॉडलों का उपयोग करते हुए, कम विलंबता बनाए रखता है, जो उपभोक्ता-ग्रेड हार्डवेयर पर वास्तविक समय स्विंग विश्लेषण सक्षम करता है। यह कोचिंग या प्रशिक्षण सत्र के दौरान तत्काल लाइव प्रतिक्रिया प्रदान करने के लिए विशेष रूप से उपयोगी है। Swing Catalyst मार्करलेस मोशन कैप्चर सिस्टम कुछ स्टूडियो सिस्टमों में से एक है जो गोल्फर और बेसबॉल खिलाड़ियों को लाइव मोशन कैप्चर फीडबैक प्रदान करता है।</p>
-<p><strong>5.3 विस्तृत मुख्य बिंदु विश्लेषण</strong></p>
-<p>RTMPose 26 शरीर मुख्य बिंदुओं का एक सेटअप पहचानता है [6] जो नीचे चित्र 1 में प्रदर्शित है, गोल्फ और बेसबॉल स्विंग गतिमान के विश्लेषण के लिए आवश्यक है। Halpe26 एक विस्तारित सेटअप है जिसमें पैरों और सिर पर अतिरिक्त मार्कर शामिल हैं, जो अधिक मानक COCO सेटअप से तुलना में 17 मार्कर हैं।</p>
-<p>&ndash;Insert Figure&ndash;</p>
-<p><strong>6. गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर के लिए पद्धति</strong></p>
-<p><strong>6.1 डिटेक्शन चरण: RTMDet</strong></p>
-<p>एक गोल्फर या बेसबॉल खिलाड़ी के वीडियो फ्रेम पर लागू, RTMDet खिलाड़ी के चारों ओर सीमा बॉक्स उत्पन्न करता है, जिन्हें RTMPose को पास किया जाता है। यह पोज़ अनुमान को प्रासंगिक छवि क्षेत्रों पर ध्यान केंद्रित करता है, कम्प्यूटेशनल लोड को कम करता है।</p>
-<p>&ndash;Insert Image&ndash;</p>
-<p><strong>6.2 पोज़ अनुमान चरण: RTMPose</strong></p>
-<p>RTMPose सीमा बॉक्स के भीतर मुख्य बिंदु स्थिति का अनुमान लगाता है। गोल्फ और बेसबॉल स्विंग विश्लेषण के लिए महत्वपूर्ण जोड़ में कलाई, कोहनी, कंधे, कूल्हे और घुटने शामिल हैं। ये मुख्य बिंदु स्विंग के चरणों के दौरान शरीर के कोण और स्थिति का आकलन करते हैं: बैकस्विंग, डाउनस्विंग और फॉलो-थ्रू।</p>
-<p>&ndash;Insert Image&ndash;</p>
-<p><strong>6.3 परफॉर्मेंस मापक</strong></p>
-<p>RTMPose का सामान्य परफॉर्मेंस Average Precision (AP) जैसे मापकों का उपयोग करके पोज़ अनुमान बेंचमार्क जैसे MS COCO पर मापा जाता है। नीचे आमतौर पर उपयोग किए जाने वाले COCO बेंचमार्क पर सर्वश्रेष्ठ रैंक किए गए मॉडलों का परफॉर्मेंस है। MS COCO val Dataset पर, RTMPose-X सर्वश्रेष्ठ परफॉर्मिंग मॉडल है जो वास्तविक समय प्रतिक्रिया प्रदान कर सकता है और उपभोक्ता-ग्रेड GPUs पर ?? FPS से अधिक फ्रेम दर के साथ 75.8% AP तक प्राप्त करता है, जो इसे उच्च गति खेल विश्लेषण के लिए उपयुक्त बनाता है।</p>
-<p>रैंक
+<!doctype html><html id=R-html lang=hi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता"><meta name=twitter:description content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html"><meta property="og:site_name" content="Swing Catalyst सहायता"><meta property="og:title" content="RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता"><meta property="og:description" content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन"><meta property="og:locale" content="hi"><meta property="og:type" content="article"><meta property="article:section" content="सॉफ़्टवेयर और सुविधाएँ"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Database"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता"><meta itemprop=description content="गोल्फ और बेसबॉल स्विंग विश्लेषण में मार्करलेस मोशन कैप्चर के लिए RTMPose और RTMDet का तकनीकी अवलोकन"><meta itemprop=wordCount content="3208"><meta itemprop=keywords content="Troubleshooting,Database,Motion-Capture"><title>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण :: Swing Catalyst सहायता</title>
+<link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html rel=alternate hreflang=et><link href=/sc-support/images/favicon.png?1772565153 rel=icon type=image/png><link href=/sc-support/css/auto-complete/auto-complete.min.css?1772565153 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1772565153 defer></script><script src=/sc-support/js/search-lunr.min.js?1772565153 defer></script><script src=/sc-support/js/search.min.js?1772565153 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.hi.js?1772565153"</script><script src=/sc-support/js/lunr/lunr.min.js?1772565153 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1772565153 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1772565153 defer></script><script src=/sc-support/js/lunr/wordcut.js?1772565153 defer></script><script src=/sc-support/js/lunr/lunr.hi.min.js?1772565153 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["hi"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565153 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1772565153 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772565153 rel=stylesheet><link href=/sc-support/css/theme.min.css?1772565153 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1772565153 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/markerless-motion-capture/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`क्लिपबोर्ड पर टेक्स्ट की प्रतिलिपि बनाएँ`,window.T_Copied_to_clipboard=`टेक्स्ट क्लिपबोर्ड पर कॉपी किया गया!`,window.T_Link_copied_to_clipboard=`लिंक क्लिपबोर्ड पर कॉपी किया गया!`,window.T_Reset_view=`दृश्य रीसेट करें`,window.T_View_reset=`देखें रीसेट!`,window.T_No_results_found=`"{0}" के लिए कोई परिणाम नहीं मिला`,window.T_N_results_found=`"{0}" के लिए {1} परिणाम मिले`,window.T_Browser_unsupported_feature=`यह ब्राउज़र इस सुविधा का समर्थन नहीं करता है`,window.relearn.themevariants=["auto","sc-dark","sc-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel=stylesheet><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--INTERNAL-PRIMARY-HOVER-color,#CC4A00),var(--INTERNAL-PRIMARY-color,#FF5C00));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px color-mix(in srgb,var(--INTERNAL-PRIMARY-color,#FF5C00) 60%,transparent);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/hi/software-features/markerless-motion-capture/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menú (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="विषयसूची (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/hi/index.html><span itemprop=name>Swing Catalyst सहायता</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/hi/software-features/index.html><span itemprop=name>सॉफ़्टवेयर और सुविधाएँ</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/hi/software-features/multiple-forces-graph/index.html title="Multiple Forces Graph (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/hi/software-features/ios-app-sharing/index.html title="Swing Catalyst iOS ऐप से रिकॉर्ड किए गए वीडियो साझा करना (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="अधिक सामग्री दिखाएं"><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=टैग style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/hi/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/hi/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/hi/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=rtmpose-और-rtmdet-क-उपयग-करक-गलफ-और-बसबल-सवग-मरकरलस-मशन-कपचर-क-बढन-ऊपर-स-नच-दषटकण>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</h1><p><strong>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</strong></p><p><strong>सारांश</strong></p><p>यह श्वेतपत्र गोल्फ और बेसबॉल स्विंग के सटीक और कुशल पोज़ अनुमान के लिए RTMPose और RTMDet के अनुप्रयोग को दस्तावेज़ित करता है। अत्याधुनिक तकनीकों का लाभ उठाते हुए जो वास्तविक समय के परफॉर्मेंस के लिए अनुकूलित हैं, ये मॉडल गोल्फ और बेसबॉल स्विंग के दौरान शरीर की गतिविधियों की विस्तृत ट्रैकिंग सक्षम करते हैं—यह खेल विश्लेषण में परफॉर्मेंस में सुधार के लिए एक महत्वपूर्ण विशेषता है। हम एक ऊपर से नीचे दृष्टिकोण के लाभों को उजागर करते हैं, जहां एक तैयार RTMDet डिटेक्टर प्रत्येक फ्रेम में गोल्फर और बेसबॉल खिलाड़ी की पहचान करता है, और RTMPose मुख्य शरीर जोड़ों की स्थिति का अनुमान लगाता है।</p><p><strong>1. परिचय</strong></p><p>पोज़ अनुमान खेल परफॉर्मेंस विश्लेषण में केंद्रीय हो गया है, जो एथलीटों की गतिविधियों की सटीक ट्रैकिंग की अनुमति देता है। गोल्फ और बेसबॉल में, एक खिलाड़ी के स्विंग के बायोमैकेनिकल डेटा को कैप्चर करने से स्विंग गतिविज्ञान के बारे में मूल्यवान अंतर्दृष्टि मिलती है, जो पेशेवरों और शौकीनों दोनों को उनकी तकनीकों को परिष्कृत करने में सहायता करती है। पारंपरिक 2D पोज़ अनुमान विधियां अक्सर विलंबता और सटीकता की चुनौतियों का सामना करती हैं, विशेषकर वास्तविक समय के परिदृश्यों में। यह पत्र गोल्फ और बेसबॉल स्विंग के दौरान विस्तृत पोज़ अनुमान के लिए MMPose फ्रेमवर्क के भीतर RTMPose और RTMDet का उपयोग करके एक समाधान प्रस्तावित करता है।</p><p><strong>2. पृष्ठभूमि</strong></p><p>गोल्फ और बेसबॉल स्विंग की जटिलता को शरीर की गतिविधियों के सटीक माप की आवश्यकता है। मौजूदा पोज़ अनुमान विधियां वास्तविक समय के परफॉर्मेंस के लिए आवश्यक सटीकता प्रदान नहीं कर सकती हैं। गहन शिक्षा और कंप्यूटर दृष्टि में प्रगति ने RTMPose और RTMDet जैसे मॉडल पेश किए हैं, जो बेहतर सटीकता और दक्षता प्रदान करते हैं।</p><p><strong>3. RTMdet और RTMpose के साथ ऊपर से नीचे दृष्टिकोण</strong></p><p>&ndash;insert figure&ndash;</p><p><strong>3. RTMPose: एक उच्च-परफॉर्मेंस पोज़ अनुमान मॉडल</strong></p><p>RTMPose [1] उच्च-परफॉर्मेंस, वास्तविक समय पोज़ अनुमान के लिए डिज़ाइन किया गया है, जो सीमित हार्डवेयर पर कुशलतापूर्वक चलने के लिए अनुकूलित है।</p><p><strong>मुख्य विशेषताएँ:</strong></p><p><strong>मॉडल आर्किटेक्चर और दक्षता</strong>: RTMpose CSPNeXt को अपनी रीढ़ के रूप में उपयोग करता है [1, 2], गति और सटीकता को संतुलित करता है। CSPNeXt पोज़ अनुमान और वस्तु पहचान जैसे घने भविष्यवाणी कार्यों के लिए अनुकूलित है, उच्च रिज़ॉल्यूशन और सटीकता प्रदान करते हुए कम्प्यूटेशनल दक्षता बनाए रखता है।</p><p><strong>मुख्य बिंदु भविष्यवाणी</strong>: एक SimCC-आधारित एल्गोरिथ्म [1, 3] का उपयोग करता है, मुख्य बिंदुओं की क्षैतिज और ऊर्ध्वाधर स्थिति को अलग वर्गीकरण कार्य के रूप में मानता है। यह कॉम्पैक्ट प्रतिनिधित्व कम्प्यूटेशनल लोड को कम करता है और विभिन्न डिवाइसों पर तैनाती के लिए उपयुक्त है।</p><p><strong>4. RTMDet: डिटेक्शन बैकबोन</strong></p><p>RTMDet [4] ऊपर से नीचे पाइपलाइन में RTMPose से पहले डिटेक्टर के रूप में कार्य करता है, प्रत्येक फ्रेम के भीतर गोल्फर या बेसबॉल खिलाड़ी के स्थान की पहचान करता है।</p><p><strong>मुख्य विशेषताएँ:</strong></p><p><strong>मॉडल आर्किटेक्चर और दक्षता</strong>: RTMDet CSPDarkNet के एक संशोधित संस्करण का उपयोग करता है [5], जो कई YOLO मॉडलों की तुलना में अधिक प्रशिक्षित और सटीक है। संशोधित संस्करण बड़े-कर्नेल गहराई-वार कनवोल्यूशन का लाभ उठाता है जो जटिलता और गति को संतुलित करता है और GPU और CPU दोनों पर कुशल है। यह खेल परफॉर्मेंस ट्रैकिंग जैसे वास्तविक समय अनुप्रयोगों के लिए आदर्श है।</p><p><strong>बहुमुखी प्रतिभा</strong>: विभिन्न वस्तु पहचान कार्यों को संभालता है, जिसमें इंस्टेंस खंडन और घूर्णित वस्तु पहचान शामिल है। गतिशील दृश्यों में भी खिलाड़ी का सटीक स्थानीयकरण सुनिश्चित करता है।</p><p><strong>5. गोल्फ और बेसबॉल स्विंग विश्लेषण में RTMDet और RTMPose का उपयोग करने के लाभ</strong></p><p><strong>5.1 भीड़-रहित दृश्यों में उच्च सटीकता</strong></p><p>गोल्फ/बेसबॉल की सामान्य सेटिंग्स में फ्रेम में कम व्यक्तियों के साथ, RTMDet गोल्फर/बेसबॉल खिलाड़ी को अलग करता है, RTMPose को प्रत्येक पहचाने गए व्यक्ति को उच्च सटीकता के साथ प्रक्रिया करने की अनुमति देता है। यह नीचे से ऊपर विधियों की जटिलता से बचाता है जो फ्रेम में सभी व्यक्तियों के लिए सभी मुख्य बिंदुओं को एक साथ प्रक्रिया करते हैं। ऊपर से नीचे दृष्टिकोण RTMdet के पोस्ट-प्रोसेसिंग एल्गोरिथ्म को भी शामिल कर सकता है जो पोज़ अनुमान करने से पहले सही व्यक्ति (अर्थात्, गोल्फर या बेसबॉल खिलाड़ी) की पहचान करता है। इसके अलावा, RTMPose को विस्तृत छवि सामग्री पर पूर्व-प्रशिक्षित किया गया है जिसमें</p><p><strong>5.2 कुशल गणना और वास्तविक समय परफॉर्मेंस</strong></p><p>RTMdet और RTMpose जैसे हल्के मॉडलों का उपयोग करते हुए, कम विलंबता बनाए रखता है, जो उपभोक्ता-ग्रेड हार्डवेयर पर वास्तविक समय स्विंग विश्लेषण सक्षम करता है। यह कोचिंग या प्रशिक्षण सत्र के दौरान तत्काल लाइव प्रतिक्रिया प्रदान करने के लिए विशेष रूप से उपयोगी है। Swing Catalyst मार्करलेस मोशन कैप्चर सिस्टम कुछ स्टूडियो सिस्टमों में से एक है जो गोल्फर और बेसबॉल खिलाड़ियों को लाइव मोशन कैप्चर फीडबैक प्रदान करता है।</p><p><strong>5.3 विस्तृत मुख्य बिंदु विश्लेषण</strong></p><p>RTMPose 26 शरीर मुख्य बिंदुओं का एक सेटअप पहचानता है [6] जो नीचे चित्र 1 में प्रदर्शित है, गोल्फ और बेसबॉल स्विंग गतिमान के विश्लेषण के लिए आवश्यक है। Halpe26 एक विस्तारित सेटअप है जिसमें पैरों और सिर पर अतिरिक्त मार्कर शामिल हैं, जो अधिक मानक COCO सेटअप से तुलना में 17 मार्कर हैं।</p><p>&ndash;Insert Figure&ndash;</p><p><strong>6. गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर के लिए पद्धति</strong></p><p><strong>6.1 डिटेक्शन चरण: RTMDet</strong></p><p>एक गोल्फर या बेसबॉल खिलाड़ी के वीडियो फ्रेम पर लागू, RTMDet खिलाड़ी के चारों ओर सीमा बॉक्स उत्पन्न करता है, जिन्हें RTMPose को पास किया जाता है। यह पोज़ अनुमान को प्रासंगिक छवि क्षेत्रों पर ध्यान केंद्रित करता है, कम्प्यूटेशनल लोड को कम करता है।</p><p>&ndash;Insert Image&ndash;</p><p><strong>6.2 पोज़ अनुमान चरण: RTMPose</strong></p><p>RTMPose सीमा बॉक्स के भीतर मुख्य बिंदु स्थिति का अनुमान लगाता है। गोल्फ और बेसबॉल स्विंग विश्लेषण के लिए महत्वपूर्ण जोड़ में कलाई, कोहनी, कंधे, कूल्हे और घुटने शामिल हैं। ये मुख्य बिंदु स्विंग के चरणों के दौरान शरीर के कोण और स्थिति का आकलन करते हैं: बैकस्विंग, डाउनस्विंग और फॉलो-थ्रू।</p><p>&ndash;Insert Image&ndash;</p><p><strong>6.3 परफॉर्मेंस मापक</strong></p><p>RTMPose का सामान्य परफॉर्मेंस Average Precision (AP) जैसे मापकों का उपयोग करके पोज़ अनुमान बेंचमार्क जैसे MS COCO पर मापा जाता है। नीचे आमतौर पर उपयोग किए जाने वाले COCO बेंचमार्क पर सर्वश्रेष्ठ रैंक किए गए मॉडलों का परफॉर्मेंस है। MS COCO val Dataset पर, RTMPose-X सर्वश्रेष्ठ परफॉर्मिंग मॉडल है जो वास्तविक समय प्रतिक्रिया प्रदान कर सकता है और उपभोक्ता-ग्रेड GPUs पर ?? FPS से अधिक फ्रेम दर के साथ 75.8% AP तक प्राप्त करता है, जो इसे उच्च गति खेल विश्लेषण के लिए उपयुक्त बनाता है।</p><p>रैंक
 मॉडल
 रिज़ॉल्यूशन
 आकार/पैरामीटर (मिलियन)
 AP
-वास्तविक समय अनुमान</p>
-<p>1
+वास्तविक समय अनुमान</p><p>1
 Sapiens-2B
 1024x768
 2000
 82.2
-नहीं</p>
-<p>2
+नहीं</p><p>2
 Sapiens-1B
 1024x768
 1000
 82.1
-नहीं</p>
-<p>3
+नहीं</p><p>3
 Sapiens-0.6B
 1024x768
 600
 81.2
-नहीं</p>
-<p>4
+नहीं</p><p>4
 Sapiens-0.3B
 1024x768
 300
 79.6
-नहीं</p>
-<p>5
+नहीं</p><p>5
 VitPose-H
 256x192
 632
 79.4
-नहीं</p>
-<p><strong>6</strong>
+नहीं</p><p><strong>6</strong>
 <strong>RTMPose-X</strong>
 <strong>384x288</strong>
 <strong>49</strong>
 <strong>78.8</strong>
-<strong>हाँ</strong></p>
-<p>7
+<strong>हाँ</strong></p><p>7
 VitPose-L
 256x192
 307
 78.6
-नहीं</p>
-<p>8
+नहीं</p><p>8
 RTMPose-L
 384x288
 28
 78.3
-हाँ</p>
-<p>9
+हाँ</p><p>9
 HRFormer
 256x192
 43
 77.2
-नहीं</p>
-<p>10
+नहीं</p><p>10
 HRNet-UDP
 384x288
 64
 77.2
-हाँ</p>
-<p>11
+हाँ</p><p>11
 VitPose-B
 256x192
 86
 77.0
-हाँ</p>
-<p>12
+हाँ</p><p>12
 RTMPose-L
 256x198
 28
 76.7
-हाँ</p>
-<p>13
+हाँ</p><p>13
 RTMPose-M
 384x288
 14
 76.6
-हाँ</p>
-<p>14
+हाँ</p><p>14
 HRNet
 384x288
 64
 76.3
-हाँ</p>
-<p>15
+हाँ</p><p>15
 VitPose-S
 256x192
 43
 75.8
-हाँ</p>
-<p>16
+हाँ</p><p>16
 RTMPose-M
 256x192
 14
 74.9
-हाँ</p>
-<p>17
+हाँ</p><p>17
 SimpleBaseline
 256x192
 60
 73.5
-हाँ</p>
-<p>18
+हाँ</p><p>18
 FastPose
 256x192
 79
 73.3
-हाँ</p>
-<p><strong>7. गोल्फ स्विंग विश्लेषण में अनुप्रयोग</strong></p>
-<p>RTMPose-X और RTMDet-M Framework को लागू करके:</p>
-<p><strong>फ्रेम-दर-फ्रेम जोड़ की गति को ट्रैक करें</strong>: स्विंग के प्रत्येक चरण के विश्लेषण के लिए व्यापक डेटा प्रदान करता है।</p>
-<p><strong>रीयल-टाइम प्रतिक्रिया प्रदान करें</strong>: प्रशिक्षण सत्र के दौरान स्विंग मुद्रा और रूप में तत्काल अंतर्दृष्टि सक्षम करता है।</p>
-<p><strong>आदर्श यांत्रिकी के साथ तुलना करें</strong>: आदर्श स्विंग गतिमान के विरुद्ध तुलना करने की अनुमति देता है और सुधार के क्षेत्रों की पहचान करता है।</p>
-<p><strong>8. निष्कर्ष</strong></p>
-<p>RTMPose-X और RTMDet-M का एकीकरण रीयल-टाइम गोल्फ स्विंग विश्लेषण के लिए एक शक्तिशाली समाधान प्रदान करता है। उच्च सटीकता, कम विलंबता और विभिन्न हार्डवेयर प्लेटफार्मों में संगतता के साथ, यह ऊपर से नीचे दृष्टिकोण स्विंग यांत्रिकी में विस्तृत अंतर्दृष्टि प्रदान करता है। इसमें एमेच्योर और पेशेवर गोल्फर दोनों को उनके परफॉर्मेंस को बढ़ाने में सहायता करने की महत्वपूर्ण संभावना है।</p>
-<p><strong>9. भविष्य का कार्य</strong></p>
-<p>भविष्य के विकास में शामिल हो सकते हैं:</p>
-<p><strong>मशीन लर्निंग एल्गोरिदम को एकीकृत करना</strong>: भविष्यसूचक विश्लेषण प्रदान करने और स्विंग दक्षता में सुधार के लिए समायोजन का सुझाव देने के लिए।</p>
-<p><strong>बहु-व्यक्ति परिदृश्यों तक विस्तारित करना</strong>: टीम खेल या समूह प्रशिक्षण वातावरण में प्रयोज्यता को बढ़ाता है।</p>
-<p><strong>उपयोगकर्ता-अनुकूल इंटरफेस विकसित करना</strong>: ऐसे अनुप्रयोग या उपकरण बनाना जो इस तकनीक को कोचों और एथलीटों के लिए तकनीकी विशेषज्ञता के बिना सुलभ बनाते हैं।</p>
-<p><strong>परिशिष्ट</strong></p>
-<p><strong>विस्तृत पद्धति: RTMPose-X और RTMDet-M का उपयोग करके गोल्फ स्विंग पोज़ अनुमान के लिए ऊपर से नीचे दृष्टिकोण</strong></p>
-<p><strong>अवलोकन</strong></p>
-<p>यहां वर्णित पद्धति गोल्फ और बेसबॉल स्विंग के रीयल-टाइम पोज़ अनुमान के लिए ऊपर से नीचे दृष्टिकोण में शामिल विस्तृत चरणों की रूपरेखा देती है, मुख्य बिंदु स्थानीयकरण के लिए RTMPose और वस्तु पहचान के लिए RTMDet की शक्तियों का लाभ उठाती है। प्रक्रिया कई चरणों में विभाजित है: पहचान, मुख्य बिंदु स्थानीयकरण और पोस्ट-प्रोसेसिंग, प्रत्येक बायोमेकेनिकल विश्लेषण के लिए गोल्फ स्विंग में शरीर के जोड़ों के सटीक और कुशल अनुमान में योगदान देता है।</p>
-<p>&ndash;आकृति सम्मिलित करें&ndash;</p>
-<p><strong>1. पहचान चरण: RTMDet-M के साथ रीयल-टाइम स्थानीयकरण</strong></p>
-<p>ऊपर से नीचे दृष्टिकोण के पहले चरण में वीडियो के प्रत्येक फ्रेम में गोल्फर की पहचान करना शामिल है। खेल परिदृश्यों में, विशेष रूप से गोल्फ में, दृश्य आमतौर पर एक एकल खिलाड़ी से मिलकर बनता है, जो भीड़ के दृश्यों की तुलना में पहचान कार्य को सरल बनाता है।</p>
-<p><strong>1.1 मॉडल आर्किटेक्चर</strong></p>
-<p>RTMDet-M को पाइपलाइन में वस्तु डिटेक्टर के रूप में नियोजित किया जाता है। यह एक कनवोलूशनल न्यूरल नेटवर्क (CNN) बैकबोन, विशेष रूप से CSPNeXt बैकबोन का उपयोग करता है, जो गति और सटीकता के बीच संतुलन बनाए रखते हुए रीयल-टाइम वस्तु पहचान परफॉर्मेंस को अनुकूलित करने के लिए डिज़ाइन किया गया है। आर्किटेक्चर के मुख्य पहलुओं में शामिल हैं:</p>
-<p><strong>बड़े-कर्नल गहराई-वार कनवोलूशन</strong>: इन्हें बैकबोन और गर्दन परतों में नियोजित किया जाता है, ग्रहणशील क्षेत्र को बढ़ाते हुए कम कम्प्यूटेशनल लागत बनाए रखते हैं।</p>
-<p><strong>विशेषता पिरामिड नेटवर्क (FPN)</strong>: एक बहु-स्केल विशेषता निष्कर्षण तकनीक जो विभिन्न पैमानों पर वस्तुओं की पहचान करने की अनुमति देती है, यह सुनिश्चित करती है कि गोल्फर को कैमरे से उनकी दूरी की परवाह किए बिना पहचाना जा सके।</p>
-<p><strong>1.2 गतिशील लेबल असाइनमेंट</strong></p>
-<p>RTMDet-M एक गतिशील लेबल असाइनमेंट कार्यनीति का लाभ उठाता है जो वर्गीकरण और स्थानीयकरण हानि के संयोजन के आधार पर वस्तुओं को नरम लेबल असाइन करके पहचान सटीकता में सुधार करता है। लेबल असाइनमेंट SimOTA एल्गोरिदम द्वारा संचालित होता है, जो गतिशील रूप से सकारात्मक नमूनों को उनके आधार सत्य वस्तु के मेल की संभावना के आधार पर चुनता है। यह विधि बाहरी गोल्फ दृश्यों में अक्सर सामने आने वाली अलग-अलग प्रकाश व्यवस्था और पर्यावरणीय स्थितियों में मजबूत पहचान सुनिश्चित करती है।</p>
-<p><strong>1.3 सीमा बॉक्स भविष्यवाणी</strong></p>
-<p>डिटेक्टर सीमा बॉक्स आउटपुट करता है जो प्रत्येक फ्रेम में गोल्फर को घेरते हैं। ये सीमा बॉक्स स्थानिक बाधाएं प्रदान करते हैं जिनके भीतर पोज़ अनुमान मॉडल काम करेगा, फ्रेम के केवल प्रासंगिक क्षेत्रों पर ध्यान केंद्रित करके बाद के पोज़ अनुमान चरण पर कम्प्यूटेशनल लोड को कम करते हैं। इस संदर्भ में, RTMDet-M उच्च-परफॉर्मेंस हार्डवेयर पर 300 FPS से अधिक की गति से वास्तविक समय में सीमा बॉक्स उत्पन्न करता है, यह सुनिश्चित करते हुए कि यह गोल्फ स्विंग की तेजी से गतिशीलता के साथ तालमेल बना सकता है।</p>
-<p><strong>1.4 पर्सन नॉन-मैक्सिमम सप्रेशन (NMS)</strong></p>
-<p>बहु-व्यक्ति सेटिंग्स में (हालांकि गोल्फ स्विंग विश्लेषण में दुर्लभ), RTMDet-M एक पोज़ नॉन-मैक्सिमम सप्रेशन (NMS) एल्गोरिदम को शामिल करता है जो अनावश्यक मुख्य बिंदु पहचान को समाप्त करता है, यह सुनिश्चित करते हुए कि केवल सबसे आश्वस्त पहचान सभी के लिए बनी रहती है। यह महत्वपूर्ण है उन उदाहरणों में जहां भीड़ भरे दृश्यों या वीडियो अनुक्रमों में अतिव्यापी सीमा बॉक्स का पता लगाया जा सकता है।</p>
-<p><strong>1.5 प्रशिक्षण Dataset और परफॉर्मेंस</strong></p>
-<p>RTMDet-M को Object356 Dataset में व्यक्ति उदाहरणों पर एक द्विआधारी वर्गीकरण कार्य पर प्रशिक्षित किया जाता है।</p>
-<p><strong>2. पोज़ अनुमान चरण: RTMPose-X मुख्य बिंदु स्थानीयकरण</strong></p>
-<p>एक बार गोल्फर के लिए सीमा बॉक्स स्थापित हो जाने के बाद, अगले चरण में इस क्षेत्र के भीतर मुख्य शरीर जोड़ों की सटीक स्थिति का अनुमान लगाना शामिल है। RTMPose-X, एक उच्च-परफॉर्मेंस पोज़ अनुमान मॉडल, इस उद्देश्य के लिए उपयोग किया जाता है।</p>
-<p><strong>2.1 SimCC-आधारित मुख्य बिंदु स्थानीयकरण</strong></p>
-<p>RTMPose-X SimCC (Simple Coordinate Classification) एल्गोरिदम को नियोजित करता है, जो मुख्य बिंदु स्थानीयकरण को एक वर्गीकरण समस्या के रूप में मानता है। पारंपरिक हीटमैप-आधारित विधियों के विपरीत, SimCC प्रत्येक मुख्य बिंदु के x और y निर्देशांक को बिन्स में विभाजित करता है और सटीक बिन को वर्गीकृत करता है जहां प्रत्येक मुख्य बिंदु स्थित है। यह दृष्टिकोण कम्प्यूटेशनल जटिलता को महत्वपूर्ण रूप से कम करता है और अनुमान गति में सुधार करता है जबकि मानव पोज़ अनुमान कार्यों के लिए उच्च सटीकता बनाए रखता है।</p>
-<p><strong>2.2 CSPNeXt बैकबोन</strong></p>
-<p>RTMDet-M के समान, RTMPose-X भी CSPNeXt बैकबोन का उपयोग करता है, जो पोज़ अनुमान जैसे घने भविष्यवाणी कार्यों के लिए अनुकूलित है। CSPNeXt बैकबोन इस परिदृश्य में निम्नलिखित कारणों के लिए लाभप्रद है:</p>
-<p><strong>हल्के आर्किटेक्चर</strong>: मॉडल की आर्किटेक्चर पैरामीटर की संख्या को कम करने के लिए डिज़ाइन की गई है जबकि थ्रूपुट को अधिकतम करती है, जो वास्तविक समय अनुप्रयोगों के लिए आदर्श बनाता है।</p>
-<p><strong>कुशल विशेषता निष्कर्षण</strong>: CSPNeXt की विशेषता निष्कर्षण परतें उच्च-रिज़ॉल्यूशन छवियों को संसाधित करने के लिए अनुकूलित हैं, जो एक गोल्फ स्विंग के दौरान तेजी से चलने वाले शरीर के हिस्सों में छोटी विवरण का पता लगाने के लिए महत्वपूर्ण है, जैसे कलाई, कोहनी और घुटने।</p>
-<p><strong>2.3 मुख्य बिंदु प्रतिनिधित्व</strong></p>
-<p>RTMPose-X सभी प्रासंगिक शरीर के हिस्सों के लिए मुख्य बिंदु स्थान आउटपुट करता है, जिसमें शामिल हैं:</p>
-<p><strong>ऊपरी शरीर जोड़</strong>: कंधे, कोहनी, कलाई और गर्दन</p>
-<p><strong>निचला शरीर जोड़</strong>: कूल्हे, घुटने और टखने</p>
-<p><strong>अतिरिक्त जोड़</strong>: सिर, रीढ़ और अन्य मुख्य बिंदु स्विंग विश्लेषण के लिए प्रासंगिक</p>
-<p>इनपुट छवियों के लिए 384x288 का रिज़ॉल्यूशन यह सुनिश्चित करता है कि जोड़ों में सूक्ष्म गतिविधियां भी सटीक रूप से कैप्चर की जा सकें, साथ ही वास्तविक समय में चलाने के लिए सिस्टम की क्षमता को भी बनाए रखती है।</p>
-<p><strong>2.4 RTMPose प्रीप्रोसेसिंग: निष्पक्ष डेटा प्रोसेसिंग (UDP)</strong></p>
-<p>क्रॉप की गई छवि को RTMpose मॉडल में डालने से पहले, एक निष्पक्ष डेटा प्रोसेसिंग (UDP) चरण किया जाता है। UDP RTMpose प्रशिक्षण और परीक्षण के दौरान डेटा प्रोसेसिंग में महत्वपूर्ण पूर्वाग्रहों को संबोधित करता है, विशेष रूप से निर्देशांक प्रणाली और मुख्य बिंदु प्रारूप परिवर्तन में। पारंपरिक मानव पोज़ अनुमान पाइपलाइनों में, मानक संचालन जैसे फ्लिपिंग और रीसाइज़िंग अक्सर आउटपुट को गलत संरेखित करते हैं, विशेष रूप से पिक्सेल-आधारित परिवर्तनों के कारण, जो सटीकता हानि और फ्लिप की गई छवियों के गैर-संरेखण की ओर ले जाते हैं। UDP इन्हें एक निष्पक्ष निर्देशांक प्रणाली परिवर्तन स्थापित करके सुधारता है, आवश्यक संचालन (क्रॉपिंग, रीसाइज़िंग, घूर्णन, फ्लिपिंग) के दौरान विभिन्न निर्देशांक स्थानों में सिमेंटिक संरेखण को संरक्षित करता है। UDP निष्पक्ष मुख्य बिंदु प्रारूप परिवर्तन भी प्रस्तुत करता है, मुख्य बिंदु को स्थिति पूर्वाग्रह के बिना हीटमैप में एन्कोड करके, एक गॉसियन वितरण-जागरूक डिकोडिंग प्रक्रिया के माध्यम से आगे परिष्कृत किया जाता है। यह डेटा प्रोसेसिंग दृष्टिकोण व्यवस्थित रूप से मॉडल परफॉर्मेंस में सुधार करता है, जैसा कि COCO और CrowdPose Dataset पर व्यापक परीक्षण में दिखाया गया है, जहां इसने शीर्ष-नीचे और नीचे-शीर्ष दोनों मॉडलों में बेहतर सटीकता और कम अनुमान विलंबता प्राप्त की है [Ref]।</p>
-<p><strong>3. पोस्ट-प्रोसेसिंग और पोज़ परिष्कार</strong></p>
-<p>एक बार मुख्य बिंदु की भविष्यवाणी हो जाने के बाद, पोज़ अनुमान को परिष्कृत करने और फ्रेम भर में स्थिरता सुनिश्चित करने के लिए कई पोस्ट-प्रोसेसिंग चरण लागू किए जाते हैं।</p>
-<p><strong>3.1 पोज़ स्मूदिंग</strong></p>
-<p>गोल्फ स्विंग तेजी से गति शामिल है, जो फ्रेम के पार अनुमानित मुख्य बिंदु स्थान में शोर या उतार-चढ़ाव पेश कर सकता है। इसे कम करने के लिए, समय के साथ मुख्य बिंदु प्रक्षेपवक्र को सुचारू करने के लिए एक <strong>One-Euro Filter</strong> लागू किया जाता है, यह सुनिश्चित करते हुए कि मुख्य बिंदु भविष्यवाणियों में छोटे, गैर-भौतिक उतार-चढ़ाव समाप्त हो जाते हैं। One-Euro Filter गति की गति के आधार पर फिल्टर की बैंडविड्थ को गतिशील रूप से समायोजित करके काम करता है, जो गोल्फ स्विंग जैसे परिदृश्यों के लिए आदर्श है, जहां गति बैकस्विंग, डाउनस्विंग और फॉलो-थ्रू जैसे विभिन्न चरणों में गति में काफी भिन्न होती है।</p>
-<p><strong>3.2 फ्रेम स्किप तंत्र</strong></p>
-<p>अग्रिम अनुकूलन के लिए, एक <strong>फ्रेम स्किप तंत्र</strong> लागू किया जाता है, जहां पहचान केवल कुंजी फ्रेम पर की जाती है, और पोज़ अनुमान मध्यवर्ती फ्रेम के लिए इंटरपोलेट किया जाता है। यह कम्प्यूटेशनल लोड को काफी कम करता है बिना परिदृश्यों में सटीकता का बलिदान दिए जहां फ्रेम के बीच सीमित गति होती है, जैसे गोल्फ स्विंग का धीमी-गति विश्लेषण।</p>
-<p><strong>4. लौकिक ट्रैकिंग और अनुक्रम संगति</strong></p>
-<p>यह देखते हुए कि गोल्फ स्विंग स्वाभाविक रूप से अनुक्रमिक हैं, पोज़ अनुमान में लौकिक संगति बनाए रखना महत्वपूर्ण है। RTMPose-X इसे लौकिक ट्रैकिंग तकनीकों के माध्यम से संबोधित करता है, जो यह सुनिश्चित करते हैं कि मुख्य बिंदु भविष्यवाणियां लगातार फ्रेम भर में सुसंगत हैं। इसमें समय के साथ मुख्य बिंदु स्थिति को ट्रैक करना और यह सुनिश्चित करना शामिल है कि उनके प्रक्षेपवक्र जैव-यांत्रिक बाधाओं के आधार पर यथार्थवादी गति पैटर्न का पालन करते हैं।</p>
-<p><strong>4.1 मुख्य बिंदु वेग और त्वरण विश्लेषण</strong></p>
-<p>मुख्य बिंदु स्थिति को ट्रैक करने के अलावा, RTMPose-X प्रत्येक मुख्य बिंदु के वेग और त्वरण का भी अनुमान लगाता है। यह जानकारी गोल्फ स्विंग की गतिशीलता को विश्लेषण करने के लिए महत्वपूर्ण है, जो मुख्य परफॉर्मेंस मापक जैसे अंतर्दृष्टि प्रदान करती है:</p>
-<p><strong>स्विंग गति</strong>: डाउनस्विंग के दौरान कलाई वेग के आधार पर गणना की जाती है।</p>
-<p><strong>कूल्हा घूर्णन</strong>: कूल्हे के जोड़ों के घूर्णन वेग के माध्यम से विश्लेषण किया जाता है।</p>
-<p><strong>क्लब पथ और हेड गति</strong>: कलाई और कोहनी प्रक्षेपवक्र से अप्रत्यक्ष रूप से अनुमान लगाया जाता है।</p>
-<p>इन मापकों की तुलना पेशेवर मानदंडों से की जा सकती है ताकि खिलाड़ी की स्विंग यांत्रिकी पर प्रतिक्रिया दी जा सके।</p>
-<p><strong>5. अनुमान और वास्तविक-समय परफॉर्मेंस</strong></p>
-<p>संपूर्ण ऊपर से नीचे पाइपलाइन वास्तविक समय परफॉर्मेंस के लिए अनुकूलित है, जो आधुनिक GPUs पर 90 FPS से अधिक पर पोज़ अनुमान की अनुमति देता है। अत्यधिक कुशल मॉडल आर्किटेक्चर (CSPNeXt) और तेज अनुमान तकनीकों (SimCC) का उपयोग यह सुनिश्चित करता है कि सिस्टम उच्च फ्रेम दर वीडियो इनपुट को संभाल सकता है, जो प्रशिक्षण सेशन के दौरान वास्तविक समय प्रतिक्रिया के लिए उपयुक्त बनाता है।</p>
-<p><strong>6. मूल्यांकन और सत्यापन</strong></p>
-<p>RTMPose-X और RTMDet-M मॉडलों का COCO और MPII जैसे मानक Dataset पर मूल्यांकन किया जाता है, शरीर मुख्य बिंदु के लिए COCO Dataset पर औसत सटीकता (AP) 75.8% के साथ मजबूत परफॉर्मेंस दिखाते हैं। इन परिणामों को गोल्फ स्विंग Dataset में ग्राउंड-ट्रूथ एनोटेशन के विरुद्ध मान्य किया जाता है, गतिशील खेल गतिविधियों को कैप्चर करने में मॉडल की मजबूती सुनिश्चित करता है।</p>
-<p><strong>6.1 परफॉर्मेंस मापक</strong></p>
-<p><strong>मीन स्क्वायर्ड एरर (MSE)</strong>: मुख्य बिंदु पूर्वानुमान की सटीकता को आधार सत्य एनोटेशन के विरुद्ध मापने के लिए उपयोग किया जाता है।</p>
-<p><strong>औसत सटीकता (AP)</strong>: पोज़ अनुमान मॉडल के समग्र परफॉर्मेंस का मूल्यांकन करता है।</p>
-<p><strong>फ्रेम प्रोसेसिंग समय</strong>: सिस्टम रीयल-टाइम आवश्यकताओं (&lt; 10 मिली सेकंड प्रति फ्रेम) को पूरा करता है यह सुनिश्चित करने के लिए बेंचमार्क किया जाता है।</p>
-<p><strong>7. निष्कर्ष</strong></p>
-<p>RTMPose-X और RTMDet-M का उपयोग करके ऊपर से नीचे दृष्टिकोण खेल विश्लेषण में, विशेष रूप से गोल्फ स्विंग विश्लेषण के लिए रीयल-टाइम पोज़ अनुमान के लिए एक कुशल और सटीक विधि प्रदान करता है। मजबूत मुख्य बिंदु पहचान, अस्थायी ट्रैकिंग, और रीयल-टाइम अनुमान के साथ, यह पद्धति गोल्फ स्विंग गतिकी में विस्तृत बायोमेकेनिकल अंतर्दृष्टि प्रदान करती है, परफॉर्मेंस सुधार और चोट की रोकथाम में सहायता करती है।</p>
-<p>संदर्भ</p>
-<p>[1] RTMpose <a href="https://arxiv.org/pdf/2303.07399" rel="external">https://arxiv.org/pdf/2303.07399</a></p>
-<p>[2] CSPNeXt <a href="https://www.sciencedirect.com/science/article/pii/S0952197624000447" rel="external">https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p>
-<p>[3] SIMCC <a href="https://arxiv.org/abs/2107.03332" rel="external">https://arxiv.org/abs/2107.03332</a></p>
-<p>[4] RTMdet <a href="https://arxiv.org/pdf/2212.07784" rel="external">https://arxiv.org/pdf/2212.07784</a></p>
-<p>[5] CSPDarkNet</p>
-<p>[6] Halpe26</p>
-<p>[] AI चुनौती Dataset:</p>
-<p>[] MS Coco Dataset:</p>
-<p>[7] Crowdpose Dataset: <a href="https://arxiv.org/pdf/1812.00324" rel="external">https://arxiv.org/pdf/1812.00324</a></p>
-<p>[] MPII Dataset:</p>
-<p>[] sub-JHMBD Dataset:</p>
-<p>[] Halpe Dataset:</p>
-<p>[] PoseTrack18 Dataset:</p>
-<p>Object365 डेटाबेस: <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf" rel="external">https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p>
-<p><em>अंतिम अपडेट: 2025-03-05</em> | <a href="/sc-support/hi/software-features/markerless-motion-capture/index.html">आधिकारिक सपोर्ट साइट पर देखें</a></p>
-
-  <footer class="footline">
-  </footer>
-</article>
-        </div>
-      </main>
-    </div>
-    <aside id="R-sidebar" class="default-animation">
-      <div id="R-header-topbar" class="default-animation"></div>
-      <div id="R-header-wrapper" class="default-animation">
-        <a id="R-logo" class="R-default direction-row" href="/sc-support/hi/index.html">
-          <span class="logo-title default-animation">Swing Catalyst सहायता</span>
-        </a>
-        <search>
-          <div class="searchbox default-animation">
-            <i class="fas fa-fw fa-search" title="खोजे (CTRL+ALT+f)"></i>
-            <label class="a11y-only" for="R-search-by">खोजे</label>
-            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="खोजे...">
-            <button class="search-clear" type="button" data-search-clear="" title="खोज साफ़ करें"><i class="fas fa-fw fa-times" title="खोज साफ़ करें"></i></button>
-          </div>
-        </search>
-      </div>
-      <div id="R-homelinks" class="default-animation">
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
-          <ul class="">
-          </ul>
-        </div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-      </div>
-      <div id="R-content-wrapper" class="highlightable">
-        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
-          <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/sc-support/hi/getting-started/index.html"><a class="padding default-animation" href="/sc-support/hi/getting-started/index.html">शुरुआत करना</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/hi/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/hi/cameras-video/index.html">कैमरे और वीडियो</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/hi/hardware/index.html"><a class="padding default-animation" href="/sc-support/hi/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
-            <li class="parent " data-nav-id="/sc-support/hi/software-features/index.html"><a class="padding default-animation" href="/sc-support/hi/software-features/index.html">सॉफ़्टवेयर और सुविधाएँ</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
-            <li class="" data-nav-id="/sc-support/hi/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/hi/software-features/multiple-forces-graph/index.html">Multiple Forces Graph</a></li>
-            <li class="active " data-nav-id="/sc-support/hi/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/hi/software-features/markerless-motion-capture/index.html">RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/hi/software-features/ios-app-sharing/index.html">Swing Catalyst iOS ऐप से रिकॉर्ड किए गए वीडियो साझा करना</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/hi/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/hi/software-features/motion-capture-guide/index.html">Swing Catalyst Motion Capture उपयोगकर्ता गाइड</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/hi/software-features/swing-catalyst-online/index.html">Swing Catalyst Online का उपयोग कैसे करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/hi/software-features/multiple-displays/index.html">Swing Catalyst के साथ कई डिस्प्ले कैसे सेटअप करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/hi/software-features/email-sharing/index.html">Swing Catalyst में ईमेल शेयरिंग कैसे सेट करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/hi/software-features/motion-capture-install/index.html">Swing Catalyst मोशन कैप्चर घटकों को कैसे इंस्टॉल करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/hi/software-features/motion-capture-disclosures/index.html">Swing Catalyst मोशन कैप्चर टूल के उपयोगकर्ताओं के लिए महत्वपूर्ण प्रकटीकरण</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/hi/software-features/motion-capture-settings/index.html">Swing Catalyst मोशन कैप्चर सेटिंग्स</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/hi/software-features/import-from-v1/index.html">V1 से वीडियो कैसे आयात करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/explorer/index.html"><a class="padding" href="/sc-support/hi/software-features/explorer/index.html">एक्सप्लोरर का उपयोग कैसे करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/hi/software-features/change-recording-user/index.html">किसी मौजूदा रिकॉर्डिंग पर उपयोगकर्ता कैसे बदलें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/hi/software-features/keyboard-shortcuts/index.html">कीबोर्ड शॉर्टकट और हॉटकीज़</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/graph-library/index.html"><a class="padding" href="/sc-support/hi/software-features/graph-library/index.html">ग्राफ लाइब्रेरी का उपयोग करना</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/hi/software-features/export-contacts/index.html">छात्र संपर्क जानकारी कैसे निर्यात करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/hi/software-features/pressure-distribution-overlay/index.html">दबाव वितरण ओवरले कार्यक्षमता का उपयोग कैसे करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/hi/software-features/pressure-stance-settings/index.html">नई Pressure और Stance सेटिंग्स का उपयोग करना</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/hi/software-features/body-weight-measurement/index.html">नई शरीर वजन मापन कार्यक्षमता</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/hi/software-features/record-a-lesson/index.html">पाठ कैसे रिकॉर्ड करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/hi/software-features/feedback-screen/index.html">प्रतिक्रिया स्क्रीन कैसे सेटअप करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/hi/software-features/force-graph-phases/index.html">बल ग्राफ चरण</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/hi/software-features/force-vectors/index.html">बल सदिशों का उपयोग कैसे करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/hi/software-features/bookmarks/index.html">बुकमार्क क्या होते हैं?</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/hi/software-features/microphone-trigger/index.html">माइक्रोफ़ोन को कैप्चर ट्रिगर के रूप में कैसे उपयोग करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/hi/software-features/key-metrics/index.html">मुख्य मेट्रिक</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/hi/software-features/export-recordings/index.html">रिकॉर्डिंग निर्यात करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/remote-support/index.html"><a class="padding" href="/sc-support/hi/software-features/remote-support/index.html">रिमोट सपोर्ट का उपयोग कैसे करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/hi/software-features/export-raw-data/index.html">रॉ डेटा एक्सपोर्ट कैसे करें</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/hi/software-features/raw-data-export-guide/index.html">रॉ डेटा एक्सपोर्ट में क्या शामिल है</a></li>
-            <li class="" data-nav-id="/sc-support/hi/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/hi/software-features/frontal-plane-torque/index.html">ललाट तल टॉर्क विश्लेषण - उपयोगकर्ता गाइड</a></li></ul></li>
-            <li class="" data-nav-id="/sc-support/hi/account-setup/index.html"><a class="padding default-animation" href="/sc-support/hi/account-setup/index.html">Account &amp; सेटअप</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/sc-support/hi/reference/index.html"><a class="padding default-animation" href="/sc-support/hi/reference/index.html">संदर्भ</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
-          </ul>
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <ul class="space collapsible-menu">
-          </ul>
-        </div>
-        <div id="R-footer-margin" class="default-animation"></div>
-        <div class="R-menu-divider default-animation">
-          <hr class="padding default-animation">
-        </div>
-        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
-          <ul class="">
-			<li class="R-languageswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-language"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-language">भाषा</label>
-                  <select id="R-select-language">
-                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/markerless-motion-capture/index.html" lang="es">Español</option>
-                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/markerless-motion-capture/index.html" lang="de">Deutsch</option>
-                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/markerless-motion-capture/index.html" lang="fr">Français</option>
-                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/markerless-motion-capture/index.html" lang="it">Italiano</option>
-                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/markerless-motion-capture/index.html" lang="pt">Português</option>
-                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/markerless-motion-capture/index.html" lang="ru">Русский</option>
-                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/markerless-motion-capture/index.html" lang="ja">日本語</option>
-                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/markerless-motion-capture/index.html" lang="ko">한국어</option>
-                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/markerless-motion-capture/index.html" lang="zh">简体中文</option>
-                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/markerless-motion-capture/index.html" lang="hi" selected data-selected>हिन्दी</option>
-                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/markerless-motion-capture/index.html" lang="ar">العربية</option>
-                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" lang="zh-Hant">繁體中文</option>
-                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/markerless-motion-capture/index.html" lang="th">ไทย</option>
-                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/markerless-motion-capture/index.html" lang="sv">Svenska</option>
-                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/markerless-motion-capture/index.html" lang="nb">Norsk Bokmål</option>
-                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/markerless-motion-capture/index.html" lang="da">Dansk</option>
-                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/markerless-motion-capture/index.html" lang="is">Íslenska</option>
-                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/markerless-motion-capture/index.html" lang="id">Bahasa Indonesia</option>
-                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/markerless-motion-capture/index.html" lang="vi">Tiếng Việt</option>
-                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/markerless-motion-capture/index.html" lang="nl">Nederlands</option>
-                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/markerless-motion-capture/index.html" lang="tr">Türkçe</option>
-                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/markerless-motion-capture/index.html" lang="pl">Polski</option>
-                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/markerless-motion-capture/index.html" lang="fi">Suomi</option>
-                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/markerless-motion-capture/index.html" lang="uk">Українська</option>
-                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/markerless-motion-capture/index.html" lang="ro">Română</option>
-                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/markerless-motion-capture/index.html" lang="el">Ελληνικά</option>
-                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/markerless-motion-capture/index.html" lang="cs">Čeština</option>
-                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/markerless-motion-capture/index.html" lang="hu">Magyar</option>
-                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/markerless-motion-capture/index.html" lang="bg">Български</option>
-                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/markerless-motion-capture/index.html" lang="hr">Hrvatski</option>
-                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/markerless-motion-capture/index.html" lang="sr">Српски</option>
-                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/markerless-motion-capture/index.html" lang="sk">Slovenčina</option>
-                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/markerless-motion-capture/index.html" lang="lt">Lietuvių</option>
-                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/markerless-motion-capture/index.html" lang="lv">Latviešu</option>
-                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/markerless-motion-capture/index.html" lang="et">Eesti</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </li>
-            <li class="R-variantswitcher">
-              <div class="padding menu-control">
-                <i class="fa-fw fas fa-paint-brush"></i>
-                <span>&nbsp;</span>
-                <div class="control-style">
-                  <label class="a11y-only" for="R-select-variant">विषय</label>
-                  <select id="R-select-variant">
-                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
-                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
-                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
-                  </select>
-                </div>
-                <div class="clear"></div>
-              </div>
-              <script>window.relearn.markVariant();</script>
-            </li>
-          </ul>
-        </div>
-<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
-      </div>
-    </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772560867" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772560867" defer></script>
-<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
-<script src="/sc-support/js/sc-extras.js"></script>
-
-    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
-  </body>
-</html>
+हाँ</p><p><strong>7. गोल्फ स्विंग विश्लेषण में अनुप्रयोग</strong></p><p>RTMPose-X और RTMDet-M Framework को लागू करके:</p><p><strong>फ्रेम-दर-फ्रेम जोड़ की गति को ट्रैक करें</strong>: स्विंग के प्रत्येक चरण के विश्लेषण के लिए व्यापक डेटा प्रदान करता है।</p><p><strong>रीयल-टाइम प्रतिक्रिया प्रदान करें</strong>: प्रशिक्षण सत्र के दौरान स्विंग मुद्रा और रूप में तत्काल अंतर्दृष्टि सक्षम करता है।</p><p><strong>आदर्श यांत्रिकी के साथ तुलना करें</strong>: आदर्श स्विंग गतिमान के विरुद्ध तुलना करने की अनुमति देता है और सुधार के क्षेत्रों की पहचान करता है।</p><p><strong>8. निष्कर्ष</strong></p><p>RTMPose-X और RTMDet-M का एकीकरण रीयल-टाइम गोल्फ स्विंग विश्लेषण के लिए एक शक्तिशाली समाधान प्रदान करता है। उच्च सटीकता, कम विलंबता और विभिन्न हार्डवेयर प्लेटफार्मों में संगतता के साथ, यह ऊपर से नीचे दृष्टिकोण स्विंग यांत्रिकी में विस्तृत अंतर्दृष्टि प्रदान करता है। इसमें एमेच्योर और पेशेवर गोल्फर दोनों को उनके परफॉर्मेंस को बढ़ाने में सहायता करने की महत्वपूर्ण संभावना है।</p><p><strong>9. भविष्य का कार्य</strong></p><p>भविष्य के विकास में शामिल हो सकते हैं:</p><p><strong>मशीन लर्निंग एल्गोरिदम को एकीकृत करना</strong>: भविष्यसूचक विश्लेषण प्रदान करने और स्विंग दक्षता में सुधार के लिए समायोजन का सुझाव देने के लिए।</p><p><strong>बहु-व्यक्ति परिदृश्यों तक विस्तारित करना</strong>: टीम खेल या समूह प्रशिक्षण वातावरण में प्रयोज्यता को बढ़ाता है।</p><p><strong>उपयोगकर्ता-अनुकूल इंटरफेस विकसित करना</strong>: ऐसे अनुप्रयोग या उपकरण बनाना जो इस तकनीक को कोचों और एथलीटों के लिए तकनीकी विशेषज्ञता के बिना सुलभ बनाते हैं।</p><p><strong>परिशिष्ट</strong></p><p><strong>विस्तृत पद्धति: RTMPose-X और RTMDet-M का उपयोग करके गोल्फ स्विंग पोज़ अनुमान के लिए ऊपर से नीचे दृष्टिकोण</strong></p><p><strong>अवलोकन</strong></p><p>यहां वर्णित पद्धति गोल्फ और बेसबॉल स्विंग के रीयल-टाइम पोज़ अनुमान के लिए ऊपर से नीचे दृष्टिकोण में शामिल विस्तृत चरणों की रूपरेखा देती है, मुख्य बिंदु स्थानीयकरण के लिए RTMPose और वस्तु पहचान के लिए RTMDet की शक्तियों का लाभ उठाती है। प्रक्रिया कई चरणों में विभाजित है: पहचान, मुख्य बिंदु स्थानीयकरण और पोस्ट-प्रोसेसिंग, प्रत्येक बायोमेकेनिकल विश्लेषण के लिए गोल्फ स्विंग में शरीर के जोड़ों के सटीक और कुशल अनुमान में योगदान देता है।</p><p>&ndash;आकृति सम्मिलित करें&ndash;</p><p><strong>1. पहचान चरण: RTMDet-M के साथ रीयल-टाइम स्थानीयकरण</strong></p><p>ऊपर से नीचे दृष्टिकोण के पहले चरण में वीडियो के प्रत्येक फ्रेम में गोल्फर की पहचान करना शामिल है। खेल परिदृश्यों में, विशेष रूप से गोल्फ में, दृश्य आमतौर पर एक एकल खिलाड़ी से मिलकर बनता है, जो भीड़ के दृश्यों की तुलना में पहचान कार्य को सरल बनाता है।</p><p><strong>1.1 मॉडल आर्किटेक्चर</strong></p><p>RTMDet-M को पाइपलाइन में वस्तु डिटेक्टर के रूप में नियोजित किया जाता है। यह एक कनवोलूशनल न्यूरल नेटवर्क (CNN) बैकबोन, विशेष रूप से CSPNeXt बैकबोन का उपयोग करता है, जो गति और सटीकता के बीच संतुलन बनाए रखते हुए रीयल-टाइम वस्तु पहचान परफॉर्मेंस को अनुकूलित करने के लिए डिज़ाइन किया गया है। आर्किटेक्चर के मुख्य पहलुओं में शामिल हैं:</p><p><strong>बड़े-कर्नल गहराई-वार कनवोलूशन</strong>: इन्हें बैकबोन और गर्दन परतों में नियोजित किया जाता है, ग्रहणशील क्षेत्र को बढ़ाते हुए कम कम्प्यूटेशनल लागत बनाए रखते हैं।</p><p><strong>विशेषता पिरामिड नेटवर्क (FPN)</strong>: एक बहु-स्केल विशेषता निष्कर्षण तकनीक जो विभिन्न पैमानों पर वस्तुओं की पहचान करने की अनुमति देती है, यह सुनिश्चित करती है कि गोल्फर को कैमरे से उनकी दूरी की परवाह किए बिना पहचाना जा सके।</p><p><strong>1.2 गतिशील लेबल असाइनमेंट</strong></p><p>RTMDet-M एक गतिशील लेबल असाइनमेंट कार्यनीति का लाभ उठाता है जो वर्गीकरण और स्थानीयकरण हानि के संयोजन के आधार पर वस्तुओं को नरम लेबल असाइन करके पहचान सटीकता में सुधार करता है। लेबल असाइनमेंट SimOTA एल्गोरिदम द्वारा संचालित होता है, जो गतिशील रूप से सकारात्मक नमूनों को उनके आधार सत्य वस्तु के मेल की संभावना के आधार पर चुनता है। यह विधि बाहरी गोल्फ दृश्यों में अक्सर सामने आने वाली अलग-अलग प्रकाश व्यवस्था और पर्यावरणीय स्थितियों में मजबूत पहचान सुनिश्चित करती है।</p><p><strong>1.3 सीमा बॉक्स भविष्यवाणी</strong></p><p>डिटेक्टर सीमा बॉक्स आउटपुट करता है जो प्रत्येक फ्रेम में गोल्फर को घेरते हैं। ये सीमा बॉक्स स्थानिक बाधाएं प्रदान करते हैं जिनके भीतर पोज़ अनुमान मॉडल काम करेगा, फ्रेम के केवल प्रासंगिक क्षेत्रों पर ध्यान केंद्रित करके बाद के पोज़ अनुमान चरण पर कम्प्यूटेशनल लोड को कम करते हैं। इस संदर्भ में, RTMDet-M उच्च-परफॉर्मेंस हार्डवेयर पर 300 FPS से अधिक की गति से वास्तविक समय में सीमा बॉक्स उत्पन्न करता है, यह सुनिश्चित करते हुए कि यह गोल्फ स्विंग की तेजी से गतिशीलता के साथ तालमेल बना सकता है।</p><p><strong>1.4 पर्सन नॉन-मैक्सिमम सप्रेशन (NMS)</strong></p><p>बहु-व्यक्ति सेटिंग्स में (हालांकि गोल्फ स्विंग विश्लेषण में दुर्लभ), RTMDet-M एक पोज़ नॉन-मैक्सिमम सप्रेशन (NMS) एल्गोरिदम को शामिल करता है जो अनावश्यक मुख्य बिंदु पहचान को समाप्त करता है, यह सुनिश्चित करते हुए कि केवल सबसे आश्वस्त पहचान सभी के लिए बनी रहती है। यह महत्वपूर्ण है उन उदाहरणों में जहां भीड़ भरे दृश्यों या वीडियो अनुक्रमों में अतिव्यापी सीमा बॉक्स का पता लगाया जा सकता है।</p><p><strong>1.5 प्रशिक्षण Dataset और परफॉर्मेंस</strong></p><p>RTMDet-M को Object356 Dataset में व्यक्ति उदाहरणों पर एक द्विआधारी वर्गीकरण कार्य पर प्रशिक्षित किया जाता है।</p><p><strong>2. पोज़ अनुमान चरण: RTMPose-X मुख्य बिंदु स्थानीयकरण</strong></p><p>एक बार गोल्फर के लिए सीमा बॉक्स स्थापित हो जाने के बाद, अगले चरण में इस क्षेत्र के भीतर मुख्य शरीर जोड़ों की सटीक स्थिति का अनुमान लगाना शामिल है। RTMPose-X, एक उच्च-परफॉर्मेंस पोज़ अनुमान मॉडल, इस उद्देश्य के लिए उपयोग किया जाता है।</p><p><strong>2.1 SimCC-आधारित मुख्य बिंदु स्थानीयकरण</strong></p><p>RTMPose-X SimCC (Simple Coordinate Classification) एल्गोरिदम को नियोजित करता है, जो मुख्य बिंदु स्थानीयकरण को एक वर्गीकरण समस्या के रूप में मानता है। पारंपरिक हीटमैप-आधारित विधियों के विपरीत, SimCC प्रत्येक मुख्य बिंदु के x और y निर्देशांक को बिन्स में विभाजित करता है और सटीक बिन को वर्गीकृत करता है जहां प्रत्येक मुख्य बिंदु स्थित है। यह दृष्टिकोण कम्प्यूटेशनल जटिलता को महत्वपूर्ण रूप से कम करता है और अनुमान गति में सुधार करता है जबकि मानव पोज़ अनुमान कार्यों के लिए उच्च सटीकता बनाए रखता है।</p><p><strong>2.2 CSPNeXt बैकबोन</strong></p><p>RTMDet-M के समान, RTMPose-X भी CSPNeXt बैकबोन का उपयोग करता है, जो पोज़ अनुमान जैसे घने भविष्यवाणी कार्यों के लिए अनुकूलित है। CSPNeXt बैकबोन इस परिदृश्य में निम्नलिखित कारणों के लिए लाभप्रद है:</p><p><strong>हल्के आर्किटेक्चर</strong>: मॉडल की आर्किटेक्चर पैरामीटर की संख्या को कम करने के लिए डिज़ाइन की गई है जबकि थ्रूपुट को अधिकतम करती है, जो वास्तविक समय अनुप्रयोगों के लिए आदर्श बनाता है।</p><p><strong>कुशल विशेषता निष्कर्षण</strong>: CSPNeXt की विशेषता निष्कर्षण परतें उच्च-रिज़ॉल्यूशन छवियों को संसाधित करने के लिए अनुकूलित हैं, जो एक गोल्फ स्विंग के दौरान तेजी से चलने वाले शरीर के हिस्सों में छोटी विवरण का पता लगाने के लिए महत्वपूर्ण है, जैसे कलाई, कोहनी और घुटने।</p><p><strong>2.3 मुख्य बिंदु प्रतिनिधित्व</strong></p><p>RTMPose-X सभी प्रासंगिक शरीर के हिस्सों के लिए मुख्य बिंदु स्थान आउटपुट करता है, जिसमें शामिल हैं:</p><p><strong>ऊपरी शरीर जोड़</strong>: कंधे, कोहनी, कलाई और गर्दन</p><p><strong>निचला शरीर जोड़</strong>: कूल्हे, घुटने और टखने</p><p><strong>अतिरिक्त जोड़</strong>: सिर, रीढ़ और अन्य मुख्य बिंदु स्विंग विश्लेषण के लिए प्रासंगिक</p><p>इनपुट छवियों के लिए 384x288 का रिज़ॉल्यूशन यह सुनिश्चित करता है कि जोड़ों में सूक्ष्म गतिविधियां भी सटीक रूप से कैप्चर की जा सकें, साथ ही वास्तविक समय में चलाने के लिए सिस्टम की क्षमता को भी बनाए रखती है।</p><p><strong>2.4 RTMPose प्रीप्रोसेसिंग: निष्पक्ष डेटा प्रोसेसिंग (UDP)</strong></p><p>क्रॉप की गई छवि को RTMpose मॉडल में डालने से पहले, एक निष्पक्ष डेटा प्रोसेसिंग (UDP) चरण किया जाता है। UDP RTMpose प्रशिक्षण और परीक्षण के दौरान डेटा प्रोसेसिंग में महत्वपूर्ण पूर्वाग्रहों को संबोधित करता है, विशेष रूप से निर्देशांक प्रणाली और मुख्य बिंदु प्रारूप परिवर्तन में। पारंपरिक मानव पोज़ अनुमान पाइपलाइनों में, मानक संचालन जैसे फ्लिपिंग और रीसाइज़िंग अक्सर आउटपुट को गलत संरेखित करते हैं, विशेष रूप से पिक्सेल-आधारित परिवर्तनों के कारण, जो सटीकता हानि और फ्लिप की गई छवियों के गैर-संरेखण की ओर ले जाते हैं। UDP इन्हें एक निष्पक्ष निर्देशांक प्रणाली परिवर्तन स्थापित करके सुधारता है, आवश्यक संचालन (क्रॉपिंग, रीसाइज़िंग, घूर्णन, फ्लिपिंग) के दौरान विभिन्न निर्देशांक स्थानों में सिमेंटिक संरेखण को संरक्षित करता है। UDP निष्पक्ष मुख्य बिंदु प्रारूप परिवर्तन भी प्रस्तुत करता है, मुख्य बिंदु को स्थिति पूर्वाग्रह के बिना हीटमैप में एन्कोड करके, एक गॉसियन वितरण-जागरूक डिकोडिंग प्रक्रिया के माध्यम से आगे परिष्कृत किया जाता है। यह डेटा प्रोसेसिंग दृष्टिकोण व्यवस्थित रूप से मॉडल परफॉर्मेंस में सुधार करता है, जैसा कि COCO और CrowdPose Dataset पर व्यापक परीक्षण में दिखाया गया है, जहां इसने शीर्ष-नीचे और नीचे-शीर्ष दोनों मॉडलों में बेहतर सटीकता और कम अनुमान विलंबता प्राप्त की है [Ref]।</p><p><strong>3. पोस्ट-प्रोसेसिंग और पोज़ परिष्कार</strong></p><p>एक बार मुख्य बिंदु की भविष्यवाणी हो जाने के बाद, पोज़ अनुमान को परिष्कृत करने और फ्रेम भर में स्थिरता सुनिश्चित करने के लिए कई पोस्ट-प्रोसेसिंग चरण लागू किए जाते हैं।</p><p><strong>3.1 पोज़ स्मूदिंग</strong></p><p>गोल्फ स्विंग तेजी से गति शामिल है, जो फ्रेम के पार अनुमानित मुख्य बिंदु स्थान में शोर या उतार-चढ़ाव पेश कर सकता है। इसे कम करने के लिए, समय के साथ मुख्य बिंदु प्रक्षेपवक्र को सुचारू करने के लिए एक <strong>One-Euro Filter</strong> लागू किया जाता है, यह सुनिश्चित करते हुए कि मुख्य बिंदु भविष्यवाणियों में छोटे, गैर-भौतिक उतार-चढ़ाव समाप्त हो जाते हैं। One-Euro Filter गति की गति के आधार पर फिल्टर की बैंडविड्थ को गतिशील रूप से समायोजित करके काम करता है, जो गोल्फ स्विंग जैसे परिदृश्यों के लिए आदर्श है, जहां गति बैकस्विंग, डाउनस्विंग और फॉलो-थ्रू जैसे विभिन्न चरणों में गति में काफी भिन्न होती है।</p><p><strong>3.2 फ्रेम स्किप तंत्र</strong></p><p>अग्रिम अनुकूलन के लिए, एक <strong>फ्रेम स्किप तंत्र</strong> लागू किया जाता है, जहां पहचान केवल कुंजी फ्रेम पर की जाती है, और पोज़ अनुमान मध्यवर्ती फ्रेम के लिए इंटरपोलेट किया जाता है। यह कम्प्यूटेशनल लोड को काफी कम करता है बिना परिदृश्यों में सटीकता का बलिदान दिए जहां फ्रेम के बीच सीमित गति होती है, जैसे गोल्फ स्विंग का धीमी-गति विश्लेषण।</p><p><strong>4. लौकिक ट्रैकिंग और अनुक्रम संगति</strong></p><p>यह देखते हुए कि गोल्फ स्विंग स्वाभाविक रूप से अनुक्रमिक हैं, पोज़ अनुमान में लौकिक संगति बनाए रखना महत्वपूर्ण है। RTMPose-X इसे लौकिक ट्रैकिंग तकनीकों के माध्यम से संबोधित करता है, जो यह सुनिश्चित करते हैं कि मुख्य बिंदु भविष्यवाणियां लगातार फ्रेम भर में सुसंगत हैं। इसमें समय के साथ मुख्य बिंदु स्थिति को ट्रैक करना और यह सुनिश्चित करना शामिल है कि उनके प्रक्षेपवक्र जैव-यांत्रिक बाधाओं के आधार पर यथार्थवादी गति पैटर्न का पालन करते हैं।</p><p><strong>4.1 मुख्य बिंदु वेग और त्वरण विश्लेषण</strong></p><p>मुख्य बिंदु स्थिति को ट्रैक करने के अलावा, RTMPose-X प्रत्येक मुख्य बिंदु के वेग और त्वरण का भी अनुमान लगाता है। यह जानकारी गोल्फ स्विंग की गतिशीलता को विश्लेषण करने के लिए महत्वपूर्ण है, जो मुख्य परफॉर्मेंस मापक जैसे अंतर्दृष्टि प्रदान करती है:</p><p><strong>स्विंग गति</strong>: डाउनस्विंग के दौरान कलाई वेग के आधार पर गणना की जाती है।</p><p><strong>कूल्हा घूर्णन</strong>: कूल्हे के जोड़ों के घूर्णन वेग के माध्यम से विश्लेषण किया जाता है।</p><p><strong>क्लब पथ और हेड गति</strong>: कलाई और कोहनी प्रक्षेपवक्र से अप्रत्यक्ष रूप से अनुमान लगाया जाता है।</p><p>इन मापकों की तुलना पेशेवर मानदंडों से की जा सकती है ताकि खिलाड़ी की स्विंग यांत्रिकी पर प्रतिक्रिया दी जा सके।</p><p><strong>5. अनुमान और वास्तविक-समय परफॉर्मेंस</strong></p><p>संपूर्ण ऊपर से नीचे पाइपलाइन वास्तविक समय परफॉर्मेंस के लिए अनुकूलित है, जो आधुनिक GPUs पर 90 FPS से अधिक पर पोज़ अनुमान की अनुमति देता है। अत्यधिक कुशल मॉडल आर्किटेक्चर (CSPNeXt) और तेज अनुमान तकनीकों (SimCC) का उपयोग यह सुनिश्चित करता है कि सिस्टम उच्च फ्रेम दर वीडियो इनपुट को संभाल सकता है, जो प्रशिक्षण सेशन के दौरान वास्तविक समय प्रतिक्रिया के लिए उपयुक्त बनाता है।</p><p><strong>6. मूल्यांकन और सत्यापन</strong></p><p>RTMPose-X और RTMDet-M मॉडलों का COCO और MPII जैसे मानक Dataset पर मूल्यांकन किया जाता है, शरीर मुख्य बिंदु के लिए COCO Dataset पर औसत सटीकता (AP) 75.8% के साथ मजबूत परफॉर्मेंस दिखाते हैं। इन परिणामों को गोल्फ स्विंग Dataset में ग्राउंड-ट्रूथ एनोटेशन के विरुद्ध मान्य किया जाता है, गतिशील खेल गतिविधियों को कैप्चर करने में मॉडल की मजबूती सुनिश्चित करता है।</p><p><strong>6.1 परफॉर्मेंस मापक</strong></p><p><strong>मीन स्क्वायर्ड एरर (MSE)</strong>: मुख्य बिंदु पूर्वानुमान की सटीकता को आधार सत्य एनोटेशन के विरुद्ध मापने के लिए उपयोग किया जाता है।</p><p><strong>औसत सटीकता (AP)</strong>: पोज़ अनुमान मॉडल के समग्र परफॉर्मेंस का मूल्यांकन करता है।</p><p><strong>फ्रेम प्रोसेसिंग समय</strong>: सिस्टम रीयल-टाइम आवश्यकताओं (&lt; 10 मिली सेकंड प्रति फ्रेम) को पूरा करता है यह सुनिश्चित करने के लिए बेंचमार्क किया जाता है।</p><p><strong>7. निष्कर्ष</strong></p><p>RTMPose-X और RTMDet-M का उपयोग करके ऊपर से नीचे दृष्टिकोण खेल विश्लेषण में, विशेष रूप से गोल्फ स्विंग विश्लेषण के लिए रीयल-टाइम पोज़ अनुमान के लिए एक कुशल और सटीक विधि प्रदान करता है। मजबूत मुख्य बिंदु पहचान, अस्थायी ट्रैकिंग, और रीयल-टाइम अनुमान के साथ, यह पद्धति गोल्फ स्विंग गतिकी में विस्तृत बायोमेकेनिकल अंतर्दृष्टि प्रदान करती है, परफॉर्मेंस सुधार और चोट की रोकथाम में सहायता करती है।</p><p>संदर्भ</p><p>[1] RTMpose <a href=https://arxiv.org/pdf/2303.07399 rel=external>https://arxiv.org/pdf/2303.07399</a></p><p>[2] CSPNeXt <a href=https://www.sciencedirect.com/science/article/pii/S0952197624000447 rel=external>https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p><p>[3] SIMCC <a href=https://arxiv.org/abs/2107.03332 rel=external>https://arxiv.org/abs/2107.03332</a></p><p>[4] RTMdet <a href=https://arxiv.org/pdf/2212.07784 rel=external>https://arxiv.org/pdf/2212.07784</a></p><p>[5] CSPDarkNet</p><p>[6] Halpe26</p><p>[] AI चुनौती Dataset:</p><p>[] MS Coco Dataset:</p><p>[7] Crowdpose Dataset: <a href=https://arxiv.org/pdf/1812.00324 rel=external>https://arxiv.org/pdf/1812.00324</a></p><p>[] MPII Dataset:</p><p>[] sub-JHMBD Dataset:</p><p>[] Halpe Dataset:</p><p>[] PoseTrack18 Dataset:</p><p>Object365 डेटाबेस: <a href=https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf rel=external>https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p><p><em>अंतिम अपडेट: 2025-03-05</em> | <a href=/sc-support/hi/software-features/markerless-motion-capture/index.html>आधिकारिक सपोर्ट साइट पर देखें</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/hi/index.html><span class="logo-title default-animation">Swing Catalyst सहायता</span>
+</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="खोजे (CTRL+ALT+f)"></i>
+<label class=a11y-only for=R-search-by>खोजे</label>
+<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=खोजे...>
+<button class=search-clear type=button data-search-clear title="खोज साफ़ करें"><i class="fas fa-fw fa-times" title="खोज साफ़ करें"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/hi/getting-started/index.html><a class="padding default-animation" href=/sc-support/hi/getting-started/index.html>शुरुआत करना</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/hi/cameras-video/index.html><a class="padding default-animation" href=/sc-support/hi/cameras-video/index.html>कैमरे और वीडियो</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/hi/hardware/index.html><a class="padding default-animation" href=/sc-support/hi/hardware/index.html>Hardware</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/hi/software-features/index.html><a class="padding default-animation" href=/sc-support/hi/software-features/index.html>सॉफ़्टवेयर और सुविधाएँ</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/hi/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/hi/software-features/multiple-forces-graph/index.html>Multiple Forces Graph</a></li><li class=active data-nav-id=/sc-support/hi/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/hi/software-features/markerless-motion-capture/index.html>RTMPose और RTMDet का उपयोग करके गोल्फ और बेसबॉल स्विंग मार्करलेस मोशन कैप्चर को बढ़ाना: ऊपर से नीचे दृष्टिकोण</a></li><li data-nav-id=/sc-support/hi/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/hi/software-features/ios-app-sharing/index.html>Swing Catalyst iOS ऐप से रिकॉर्ड किए गए वीडियो साझा करना</a></li><li data-nav-id=/sc-support/hi/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/hi/software-features/motion-capture-faq/index.html>Swing Catalyst Motion Capture FAQ</a></li><li data-nav-id=/sc-support/hi/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/hi/software-features/motion-capture-guide/index.html>Swing Catalyst Motion Capture उपयोगकर्ता गाइड</a></li><li data-nav-id=/sc-support/hi/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/hi/software-features/swing-catalyst-online/index.html>Swing Catalyst Online का उपयोग कैसे करें</a></li><li data-nav-id=/sc-support/hi/software-features/multiple-displays/index.html><a class=padding href=/sc-support/hi/software-features/multiple-displays/index.html>Swing Catalyst के साथ कई डिस्प्ले कैसे सेटअप करें</a></li><li data-nav-id=/sc-support/hi/software-features/email-sharing/index.html><a class=padding href=/sc-support/hi/software-features/email-sharing/index.html>Swing Catalyst में ईमेल शेयरिंग कैसे सेट करें</a></li><li data-nav-id=/sc-support/hi/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/hi/software-features/motion-capture-install/index.html>Swing Catalyst मोशन कैप्चर घटकों को कैसे इंस्टॉल करें</a></li><li data-nav-id=/sc-support/hi/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/hi/software-features/motion-capture-disclosures/index.html>Swing Catalyst मोशन कैप्चर टूल के उपयोगकर्ताओं के लिए महत्वपूर्ण प्रकटीकरण</a></li><li data-nav-id=/sc-support/hi/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/hi/software-features/motion-capture-settings/index.html>Swing Catalyst मोशन कैप्चर सेटिंग्स</a></li><li data-nav-id=/sc-support/hi/software-features/import-from-v1/index.html><a class=padding href=/sc-support/hi/software-features/import-from-v1/index.html>V1 से वीडियो कैसे आयात करें</a></li><li data-nav-id=/sc-support/hi/software-features/explorer/index.html><a class=padding href=/sc-support/hi/software-features/explorer/index.html>एक्सप्लोरर का उपयोग कैसे करें</a></li><li data-nav-id=/sc-support/hi/software-features/change-recording-user/index.html><a class=padding href=/sc-support/hi/software-features/change-recording-user/index.html>किसी मौजूदा रिकॉर्डिंग पर उपयोगकर्ता कैसे बदलें</a></li><li data-nav-id=/sc-support/hi/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/hi/software-features/keyboard-shortcuts/index.html>कीबोर्ड शॉर्टकट और हॉटकीज़</a></li><li data-nav-id=/sc-support/hi/software-features/graph-library/index.html><a class=padding href=/sc-support/hi/software-features/graph-library/index.html>ग्राफ लाइब्रेरी का उपयोग करना</a></li><li data-nav-id=/sc-support/hi/software-features/export-contacts/index.html><a class=padding href=/sc-support/hi/software-features/export-contacts/index.html>छात्र संपर्क जानकारी कैसे निर्यात करें</a></li><li data-nav-id=/sc-support/hi/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/hi/software-features/pressure-distribution-overlay/index.html>दबाव वितरण ओवरले कार्यक्षमता का उपयोग कैसे करें</a></li><li data-nav-id=/sc-support/hi/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/hi/software-features/pressure-stance-settings/index.html>नई Pressure और Stance सेटिंग्स का उपयोग करना</a></li><li data-nav-id=/sc-support/hi/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/hi/software-features/body-weight-measurement/index.html>नई शरीर वजन मापन कार्यक्षमता</a></li><li data-nav-id=/sc-support/hi/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/hi/software-features/record-a-lesson/index.html>पाठ कैसे रिकॉर्ड करें</a></li><li data-nav-id=/sc-support/hi/software-features/feedback-screen/index.html><a class=padding href=/sc-support/hi/software-features/feedback-screen/index.html>प्रतिक्रिया स्क्रीन कैसे सेटअप करें</a></li><li data-nav-id=/sc-support/hi/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/hi/software-features/force-graph-phases/index.html>बल ग्राफ चरण</a></li><li data-nav-id=/sc-support/hi/software-features/force-vectors/index.html><a class=padding href=/sc-support/hi/software-features/force-vectors/index.html>बल सदिशों का उपयोग कैसे करें</a></li><li data-nav-id=/sc-support/hi/software-features/bookmarks/index.html><a class=padding href=/sc-support/hi/software-features/bookmarks/index.html>बुकमार्क क्या होते हैं?</a></li><li data-nav-id=/sc-support/hi/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/hi/software-features/microphone-trigger/index.html>माइक्रोफ़ोन को कैप्चर ट्रिगर के रूप में कैसे उपयोग करें</a></li><li data-nav-id=/sc-support/hi/software-features/key-metrics/index.html><a class=padding href=/sc-support/hi/software-features/key-metrics/index.html>मुख्य मेट्रिक</a></li><li data-nav-id=/sc-support/hi/software-features/export-recordings/index.html><a class=padding href=/sc-support/hi/software-features/export-recordings/index.html>रिकॉर्डिंग निर्यात करें</a></li><li data-nav-id=/sc-support/hi/software-features/remote-support/index.html><a class=padding href=/sc-support/hi/software-features/remote-support/index.html>रिमोट सपोर्ट का उपयोग कैसे करें</a></li><li data-nav-id=/sc-support/hi/software-features/export-raw-data/index.html><a class=padding href=/sc-support/hi/software-features/export-raw-data/index.html>रॉ डेटा एक्सपोर्ट कैसे करें</a></li><li data-nav-id=/sc-support/hi/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/hi/software-features/raw-data-export-guide/index.html>रॉ डेटा एक्सपोर्ट में क्या शामिल है</a></li><li data-nav-id=/sc-support/hi/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/hi/software-features/frontal-plane-torque/index.html>ललाट तल टॉर्क विश्लेषण - उपयोगकर्ता गाइड</a></li></ul></li><li data-nav-id=/sc-support/hi/account-setup/index.html><a class="padding default-animation" href=/sc-support/hi/account-setup/index.html>Account & सेटअप</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/hi/reference/index.html><a class="padding default-animation" href=/sc-support/hi/reference/index.html>संदर्भ</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>भाषा</label>
+<select id=R-select-language><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/markerless-motion-capture/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/markerless-motion-capture/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/markerless-motion-capture/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/markerless-motion-capture/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/markerless-motion-capture/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/markerless-motion-capture/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/markerless-motion-capture/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/markerless-motion-capture/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/markerless-motion-capture/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/markerless-motion-capture/index.html lang=hi selected data-selected>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/markerless-motion-capture/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/markerless-motion-capture/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/markerless-motion-capture/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/markerless-motion-capture/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/markerless-motion-capture/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/markerless-motion-capture/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/markerless-motion-capture/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/markerless-motion-capture/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/markerless-motion-capture/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/markerless-motion-capture/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/markerless-motion-capture/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/markerless-motion-capture/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/markerless-motion-capture/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/markerless-motion-capture/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/markerless-motion-capture/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/markerless-motion-capture/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/markerless-motion-capture/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/markerless-motion-capture/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/markerless-motion-capture/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/markerless-motion-capture/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/markerless-motion-capture/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/markerless-motion-capture/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/markerless-motion-capture/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/markerless-motion-capture/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
+<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>विषय</label>
+<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-sc-dark value=sc-dark>Sc Dark</option><option id=R-select-variant-sc-light value=sc-light>Sc Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772565153 defer></script><script src=/sc-support/js/theme.min.js?1772565153 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
