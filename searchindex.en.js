@@ -1,5 +1,13 @@
 var relearn_searchindex = [
   {
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "content": "Manage your Swing Catalyst subscription, payments, and account billing.",
+    "description": "Manage your Swing Catalyst subscription, payments, and account billing.",
+    "tags": [],
+    "title": "Billing \u0026 Subscriptions",
+    "uri": "/sc-support/en/account-setup/billing/index.html"
+  },
+  {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video",
     "content": "",
     "description": "",
@@ -32,6 +40,14 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/camera-models/index.html"
   },
   {
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "content": "Install, update, and configure Swing Catalyst on your system.",
+    "description": "Install, update, and configure Swing Catalyst on your system.",
+    "tags": [],
+    "title": "Installation \u0026 Setup",
+    "uri": "/sc-support/en/account-setup/installation/index.html"
+  },
+  {
     "breadcrumb": "Swing Catalyst Support \u003e Hardware",
     "content": "",
     "description": "",
@@ -46,6 +62,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Motion Capture",
     "uri": "/sc-support/en/software-features/motion-capture/index.html"
+  },
+  {
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "content": "Back up, copy, move, and manage your Swing Catalyst database and settings.",
+    "description": "Back up, copy, move, and manage your Swing Catalyst database and settings.",
+    "tags": [],
+    "title": "Backup \u0026 Database",
+    "uri": "/sc-support/en/account-setup/backup-database/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features",
@@ -78,6 +102,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Setup \u0026 Configuration",
     "uri": "/sc-support/en/software-features/setup-configuration/index.html"
+  },
+  {
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "content": "Check system specs, collect logs, and optimize your computer for Swing Catalyst.",
+    "description": "Check system specs, collect logs, and optimize your computer for Swing Catalyst.",
+    "tags": [],
+    "title": "System \u0026 Diagnostics",
+    "uri": "/sc-support/en/account-setup/system-diagnostics/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support",
@@ -237,7 +269,7 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/tags/balance-plate/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Billing \u0026 Subscriptions",
     "content": "This article covers canceling an active software subscription via PayPal\nStart with logging into the PayPal account responsible for subscription payments. 2. Locate the most recent recurring payment from “Initial Force AS” and click to expand it.\nClick “Manage Initial Force AS payments” to get this screen. Simply click cancel and confirm you wish to cancel the subscription when prompted. You subscription and software will continue to work for the remainder of the monthly billing cycle.\nThank you for choosing Swing Catalyst!",
     "description": "How to cancel your Swing Catalyst software subscription through PayPal",
     "tags": [
@@ -245,7 +277,7 @@ var relearn_searchindex = [
       "Subscription"
     ],
     "title": "Canceling Software Subscription (PayPal)",
-    "uri": "/sc-support/en/account-setup/cancel-subscription-paypal/index.html"
+    "uri": "/sc-support/en/account-setup/billing/cancel-subscription-paypal/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Tags",
@@ -298,14 +330,14 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/motion-capture/markerless-motion-capture/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Installation \u0026 Setup",
     "content": "Installing Swing Catalyst can some times fail due to insufficient privileges Issue: The Swing Catalyst installer can sometimes fail due to insufficient privileges.\nKnown cases have been where the Swing Catalyst installer fails trying to create the Driver directory, as shown in this screenshot:\nSuggested solution Try running the installer as administrator (right click Run As Administrator).\nClose all other active programs \u0026 re-run the installer.\nMake sure all other users are signed out of the computer. Disable file sharing for the installation directory folder and check the administrator privileges. Restart the computer.\nIf you are still having issues please try to follow the steps shown in this article:\nhttps://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000P9c0SAC\nIf none of this works, please contact support, our support site",
     "description": "Issue: The Swing Catalyst installer can sometimes fail due to insufficient privileges.",
     "tags": [
       "Troubleshooting"
     ],
     "title": "Error when installing Swing Catalyst",
-    "uri": "/sc-support/en/account-setup/install-error-fix/index.html"
+    "uri": "/sc-support/en/account-setup/installation/install-error-fix/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features \u003e Recording \u0026 Export",
@@ -464,7 +496,7 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/tags/home/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "How to make a backup of your Swing Catalyst database This support article covers how to manually backup your Swing Catalyst database\nTo setup a automated backup please see automatic-backups.md\nRequirements:\nExternal hard drive or secondary hard drive with enough free space for your Swing Catalyst database. Step 1: Making the backup of the database file Note: The Swing Catalyst database file contains information of each swing \u0026 lesson recorded. It is essentially one large lookup table.\nIt’s important to make a backup of this file that corresponds with the actual video \u0026 datafiles.\nThe Swing Catalyst database can be found in C:\\ProgramData\\Swing Catalyst\\\nNavigate to ProgramData by typing %programdata% \u0026 then pressing the Enter key. Make a copy of the SwingCatalystDB.s3db file to an external hard drive or secondary hard drive.\nStep 2: Backing up the actual swings Locating your database\nGo to Swing Catalyst Settings, click General and refer to Database on the right.\nMake note of the database location, this is where your recordings \u0026 lessons are stored.\nIn this example case the database contents (swings, thumbnails, \u0026 data) is located on the D:\\ drive. The database has been moved from C:\\ due to space constraints, as can be seen here:\nThe standard location is C:\\Program Data\\ Swing Catalyst\\database.\nTo move the database to a larger hard drive or partition see this article: move-database.md\nNote that this folder contains the lesson files, golfers, backups of earlier Swing Catalyst databases etc. It’s best to make a copy of all the contents of this folder.\nIf your database (as per the screenshot above) says C:\\ProgramData\\Swing Catalyst\\database make copy of the database folder.\nIn our case, we want to make a copy of the Swing Catalyst Databases folder.\nThis folder and the SwingCatalystDB.s3db file can then be copied to an external hard drive or backup location for archival.\nIf you then wish to update your backup, you can overwrite the SwingCatalystDB.s3db file (on the backup location) and copy in the new golfers to keep your backup up to date.",
     "description": "This support article covers how to manually backup your Swing Catalyst database",
     "tags": [
@@ -472,27 +504,27 @@ var relearn_searchindex = [
       "Database"
     ],
     "title": "How to backup your Swing Catalyst database \u0026 swings",
-    "uri": "/sc-support/en/account-setup/backup-database/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/backup-database/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Billing \u0026 Subscriptions",
     "content": "Step 1: visit https://shop.swingcatalyst.com/account/login\nStep 2: login with the email address and password used when purchasing the subscription.\nStep 3: Click on Manage subscription\nStep 4: Click on Cancel subscription\nStep 5: Click on Cancel subscription once more and provide a reason",
     "description": "How to cancel your Swing Catalyst software subscription",
     "tags": [
       "Subscription"
     ],
     "title": "How to cancel your Swing Catalyst subscription",
-    "uri": "/sc-support/en/account-setup/cancel-subscription/index.html"
+    "uri": "/sc-support/en/account-setup/billing/cancel-subscription/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Billing \u0026 Subscriptions",
     "content": "This support article will cover the process of either upgrading or downgrading your Swing Catalyst software subscription.\n**NOTICE: If you signed up for a subscription before October 8th 2024 you will need to create a new account using the same email address as your current subscription before you can make any changes. ** Sign in at swingcatalyst.com, click “Account” in the top right corner and click “Manage subscription” 2. Here you should see all of your subscriptions listed\n3. Click “Update subscription” on the one you want to change\nFrom here you can select a different subscription and frequency of renewal The last step is submitting payment for the change between now and your original renewal date. You will see a cost breakdown.",
     "description": "Step-by-step guide to changing your Swing Catalyst subscription type through the account portal",
     "tags": [
       "Subscription"
     ],
     "title": "How to change subscription type",
-    "uri": "/sc-support/en/account-setup/change-subscription-type/index.html"
+    "uri": "/sc-support/en/account-setup/billing/change-subscription-type/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features \u003e Recording \u0026 Export",
@@ -503,14 +535,14 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/recording-export/change-recording-user/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e System \u0026 Diagnostics",
     "content": "There are cases where support wants specific log information from an incident.\nPlease note that this is only necessary if support personnel specifically asks for log files to be sent in this fashion.\nIf you know the approximate time of when you ran into problems please send the file with the time modified date that is closest to when the issue occurred.\nLog files can be found in the following location: C:\\ProgramData\\Swing Catalyst\\logs\nGo to the ProgramData directory, type `%programdata% in the Windows File explorer and hit enter.\nOpen the Swing Catalyst directory, then open the log directory.\nCopy the log.txt file and the previously last modified log file.\nAttach it to the support ticket or email you are sending to support.",
     "description": "Learn how to collect logs for support in Swing Catalyst",
     "tags": [
       "Troubleshooting"
     ],
     "title": "How to collect logs for support",
-    "uri": "/sc-support/en/account-setup/collect-logs/index.html"
+    "uri": "/sc-support/en/account-setup/system-diagnostics/collect-logs/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video \u003e Camera Models",
@@ -549,7 +581,7 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/camera-models/point-grey-flir-gige/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "For Swing Catalyst 6.1 and older:\n**Download and install SQLite Expert Personal: **\nhttp://www.sqliteexpert.com/download.html\nAfter installing SQLite Expert Personal, open the Swing Catalyst database, select any file, and then select SwingCatalystDB.\nNavigate to the SQL tab, then paste the text below into the empty text field.\nMake sure you change the second line to reflect the new database location!\nCopy and paste this in the SQL tab:\nUPDATE VideoClip SET VideoFilePath = REPLACE(VideoFilePath, ‘C:\\ProgramData\\Swing Catalyst', ‘D:\\Swing Catalyst');\nUPDATE VideoClip SET ThumbnailFilePath = REPLACE(ThumbnailFilePath, ‘C:\\ProgramData\\Swing Catalyst', ‘D:\\Swing Catalyst');\nUPDATE HardwareData SET PressureDataFilePath = REPLACE(PressureDataFilePath, ‘C:\\ProgramData\\Swing Catalyst', ‘D:\\Swing Catalyst');\nUPDATE HardwareData SET ForcePlateDataFilePath = REPLACE(ForcePlateDataFilePath, ‘C:\\ProgramData\\Swing Catalyst', ‘D:\\Swing Catalyst');\nOnce you have confirmed that you’ve got the correct path, hit Execute SQL, and it should update all of the entries with the new file path.",
     "description": "How to copy the database from Swing Catalyst 6.1 and older versions to a new installation",
     "tags": [
@@ -558,10 +590,10 @@ var relearn_searchindex = [
       "Database"
     ],
     "title": "How to copy database for Swing Catalyst 6.1 \u0026 older",
-    "uri": "/sc-support/en/account-setup/copy-database-legacy/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/copy-database-legacy/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "How to move Swing Catalyst settings \u0026 license to a new computer Introduction This article describes how to copy your Swing Catalyst settings license and everything to a new computer or hard drive.\nTo make a copy of your database please refer to our separate article.\nPreparation Make sure Swing Catalyst is installed on the computer you are copying the database to.\nCopy the settings files It’s recommended you have a external hard drive or thumb drive to save the settings to when transferring the settings between computers.\nOpen the Windows File Explorer Type the following and hit enter: %programdata% This should open Windows Explorer inside the program data folder.\nNavigate into the “Swing Catalyst” folder.\nTip: Hold CTRL on the keyboard and select each folder by clicking it with the mouse.\nSelect all of the folders except the database folder or golfers. Also select the SwingCatalystDB.s3db file, this is the database file.\nRight click and select copy then paste the content onto your thumb drive.\nCopying the settings onto the new computer Note: Make sure Swing Catalyst is not running before proceeding. Doing this will overwrite settings, i.e. your old settings from the previous computer will replace the current ones.\nOnce copied onto a thumb drive, connect it to the new computer and paste the contents into the same location on the new computer.\nRepeat the steps above but instead of selecting and copying, paste the folders and files into the Swing Catalyst program data folder.",
     "description": "This article describes how to copy your Swing Catalyst settings license and everything to a new computer or hard drive.",
     "tags": [
@@ -570,10 +602,10 @@ var relearn_searchindex = [
       "Licensing"
     ],
     "title": "How to copy Swing Catalyst settings to a new computer or hard drive",
-    "uri": "/sc-support/en/account-setup/copy-settings/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/copy-settings/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "Introduction This article describes how to copy the students and recordings made in Swing Catalyst from one computer to another computer, for example when upgrading to a better computer.\nPreparation Make sure Swing Catalyst is installed on the computer you are copying the database to.\nEnsure you have enough room on a USB stick or external hard drive to fit the database + database file.\nExporting all recordings Open Swing Catalyst and navigate to your database.\nClick on “Export” then select “Export All Recordings”\nSelect where you want to export, such as a USB thumb drive or external hard drive.\nConnect your USB thumb drive or external hard drive to the new computer. Go to import and “Import recordings from folder” you can import the main folder or individual users folders as needed.",
     "description": "This article describes how to copy the students and recordings made in Swing Catalyst from one computer to another computer, for example when upgrading to a...",
     "tags": [
@@ -581,20 +613,20 @@ var relearn_searchindex = [
       "Database"
     ],
     "title": "How to copy your Swing Catalyst database from one computer to another.",
-    "uri": "/sc-support/en/account-setup/copy-database/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/copy-database/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Installation \u0026 Setup",
     "content": "Motion Catalyst is also installed when installing Swing Catalyst. In this article we will explain how to add a Motion Catalyst shortcut to your desktop.\nAfter installing Swing Catalyst, open Windows File Explorer (folder icon on your taskbar)\nNavigate to C:\\Program Files\\Initial Force\\Swing Catalyst\\bin\nIn that folder you will find the Motion Catalyst application. Right click it.\nChoose “Send to \u003e Desktop (create shortcut)”\nYou should now have an icon for Motion Catalyst on your desktop.",
     "description": "How to create a desktop shortcut for Motion Catalyst",
     "tags": [
       "Force-Data"
     ],
     "title": "How to create Motion Catalyst shortcut",
-    "uri": "/sc-support/en/account-setup/create-shortcut/index.html"
+    "uri": "/sc-support/en/account-setup/installation/create-shortcut/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Installation \u0026 Setup",
     "content": "How to enable or disable beta versions of Swing Catalyst This article covers how to in for beta versions, and how opt out and only receive updates for stable releases of Swing Catalyst*.\nA beta version is a preview version with new features, functionality and bug fixes available for those who choose to allow beta versions from within the software.\nThis article also applies to Motion Catalyst. How to enable beta versions Start the Swing Catalyst software.\nFrom Settings, go to General Settings, Notifications.\nMake sure “Allow beta versions” is checked.\nOnce Swing Catalyst is restarted beta versions will be enabled and you will receive notifications for new beta versions when available.\nPlease see the screenshots at the bottom of the article as they reference the points above.\nHow to update to a new beta version If you have a valid license and your software is configured to receive beta version notifications you will receive a notification similar to the image below when you start the software.\nFrom the Update notification pop up, click “Update”, this should launch a new web browser to the Swing Catalyst website: click the “Download” button to download the newest version. Double click the downloaded file and run the installer.\nIf you need help with installing the software please see: How to install Swing Catalyst.\nHow to disable beta versions Please make sure you follow the instructions applicable to your scenario.\n**Note: Please make sure to not uncheck “allow beta versions” until after you have installed or uninstalled. **\nIf you no longer wish to use a beta version there are two scenarios that may apply to you:\nScenario A: I wish to use the previous stable version: Please see our support article on how to install the previous version.\nAlternatively, please see our “how to install \u0026 uninstall Swing Catalyst” support article and refer to the “uninstall” section.\nScenario B: I want to stay on the software version I’m on and no longer want to receive any beta notifications. It’s important to ensure the installed version is in fact not a beta version, and that the update notification you’re seeing explicitly mentions “beta”, otherwise proceeding with these steps might lock you out of the software. Please see the troubleshooting section below to see examples of the different update notifications.\nVerify you are on the latest version Verify your license. In Settings, General, under License Information, click “License configuration”.\nMake note of the major version listed on the bottom right, “Valid for versions up to”.\nCheck the current installed version in the title bar, e.g. 10.0.5 rev 37057.\nFrom General settings, ensure you’re connected to the internet and click “Check for updates”, if no new updates are available you’re most likely on the latest stable version.\nUncheck the “allow beta versions” checkbox to no longer receive new beta notifications.\nHow do I know which version is the stable version? Visit our software archive: https://swingcatalyst.com/downloads/ go to Software Archive. All versions listed in this archive are the latest stable release for each major version. Enabling or disabling Beta versions Troubleshooting How can I tell the difference between a beta version and a normal version when I receive a “new version is available” notification? The picture below depicts a stable software version, note there is no mention of “beta” anywhere.\nThis is a beta version notification, notice that the word beta is used in the main title and also the version has a beta in parenthesis along with a disclaimer.",
     "description": "This article covers how to in for beta versions, and how opt out and only receive updates for stable releases of Swing Catalyst*.",
     "tags": [
@@ -603,7 +635,7 @@ var relearn_searchindex = [
       "Licensing"
     ],
     "title": "How to enable or disable beta versions",
-    "uri": "/sc-support/en/account-setup/beta-versions/index.html"
+    "uri": "/sc-support/en/account-setup/installation/beta-versions/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features \u003e Recording \u0026 Export",
@@ -649,12 +681,12 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/camera-models/halcon-camera-standards/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e System \u0026 Diagnostics",
     "content": "Introduction This article explains how to find a summary of your computer’s specifications.\nApplies To Determine if your computer holds up to our recommended computer specifications.\nIf you need to provide information about your computer to our support crew.\nRelated Topics Recommended computer specifications\nWhat graphics card do I have?\nTo find your computer specifications, click the start menu in Windows and write: “about your pc”.\nThe first result should be “About your PC”.\nDevice specifications can be seen below.",
     "description": "This article explains how to find a summary of your computer's specifications.",
     "tags": [],
     "title": "How to find your computer specifications",
-    "uri": "/sc-support/en/account-setup/find-computer-specs/index.html"
+    "uri": "/sc-support/en/account-setup/system-diagnostics/find-computer-specs/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video \u003e Troubleshooting",
@@ -702,14 +734,14 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/hardware/pressure-plates/install-balance-plate-3/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Installation \u0026 Setup",
     "content": "How to roll back to an older software version This support article describes how to install a previous version of Swing Catalyst.\nIf you’re a beta user and wish to install the previous stable version:\nPlease uncheck uncheck “allow beta versions”after having installed the previous version. When rolling back to an older software version, Swing Catalyst will automatically attempt to find and load a matching database version. With every major release, e.g. 9.8 -\u003e 10.0, 10.0 -\u003e 10.1 there is a change in the database version. This means any recordings made with the newer version won’t be available in the old version. If you have important recordings you wish to save or make a back up of we strongly recommend exporting these before rolling back the software.\nTherefor it’s important to take this into consideration when wanting to roll back the software version.\nHow to uninstall Swing Catalyst Go to Windows Settings. Right click on the Windows icon on the Task bar , and select Settings\nIn Settings, click on Apps, then scroll down to you see Swing Catalyst, or type Swing in the search bar.\nClick on Swing Catalyst then click Uninstall.\nClick Yes and follow the on screen instructions.\n1. 2. Installing a previous version Older versions of Swing Catalyst can be found in our software archive.\nhttps://www.swingcatalyst.com/downloads/archives (scroll down from the download section):\nClick on the version you wish to install to download the installer file.\nFiles you download are usually put in the Downloads folder\nDouble click the version you wish to install and follow the onscreen instructions.",
     "description": "This support article describes how to install a previous version of Swing Catalyst.",
     "tags": [
       "Database"
     ],
     "title": "How to install a previous version of Swing Catalyst",
-    "uri": "/sc-support/en/account-setup/install-previous-version/index.html"
+    "uri": "/sc-support/en/account-setup/installation/install-previous-version/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video \u003e Camera Models",
@@ -768,7 +800,7 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/motion-capture/motion-capture-install/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "How to make a copy or backup of Swing Catalyst’s ProgramData folder and recordings This support article covers how to manually make a copy of the Swing Catalyst Program Data folder. Useful if you wish to move one Swing Catalyst instance from one computer to another. Please note\nA Swing Catalyst license cannot be activated on two computers at once. When you start Swing Catalyst the license is activated. This means if you intend to move Swing Catalyst from Computer A to Computer B, you cannot start Swing Catalyst on Computer A again otherwise the license will become locked for 24 hours.\nRelated articles\nHow to backup your Swing Catalyst database \u0026 swings\nHow to move the database to a new partition or hard drive\nRequirements\nExternal hard drive or secondary hard drive with enough free space for your Swing Catalyst database. Step 1: Making a backup of the ProgramData folder The Swing Catalyst program data folder can be found in C:\\ProgramData\\Swing Catalyst\\\nThe program data folder contains the settings, any sensor calibrations, your license file etc.\nPlease note that the recordings could be stored in a different location, please make note of this location (see step 2).\nNavigate to ProgramData by typing %programdata% \u0026 then pressing the Enter key.\nCopy the entire Swing Catalyst folder to an external hard drive.\nThis is the Swing Catalyst ProgramData folder:\nMake a copy of the SwingCatalystDB.s3db file to an external hard drive or secondary hard drive.\nStep 2: Making a copy of your recordings Locating where recordings are stored Go to Swing Catalyst Settings: click “General”, and look at the “Path” specified in the Database section (see the top right area of the screenshot above).\nMake note of the database location, this is where your recordings \u0026 lessons are stored.\nA common scenario is to have the Swing Catalyst database file in the ProgramData directory but have the actual recordings, the contents of which the database points to, stored on a different hard drive or partition due to space constraints.\nIf your database (as per the screenshot above) says C:\\ProgramData\\Swing Catalyst\\database make copy of the database folder.\nCopying the data onto the new computer Now that we’ve made a copy of Swing Catalyst’s ProgramData directory and all of the recordings (as defined by the path shown in the screenshot above) to an external hard drive or similar, we’re ready to copy it onto the new computer.\nImportant: Before proceeding make sure to download and install Swing Catalyst first.\nRequirements:\nA valid Swing Catalyst license. Replacing the Swing Catalyst ProgramData directory On the new computer we should have a fresh installation of Swing Catalyst, there shouldn’t be anything we need on this computer, i.e. it should be fine to replace the files.\nConnect your external hard drive and locate your copy of Swing Catalyst’s ProgramData directory.\nNavigate to the ProgramData directory on the new computer.\nReplace the existing Swing Catalyst folder (on the new computer) with the copy you made (from the external hard drive).\nSetting up the database In some cases where Swing Catalyst is configured to use a different location than the default C:\\ProgramData\\Swing Catalyst\\database we will have to copy the contents of the folder into the database folder in the ProgramData directory.\nIn our example above our directory was D:\\Temp2, this means I would have to copy the contents of this folder into the database folder.\nTo see what paths Swing Catalyst is configured to use we can use the regedit registry editor tool to inspect this.\nNavigate to Computer –\u003e HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Initial Force\\Swing Catalyst. Click on the folder as shown in the screenshot below.\nHere are the registry entries, the DatabaseFilePath should not be altered.\nThe DatabasePath is where Swing Catalyst looks for recordings.",
     "description": "A Swing Catalyst license cannot be activated on two computers at once. When you start Swing Catalyst the license is activated. This means if you intend to...",
     "tags": [
@@ -778,17 +810,17 @@ var relearn_searchindex = [
       "Licensing"
     ],
     "title": "How to make a copy of Swing Catalyst new computer or hard drive",
-    "uri": "/sc-support/en/account-setup/backup-full-copy/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/backup-full-copy/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Billing \u0026 Subscriptions",
     "content": "This support article covers how to manage and cancel your subscription through the Swing Catalyst web shop.\nPreface A Swing Catalyst subscription is required. If you have a subscription through a third party please contact your sales person to cancel your subscription.\nThe web shop Subscription management can be done directly from the web shop, please go to: https://shop.swingcatalyst.com/account/login\nLogin with the email address and password used when purchasing the subscription.\nIf you don’t remember your password details you can recover your password, by clicking forgot your password\nYour account This is the overview page over your account and order history.\nOrder history Your purchase history of both software and hardware products are listed here:\nManaging subscriptions To manage your subscription click Manage Subscriptions (on the right hand side of the web page):\nTo cancel you subscription click here.\nOnce the subscription is cancelled you can verify your subscription history after clicking manage subscriptions:",
     "description": "A Swing Catalyst subscription is required. If you have a subscription through a third party please contact your sales person to cancel your subscription.",
     "tags": [
       "Subscription"
     ],
     "title": "How to manage your subscriptions \u0026 orders",
-    "uri": "/sc-support/en/account-setup/manage-subscriptions/index.html"
+    "uri": "/sc-support/en/account-setup/billing/manage-subscriptions/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video \u003e Camera Setup",
@@ -799,7 +831,7 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/cameras-video/setup/led-light-flicker/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "Introduction This article describes how to copy the students and recordings made in Swing Catalyst from one computer to another computer, for example when upgrading to a better computer.\nApplicable to: Motion Catalyst \u0026 Swing Catalyst\nRequirements: A separate hard drive or partition with enough free space.\nPreparation Make sure Swing Catalyst is installed on the computer you are copying the database to.\nEnsure you have enough room on a USB stick or external hard drive to fit the database + database file.\nMoving the Database When moving the database from one location to another, it’s very important to make sure there’s enough space in the location you plan to move it to.\nSettings, click on General and make note of the path and the size noted under the Database section.\nMake sure you have enough storage space in the new location before choosing a new location.\nWe suggest creating a folder in the new location. Calling it “SC Database” or something similar.\nClick “Move database” and select the newly created folder in the new location.\nPlease make sure that you have a separate partition or hard drive with enough space available when doing this operation.",
     "description": "This article describes how to copy the students and recordings made in Swing Catalyst from one computer to another computer, for example when upgrading to a...",
     "tags": [
@@ -807,15 +839,15 @@ var relearn_searchindex = [
       "Database"
     ],
     "title": "How to move the database to a new partition or hard drive",
-    "uri": "/sc-support/en/account-setup/move-database/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/move-database/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e System \u0026 Diagnostics",
     "content": "Introduction This support article describes how you can configure Windows to improve the performance in Swing Catalyst when using a laptop, in particular when running on batteries.\nApplies To Running Swing Catalyst on a laptop. Power Options When using a laptop it is common that Windows uses different power profiles when battery powered. This may result in lowered performance in Swing Catalyst, primarily because the graphics card is put in power saving mode. In addition many laptops come with custom power profiles, which may further reduce performance to increase battery life time.\nFor optimal performance (but shorter battery life) it is recommended to use the “High performance” power profile as seen in the picture below.\nFor good performance and battery life it is recommended to use the “Balance” power profile. This usually works well.\nTo choose this in Windows 7, open the Control Panel and navigate to Hardware and Sound - Power Options.",
     "description": "This support article describes how you can configure Windows to improve the performance in Swing Catalyst when using a laptop, in particular when running on...",
     "tags": [],
     "title": "How to optimize laptop performance",
-    "uri": "/sc-support/en/account-setup/optimize-laptop/index.html"
+    "uri": "/sc-support/en/account-setup/system-diagnostics/optimize-laptop/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features \u003e Recording \u0026 Export",
@@ -828,24 +860,24 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/recording-export/record-a-lesson/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Installation \u0026 Setup",
     "content": "Introduction This support article describes how you can use Boot Camp to run Swing Catalyst on your Apple Mac.\nBoot Camp lets you install Windows on a Mac computer in its own partition, using a Microsoft Windows installation disc that you provide.\nAfter installation, you can use either Windows or Mac OS X on your Mac computer.\nNote: Swing Catalyst does not work on Apple hardware (Apple M1 / M2 CPU’s with ARM architecture).\nThis article is mainly for legacy purposes as it is out of date.\nApplies To Users with Mac OS (10.5- 10.11) Recommended requirements Apple Mac (10.5 - 10.11)\nA blank CD or USB storage to create Windows Boot Camp Support Software (Drivers) installer media.\nAt least 16 GB of free space on the disk onto which you will be installing for 32-bit, and 20GB for 64-bit Windows.\nAn authentic version of Microsoft Windows\n*Please note that not all Mac’s can run 64-bit Windows using Boot Camp, and that only Intel Mac’s can utilize Boot Camp.\nInstallation In order to use Swing Catalyst on a Apple laptop or desktop computer, you will need Mac OS version 10.5 - 10.11\nSwing Catalyst requires Windows, and works on Windows Vista, 7, 8.1 and Windows 10.\nFor the best user experience we strongly recommend Windows 7 64bit.\nIt is recommended to install Windows with the Boot Camp Assistant. Boot Camp allows you to dual boot Mac OS and Windows side by side - allowing easy access to both operating systems.\nHolding down Option (Alt) key while you start up your Mac gives you the ability to switch between Microsoft Windows and Mac OS X.\nThe default operating system will be Mac OS X, but this can be easily changed in the Startup Disk Control Panel in Windows, or Mac OS X Startup Disk preferences to set the default start up disk.\nGo to http://support.apple.com/manuals/#bootcamp and find the manual that corresponds to your Mac.\nIt can also be useful to check out the Boot Camp FAQ http://support.apple.com/kb/HT4818 which might help you to solve issues that may arise.",
     "description": "This support article describes how you can use Boot Camp to run Swing Catalyst on your Apple Mac.",
     "tags": [
       "Usb-Camera"
     ],
     "title": "How to run Swing Catalyst on a Apple Mac",
-    "uri": "/sc-support/en/account-setup/run-on-mac/index.html"
+    "uri": "/sc-support/en/account-setup/installation/run-on-mac/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e System \u0026 Diagnostics",
     "content": "How to use the Log Sender Utility Introduction This article describes how to send Swing Catalyst logs to the support crew, which is sometimes needed to help figure out a problem the customer is having. The logs contain information about everything performed and stored in Swing Catalyst, and may also include information about the computer and the Windows user, but will only be used to help identify problems and the information will never be shared with third parties.\nApplies To The support team asks you to send log files.\nYou want to report a bug.\nSolution Open Windows Start Menu.\nIn the search field type Swing Catalyst Log Sender.\nWindows 8:\nPress the Windows key on your keyboard, and then write log sender (similarly to the example in Windows 7). Enter your name, email and a short comment, then click the “Send logs” button. How to manually send logs to support There are cases where support wants specific log information from an incident.\nPlease note that this is only necessary if support personnel specifically asks for log files to be sent in this fashion.\nIf you know the approximate time of when you ran into problems please send the file with the time modified date that is closest to when the issue occurred.\nThe path where log files are stored is: C:\\ProgramData\\Swing Catalyst\\logs.\nGo to the ProgramData directory, type `%programdata% in the Windows File explorer and hit enter.\nOpen the Swing Catalyst directory, then open the log directory.\nCopy the log.txt file and the previously last modified log file.\nAttach it to the support ticket or email you are sending to support.",
     "description": "This article describes how to send Swing Catalyst logs to the support crew, which is sometimes needed to help figure out a problem the customer is having....",
     "tags": [
       "Troubleshooting"
     ],
     "title": "How to send logs to support",
-    "uri": "/sc-support/en/account-setup/send-logs/index.html"
+    "uri": "/sc-support/en/account-setup/system-diagnostics/send-logs/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video \u003e Camera Models",
@@ -891,7 +923,7 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/recording-export/email-sharing/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e Backup \u0026 Database",
     "content": "How to setup automatic backups of your Swing Catalyst database\nThis support article covers setup of Backblaze to backup your Swing Catalyst database\nIf you want to make a backup / copy of your database \u0026 swings please see this article: backup-database.md\nYou can also use Crashplan, https://www.crashplan.com/en-us/\nThe setup process is similar, and you can use this guide as a reference for most of the steps if you wish to use a different backup provider.\nWe recommend that a backup system is setup before you start capturing video, as uploading a large database to the cloud takes a long time; uploading a little bit from the get go is easier.\nCreating a Backblaze account\nRelated material:\nBackblaze’s Computer Backup Guide: https://www.backblaze.com/backup-your-computer.html\nGo to Backblaze.com, sign up and follow the payment instructions.\nClick Download for Windows.\nOnce the client has downloaded start the program.\nIf it doesn’t show the control panel after installation, it might be due to your Windows version, try the newest installer here (you don’t need to uninstall the previous version): http://files.backblaze.com/install_backblaze.exe\nIf you have your Swing Catalyst database saved to a different partition or hard drive click Settings.\nE.g make sure that D:\\ is selected.\nBackblaze will backup all of your data including your Swing Catalyst Settings folder, all of your lesson files and students.\nRestoring swings in the even of a data loss\nIf you have backed up your data (with Backblaze) to an external hard drive and it’s as recent as the online backup, restoring from an external medium is much quicker and recommended.",
     "description": "How to set up automatic backups for your Swing Catalyst database and recordings",
     "tags": [
@@ -899,7 +931,7 @@ var relearn_searchindex = [
       "Database"
     ],
     "title": "How to setup automatic backup's of your Swing Catalyst database",
-    "uri": "/sc-support/en/account-setup/automatic-backups/index.html"
+    "uri": "/sc-support/en/account-setup/backup-database/automatic-backups/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video \u003e Camera Setup",
@@ -1703,12 +1735,12 @@ var relearn_searchindex = [
     "uri": "/sc-support/en/software-features/recording-export/bookmarks/index.html"
   },
   {
-    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup",
+    "breadcrumb": "Swing Catalyst Support \u003e Account \u0026 Setup \u003e System \u0026 Diagnostics",
     "content": "This article aims to show how to find what graphics card / adapter your computer may have.\nHow do I find what graphics card I have? In the Windows Start Menu, type device manager.\nOpen Device Manager and Expand “Display Adapters” to see the available adapters.\nThe listed display adapters are the graphics adapters available on your computer.",
     "description": "How to find your graphics card model using Windows Device Manager",
     "tags": [],
     "title": "What graphics card do I have?",
-    "uri": "/sc-support/en/account-setup/check-graphics-card/index.html"
+    "uri": "/sc-support/en/account-setup/system-diagnostics/check-graphics-card/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features \u003e Recording \u0026 Export",

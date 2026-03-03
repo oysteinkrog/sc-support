@@ -26,27 +26,27 @@
     <meta itemprop="wordCount" content="563">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
     <title>How to setup Halcon for Swing Catalyst :: Swing Catalyst Support</title>
-    <link href="/sc-support/images/favicon.png?1772542919" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542919" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542919" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772542919" defer></script>
-    <script src="/sc-support/js/search.min.js?1772542919" defer></script>
+    <link href="/sc-support/images/favicon.png?1772545021" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772545021" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772545021" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772545021" defer></script>
+    <script src="/sc-support/js/search.min.js?1772545021" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772542919";
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772545021";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772542919" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542919" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542919" defer></script>
-    <script src="/sc-support/js/lunr/lunr.en.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772545021" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772545021" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772545021" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772545021" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542919" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772542919" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772542919" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772545021" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772545021" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772545021" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772545021" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772545021" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -97,7 +97,7 @@
     </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <style>
   .sc-progress {
@@ -186,10 +186,10 @@
 
 <h1 id="how-to-set-up-halcon-for-use-with-swing-catalyst">How to set up Halcon for use with Swing Catalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>The release of Swing Catalyst 6.0 brings support for three of the most common machine vision standards.</p>
-<p> <a href="#R-image-60dccec1f91aa5f97bce9963da8d93d9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-60dccec1f91aa5f97bce9963da8d93d9"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg"></a>    <a href="#R-image-e01efcc529c44951d46a9ce0bb8d3870" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e01efcc529c44951d46a9ce0bb8d3870"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png"></a>  <a href="#R-image-bac4acd65d4421de8805f1448514b722" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bac4acd65d4421de8805f1448514b722"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif"></a></p>
+<p> <a href="#R-image-b49acc9a4944fa9440b4d91c0e356c16" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b49acc9a4944fa9440b4d91c0e356c16"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg"></a>    <a href="#R-image-caaed94df299565c3d950716343c25d9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-caaed94df299565c3d950716343c25d9"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png"></a>  <a href="#R-image-b2bfa7f7c8d8e94ac6585b4a8d79681b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2bfa7f7c8d8e94ac6585b4a8d79681b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif"></a></p>
 <p>      USB3 Vision                      GigE Vision                             GENiCAM</p>
 <p>Before You Start</p>
 <p>This article predominantly covers the installation of Halcon, installation of the license and a rudimentary setup of a Ximea USB3 camera. We cannot guarantee compatibility with newer versions and Swing Catalyst only supports Halcon 12.</p>
@@ -277,23 +277,23 @@
 <p>Proceed with the on-screen instructions.</p>
 </li>
 </ul>
-<p><a href="#R-image-dd6c87df8191e473b3e484b84cefad08" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd6c87df8191e473b3e484b84cefad08"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG"></a></p>
-<p><a href="#R-image-7557290dd4390cbefc5d2c1f0d9209bc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7557290dd4390cbefc5d2c1f0d9209bc"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG"></a></p>
-<p><a href="#R-image-091f8f123eeb06b559db0a5440b01599" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-091f8f123eeb06b559db0a5440b01599"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG"></a></p>
+<p><a href="#R-image-6ce49c6d54cff816ff17ce4c3ed5d973" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ce49c6d54cff816ff17ce4c3ed5d973"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG"></a></p>
+<p><a href="#R-image-5bcd6fc789f446f273d101f224a31a41" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bcd6fc789f446f273d101f224a31a41"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG"></a></p>
+<p><a href="#R-image-3166d35ea722d1629f5c03e373b21ab3" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3166d35ea722d1629f5c03e373b21ab3"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG"></a></p>
 <h4 id="warning-please-uncheck-install-driver-for-usb-dongles-if-on-windows-10-or-11">WARNING: Please uncheck &ldquo;Install driver for USB dongles&rdquo; if on Windows 10 or 11<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p><a href="#R-image-72116e5848f4506f0c6a2448e2cae864" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-72116e5848f4506f0c6a2448e2cae864"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG"></a></p>
+<p><a href="#R-image-e0ff3a4de2f9780f05874581503b0a78" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e0ff3a4de2f9780f05874581503b0a78"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG"></a></p>
 <p>Make sure to install the GigE Vision Filter (<strong>Note:</strong> <strong>this is required if you have a GigE camera</strong>).</p>
-<p><a href="#R-image-e21ea55e5326debc6e80e70bc9cdb7bf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e21ea55e5326debc6e80e70bc9cdb7bf"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG"></a></p>
-<p><a href="#R-image-ac42c14b257c77f8900e6351f027774b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac42c14b257c77f8900e6351f027774b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG"></a></p>
+<p><a href="#R-image-3c8ebae907ade03cf7587b2e17f4926e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c8ebae907ade03cf7587b2e17f4926e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG"></a></p>
+<p><a href="#R-image-0720f3a9270c5dcd807a92a70cd661b9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0720f3a9270c5dcd807a92a70cd661b9"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG"></a></p>
 <p>Locate the license.dat file you received via email and click next.</p>
-<p><a href="#R-image-821bcc3e52e480c16db7921520e44861" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-821bcc3e52e480c16db7921520e44861"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG"></a></p>
+<p><a href="#R-image-317e3ba7b7391c0b971a756d77a519f6" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-317e3ba7b7391c0b971a756d77a519f6"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG"></a></p>
 <p>Complete the installation. If asked to reboot, click yes.</p>
 <h2 id="basic-camera-configuration-of-halcon-inswing-catalyst">Basic camera configuration of Halcon in Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Please see the configuration instructions for the following manufacturers:</p>
@@ -432,8 +432,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542919" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772545021" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772545021" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 
