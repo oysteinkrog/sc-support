@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="986">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data">
     <title>Kalibrace a diagnostika Tlakové desky :: Podpora Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537834" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537834" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537834" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542949" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542949" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772537834";
+      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772542949";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537834" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542949" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Obsah (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#část-1-použití-nástroje-se-k-získání-kalibračního-souboru">Část 1: Použití nástroje SE k získání kalibračního souboru</a></li>
+    <li><a href="#registrace-tlakové-desky">Registrace Tlakové desky</a></li>
+    <li><a href="#ujistěte-se-že-jste-z-tlakové-desky-odstranili-koberec-a-jakékoli-jiné-předměty-tím-zajistíte-že-měření-nebude-ovlivněno-žádnými-vnějšími-faktory">Ujistěte se, že jste z Tlakové desky odstranili koberec a jakékoli jiné předměty. Tím zajistíte, že měření nebude ovlivněno žádnými vnějšími faktory.</a></li>
+    <li><a href="#snímek-obrazovky-seu_"><img src="../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png" alt="Snímek obrazovky SEU_2021-08-11_13-05-17.png"></a></li>
+    <li><a href="#provedení-kalibračního-procesu">Provedení kalibračního procesu</a></li>
+    <li><a href="#pozice">Pozice</a>
+      <ul>
+        <li><a href="#dokončená-nahrávka">Dokončená Nahrávka</a></li>
+      </ul>
+    </li>
+    <li><a href="#část-2-instalace-kalibračního-souboru">Část 2: Instalace kalibračního souboru</a>
+      <ul>
+        <li><a href="#pokračujte-těmito-kroky">Pokračujte těmito kroky</a></li>
+        <li><a href="#nastavení-senzorové-desky">Nastavení Senzorové desky</a></li>
+      </ul>
+    </li>
+    <li><a href="#řešení-problémů">Řešení problémů</a>
+      <ul>
+        <li><a href="#tlaková-deska-není-rozpoznána-nebo-se-nezobrazuje-jako-připojená">Tlaková deska není rozpoznána nebo se nezobrazuje jako připojená:</a></li>
+        <li><a href="#kalibrace-nebyla-úspěšně-nainstalována">Kalibrace nebyla úspěšně nainstalována</a></li>
+        <li><a href="#na-desce-je-šum-přestože-jsem-spustil-nástroj">Na desce je šum, přestože jsem spustil nástroj</a></li>
+        <li><a href="#nekompatibilita-hardwaru">Nekompatibilita hardwaru</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/hardware/index.html"><span itemprop="name">Hardware</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kalibrace a diagnostika Tlakové desky</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -235,74 +269,74 @@
 </ul>
 <p>Pokud máte nainstalovanou starší verzi, odinstalujte ji nejprve přes <a href="https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs" rel="external">Přidat nebo odebrat programy</a>.</p>
 <p>Klikněte na Spustit:</p>
-<p><a href="#R-image-b4b4d4e49456db6f44660d44deaf8a42" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4b4d4e49456db6f44660d44deaf8a42"><img alt="Snímek obrazovky SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
+<p><a href="#R-image-01ce652b9038a3503bb14bb896484595" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-01ce652b9038a3503bb14bb896484595"><img alt="Snímek obrazovky SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
 <p>Po kliknutí na Spustit se automaticky pokusí vyhledat zařízení. Pokud vaši desku nenajde, klikněte na rozbalovací nabídku a vyberte svou Tlakovou desku.</p>
-<p><a href="#R-image-2fa565a2834ca12eb33c806046f09ca6" class="lightbox-link"><img alt="Snímek obrazovky SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2fa565a2834ca12eb33c806046f09ca6"><img alt="Snímek obrazovky SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
-<p>Klikněte na Skenovat<a href="#R-image-31a3ff99c40bb6e5cb5622535af11b0c" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-31a3ff99c40bb6e5cb5622535af11b0c"><img alt="Snímek obrazovky SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
+<p><a href="#R-image-186bfbe93980bb5d9e9ecb1ab2a8e1b8" class="lightbox-link"><img alt="Snímek obrazovky SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-186bfbe93980bb5d9e9ecb1ab2a8e1b8"><img alt="Snímek obrazovky SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
+<p>Klikněte na Skenovat<a href="#R-image-382bc5631a5464f0cb1f21adf764d962" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-382bc5631a5464f0cb1f21adf764d962"><img alt="Snímek obrazovky SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
 <p>Vyberte zařízení, které odpovídá sériovému číslu vaší desky, a klikněte na Další.</p>
 <h2 id="registrace-tlakové-desky">Registrace Tlakové desky<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-b841df5db4e4f46bd54fd4de0a65d0b8" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b841df5db4e4f46bd54fd4de0a65d0b8"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
-<p>Příklad vyplněných registračních údajů<a href="#R-image-104048b3028132173839c7bcf073eeed" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-104048b3028132173839c7bcf073eeed"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
+<p><a href="#R-image-a03b34ed753ddd736298b084d6263e26" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a03b34ed753ddd736298b084d6263e26"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
+<p>Příklad vyplněných registračních údajů<a href="#R-image-6689bfc919f5f09bcc84af906b503cbf" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6689bfc919f5f09bcc84af906b503cbf"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
 <p>Jakmile vyplníte požadované informace pro účely záruky a servisu, klikněte na Pokračovat.</p>
 <p>Pokud je to možné, vyberte kameru a nasměrujte ji na Tlakovou desku, poté klikněte na Další.</p>
 <p>Kamera však není povinná – můžete pokračovat, i když není žádná kamera detekována.</p>
-<p><a href="#R-image-23648c2880d644631fa9a69a03c5349c" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23648c2880d644631fa9a69a03c5349c"><img alt="Snímek obrazovky SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
+<p><a href="#R-image-b90a098c9fe50c9004af40b4828fda7b" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b90a098c9fe50c9004af40b4828fda7b"><img alt="Snímek obrazovky SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
 <h2 id="ujistěte-se-že-jste-z-tlakové-desky-odstranili-koberec-a-jakékoli-jiné-předměty-tím-zajistíte-že-měření-nebude-ovlivněno-žádnými-vnějšími-faktory">Ujistěte se, že jste z Tlakové desky odstranili koberec a jakékoli jiné předměty. Tím zajistíte, že měření nebude ovlivněno žádnými vnějšími faktory.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h2 id="snímek-obrazovky-seu_"><a href="#R-image-3e4af522073e461d4b19d2ade509ed5f" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e4af522073e461d4b19d2ade509ed5f"><img alt="Snímek obrazovky SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="snímek-obrazovky-seu_"><a href="#R-image-147785d4fb3db4d2468490cf3f3bbac5" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-147785d4fb3db4d2468490cf3f3bbac5"><img alt="Snímek obrazovky SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="provedení-kalibračního-procesu">Provedení kalibračního procesu<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Před vstupem na desku nástroj shromažďuje data, aby měl Základní Linii pro porovnání.</p>
 <p>Dbejte na to, abyste náhodně nestoupili na desku, dokud vás k tomu nástroj nevyzve.</p>
-<p><a href="#R-image-f319b42c546993bd901b940fad9d81e9" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f319b42c546993bd901b940fad9d81e9"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
+<p><a href="#R-image-786ffe4f89cf2c528078ed87e4604a52" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-786ffe4f89cf2c528078ed87e4604a52"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
 <h2 id="pozice">Pozice<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Je důležité, abyste stáli na desce tak, jak nástroj naznačuje.</p>
 <p>Tmavá chodidla ukazují, kde byste měli stát nyní, a šedá chodidla ukazují, kde byste měli stát příště.</p>
-<p><a href="#R-image-0111355727540a5a7bc0949c50fcf1aa" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0111355727540a5a7bc0949c50fcf1aa"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
+<p><a href="#R-image-ae420add373590c80ddb2900be9eb61b" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae420add373590c80ddb2900be9eb61b"><img alt="Snímek obrazovky SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
 <p>Postupujte podle každého kroku, protože je důležité aktivovat všechny oblasti desky.</p>
 <h3 id="dokončená-nahrávka">Dokončená Nahrávka<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Pokud nejste s Nahrávkou spokojeni – například jste udělali chybu – můžete proces snadno restartovat kliknutím na Restartovat.</p>
 <p>Klikněte na Pokračovat, pokud chcete pokračovat.</p>
-<p><a href="#R-image-4e1d61e5fe253fb97c07c784a9ab61f7" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e1d61e5fe253fb97c07c784a9ab61f7"><img alt="Snímek obrazovky SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
+<p><a href="#R-image-380d88a7a699d1806e46f3c9f4bd4f15" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-380d88a7a699d1806e46f3c9f4bd4f15"><img alt="Snímek obrazovky SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
 <p>Klikněte na tlačítko Uložit a poté na tlačítko Odeslat.</p>
-<p><a href="#R-image-4e5e98603fc55f792f922a411d3caed1" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e5e98603fc55f792f922a411d3caed1"><img alt="Snímek obrazovky SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
+<p><a href="#R-image-311eff6a9436e7fc3f338f18925d561d" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-311eff6a9436e7fc3f338f18925d561d"><img alt="Snímek obrazovky SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
 <p>Před odesláním dat výrobci ke kontrole zadejte přibližnou hmotnost a míru používání.</p>
 <p>Do poznámek můžete uvést problémy, které s deskou máte, například slabé levé Chodidlo nebo jiné obavy.</p>
 <p>Výrobce tato data shromažďuje za účelem dalšího vylepšení algoritmů rekalibrace, aby bylo dosaženo přesnějšího Měření tlaku.</p>
 <p>Zadejte informace a klikněte na Odeslat:</p>
-<p><a href="#R-image-4eff4afb28631af59dc0e9428c92f0c8" class="lightbox-link"><img alt="Snímek obrazovky 2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4eff4afb28631af59dc0e9428c92f0c8"><img alt="Snímek obrazovky 2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
+<p><a href="#R-image-11f40f66658e41ea42ff2afd93e349e3" class="lightbox-link"><img alt="Snímek obrazovky 2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11f40f66658e41ea42ff2afd93e349e3"><img alt="Snímek obrazovky 2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
 <p>Po dokončení je kalibrační soubor uložen do složky Dokumenty. Stiskněte „Ne&quot; a poté zavřete nástroj.</p>
-<p><a href="#R-image-98edb29e3345de3e9b1f58e55e105cc2" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-98edb29e3345de3e9b1f58e55e105cc2"><img alt="Snímek obrazovky SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
+<p><a href="#R-image-29b034adb7b3bf04156f21cc1cbdc52f" class="lightbox-link"><img alt="Snímek obrazovky SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-29b034adb7b3bf04156f21cc1cbdc52f"><img alt="Snímek obrazovky SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
 <h2 id="část-2-instalace-kalibračního-souboru">Část 2: Instalace kalibračního souboru<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="pokračujte-těmito-kroky">Pokračujte těmito kroky<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Spusťte Swing Catalyst a přejděte do Nastavení &ndash;&gt; Hardware v hlavním menu.</li>
 </ul>
 <p>Deska by měla být detekována automaticky. Pokud ne, podívejte se prosím do části s řešením problémů.</p>
-<p><a href="#R-image-30a7c5bddfdde937a046f710e5a6b908" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-30a7c5bddfdde937a046f710e5a6b908"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
+<p><a href="#R-image-343640546bd4bfe61bb12d1509d74cc7" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-343640546bd4bfe61bb12d1509d74cc7"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
 <p>Klikněte na tlačítko „Konfigurovat&hellip;&quot; pro otevření konfiguračního dialogu.</p>
 <h3 id="nastavení-senzorové-desky">Nastavení Senzorové desky<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Přejděte na kartu Senzor postoje a klikněte na Procházet a nainstalovat.<a href="#R-image-a48b57a9fa51f2775fbd9f1d9cc6bb38" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a48b57a9fa51f2775fbd9f1d9cc6bb38"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
-<p>Přejděte do adresáře, kam jste uložili kalibrační soubor, např.: C:\User\VašeUživatelskéJméno\Documents, vyberte soubor mxd, který jste právě uložili z nástroje, a klikněte na Otevřít.<a href="#R-image-1809f1b56c4d2685939b42183ad5cac9" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1809f1b56c4d2685939b42183ad5cac9"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
+<p>Přejděte na kartu Senzor postoje a klikněte na Procházet a nainstalovat.<a href="#R-image-a643347a45e0f7a18adfb0b81ae92f60" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a643347a45e0f7a18adfb0b81ae92f60"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
+<p>Přejděte do adresáře, kam jste uložili kalibrační soubor, např.: C:\User\VašeUživatelskéJméno\Documents, vyberte soubor mxd, který jste právě uložili z nástroje, a klikněte na Otevřít.<a href="#R-image-c04045282209f962a68f0045a02d26a5" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c04045282209f962a68f0045a02d26a5"><img alt="Snímek obrazovky MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
 <p>Po dokončení instalace se zobrazí potvrzení a kliknutím na OK můžete zavřít okna.</p>
 <p>Vaše Tlaková deska by nyní měla být připravena k použití.
 Spusťte novou Relaci v analýze Swingů a ověřte, že při zachycení Swingů získáváte Měření tlaku v datovém poli Tlak a Postoj.</p>
-<p><a href="#R-image-6e4708fe1c5e7bff93820f3779c789f0" class="lightbox-link"><img alt="Snímek obrazovky 2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e4708fe1c5e7bff93820f3779c789f0"><img alt="Snímek obrazovky 2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
+<p><a href="#R-image-a74da1f7bcbd86671044ca60bd43c555" class="lightbox-link"><img alt="Snímek obrazovky 2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a74da1f7bcbd86671044ca60bd43c555"><img alt="Snímek obrazovky 2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
 <p>Poznámka: Při intenzivním používání může být nutné provést rekalibraci Tlakové desky. To lze provést kliknutím na tlačítko diagnostiky v nastavení Swing Catalyst, které spustí nástroj SE Utility.</p>
 <h2 id="řešení-problémů">Řešení problémů<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="tlaková-deska-není-rozpoznána-nebo-se-nezobrazuje-jako-připojená">Tlaková deska není rozpoznána nebo se nezobrazuje jako připojená:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -338,8 +372,8 @@ Spusťte novou Relaci v analýze Swingů a ověřte, že při zachycení Swingů
 <li>Kalibrační soubor získaný z nástroje Sensor Edge Utility může být poškozený nebo se soubor mohl poškodit. Zkuste nástroj spustit znovu a nainstalovat <em>nový</em> kalibrační soubor. Pokud to nepomůže, kontaktujte náš tým podpory.</li>
 </ul>
 <h3 id="na-desce-je-šum-přestože-jsem-spustil-nástroj">Na desce je šum, přestože jsem spustil nástroj<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-3decfd554bb8e976983b18c469a01301" class="lightbox-link"><img alt="Snímek obrazovky TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3decfd554bb8e976983b18c469a01301"><img alt="Snímek obrazovky TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
+<p><a href="#R-image-25670313c83a60548dbd0c58f3e0b8be" class="lightbox-link"><img alt="Snímek obrazovky TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-25670313c83a60548dbd0c58f3e0b8be"><img alt="Snímek obrazovky TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
 <p>Šum může být způsoben několika faktory:</p>
 <ul>
 <li>
@@ -455,7 +489,6 @@ Kalibrační nástroj by měl být spouštěn pravidelně – u intenzivně pou�
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Jazyk</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/calibration-diagnostics/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/calibration-diagnostics/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/calibration-diagnostics/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/calibration-diagnostics/index.html" lang="fr">Français</option>
@@ -517,8 +550,8 @@ Kalibrační nástroj by měl být spouštěn pravidelně – u intenzivně pou�
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542949" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1489">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Einrichten der FLIR BlackFly S GigE in Swing Catalyst :: Swing Catalyst Support</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537809" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537809" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537809" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542922" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542922" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772537809";
+      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772542922";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.de.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.de.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['de'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537809" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542922" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,37 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Inhalt (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#verwandte-themen--empfehlungen">Verwandte Themen &amp; Empfehlungen:</a></li>
+      </ul>
+    </li>
+    <li><a href="#dieser-artikel-ist-in-verschiedene-abschnitte-unterteilt">Dieser Artikel ist in verschiedene Abschnitte unterteilt</a>
+      <ul>
+        <li><a href="#verwandte-themen--empfehlungen-1">Verwandte Themen &amp; Empfehlungen:</a></li>
+      </ul>
+    </li>
+    <li><a href="#erste-schritte-hardware-einrichtung">Erste Schritte: Hardware-Einrichtung</a></li>
+    <li><a href="#installation-der-dual-port-netzwerkkarte">Installation der Dual-Port-Netzwerkkarte</a></li>
+    <li><a href="#erste-schritte-driver-installation">Erste Schritte: Driver-Installation</a></li>
+    <li><a href="#ip-konfiguration">IP-Konfiguration</a></li>
+    <li><a href="#konfiguration-ihrer-kamera-in-den-swing-catalyst-einstellungen">Konfiguration Ihrer Kamera in den Swing Catalyst-Einstellungen</a></li>
+    <li><a href="#fehlerbehebung">Fehlerbehebung</a>
+      <ul>
+        <li><a href="#erklärung-der-statusanzeige">Erklärung der Statusanzeige</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/cameras-video/index.html"><span itemprop="name">Kameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Einrichten der FLIR BlackFly S GigE in Swing Catalyst</span><meta itemprop="position" content="3"></li>
@@ -245,21 +275,21 @@
 <p><a href="/sc-support/de/cameras-video/point-grey-flir-gige/index.html">Ältere Artikel: Point Grey Blackfly GigE in Swing Catalyst (für ältere Swing Catalyst-Versionen)</a></p>
 <h2 id="erste-schritte-hardware-einrichtung">Erste Schritte: Hardware-Einrichtung<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Befestigen Sie den Stativadapter mit den 4 schwarzen Kreuzschlitzschrauben, die im Lieferumfang der Kamera enthalten sind, am Kameragehäuse.</p>
-<p><a href="#R-image-920c9edd030f495878e18f256fcd335f" class="lightbox-link"><img alt="20200812_150256.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-920c9edd030f495878e18f256fcd335f"><img alt="20200812_150256.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png"></a></p>
+<p><a href="#R-image-c012c27618866b14af8c8065823c86b5" class="lightbox-link"><img alt="20200812_150256.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c012c27618866b14af8c8065823c86b5"><img alt="20200812_150256.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png"></a></p>
 <p>Packen Sie das Objektiv aus und entfernen Sie unbedingt die Kunststoff-Objektivdeckel.</p>
-<p><a href="#R-image-d5617e286bb3a7771434f04ecdbc14ad" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5617e286bb3a7771434f04ecdbc14ad"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png"></a></p>
+<p><a href="#R-image-e9ab79d4ccf6710eb3185ea698a10339" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9ab79d4ccf6710eb3185ea698a10339"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png"></a></p>
 <p>Entfernen Sie die Sensorabdeckung von der Kamera:</p>
-<p><a href="#R-image-889950ed6ef0f75348053b444795463a" class="lightbox-link"><img alt="20200812_150131.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-889950ed6ef0f75348053b444795463a"><img alt="20200812_150131.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png"></a><a href="#R-image-9676d4ef8c7ee23873874ccc87d6ee1d" class="lightbox-link"><img alt="20200812_151418.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9676d4ef8c7ee23873874ccc87d6ee1d"><img alt="20200812_151418.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png"></a></p>
+<p><a href="#R-image-43352874f6d4f2d8f68435139754a461" class="lightbox-link"><img alt="20200812_150131.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43352874f6d4f2d8f68435139754a461"><img alt="20200812_150131.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png"></a><a href="#R-image-0be698fb3a2b3a9313f725b010cb91c4" class="lightbox-link"><img alt="20200812_151418.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0be698fb3a2b3a9313f725b010cb91c4"><img alt="20200812_151418.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png"></a></p>
 <p>Befestigen Sie das Objektiv an der Kamera.</p>
-<p><a href="#R-image-516899924633003a8601d02948397b98" class="lightbox-link"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-516899924633003a8601d02948397b98"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png"></a></p>
+<p><a href="#R-image-bd86360707feca463eedfc9d7805a460" class="lightbox-link"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd86360707feca463eedfc9d7805a460"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png"></a></p>
 <p><strong>Einstellen des Kameraobjektivs:</strong></p>
-<p><a href="#R-image-06ea28a1d6c48fc272ff8f51b6b6b41e" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-06ea28a1d6c48fc272ff8f51b6b6b41e"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png"></a></p>
+<p><a href="#R-image-9fd0e7036f3730fb7c702208eb75c822" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9fd0e7036f3730fb7c702208eb75c822"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png"></a></p>
 <p>Dieses Objektiv verfügt über drei Einstellmöglichkeiten, von oben nach unten:</p>
 <ul>
 <li>
@@ -286,75 +316,75 @@
 <p>Lassen Sie das Kontrollkästchen „I will use GigE Cameras&quot; aktiviert.</p>
 </li>
 </ul>
-<p><a href="#R-image-14ccd6fa0eec9c630cdf6e94eaaaf473" class="lightbox-link"><img alt="J079Itbw6G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-14ccd6fa0eec9c630cdf6e94eaaaf473"><img alt="J079Itbw6G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png"></a></p>
+<p><a href="#R-image-5b9916759dcab9222bfb6261b3d2346a" class="lightbox-link"><img alt="J079Itbw6G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5b9916759dcab9222bfb6261b3d2346a"><img alt="J079Itbw6G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png"></a></p>
 <h2 id="ip-konfiguration">IP-Konfiguration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nach der Driver-Installation werden Sie aufgefordert, AdapterConfigGUI auszuführen. Falls nicht, finden Sie das Programm unter C:\Program Files\FLIR Systems\Spinnaker\shortcuts\utilities.</p>
 <p>Das Adapter-Konfigurationsprogramm sieht folgendermaßen aus:</p>
-<p><a href="#R-image-f974e103229711cc7139b1449e15e68b" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f974e103229711cc7139b1449e15e68b"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png"></a></p>
+<p><a href="#R-image-ac19d9e45c9f0be574208d4497db247b" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac19d9e45c9f0be574208d4497db247b"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png"></a></p>
 <p>Klicken Sie auf „Start&quot; und wählen Sie alle Adapter vom Typ „Intel(R) 82574L&quot; aus.</p>
-<p><a href="#R-image-f49ade00412c4efcd4cfbfe5b5e49366" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f49ade00412c4efcd4cfbfe5b5e49366"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png"></a></p>
+<p><a href="#R-image-b43e1471d71c7152953f0ca1f721b3bf" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b43e1471d71c7152953f0ca1f721b3bf"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png"></a></p>
 <p>Klicken Sie auf „Smart Config&quot; – das Programm übernimmt den Rest.</p>
 <h2 id="konfiguration-ihrer-kamera-in-den-swing-catalyst-einstellungen">Konfiguration Ihrer Kamera in den Swing Catalyst-Einstellungen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Stellen Sie sicher, dass die Kamera mit Ihrem Computer verbunden ist und die LED auf der Rückseite der Kamera grün blinkt.</p>
-<p>Starten Sie Swing Catalyst und klicken Sie auf Einstellungen -&gt; Kameras.<a href="#R-image-3cc3bbe02190161038e038f1c48159f4" class="lightbox-link"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3cc3bbe02190161038e038f1c48159f4"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png"></a></p>
+<p>Starten Sie Swing Catalyst und klicken Sie auf Einstellungen -&gt; Kameras.<a href="#R-image-67b34a679fd967126053763f36487bb2" class="lightbox-link"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-67b34a679fd967126053763f36487bb2"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png"></a></p>
 <p>Spinnaker-Kameras sind in der Kameraliste mit „Spinnaker&quot; gekennzeichnet.</p>
 <p>Klicken Sie auf „Erweitert&hellip;&quot;.</p>
-<p><a href="#R-image-be1f42e50dc080afbc5173f74fac2732" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-be1f42e50dc080afbc5173f74fac2732"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png"></a></p>
+<p><a href="#R-image-c081479fa7a2d8603b2fbdcf1328a0c7" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c081479fa7a2d8603b2fbdcf1328a0c7"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png"></a></p>
 <p>Das Fenster „Erweiterte Kameraeinstellungen&quot; zeigt alle möglicherweise nützlichen Einstellungen an. Sehen wir uns jede einzelne Einstellung an.</p>
 <p>Die oben gezeigten Einstellungen sind die Standard-Kameraeinstellungen. Beachten Sie, dass die meisten Einstellungen auf Auto gesetzt sind. Wir können diese Einstellungen ändern, um eine bessere Kontrolle über die Videobildqualität für die Sportanalyse zu erhalten.</p>
-<p><a href="#R-image-c24ac14984412edff9d2d39b9c538928" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c24ac14984412edff9d2d39b9c538928"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png"></a></p>
+<p><a href="#R-image-cc292f9f725c539b175e9c383a4ac64a" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc292f9f725c539b175e9c383a4ac64a"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png"></a></p>
 <p><strong>Ändern der Bildrate:</strong></p>
 <p>Durch Aktivieren des Kontrollkästchens „Frame rate control enable&quot; können Sie die Bildrate manuell festlegen. Ist dieses Kontrollkästchen deaktiviert, wird die Bildrate im Wesentlichen auf Auto gesetzt (Hinweis: Die maximale Bildrate dieser Kamera beträgt 78 FPS. Um die maximale Bildrate zu erreichen, müssen alle Einstellungen auf manuell gesetzt sein).</p>
 <p>Die Bildrate kann durch die Verschlusszeit und die Einstellungen für den Gerätedurchsatz begrenzt werden. Um in diesem Fall die volle Bildrate zu erreichen, müssen wir den Durchsatz erhöhen (mehr dazu später).</p>
-<p><a href="#R-image-9ae7a1b26c054e7db91bf2024ab0e6ee" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ae7a1b26c054e7db91bf2024ab0e6ee"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png"></a></p>
+<p><a href="#R-image-32be74fd42ac52d2d5089037a987d92b" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-32be74fd42ac52d2d5089037a987d92b"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png"></a></p>
 <p><strong>Ändern der Verschlusszeit:</strong></p>
 <p>Sofern wir uns nicht im Freien bei Sonnenlicht befinden, ist es besser, eine manuelle Verschlusszeit zu verwenden, da das Video andernfalls für die Sportanalyse wahrscheinlich zu unscharf ist. Um Unschärfe zu reduzieren, empfehlen wir eine Verschlusszeit von weniger als 2 ms (2000 μs). Bei ausreichender Beleuchtung kann die Verschlusszeit weniger als 1 ms (1000 μs) betragen.</p>
-<p><a href="#R-image-4587f9e349af35ee2136c753ab909acc" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4587f9e349af35ee2136c753ab909acc"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png"></a></p>
+<p><a href="#R-image-5772966096df9ba7284e6a61884f04c1" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5772966096df9ba7284e6a61884f04c1"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png"></a></p>
 <p>Die Helligkeit des Videobildes ergibt sich aus der Kombination von Verschlusszeit, Gain-Einstellungen, Objektivblende und der verfügbaren Lichtmenge.</p>
 <p><strong>Ändern des Kamera-Gains:</strong></p>
 <p>In wechselnden Lichtverhältnissen ist ein auf Auto gesetzter Gain vorzuziehen. In einer Innenumgebung ist es jedoch besser, den Gain manuell einzustellen.</p>
 <p>Je höher der dB-Wert, desto heller das Bild – allerdings nimmt auch das Bildrauschen zu, was die Gesamtvideoqualität beeinträchtigen kann. Manchmal ist es sinnvoll, einen etwas höheren Gain auf Kosten des Rauschens in Kauf zu nehmen, um die Verschlusszeit zu verkürzen und so ein scharfes Bild für Bild-Video eines Objekts zu erhalten (z. B. Schläger beim Impact, Baseballschläger usw.).</p>
-<p><a href="#R-image-acb5ed6678d9a45659fd68b927dc4437" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-acb5ed6678d9a45659fd68b927dc4437"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png"></a></p>
+<p><a href="#R-image-8c07deb0c9e26fb9632f20f298b7812e" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c07deb0c9e26fb9632f20f298b7812e"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png"></a></p>
 <p><strong>Ändern von Gamma und Schwarzwert:</strong></p>
 <p>Der Schwarzwert kann als eine Form der Helligkeitsanpassung betrachtet werden, bei der der Schwarzwert dem Minimalwert entspricht, den ein beliebiger Pixel auf dem Kamerasensor zurückgeben kann.</p>
 <p>Durch Erhöhen des Schwarzwerts kann das Bild heller gemacht werden.</p>
 <p>Unsere Empfehlung ist, diese Werte bei den Standardeinstellungen zu belassen.</p>
-<p><a href="#R-image-108e0faf638e0fa416c826d089153da9" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-108e0faf638e0fa416c826d089153da9"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png"></a></p>
+<p><a href="#R-image-effcffd6e68e9dd3314847b27c76ff8e" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-effcffd6e68e9dd3314847b27c76ff8e"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png"></a></p>
 <p>Weitere Informationen zur Verbesserung Ihres Videobildes finden Sie in diesem Support-Artikel mit Vergleichsfotos: <a href="/sc-support/de/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
 <p><strong>Ändern des Weißabgleichs der Kamera:</strong></p>
-<p><a href="#R-image-0cb81c095ce86bbd55aaa317b8b8c64c" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0cb81c095ce86bbd55aaa317b8b8c64c"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png"></a></p>
+<p><a href="#R-image-ed563443496ec3d5bc5e9577f2dee02a" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed563443496ec3d5bc5e9577f2dee02a"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png"></a></p>
 <p>Normalerweise empfehlen wir, diese Einstellung auf Auto (kontinuierlich) zu belassen. Um jedoch die maximale Bildrate zu erreichen, muss auch diese Funktion deaktiviert werden.</p>
 <p>Der Weißabgleich beeinflusst die Farbtemperatur des Videobildes. Ist der Weißabgleich stark falsch eingestellt, sieht das Bild nicht gut aus – es erscheint häufig zu rot oder zu grün.</p>
 <p>Durch Aktivieren des automatischen Weißabgleichs verzichten wir auf etwas Bildrate und kommen auf 200 FPS statt auf die maximalen 226 FPS der Kamera.</p>
 <p><strong>Gerätedurchsatz:</strong></p>
 <p>Bei GigE-Kameras hängen Gerätedurchsatz und Paketgröße insofern zusammen, als für den maximalen Durchsatz die Paketgröße auf 9000 gesetzt werden muss. Um die volle Bildrate zu erreichen, ist dies zwingend erforderlich.</p>
-<p><a href="#R-image-a54998593ad187bcffff2825d8bd1904" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a54998593ad187bcffff2825d8bd1904"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
+<p><a href="#R-image-9d48b293cc09edc153261f2b95f52b93" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9d48b293cc09edc153261f2b95f52b93"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
 <p><strong>Anwenden der Region of Interest (ROI):</strong></p>
-<p><a href="#R-image-08aea08a3ab1a48645f673dd38f4cc8d" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-08aea08a3ab1a48645f673dd38f4cc8d"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png"></a></p>
+<p><a href="#R-image-f2b207cf09947a09cf0d1dfc87d28b4a" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f2b207cf09947a09cf0d1dfc87d28b4a"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png"></a></p>
 <p>Die Region of Interest ist eine Möglichkeit, die Bildgröße und damit auch die für jedes Bild benötigte Bandbreite zu reduzieren. Durch Verringerung der Bildgröße kann die Bildrate erhöht werden, da der Gesamtpixel-Auslesebedarf geringer ist.</p>
 <p>Das Reduzieren von Höhe und Breite kann sich positiv auf die Bildrate auswirken und den Bandbreitenbedarf senken.</p>
 <p>Um die Region of Interest zu ändern, können wir den Höhen-Schieberegler nach links ziehen, um die Bildhöhe zu reduzieren.</p>
-<p><a href="#R-image-385f220bbc7ace16c99ab35550a7978f" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-385f220bbc7ace16c99ab35550a7978f"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png"></a></p>
+<p><a href="#R-image-06bb3583724ac6a6c17f5f632ee6f27b" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06bb3583724ac6a6c17f5f632ee6f27b"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png"></a></p>
 <p>Da wir die Bildhöhe geändert haben, können wir nun auch den Y-Versatz anpassen, was als Alternative zum physischen Verschieben der Kamera aufgrund der reduzierten Bildgröße hilfreich sein kann.</p>
-<p><a href="#R-image-439b59265709fb09d0875da56af0e81f" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-439b59265709fb09d0875da56af0e81f"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png"></a></p>
+<p><a href="#R-image-fcd97c300bed5e5da23aa2279d95dfd9" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fcd97c300bed5e5da23aa2279d95dfd9"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png"></a></p>
 <p>Wenn wir zur Kamera-Registerkarte zurückgehen und unter Bildrate nachsehen, stellen wir fest, dass die maximale einstellbare Bildrate nun erhöht wurde. Dies liegt daran, dass wir eine Region of Interest durch Reduzierung der Höhe des Kamerasensors angewendet haben.</p>
-<p><a href="#R-image-01d65819cd24e9354f619496f40bfdc4" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-01d65819cd24e9354f619496f40bfdc4"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png"></a></p>
+<p><a href="#R-image-34d7b28e990fd4b460621e79c33e757b" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-34d7b28e990fd4b460621e79c33e757b"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png"></a></p>
 <h2 id="fehlerbehebung">Fehlerbehebung<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Bitte beachten Sie unsere GigE-Vision / Gigabit-Ethernet-Empfehlungen:</p>
 <p><a href="/sc-support/de/cameras-video/gige-network-setup/index.html">gige-network-setup.md</a></p>
@@ -364,8 +394,8 @@
 <p><strong>Verlorene Frames:</strong></p>
 <p>Obwohl die meisten GigE-Kameras sehr zuverlässig sind, kann es je nach Netzwerk- und Kameraeinrichtung notwendig sein, die Einstellungen anzupassen, um verlorene Frames zu vermeiden.</p>
 <p>Stellen Sie sicher, dass die Paketgröße auf 9000 gesetzt ist – dies ist entscheidend für eine gute Leistung, da sonst die echte Möglichkeit besteht, Frames zu verlieren. Es ist außerdem wichtig, dass der Netzwerkadapter ebenfalls auf 9-kB-Jumbo-Frames eingestellt ist, damit Kamera und Netzwerkadapter übereinstimmen.</p>
-<p><a href="#R-image-e35106a48d4c5f911e1199dd4229f056" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e35106a48d4c5f911e1199dd4229f056"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
+<p><a href="#R-image-77a7e2fbe48425557a619b79822a9ea5" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-77a7e2fbe48425557a619b79822a9ea5"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
 <p>Eine GigE-Kamera mit einer Auflösung von 1440 x 1200 bei 78 FPS benötigt ungefähr 134 MB/s pro Kamera. Daher ist es wichtig, gemäß unseren Empfehlungen für Mehrkamera-Setups (in den meisten Fällen) eine dedizierte Netzwerk-Controller-Karte zu verwenden. Wenn Sie eine GigE-Kamera über uns erworben haben, erhalten Sie eine PCI-Express-Dual-Port-Netzwerkkarte zur Installation.</p>
 <p>Wir empfehlen generell nicht, mehr als eine Kamera an einem Netzwerkadapter zu betreiben.</p>
 <p><strong>Filter-Driver:</strong></p>
@@ -531,7 +561,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Sprache</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-gige-setup/index.html" lang="de" selected data-selected>Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html" lang="fr">Français</option>
@@ -593,8 +622,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542922" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="This support article describes how to use the Foresight GC2 with Swing Catalyst.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to use Foresight GC2 & HMT with Swing Catalyst :: Swing Catalyst Support">
+    <meta name="twitter:description" content="This support article describes how to use the Foresight GC2 with Swing Catalyst.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/en/hardware/launch-monitors/foresight-gc2-hmt/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Support">
+    <meta property="og:title" content="How to use Foresight GC2 & HMT with Swing Catalyst :: Swing Catalyst Support">
+    <meta property="og:description" content="This support article describes how to use the Foresight GC2 with Swing Catalyst.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Hardware">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Launch-Monitor">
+    <meta property="article:tag" content="Licensing">
+    <meta itemprop="name" content="How to use Foresight GC2 & HMT with Swing Catalyst :: Swing Catalyst Support">
+    <meta itemprop="description" content="This support article describes how to use the Foresight GC2 with Swing Catalyst.">
+    <meta itemprop="wordCount" content="776">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Launch-Monitor,Licensing">
+    <title>How to use Foresight GC2 &amp; HMT with Swing Catalyst :: Swing Catalyst Support</title>
+    <link href="/sc-support/images/favicon.png?1772542919" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542919" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772542919";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542919" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/hardware\/launch-monitors\/foresight-gc2-hmt\/index.html';
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/en/hardware/launch-monitors/foresight-gc2-hmt/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+      </ul>
+    </li>
+    <li><a href="#warning">Warning</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#direct-connection-no-fsx-integration">Direct Connection (no FSX integration):</a>
+      <ul>
+        <li><a href="#configuration-steps">Configuration Steps</a></li>
+      </ul>
+    </li>
+    <li><a href="#motioncatalyst_"><img src="../../assets/images/200968148/motioncatalyst-1ewtxvudhx-png.png" alt="MotionCatalyst_1ewTxvUDhx.png"></a></li>
+    <li><a href="#simulator-integration">Simulator Integration</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a>
+      <ul>
+        <li><a href="#i-just-updated-the-software-and-the-integration-no-longer-works">I just updated the software and the integration no longer works!</a></li>
+        <li><a href="#foresight-usb-connection">Foresight USB connection</a></li>
+        <li><a href="#foresight-simulator-connection">Foresight Simulator connection</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/hardware/index.html"><span itemprop="name">Hardware</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/hardware/launch-monitors/index.html"><span itemprop="name">Launch Monitors</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">How to use Foresight GC2 &amp; HMT with Swing Catalyst</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/hardware/launch-monitors/flightscope-setup/index.html" title="How to use FlightScope with Swing Catalyst (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/hardware/launch-monitors/foresight-gc3-launch-pro/index.html" title="How to use Foresight GC3 / Bushnell Launch Pro with Swing Catalyst (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable hardware" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/en/tags/launch-monitor/index.html">Launch-Monitor</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/licensing/index.html">Licensing</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+
+<h1 id="how-to-use-the-foresight-gc2--hmt-launch-monitor-with-swing-catalyst">How to use the Foresight GC2 &amp; HMT Launch Monitor with Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h3 id="introduction">Introduction<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>This support article describes how to use the Foresight GC2 with Swing Catalyst.</p>
+<p>Note: If you want to use FSX alongside the GC2, HMT data is not provided and you need to start FSX first then start Swing Catalyst, and select FSX Sim in the Swing Catalyst Settings.</p>
+<h2 id="warning">Warning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>From version 10.1.1 of Swing Catalyst, GC2 integration will be turned off by default in order to prevent issues with FSX 2020 closing when running Swing Catalyst.</p>
+<p>If you have a GC2 and wish to continue using it with Swing Catalyst it needs to be enabled from the settings file (see the troubleshooting section below).</p>
+<h2 id="requirements">Requirements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>Computer with a free USB port or WiFi (separate to internet connection).</p>
+</li>
+<li>
+<p>A license with support for a live streaming camera, web camera or high speed camera.</p>
+</li>
+<li>
+<p>Swing Catalyst 4.0 or later</p>
+</li>
+</ul>
+<p><a href="../getting-started/system-requirements.md">Important: Computer Recommendations.</a></p>
+<p>Swing Catalyst integrates both with the GC2 and the add-on unit, HMT.</p>
+<p>To use the GC2 alongside the Foresight Simulator software (FR-1, FSX, FSX 2020 etc), Foresight Simulator must be selected in Swing Catalyst&rsquo;s launch monitor settings.</p>
+<p>Note: If you are unfamiliar with Swing Catalyst&rsquo;s launch monitor settings and how to use a launch monitor as a capture trigger please see our <a href="/sc-support/en/hardware/launch-monitors/launch-monitor-trigger/index.html">support article</a> before continuing.</p>
+<h2 id="direct-connection-no-fsx-integration">Direct Connection (no FSX integration):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This connection method connects to the unit directly without the need to run FSX side by side. If you have a HMT unit, Swing Catalyst will pick up club data as well.</p>
+<h3 id="configuration-steps">Configuration Steps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="https://www.foresightsports.com/support/hardware/gc2" rel="external">GC2 Support page (drivers, firmware and user manuals)</a></p>
+<ul>
+<li>
+<p>Follow the Foresight GC2 installation guide (see link above), and install the GC2 USB Drivers. Make sure you select the correct version depending on your Windows version.</p>
+</li>
+<li>
+<p>Ensure the GC2 is using the latest firmware version</p>
+</li>
+</ul>
+<p>With the GC2 off, connect the GC2 to your computer with the USB cable, then turn on the GC2.</p>
+<ul>
+<li>
+<p>Start Swing Catalyst and go to <strong>Settings</strong> (from the main screen, click the gear icon bottom left), select** Hardware.**</p>
+</li>
+<li>
+<p>Enable <strong>Launch Monitor</strong> integration. Make sure Enable as trigger is checked if you want the launch monitor to act as a capture trigger.</p>
+</li>
+<li>
+<p>Select <strong>Foresight GC2</strong></p>
+</li>
+</ul>
+<p>Example screenshot indicating the Foresight GC2 is identified and connected:</p>
+<h2 id="motioncatalyst_"><a href="#R-image-7fb89757072d9ca5f947fc9d9cb43b27" class="lightbox-link"><img alt="MotionCatalyst_1ewTxvUDhx.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/motioncatalyst-1ewtxvudhx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7fb89757072d9ca5f947fc9d9cb43b27"><img alt="MotionCatalyst_1ewTxvUDhx.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/motioncatalyst-1ewtxvudhx-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="simulator-integration">Simulator Integration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>
+<p>Select ForesightSim in the Launch Monitor selection list, if it doesn&rsquo;t show up automatically press &ldquo;Search&rdquo; to update the list.</p>
+</li>
+<li>
+<p>Start the Foresight Simulator (supported variants are: FSX, FSX 2020, &amp; FR-1).</p>
+</li>
+<li>
+<p>Navigate to the Foresight Simulator settings, in the &ldquo;On-Screen Data&rdquo; section enable &ldquo;Write Shots CSV&rdquo; (<a href="https://www.foresightsports.com/sites/default/files/files/FSX_UserManual_v2-3.pdf" rel="external">see the simulator user manual for specifics</a> or contact Foresight support for help with this).</p>
+</li>
+</ol>
+<p>Swing Catalyst monitors the Shots.CSV file for changes and actively uses that file to pick up on shot data from the simulator.</p>
+<ol start="4">
+<li>Make sure you&rsquo;re using Club Fitting mode (only mode that will provide all ball data).</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This section contains troubleshooting steps for the Foresight GC2 and HMT as well as the use of the GC2 with FSX.</p>
+<h3 id="i-just-updated-the-software-and-the-integration-no-longer-works">I just updated the software and the integration no longer works!<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>In version 10.1.1 of Swing Catalyst, the GC2 integration is turned off by default to prevent FSX2020 from closing itself when Swing Catalyst is running. This is a temporary workaround until Foresight is able to resolve the issue with FSX.</p>
+<p>To turn the GC2 integration back on, close Swing Catalyst and navigate to the Settings folder:</p>
+<ul>
+<li>
+<p>C:\ProgramData\Swing Catalyst\settings</p>
+</li>
+<li>
+<p>Right click on &ldquo;GeneralSettings.xml&rdquo; and click open with Notepad (or click Edit).</p>
+</li>
+<li>
+<p>Change <UseForesightGc2Usb>false</UseForesightGc2Usb> to <UseForesightGc2Usb>true</UseForesightGc2Usb> and save the document.</p>
+</li>
+<li>
+<p>Once saved, start Swing Catalyst again, the GC2 should show up in the launch monitor list.</p>
+</li>
+</ul>
+<p><a href="#R-image-58ac3134a6d6fc0c050db17e733db9af" class="lightbox-link"><img alt="explorer_2bdoaVuBPp.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/explorer-2bdoavubpp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-58ac3134a6d6fc0c050db17e733db9af"><img alt="explorer_2bdoaVuBPp.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/explorer-2bdoavubpp-png.png"></a><a href="#R-image-88a8cc55796cdafb424b87105425ab60" class="lightbox-link"><img alt="notepad_lTmS5IiQFQ.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/notepad-ltms5iiqfq-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-88a8cc55796cdafb424b87105425ab60"><img alt="notepad_lTmS5IiQFQ.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/notepad-ltms5iiqfq-png.png"></a></p>
+<h3 id="foresight-usb-connection">Foresight USB connection<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Make sure Foresight USB is selected in Swing Catalyst Settings.</p>
+</li>
+<li>
+<p>Check the connection to the Foresight GC2 unit, and make sure the Foresight Simulator software is not running.</p>
+</li>
+<li>
+<p>If there is missing data or shots are not picked up properly it could indicate the <a href="https://shop.foresightsports.com/products/gc2-super-flash-module" rel="external">flash module needs replacement.</a> Or it may be the club is missing markers or the markers are no longer working properly.</p>
+</li>
+<li>
+<p>If you still can&rsquo;t get Foresight GC2 Launch Monitor data in Swing Catalyst, please submit a ticket through our help center.</p>
+</li>
+</ul>
+<p>Example screenshot showing device is connected to the computer but not fully enabled, make sure to select the device:</p>
+<p><a href="#R-image-d321dcf958909841ba4374078c366666" class="lightbox-link"><img alt="MotionCatalyst_DF9Y3zIvqx.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/motioncatalyst-df9y3zivqx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d321dcf958909841ba4374078c366666"><img alt="MotionCatalyst_DF9Y3zIvqx.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/200968148/motioncatalyst-df9y3zivqx-png.png"></a></p>
+<h3 id="foresight-simulator-connection">Foresight Simulator connection<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p>Make sure you&rsquo;re receiving data in the Foresight Simulator.</p>
+</li>
+<li>
+<p>Try closing Swing Catalyst, and starting the Foresight simulator first, then start Swing Catalyst.</p>
+</li>
+<li>
+<p>Make sure that you&rsquo;re using Club Fitting mode in the Foresight simulator, and that Shots.CSV is enabled in the Settings.</p>
+</li>
+<li>
+<p>Make sure that you have &ldquo;Use as trigger&rdquo; enabled in the Swing Catalyst settings.</p>
+</li>
+</ol>
+<p>Foresight Support: <a href="http://www.foresightsports.com/support/faqs" rel="external">http://www.foresightsports.com/support/faqs</a></p>
+<hr>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/en/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Support</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/getting-started/index.html"><a class="padding default-animation" href="/sc-support/en/getting-started/index.html">Getting Started</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/en/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/en/hardware/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/sc-support/en/hardware/pressure-plates/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/pressure-plates/index.html">Pressure Plates</a><ul id="R-subsections-63285dbd7376ac29fc7e706aa54d833f" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/sc-support/en/hardware/launch-monitors/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/launch-monitors/index.html">Launch Monitors</a><ul id="R-subsections-053a1449d630049332707e9a11bb7bb7" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/launch-monitor-trigger/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/launch-monitor-trigger/index.html">How to setup launch monitor as capture trigger</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/flightscope-mevo/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/flightscope-mevo/index.html">How to use FlightScope Mevo&#43; with Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/flightscope-setup/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/flightscope-setup/index.html">How to use FlightScope with Swing Catalyst</a></li>
+            <li class="active " data-nav-id="/sc-support/en/hardware/launch-monitors/foresight-gc2-hmt/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/foresight-gc2-hmt/index.html">How to use Foresight GC2 &amp; HMT with Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/foresight-gc3-launch-pro/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/foresight-gc3-launch-pro/index.html">How to use Foresight GC3 / Bushnell Launch Pro with Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/foresight-gcquad/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/foresight-gcquad/index.html">How to use Foresight GCQuad with Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/full-swing-golf/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/full-swing-golf/index.html">How to use Full Swing Golf with Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/trackman-setup/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/trackman-setup/index.html">How to use Trackman with Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/launch-monitors/supported-launch-monitors/index.html"><a class="padding" href="/sc-support/en/hardware/launch-monitors/supported-launch-monitors/index.html">Supported launch monitors</a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/hardware/diagnostics/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/diagnostics/index.html">Diagnostics &amp; Setup</a><ul id="R-subsections-a0ebc3eb5165dc0eb070c142539d771a" class="collapsible-menu"></ul></li></ul></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/index.html">Software &amp; Features</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/account-setup/index.html"><a class="padding default-animation" href="/sc-support/en/account-setup/index.html">Account &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/reference/index.html"><a class="padding default-animation" href="/sc-support/en/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/launch-monitors/foresight-gc2-hmt/index.html" lang="en" selected data-selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542919" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

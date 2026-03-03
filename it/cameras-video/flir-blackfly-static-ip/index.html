@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="689">
     <meta itemprop="keywords" content="Gige-Camera,Flir">
     <title>Come impostare un IP statico sulle fotocamere FLIR Blackfly GigE :: Supporto Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537811" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537811" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537811" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542923" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542923" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542923" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.it.js?1772537811";
+      window.relearn.index_js_url="/sc-support/searchindex.it.js?1772542923";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.it.min.js?1772537811" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.it.min.js?1772542923" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['it'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537811" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537811" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537811" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537811" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537811" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542923" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542923" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542923" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542923" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542923" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,28 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Indice (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#installazione-di-spinnaker">Installazione di Spinnaker</a></li>
+    <li><a href="#impostazione-di-un-ip-statico-sulladattatore-ethernet">Impostazione di un IP statico sull&rsquo;adattatore Ethernet</a></li>
+    <li><a href="#configurazione-ip-statica-consigliata">Configurazione IP statica consigliata</a></li>
+    <li><a href="#impostazione-di-un-ip-statico-sulla-fotocamera">Impostazione di un IP statico sulla fotocamera</a>
+      <ul>
+        <li><a href="#spinview_"><img src="../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" alt="SpinView_WPF_v140_76YBSasBIN.png"></a></li>
+        <li><a href="#configurazione-ip-statica-consigliata-per-le-fotocamere">Configurazione IP statica consigliata per le fotocamere</a></li>
+      </ul>
+    </li>
+    <li><a href="#utilizzo-di-spinview-per-abilitare-i-jumbo-frame-e-ottimizzare-gli-adattatori-di-rete-per-le-fotocamere">Utilizzo di SpinView per abilitare i jumbo frame e ottimizzare gli adattatori di rete per le fotocamere</a></li>
+    <li><a href="#sharex_"><img src="../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png" alt="ShareX_ZAAgAqcrm3.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/it/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/it/cameras-video/index.html"><span itemprop="name">Telecamere e Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Come impostare un IP statico sulle fotocamere FLIR Blackfly GigE</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -230,25 +251,25 @@
 <p>Al termine, riavviare il computer.</p>
 </li>
 </ul>
-<p><a href="#R-image-ec1c38ecfdb65529641c187bff10b256" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec1c38ecfdb65529641c187bff10b256"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
+<p><a href="#R-image-219b7917cdd348a9d5b00c007a14235e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-219b7917cdd348a9d5b00c007a14235e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
 <h2 id="impostazione-di-un-ip-statico-sulladattatore-ethernet">Impostazione di un IP statico sull&rsquo;adattatore Ethernet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Ogni fotocamera e adattatore di rete deve avere il proprio indirizzo IP statico univoco. Ad esempio, se si assegna un indirizzo IP statico a una fotocamera, assicurarsi che l&rsquo;adattatore di rete sia configurato con un IP corrispondente dalla matrice di &ldquo;configurazione IP statica consigliata&rdquo; riportata di seguito.</p>
 <p><strong>Avviso</strong></p>
 <p>Configurare gli adattatori di rete in base alla fotocamera associata, non al numero dell&rsquo;adattatore. Modificare le impostazioni solo per le fotocamere identificate; lasciare invariate le altre. Se si collega una fotocamera a un adattatore diverso, è necessaria una riconfigurazione per il corretto funzionamento.</p>
 <p>Dal Pannello di controllo, andare su &ldquo;Rete e Internet&rdquo;, poi su &ldquo;Centro connessioni di rete e condivisione&rdquo; e fare clic su &ldquo;Modifica impostazioni scheda&rdquo;.</p>
-<p><a href="#R-image-5a83685b883493a1ce8f5bc4337e7fa0" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a83685b883493a1ce8f5bc4337e7fa0"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
-<p><a href="#R-image-e7aa4bf1725f9a3a05689b30a490db15" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7aa4bf1725f9a3a05689b30a490db15"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
+<p><a href="#R-image-eeeca2929b06f43fa30f9f46a57d97a6" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eeeca2929b06f43fa30f9f46a57d97a6"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
+<p><a href="#R-image-06759d11fc6f2380ca9cd8e1c70bad5e" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06759d11fc6f2380ca9cd8e1c70bad5e"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
 <p>Qui è possibile vedere un elenco degli adattatori di rete presenti nel computer. Nel nostro caso desideriamo configurare Ethernet 2 ed Ethernet 3, con il nome dispositivo &ldquo;Intel Pro/1000&rdquo;. È importante configurare solo gli adattatori di rete utilizzati per le fotocamere e non gli altri, poiché potrebbe influire sulla connettività a Internet.</p>
 <p>Fare clic con il tasto destro sull&rsquo;adattatore di rete che si desidera modificare e fare clic su &ldquo;Proprietà&rdquo;, quindi scorrere fino a &ldquo;Protocollo Internet versione 4 (TCP/IPv4)&rdquo; e fare clic su &ldquo;Proprietà&rdquo;.</p>
-<p><a href="#R-image-0169d6e86bda7d7cd0513bc19361d94a" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0169d6e86bda7d7cd0513bc19361d94a"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
-<p><a href="#R-image-ee8c91f469c2317a16a5c084e9ac765c" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee8c91f469c2317a16a5c084e9ac765c"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
-<p><a href="#R-image-600f01ded2056400ae27d45eca732d71" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-600f01ded2056400ae27d45eca732d71"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
+<p><a href="#R-image-05cd3b0ee9d97d9da1ea9f32615e72d6" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-05cd3b0ee9d97d9da1ea9f32615e72d6"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
+<p><a href="#R-image-13417218d9be2d1855b12aeea7be4a39" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-13417218d9be2d1855b12aeea7be4a39"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
+<p><a href="#R-image-9c62690a0b7d9492695db143cb25fb45" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c62690a0b7d9492695db143cb25fb45"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
 <ul>
 <li>
 <p>Selezionare &ldquo;Utilizza il seguente indirizzo IP&rdquo;.</p>
@@ -316,10 +337,10 @@
 <p>Il gateway può essere impostato anche sulla fotocamera</p>
 <h2 id="impostazione-di-un-ip-statico-sulla-fotocamera">Impostazione di un IP statico sulla fotocamera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Ripetere questi passaggi per tutte le altre fotocamere su cui si desidera impostare un IP statico. Per accedere alla configurazione IP della fotocamera, aprire l&rsquo;applicazione SpinView e fare clic con il tasto destro sulla fotocamera che si desidera configurare.</p>
-<p><a href="#R-image-6f9140241adac9702f66e84d83467f81" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6f9140241adac9702f66e84d83467f81"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
-<h3 id="spinview_"><a href="#R-image-779d5d859f8117a089a61a0df031ae7d" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-779d5d859f8117a089a61a0df031ae7d"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-0399b03e786e4487adea50863fae58be" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0399b03e786e4487adea50863fae58be"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
+<h3 id="spinview_"><a href="#R-image-503313cf1d46fc093fee452eb29f1245" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-503313cf1d46fc093fee452eb29f1245"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Fare clic con il tasto destro sulla fotocamera nell&rsquo;elenco Dispositivi e selezionare &ldquo;GigE Configuration&rdquo;.</p>
@@ -346,8 +367,8 @@
 <p>Fare clic su &ldquo;Set Current and Persistent IP Configuration&rdquo;.</p>
 </li>
 </ul>
-<p><a href="#R-image-2fe5b2d29a8be57a754c0b010e9beb04" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2fe5b2d29a8be57a754c0b010e9beb04"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
+<p><a href="#R-image-62b3e4d37cbad05fa7e46db526f7ed40" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-62b3e4d37cbad05fa7e46db526f7ed40"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
 <h3 id="configurazione-ip-statica-consigliata-per-le-fotocamere">Configurazione IP statica consigliata per le fotocamere<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
@@ -418,16 +439,16 @@
 <p>Fare clic su &ldquo;Configure&rdquo; per applicare le modifiche.</p>
 </li>
 </ul>
-<h2 id="sharex_"><a href="#R-image-bb77b2464825d2c0f4e4d6da65039912" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bb77b2464825d2c0f4e4d6da65039912"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-9014d80cd09e92e99ebb9bec94e64425" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9014d80cd09e92e99ebb9bec94e64425"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
-<p><a href="#R-image-6a414d9c16cbf0465e8bc8176c870416" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6a414d9c16cbf0465e8bc8176c870416"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
-<p><a href="#R-image-b07bc9e63bb7d3ea2698f28ae98b7f60" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b07bc9e63bb7d3ea2698f28ae98b7f60"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
-<p><a href="#R-image-c570c01d38f7e47e35575243829fbb82" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c570c01d38f7e47e35575243829fbb82"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
+<h2 id="sharex_"><a href="#R-image-a7467b4d50796491edb20eaa4224c693" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a7467b4d50796491edb20eaa4224c693"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-59814c74978bf87bbadf2d84231a12cc" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-59814c74978bf87bbadf2d84231a12cc"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
+<p><a href="#R-image-d5b00a6972e6e1bb1734d2aaf907f689" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5b00a6972e6e1bb1734d2aaf907f689"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
+<p><a href="#R-image-0e58e34768e5ffe84ee4749b5219077d" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e58e34768e5ffe84ee4749b5219077d"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
+<p><a href="#R-image-8346e3d73fd798176154ee3b064c1d40" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8346e3d73fd798176154ee3b064c1d40"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
 <hr>
 <p><em>Ultimo aggiornamento: 2024-02-22</em> | <a href="/sc-support/it/cameras-video/flir-blackfly-static-ip/index.html">Visualizza sul sito di supporto ufficiale</a></p>
 
@@ -538,7 +559,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Lingua</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" lang="fr">Français</option>
@@ -600,8 +620,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537811" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542923" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

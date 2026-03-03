@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1241">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Kaip sukonfigūruoti Point Grey / FLIR GigE (Blackfly) kameras su SwingCatalyst :: Swing Catalyst Pagalba</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537840" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537840" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537840" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542956" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542956" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772537840";
+      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772542956";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537840" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542956" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,34 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#reikalavimai">Reikalavimai:</a></li>
+        <li><a href="#tinklo-plokštės-įdiegimas">Tinklo plokštės įdiegimas</a></li>
+      </ul>
+    </li>
+    <li><a href="#acc_"><img src="../../assets/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" alt="acc_flir_gige-pcie2-2p02.png"></a>
+      <ul>
+        <li><a href="#ip-adresų-nustatymas-naudojant-gige-configurator-įrankį">&lt;&gt;IP adresų nustatymas naudojant GigE Configurator įrankį</a></li>
+        <li><a href="#tinklo-plokštės-optimizavimas">Tinklo plokštės optimizavimas</a></li>
+        <li><a href="#kameros-ip-adreso-nustatymas">Kameros IP adreso nustatymas</a></li>
+      </ul>
+    </li>
+    <li><a href="#daugiau-nei-1-kameros-paruošimas">Daugiau nei 1 kameros paruošimas</a></li>
+    <li><a href="#kameros--ų-naudojimas-swingcatalyst">Kameros (-ų) naudojimas SwingCatalyst</a></li>
+    <li><a href="#kaip-pakeisti-užrakto-greitį-ir-kitus-kameros-nustatymus">Kaip pakeisti užrakto greitį ir kitus kameros nustatymus</a></li>
+    <li><a href="#dviejų-kamerų-naudojimas-su-tinklo-komutatoriumi">Dviejų kamerų naudojimas su tinklo komutatoriumi:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/index.html"><span itemprop="name">Swing Catalyst Palaikymas</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/cameras-video/index.html"><span itemprop="name">Kameros ir vaizdo įrašai</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kaip sukonfigūruoti Point Grey / FLIR GigE (Blackfly) kameras su SwingCatalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -231,72 +258,72 @@
 </ul>
 <p><strong>Pastaba:</strong> Diegdami Flycap, įsitikinkite, kad pažymėtas Point Grey Image Filter tvarkyklės žymimasis langelis.</p>
 <h3 id="tinklo-plokštės-įdiegimas">Tinklo plokštės įdiegimas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h2 id="acc_"><a href="#R-image-5645e7414631af1612a9b588c259ea1c" class="lightbox-link"><img alt="acc_flir_gige-pcie2-2p02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5645e7414631af1612a9b588c259ea1c"><img alt="acc_flir_gige-pcie2-2p02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="acc_"><a href="#R-image-5c576f2b3218e9187729ab92894c4fcc" class="lightbox-link"><img alt="acc_flir_gige-pcie2-2p02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c576f2b3218e9187729ab92894c4fcc"><img alt="acc_flir_gige-pcie2-2p02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Norėdami įdiegti tinklo plokštę, apsvarstykite galimybę pasinaudoti čia pateiktais žingsniais: <a href="https://www.wikihow.com/Install-a-PCI-Card" rel="external">https://www.wikihow.com/Install-a-PCI-Card</a> – dviejų prievadų FLiR tinklo plokštės diegimo žingsniai yra iš esmės tokie patys.</p>
 <h3 id="ip-adresų-nustatymas-naudojant-gige-configurator-įrankį">&lt;&gt;IP adresų nustatymas naudojant GigE Configurator įrankį<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Turime sukonfigūruoti IP adresus tiek tinklo plokštei (prievadui), tiek prijungtai kamerai.</p>
 <p>Pradėkime nuo tinklo plokštės paruošimo!</p>
 <ul>
-<li>Atidarykite Point Grey GigE Configurator programą. Ją galima rasti: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-45864adc37a7e7a6ede8b025b63d907c" class="lightbox-link"><img alt="explorer_2020-02-18_09-47-16.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-45864adc37a7e7a6ede8b025b63d907c"><img alt="explorer_2020-02-18_09-47-16.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
+<li>Atidarykite Point Grey GigE Configurator programą. Ją galima rasti: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-9be9f068f704ae846248f80f1de40690" class="lightbox-link"><img alt="explorer_2020-02-18_09-47-16.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9be9f068f704ae846248f80f1de40690"><img alt="explorer_2020-02-18_09-47-16.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
 </ul>
 <ol start="2">
 <li>Atidarykite Point Grey GigE Configurator programą ir spustelėkite ant kameros.</li>
 </ol>
-<p><a href="#R-image-0e5e1eace07b312960fd07c49de1cbf6" class="lightbox-link"><img alt="TeamViewer_2020-02-18_09-57-25.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e5e1eace07b312960fd07c49de1cbf6"><img alt="TeamViewer_2020-02-18_09-57-25.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
+<p><a href="#R-image-85121752c06cfae777c8a401d5c2d986" class="lightbox-link"><img alt="TeamViewer_2020-02-18_09-57-25.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-85121752c06cfae777c8a401d5c2d986"><img alt="TeamViewer_2020-02-18_09-57-25.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
 <p>Atkreipkite dėmesį, prie kurios tinklo plokštės prijungta kamera (žr. paryškinta raudonai).</p>
 <p>Mūsų atveju kamera yra prijungta prie Ethernet 9.</p>
 <p>Kairėje pusėje esančiame sąraše, dalyje Network Adapters, spustelėkite Ethernet 9, kaip parodyta aukščiau esančioje ekrano kopijoje.</p>
 <p>IP adreso nustatymas tinklo plokštei:</p>
 <p>Pakeiskite IP adresą ir potinklio kaukę pagal toliau pateiktą ekrano kopiją ir spustelėkite Set IP address / Subnet, tada spustelėkite Yes ir OK.</p>
-<p><a href="#R-image-4dc32eff86937f032cbfa0794d429451" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-00-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4dc32eff86937f032cbfa0794d429451"><img alt="TeamViewer_2020-02-18_10-00-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
-<p><a href="#R-image-52059af30b099bc58723b8389c72c024" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-01-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52059af30b099bc58723b8389c72c024"><img alt="TeamViewer_2020-02-18_10-01-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
+<p><a href="#R-image-0e2c761d2a6d86ffa03e398ebbd7aa98" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-00-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e2c761d2a6d86ffa03e398ebbd7aa98"><img alt="TeamViewer_2020-02-18_10-00-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
+<p><a href="#R-image-469bb39b445836e60fa3b67ee6ee34e5" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-01-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-469bb39b445836e60fa3b67ee6ee34e5"><img alt="TeamViewer_2020-02-18_10-01-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
 <p>Dabar nustatėme pirmosios tinklo plokštės IP adresą. Kitas žingsnis – optimizuoti tinklo plokštės nustatymus.</p>
 <h3 id="tinklo-plokštės-optimizavimas">Tinklo plokštės optimizavimas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Kaip matyti toliau pateiktoje ekrano kopijoje, atkreipkite dėmesį į raudonai pažymėtą skaičių, vadinamą <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit" rel="external">MTU</a></p>
 <p>Turime padidinti šį skaičių. Spustelėkite Open Network Connections pažymėtoje srityje, kaip parodyta žemiau.</p>
-<p><a href="#R-image-a0ae84041ece7d5e8d5e6c6e2bb9fb43" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-26-52.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0ae84041ece7d5e8d5e6c6e2bb9fb43"><img alt="TeamViewer_2020-02-18_10-26-52.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
+<p><a href="#R-image-38d1b5d279ef6cdafb95a9a39312d8cc" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-26-52.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-38d1b5d279ef6cdafb95a9a39312d8cc"><img alt="TeamViewer_2020-02-18_10-26-52.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
 <p>Spustelėkite skirtuką Advanced, raskite Jumbo Packet ir nustatykite reikšmę į 9014 Bytes.</p>
-<p><a href="#R-image-2dbcadc6e4f00703ef13a31f2fe10e55" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-28-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2dbcadc6e4f00703ef13a31f2fe10e55"><img alt="TeamViewer_2020-02-18_10-28-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
+<p><a href="#R-image-f7a8a2be7d827f7f652766ff1d0677e2" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-28-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7a8a2be7d827f7f652766ff1d0677e2"><img alt="TeamViewer_2020-02-18_10-28-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
 <p>Interrupt Moderation keitimas</p>
 <p>Nustatykite Interrupt Moderation į Enabled</p>
-<p><a href="#R-image-da7fafbf829c9746c010cb7fb0168a50" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-30-22.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-da7fafbf829c9746c010cb7fb0168a50"><img alt="TeamViewer_2020-02-18_10-30-22.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
+<p><a href="#R-image-ed19ff43903465138ccddf43fe25c423" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-30-22.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed19ff43903465138ccddf43fe25c423"><img alt="TeamViewer_2020-02-18_10-30-22.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
 <p>Spustelėkite Interrupt Moderation Rate ir nustatykite reikšmę į Extreme.</p>
 <p>Svarbu: Jei ketinate naudoti daugiau nei 2 kameras, gali tekti nustatyti Interrupt Moderation į Disabled, kad būtų išvengta prarastų kadrų.</p>
 <h3 id="kameros-ip-adreso-nustatymas">Kameros IP adreso nustatymas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-26cea4fc59025cc74e4457431ef1b161" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-13-51.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-26cea4fc59025cc74e4457431ef1b161"><img alt="TeamViewer_2020-02-18_10-13-51.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
+<p><a href="#R-image-7190001b806f358881d071206cf17657" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-13-51.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7190001b806f358881d071206cf17657"><img alt="TeamViewer_2020-02-18_10-13-51.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
 <p>Spustelėkite sąraše rodomą kamerą (mūsų atveju yra prijungta tik viena kamera, todėl žinome, kad tai tinkama kamera).</p>
 <p>Įveskite šį IP (atkreipkite dėmesį, kad nustatome IP adresą kamerai, prijungtai prie Ethernet 9, kaip aprašyta aukščiau):</p>
-<p><a href="#R-image-c21b4a239330cb5750799128d7e50816" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-15-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c21b4a239330cb5750799128d7e50816"><img alt="TeamViewer_2020-02-18_10-15-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
+<p><a href="#R-image-91289781df3774ef31bef9f97270bb19" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-15-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-91289781df3774ef31bef9f97270bb19"><img alt="TeamViewer_2020-02-18_10-15-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
 <p>Spustelėkite Set IP Address / Subnet, tada spustelėkite Yes ir OK.</p>
-<p><a href="#R-image-8fba6d4f3ef5065d319e92aeb3ea7bca" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-16-35.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8fba6d4f3ef5065d319e92aeb3ea7bca"><img alt="TeamViewer_2020-02-18_10-16-35.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
+<p><a href="#R-image-cdab3b29c036bbc94efb88b0c2ea4b6b" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-16-35.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cdab3b29c036bbc94efb88b0c2ea4b6b"><img alt="TeamViewer_2020-02-18_10-16-35.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
 <p>FLiR GigE Configurator kairėje pusėje esančiame sąraše raskite kamerą, kuriai ką tik nustatėte IP adresą, ir spustelėkite ant jos.</p>
 <p>IP adreso priskyrimo konfigūracijos nustatymas</p>
 <p>Tai svarbu atlikti, nes mums reikia, kad kameros IP adreso pakeitimai būtų išlaikomi, priešingu atveju kamera praras savo konfigūraciją po maitinimo nutraukimo.</p>
 <p>Atžymėkite DHCP ir pažymėkite Persistent IP</p>
-<p><a href="#R-image-4c32c6a2867f5f357c2cf312e5dae2cd" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-21-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c32c6a2867f5f357c2cf312e5dae2cd"><img alt="TeamViewer_2020-02-18_10-21-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
+<p><a href="#R-image-2dea770879fb265f3fe42cb00dc53ab5" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-21-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2dea770879fb265f3fe42cb00dc53ab5"><img alt="TeamViewer_2020-02-18_10-21-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
 <p>Spustelėkite Copy from Current, tada Set IP Address / Subnet</p>
-<p><a href="#R-image-59fa00953cf3d161aa2a39e7d0dcdf46" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-18-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-59fa00953cf3d161aa2a39e7d0dcdf46"><img alt="TeamViewer_2020-02-18_10-18-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
+<p><a href="#R-image-39397d4b3d4c7c5337bbeee12189db88" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-18-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-39397d4b3d4c7c5337bbeee12189db88"><img alt="TeamViewer_2020-02-18_10-18-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
 <p>Paketo dydžio patikrinimas</p>
 <p>Patikrinkime, ar paketo dydis (MTU) buvo nustatytas teisingai.</p>
 <p>Spustelėkite Discover Maximum Packet Size – turėtų rodyti 9000.</p>
-<p><a href="#R-image-6c58a8c205de9fb68585c3865b2f7dd3" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-34-33.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c58a8c205de9fb68585c3865b2f7dd3"><img alt="TeamViewer_2020-02-18_10-34-33.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
+<p><a href="#R-image-2518b97e12bf131fc3dccdaa5e22191b" class="lightbox-link"><img alt="TeamViewer_2020-02-18_10-34-33.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2518b97e12bf131fc3dccdaa5e22191b"><img alt="TeamViewer_2020-02-18_10-34-33.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
 <p>Spustelėkite Test Camera Connection, kad patikrintumėte, ar ryšys veikia ir ar gaunate duomenis iš kameros.</p>
-<p><a href="#R-image-c4b45a3bf651aeb30cd0ae40e040ce5c" class="lightbox-link"><img alt="GigEConfigurator_2017-05-09_12-35-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c4b45a3bf651aeb30cd0ae40e040ce5c"><img alt="GigEConfigurator_2017-05-09_12-35-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
+<p><a href="#R-image-c14389a167a78ef4d263154359a29b73" class="lightbox-link"><img alt="GigEConfigurator_2017-05-09_12-35-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c14389a167a78ef4d263154359a29b73"><img alt="GigEConfigurator_2017-05-09_12-35-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
 <h2 id="daugiau-nei-1-kameros-paruošimas">Daugiau nei 1 kameros paruošimas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Dabar, kai sukonfigūravote vieną kamerą ir vieną tinklo plokštę, galite pakartoti aukščiau nurodytus žingsnius, kad sukonfigūruotumėte kelias kameras.</p>
 <p>Turėdami omenyje aukščiau pateiktus žingsnius ir ekrano kopijas – jau nustatėme kameros ir Ethernet plokštės 9 IP adresus; kelių kamerų paruošimas atliekamas lygiai taip pat, tik su skirtingais IP adresais.</p>
@@ -328,8 +355,8 @@ Subnet: 255.255.255.0</p>
 <h2 id="kameros--ų-naudojimas-swingcatalyst">Kameros (-ų) naudojimas SwingCatalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Point Grey kamerų naudojimas SwingCatalyst yra paprastas – reikia nustatyti kameros kampą ir spustelėti įjungti. Spustelėkite mygtuką Paleisti, kad įsitikintumėte, jog kamera veikia.</p>
 <p>Visa kameros konfigūracija turi būti atliekama per Point Grey FlyCapture programinę įrangą.</p>
-<p><a href="#R-image-318063c4a54f47cb79057566b7769ef8" class="lightbox-link"><img alt="SwingCatalyst_2017-05-09_13-42-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-318063c4a54f47cb79057566b7769ef8"><img alt="SwingCatalyst_2017-05-09_13-42-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
+<p><a href="#R-image-b4637a6a99dd0aefe0bede2fa80e69e1" class="lightbox-link"><img alt="SwingCatalyst_2017-05-09_13-42-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4637a6a99dd0aefe0bede2fa80e69e1"><img alt="SwingCatalyst_2017-05-09_13-42-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
 <h2 id="kaip-pakeisti-užrakto-greitį-ir-kitus-kameros-nustatymus">Kaip pakeisti užrakto greitį ir kitus kameros nustatymus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Paleiskite Point Grey Flycap2 programinę įrangą ir eikite į Camera Settings.</p>
 <ol>
@@ -341,8 +368,8 @@ Subnet: 255.255.255.0</p>
 </ol>
 <p>Norėdami išsaugoti nustatymus, žiūrėkite 3 punktą.</p>
 <p>Taip pat gali reikėti pakoreguoti kadrų dažnį – galite atžymėti auto ir nustatyti norimą kadrų dažnį, tada atlikite 3 žingsnį.</p>
-<p><a href="#R-image-0c0dcb3e5fd29d492ce779cb19c53560" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c0dcb3e5fd29d492ce779cb19c53560"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
+<p><a href="#R-image-ff4b27488f2f78f1ca71be789908e106" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ff4b27488f2f78f1ca71be789908e106"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
 <p>Taip pat gali reikėti pakoreguoti kadrų dažnį – galite atžymėti auto ir nustatyti norimą kadrų dažnį, tada atlikite 3 žingsnį.</p>
 <p><strong>Gain reikšmių nustatymas</strong></p>
 <p>Panašiai kaip ir su ekspozicija, statinėms / patalpų apšvietimo sąlygoms geriausia nustatyti Gain rankiniu būdu. Kuo didesnė ekspozicija, tuo grūdėtesnis bus vaizdas ir tuo ilgiau užtruks vaizdo kodavimas, palyginti su mažu Gain.</p>
@@ -350,19 +377,19 @@ Subnet: 255.255.255.0</p>
 <p>Kaip paruošti kamerą, žiūrėkite šiame straipsnyje: <a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a></p>
 <p>Trikčių šalinimas ir tolesnis optimizavimas</p>
 <p>Jei prarandate kadrus arba kyla sinchronizacijos problemų su FLiR / Point Grey kameromis, patikrinkite paketo dydį Flycapture2 -&gt; Custom Video modes.</p>
-<p><a href="#R-image-f5bc21d5e88f382ecd6e27ce8479757b" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2017-10-02_16-46-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f5bc21d5e88f382ecd6e27ce8479757b"><img alt="Point_Grey_FlyCap2_2017-10-02_16-46-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
+<p><a href="#R-image-1899b3dae748e251034a5f6597dc9f58" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2017-10-02_16-46-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1899b3dae748e251034a5f6597dc9f58"><img alt="Point_Grey_FlyCap2_2017-10-02_16-46-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
 <p>Galite pabandyti sumažinti paketo dydį nuo maksimalaus 9000 iki mažesnės reikšmės. Atsižvelgiant į jūsų CPU, optimali reikšmė gali skirtis priklausomai nuo kompiuterio.</p>
 <p>Jei naudojate 2 kameras su viena tinklo plokšte, rekomenduojama nustatyti paketo delsą į: 9500.</p>
-<p><a href="#R-image-6b32a30a8ab8568a124e8d674b911f34" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2017-10-02_16-43-20.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b32a30a8ab8568a124e8d674b911f34"><img alt="Point_Grey_FlyCap2_2017-10-02_16-43-20.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
+<p><a href="#R-image-5e19e3e220080b772fde4ebf8d82a593" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2017-10-02_16-43-20.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e19e3e220080b772fde4ebf8d82a593"><img alt="Point_Grey_FlyCap2_2017-10-02_16-43-20.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
 <p>Nepamirškite eiti į Advanced Camera Settings ir išsaugoti nustatymus į 1 banką, kaip aprašyta kameros paruošimo straipsnyje, ** <a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><strong><a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-0c89513243a2c26bd1519a1bb3ab4d02" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-40.png" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c89513243a2c26bd1519a1bb3ab4d02"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
+<p><strong><a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-a58787ea9e528a7742f43fd3060322d7" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-40.png" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a58787ea9e528a7742f43fd3060322d7"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
 <p><strong>Nepamirškite spustelėti Išsaugoti skiltyje Memory Channels ir įsitikinkite, kad pasirinktas Channel 1!</strong></p>
 <p>Jei negaunate jokio vaizdo arba SwingCatalyst rodoma klaida, pabandykite pakeisti paketo dydį ir išsaugoti į 1 banką (kaip parodyta aukščiau esančiame paveikslėlyje)</p>
-<p><strong><a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-0411ef8762b14f01fe64c38c6de98ed5" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-30.png" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0411ef8762b14f01fe64c38c6de98ed5"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
+<p><strong><a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-b4621de59a9b3584a8235a2d8c257cb7" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-30.png" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4621de59a9b3584a8235a2d8c257cb7"><img alt="Point_Grey_FlyCap2_2019-10-14_13-58-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
 <p>4 kamerų paruošimas su prarastais kadrais:</p>
 <p>Kai kuriuose 4 kamerų paruošimuose rekomenduojama išjungti interrupt moderation arba pakeisti interrupt moderation dažnį iš extreme į low. Jei moduliacijos dažnis yra aukštas, pertraukimų kiekis bus slopinamas, o tai lemia mažesnę CPU apkrovą. Tačiau kuo rečiau pertraukimas įvyksta, tuo labiau tikėtina, kad ACK atsakas iš pagrindinio kompiuterio bus lėtas. Tai gali lemti prarastus paketus, kai vaizdai perduodami dideliu kadrų dažniu.</p>
 <p>Pasirinkus skirtingą moduliaciją priklausomai nuo jūsų sistemos, galima pagerinti tinklo ir sistemos produktyvumą.</p>
@@ -372,15 +399,15 @@ Subnet: 255.255.255.0</p>
 <p>Tolesnis tinklo plokštės optimizavimas</p>
 <p>Receive Buffers</p>
 <p>Rekomenduojama šią reikšmę nustatyti kuo aukštesnę. Tai gali padėti išvengti prarastų kadrų naudojant kelias kameras ir (arba) didesnės raiškos GigE kameras.</p>
-<p><a href="#R-image-7d4fe9fc322811d52ac6ce140cfda8e8" class="lightbox-link"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d4fe9fc322811d52ac6ce140cfda8e8"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-1817d8c3bcb74f158f42b20b8cec0d77" class="lightbox-link"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1817d8c3bcb74f158f42b20b8cec0d77"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="dviejų-kamerų-naudojimas-su-tinklo-komutatoriumi">Dviejų kamerų naudojimas su tinklo komutatoriumi:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Atkreipkite dėmesį – palaikoma tik Blackfly BFLY-PGE-03S3C (90FPS) kamera. Naudojant kitas kameras gali atsirasti prarastų kadrų.</p>
 <p>Svarbu: Tinklo komutatorius turi palaikyti 9KB Jumbo Frames (dauguma tinklo komutatorių tai palaiko); rekomenduojame: <a href="https://www.netgear.com/support/product/GS105.aspx" rel="external">https://www.netgear.com/support/product/GS105.aspx</a> komutatorių arba panašius į GS105 modelį.</p>
 <p>Jei ketinate naudoti tinklo komutatorių, svarbu, kad Packet Delay būtų nustatytas į 9500, kaip parodyta toliau esančioje ekrano kopijoje.</p>
 <p>Nustačius Packet Delay į 9500, eikite į Advanced Camera Settings ir išsaugokite į 1 banką, kaip aprašyta kameros paruošimo straipsnyje, ** <a href="/sc-support/lt/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><a href="#R-image-add5fac1877cce3e75de2f00888bbd89" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2017-10-26_12-36-37.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-add5fac1877cce3e75de2f00888bbd89"><img alt="Point_Grey_FlyCap2_2017-10-26_12-36-37.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
+<p><a href="#R-image-448fc0ba8386d36632b24cd7d573baed" class="lightbox-link"><img alt="Point_Grey_FlyCap2_2017-10-26_12-36-37.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-448fc0ba8386d36632b24cd7d573baed"><img alt="Point_Grey_FlyCap2_2017-10-26_12-36-37.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
 <p>Packet Delay nustatymas padeda išvengti prarastų kadrų naudojant dvi Blackfly 03S3C kameras su viena tinklo plokšte.</p>
 <p>Išsamesnės informacijos apie kelių kamerų paruošimą rasite čia: <a href="https://www.ptgrey.com/tan/10351" rel="external">https://www.ptgrey.com/tan/10351</a></p>
 <hr>
@@ -493,7 +520,6 @@ Subnet: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/point-grey-flir-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/point-grey-flir-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/point-grey-flir-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" lang="fr">Français</option>
@@ -555,8 +581,8 @@ Subnet: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542956" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

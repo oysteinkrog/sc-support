@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1217">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Ръководство за разширените настройки на камерата :: Поддръжка на Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537836" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537836" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537836" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542952" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542952" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542952" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.bg.js?1772537836";
+      window.relearn.index_js_url="/sc-support/searchindex.bg.js?1772542952";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537836" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542952" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537836" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537836" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537836" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537836" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537836" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542952" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542952" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542952" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542952" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542952" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,29 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#раздел-камера">Раздел Камера</a>
+      <ul>
+        <li><a href="#честота-на-кадрите">Честота на кадрите</a></li>
+      </ul>
+    </li>
+    <li><a href="#раздел-region-of-interest-roi--aoi">Раздел Region of Interest (ROI / AOI)</a></li>
+    <li><a href="#раздел-филтър">Раздел Филтър</a></li>
+    <li><a href="#отстраняване-на-проблеми"><a href="flir-blackfly-usb-setup.md">Отстраняване на проблеми</a></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/bg/index.html"><span itemprop="name">Поддръжка на Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/bg/cameras-video/index.html"><span itemprop="name">Камери и видео</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Ръководство за разширените настройки на камерата</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -203,63 +225,63 @@
 
 <p>Тази статия разглежда различните настройки на камерата. Някои от тези настройки имат леко различни имена в зависимост от типа на камерата / производителя.</p>
 <p>Настройките на камерата са разделени в различни раздели.</p>
-<p><a href="#R-image-95cc2dcac4cb6e5ed296ad990d18bab3" class="lightbox-link"><img alt="mceclip7.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-95cc2dcac4cb6e5ed296ad990d18bab3"><img alt="mceclip7.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png"></a></p>
+<p><a href="#R-image-d9cda1719cf24a9716cba59650428f7e" class="lightbox-link"><img alt="mceclip7.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d9cda1719cf24a9716cba59650428f7e"><img alt="mceclip7.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png"></a></p>
 <p>Прозорецът за разширени настройки на камерата показва всички настройки, които може да ви бъдат полезни. Нека разгледаме всяка отделна настройка.</p>
 <h2 id="раздел-камера">Раздел Камера<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p>Пример с настройки по подразбиране от камера FLIR Blackfly S:<a href="#R-image-85069fa3177e4e5be0471da644f730aa" class="lightbox-link"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-85069fa3177e4e5be0471da644f730aa"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png"></a></p>
+<p>Пример с настройки по подразбиране от камера FLIR Blackfly S:<a href="#R-image-917aeefaf277f7b26a0c1bfe612ee692" class="lightbox-link"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-917aeefaf277f7b26a0c1bfe612ee692"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png"></a></p>
 <p>Настройките, показани по-горе, са настройките по подразбиране на камерата. Имайте предвид, че повечето от тях са зададени на Auto — можем да ги променим, за да получим по-добър контрол върху качеството на видеообраза при анализ на спортни движения.</p>
 <h3 id="честота-на-кадрите">Честота на кадрите<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Поставянето на отметка в полето за активиране на управлението на честотата на кадрите ви позволява ръчно да зададете честотата. Ако полето не е отметнато, честотата на кадрите е зададена на Auto (забележка: максималната честота на кадрите на тази камера е 226 FPS).</p>
 <p>Ако получавате по-ниска честота на кадрите от очакваната, причината може да е в експозицията / скоростта на затвора на камерата — например, ако експозицията е твърде висока, не са възможни висок скорости на затвора. Вижте раздела за отстраняване на проблеми.</p>
-<p><a href="#R-image-e0d34c241f7f8e0f660c0b751c29f356" class="lightbox-link"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e0d34c241f7f8e0f660c0b751c29f356"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png"></a></p>
+<p><a href="#R-image-12f3c0dbf084bbea13215df1e617b8e4" class="lightbox-link"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-12f3c0dbf084bbea13215df1e617b8e4"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png"></a></p>
 <p><strong>Промяна на скоростта на затвора:</strong></p>
 <p>Освен ако не снимате на открито или при голямо количество светлина, по-добре е да използвате ръчна скорост на затвора.</p>
 <p>Времето на експозиция / скоростта на затвора над 2ms може да доведе до размазване на движението при анализ на спортни движения.</p>
 <p>За да намалите размазването на кадрите, препоръчваме скорост на затвора под 2ms (2000μs). При достатъчно осветление скоростта на затвора може да бъде под 1ms (1000μs).</p>
-<p><a href="#R-image-d6b6e3340fc3adf7560d61e5cde58a97" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d6b6e3340fc3adf7560d61e5cde58a97"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png"></a></p>
+<p><a href="#R-image-8556ae328d177fe5ca4e381985e55747" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8556ae328d177fe5ca4e381985e55747"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png"></a></p>
 <p>Яркостта на видеообраза зависи от комбинацията на скоростта на затвора, настройките на Gain, диафрагмата на обектива и количеството налична светлина.</p>
 <p><strong>Промяна на Gain на камерата:</strong></p>
 <p>Задаването на Auto за Gain е за предпочитане при променливи условия на осветеност, но ако работите на закрито, ръчното задаване на Gain е по-добрият подход.</p>
 <p>Колкото по-висока е стойността в dB, толкова по-ярък е образът, но в резултат ще има и повече шум, което може да влоши общото качество на видеото. Понякога си струва да се използва малко по-висок Gain за сметка на шума, за да се намали скоростта на затвора и да се получи рязък кадър по кадър видеозапис на обект (например клюшка при Удар, бейзболна бухалка и т.н.).</p>
-<p><a href="#R-image-3910620f1344ae54187d60d80a052c3f" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3910620f1344ae54187d60d80a052c3f"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png"></a></p>
+<p><a href="#R-image-f4d3f6fdaaf443e9fbb4b4fdb26b7742" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4d3f6fdaaf443e9fbb4b4fdb26b7742"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png"></a></p>
 <p>Забележка: Реалните стойности на Gain (dB) могат да се различават между различните модели и производители.</p>
 <p><strong>Промяна на Gamma и нивата на черното:</strong></p>
 <p>Нивото на черното може да се разглежда като форма на регулиране на яркостта, като нивото на черното съответства на минималната стойност, която може да върне всеки пиксел на сензора на камерата.</p>
 <p>Чрез увеличаване на стойността на нивото на черното можем да направим образа по-ярък.</p>
 <p>Нашата препоръка е да оставите тези стойности по подразбиране.</p>
-<p><a href="#R-image-a4622219ca25daef789bb7c4bbae9e02" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a4622219ca25daef789bb7c4bbae9e02"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png"></a></p>
+<p><a href="#R-image-2a6eb2e194fa338dc186ffae272b64a1" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a6eb2e194fa338dc186ffae272b64a1"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png"></a></p>
 <p>За повече подробности относно подобряването на видеообраза, моля вижте тази статия за поддръжка, която съдържа сравнителни снимки: <a href="/sc-support/bg/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
 <p><strong>Промяна на баланса на бялото на камерата:</strong></p>
-<p><a href="#R-image-bd97ac03ebdc10d9b1a0fea0c082c499" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd97ac03ebdc10d9b1a0fea0c082c499"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png"></a></p>
+<p><a href="#R-image-0fffc4fc4eedeb2db382f29e27b73947" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fffc4fc4eedeb2db382f29e27b73947"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png"></a></p>
 <p>Обикновено препоръчваме да оставите тази настройка на Auto (непрекъснато), но за да постигнете максималната честота на кадрите, тя също трябва да бъде изключена.</p>
 <p>Балансът на бялото ще повлияе на цветовата температура на видеообраза, и ако балансът на бялото е много неправилен, образът няма да изглежда добре — обикновено ще изглежда прекалено червен или зелен.</p>
 <p>Чрез активиране на Auto баланс на бялото жертваме малко от честотата на кадрите, оставайки на 200 FPS вместо максималните 226 FPS за камерата.</p>
 <p><strong>Пропускателна способност на връзката с устройството:</strong></p>
 <p>Препоръчваме да оставите тази настройка по подразбиране, но намаляването ѝ може да намали изпуснатите кадри за сметка на по-ниски FPS.</p>
 <p>Забележка: Не всички камери имат тази настройка.</p>
-<p><strong><a href="#R-image-c315af7dc0d04bca5176472f9c07f9e4" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c315af7dc0d04bca5176472f9c07f9e4"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
+<p><strong><a href="#R-image-ebe3bcfa62f98b3d597378868e7b4886" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ebe3bcfa62f98b3d597378868e7b4886"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
 <h2 id="раздел-region-of-interest-roi--aoi">Раздел Region of Interest (ROI / AOI)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-9bb570753c750f715b29811e3e2064ad" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9bb570753c750f715b29811e3e2064ad"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png"></a></p>
+<p><a href="#R-image-7ce3a754e449479060196f27f4f11c17" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7ce3a754e449479060196f27f4f11c17"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png"></a></p>
 <p>За камери, които имат тази функционалност, е за предпочитане да се използва Region of Interest / Area of Interest пред изрязване.</p>
 <p>Region of Interest (ROI) е начин за намаляване на размера на изображението и честотната лента, необходима за всяко изображение. Чрез намаляване на размера на изображението можем да увеличим честотата на кадрите, тъй като общото изискване за четене на пиксели е по-малко. ROI може да има положителен ефект върху честотата на кадрите и да намали използването на честотната лента на камерата.</p>
 <p>За да промените Region of Interest, можем да плъзнем плъзгача за височина наляво, за да намалим височината на изображението.</p>
-<p><a href="#R-image-2d79efc5ab53aa59bc98cce10f5b4b4c" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2d79efc5ab53aa59bc98cce10f5b4b4c"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png"></a></p>
+<p><a href="#R-image-7c21db955d1cd65e75a220129554b060" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c21db955d1cd65e75a220129554b060"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png"></a></p>
 <p>Тъй като сме променили височината на изображението, вече можем да променим и отместването по Y, което може да бъде полезно като алтернатива на физическото преместване на камерата поради намаления размер на изображението.</p>
-<p><a href="#R-image-eceff101ed6b44019a00aa062513f21b" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eceff101ed6b44019a00aa062513f21b"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png"></a></p>
+<p><a href="#R-image-0289aa1b4e661c61c980d37e7c75dd44" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0289aa1b4e661c61c980d37e7c75dd44"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png"></a></p>
 <p>Ако се върнем към раздела Камера и погледнем под честота на кадрите, сега виждаме, че максималната честота на кадрите може да бъде зададена на 288 (това е, защото приложихме Region of Interest, като намалихме височината на сензора на камерата).</p>
-<p><a href="#R-image-b549a05b9c02fac0163b96fa913daca2" class="lightbox-link"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b549a05b9c02fac0163b96fa913daca2"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png"></a></p>
+<p><a href="#R-image-45fbfed3bec0738508ccb0f64a32c4c0" class="lightbox-link"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-45fbfed3bec0738508ccb0f64a32c4c0"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png"></a></p>
 <h2 id="раздел-филтър">Раздел Филтър<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Тези настройки са налични за всички типове камери, но резултатите може да варират в зависимост от разделителната способност и настройките на камерата. За да прочетете повече за това как да подобрите качеството на изображението от камерата, моля вижте нашата <a href="/sc-support/bg/cameras-video/improving-image-quality/index.html">тази статия.</a></p>
 <h2 id="отстраняване-на-проблеми"><a href="/sc-support/bg/cameras-video/flir-blackfly-usb-setup/index.html">Отстраняване на проблеми</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -270,8 +292,8 @@
 <p>Ръчното задаване на FPS на 60 или 120 FPS трябва да помогне трептенето да стане значително по-малко забележимо. Помислете за надграждане на осветлението до LED.</p>
 <h4 id="изпуснати-кадри"><strong>Изпуснати кадри</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Намаляването на пропускателната способност на връзката с устройството на всяко устройство може да помогне за избягване на изпуснати кадри. Ако бъде намалена достатъчно, пропускателната способност ще повлияе на честотата на кадрите.</p>
-<p><strong><a href="#R-image-7a8aa16b6dd79fb5bd9b587165eb2a7c" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a8aa16b6dd79fb5bd9b587165eb2a7c"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
+<p><strong><a href="#R-image-3426569e10a2e92baf8ea78a9f465d06" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3426569e10a2e92baf8ea78a9f465d06"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
 <p>Особено при конфигурации с множество камери, намаляването на пропускателната способност може да помогне за стабилизиране на системата за сметка на няколко кадъра в секунда. За камери, които нямат тази настройка, намаляването на FPS и използването на Region Of Interest може да помогне за намаляване на използването на честотната лента.</p>
 <p>Пример за използване на честотна лента:</p>
 <p>USB 3.0 се рекламира като способен на 5Gb/s, което е 625 MB/s.</p>
@@ -393,7 +415,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/advanced-camera-settings/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/advanced-camera-settings/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/advanced-camera-settings/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/advanced-camera-settings/index.html" lang="fr">Français</option>
@@ -455,8 +476,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537836" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542952" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

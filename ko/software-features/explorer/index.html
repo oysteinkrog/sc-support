@@ -21,8 +21,7 @@
     <meta itemprop="description" content="탐색기는 세션별로 정리된 비디오 녹화를 탐색, 선택 및 관리하는 인터페이스를 제공합니다. 이 문서에서는 탐색기의 모든 기능을 효과적으로...">
     <meta itemprop="wordCount" content="572">
     <title>탐색기 사용 방법 :: Swing Catalyst 지원</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/explorer/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/explorer/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/explorer/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/explorer/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/explorer/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/explorer/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/explorer/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/explorer/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/explorer/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537815" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537815" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537815" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542927" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542927" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542927" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ko.js?1772537815";
+      window.relearn.index_js_url="/sc-support/searchindex.ko.js?1772542927";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ko.min.js?1772537815" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ko.min.js?1772542927" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537815" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537815" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537815" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537815" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537815" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542927" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542927" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542927" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542927" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,45 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="메뉴 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="목차 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#소개">소개</a></li>
+    <li><a href="#개요">개요</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#선택-동작">선택 동작</a>
+      <ul>
+        <li><a href="#단일-선택">단일 선택</a></li>
+        <li><a href="#마우스를-이용한-다중-선택">마우스를 이용한 다중 선택</a></li>
+        <li><a href="#키보드를-이용한-다중-선택">키보드를 이용한 다중 선택</a></li>
+        <li><a href="#선택-정보">선택 정보</a></li>
+      </ul>
+    </li>
+    <li><a href="#메뉴-및-컨텍스트-작업">메뉴 및 컨텍스트 작업</a>
+      <ul>
+        <li><a href="#녹화-컨텍스트-메뉴">녹화 컨텍스트 메뉴</a></li>
+        <li><a href="#학생그룹-컨텍스트-메뉴">학생/그룹 컨텍스트 메뉴</a></li>
+        <li><a href="#전역-명령">전역 명령</a></li>
+      </ul>
+    </li>
+    <li><a href="#드래그-앤-드롭">드래그 앤 드롭</a>
+      <ul>
+        <li><a href="#테이크-드래그">테이크 드래그</a></li>
+        <li><a href="#드롭-영역">드롭 영역</a></li>
+      </ul>
+    </li>
+    <li><a href="#효율적인-사용을-위한-팁">효율적인 사용을 위한 팁</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ko/index.html"><span itemprop="name">Swing Catalyst 지원</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ko/software-features/index.html"><span itemprop="name">소프트웨어 및 기능</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">탐색기 사용 방법</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -191,8 +229,8 @@
 <h2 id="소개">소개<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>탐색기는 세션별로 정리된 비디오 녹화를 탐색, 선택 및 관리하는 인터페이스를 제공합니다. 이 문서에서는 25.3 이상 버전에서 탐색기의 모든 기능을 효과적으로 탐색하고 사용하는 방법을 다룹니다.</p>
 <h2 id="개요">개요<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-742f0ea39dd145cf3931e0a6a26a83e1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-742f0ea39dd145cf3931e0a6a26a83e1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png"></a></p>
+<p><a href="#R-image-8ee26dea32080edd7b46fe7deada61f4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8ee26dea32080edd7b46fe7deada61f4"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png"></a></p>
 <p><strong>툴바:</strong> 탐색기의 핵심 기능에 빠르게 접근할 수 있는 버튼이 포함된 툴바입니다.</p>
 <p><strong>사용자 목록:</strong> 검색 바 및 정렬 버튼과 같은 편의 기능이 포함된 등록된 사용자 목록입니다.</p>
 <p><strong>다운로드 가능한 콘텐츠 목록:</strong> 투어 스윙 등 다운로드된 녹화 목록입니다.</p>
@@ -480,7 +518,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">언어</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/explorer/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/explorer/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/explorer/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/explorer/index.html" lang="fr">Français</option>
@@ -542,8 +579,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537815" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542927" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

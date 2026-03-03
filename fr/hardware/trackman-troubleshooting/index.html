@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="533">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Force-Data,Launch-Monitor">
     <title>TrackMan ne déclenche pas SwingCatalyst — guide de dépannage technique :: Support Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537810" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537810" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537810" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542922" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542922" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.fr.js?1772537810";
+      window.relearn.index_js_url="/sc-support/searchindex.fr.js?1772542922";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/lunr/lunr.fr.min.js?1772537810" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.fr.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fr'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537810" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537810" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537810" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537810" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537810" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542922" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,23 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table des matières (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#compensation-du-délai-du-launch-monitor-dans-swingcatalyst">Compensation du délai du Launch Monitor dans SwingCatalyst</a>
+      <ul>
+        <li><a href="#trackman-3e">TrackMan 3e</a></li>
+      </ul>
+    </li>
+    <li><a href="#adresses-ip-wifi--usb">Adresses IP WiFi &amp; USB</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fr/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fr/hardware/index.html"><span itemprop="name">Matériel</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">TrackMan ne déclenche pas SwingCatalyst — guide de dépannage technique</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -219,8 +235,8 @@
 <p>Dans SwingCatalyst 9.7.8 et 9.7.9, ce problème a été davantage amélioré. Si vous avez suivi ces instructions sans succès, vérifier que vous utilisez la version 9.7.9 ou une version plus récente peut aider à réduire le délai.</p>
 <h2 id="compensation-du-délai-du-launch-monitor-dans-swingcatalyst">Compensation du délai du Launch Monitor dans SwingCatalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copier le lien dans le presse-papiers"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Si vous recevez des données mais que SwingCatalyst ne déclenche pas d&rsquo;Enregistrement, essayez de changer la valeur du « Trigger delay » à 1400.</p>
-<p><a href="#R-image-58ed65c8f3047e38e201d6c50a26a9b8" class="lightbox-link"><img alt="2021-11-25_14-21-29.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-58ed65c8f3047e38e201d6c50a26a9b8"><img alt="2021-11-25_14-21-29.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png"></a></p>
+<p><a href="#R-image-3b20a22db46328a03728776f9f3d3682" class="lightbox-link"><img alt="2021-11-25_14-21-29.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b20a22db46328a03728776f9f3d3682"><img alt="2021-11-25_14-21-29.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png"></a></p>
 <h3 id="trackman-3e">TrackMan 3e<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copier le lien dans le presse-papiers"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Vous pouvez également vérifier si le « Legacy SDK » est activé depuis l&rsquo;interface web de l&rsquo;appareil. Vous pouvez accéder à l&rsquo;interface web depuis les paramètres TPS, en forçant le mode opérateur, puis en vérifiant sous Prise de Position.</p>
 <p>Si la sortie SDK est configurée dans TPS et sur l&rsquo;appareil et que vous ne recevez toujours pas de données, essayez de vous connecter à l&rsquo;unité ou au SDK à l&rsquo;aide d&rsquo;un outil appelé Hercules.</p>
@@ -269,8 +285,8 @@
 <li>Connectez-vous directement au serveur TPS SDK sur 127.0.0.1 port : 52950</li>
 </ul>
 <p>Si la connexion dans Hercules est correctement établie, vous devriez voir la sortie suivante lorsque vous cliquez sur le bouton de connexion.</p>
-<p><a href="#R-image-428e9bb3ecf80e5caff3e98db08937c0" class="lightbox-link"><img alt="gvim_2018-08-01_13-41-00.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-428e9bb3ecf80e5caff3e98db08937c0"><img alt="gvim_2018-08-01_13-41-00.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png"></a></p>
+<p><a href="#R-image-82db33c5b9fdf7c2077dda1bcf0be577" class="lightbox-link"><img alt="gvim_2018-08-01_13-41-00.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-82db33c5b9fdf7c2077dda1bcf0be577"><img alt="gvim_2018-08-01_13-41-00.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png"></a></p>
 <p>Si ce n&rsquo;est pas le cas, essayez de redémarrer l&rsquo;appareil TrackMan lui-même ; le TrackMan Legacy SDK n&rsquo;émet pas de données.</p>
 <p>Si vous parvenez à vous connecter, vous devriez recevoir des données ainsi que les données de tir dès qu&rsquo;un tir est détecté.</p>
 <p>Ce sont les mêmes données que reçoit SwingCatalyst, et c&rsquo;est un bon moyen de s&rsquo;assurer que TPS et le TrackMan envoient effectivement des données.</p>
@@ -373,7 +389,6 @@ Si vous voyez le message suivant dans le journal, <a href="http://www.techfleece
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Langue</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/trackman-troubleshooting/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/trackman-troubleshooting/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/trackman-troubleshooting/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/trackman-troubleshooting/index.html" lang="fr" selected data-selected>Français</option>
@@ -435,8 +450,8 @@ Si vous voyez le message suivant dans le journal, <a href="http://www.techfleece
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537810" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542922" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

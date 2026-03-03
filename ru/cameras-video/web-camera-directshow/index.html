@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="352">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
     <title>Как использовать веб-камеру (интеграция DirectShow) с Swing Catalyst :: Поддержка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537813" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537813" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537813" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542925" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542925" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772537813";
+      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772542925";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ru'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537813" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542925" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,31 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Меню (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Оглавление (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#подключение-камеры">Подключение камеры</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#меню-настроек">Меню настроек</a></li>
+    <li><a href="#расширенные-настройки-камеры">Расширенные настройки камеры</a></li>
+    <li><a href="#устранение-неполадок"><a href="web-camera-directshow.md">Устранение неполадок</a></a>
+      <ul>
+        <li><a href="#низкая-частота-кадров">Низкая частота кадров:</a></li>
+        <li><a href="#пропуск-кадров">Пропуск кадров:</a></li>
+        <li><a href="#выбор-другого-типа-медиаданных">Выбор другого типа медиаданных</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/index.html"><span itemprop="name">Поддержка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/cameras-video/index.html"><span itemprop="name">Камеры и видео</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Как использовать веб-камеру (интеграция DirectShow) с Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -204,26 +228,26 @@
 <h2 id="подключение-камеры">Подключение камеры<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="включите-камеру-в-меню-настроек">Включите камеру в меню настроек.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Нажмите на значок шестерёнки.</p>
-<p><a href="#R-image-d3bdb58664c06187ef64e3aaa4f02fdd" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d3bdb58664c06187ef64e3aaa4f02fdd"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<p><a href="#R-image-07e58bb6209ca899cfb9c0a4d2739ad6" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-07e58bb6209ca899cfb9c0a4d2739ad6"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
 <h2 id="меню-настроек">Меню настроек<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Обратите внимание, что тип интеграции камеры указывается явно, например DirectShow, Spinnaker:</p>
-<p><a href="#R-image-1a2c72c7eceab37182019d45e2ea1f3e" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1a2c72c7eceab37182019d45e2ea1f3e"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p><a href="#R-image-6233df327f3d1c7e0eace724e2d60dd0" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6233df327f3d1c7e0eace724e2d60dd0"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
 <p>Если камера обнаружена корректно, она автоматически появится в списке камер.</p>
 <p>Чтобы использовать камеру, необходимо назначить ей угол съёмки: нажмите на значок «Disabled», выберите нужный угол, затем переведите переключатель «OFF» в положение «ON» для активации камеры.</p>
-<p><a href="#R-image-3b37234b6de389d460256f3b4892d150" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b37234b6de389d460256f3b4892d150"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-8e9b8bc77e5c00b88e3a9322c4ab50fc" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e9b8bc77e5c00b88e3a9322c4ab50fc"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
 <p>Камера Dragon включена и назначена в качестве камеры вида спереди справа (то есть она направлена на пользователя справа).</p>
-<p><a href="#R-image-84ee2c48a0618339423ea0223a1f261c" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-84ee2c48a0618339423ea0223a1f261c"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<p><a href="#R-image-003f26fcc50d4a534d7d8c7015b59cbe" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-003f26fcc50d4a534d7d8c7015b59cbe"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
 <h2 id="расширенные-настройки-камеры">Расширенные настройки камеры<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Расширенные настройки камеры позволяют изменить название камеры, применить зеркальное отображение и поворот, обрезку, а также настроить изображение и другие параметры.</p>
 <p>Примечание: Auto доступен только для определённых параметров, таких как баланс белого, экспозиция и фокус.</p>
-<p><a href="#R-image-a424b6d6a11689aa98d0ec7c4e1968bb" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a424b6d6a11689aa98d0ec7c4e1968bb"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
-<p><a href="#R-image-45401183b087903c434fa84acc51b9a7" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-45401183b087903c434fa84acc51b9a7"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p><a href="#R-image-96209cba75c324d7f01a4752f97481c3" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96209cba75c324d7f01a4752f97481c3"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-ed0ef847371cd58d5e29f0b4bd6c0d25" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed0ef847371cd58d5e29f0b4bd6c0d25"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
 <p>Если вы внесли нежелательные изменения, вы можете вернуться к значениям по умолчанию, нажав «Restore defaults».</p>
 <h2 id="устранение-неполадок"><a href="/sc-support/ru/cameras-video/web-camera-directshow/index.html">Устранение неполадок</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="низкая-частота-кадров">Низкая частота кадров:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -231,8 +255,8 @@
 <p>По умолчанию большинство камер работают в режиме автоэкспозиции: при недостаточном освещении время экспозиции на каждый кадр увеличивается, и камера не может обеспечить максимальную частоту кадров.</p>
 <p>Если экспозиция слишком высокая, частота кадров снизится, а запись будет более размытой.</p>
 <h3 id="пропуск-кадров">Пропуск кадров:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Если камера пропускает кадры (то есть не выдаёт ожидаемое значение FPS), это может приводить к визуальным артефактам.<a href="#R-image-ce1dfb5de35d9690d37ed8c25bb306a6" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce1dfb5de35d9690d37ed8c25bb306a6"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<p>Если камера пропускает кадры (то есть не выдаёт ожидаемое значение FPS), это может приводить к визуальным артефактам.<a href="#R-image-e82a22488bc95c1d58e7e9bdb867c1e5" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e82a22488bc95c1d58e7e9bdb867c1e5"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
 <ul>
 <li>
 <p>Убедитесь, что камера подключена непосредственно к компьютеру, желательно к одному из USB-портов на задней панели.</p>
@@ -255,8 +279,8 @@
 </li>
 </ul>
 <p>Некоторые форматы используют меньшую пропускную способность. Если камера поддерживает форматы RAW8, GREY8 или другие 8-битные форматы изображения, они предпочтительнее любых типов медиаданных RGB или MPEG, поскольку требуют значительно меньшей пропускной способности.</p>
-<p><a href="#R-image-faaa15ebb88766a49647a4556094671c" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-faaa15ebb88766a49647a4556094671c"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<p><a href="#R-image-0b03e65d2fa1526f5fb301984422facd" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0b03e65d2fa1526f5fb301984422facd"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
 <hr>
 <p><em>Последнее обновление: 2023-12-15</em> | <a href="/sc-support/ru/cameras-video/web-camera-directshow/index.html">Просмотреть на официальном сайте поддержки</a></p>
 
@@ -367,7 +391,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Язык</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
@@ -429,8 +452,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542925" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

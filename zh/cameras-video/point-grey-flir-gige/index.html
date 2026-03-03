@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="354">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>如何配置 Point Grey / FLIR GigE（Blackfly）摄像头与 SwingCatalyst 配合使用 :: Swing Catalyst 支持</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537816" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537816" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537816" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542928" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542928" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542928" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772537816";
+      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772542928";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537816" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542928" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537816" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537816" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537816" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537816" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537816" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542928" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542928" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542928" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542928" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542928" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,34 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#前提条件">前提条件：</a></li>
+        <li><a href="#安装网卡">安装网卡</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装-flir-pcie-双端口网卡"><img src="../../assets/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" alt="安装 FLiR PCIe 双端口网卡"></a>
+      <ul>
+        <li><a href="#使用-gige-configurator-工具设置-ip-地址">&lt;&gt;使用 GigE Configurator 工具设置 IP 地址</a></li>
+        <li><a href="#优化网络适配器">优化网络适配器</a></li>
+        <li><a href="#设置摄像头的-ip-地址">设置摄像头的 IP 地址</a></li>
+      </ul>
+    </li>
+    <li><a href="#设置多台摄像头">设置多台摄像头</a></li>
+    <li><a href="#在-swingcatalyst-中使用摄像头">在 SwingCatalyst 中使用摄像头</a></li>
+    <li><a href="#如何更改快门速度及其他摄像头设置">如何更改快门速度及其他摄像头设置</a></li>
+    <li><a href="#通过网络交换机使用两台摄像头">通过网络交换机使用两台摄像头：</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/index.html"><span itemprop="name">Swing Catalyst 支持</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/cameras-video/index.html"><span itemprop="name">摄像头与视频</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">如何配置 Point Grey / FLIR GigE（Blackfly）摄像头与 SwingCatalyst 配合使用</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -232,72 +259,72 @@
 </ul>
 <p><strong>注意：</strong> 安装 Flycap 时，请确保勾选了 Point Grey Image Filter 驱动程序的复选框。</p>
 <h3 id="安装网卡">安装网卡<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h2 id="安装-flir-pcie-双端口网卡"><a href="#R-image-9db438681730c95880a38d4c17736343" class="lightbox-link"><img alt="安装 FLiR PCIe 双端口网卡" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9db438681730c95880a38d4c17736343"><img alt="安装 FLiR PCIe 双端口网卡" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="安装-flir-pcie-双端口网卡"><a href="#R-image-eb092676a8b4faa86673991e7472248a" class="lightbox-link"><img alt="安装 FLiR PCIe 双端口网卡" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb092676a8b4faa86673991e7472248a"><img alt="安装 FLiR PCIe 双端口网卡" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>安装网卡时，请参考以下步骤：<a href="https://www.wikihow.com/Install-a-PCI-Card" rel="external">https://www.wikihow.com/Install-a-PCI-Card</a>，FLiR 双端口网卡的安装步骤大致相同。</p>
 <h3 id="使用-gige-configurator-工具设置-ip-地址">&lt;&gt;使用 GigE Configurator 工具设置 IP 地址<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>我们需要为网络适配器（端口）和已连接的摄像头配置 IP 地址。</p>
 <p>首先来设置网络适配器！</p>
 <ul>
-<li>打开 Point Grey GigE Configurator 应用程序。可在以下路径找到：C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-7d606e059857a631a8386df4cad34677" class="lightbox-link"><img alt="资源管理器截图 2020-02-18 09-47-16" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d606e059857a631a8386df4cad34677"><img alt="资源管理器截图 2020-02-18 09-47-16" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
+<li>打开 Point Grey GigE Configurator 应用程序。可在以下路径找到：C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-4ab8309cd80a6537096fb03d2ca5c2b3" class="lightbox-link"><img alt="资源管理器截图 2020-02-18 09-47-16" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4ab8309cd80a6537096fb03d2ca5c2b3"><img alt="资源管理器截图 2020-02-18 09-47-16" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
 </ul>
 <ol start="2">
 <li>打开 Point Grey GigE Configurator 应用程序并点击摄像头。</li>
 </ol>
-<p><a href="#R-image-1fff3a8a00cc0a012bca292e7e3e17e1" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 09-57-25" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1fff3a8a00cc0a012bca292e7e3e17e1"><img alt="TeamViewer 截图 2020-02-18 09-57-25" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
+<p><a href="#R-image-f72820155d3902b257b54962af4c70d9" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 09-57-25" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f72820155d3902b257b54962af4c70d9"><img alt="TeamViewer 截图 2020-02-18 09-57-25" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
 <p>请注意摄像头连接的是哪个网络适配器（见红色高亮部分）。</p>
 <p>在我们的示例中，摄像头连接到以太网 9。</p>
 <p>在左侧列表的&quot;网络适配器&quot;下点击&quot;以太网 9&quot;，如上方截图左侧所示。</p>
 <p>设置网络适配器的 IP 地址：</p>
 <p>按照下方截图修改 IP 地址和子网掩码，然后点击&quot;设置 IP 地址/子网&quot;，再点击&quot;是&quot;和 OK。</p>
-<p><a href="#R-image-c502192d5b65207576c96771d9d74b6e" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-00-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c502192d5b65207576c96771d9d74b6e"><img alt="TeamViewer 截图 2020-02-18 10-00-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
-<p><a href="#R-image-eb90aef6a98ba8c6f716294a60020d25" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-01-56" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb90aef6a98ba8c6f716294a60020d25"><img alt="TeamViewer 截图 2020-02-18 10-01-56" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
+<p><a href="#R-image-40dc47a48285a2f4445487a3bfe25246" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-00-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-40dc47a48285a2f4445487a3bfe25246"><img alt="TeamViewer 截图 2020-02-18 10-00-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
+<p><a href="#R-image-a26d7b1d646de348e9ef7b5b73cf45b7" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-01-56" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a26d7b1d646de348e9ef7b5b73cf45b7"><img alt="TeamViewer 截图 2020-02-18 10-01-56" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
 <p>现在我们已设置好第一个网络适配器的 IP 地址。下一步是优化网络适配器的设置。</p>
 <h3 id="优化网络适配器">优化网络适配器<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>请注意下方截图中红色标注的 <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit" rel="external">MTU</a> 数值。</p>
 <p>我们需要增大这个数值。按照高亮区域所示点击&quot;打开网络连接&quot;。</p>
-<p><a href="#R-image-421dbe91a96f5ab88c316839dae2b6f5" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-26-52" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-421dbe91a96f5ab88c316839dae2b6f5"><img alt="TeamViewer 截图 2020-02-18 10-26-52" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
+<p><a href="#R-image-ea05ca2b09bad616cea385fbfb328024" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-26-52" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea05ca2b09bad616cea385fbfb328024"><img alt="TeamViewer 截图 2020-02-18 10-26-52" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
 <p>点击&quot;高级&quot;选项卡，找到&quot;巨型数据包&quot;并将值设置为 9014 字节。</p>
-<p><a href="#R-image-2395e17bd3a901a8aa13a01055ab4116" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-28-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2395e17bd3a901a8aa13a01055ab4116"><img alt="TeamViewer 截图 2020-02-18 10-28-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
+<p><a href="#R-image-7e3a8fa3c0a2b23313ae5ba8ed1634bb" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-28-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e3a8fa3c0a2b23313ae5ba8ed1634bb"><img alt="TeamViewer 截图 2020-02-18 10-28-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
 <p>更改中断调制</p>
 <p>将中断调制设置为&quot;启用&quot;</p>
-<p><a href="#R-image-49f56bb0ce7e9ecd7f7f88a530eea655" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-30-22" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-49f56bb0ce7e9ecd7f7f88a530eea655"><img alt="TeamViewer 截图 2020-02-18 10-30-22" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
+<p><a href="#R-image-0baba9a49b1f84cfc29f1e1bfcb1e4df" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-30-22" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0baba9a49b1f84cfc29f1e1bfcb1e4df"><img alt="TeamViewer 截图 2020-02-18 10-30-22" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
 <p>点击&quot;中断调制率&quot;并将值设置为&quot;极限&quot;。</p>
 <p>重要提示：如果您使用的摄像头超过 2 台，可能需要将中断调制设置为&quot;禁用&quot;，以避免掉帧。</p>
 <h3 id="设置摄像头的-ip-地址">设置摄像头的 IP 地址<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-76c03c690d948a8283d77ab9456facd7" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-13-51" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-76c03c690d948a8283d77ab9456facd7"><img alt="TeamViewer 截图 2020-02-18 10-13-51" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
+<p><a href="#R-image-6c1a213081a860c0b726d3947973e7eb" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-13-51" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c1a213081a860c0b726d3947973e7eb"><img alt="TeamViewer 截图 2020-02-18 10-13-51" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
 <p>点击列表中可用的摄像头（在我们的示例中只连接了一台摄像头，因此可以确认是正确的摄像头）。</p>
 <p>输入以下 IP（注意我们正在设置如上连接到以太网 9 的摄像头的 IP 地址）：</p>
-<p><a href="#R-image-f48e4fb10d5ec1e2bf63ab90760a19eb" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-15-30" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f48e4fb10d5ec1e2bf63ab90760a19eb"><img alt="TeamViewer 截图 2020-02-18 10-15-30" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
+<p><a href="#R-image-c58594420687e7cf5348434ed1cedcce" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-15-30" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c58594420687e7cf5348434ed1cedcce"><img alt="TeamViewer 截图 2020-02-18 10-15-30" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
 <p>点击&quot;设置 IP 地址/子网&quot;，然后点击&quot;是&quot;，再点击 OK。</p>
-<p><a href="#R-image-9f3309ab26f3ad7d1d3539977cea1874" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-16-35" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f3309ab26f3ad7d1d3539977cea1874"><img alt="TeamViewer 截图 2020-02-18 10-16-35" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
+<p><a href="#R-image-eae3782820d5d7bc0108daba13cb9ebf" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-16-35" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eae3782820d5d7bc0108daba13cb9ebf"><img alt="TeamViewer 截图 2020-02-18 10-16-35" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
 <p>在 FLiR GigE Configurator 左侧的列表中找到您刚刚设置了 IP 地址的摄像头并点击它。</p>
 <p>设置 IP 地址分配配置</p>
 <p>此步骤非常重要，因为我们需要让摄像头的 IP 地址更改保持持久性，否则摄像头在断电后将丢失配置。</p>
 <p>取消勾选 DHCP，并勾选&quot;持久 IP&quot;</p>
-<p><a href="#R-image-59cfd33bed1ed5a29ee1f413cfc9c0df" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-21-34" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-59cfd33bed1ed5a29ee1f413cfc9c0df"><img alt="TeamViewer 截图 2020-02-18 10-21-34" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
+<p><a href="#R-image-9421807e1412fc05dc5e2b575cec151a" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-21-34" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9421807e1412fc05dc5e2b575cec151a"><img alt="TeamViewer 截图 2020-02-18 10-21-34" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
 <p>点击&quot;从当前复制&quot;，然后点击&quot;设置 IP 地址/子网&quot;</p>
-<p><a href="#R-image-1a8b5972d0bc08483c855bcda51f5e03" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-18-59" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1a8b5972d0bc08483c855bcda51f5e03"><img alt="TeamViewer 截图 2020-02-18 10-18-59" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
+<p><a href="#R-image-b7307c1239586132dc5671d6eee8f91c" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-18-59" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7307c1239586132dc5671d6eee8f91c"><img alt="TeamViewer 截图 2020-02-18 10-18-59" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
 <p>验证数据包大小</p>
 <p>验证数据包大小（MTU）是否设置正确。</p>
 <p>点击&quot;发现最大数据包大小&quot;，应显示为 9000。</p>
-<p><a href="#R-image-90b2a7695aa4a611c1c93472ce275261" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-34-33" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-90b2a7695aa4a611c1c93472ce275261"><img alt="TeamViewer 截图 2020-02-18 10-34-33" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
+<p><a href="#R-image-7b82c6e63310d858aa3adcd45d8a9cec" class="lightbox-link"><img alt="TeamViewer 截图 2020-02-18 10-34-33" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b82c6e63310d858aa3adcd45d8a9cec"><img alt="TeamViewer 截图 2020-02-18 10-34-33" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
 <p>点击&quot;测试摄像头连接&quot;以验证连接是否正常，以及是否正在从摄像头接收数据。</p>
-<p><a href="#R-image-6fb94b71b959eb91190b9d9d28ea3d3b" class="lightbox-link"><img alt="GigE Configurator 截图 2017-05-09 12-35-04" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6fb94b71b959eb91190b9d9d28ea3d3b"><img alt="GigE Configurator 截图 2017-05-09 12-35-04" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
+<p><a href="#R-image-a70a3111253dde9e53c243e1a0b93ee9" class="lightbox-link"><img alt="GigE Configurator 截图 2017-05-09 12-35-04" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a70a3111253dde9e53c243e1a0b93ee9"><img alt="GigE Configurator 截图 2017-05-09 12-35-04" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
 <h2 id="设置多台摄像头">设置多台摄像头<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>配置好一台摄像头和一个网络适配器后，您可以重复上述步骤来配置多台摄像头。</p>
 <p>参照上述步骤和截图，我们已经设置了摄像头和以太网适配器 9 的 IP，设置多台摄像头的流程相同，只是使用不同的 IP。</p>
@@ -329,8 +356,8 @@ IP: 10.0.4.10
 <h2 id="在-swingcatalyst-中使用摄像头">在 SwingCatalyst 中使用摄像头<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>在 SwingCatalyst 中使用 Point Grey 摄像头，只需设置摄像头角度并点击&quot;启用&quot;即可。点击&quot;播放&quot;按钮确认摄像头正常工作。</p>
 <p>所有摄像头配置均需通过 Point Grey 的 FlyCapture 软件完成。</p>
-<p><a href="#R-image-1808b869bfb82e147ff9453d5dbcdbe2" class="lightbox-link"><img alt="SwingCatalyst 截图 2017-05-09 13-42-02" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1808b869bfb82e147ff9453d5dbcdbe2"><img alt="SwingCatalyst 截图 2017-05-09 13-42-02" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
+<p><a href="#R-image-79243dee5e259fd4b66ef7a8b13bc2d4" class="lightbox-link"><img alt="SwingCatalyst 截图 2017-05-09 13-42-02" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-79243dee5e259fd4b66ef7a8b13bc2d4"><img alt="SwingCatalyst 截图 2017-05-09 13-42-02" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
 <h2 id="如何更改快门速度及其他摄像头设置">如何更改快门速度及其他摄像头设置<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>启动 Point Grey Flycap2 软件并进入&quot;摄像头设置&quot;。</p>
 <ol>
@@ -342,8 +369,8 @@ IP: 10.0.4.10
 </ol>
 <p>如需保存设置，请参见步骤 3。</p>
 <p>有时还需要调整帧率，您可以取消勾选 Auto 并设置为所需帧率，然后按照步骤 3 操作。</p>
-<p><a href="#R-image-4dd71d961381b46a19ec91be08ad49fc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4dd71d961381b46a19ec91be08ad49fc"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
+<p><a href="#R-image-b464f1c6886331ec32814b7d1c8b6fae" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b464f1c6886331ec32814b7d1c8b6fae"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
 <p>有时还需要调整帧率，您可以取消勾选 Auto 并设置为所需帧率，然后按照步骤 3 操作。</p>
 <p><strong>设置 Gain 值</strong></p>
 <p>与曝光类似，对于静态/室内照明条件，将 Gain 设置为手动模式是最佳选择。曝光越高，图像越粗糙，视频编码所需的时间也越长，而低 Gain 则相反。</p>
@@ -351,19 +378,19 @@ IP: 10.0.4.10
 <p>请参阅以下文章了解如何设置摄像头：<a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a></p>
 <p>故障排除与进一步优化</p>
 <p>如果您的 FLiR / Point Grey 摄像头出现掉帧或同步问题，请在 Flycapture2 -&gt; 自定义视频模式下检查数据包大小。</p>
-<p><a href="#R-image-f619a399c5429e752e5751844e273939" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-46-18" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f619a399c5429e752e5751844e273939"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-46-18" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
+<p><a href="#R-image-b7ba22fbac5f7073366562efaffaab77" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-46-18" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7ba22fbac5f7073366562efaffaab77"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-46-18" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
 <p>您可以尝试将数据包大小从最大值 9000 调低至更小的值。最佳值可能因 CPU 和计算机配置而异。</p>
 <p>如果在一个网络适配器上使用 2 台摄像头，建议将数据包延迟设置为：9500。</p>
-<p><a href="#R-image-9607bc95ec642bc870d92c40a3fb912b" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-43-20" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9607bc95ec642bc870d92c40a3fb912b"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-43-20" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
+<p><a href="#R-image-0e32853fb8b3a95925b5af1e6ccb6304" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-43-20" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e32853fb8b3a95925b5af1e6ccb6304"><img alt="Point Grey FlyCap2 截图 2017-10-02 16-43-20" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
 <p>请记得进入&quot;高级摄像头设置&quot;，并按摄像头设置文章的说明将设置保存到存储组 1，** <a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><strong><a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-8a10980fe2d6b0bcc62dea8a2b92bdc5" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-40" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8a10980fe2d6b0bcc62dea8a2b92bdc5"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-40" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
+<p><strong><a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-d4f1368f75ec6b2b04badf0beff64624" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-40" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d4f1368f75ec6b2b04badf0beff64624"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-40" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
 <p><strong>请务必在&quot;内存通道&quot;下点击保存，并确保选中通道 1！</strong></p>
 <p>如果在 SwingCatalyst 中无法获取图像或收到错误提示，请尝试更改数据包大小并保存到存储组 1（如上图所示）。</p>
-<p><strong><a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-a353eef20aa98fd78b9848a379510a46" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-30" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a353eef20aa98fd78b9848a379510a46"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-30" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
+<p><strong><a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-980c4b5c9796426cd17c4ce5e20b96d0" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-30" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-980c4b5c9796426cd17c4ce5e20b96d0"><img alt="Point Grey FlyCap2 截图 2019-10-14 13-58-30" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
 <p>4 台摄像头设置出现掉帧：</p>
 <p>在某些 4 台摄像头的设置中，建议关闭中断调制，或将中断调制率从&quot;极限&quot;更改为&quot;低&quot;。若调制率较高，中断次数将被抑制，从而降低 CPU 负载。然而，中断发生的频率越低，主机的 ACK 响应越可能变慢。这在以较快帧率传输图像时可能导致数据包丢失。</p>
 <p>根据您的系统选择不同的调制率可以改善网络和系统表现。</p>
@@ -373,15 +400,15 @@ IP: 10.0.4.10
 <p>进一步优化网络适配器</p>
 <p>接收缓冲区</p>
 <p>建议将此值设置为尽可能高。这有助于在使用多台摄像头或更高分辨率 GigE 摄像头时避免掉帧。</p>
-<p><a href="#R-image-86bad887bcd442b65baa0c269f131d7a" class="lightbox-link"><img alt="rundll32 截图 2017-05-09 13-00-48" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-86bad887bcd442b65baa0c269f131d7a"><img alt="rundll32 截图 2017-05-09 13-00-48" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-3422b6311f43e87d61813e1aa22a29f1" class="lightbox-link"><img alt="rundll32 截图 2017-05-09 13-00-48" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3422b6311f43e87d61813e1aa22a29f1"><img alt="rundll32 截图 2017-05-09 13-00-48" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="通过网络交换机使用两台摄像头">通过网络交换机使用两台摄像头：<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>请注意，仅支持 Blackfly BFLY-PGE-03S3C（90FPS）摄像头。使用其他摄像头可能导致掉帧。</p>
 <p>重要提示：网络交换机必须支持 9KB 巨型帧（大多数网络交换机均支持此功能），我们推荐使用：<a href="https://www.netgear.com/support/product/GS105.aspx" rel="external">https://www.netgear.com/support/product/GS105.aspx</a> 交换机或类似 GS105 型号的交换机。</p>
 <p>如果使用网络交换机，务必按照下方截图将数据包延迟设置为 9500。</p>
 <p>将数据包延迟设置为 9500 后，进入&quot;高级摄像头设置&quot;并保存到存储组 1，详见摄像头设置文章，** <a href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><a href="#R-image-3b9f10e92ff0fb8af351808515519ced" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2017-10-26 12-36-37" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b9f10e92ff0fb8af351808515519ced"><img alt="Point Grey FlyCap2 截图 2017-10-26 12-36-37" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
+<p><a href="#R-image-f71df72532f73d4f2ab0650ef40361d5" class="lightbox-link"><img alt="Point Grey FlyCap2 截图 2017-10-26 12-36-37" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f71df72532f73d4f2ab0650ef40361d5"><img alt="Point Grey FlyCap2 截图 2017-10-26 12-36-37" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
 <p>设置数据包延迟有助于在一个网络适配器上使用两台 Blackfly 03S3C 摄像头时避免掉帧。</p>
 <p>有关多摄像头设置的更多详细信息，请参阅：<a href="https://www.ptgrey.com/tan/10351" rel="external">https://www.ptgrey.com/tan/10351</a></p>
 <hr>
@@ -494,7 +521,6 @@ IP: 10.0.4.10
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">语言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/point-grey-flir-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/point-grey-flir-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/point-grey-flir-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" lang="fr">Français</option>
@@ -556,8 +582,8 @@ IP: 10.0.4.10
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537816" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542928" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

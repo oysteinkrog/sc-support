@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="787">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
     <title>Come configurare le telecamere Basler GigE con Swing Catalyst :: Supporto Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537811" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537811" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537811" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542923" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542923" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542923" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.it.js?1772537811";
+      window.relearn.index_js_url="/sc-support/searchindex.it.js?1772542923";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.it.min.js?1772537811" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.it.min.js?1772542923" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['it'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537811" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537811" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537811" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537811" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537811" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542923" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542923" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542923" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542923" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542923" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,19 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Indice (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#impostazione-dellip-delle-telecamere">Impostazione dell&rsquo;IP delle telecamere</a></li>
+    <li><a href="#ipconfigurator_"><img src="../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" alt="IpConfigurator_2018-12-03_12-38-59.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/it/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/it/cameras-video/index.html"><span itemprop="name">Telecamere e Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Come configurare le telecamere Basler GigE con Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -210,8 +222,8 @@
 <p>Assicurati di avere installato il Filtro driver MVTec Halcon; le telecamere non funzioneranno correttamente senza di esso. Assicurati inoltre di deselezionare qualsiasi altro Driver di filtro installato, ad es. il Driver di filtro Basler.</p>
 <p>Assicurati che Swing Catalyst sia consentito sia sulle reti private che su quelle pubbliche nel firewall di Windows Defender.</p>
 <p>Example:</p>
-<p><a href="#R-image-71454383102a7a8ba4275e2ffbfac90a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-71454383102a7a8ba4275e2ffbfac90a"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
+<p><a href="#R-image-2248470505dbf60de19785ee0f084ce1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2248470505dbf60de19785ee0f084ce1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
 <h2 id="impostazione-dellip-delle-telecamere">Impostazione dell&rsquo;IP delle telecamere<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Posizionamento IP</p>
 <p>Ogni telecamera e scheda Ethernet (NIC / Network interface controller) deve essere configurata con IP statici su subnet diverse (e subnet mask)</p>
@@ -236,19 +248,19 @@ subnet mask: 255.255.255.0</p>
 <p>Per prima cosa è necessario configurare l&rsquo;IP della telecamera tramite il Pylon IP Configurator.</p>
 <p>Premi il tasto Start sulla tastiera, digita pylon ip e il Configuratore IP dovrebbe apparire. Se non appare, probabilmente il software non è installato.</p>
 <p>Per installare il software Pylon, visita: <a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external"></a><a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external">https://www.baslerweb.com/en/sales-support/downloads/software-downloads/</a> e cerca: pylon 5.1.0 Camera Software Suite Windows.</p>
-<p><a href="#R-image-f765424e7ec4db8de8b102465db82d07" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f765424e7ec4db8de8b102465db82d07"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
+<p><a href="#R-image-c8701c0ac45f5523691019d01f933086" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c8701c0ac45f5523691019d01f933086"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
 <p>Clicca sulla telecamera, quindi seleziona IP statico</p>
-<h2 id="ipconfigurator_"><a href="#R-image-dae21b89f61526db9fa892cb83b2587d" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dae21b89f61526db9fa892cb83b2587d"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="ipconfigurator_"><a href="#R-image-e30570c5e9651d59f921ba51321b2d28" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e30570c5e9651d59f921ba51321b2d28"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Imposta l&rsquo;indirizzo IP della telecamera e la subnet mask secondo l&rsquo;esempio sopra.</p>
 <p>Note: se utilizzi più telecamere, devi</p>
-<p><a href="#R-image-a76556e9227a37234aea682b4d2f1205" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a76556e9227a37234aea682b4d2f1205"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
+<p><a href="#R-image-76bcc7774969400b9bc7c40882d75d92" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-76bcc7774969400b9bc7c40882d75d92"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
 <p>Configurazione delle telecamere Basler GigE tramite Halcon</p>
 <p>In Swing Catalyst, vai alla scheda Impostazioni e poi a Telecamere.</p>
-<p><a href="#R-image-edc2fa45180e6a4a328c942b6f8bb782" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-edc2fa45180e6a4a328c942b6f8bb782"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
+<p><a href="#R-image-bf8dd04e2c45dd410235a622ef0cb549" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf8dd04e2c45dd410235a622ef0cb549"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
 <p>Clicca su Avanzate.</p>
 <ul>
 <li>
@@ -258,32 +270,32 @@ subnet mask: 255.255.255.0</p>
 <p>Abilita la casella di spunta GtlNumBuffers e inserisci 200 come valore.</p>
 </li>
 </ul>
-<p><a href="#R-image-10b5f9d3e02c1cd056e42e2d9b10c89b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-10b5f9d3e02c1cd056e42e2d9b10c89b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
+<p><a href="#R-image-c3cb4fc35a52a76117194531a0a56e64" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3cb4fc35a52a76117194531a0a56e64"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
 <p>Configurazione delle telecamere Basler GigE:</p>
 <p>Vediamo come impostare l&rsquo;esposizione, la velocità dell&rsquo;otturatore e la Frequenza fotogrammi.</p>
 <p>NOTE: Se non riesci a visualizzare le impostazioni e ricevi un errore in Swing Catalyst, controlla le impostazioni del Firewall di Windows. Prova a disattivare il firewall per verificare se è esso a bloccare l&rsquo;accesso di Swing Catalyst alle telecamere.</p>
 <p>Se le impostazioni funzionano e lo streaming procede correttamente, assicurati che Swing Catalyst sia consentito sia sulle reti pubbliche che su quelle private nel firewall di Windows Defender.</p>
 <p>Espandi la scheda AcquisitionTrigger e inserisci la Frequenza fotogrammi massima (o inferiore), quindi clicca su Enable Acquisition Frame Rate. Questo ti permetterà di definire la Frequenza fotogrammi. Note: la Frequenza fotogrammi può essere limitata dai valori di esposizione.</p>
-<p><a href="#R-image-fd5302558664edbde29eec921df3cde1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd5302558664edbde29eec921df3cde1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
+<p><a href="#R-image-6f1b35462043506015f3f0d0d0d98b41" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6f1b35462043506015f3f0d0d0d98b41"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
 <p>Impostazione dei valori di esposizione</p>
 <p>Di solito è preferibile utilizzare un&rsquo;esposizione manuale per ambienti statici, come gli studi al chiuso. Un&rsquo;esposizione completamente Auto può causare variazioni della Frequenza fotogrammi e portare a un&rsquo;immagine non uniforme. In questo caso non utilizziamo l&rsquo;esposizione automatica perché vogliamo poterla controllare direttamente. In generale si raccomanda un tempo di esposizione inferiore a 2000 (2ms).</p>
 <p>Impostazione dei valori di Gain</p>
 <p>Analogamente all&rsquo;esposizione, impostare il Gain su manuale è la scelta migliore per condizioni di illuminazione statiche o al chiuso. Maggiore è l&rsquo;esposizione, più granulosa sarà l&rsquo;immagine e più lungo sarà il tempo di codifica video rispetto a un Gain basso.</p>
 <p>Per impostare il Gain manuale, cambia Gain Auto da Continuous a Off, quindi metti in Pausa e riavvia la Riproduzione per ricaricare le impostazioni. Imposta i valori di Gain modificando i valori numerici in Gain (Raw).</p>
-<p><a href="#R-image-ad9f1e2d21c5b725e083dd4d3d7dbb70" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ad9f1e2d21c5b725e083dd4d3d7dbb70"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
+<p><a href="#R-image-f095e253cf106dd5c494b4c7b5a11586" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f095e253cf106dd5c494b4c7b5a11586"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
 <p>Modifica delle dimensioni dell&rsquo;immagine, area di interesse, Region of Interest e altro</p>
 <p>In alcuni casi è utile ridurre le dimensioni dell&rsquo;immagine per concentrarsi su un&rsquo;area specifica del fotogramma video, ad esempio per visualizzare nel dettaglio la mazza e la pallina al momento dell&rsquo;Impatto.</p>
 <p>Questo è possibile tramite l&rsquo;area di interesse, nota anche come AOI, e il ROI, Region of Interest. Ridurre le dimensioni complessive dell&rsquo;immagine con questa funzione può inoltre aumentare la Frequenza fotogrammi.</p>
-<p><a href="#R-image-eefa4b6f909b92e9d233a6968a7e26aa" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eefa4b6f909b92e9d233a6968a7e26aa"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
+<p><a href="#R-image-f465127f4131603de50d35e373159b36" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f465127f4131603de50d35e373159b36"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
 <p>Salvataggio delle impostazioni nella telecamera</p>
 <p>È importante salvare le impostazioni nella telecamera. Se non viene fatto, tutte le configurazioni effettuate andranno perse.</p>
 <p>Assicurati di impostare il Default Set Selector e il Default Startup Set. Sono disponibili diversi set utente tra cui scegliere e, in linea di principio, è possibile salvare impostazioni diverse su ciascun set. Ad esempio, puoi selezionare &ldquo;User Set 1&rdquo; come predefinito, quindi premere User Set Save per salvare le impostazioni correnti in quel profilo.</p>
-<p><a href="#R-image-ae6591cac1fd50ea1a54c9eae72abb3e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae6591cac1fd50ea1a54c9eae72abb3e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
+<p><a href="#R-image-b0e7202807b73f76e237cf2bddae546c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0e7202807b73f76e237cf2bddae546c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
 <hr>
 <p><em>Ultimo aggiornamento: 2022-10-10</em> | <a href="/sc-support/it/cameras-video/basler-gige-setup/index.html">Visualizza sul sito di supporto ufficiale</a></p>
 
@@ -394,7 +406,6 @@ subnet mask: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Lingua</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/basler-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/basler-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/basler-gige-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/basler-gige-setup/index.html" lang="fr">Français</option>
@@ -456,8 +467,8 @@ subnet mask: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537811" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542923" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

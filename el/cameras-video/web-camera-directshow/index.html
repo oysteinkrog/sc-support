@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="435">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
     <title>Πώς να χρησιμοποιήσετε μια web κάμερα (ενσωμάτωση DirectShow) με το Swing Catalyst :: Υποστήριξη Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
@@ -61,26 +60,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537833" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537833" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537833" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542947" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542947" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542947" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772537833";
+      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772542947";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537833" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542947" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537833" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537833" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537833" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537833" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537833" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542947" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542947" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542947" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542947" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542947" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,31 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#σύνδεση-κάμερας">Σύνδεση κάμερας</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#μενού-ρυθμίσεων">Μενού Ρυθμίσεων</a></li>
+    <li><a href="#προηγμένες-ρυθμίσεις-κάμερας">Προηγμένες Ρυθμίσεις Κάμερας</a></li>
+    <li><a href="#αντιμετώπιση-προβλημάτων"><a href="web-camera-directshow.md">Αντιμετώπιση Προβλημάτων</a></a>
+      <ul>
+        <li><a href="#χαμηλός-ρυθμός-πλαισίων">Χαμηλός Ρυθμός Πλαισίων:</a></li>
+        <li><a href="#απώλεια-πλαισίων">Απώλεια πλαισίων:</a></li>
+        <li><a href="#επιλογή-διαφορετικού-τύπου-πολυμέσων">Επιλογή διαφορετικού τύπου πολυμέσων</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/index.html"><span itemprop="name">Υποστήριξη Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/cameras-video/index.html"><span itemprop="name">Κάμερες &amp; Βίντεο</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Πώς να χρησιμοποιήσετε μια web κάμερα (ενσωμάτωση DirectShow) με το Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -203,26 +227,26 @@
 <h2 id="σύνδεση-κάμερας">Σύνδεση κάμερας<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="ενεργοποιήστε-την-κάμερα-από-το-μενού-ρυθμίσεων">Ενεργοποιήστε την κάμερα από το μενού Ρυθμίσεων.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Κάντε κλικ στο εικονίδιο με το γρανάζι.</p>
-<p><a href="#R-image-5ee2da5b0c2bf78ccbefeb2895071583" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ee2da5b0c2bf78ccbefeb2895071583"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<p><a href="#R-image-30452eb2af0e962016d501082112e53e" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30452eb2af0e962016d501082112e53e"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
 <h2 id="μενού-ρυθμίσεων">Μενού Ρυθμίσεων<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Σημειώστε ότι ο τύπος ενσωμάτωσης κάμερας αναγνωρίζεται, π.χ. DirectShow, Spinnaker:</p>
-<p><a href="#R-image-1368fefa72b291a63eecec19d6366e65" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1368fefa72b291a63eecec19d6366e65"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p><a href="#R-image-fe9436c431fe46b13ef33e94134308a4" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe9436c431fe46b13ef33e94134308a4"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
 <p>Εάν εντοπιστεί σωστά, η κάμερα θα εμφανιστεί αυτόματα στη λίστα καμερών.</p>
 <p>Για να χρησιμοποιήσετε την κάμερα, πρέπει να της αντιστοιχιστεί μια Γωνία κάμερας. Κάντε κλικ στο εικονίδιο «Disabled» και επιλέξτε μια γωνία, στη συνέχεια μεταβείτε τον διακόπτη «OFF» σε «ON» για να ενεργοποιήσετε την κάμερα.</p>
-<p><a href="#R-image-e4df7362964d8cf56f57a6688817028b" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4df7362964d8cf56f57a6688817028b"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-d53a35fbbc22e23ed00223e67ac7bd92" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d53a35fbbc22e23ed00223e67ac7bd92"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
 <p>Η κάμερα Dragon είναι ενεργοποιημένη και ορίστηκε ως κάμερα Μετώπως δεξιά (δηλαδή βλέπει τον Χρήστη από τα δεξιά).</p>
-<p><a href="#R-image-d96b8402436e8b30a3b5ea231b88a4e2" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d96b8402436e8b30a3b5ea231b88a4e2"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<p><a href="#R-image-24c43a22ab60faed669d9632194cb1e9" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-24c43a22ab60faed669d9632194cb1e9"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
 <h2 id="προηγμένες-ρυθμίσεις-κάμερας">Προηγμένες Ρυθμίσεις Κάμερας<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Οι προηγμένες ρυθμίσεις κάμερας σάς δίνουν τη δυνατότητα να αλλάξετε το όνομα της κάμερας, να εφαρμόσετε κατοπτρισμό &amp; περιστροφή, περικοπή, να προσαρμόσετε την εικόνα βίντεο και να πραγματοποιήσετε αλλαγές ρυθμίσεων.</p>
 <p>Σημείωση: Το Auto είναι διαθέσιμο μόνο για ορισμένες ιδιότητες, όπως η ισορροπία λευκού, η έκθεση και η εστίαση).</p>
-<p><a href="#R-image-c18a99207122254c81d4de1c94ed540c" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c18a99207122254c81d4de1c94ed540c"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
-<p><a href="#R-image-a62ea5e0a11c6ec27a196e95abfd02d9" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a62ea5e0a11c6ec27a196e95abfd02d9"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p><a href="#R-image-cf8ea5bf8601a7a519671a96ea88e72f" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf8ea5bf8601a7a519671a96ea88e72f"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-790682a54811c36c5b16ea3772a15e60" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-790682a54811c36c5b16ea3772a15e60"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
 <p>Εάν έχετε κάνει κάποιες λανθασμένες αλλαγές, μπορείτε να επιστρέψετε στις προεπιλογές) κάνοντας κλικ στο «Restore defaults».</p>
 <h2 id="αντιμετώπιση-προβλημάτων"><a href="/sc-support/el/cameras-video/web-camera-directshow/index.html">Αντιμετώπιση Προβλημάτων</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="χαμηλός-ρυθμός-πλαισίων">Χαμηλός Ρυθμός Πλαισίων:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -230,8 +254,8 @@
 <p>Από προεπιλογή, οι περισσότερες κάμερες είναι ρυθμισμένες σε Auto έκθεση. Εάν δεν υπάρχει επαρκής φωτισμός, ο χρόνος έκθεσης ανά Καρέ θα είναι υψηλός και η κάμερα δεν θα μπορεί να αποδώσει τον μέγιστο Ρυθμό Πλαισίων.</p>
 <p>Εάν η έκθεση είναι πολύ υψηλή, ο Ρυθμός Πλαισίων θα μειωθεί και η Εγγραφή θα είναι πιο θολή.</p>
 <h3 id="απώλεια-πλαισίων">Απώλεια πλαισίων:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Εάν η κάμερα χάνει πλαίσια (σε αυτή την περίπτωση δεν αποδίδει τα FPS που θα έπρεπε), μπορεί να δημιουργήσει οπτικά αρτεφάκτ.<a href="#R-image-1f5a665d2c3355c0378eedfb48cf126e" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f5a665d2c3355c0378eedfb48cf126e"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<p>Εάν η κάμερα χάνει πλαίσια (σε αυτή την περίπτωση δεν αποδίδει τα FPS που θα έπρεπε), μπορεί να δημιουργήσει οπτικά αρτεφάκτ.<a href="#R-image-e83548c11b77e4ad5d7463584bc061c0" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e83548c11b77e4ad5d7463584bc061c0"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
 <ul>
 <li>
 <p>Βεβαιωθείτε ότι η κάμερα είναι συνδεδεμένη απευθείας στον υπολογιστή και ιδανικά σε μία από τις USB θύρες στο πίσω μέρος του υπολογιστή.</p>
@@ -254,8 +278,8 @@
 </li>
 </ul>
 <p>Ορισμένες μορφές χρησιμοποιούν λιγότερο εύρος ζώνης από άλλες. Εάν η κάμερα υποστηρίζει μορφές RAW8, GREY8 ή άλλες μορφές απεικόνισης 8-bit, αυτές είναι προτιμότερες από οποιονδήποτε τύπο πολυμέσων RGB ή MPEG, καθώς απαιτούν σημαντικά λιγότερο εύρος ζώνης.</p>
-<p><a href="#R-image-6d66473132da302f85acb411d78bd396" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d66473132da302f85acb411d78bd396"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<p><a href="#R-image-3f28782d09e1aca27bd149744997ee23" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f28782d09e1aca27bd149744997ee23"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
 <hr>
 <p><em>Τελευταία ενημέρωση: 2023-12-15</em> | <a href="/sc-support/el/cameras-video/web-camera-directshow/index.html">Προβολή στον επίσημο ιστότοπο υποστήριξης</a></p>
 
@@ -366,7 +390,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
@@ -428,8 +451,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537833" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542947" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

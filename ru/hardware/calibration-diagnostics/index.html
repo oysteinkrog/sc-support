@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="968">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data">
     <title>Калибровка и диагностика Весовой платформы :: Поддержка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537813" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537813" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537813" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542925" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542925" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772537813";
+      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772542925";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ru'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537813" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542925" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Меню (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Оглавление (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#часть-1-использование-утилиты-se-для-получения-файла-калибровки">Часть 1: Использование утилиты SE для получения файла калибровки</a></li>
+    <li><a href="#регистрация-весовой-платформы">Регистрация Весовой платформы</a></li>
+    <li><a href="#убедитесь-что-на-весовой-платформе-нет-ковра-и-других-посторонних-предметов--это-необходимо-для-того-чтобы-показания-не-были-искажены-внешними-факторами">Убедитесь, что на Весовой платформе нет ковра и других посторонних предметов — это необходимо для того, чтобы показания не были искажены внешними факторами.</a></li>
+    <li><a href="#скриншот-seu-от-11082021-13-05-17"><img src="../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png" alt="Скриншот SEU от 11.08.2021 13-05-17"></a></li>
+    <li><a href="#выполнение-процесса-калибровки">Выполнение процесса калибровки</a></li>
+    <li><a href="#позиционирование">Позиционирование</a>
+      <ul>
+        <li><a href="#завершение-записи">Завершение записи</a></li>
+      </ul>
+    </li>
+    <li><a href="#часть-2-установка-файла-калибровки">Часть 2: Установка файла калибровки</a>
+      <ul>
+        <li><a href="#продолжите-выполнение-следующих-шагов">Продолжите выполнение следующих шагов</a></li>
+        <li><a href="#настройки-сенсорной-платформы">Настройки Сенсорной платформы</a></li>
+      </ul>
+    </li>
+    <li><a href="#устранение-неполадок">Устранение неполадок</a>
+      <ul>
+        <li><a href="#весовая-платформа-не-распознаётся-или-не-отображается-как-подключённая">Весовая платформа не распознаётся или не отображается как подключённая:</a></li>
+        <li><a href="#калибровка-не-устанавливается-успешно">Калибровка не устанавливается успешно</a></li>
+        <li><a href="#на-платформе-есть-шум-даже-после-запуска-утилиты">На платформе есть шум, даже после запуска утилиты</a></li>
+        <li><a href="#аппаратная-несовместимость">Аппаратная несовместимость</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/index.html"><span itemprop="name">Поддержка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/hardware/index.html"><span itemprop="name">Оборудование</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Калибровка и диагностика Весовой платформы</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -236,74 +270,74 @@
 </ul>
 <p>Если у вас установлена более старая версия, сначала удалите её через <a href="https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs" rel="external">Установку и удаление программ</a>.</p>
 <p>Нажмите «Пуск»:</p>
-<p><a href="#R-image-0fb210aaac2cdd83f5914c31448339a9" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 12-32-46" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fb210aaac2cdd83f5914c31448339a9"><img alt="Скриншот SEU от 11.08.2021 12-32-46" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
+<p><a href="#R-image-6445bad328db928de0d7264d2b8db271" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 12-32-46" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6445bad328db928de0d7264d2b8db271"><img alt="Скриншот SEU от 11.08.2021 12-32-46" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
 <p>После нажатия кнопки «Пуск» программа автоматически попытается выполнить поиск устройств. Если платформа не будет найдена, нажмите на выпадающее меню и выберите свою Весовую платформу.</p>
-<p><a href="#R-image-087d8f40d7231fdd66865aa98cc86393" class="lightbox-link"><img alt="Скриншот Snoop 300" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-087d8f40d7231fdd66865aa98cc86393"><img alt="Скриншот Snoop 300" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
-<p>Нажмите «Сканировать»<a href="#R-image-6101344895dd709245573f712278317d" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-10-42" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6101344895dd709245573f712278317d"><img alt="Скриншот SEU от 11.08.2021 13-10-42" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
+<p><a href="#R-image-5262b29b00a91905f60b447c5e9968e1" class="lightbox-link"><img alt="Скриншот Snoop 300" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5262b29b00a91905f60b447c5e9968e1"><img alt="Скриншот Snoop 300" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
+<p>Нажмите «Сканировать»<a href="#R-image-12168efa88d91d6427d677a95257b7bd" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-10-42" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-12168efa88d91d6427d677a95257b7bd"><img alt="Скриншот SEU от 11.08.2021 13-10-42" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
 <p>Выберите устройство, соответствующее серийному номеру вашей платформы, и нажмите «Далее».</p>
 <h2 id="регистрация-весовой-платформы">Регистрация Весовой платформы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-ea2632248f97d88cb1fa93552e656e52" class="lightbox-link"><img alt="Скриншот от 11.08.2021 12-59-01" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea2632248f97d88cb1fa93552e656e52"><img alt="Скриншот от 11.08.2021 12-59-01" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
-<p>Пример заполненной регистрационной информации<a href="#R-image-5f3a6bcc84144efc3d0fe93bbd8aaee2" class="lightbox-link"><img alt="Скриншот от 11.08.2021 13-02-17" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f3a6bcc84144efc3d0fe93bbd8aaee2"><img alt="Скриншот от 11.08.2021 13-02-17" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
+<p><a href="#R-image-39a55afd5ae81f4e56da32227a60022d" class="lightbox-link"><img alt="Скриншот от 11.08.2021 12-59-01" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-39a55afd5ae81f4e56da32227a60022d"><img alt="Скриншот от 11.08.2021 12-59-01" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
+<p>Пример заполненной регистрационной информации<a href="#R-image-173b3a8550f5d5669c46e449f5791b83" class="lightbox-link"><img alt="Скриншот от 11.08.2021 13-02-17" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-173b3a8550f5d5669c46e449f5791b83"><img alt="Скриншот от 11.08.2021 13-02-17" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
 <p>После заполнения необходимой информации для целей гарантийного и сервисного обслуживания нажмите «Продолжить».</p>
 <p>По возможности выберите камеру и направьте её на Весовую платформу, затем нажмите «Далее».</p>
 <p>Камера не является обязательной — вы можете продолжить, даже если камера не обнаружена.</p>
-<p><a href="#R-image-8656e98af219695ec7af3476553a94cb" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-04-31" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8656e98af219695ec7af3476553a94cb"><img alt="Скриншот SEU от 11.08.2021 13-04-31" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
+<p><a href="#R-image-c5f1e62ff60efb59827ff2e777cfc9b0" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-04-31" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5f1e62ff60efb59827ff2e777cfc9b0"><img alt="Скриншот SEU от 11.08.2021 13-04-31" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
 <h2 id="убедитесь-что-на-весовой-платформе-нет-ковра-и-других-посторонних-предметов--это-необходимо-для-того-чтобы-показания-не-были-искажены-внешними-факторами">Убедитесь, что на Весовой платформе нет ковра и других посторонних предметов — это необходимо для того, чтобы показания не были искажены внешними факторами.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h2 id="скриншот-seu-от-11082021-13-05-17"><a href="#R-image-a5d9b1433fb3214ab90cbe4586217f6e" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-05-17" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5d9b1433fb3214ab90cbe4586217f6e"><img alt="Скриншот SEU от 11.08.2021 13-05-17" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="скриншот-seu-от-11082021-13-05-17"><a href="#R-image-f93b9f9d72960d1b97f28819962c8798" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-05-17" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f93b9f9d72960d1b97f28819962c8798"><img alt="Скриншот SEU от 11.08.2021 13-05-17" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="выполнение-процесса-калибровки">Выполнение процесса калибровки<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Перед тем как встать на платформу, утилита собирает данные для формирования Базового Значения для сравнения.</p>
 <p>Пожалуйста, следите за тем, чтобы случайно не встать на платформу до тех пор, пока утилита не даст соответствующую команду.</p>
-<p><a href="#R-image-359bf2bad0b8d7f57b3555d613957298" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-12-19" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-359bf2bad0b8d7f57b3555d613957298"><img alt="Скриншот SEU от 11.08.2021 13-12-19" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
+<p><a href="#R-image-c2fc5f5da3face47b179bcc49c4b985a" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-12-19" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2fc5f5da3face47b179bcc49c4b985a"><img alt="Скриншот SEU от 11.08.2021 13-12-19" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
 <h2 id="позиционирование">Позиционирование<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Важно, чтобы вы стояли на платформе так, как указывает утилита.</p>
 <p>Тёмные следы обозначают место, где нужно стоять сейчас, а серые — место, где нужно будет стоять следующим.</p>
-<p><a href="#R-image-4550a4b19279837441ac5b717805c9e8" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-12-27" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4550a4b19279837441ac5b717805c9e8"><img alt="Скриншот SEU от 11.08.2021 13-12-27" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
+<p><a href="#R-image-31997421304a10637f37e730346dad1b" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-12-27" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31997421304a10637f37e730346dad1b"><img alt="Скриншот SEU от 11.08.2021 13-12-27" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
 <p>Пожалуйста, выполняйте каждый шаг — это важно для активации всех зон платформы.</p>
 <h3 id="завершение-записи">Завершение записи<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Если вы недовольны Записью — например, допустили ошибку — вы можете легко перезапустить процесс, нажав «Перезапустить».</p>
 <p>Нажмите «Продолжить», если хотите продолжить.</p>
-<p><a href="#R-image-4c1f7e26faffa67c0f819b1eb4eb2561" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-13-59" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c1f7e26faffa67c0f819b1eb4eb2561"><img alt="Скриншот SEU от 11.08.2021 13-13-59" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
+<p><a href="#R-image-7b6089009f6056a459442130554aef13" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-13-59" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b6089009f6056a459442130554aef13"><img alt="Скриншот SEU от 11.08.2021 13-13-59" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
 <p>Нажмите кнопку «Сохранить», а затем кнопку «Отправить».</p>
-<p><a href="#R-image-8d6652449b09b4764753d4e6b6d45db6" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-19-15" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d6652449b09b4764753d4e6b6d45db6"><img alt="Скриншот SEU от 11.08.2021 13-19-15" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
+<p><a href="#R-image-a9ed04b59673bfdfe88697b7706de1ce" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-19-15" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9ed04b59673bfdfe88697b7706de1ce"><img alt="Скриншот SEU от 11.08.2021 13-19-15" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
 <p>Перед отправкой данных производителю для проверки введите приблизительный вес и характер использования.</p>
 <p>В поле «Примечания» вы можете указать проблемы с платформой — например, слабый сигнал левой Стопы или другие замечания.</p>
 <p>Производитель собирает эти данные с целью дальнейшего совершенствования алгоритмов перекалибровки для получения более точных показаний датчиков.</p>
 <p>Введите информацию и нажмите «Отправить»:</p>
-<p><a href="#R-image-a8bb379548ed8d8458b96c15d4d6501e" class="lightbox-link"><img alt="Скриншот от 05.12.2018 14-49-34" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a8bb379548ed8d8458b96c15d4d6501e"><img alt="Скриншот от 05.12.2018 14-49-34" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
+<p><a href="#R-image-dbbc69792ef00f5176db0a0a8abfc374" class="lightbox-link"><img alt="Скриншот от 05.12.2018 14-49-34" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dbbc69792ef00f5176db0a0a8abfc374"><img alt="Скриншот от 05.12.2018 14-49-34" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
 <p>После завершения файл калибровки будет сохранён в папке «Документы». Нажмите «Нет», а затем закройте утилиту.</p>
-<p><a href="#R-image-c274a0e93b94f4efa19d4ec297f5cc45" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-40-30" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c274a0e93b94f4efa19d4ec297f5cc45"><img alt="Скриншот SEU от 11.08.2021 13-40-30" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
+<p><a href="#R-image-b2d2e920d5077925aa4d228f08e0fe82" class="lightbox-link"><img alt="Скриншот SEU от 11.08.2021 13-40-30" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2d2e920d5077925aa4d228f08e0fe82"><img alt="Скриншот SEU от 11.08.2021 13-40-30" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
 <h2 id="часть-2-установка-файла-калибровки">Часть 2: Установка файла калибровки<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="продолжите-выполнение-следующих-шагов">Продолжите выполнение следующих шагов<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Запустите Swing Catalyst и перейдите в «Настройки» &ndash;&gt; «Оборудование» в главном меню.</li>
 </ul>
 <p>Платформа должна быть обнаружена автоматически. Если этого не произошло, обратитесь к разделу по устранению неполадок.</p>
-<p><a href="#R-image-9cde85698c4a8547598c9e166f94a116" class="lightbox-link"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-51-04" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9cde85698c4a8547598c9e166f94a116"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-51-04" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
+<p><a href="#R-image-9f771490628b3002962df022742796b8" class="lightbox-link"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-51-04" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f771490628b3002962df022742796b8"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-51-04" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
 <p>Нажмите кнопку «Настроить&hellip;», чтобы открыть диалоговое окно настройки.</p>
 <h3 id="настройки-сенсорной-платформы">Настройки Сенсорной платформы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Перейдите на вкладку «Датчик стойки» и нажмите «Обзор и установка».<a href="#R-image-e33b71fb8512eb259b40749834240c01" class="lightbox-link"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-52-28" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e33b71fb8512eb259b40749834240c01"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-52-28" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
-<p>Перейдите в директорию, куда вы сохранили файл калибровки, например: C:\User\YourUsername\Documents, выберите файл mxd, который вы только что сохранили с помощью утилиты, и нажмите «Открыть».<a href="#R-image-8757b52ea909ac2a215e87e542c2a27e" class="lightbox-link"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-54-48" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8757b52ea909ac2a215e87e542c2a27e"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-54-48" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
+<p>Перейдите на вкладку «Датчик стойки» и нажмите «Обзор и установка».<a href="#R-image-68d86c37ee1168b1c71927e6459923cd" class="lightbox-link"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-52-28" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-68d86c37ee1168b1c71927e6459923cd"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-52-28" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
+<p>Перейдите в директорию, куда вы сохранили файл калибровки, например: C:\User\YourUsername\Documents, выберите файл mxd, который вы только что сохранили с помощью утилиты, и нажмите «Открыть».<a href="#R-image-b5f171ff49e2088c5124be6a48065bcb" class="lightbox-link"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-54-48" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b5f171ff49e2088c5124be6a48065bcb"><img alt="Скриншот MotionCatalyst от 11.08.2021 13-54-48" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
 <p>После завершения установки появится соответствующее уведомление, и вы сможете нажать OK, чтобы закрыть окна.</p>
 <p>Теперь ваша Весовая платформа готова к использованию.
 Начните новый Сеанс в разделе анализа Свинга и убедитесь, что при захвате Свингов в блоке данных «Давление и Данные стойки» отображаются Показания давления.</p>
-<p><a href="#R-image-0e2ce4bcfc9c8598a8470e13bf9e6445" class="lightbox-link"><img alt="Скриншот от 03.03.2017 14-30-55" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e2ce4bcfc9c8598a8470e13bf9e6445"><img alt="Скриншот от 03.03.2017 14-30-55" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
+<p><a href="#R-image-ccd98770c1d454a0f6480b1874903e1b" class="lightbox-link"><img alt="Скриншот от 03.03.2017 14-30-55" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ccd98770c1d454a0f6480b1874903e1b"><img alt="Скриншот от 03.03.2017 14-30-55" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
 <p>Note: При интенсивном использовании может потребоваться повторная Калибровка Весовой платформы. Это можно сделать, нажав кнопку диагностики в настройках Swing Catalyst, которая запустит утилиту SE.</p>
 <h2 id="устранение-неполадок">Устранение неполадок<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="весовая-платформа-не-распознаётся-или-не-отображается-как-подключённая">Весовая платформа не распознаётся или не отображается как подключённая:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -339,8 +373,8 @@
 <li>Файл калибровки, полученный из утилиты Sensor Edge, может быть повреждён или испорчен. Попробуйте снова запустить утилиту и установить <em>новый</em> файл калибровки. Если это не поможет, обратитесь в нашу службу поддержки.</li>
 </ul>
 <h3 id="на-платформе-есть-шум-даже-после-запуска-утилиты">На платформе есть шум, даже после запуска утилиты<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-f1a48f0f8c5c576403c919d3e8403cd8" class="lightbox-link"><img alt="Скриншот TeamViewer от 03.05.2019 09-53-27" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1a48f0f8c5c576403c919d3e8403cd8"><img alt="Скриншот TeamViewer от 03.05.2019 09-53-27" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
+<p><a href="#R-image-086f7f35d77cb5230d543420906ea5c0" class="lightbox-link"><img alt="Скриншот TeamViewer от 03.05.2019 09-53-27" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-086f7f35d77cb5230d543420906ea5c0"><img alt="Скриншот TeamViewer от 03.05.2019 09-53-27" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
 <p>Шум может возникать по нескольким причинам:</p>
 <ul>
 <li>
@@ -456,7 +490,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Язык</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/calibration-diagnostics/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/calibration-diagnostics/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/calibration-diagnostics/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/calibration-diagnostics/index.html" lang="fr">Français</option>
@@ -518,8 +551,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542925" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

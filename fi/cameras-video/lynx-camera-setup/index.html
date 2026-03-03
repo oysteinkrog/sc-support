@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="689">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Lynx-Camera,Fox-Camera">
     <title>Swing Catalyst Lynx GigE -kameran/-kameroiden asennus :: Swing Catalyst Tuki</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537830" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537830" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537830" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537830" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537830" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542944" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542944" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542944" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542944" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542944" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.fi.js?1772537830";
+      window.relearn.index_js_url="/sc-support/searchindex.fi.js?1772542944";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537830" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537830" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537830" defer></script>
-    <script src="/sc-support/js/lunr/lunr.fi.min.js?1772537830" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542944" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542944" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542944" defer></script>
+    <script src="/sc-support/js/lunr/lunr.fi.min.js?1772542944" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fi'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537830" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537830" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537830" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537830" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537830" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542944" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542944" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542944" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542944" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542944" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Valikko (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Sisältö (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#tässä-artikkelissa-käsitellään-kameran-perustiedot-sekä-lynx-gige--kameran-asennus-ja-konfigurointi-swing-catalystissa">Tässä artikkelissa käsitellään kameran perustiedot sekä Lynx GigE -kameran asennus ja konfigurointi Swing Catalystissa.</a>
+      <ul>
+        <li><a href="#lyhyen-vaiheittaisen-oppaan-löydät-täältä--httpsswingcatalystcomcamera-guide">Lyhyen vaiheittaisen oppaan löydät täältä <strong>:</strong> <a href="https://swingcatalyst.com/camera-guide/">https://swingcatalyst.com/camera-guide</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#artikkeli-on-jaettu-eri-osioihin">Artikkeli on jaettu eri osioihin</a>
+      <ul>
+        <li><a href="#alkuun-pääseminen-laitteiston-asennus">Alkuun pääseminen: Laitteiston asennus</a></li>
+        <li><a href="#kaksiporttisen-verkkokortin-asentaminen">Kaksiporttisen verkkokortin asentaminen</a></li>
+        <li><a href="#driverit-asennus-ja-kameran-kameroiden-käyttöönotto">Driverit asennus ja kameran/-kameroiden käyttöönotto</a></li>
+        <li><a href="#vianmääritysvinkit">Vianmääritysvinkit</a></li>
+      </ul>
+    </li>
+    <li><a href="#kameratiedot">Kameratiedot:</a></li>
+    <li><a href="#alkuun-pääseminen-kameran-kokoaminen">Alkuun pääseminen: Kameran kokoaminen</a></li>
+    <li><a href="#20230110_"><a href="#section1"><img src="__PH0__" alt="20230110_095547.jpg"></a></a></li>
+    <li><a href="#kaksiporttisen-verkkokortin-asentaminen-1">Kaksiporttisen verkkokortin asentaminen:</a></li>
+    <li><a href="#verkkokortin-konfigurointi">Verkkokortin konfigurointi</a>
+      <ul>
+        <li><a href="#jumbo-kehysten-käyttöönotto">Jumbo-kehysten käyttöönotto</a></li>
+      </ul>
+    </li>
+    <li><a href="#driverit-asennus-ja-kameran-kameroiden-käyttöönotto-1">Driverit asennus ja kameran/-kameroiden käyttöönotto:</a></li>
+    <li><a href="#kamera-asetusten-konfigurointi">Kamera-asetusten konfigurointi:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fi/index.html"><span itemprop="name">Swing Catalyst -tuki</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fi/cameras-video/index.html"><span itemprop="name">Kamerat ja video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Swing Catalyst Lynx GigE -kameran/-kameroiden asennus</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -226,21 +260,21 @@
 </ul>
 <h2 id="alkuun-pääseminen-kameran-kokoaminen">Alkuun pääseminen: Kameran kokoaminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Kiinnitä jalustasovite kameran runkoon laitteen mukana toimitetuilla neljällä mustalla ristipääruuvilla.</p>
-<h2 id="20230110_"><a href="/sc-support/fi/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-4c89f8079566525342a9f0a39dc28a18" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c89f8079566525342a9f0a39dc28a18"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="20230110_"><a href="/sc-support/fi/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-9016aac9e03f92f7eb157892d406db17" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9016aac9e03f92f7eb157892d406db17"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Pura linssi pakkauksesta ja muista poistaa muoviset linssisuojukset.</p>
-<p><a href="#R-image-89f7dfdac0b1699318c9b2e8ba630c42" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-89f7dfdac0b1699318c9b2e8ba630c42"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
+<p><a href="#R-image-ccc2246abadcf0d5cd82d3b269a1879b" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ccc2246abadcf0d5cd82d3b269a1879b"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
 <p>Irrota anturin suojus kamerasta.</p>
-<p><a href="#R-image-ec4bacfee2e8ea6b30519ee04b12e11c" class="lightbox-link"><img alt="20230110_095616.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec4bacfee2e8ea6b30519ee04b12e11c"><img alt="20230110_095616.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-9d0985878eb2941cbc1182170f03afa0" class="lightbox-link"><img alt="20230110_095634.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9d0985878eb2941cbc1182170f03afa0"><img alt="20230110_095634.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
+<p><a href="#R-image-44d0768403572f844432dc267f5ea894" class="lightbox-link"><img alt="20230110_095616.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-44d0768403572f844432dc267f5ea894"><img alt="20230110_095616.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-021955c892d30212b336bcaf09e91400" class="lightbox-link"><img alt="20230110_095634.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-021955c892d30212b336bcaf09e91400"><img alt="20230110_095634.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
 <p>Linssin kiinnittäminen kameraan</p>
-<p><a href="#R-image-0fa773d9efe91ef1912fd65c85f547d7" class="lightbox-link"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fa773d9efe91ef1912fd65c85f547d7"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
+<p><a href="#R-image-f3f5a776e905375c3190f77366f07e65" class="lightbox-link"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f3f5a776e905375c3190f77366f07e65"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
 <p>Kameran linssin säätäminen</p>
-<p><a href="#R-image-82d53e49460daac3c642c5677d2f370d" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-82d53e49460daac3c642c5677d2f370d"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
+<p><a href="#R-image-3711b809fd1f31ae8d2be8868ef4bd8a" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3711b809fd1f31ae8d2be8868ef4bd8a"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
 <p>Linssissä on kolme säätöä, ylhäältä alas:</p>
 <ul>
 <li>
@@ -275,20 +309,20 @@
 </li>
 </ul>
 <p>Aseta &ldquo;Receive Buffers&rdquo; -arvoksi 2048.</p>
-<p><a href="#R-image-533973fbd9af53ec76ecd5c8ca58530a" class="lightbox-link"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-533973fbd9af53ec76ecd5c8ca58530a"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-720b426561e9bc9b6af391dac5523165" class="lightbox-link"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-720b426561e9bc9b6af391dac5523165"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
-<p><a href="#R-image-c5a74afcb47299ca8ad8a4af38d54c80" class="lightbox-link"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5a74afcb47299ca8ad8a4af38d54c80"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
-<p><a href="#R-image-27514e7f1febc4378ce38fa9e10e98ff" class="lightbox-link"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-27514e7f1febc4378ce38fa9e10e98ff"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
+<p><a href="#R-image-c329e3ec74f79cbd351cf0c07f7f56d6" class="lightbox-link"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c329e3ec74f79cbd351cf0c07f7f56d6"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-cc492b4c7a0ab889bf042de0595de4ad" class="lightbox-link"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc492b4c7a0ab889bf042de0595de4ad"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
+<p><a href="#R-image-0d29451d92395f58758ba58f24e75314" class="lightbox-link"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d29451d92395f58758ba58f24e75314"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
+<p><a href="#R-image-c3f51ffda597e725a9cf013c09275af8" class="lightbox-link"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3f51ffda597e725a9cf013c09275af8"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
 <h2 id="driverit-asennus-ja-kameran-kameroiden-käyttöönotto-1">Driverit asennus ja kameran/-kameroiden käyttöönotto:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Vaihe 1: Kytke kamera/-kamerat tietokoneen PoE-verkkoportteihin Cat5- tai Cat6-Ethernet-kaapelilla ja varmista, että kameran takaosassa palaa tasainen sininen valo.</p>
 <p>Vaihe 2: <a href="https://cloudfront.swingcatalyst.com/drivers/NA_SDK_V3_5_3_3_MVFG_V1_1_4_2_VC90_Runtime_NEU.exe" rel="external">Lataa napsauttamalla</a> ja asenna kameran/-kameroiden driverit.</p>
 <p>Vaihe 3: Avaa Swing Catalyst ja napsauta päävalikon vasemmassa alakulmassa olevaa hammaspyöräkuvaketta, siirry sitten Kamerat-asetuksiin.</p>
 <p>Vaihe 4: Napsauta Toista-painiketta esikatselua varten. Napsauta sitten &ldquo;Disabled&rdquo; ja määritä kullekin kameralle sopiva kulma. Vaihda lopuksi kameran tila &ldquo;Off&rdquo;-tilasta &ldquo;On&rdquo;-tilaan.</p>
-<p><a href="#R-image-eba4bd947b1613639b61eb5c711cb64a" class="lightbox-link"><img alt="mceclip1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eba4bd947b1613639b61eb5c711cb64a"><img alt="mceclip1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
+<p><a href="#R-image-5e1404d3acfa07ea152e5c54fb2eaf4b" class="lightbox-link"><img alt="mceclip1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e1404d3acfa07ea152e5c54fb2eaf4b"><img alt="mceclip1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
 <h2 id="kamera-asetusten-konfigurointi">Kamera-asetusten konfigurointi:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>TÄRKEÄÄ</strong></p>
 <p>Selkeiden mailan ja mailan varren näkymien saamiseksi pidä valotus alle 600. Lisää kuvan kirkkautta säätämällä Gain-arvoa. Optimaalinen valaistus: asenna kolme Thomann 100W-valaisinta — yksi linjaa pitkin, yksi oikealle ja yksi vasemmalle — vähintään 1,5 metrin etäisyydelle pallosta, joko kattoon tai seinälle.</p>
@@ -308,17 +342,17 @@
 </ul>
 <p><strong>Note</strong>: Jos sinulla on 3 tai 4 kameraa, suosittelemme asettamaan GEV SCPD -arvoksi 150.</p>
 <p>Voit nyt sulkea asetukset ja siirtyä sieppaus-tilaan aloittaaksesi nauhoituksen.</p>
-<p><a href="#R-image-e31aa8c56191ae369c9ac2cbace27614" class="lightbox-link"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e31aa8c56191ae369c9ac2cbace27614"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
-<p><a href="#R-image-b97db6044600eaba95981c888c1a003f" class="lightbox-link"><img alt="mceclip5.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b97db6044600eaba95981c888c1a003f"><img alt="mceclip5.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
+<p><a href="#R-image-32ec8f081a409a2bc28894742236ce76" class="lightbox-link"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-32ec8f081a409a2bc28894742236ce76"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
+<p><a href="#R-image-88ad3bf32f11c781e58b4f5d2b02f09a" class="lightbox-link"><img alt="mceclip5.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-88ad3bf32f11c781e58b4f5d2b02f09a"><img alt="mceclip5.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
 <p><a href="/sc-support/fi/cameras-video/lynx-camera-setup/index.html#troubleshooting-tips">Vianmääritysvinkit:</a></p>
 <p><strong>Kamerat eivät näy Swing Catalyst -asetuksissa:</strong></p>
 <p>Varmista, että sinulla on uusin MVS/Runtime asennettuna (4.6.1).</p>
 <p><strong>Pudotetut kuvat:</strong></p>
 <p>Kuvataajuuden pienentäminen kullakin kameralla voi auttaa välttämään tai vähentämään pudotettuja kuvia.</p>
-<p><a href="#R-image-dc9b93f524ada7728731626b7dc2a89c" class="lightbox-link"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc9b93f524ada7728731626b7dc2a89c"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
+<p><a href="#R-image-9d1c31b86ce5b9395fe2010ebd17f253" class="lightbox-link"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9d1c31b86ce5b9395fe2010ebd17f253"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
 <p>Onko sinulla jokin suositelluista verkkokorteista? Jos ei, ongelma saattaa johtua itse verkkokortista. Ota yhteyttä myyntitiimiin varmistaaksesi, että sinulla on asianmukainen verkkolaitteisto.</p>
 <ul>
 <li>
@@ -343,8 +377,8 @@
 <p>Tarkista verkkokortin tila Windowsin Ohjauspaneelista.</p>
 </li>
 </ul>
-<p><a href="#R-image-5ec4dc52f3d100c9e1e333a6b6be44d3" class="lightbox-link"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ec4dc52f3d100c9e1e333a6b6be44d3"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
+<p><a href="#R-image-ba8d514ff3c49117e6aaae8f6d49804a" class="lightbox-link"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba8d514ff3c49117e6aaae8f6d49804a"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
 <p>Note: Nopeuden tulee olla 1,0 Gbps (1000 Mbps), ei 100 Mbps.</p>
 <p><strong>Pudotettujen kuvien vähentäminen Region Of Interest (ROI) -toiminnon avulla:</strong></p>
 <p>Region of Interest (tai alueellinen kiinnostusalue) -toiminnon käyttäminen pienentää kuvan kokonaiskokoa ja kasvattaa FPS-arvoa, mutta se voi myös auttaa pienentämään kaistanleveyskulutusta, mikä puolestaan voi vähentää pudotettuja kuvia (katso yllä ohjeet ROI:n käyttöön).</p>
@@ -475,7 +509,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Kieli</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/lynx-camera-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/lynx-camera-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/lynx-camera-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/lynx-camera-setup/index.html" lang="fr">Français</option>
@@ -537,8 +570,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537830" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537830" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542944" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542944" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

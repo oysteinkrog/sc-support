@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="This article is an introduction to Swing Catalyst Online and aims to show off the functionality available from the desktop side of Swing Catalyst Online.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to use Swing Catalyst Online :: Swing Catalyst Support">
+    <meta name="twitter:description" content="This article is an introduction to Swing Catalyst Online and aims to show off the functionality available from the desktop side of Swing Catalyst Online.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Support">
+    <meta property="og:title" content="How to use Swing Catalyst Online :: Swing Catalyst Support">
+    <meta property="og:description" content="This article is an introduction to Swing Catalyst Online and aims to show off the functionality available from the desktop side of Swing Catalyst Online.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Software & Features">
+    <meta property="article:tag" content="Online">
+    <meta property="article:tag" content="App">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Fox-Camera">
+    <meta itemprop="name" content="How to use Swing Catalyst Online :: Swing Catalyst Support">
+    <meta itemprop="description" content="This article is an introduction to Swing Catalyst Online and aims to show off the functionality available from the desktop side of Swing Catalyst Online.">
+    <meta itemprop="wordCount" content="591">
+    <meta itemprop="keywords" content="Online,App,Troubleshooting,Fox-Camera">
+    <title>How to use Swing Catalyst Online :: Swing Catalyst Support</title>
+    <link href="/sc-support/images/favicon.png?1772542919" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542919" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772542919";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542919" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/recording-export\/swing-catalyst-online\/index.html';
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#what-is-online">What is Online</a></li>
+    <li><a href="#viewed-from-the-swing-catalyst-desktop-software">Viewed from the Swing Catalyst Desktop software</a>
+      <ul>
+        <li><a href="#recordings">Recordings</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#tour-swings">Tour Swings</a></li>
+      </ul>
+    </li>
+    <li><a href="#swing-catalyst-online">Swing Catalyst Online</a>
+      <ul>
+        <li><a href="#explorer">Explorer</a></li>
+        <li><a href="#viewing-recording-details">Viewing recording details</a></li>
+      </ul>
+    </li>
+    <li><a href="#lessons-1">Lessons</a></li>
+    <li><a href="#firefox_"><img src="../../assets/images/4410803508626/firefox-2021-11-26-09-30-13-png.png" alt="firefox_2021-11-26_09-30-13.png"></a>
+      <ul>
+        <li><a href="#uploading-a-video">Uploading a video</a></li>
+        <li><a href="#deleting-a-video">Deleting a video</a></li>
+      </ul>
+    </li>
+    <li><a href="#storage">Storage</a></li>
+    <li><a href="#editing-your-profile">Editing your profile</a></li>
+    <li><a href="#viewing-your-licenses">Viewing your licenses</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/software-features/index.html"><span itemprop="name">Software &amp; Features</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/software-features/recording-export/index.html"><span itemprop="name">Recording &amp; Export</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">How to use Swing Catalyst Online</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/software-features/recording-export/email-sharing/index.html" title="How to set up email sharing in Swing Catalyst (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/software-features/recording-export/ios-app-sharing/index.html" title="Sharing recorded videos with the Swing Catalyst app for iOS (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/en/tags/app/index.html">App</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/fox-camera/index.html">Fox-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/online/index.html">Online</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+<h1 id="how-to-use-swing-catalyst-online">How to use Swing Catalyst Online</h1>
+
+<h2 id="introduction">Introduction<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This article is an introduction to Swing Catalyst Online and aims to show off the functionality available from the desktop side of Swing Catalyst Online.</p>
+<h2 id="requirements">Requirements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>A valid Swing Catalyst license (<a href="../getting-started/check-version.md">What version do I have?)</a></p>
+</li>
+<li>
+<p>A <a href="https://online.swingcatalyst.com" rel="external">Swing Catalyst Online</a> account</p>
+</li>
+<li>
+<p>Internet connectivity</p>
+</li>
+</ul>
+<h2 id="table-of-contents">Table of Contents<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This guide is split up into different categories &amp; steps.</p>
+<ul>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#what-is-online">What is Online</a></p>
+</li>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#viewed-from-the-swing-catalyst-desktop-software">Online viewed from the Swing Catalyst Desktop software</a></p>
+</li>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#recordings">Recordings, Lessons &amp; Tour Swings (Desktop)</a></p>
+</li>
+</ul>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#web-interface">Web interface</a> (Swing Catalyst Online)</p>
+<ul>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#recordings">Recordings, Lessons &amp; Tour Swings (Online)</a></p>
+</li>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#uploading-a-video">Uploading a video (Online)</a></p>
+</li>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#storage">Managing Storage</a></p>
+</li>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#managing-licenses">Managing Licenses</a></p>
+</li>
+<li>
+<p><a href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html#editing-your-profile">Profile</a></p>
+</li>
+</ul>
+<h2 id="what-is-online">What is Online<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Swing Catalyst Online is the connection point which connects the Swing Catalyst Desktop software with the iOS &amp; Android Apps and can be used for sharing recordings and lessons with other users.</p>
+<p>All licenses are connected to a Online account.</p>
+<h2 id="viewed-from-the-swing-catalyst-desktop-software">Viewed from the Swing Catalyst Desktop software<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This is Swing Catalyst Online viewed from the desktop side of things.</p>
+<p>The login button can be found on the top of the software in the right corner.</p>
+<p><a href="#R-image-179a06d50bdcd3a8c69b4e8d22f66562" class="lightbox-link"><img alt="MotionCatalyst_2021-11-26_09-47-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-26-09-47-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-179a06d50bdcd3a8c69b4e8d22f66562"><img alt="MotionCatalyst_2021-11-26_09-47-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-26-09-47-19-png.png"></a></p>
+<p>Your Online credentials are used to log in.</p>
+<p><a href="#R-image-0bd6a02a26e5cabfe459540c1b2ac30f" class="lightbox-link"><img alt="MotionCatalyst_2021-11-25_11-08-06.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-25-11-08-06-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0bd6a02a26e5cabfe459540c1b2ac30f"><img alt="MotionCatalyst_2021-11-25_11-08-06.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-25-11-08-06-png.png"></a></p>
+<p>One logged in the &ldquo;Log in&rdquo; button changes reflecting you are logged in.</p>
+<p><a href="#R-image-ac067648e4227b99fc5bc4c51caa2e77" class="lightbox-link"><img alt="MotionCatalyst_2021-11-26_09-50-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-26-09-50-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac067648e4227b99fc5bc4c51caa2e77"><img alt="MotionCatalyst_2021-11-26_09-50-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-26-09-50-47-png.png"></a></p>
+<h3 id="recordings">Recordings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>The Online explorer is separate from the normal Explorer.</p>
+<p>To download recordings from Online to the desktop software, click a recording and then click &ldquo;Download&rdquo;. This will begin downloading the recording and it will end up in the normal Explorer.</p>
+<p><a href="#R-image-4456e13052f3e6f661b3c69350380ca0" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4456e13052f3e6f661b3c69350380ca0"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/mceclip0-png.png"></a></p>
+<h3 id="lessons">Lessons<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Recorded lessons that are shared to Online or to other Online users can be found here.</p>
+<p><a href="#R-image-d7834a65da61582e7edf5a685570db5a" class="lightbox-link"><img alt="MotionCatalyst_2021-11-25_12-22-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-25-12-22-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7834a65da61582e7edf5a685570db5a"><img alt="MotionCatalyst_2021-11-25_12-22-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/motioncatalyst-2021-11-25-12-22-07-png.png"></a></p>
+<h3 id="tour-swings">Tour Swings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Any purchased tour swings will show up in the &ldquo;Tour Swings&rdquo; tab.</p>
+<h2 id="swing-catalyst-online">Swing Catalyst Online<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>This is Swing Catalyst Online viewed from a web browser.</p>
+<p>Login screen</p>
+<p><a href="#R-image-a1c39f80db605d503c32bf85ff91320a" class="lightbox-link"><img alt="firefox_2021-11-25_12-24-06.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-25-12-24-06-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a1c39f80db605d503c32bf85ff91320a"><img alt="firefox_2021-11-25_12-24-06.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-25-12-24-06-png.png"></a></p>
+<p>Home screen and Inbox</p>
+<p><a href="#R-image-9854c3085e395dcfe0cefbde76f3d544" class="lightbox-link"><img alt="firefox_2021-11-25_12-35-06.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-25-12-35-06-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9854c3085e395dcfe0cefbde76f3d544"><img alt="firefox_2021-11-25_12-35-06.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-25-12-35-06-png.png"></a></p>
+<h3 id="explorer">Explorer<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>All recordings that have been shared with you or uploaded from the desktop software visible here.</p>
+<p>Note the &ldquo;share&rdquo; icon on those recordings which are shared with you from someone else.</p>
+<p>The orange &ldquo;plus&rdquo; button is the &ldquo;Upload a video&rdquo; button, where you can upload recordings to your account.</p>
+<p><a href="#R-image-a32227b6d2aa0f66118e1ab7c4bc9cc1" class="lightbox-link"><img alt="firefox_2021-11-26_09-16-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-16-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a32227b6d2aa0f66118e1ab7c4bc9cc1"><img alt="firefox_2021-11-26_09-16-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-16-31-png.png"></a></p>
+<h3 id="viewing-recording-details">Viewing recording details<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-31bad0dee95395fae25ece6032935462" class="lightbox-link"><img alt="firefox_2021-11-26_09-22-44.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-22-44-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31bad0dee95395fae25ece6032935462"><img alt="firefox_2021-11-26_09-22-44.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-22-44-png.png"></a></p>
+<p>The video player has support for adjustable playback speed.</p>
+<p><a href="#R-image-e4b97bd524fc1f30b5c45f85f93e2cff" class="lightbox-link"><img alt="firefox_2021-11-26_09-27-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-27-40-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4b97bd524fc1f30b5c45f85f93e2cff"><img alt="firefox_2021-11-26_09-27-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-27-40-png.png"></a></p>
+<h2 id="lessons-1">Lessons<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The lessons tab has all of the lessons you&rsquo;ve uploaded to online, or lessons that have been shared to you.</p>
+<p>You can share recordings and lessons you have created, i.e. not shared with you.</p>
+<h2 id="firefox_"><a href="#R-image-96510f84a9fc0943f0dd0bc040bf95b5" class="lightbox-link"><img alt="firefox_2021-11-26_09-30-13.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-30-13-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96510f84a9fc0943f0dd0bc040bf95b5"><img alt="firefox_2021-11-26_09-30-13.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-30-13-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="uploading-a-video">Uploading a video<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Recordings can easily be uploaded to Swing Catalyst by pressing the &ldquo;+&rdquo; icon in the Explorer.</p>
+<p><a href="#R-image-66379c4b9b0cfe5f9a0721b9afc07c34" class="lightbox-link"><img alt="firefox_2021-11-26_09-25-43.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-25-43-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-66379c4b9b0cfe5f9a0721b9afc07c34"><img alt="firefox_2021-11-26_09-25-43.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-25-43-png.png"></a></p>
+<p><a href="#R-image-abc7f6b92ded779c1ec3c327326b8561" class="lightbox-link"><img alt="firefox_2021-11-26_09-24-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-24-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-abc7f6b92ded779c1ec3c327326b8561"><img alt="firefox_2021-11-26_09-24-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-24-39-png.png"></a></p>
+<h3 id="deleting-a-video">Deleting a video<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>To delete a video, click the Explorer tab and then click one of the videos you wish to delete, then click the &ldquo;Delete&rdquo; button. Note: Deleting recordings that are shared with others will also remove the recipients access to the video.</p>
+<p><a href="#R-image-599e149923c2686e70dc18d6bca0c93a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/24831418089628.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-599e149923c2686e70dc18d6bca0c93a"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/24831418089628.png"></a></p>
+<h2 id="storage">Storage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>When uploading a recording or lesson to Online, it uses your storage space. 50 Recordings and lessons (total) are free. You can manage your storage quota on this page.</p>
+<p>If you are having problems uploading recordings, your storage quota may be full, in that case you will have to either purchase a storage upgrade subscription, or delete existing recordings to make room for new ones.</p>
+<p><a href="#R-image-0d031a0aeae16379af98976d9a27901c" class="lightbox-link"><img alt="firefox_2021-11-26_09-32-51.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-32-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d031a0aeae16379af98976d9a27901c"><img alt="firefox_2021-11-26_09-32-51.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-32-51-png.png"></a></p>
+<p>If your storage quota is filled up you will be presented with a warning in the Explorer page.</p>
+<p><a href="#R-image-3d9acd2675404676e11682cfdb1fffd4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/24831370349212.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d9acd2675404676e11682cfdb1fffd4"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/24831370349212.png"></a></p>
+<h2 id="editing-your-profile">Editing your profile<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-f1c4f2ebee6fc9fea8783a100408c6fe" class="lightbox-link"><img alt="firefox_2021-11-26_09-35-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-35-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1c4f2ebee6fc9fea8783a100408c6fe"><img alt="firefox_2021-11-26_09-35-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-35-01-png.png"></a></p>
+<p><a href="#R-image-c242656c3c5f873e7e4abef597271206" class="lightbox-link"><img alt="firefox_2021-11-25_13-29-29.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-25-13-29-29-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c242656c3c5f873e7e4abef597271206"><img alt="firefox_2021-11-25_13-29-29.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-25-13-29-29-png.png"></a></p>
+<h2 id="viewing-your-licenses">Viewing your licenses<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>All Swing Catalyst licenses are tied to an Online account. Perhaps you&rsquo;ve lost your license key? You can log in to Online and view the licenses directly from the &ldquo;View Licenses&rdquo; button.</p>
+<p>Please note that in order to cancel your license this must be done through our shop.</p>
+<p>Please see our article: <a href="../account-setup/manage-subscriptions.md">How to manage your subscriptions.</a></p>
+<p><a href="#R-image-2e20f0f1361d3ce4a736e4f1cd472d87" class="lightbox-link"><img alt="firefox_2021-11-26_09-35-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-35-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e20f0f1361d3ce4a736e4f1cd472d87"><img alt="firefox_2021-11-26_09-35-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410803508626/firefox-2021-11-26-09-35-59-png.png"></a></p>
+<hr>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/en/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Support</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/getting-started/index.html"><a class="padding default-animation" href="/sc-support/en/getting-started/index.html">Getting Started</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/en/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/en/software-features/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/index.html">Software &amp; Features</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="parent alwaysopen " data-nav-id="/sc-support/en/software-features/recording-export/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/recording-export/index.html">Recording &amp; Export</a><ul id="R-subsections-389e7819eaf6edeb83e633463d6bf938" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/export-recordings/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/export-recordings/index.html">Export recordings</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/change-recording-user/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/change-recording-user/index.html">How to change the user on a existing recording</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/export-raw-data/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/export-raw-data/index.html">How to export raw data</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/export-contacts/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/export-contacts/index.html">How to export student contact information</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/import-from-v1/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/import-from-v1/index.html">How to Import videos from V1</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/record-a-lesson/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/record-a-lesson/index.html">How to record a lesson</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/email-sharing/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/email-sharing/index.html">How to set up email sharing in Swing Catalyst</a></li>
+            <li class="active " data-nav-id="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html">How to use Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/ios-app-sharing/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/ios-app-sharing/index.html">Sharing recorded videos with the Swing Catalyst app for iOS</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/bookmarks/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/bookmarks/index.html">What are bookmarks?</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/raw-data-export-guide/index.html">What is included in the raw data export</a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/software-features/motion-capture/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/motion-capture/index.html">Motion Capture</a><ul id="R-subsections-cb6f98da72eeb199eca24d21772eee2e" class="collapsible-menu"></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/software-features/data-analysis/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/data-analysis/index.html">Data &amp; Analysis</a><ul id="R-subsections-dae222f9a14c57b07343dc6fee85e824" class="collapsible-menu"></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/software-features/setup-configuration/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/setup-configuration/index.html">Setup &amp; Configuration</a><ul id="R-subsections-e3182db2f7f022117c20d684e78c4445" class="collapsible-menu"></ul></li></ul></li>
+            <li class="" data-nav-id="/sc-support/en/account-setup/index.html"><a class="padding default-animation" href="/sc-support/en/account-setup/index.html">Account &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/reference/index.html"><a class="padding default-animation" href="/sc-support/en/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html" lang="en" selected data-selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542919" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

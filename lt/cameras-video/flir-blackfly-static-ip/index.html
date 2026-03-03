@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="531">
     <meta itemprop="keywords" content="Gige-Camera,Flir">
     <title>Kaip nustatyti statinį IP FLIR Blackfly GigE kameroms :: Swing Catalyst Pagalba</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="fr">
@@ -61,26 +60,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537840" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537840" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537840" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542956" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542956" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772537840";
+      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772542956";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537840" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542956" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,28 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#spinnaker-diegimas">Spinnaker diegimas</a></li>
+    <li><a href="#statinio-ip-nustatymas-ethernet-adapteriui">Statinio IP nustatymas „Ethernet&quot; adapteriui</a></li>
+    <li><a href="#rekomenduojama-statinė-ip-konfigūracija">Rekomenduojama statinė IP konfigūracija</a></li>
+    <li><a href="#statinio-ip-nustatymas-kamerai">Statinio IP nustatymas kamerai</a>
+      <ul>
+        <li><a href="#spinview_"><img src="../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" alt="SpinView_WPF_v140_76YBSasBIN.png"></a></li>
+        <li><a href="#rekomenduojama-statinė-ip-konfigūracija-kameroms">Rekomenduojama statinė IP konfigūracija kameroms</a></li>
+      </ul>
+    </li>
+    <li><a href="#spinview-naudojimas-jumbo-kadrų-įjungimui-ir-tinklo-adapterių-optimizavimui-kameroms">„SpinView&quot; naudojimas jumbo kadrų įjungimui ir tinklo adapterių optimizavimui kameroms</a></li>
+    <li><a href="#sharex_"><img src="../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png" alt="ShareX_ZAAgAqcrm3.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/index.html"><span itemprop="name">Swing Catalyst Palaikymas</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/cameras-video/index.html"><span itemprop="name">Kameros ir vaizdo įrašai</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kaip nustatyti statinį IP FLIR Blackfly GigE kameroms</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -229,25 +250,25 @@
 <p>Baigę paleiskite kompiuterį iš naujo.</p>
 </li>
 </ul>
-<p><a href="#R-image-a0baa2c7acd975b0eea2d3877920dc97" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0baa2c7acd975b0eea2d3877920dc97"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
+<p><a href="#R-image-dffd8a2d2688c98eb41e4fc4ee7ef62b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dffd8a2d2688c98eb41e4fc4ee7ef62b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
 <h2 id="statinio-ip-nustatymas-ethernet-adapteriui">Statinio IP nustatymas „Ethernet&quot; adapteriui<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Kiekviena kamera ir tinklo adapteris turi turėti savo unikalų statinį IP adresą. Pavyzdžiui, jei kameroms priskiriate statinius IP adresus, įsitikinkite, kad tinklo adapteris sukonfigūruotas su atitinkamu IP iš žemiau pateiktos „rekomenduojamos statinės IP konfigūracijos&quot; lentelės.</p>
 <p><strong>Įspėjimas</strong></p>
 <p>Konfigūruokite tinklo adapterius pagal susietą kamerą, o ne pagal adapterio numerį. Keiskite nustatymus tik identifikuotoms kameroms; kitus palikite nepakeistus. Jei kamerą prijungiate prie kito adapterio, reikalinga perkonfigūracija, kad funkcijos veiktų tinkamai.</p>
 <p>Valdymo skyde eikite į „Tinklas ir internetas&quot;, tada į „Tinklo ir bendrinimo centras&quot; ir spustelėkite „Keisti adapterio parametrus&quot;.</p>
-<p><a href="#R-image-a1aa90f379b1fac8a2d7f32de7ffdc2b" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a1aa90f379b1fac8a2d7f32de7ffdc2b"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
-<p><a href="#R-image-f835c730285c6082441a7f65126472c9" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f835c730285c6082441a7f65126472c9"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
+<p><a href="#R-image-db11ccf996bfc8c89082f865fe1aefd5" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-db11ccf996bfc8c89082f865fe1aefd5"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
+<p><a href="#R-image-d6d49175350b51f3ca60c18223028e84" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d6d49175350b51f3ca60c18223028e84"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
 <p>Čia matome kompiuteryje esančių tinklo adapterių sąrašą. Mūsų atveju norime sukonfigūruoti „Ethernet 2&quot; ir „Ethernet 3&quot; su įrenginio pavadinimu „Intel Pro/1000&quot;. Svarbu konfigūruoti tik kameroms naudojamus tinklo adapterius ir nepaliesti kitų, nes tai gali paveikti interneto ryšį.</p>
 <p>Dešiniuoju pelės mygtuku spustelėkite tinklo adapterį, kurį norite keisti, ir spustelėkite „Ypatybės&quot;, tada slinkite žemyn iki „Internet Protocol Version 4 (TCP/IPv4)&quot; ir spustelėkite „Ypatybės&quot;.</p>
-<p><a href="#R-image-3aa59abb536bc55bf3416bbb5def0bf6" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3aa59abb536bc55bf3416bbb5def0bf6"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
-<p><a href="#R-image-662944112ffa002cdcc7b53d2f78444e" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-662944112ffa002cdcc7b53d2f78444e"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
-<p><a href="#R-image-c2eb46b8a90294c80e8f6e21e5755a69" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2eb46b8a90294c80e8f6e21e5755a69"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
+<p><a href="#R-image-361b756d27823d14c6a64faf930369d3" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-361b756d27823d14c6a64faf930369d3"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
+<p><a href="#R-image-94d3954cc057c93f09276e37e33e53f4" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94d3954cc057c93f09276e37e33e53f4"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
+<p><a href="#R-image-9aaaf65b137ff3ccaecfc5df01a8c54e" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9aaaf65b137ff3ccaecfc5df01a8c54e"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
 <ul>
 <li>
 <p>Pasirinkite „Naudoti šį IP adresą&quot;.</p>
@@ -315,10 +336,10 @@
 <p>Šliuzas gali būti nustatytas ir kameroje.</p>
 <h2 id="statinio-ip-nustatymas-kamerai">Statinio IP nustatymas kamerai<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Pakartokite šiuos veiksmus visoms kitoms kameroms, kurioms norite nustatyti statinį IP. Norėdami pasiekti kameros IP konfigūraciją, atidarykite „SpinView&quot; programą ir dešiniuoju pelės mygtuku spustelėkite kamerą, kurią norite konfigūruoti.</p>
-<p><a href="#R-image-babff599f8f1321c0745e3074c31d522" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-babff599f8f1321c0745e3074c31d522"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
-<h3 id="spinview_"><a href="#R-image-0c1d4e4c0129bb48c067c81567bd9282" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c1d4e4c0129bb48c067c81567bd9282"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-1b566bc93c44edf6287936c85fafbd9f" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b566bc93c44edf6287936c85fafbd9f"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
+<h3 id="spinview_"><a href="#R-image-1f31a456961f523042d5ebafce6cbe4d" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f31a456961f523042d5ebafce6cbe4d"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Įrenginių sąraše dešiniuoju pelės mygtuku spustelėkite kamerą ir pasirinkite „GigE Configuration&quot;.</p>
@@ -345,8 +366,8 @@
 <p>Spustelėkite „Set Current and Persistent IP Configuration&quot;.</p>
 </li>
 </ul>
-<p><a href="#R-image-6dae267bc75d65a56c940e2fbde085ea" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6dae267bc75d65a56c940e2fbde085ea"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
+<p><a href="#R-image-9f804376bf05eaf742ab904be0e68390" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f804376bf05eaf742ab904be0e68390"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
 <h3 id="rekomenduojama-statinė-ip-konfigūracija-kameroms">Rekomenduojama statinė IP konfigūracija kameroms<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
@@ -417,16 +438,16 @@
 <p>Spustelėkite „Configure&quot;, kad pritaikytumėte pakeitimus.</p>
 </li>
 </ul>
-<h2 id="sharex_"><a href="#R-image-9616f5f23642180ee1a24a8f4e36d615" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9616f5f23642180ee1a24a8f4e36d615"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-d19f05aeb5bd30345cbf77c038f0f66c" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d19f05aeb5bd30345cbf77c038f0f66c"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
-<p><a href="#R-image-c6cbff0ddf6d4b03513fecec5cd80f4a" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6cbff0ddf6d4b03513fecec5cd80f4a"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
-<p><a href="#R-image-10aa81e78c3d131890745948b1a350aa" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-10aa81e78c3d131890745948b1a350aa"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
-<p><a href="#R-image-3b8ca0abd5a8d31ab1cef07e64a093f0" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b8ca0abd5a8d31ab1cef07e64a093f0"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
+<h2 id="sharex_"><a href="#R-image-81a968574b927781792fcf4f1a227f2d" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-81a968574b927781792fcf4f1a227f2d"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-c12f9e542841a382d3fd871ede9c92c9" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c12f9e542841a382d3fd871ede9c92c9"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
+<p><a href="#R-image-2d7b132e05febac0b37b70d6c7055cdd" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2d7b132e05febac0b37b70d6c7055cdd"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
+<p><a href="#R-image-7751454bc06f2e573ffdbd84b6510cff" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7751454bc06f2e573ffdbd84b6510cff"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
+<p><a href="#R-image-28ae19b4da32bb8fe1e2e9f076109b3c" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-28ae19b4da32bb8fe1e2e9f076109b3c"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
 <hr>
 <p><em>Paskutinį kartą atnaujinta: 2024-02-22</em> | <a href="/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html">Peržiūrėti oficialioje pagalbos svetainėje</a></p>
 
@@ -537,7 +558,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" lang="fr">Français</option>
@@ -599,8 +619,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542956" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="597">
     <meta itemprop="keywords" content="Gige-Camera,Flir">
     <title>Kako podesiti statičku IP adresu na FLIR Blackfly GigE kamerama :: Подршка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="fr">
@@ -61,26 +60,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537838" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537838" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537838" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537838" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537838" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542954" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542954" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542954" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542954" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542954" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.sr.js?1772537838";
+      window.relearn.index_js_url="/sc-support/searchindex.sr.js?1772542954";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537838" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537838" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537838" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542954" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542954" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542954" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537838" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537838" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537838" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537838" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537838" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542954" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542954" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542954" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542954" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542954" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,28 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#instalacija-spinnaker-a">Instalacija Spinnaker-a</a></li>
+    <li><a href="#podešavanje-statičke-ip-adrese-na-mrežnom-adapteru">Podešavanje statičke IP adrese na mrežnom adapteru</a></li>
+    <li><a href="#preporučena-statička-ip-konfiguracija">Preporučena statička IP konfiguracija</a></li>
+    <li><a href="#podešavanje-statičke-ip-adrese-na-kameri">Podešavanje statičke IP adrese na kameri</a>
+      <ul>
+        <li><a href="#spinview_"><img src="../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" alt="SpinView_WPF_v140_76YBSasBIN.png"></a></li>
+        <li><a href="#preporučena-statička-ip-konfiguracija-za-kamere">Preporučena statička IP konfiguracija za kamere</a></li>
+      </ul>
+    </li>
+    <li><a href="#korišćenje-spinview-a-za-omogućavanje-jumbo-frejmova-i-optimizaciju-mrežnih-adaptera-za-kamere">Korišćenje SpinView-a za omogućavanje jumbo frejmova i optimizaciju mrežnih adaptera za kamere</a></li>
+    <li><a href="#sharex_"><img src="../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png" alt="ShareX_ZAAgAqcrm3.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sr/index.html"><span itemprop="name">Swing Catalyst Podrška</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sr/cameras-video/index.html"><span itemprop="name">Kamere i video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kako podesiti statičku IP adresu na FLIR Blackfly GigE kamerama</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -229,25 +250,25 @@
 <p>Nakon završetka, ponovo pokrenite računar.</p>
 </li>
 </ul>
-<p><a href="#R-image-f499d731e7f4226c7bd3987ca8ecfc7e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f499d731e7f4226c7bd3987ca8ecfc7e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
+<p><a href="#R-image-a44654974ab8a89f832fd557a7af5d8b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a44654974ab8a89f832fd557a7af5d8b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
 <h2 id="podešavanje-statičke-ip-adrese-na-mrežnom-adapteru">Podešavanje statičke IP adrese na mrežnom adapteru<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Svaka kamera i mrežni adapter moraju imati svoju jedinstvenu statičku IP adresu. Na primer, ako dodelite statičku IP adresu kamerama, uverite se da je mrežni adapter konfigurisan sa odgovarajućom IP adresom iz matrice „preporučene statičke IP konfiguracije&quot; ispod.</p>
 <p><strong>Upozorenje</strong></p>
 <p>Konfigurišite mrežne adaptere na osnovu povezane kamere, a ne prema broju adaptera. Menjajte podešavanja samo za identifikovane kamere; ostale ostavite nepromenjene. Ako povežete kameru na drugi adapter, potrebna je ponovna konfiguracija radi ispravnog funkcionisanja.</p>
 <p>U Kontrolnoj tabli idite na „Mreža i internet&quot;, zatim na „Centar za mrežu i deljenje&quot;, pa kliknite na „Promeni podešavanja adaptera&quot;.</p>
-<p><a href="#R-image-a5e272febf4d21680b3445eafe64f4df" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5e272febf4d21680b3445eafe64f4df"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
-<p><a href="#R-image-3696709f52307239ec6f6bb39007963f" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3696709f52307239ec6f6bb39007963f"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
+<p><a href="#R-image-153ece39f3f452b002d5a967a6d5aa9c" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-153ece39f3f452b002d5a967a6d5aa9c"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
+<p><a href="#R-image-f8c9c96b41afeafd0062658b9738c95e" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f8c9c96b41afeafd0062658b9738c95e"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
 <p>Ovde možemo videti listu mrežnih adaptera prisutnih na računaru. U našem slučaju želimo da konfigurišemo Ethernet 2 i Ethernet 3, sa nazivom uređaja „Intel Pro/1000&quot;. Važno je da konfigurišemo samo mrežne adaptere koji se koriste za kamere, a ne i ostale, jer bi to moglo uticati na internet vezu.</p>
 <p>Kliknite desnim tasterom miša na mrežni adapter koji želite da izmenite i kliknite na „Svojstva&quot;, zatim se pomerite do „Internet Protocol Version 4 (TCP/IPv4)&quot; i kliknite na „Svojstva&quot;.</p>
-<p><a href="#R-image-ba184c83928cf372c7d2c5697e2a2e6f" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba184c83928cf372c7d2c5697e2a2e6f"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
-<p><a href="#R-image-b29525c4b299629d4ece9dd1187f3f0f" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b29525c4b299629d4ece9dd1187f3f0f"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
-<p><a href="#R-image-12ac3e4346339515ef4eb18a585bd8b6" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-12ac3e4346339515ef4eb18a585bd8b6"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
+<p><a href="#R-image-5e1c92c93f5d1c59871d05bba87f997d" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e1c92c93f5d1c59871d05bba87f997d"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
+<p><a href="#R-image-4722cf28738a57005ea9d91deb79536a" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4722cf28738a57005ea9d91deb79536a"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
+<p><a href="#R-image-088a90b7d45ebf9811d01abe257c4ab3" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-088a90b7d45ebf9811d01abe257c4ab3"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
 <ul>
 <li>
 <p>Izaberite „Koristi sledeću IP adresu&quot;.</p>
@@ -315,10 +336,10 @@
 <p>Mrežni prolaz može biti podešen i na kameri.</p>
 <h2 id="podešavanje-statičke-ip-adrese-na-kameri">Podešavanje statičke IP adrese na kameri<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Ponovite ove korake za sve ostale kamere na kojima želite da podesite statičku IP adresu. Da biste pristupili konfiguraciji IP adrese kamere, otvorite aplikaciju SpinView i kliknite desnim tasterom miša na kameru koju želite da konfigurišete.</p>
-<p><a href="#R-image-68576131b24f9a6a14d0ffe4676ea167" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-68576131b24f9a6a14d0ffe4676ea167"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
-<h3 id="spinview_"><a href="#R-image-4114f46568654434fed3b34907974e22" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4114f46568654434fed3b34907974e22"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-a1f1895eeb365f16f26812709e865845" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a1f1895eeb365f16f26812709e865845"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
+<h3 id="spinview_"><a href="#R-image-ca1e0856093cfa38dad327eb78df9cfc" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ca1e0856093cfa38dad327eb78df9cfc"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Kliknite desnim tasterom miša na kameru u listi uređaja i izaberite „GigE Configuration&quot;.</p>
@@ -345,8 +366,8 @@
 <p>Kliknite na „Set Current and Persistent IP Configuration&quot;.</p>
 </li>
 </ul>
-<p><a href="#R-image-c552a586614fd79b4e709f9c95bcfdcd" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c552a586614fd79b4e709f9c95bcfdcd"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
+<p><a href="#R-image-469d4427e834e9c99b7579af58846c25" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-469d4427e834e9c99b7579af58846c25"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
 <h3 id="preporučena-statička-ip-konfiguracija-za-kamere">Preporučena statička IP konfiguracija za kamere<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
@@ -417,16 +438,16 @@
 <p>Kliknite „Configure&quot; da biste primenili izmene.</p>
 </li>
 </ul>
-<h2 id="sharex_"><a href="#R-image-ef1afa3076d89bfdf57ddb7f3bb5ec4b" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef1afa3076d89bfdf57ddb7f3bb5ec4b"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-d21c5b5fac8651bdc501c77bbcf8d681" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d21c5b5fac8651bdc501c77bbcf8d681"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
-<p><a href="#R-image-28d73c25cae5ae8e703fdc32a9c4da0c" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-28d73c25cae5ae8e703fdc32a9c4da0c"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
-<p><a href="#R-image-3fe533df5d27940f2c365f5b17df0e16" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fe533df5d27940f2c365f5b17df0e16"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
-<p><a href="#R-image-487b7d88c68fc70b22d14704b03240b3" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-487b7d88c68fc70b22d14704b03240b3"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
+<h2 id="sharex_"><a href="#R-image-d43dfffed4039c40a1896bd67343d9fc" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d43dfffed4039c40a1896bd67343d9fc"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-790670c44f54e88c7e80cc4c36da3bae" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-790670c44f54e88c7e80cc4c36da3bae"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
+<p><a href="#R-image-2bd8ba25d0481012c8b62290f962814a" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2bd8ba25d0481012c8b62290f962814a"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
+<p><a href="#R-image-f488cc9800f93141d57a5395d31f08f3" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f488cc9800f93141d57a5395d31f08f3"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
+<p><a href="#R-image-5ec4e4b5036c4c8506105d74b0a871b7" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ec4e4b5036c4c8506105d74b0a871b7"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
 <hr>
 <p><em>Poslednje ažuriranje: 2024-02-22</em> | <a href="/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html">Pogledaj na zvaničnom sajtu podrške</a></p>
 
@@ -537,7 +558,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" lang="fr">Français</option>
@@ -599,8 +619,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537838" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537838" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542954" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542954" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="662">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
     <title>Kaip sukonfigūruoti „Basler GigE&#34; kameras su Swing Catalyst :: Swing Catalyst Pagalba</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537840" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537840" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537840" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542956" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542956" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772537840";
+      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772542956";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537840" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542956" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,28 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#ip-adreso-nustatymas-kameroms">IP adreso nustatymas kameroms</a></li>
+    <li><a href="#ipconfigurator_"><img src="../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" alt="IpConfigurator_2018-12-03_12-38-59.png"></a></li>
+    <li><a href="#basler-gige-kamerų-konfigūravimas-per-halcon">„Basler GigE&quot; kamerų konfigūravimas per „Halcon&quot;</a></li>
+    <li><a href="#basler-gige-kamerų-paruošimas">„Basler GigE&quot; kamerų paruošimas:</a>
+      <ul>
+        <li><a href="#ekspozicijos-reikšmių-nustatymas">Ekspozicijos reikšmių nustatymas</a></li>
+        <li><a href="#gain-reikšmių-nustatymas">Gain reikšmių nustatymas</a></li>
+        <li><a href="#vaizdo-dydžio-srities-ir-region-of-interest-keitimas-bei-kita">Vaizdo dydžio, srities ir Region of Interest keitimas bei kita</a></li>
+        <li><a href="#nustatymų-išsaugojimas-kameroje">Nustatymų išsaugojimas kameroje</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/index.html"><span itemprop="name">Swing Catalyst Palaikymas</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/cameras-video/index.html"><span itemprop="name">Kameros ir vaizdo įrašai</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kaip sukonfigūruoti „Basler GigE&#34; kameras su Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -211,8 +232,8 @@
 <p>Įsitikinkite, kad SwingCatalyst yra leidžiamas tiek privačiuose, tiek viešuosiuose tinkluose „Windows Defender&quot; ugniasienėje.</p>
 <blockquote>
 <p><strong>example:</strong></p>
-<p><a href="#R-image-b56b98e929bad4176d35d1acbbdac51f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b56b98e929bad4176d35d1acbbdac51f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p></blockquote>
+<p><a href="#R-image-6ae3f1b85a0627d1c82b59904a9df436" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ae3f1b85a0627d1c82b59904a9df436"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p></blockquote>
 <h2 id="ip-adreso-nustatymas-kameroms">IP adreso nustatymas kameroms<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>IP paruošimas</strong></p>
 <p>Kiekviena kamera ir Ethernet kortelė (NIC / tinklo sąsajos valdiklis) turi būti sukonfigūruota su statiniais IP adresais skirtinguose potinkliuose (ir potinklio kauke).</p>
@@ -241,20 +262,20 @@ subnet mask: 255.255.255.0</code></pre></div>
 <p>Pirmiausia reikia nustatyti kameros IP adresą – tai atliekama naudojant „Pylon IP Configurator&quot;.</p>
 <p>Paspauskite klaviatūros mygtuką „Start&quot; ir įveskite <strong>pylon ip</strong> – turėtų pasirodyti IP Configurator. Jei neatsiranda, greičiausiai ši programinė įranga nėra įdiegta.</p>
 <p>Norėdami įdiegti „Pylon&quot; programinę įrangą, žr.: <a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external"></a><a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external">https://www.baslerweb.com/en/sales-support/downloads/software-downloads/</a> ir ieškokite: <strong>pylon 5.1.0 Camera Software Suite Windows</strong>.</p>
-<p><a href="#R-image-c89a62a84acc481710e71fe516f6ea08" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c89a62a84acc481710e71fe516f6ea08"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
+<p><a href="#R-image-170b4804e460d599148e156b6ee19495" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-170b4804e460d599148e156b6ee19495"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
 <p>Spustelėkite ant kameros, tada pasirinkite <strong>Static IP</strong>.</p>
-<h2 id="ipconfigurator_"><a href="#R-image-284462d233d7674ec7eba9eb471ad336" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-284462d233d7674ec7eba9eb471ad336"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="ipconfigurator_"><a href="#R-image-417108b411c4cc8d91e0d517d5ad5032" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-417108b411c4cc8d91e0d517d5ad5032"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nustatykite kameros IP adresą ir potinklio kaukę pagal aukščiau pateiktą pavyzdį.</p>
 <blockquote>
 <p><strong>note:</strong> Jei naudojate kelias kameras, tai turite padaryti kiekvienai iš jų.</p></blockquote>
-<p><a href="#R-image-b39ca714653955dc20d0f8ea7ee58b72" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b39ca714653955dc20d0f8ea7ee58b72"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
+<p><a href="#R-image-7ce53c2da30a9878ab0a21c409b3f0b2" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7ce53c2da30a9878ab0a21c409b3f0b2"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
 <h2 id="basler-gige-kamerų-konfigūravimas-per-halcon">„Basler GigE&quot; kamerų konfigūravimas per „Halcon&quot;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Programoje SwingCatalyst eikite į skirtuką <strong>Settings</strong> (Nustatymai), tada į <strong>Cameras</strong> (Kameros).</p>
-<p><a href="#R-image-8e247c383f9e39fed112eb258fc8d83a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e247c383f9e39fed112eb258fc8d83a"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
+<p><a href="#R-image-519477e4aedf3b2b6dc8ead22b34112b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-519477e4aedf3b2b6dc8ead22b34112b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
 <p>Spustelėkite <strong>Advanced</strong> (Išsamiau).</p>
 <ul>
 <li>
@@ -264,33 +285,33 @@ subnet mask: 255.255.255.0</code></pre></div>
 <p>Įjunkite žymimąjį laukelį <strong>GtlNumBuffers</strong> ir įveskite reikšmę <strong>200</strong>.</p>
 </li>
 </ul>
-<p><a href="#R-image-6d15ba05095bee240c2b678f26552a79" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d15ba05095bee240c2b678f26552a79"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
+<p><a href="#R-image-49277db60d06b40896b5cc7bf86a3a1c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-49277db60d06b40896b5cc7bf86a3a1c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
 <h2 id="basler-gige-kamerų-paruošimas">„Basler GigE&quot; kamerų paruošimas:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Pažvelkime, kaip nustatyti ekspoziciją, užrakto greitį ir kadrų dažnį.</p>
 <blockquote>
 <p><strong>note:</strong> Jei negalite peržiūrėti nustatymų ir gaunate klaidą programoje SwingCatalyst, patikrinkite „Windows&quot; ugniasienės nustatymus. Pabandykite laikinai išjungti ugniasienę, kad patikrintumėte, ar ji neblokuoja SwingCatalyst prieigos prie kamerų.</p>
 <p>Jei nustatymai veikia ir galite transliuoti be problemų, įsitikinkite, kad SwingCatalyst leidžiamas tiek viešuosiuose, tiek privačiuose tinkluose „Windows Defender&quot; ugniasienėje.</p></blockquote>
 <p>Išskleiskite skirtuką <strong>AcquisitionTrigger</strong> ir įveskite maksimalų (arba mažesnį) kadrų dažnį, tada spustelėkite <strong>Enable Acquisition Frame Rate</strong>. Tai leis jums apibrėžti kadrų dažnį. Pastaba: kadrų dažnį gali riboti ekspozicijos reikšmės.</p>
-<p><a href="#R-image-b1a2db3a27977dad7d109eb1b4a009fb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b1a2db3a27977dad7d109eb1b4a009fb"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
+<p><a href="#R-image-ca75bbca2ee99cb91910eb1af5ad52c9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ca75bbca2ee99cb91910eb1af5ad52c9"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
 <h3 id="ekspozicijos-reikšmių-nustatymas">Ekspozicijos reikšmių nustatymas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Statinėse aplinkose, pvz., uždarose studijose, paprastai geriausia naudoti rankinę ekspoziciją. Visiškai automatinė ekspozicija gali pakeisti kadrų dažnį ir sukelti netolydinį vaizdą. Šiuo atveju nenaudojame automatinės ekspozicijos, nes norime patys ją valdyti. Paprastai rekomenduojamas ekspozicijos laikas yra mažesnis nei 2000 (2 ms).</p>
 <h3 id="gain-reikšmių-nustatymas">Gain reikšmių nustatymas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Panašiai kaip ir su ekspozicija, statinės / uždaros patalpos apšvietimo sąlygomis geriausia nustatyti rankinį Gain. Kuo didesnė ekspozicija, tuo daugiau grūdelių bus vaizde ir tuo ilgiau užtruks vaizdo įrašo kodavimas, palyginti su mažu Gain.</p>
 <p>Norėdami nustatyti rankinį Gain, pakeiskite <strong>Gain Auto</strong> iš <strong>Continuous</strong> į <strong>Off</strong>, tada sustabdykite ir paleiskite atkūrimą iš naujo, kad nustatymai būtų įkelti. Nustatykite Gain reikšmes keisdami skaitmeninius laukus skiltyje <strong>Gain (Raw)</strong>.</p>
-<p><a href="#R-image-de8d227c8d7207f6c34a751605226dc8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-de8d227c8d7207f6c34a751605226dc8"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
+<p><a href="#R-image-34a5fa4119c6d51beebe7a90fec69e7b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-34a5fa4119c6d51beebe7a90fec69e7b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
 <h3 id="vaizdo-dydžio-srities-ir-region-of-interest-keitimas-bei-kita">Vaizdo dydžio, srities ir Region of Interest keitimas bei kita<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Kai kuriais atvejais norima sumažinti vaizdo dydį, kad būtų galima sutelkti dėmesį į konkrečią vaizdo sritį, pavyzdžiui, norima detaliai matyti lazdelę ir kamuoliuką Smūgio metu.</p>
 <p>Tai galima padaryti naudojant srities domėjimosi funkciją, dar žinomą kaip AOI, ir ROI – Region of Interest. Sumažinus bendrą vaizdo dydį naudojant šią funkciją, taip pat galima padidinti kadrų dažnį.</p>
-<p><a href="#R-image-8f4cf809e67e026de838ca5e8634479d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f4cf809e67e026de838ca5e8634479d"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
+<p><a href="#R-image-d69077e341324c5dd15aed2640ed1b42" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d69077e341324c5dd15aed2640ed1b42"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
 <h3 id="nustatymų-išsaugojimas-kameroje">Nustatymų išsaugojimas kameroje<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Svarbu išsaugoti nustatymus kameroje. Jei to nepadarysite, visi atlikti konfigūravimo pakeitimai bus prarasti.</p>
 <p>Įsitikinkite, kad nustatėte <strong>Default Set Selector</strong> ir <strong>Default Startup Set</strong>. Galima rinktis iš skirtingų naudotojo rinkinių ir teoriškai kiekviename rinkinyje galima išsaugoti skirtingus nustatymus. T. y. galite pasirinkti „User Set 1&quot; kaip numatytąjį, tada spustelėti <strong>User Set Save</strong>, kad išsaugotumėte dabartinius nustatymus tame profilyje.</p>
-<p><a href="#R-image-35fd588c45576f8f0b77a87b64c34dc1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-35fd588c45576f8f0b77a87b64c34dc1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
+<p><a href="#R-image-ffe81c2e4668b19b251e6ae5f3942007" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ffe81c2e4668b19b251e6ae5f3942007"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
 <hr>
 <p><em>Paskutinį kartą atnaujinta: 2022-10-10</em> | <a href="/sc-support/lt/cameras-video/basler-gige-setup/index.html">Peržiūrėti oficialioje pagalbos svetainėje</a></p>
 
@@ -401,7 +422,6 @@ subnet mask: 255.255.255.0</code></pre></div>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/basler-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/basler-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/basler-gige-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/basler-gige-setup/index.html" lang="fr">Français</option>
@@ -463,8 +483,8 @@ subnet mask: 255.255.255.0</code></pre></div>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542956" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

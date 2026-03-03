@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="476">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Motion-Plate">
     <title>Instalace a nastavení 3D Motion Plate :: Podpora Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537834" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537834" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537834" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542949" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542949" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772537834";
+      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772542949";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537834" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542949" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,30 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Obsah (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#instalace">Instalace</a></li>
+    <li><a href="#připojení-desky">Připojení desky</a>
+      <ul>
+        <li><a href="#kalibrace--vynulování">Kalibrace / Vynulování</a></li>
+      </ul>
+    </li>
+    <li><a href="#kalibrační-test">Kalibrační test</a></li>
+    <li><a href="#odstraňování-problémů">Odstraňování problémů</a>
+      <ul>
+        <li><a href="#data-o-tlaku-a-síle-nejsou-srovnána-nebo-kalibrace-selhává">Data o tlaku a síle nejsou srovnána nebo kalibrace selhává</a></li>
+        <li><a href="#dobrá-data-vs-špatná-data">Dobrá data vs. špatná data</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/hardware/index.html"><span itemprop="name">Hardware</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Instalace a nastavení 3D Motion Plate</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -213,12 +236,12 @@ Pro nastavení Motion Plate a její používání si přečtěte PDF Průvodce z
 <h2 id="připojení-desky">Připojení desky<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Připojte oba USB kabely k počítači a přejděte do Swing Catalyst Nastavení -&gt; Hardware.</p>
 <p>Deska by měla být automaticky rozpoznána:</p>
-<p><a href="#R-image-e03691755e76809ed8f0639822cbe7b9" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-31-58" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e03691755e76809ed8f0639822cbe7b9"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-31-58" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png"></a></p>
+<p><a href="#R-image-6becc64f50f39543ff98e18aeb673777" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-31-58" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6becc64f50f39543ff98e18aeb673777"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-31-58" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png"></a></p>
 <p>Deska je nyní automaticky rozpoznána, ale není zkalibrována. Aby bylo možné desku zkalibrovat, musí být správně nainstalována a ve vodorovné poloze.</p>
 <h3 id="kalibrace--vynulování">Kalibrace / Vynulování<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-cbeb48110f4f8ada967b09fea04b9e54" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-32-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cbeb48110f4f8ada967b09fea04b9e54"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-32-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png"></a></p>
+<p><a href="#R-image-983704042e574d7818e6214f5a939c8c" class="lightbox-link"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-32-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-983704042e574d7818e6214f5a939c8c"><img alt="Snímek obrazovky MotionCatalyst 2021-08-13 12-32-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png"></a></p>
 <p>Ujistěte se, že se nic nedotýká desky, a klikněte na Kalibrovat.</p>
 <p>Tím se vynuluje silová deska. Pokud Kalibrace selže, podívejte se prosím do naší sekce <a href="/sc-support/cs/hardware/setup-3d-motion-plate/index.html#troubleshooting">odstraňování problémů</a>.</p>
 <h2 id="kalibrační-test">Kalibrační test<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -239,8 +262,8 @@ Pro nastavení Motion Plate a její používání si přečtěte PDF Průvodce z
 </li>
 </ul>
 <p>Příklad srovnání bodu tlaku s bodem Středu Tlaku:</p>
-<p><a href="#R-image-96b17fccc0ddd759bde5a1cff65e8794" class="lightbox-link"><img alt="Snímek obrazovky průzkumníka 2021-08-13 12-26-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/explorer-2021-08-13-12-26-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-96b17fccc0ddd759bde5a1cff65e8794"><img alt="Snímek obrazovky průzkumníka 2021-08-13 12-26-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/explorer-2021-08-13-12-26-36-png.png"></a></p>
+<p><a href="#R-image-44683f85770e5381005b3e7c7b510a62" class="lightbox-link"><img alt="Snímek obrazovky průzkumníka 2021-08-13 12-26-36" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/explorer-2021-08-13-12-26-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-44683f85770e5381005b3e7c7b510a62"><img alt="Snímek obrazovky průzkumníka 2021-08-13 12-26-36" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/explorer-2021-08-13-12-26-36-png.png"></a></p>
 <h2 id="odstraňování-problémů">Odstraňování problémů<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="data-o-tlaku-a-síle-nejsou-srovnána-nebo-kalibrace-selhává">Data o tlaku a síle nejsou srovnána nebo kalibrace selhává<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Pokud se bod COP neshoduje s bodem tlaku, deska pravděpodobně není ve vodorovné poloze nebo něco na ni tlačí a brání jejímu volnému pohybu.</p>
@@ -264,8 +287,8 @@ Pro nastavení Motion Plate a její používání si přečtěte PDF Průvodce z
 <p>Pokud po dvou pokusech o úpravu Chodidla a opětovné kalibraci nejsou data srovnána a stále získáváte hodnoty odchýlené od nuly, odešlete prosím nový požadavek: náš tým podpory</p>
 <h3 id="dobrá-data-vs-špatná-data">Dobrá data vs. špatná data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Toto je příklad dobrých dat – v datech je přítomen velmi malý šum nebo jakýkoli náznak toho, že něco brání pohybu desky.</p>
-<p><a href="#R-image-8182382287981ad92e0ec784fae5031d" class="lightbox-link"><img alt="Snímek obrazovky 2020-09-01 16-13-04" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/2020-09-01-16-13-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8182382287981ad92e0ec784fae5031d"><img alt="Snímek obrazovky 2020-09-01 16-13-04" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/2020-09-01-16-13-04-png.png"></a></p>
+<p><a href="#R-image-8dc600cac7359f6cd3edd735b40796b2" class="lightbox-link"><img alt="Snímek obrazovky 2020-09-01 16-13-04" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/2020-09-01-16-13-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8dc600cac7359f6cd3edd735b40796b2"><img alt="Snímek obrazovky 2020-09-01 16-13-04" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/2020-09-01-16-13-04-png.png"></a></p>
 <p>Příklad špatného vynulování zde:</p>
 <p>Šum z napájecích zdrojů nebo špatné uzemnění může také způsobit šum podobný výše zobrazenému. Více podrobností naleznete zde: <a href="/sc-support/cs/hardware/force-plate-troubleshooting/index.html">force-plate-troubleshooting.md</a></p>
 <h4 id="přílohy">Přílohy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
@@ -363,7 +386,6 @@ Pro nastavení Motion Plate a její používání si přečtěte PDF Průvodce z
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Jazyk</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/setup-3d-motion-plate/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/setup-3d-motion-plate/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/setup-3d-motion-plate/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/setup-3d-motion-plate/index.html" lang="fr">Français</option>
@@ -425,8 +447,8 @@ Pro nastavení Motion Plate a její používání si přečtěte PDF Průvodce z
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542949" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

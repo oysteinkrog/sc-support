@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1336">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Hvordan konfigurere Point Grey / FLIR GigE (Blackfly)-kameraer med Swing Catalyst :: Swing Catalyst Støtte</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537822" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537822" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537822" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537822" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537822" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542935" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542935" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542935" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542935" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542935" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.nb.js?1772537822";
+      window.relearn.index_js_url="/sc-support/searchindex.nb.js?1772542935";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537822" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537822" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537822" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542935" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542935" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542935" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537822" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537822" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537822" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537822" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537822" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542935" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542935" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542935" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542935" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542935" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,34 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#krav">Krav:</a></li>
+        <li><a href="#installere-nettverkskortet">Installere nettverkskortet</a></li>
+      </ul>
+    </li>
+    <li><a href="#bilde-av-pcie-nettverkskort"><img src="../../assets/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" alt="Bilde av PCIe-nettverkskort"></a>
+      <ul>
+        <li><a href="#angi-ip-adresser-ved-hjelp-av-gige-configurator-verktøyet">&lt;&gt;Angi IP-adresser ved hjelp av GigE Configurator-verktøyet</a></li>
+        <li><a href="#optimalisere-nettverkskortet">Optimalisere nettverkskortet</a></li>
+        <li><a href="#angi-ip-adressen-til-kameraet">Angi IP-adressen til kameraet</a></li>
+      </ul>
+    </li>
+    <li><a href="#oppsett-av-mer-enn-1-kamera">Oppsett av mer enn 1 kamera</a></li>
+    <li><a href="#bruke-kameraetkameraene-i-swing-catalyst">Bruke kameraet/kameraene i Swing Catalyst</a></li>
+    <li><a href="#hvordan-endre-lukkerhastighet-og-andre-kamerainnstillinger">Hvordan endre lukkerhastighet og andre kamerainnstillinger</a></li>
+    <li><a href="#bruk-av-to-kameraer-på-en-nettverkssvitsj">Bruk av to kameraer på en nettverkssvitsj:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/nb/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/nb/cameras-video/index.html"><span itemprop="name">Kameraer og video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Hvordan konfigurere Point Grey / FLIR GigE (Blackfly)-kameraer med Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -231,72 +258,72 @@
 </ul>
 <p><strong>Merk:</strong> Når du installerer Flycap, må du sørge for at avmerkingsboksen for Point Grey Image Filter-driver er valgt.</p>
 <h3 id="installere-nettverkskortet">Installere nettverkskortet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h2 id="bilde-av-pcie-nettverkskort"><a href="#R-image-a6cfb8e937d0b7520ba5b9d4daa8b453" class="lightbox-link"><img alt="Bilde av PCIe-nettverkskort" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a6cfb8e937d0b7520ba5b9d4daa8b453"><img alt="Bilde av PCIe-nettverkskort" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="bilde-av-pcie-nettverkskort"><a href="#R-image-36bc82caf4dae9b7aa3d0c75d38c7cba" class="lightbox-link"><img alt="Bilde av PCIe-nettverkskort" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-36bc82caf4dae9b7aa3d0c75d38c7cba"><img alt="Bilde av PCIe-nettverkskort" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>For å installere nettverkskortet kan du se på trinnene som er beskrevet her: <a href="https://www.wikihow.com/Install-a-PCI-Card" rel="external">https://www.wikihow.com/Install-a-PCI-Card</a> – trinnene for å installere det doble nettvertskortet fra FLiR er omtrent de samme.</p>
 <h3 id="angi-ip-adresser-ved-hjelp-av-gige-configurator-verktøyet">&lt;&gt;Angi IP-adresser ved hjelp av GigE Configurator-verktøyet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Vi må konfigurere IP-adressene for både nettverkskortet (porten) og det tilkoblede kameraet.</p>
 <p>La oss starte med å sette opp nettverkskortet!</p>
 <ul>
-<li>Åpne Point Grey GigE Configurator-programmet. Det finner du i: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-882fa1c26bd57af97efd1924f55af6ab" class="lightbox-link"><img alt="Skjermbilde av Utforsker" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-882fa1c26bd57af97efd1924f55af6ab"><img alt="Skjermbilde av Utforsker" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
+<li>Åpne Point Grey GigE Configurator-programmet. Det finner du i: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-b99290ab0bb9c3f7be1274cd8112f342" class="lightbox-link"><img alt="Skjermbilde av Utforsker" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b99290ab0bb9c3f7be1274cd8112f342"><img alt="Skjermbilde av Utforsker" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
 </ul>
 <ol start="2">
 <li>Åpne Point Grey GigE Configurator-programmet og klikk på kameraet.</li>
 </ol>
-<p><a href="#R-image-c08adb36d68271fb6d970b13d9220adf" class="lightbox-link"><img alt="Skjermbilde av GigE Configurator med kameravalg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c08adb36d68271fb6d970b13d9220adf"><img alt="Skjermbilde av GigE Configurator med kameravalg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
+<p><a href="#R-image-755d7f8a4d6c440536551d0e534c3a4d" class="lightbox-link"><img alt="Skjermbilde av GigE Configurator med kameravalg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-755d7f8a4d6c440536551d0e534c3a4d"><img alt="Skjermbilde av GigE Configurator med kameravalg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
 <p>Legg merke til hvilket nettverkskort kameraet er koblet til (se markert i rødt).</p>
 <p>I vårt tilfelle er kameraet koblet til Ethernet 9.</p>
 <p>Klikk på Ethernet 9 under Nettverkskort i listen, som vist til venstre i skjermbildet ovenfor.</p>
 <p>Angi IP-adressen til nettverkskortet:</p>
 <p>Endre IP-adressen og nettmasken slik at de samsvarer med skjermbildet nedenfor, og klikk Set IP address / Subnet, deretter Ja og OK.</p>
-<p><a href="#R-image-b0daae60905aa189b207fbfd8ff08ec9" class="lightbox-link"><img alt="Skjermbilde av IP-oppsett for nettverkskort" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0daae60905aa189b207fbfd8ff08ec9"><img alt="Skjermbilde av IP-oppsett for nettverkskort" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
-<p><a href="#R-image-7f7903f849b1dee9cee4a11126b52119" class="lightbox-link"><img alt="Skjermbilde av bekreftelsesdialog for IP-oppsett" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f7903f849b1dee9cee4a11126b52119"><img alt="Skjermbilde av bekreftelsesdialog for IP-oppsett" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
+<p><a href="#R-image-2cb735b819b86ea84ae6515015c617a2" class="lightbox-link"><img alt="Skjermbilde av IP-oppsett for nettverkskort" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2cb735b819b86ea84ae6515015c617a2"><img alt="Skjermbilde av IP-oppsett for nettverkskort" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
+<p><a href="#R-image-0e24c3b8c319da055bde877be7aff70c" class="lightbox-link"><img alt="Skjermbilde av bekreftelsesdialog for IP-oppsett" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e24c3b8c319da055bde877be7aff70c"><img alt="Skjermbilde av bekreftelsesdialog for IP-oppsett" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
 <p>Nå har vi angitt IP-adressen til det første nettverkskortet. Neste trinn er å optimalisere innstillingene for nettverkskortet.</p>
 <h3 id="optimalisere-nettverkskortet">Optimalisere nettverkskortet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Som vist i skjermbildet nedenfor, legg merke til tallet i rødt kalt <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit" rel="external">MTU</a></p>
 <p>Vi må øke dette tallet. Klikk på Åpne nettverkstilkoblinger i det markerte området nedenfor.</p>
-<p><a href="#R-image-572e21f7c105420822a46afdb8cf29bb" class="lightbox-link"><img alt="Skjermbilde av GigE Configurator med MTU-verdi" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-572e21f7c105420822a46afdb8cf29bb"><img alt="Skjermbilde av GigE Configurator med MTU-verdi" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
+<p><a href="#R-image-90dac096380dd7bcdbd6f448beeb16d9" class="lightbox-link"><img alt="Skjermbilde av GigE Configurator med MTU-verdi" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-90dac096380dd7bcdbd6f448beeb16d9"><img alt="Skjermbilde av GigE Configurator med MTU-verdi" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
 <p>Klikk på fanen Avansert og finn Jumbo Packet, og sett verdien til 9014 byte.</p>
-<p><a href="#R-image-b53cf40ca860e7e2f4733afa7f40fad0" class="lightbox-link"><img alt="Skjermbilde av nettverkskortegenskaper med Jumbo Packet-innstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b53cf40ca860e7e2f4733afa7f40fad0"><img alt="Skjermbilde av nettverkskortegenskaper med Jumbo Packet-innstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
+<p><a href="#R-image-b88a909d747e646037d512a9eab1482b" class="lightbox-link"><img alt="Skjermbilde av nettverkskortegenskaper med Jumbo Packet-innstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b88a909d747e646037d512a9eab1482b"><img alt="Skjermbilde av nettverkskortegenskaper med Jumbo Packet-innstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
 <p>Endre Interrupt Moderation</p>
 <p>Sett Interrupt Moderation til Enabled</p>
-<p><a href="#R-image-fefcae2f3294dc1c8e5c904a9fdcd654" class="lightbox-link"><img alt="Skjermbilde av Interrupt Moderation-innstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fefcae2f3294dc1c8e5c904a9fdcd654"><img alt="Skjermbilde av Interrupt Moderation-innstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
+<p><a href="#R-image-8f1d86d8a505f779590e9c7c79f7f0d5" class="lightbox-link"><img alt="Skjermbilde av Interrupt Moderation-innstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f1d86d8a505f779590e9c7c79f7f0d5"><img alt="Skjermbilde av Interrupt Moderation-innstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
 <p>Klikk på Interrupt Moderation Rate og sett verdien til Extreme.</p>
 <p>Viktig: Hvis du skal bruke mer enn 2 kameraer, kan det hende du må sette Interrupt Moderation til Disabled for å unngå tapte rammer.</p>
 <h3 id="angi-ip-adressen-til-kameraet">Angi IP-adressen til kameraet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-f277d71f377957953eaf5996f3af0b6c" class="lightbox-link"><img alt="Skjermbilde av kameraliste i GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f277d71f377957953eaf5996f3af0b6c"><img alt="Skjermbilde av kameraliste i GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
+<p><a href="#R-image-955d7e187bb8b8082a86e7bb5593c9c6" class="lightbox-link"><img alt="Skjermbilde av kameraliste i GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-955d7e187bb8b8082a86e7bb5593c9c6"><img alt="Skjermbilde av kameraliste i GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
 <p>Klikk på kameraet som er tilgjengelig i listen (i vårt tilfelle har vi bare ett kamera tilkoblet, så vi vet at det er det riktige).</p>
 <p>Skriv inn følgende IP (merk at vi angir IP-adressen til kameraet koblet til Ethernet 9 som beskrevet ovenfor):</p>
-<p><a href="#R-image-17930435d3c15a32d8f913bda9a0867c" class="lightbox-link"><img alt="Skjermbilde av IP-innstilling for kamera" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-17930435d3c15a32d8f913bda9a0867c"><img alt="Skjermbilde av IP-innstilling for kamera" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
+<p><a href="#R-image-e4154eb99a13b46b685eb480c98b8af6" class="lightbox-link"><img alt="Skjermbilde av IP-innstilling for kamera" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4154eb99a13b46b685eb480c98b8af6"><img alt="Skjermbilde av IP-innstilling for kamera" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
 <p>Klikk Set IP Address / Subnet og klikk Ja, deretter OK.</p>
-<p><a href="#R-image-ea68c3e685ea7aad6d31bf13a2cf8556" class="lightbox-link"><img alt="Skjermbilde av bekreftelse på IP-adresse for kamera" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea68c3e685ea7aad6d31bf13a2cf8556"><img alt="Skjermbilde av bekreftelse på IP-adresse for kamera" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
+<p><a href="#R-image-eb8355bceb11b8ed7d8d3957a888d263" class="lightbox-link"><img alt="Skjermbilde av bekreftelse på IP-adresse for kamera" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb8355bceb11b8ed7d8d3957a888d263"><img alt="Skjermbilde av bekreftelse på IP-adresse for kamera" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
 <p>Finn kameraet du nettopp angav IP-adressen for, i listen til venstre i FLiR GigE Configurator, og klikk på det.</p>
 <p>Angi konfigurasjon for IP-adressetildeling</p>
 <p>Dette er viktig å gjøre, siden vi trenger at IP-adresseendringene på kameraene skal være vedvarende – ellers vil kameraet glemme konfigurasjonen sin etter strømbrudd.</p>
 <p>Fjern avmerkingen for DHCP og huk av for Persistent IP</p>
-<p><a href="#R-image-9729c78fcb04d3df1f4bb7899df23eb4" class="lightbox-link"><img alt="Skjermbilde av DHCP og Persistent IP-innstillinger" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9729c78fcb04d3df1f4bb7899df23eb4"><img alt="Skjermbilde av DHCP og Persistent IP-innstillinger" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
+<p><a href="#R-image-cb4afcd9b30b38137b5a7a38f98ee9c8" class="lightbox-link"><img alt="Skjermbilde av DHCP og Persistent IP-innstillinger" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb4afcd9b30b38137b5a7a38f98ee9c8"><img alt="Skjermbilde av DHCP og Persistent IP-innstillinger" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
 <p>Klikk på Copy from Current og deretter Set IP Address / Subnet</p>
-<p><a href="#R-image-e7e7d995efbc9f35a60b26a35eeda773" class="lightbox-link"><img alt="Skjermbilde av Copy from Current-knapp" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7e7d995efbc9f35a60b26a35eeda773"><img alt="Skjermbilde av Copy from Current-knapp" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
+<p><a href="#R-image-c174a3380fe4c40cad132e6733974e5e" class="lightbox-link"><img alt="Skjermbilde av Copy from Current-knapp" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c174a3380fe4c40cad132e6733974e5e"><img alt="Skjermbilde av Copy from Current-knapp" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
 <p>Verifiser pakkestørrelsen</p>
 <p>La oss kontrollere at pakkestørrelsen (MTU) ble angitt riktig.</p>
 <p>Klikk Discover Maximum Packet Size – den skal vise 9000.</p>
-<p><a href="#R-image-5cbac92dca6688368b72baf046b4dc9e" class="lightbox-link"><img alt="Skjermbilde av maksimal pakkestørrelse" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5cbac92dca6688368b72baf046b4dc9e"><img alt="Skjermbilde av maksimal pakkestørrelse" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
+<p><a href="#R-image-74e293ac7520fb4f2c3dddb9cb50b7e5" class="lightbox-link"><img alt="Skjermbilde av maksimal pakkestørrelse" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-74e293ac7520fb4f2c3dddb9cb50b7e5"><img alt="Skjermbilde av maksimal pakkestørrelse" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
 <p>Klikk Test Camera Connection for å bekrefte at tilkoblingen fungerer og at du mottar data fra kameraet.</p>
-<p><a href="#R-image-1064bf38e23c8155fa1202ecf3fc0a62" class="lightbox-link"><img alt="Skjermbilde av kameratilkoblingstest" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1064bf38e23c8155fa1202ecf3fc0a62"><img alt="Skjermbilde av kameratilkoblingstest" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
+<p><a href="#R-image-36905c1d75d963ec8a22e67fb96748cb" class="lightbox-link"><img alt="Skjermbilde av kameratilkoblingstest" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-36905c1d75d963ec8a22e67fb96748cb"><img alt="Skjermbilde av kameratilkoblingstest" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
 <h2 id="oppsett-av-mer-enn-1-kamera">Oppsett av mer enn 1 kamera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nå som du har konfigurert ett kamera og ett nettverkskort, kan du gjenta trinnene ovenfor for å konfigurere flere kameraer.</p>
 <p>Med trinnene og skjermbildene ovenfor i tankene – vi har allerede angitt IP-en til kameraet og Ethernet-kortet 9. Oppsett av flere kameraer følger samme prosedyre, bare med ulike IP-adresser.</p>
@@ -328,8 +355,8 @@ Subnet: 255.255.255.0</p>
 <h2 id="bruke-kameraetkameraene-i-swing-catalyst">Bruke kameraet/kameraene i Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Å bruke Point Grey-kameraer i SwingCatalyst handler om å angi kameravinkel og klikke aktiver. Klikk på Spill av-knappen for å kontrollere at kameraet fungerer.</p>
 <p>All kamerakonfigurering må gjøres via Point Greys FlyCapture-programvare.</p>
-<p><a href="#R-image-60cfc460f48b6da8aa9ebe6fd972b83b" class="lightbox-link"><img alt="Skjermbilde av SwingCatalyst med kameraoppsett" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-60cfc460f48b6da8aa9ebe6fd972b83b"><img alt="Skjermbilde av SwingCatalyst med kameraoppsett" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
+<p><a href="#R-image-6fc60e3f63324f02e02031265ddeb5e7" class="lightbox-link"><img alt="Skjermbilde av SwingCatalyst med kameraoppsett" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6fc60e3f63324f02e02031265ddeb5e7"><img alt="Skjermbilde av SwingCatalyst med kameraoppsett" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
 <h2 id="hvordan-endre-lukkerhastighet-og-andre-kamerainnstillinger">Hvordan endre lukkerhastighet og andre kamerainnstillinger<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Start Point Grey Flycap2-programvaren og naviger til Kamerainnstillinger.</p>
 <ol>
@@ -341,8 +368,8 @@ Subnet: 255.255.255.0</p>
 </ol>
 <p>Se punkt 3 for å lagre innstillinger.</p>
 <p>Det kan også være nødvendig å justere bildehastigheten – du kan fjerne avmerkingen for auto og angi ønsket bildehastighet, og deretter følge trinn 3.</p>
-<p><a href="#R-image-acb507a294df4829630eecec94a27c4a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-acb507a294df4829630eecec94a27c4a"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
+<p><a href="#R-image-b0f28e874579ba4ddb64d8eee8712285" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0f28e874579ba4ddb64d8eee8712285"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
 <p>Det kan også være nødvendig å justere bildehastigheten – du kan fjerne avmerkingen for auto og angi ønsket bildehastighet, og deretter følge trinn 3.</p>
 <p><strong>Angi Gain-verdier</strong></p>
 <p>Likt som med eksponering, er det best å sette Gain til manuell ved statiske/innendørs lysforhold. Jo høyere eksponering, desto mer kornet vil bildet bli, og jo lengre tid vil videokodingen ta sammenlignet med lav Gain.</p>
@@ -350,19 +377,19 @@ Subnet: 255.255.255.0</p>
 <p>Se denne artikkelen for informasjon om hvordan du setter opp kameraet: <a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a></p>
 <p>Feilsøking og ytterligere optimaliseringer</p>
 <p>Hvis du mister rammer, eller har problemer med synkronisering med FLiR / Point Grey-kameraene dine, sjekk pakkestørrelsen under Flycapture2 -&gt; Custom Video modes.</p>
-<p><a href="#R-image-a7d2d7cb0a0c691536884e11d427e3e8" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med tilpassede videomodi" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a7d2d7cb0a0c691536884e11d427e3e8"><img alt="Skjermbilde av FlyCap2 med tilpassede videomodi" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
+<p><a href="#R-image-6238fe1b21583be2ae9a3f1b2f5aaa5b" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med tilpassede videomodi" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6238fe1b21583be2ae9a3f1b2f5aaa5b"><img alt="Skjermbilde av FlyCap2 med tilpassede videomodi" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
 <p>Du kan prøve å redusere pakkestørrelsen fra maksimalt 9000 til en lavere verdi. Avhengig av CPU-en din kan det som fungerer best variere fra datamaskin til datamaskin.</p>
 <p>Hvis du bruker 2 kameraer på ett nettverkskort, anbefales det å sette pakkeforsinkelsen til: 9500.</p>
-<p><a href="#R-image-ddff4f4ea0e0f71fd471b3416fa45182" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelsesinnstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ddff4f4ea0e0f71fd471b3416fa45182"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelsesinnstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
+<p><a href="#R-image-5f3febacff7659b258d8ad2492965e4a" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelsesinnstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f3febacff7659b258d8ad2492965e4a"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelsesinnstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
 <p>Husk å gå til Avanserte kamerainnstillinger og lagre innstillingene til bank 1, som beskrevet i kameraoppsett-artikkelen, ** <a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><strong><a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-28c1e32f03fe3e2af5c9b9ee54e8f8e2" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med minnekanalinnstillinger" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-28c1e32f03fe3e2af5c9b9ee54e8f8e2"><img alt="Skjermbilde av FlyCap2 med minnekanalinnstillinger" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
+<p><strong><a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-770adff2dadbc6f3cb2cd8febcf07f99" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med minnekanalinnstillinger" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-770adff2dadbc6f3cb2cd8febcf07f99"><img alt="Skjermbilde av FlyCap2 med minnekanalinnstillinger" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
 <p><strong>Husk å klikke lagre under Minnekanaler og forsikre deg om at Kanal 1 er valgt!</strong></p>
 <p>Hvis du ikke får noe bilde eller mottar en feil i SwingCatalyst, kan du prøve å endre pakkestørrelsen og lagre til bank 1 (som vist i bildet ovenfor)</p>
-<p><strong><a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-deea91ca2e0b6a45a3d36b67564d459e" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med pakkestørrelsesinnstilling" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-deea91ca2e0b6a45a3d36b67564d459e"><img alt="Skjermbilde av FlyCap2 med pakkestørrelsesinnstilling" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
+<p><strong><a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-59ca75cc0d37bf51dbacee5c142fde58" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med pakkestørrelsesinnstilling" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-59ca75cc0d37bf51dbacee5c142fde58"><img alt="Skjermbilde av FlyCap2 med pakkestørrelsesinnstilling" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
 <p>Oppsett med 4 kameraer som mister rammer:</p>
 <p>I noen oppsett med 4 kameraer anbefales det å slå av Interrupt Moderation, eller endre Interrupt Moderation-hastigheten fra extreme til low. Hvis modereringsraten er høy, vil antall avbrudd undertrykkes, noe som gir lavere CPU-belastning. Men jo sjeldnere avbruddet skjer, desto mer sannsynlig er det at ACK-svaret fra verten vil være tregt. Dette kan resultere i tapte pakker hvis du strømmer bilder med høy bildehastighet.</p>
 <p>Valg av en annen modulering avhengig av systemet ditt kan forbedre nettverks- og systemPrestasjon.</p>
@@ -372,15 +399,15 @@ Subnet: 255.255.255.0</p>
 <p>Ytterligere optimaliseringer for nettverkskort</p>
 <p>Mottaksbuffere</p>
 <p>Det anbefales å sette denne verdien så høyt som mulig. Dette kan bidra til å unngå tapte rammer ved bruk av flere kameraer og/eller GigE-kameraer med høyere oppløsning.</p>
-<p><a href="#R-image-49fdc3277b2e14123e917b772f917585" class="lightbox-link"><img alt="Skjermbilde av nettverkskortegenskaper med mottaksbuffer-innstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-49fdc3277b2e14123e917b772f917585"><img alt="Skjermbilde av nettverkskortegenskaper med mottaksbuffer-innstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-8669dc76abbe65d603c937d2d132f8ec" class="lightbox-link"><img alt="Skjermbilde av nettverkskortegenskaper med mottaksbuffer-innstilling" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8669dc76abbe65d603c937d2d132f8ec"><img alt="Skjermbilde av nettverkskortegenskaper med mottaksbuffer-innstilling" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="bruk-av-to-kameraer-på-en-nettverkssvitsj">Bruk av to kameraer på en nettverkssvitsj:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Merk at kun Blackfly BFLY-PGE-03S3C (90FPS)-kameraet støttes. Bruk av andre kameraer kan resultere i tapte rammer.</p>
 <p>Viktig: Nettverkssvitsjen må støtte 9KB Jumbo Frames (de fleste nettverkssvitsjer støtter dette) – vi anbefaler: <a href="https://www.netgear.com/support/product/GS105.aspx" rel="external">https://www.netgear.com/support/product/GS105.aspx</a>-svitsjen eller tilsvarende svitsjer som GS105-modellen.</p>
 <p>Hvis du skal bruke en nettverkssvitsj, er det viktig at Pakkeforsinkelse er satt til 9500 som vist i skjermbildet nedenfor.</p>
 <p>Etter at du har satt Pakkeforsinkelse til 9500, gå til Avanserte kamerainnstillinger og lagre til bank 1, som beskrevet i kameraoppsett-artikkelen, ** <a href="/sc-support/nb/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><a href="#R-image-87648c0ea86a2df0491d6f811de745bd" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelse for svitsj-oppsett" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-87648c0ea86a2df0491d6f811de745bd"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelse for svitsj-oppsett" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
+<p><a href="#R-image-80c367ac2bc823e10d6f4beab05b23d9" class="lightbox-link"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelse for svitsj-oppsett" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80c367ac2bc823e10d6f4beab05b23d9"><img alt="Skjermbilde av FlyCap2 med pakkeforsinkelse for svitsj-oppsett" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
 <p>Å angi Pakkeforsinkelse hjelper med tapte rammer når du bruker to Blackfly 03S3C-kameraer på ett nettverkskort.</p>
 <p>Mer inngående detaljer om oppsett med flere kameraer finner du her: <a href="https://www.ptgrey.com/tan/10351" rel="external">https://www.ptgrey.com/tan/10351</a></p>
 <hr>
@@ -493,7 +520,6 @@ Subnet: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/point-grey-flir-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/point-grey-flir-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/point-grey-flir-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" lang="fr">Français</option>
@@ -555,8 +581,8 @@ Subnet: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537822" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537822" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542935" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542935" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

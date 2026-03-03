@@ -21,8 +21,7 @@
     <meta itemprop="description" content="录制可以通过多种方式导出，既可以从堆栈导出，也可以直接从资源管理器导出。两者在功能上没有区别。">
     <meta itemprop="wordCount" content="26">
     <title>导出录制 :: Swing Catalyst 支持</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-recordings/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-recordings/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-recordings/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-recordings/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-recordings/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-recordings/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-recordings/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-recordings/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-recordings/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537816" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537816" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537816" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542928" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542928" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542928" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772537816";
+      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772542928";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537816" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542928" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537816" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537816" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537816" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537816" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537816" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542928" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542928" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542928" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542928" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542928" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,25 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#如何导出录制">如何导出录制</a></li>
+    <li><a href="#从堆栈导出">从堆栈导出</a></li>
+    <li><a href="#从资源管理器导出">从资源管理器导出</a>
+      <ul>
+        <li><a href="#资源管理器导出列表">资源管理器导出列表</a></li>
+      </ul>
+    </li>
+    <li><a href="#导出选项">导出选项</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/index.html"><span itemprop="name">Swing Catalyst 支持</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/software-features/index.html"><span itemprop="name">软件与功能</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">导出录制</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -192,23 +210,23 @@
 <h2 id="如何导出录制">如何导出录制<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>录制可以通过多种方式导出，既可以从堆栈导出，也可以直接从资源管理器导出。两者在功能上没有区别。</p>
 <h2 id="从堆栈导出">从堆栈导出<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-09ce4cb458118a32866d4ece42c03280" class="lightbox-link"><img alt="MotionCatalyst_YjrVEg402Y.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-09ce4cb458118a32866d4ece42c03280"><img alt="MotionCatalyst_YjrVEg402Y.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png"></a></p>
+<p><a href="#R-image-cc039fc76bee092d3bd5e1283aeb9f37" class="lightbox-link"><img alt="MotionCatalyst_YjrVEg402Y.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc039fc76bee092d3bd5e1283aeb9f37"><img alt="MotionCatalyst_YjrVEg402Y.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png"></a></p>
 <h2 id="从资源管理器导出">从资源管理器导出<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-81300aad43926856cd6b133dc5cfec65" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-81300aad43926856cd6b133dc5cfec65"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-166e1c91d7abaa19d9f6363228f1d70e" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-166e1c91d7abaa19d9f6363228f1d70e"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>可以通过将录制拖动到导出列表（见下方截图）或右键单击录制并从可用导出选项中进行选择，从资源管理器导出录制。</p>
-<p><a href="#R-image-99c38877a3a2594dd930c7fe7bd1d4bc" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-99c38877a3a2594dd930c7fe7bd1d4bc"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-18f0b222f2db70fd7faefc260d554db7" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-18f0b222f2db70fd7faefc260d554db7"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png"></a></p>
 <h3 id="资源管理器导出列表">资源管理器导出列表<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-2b919b4b4f6a3c71944fb2362706b070" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2b919b4b4f6a3c71944fb2362706b070"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-35f33d39ae18402b8edd3febd31d59c7" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-35f33d39ae18402b8edd3febd31d59c7"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="导出选项">导出选项<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>以录制文件（默认选项）导出，可让其他 Swing Catalyst 或 Motion Catalyst 用户导入该录制。与录制一同采集的所有数据都会存储在录制文件中。</p>
 <p>如果您只想导出视频文件，请选择&quot;仅视频&quot;。请注意，如果您有多个摄像头，每个角度将作为单独的视频文件导出。</p>
 <p>有关原始数据选项的详细信息，请参阅我们的<a href="/sc-support/zh/software-features/export-raw-data/index.html">原始数据文章。</a></p>
-<p><a href="#R-image-94503cfe1a139756d9369f8daac1654d" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-94503cfe1a139756d9369f8daac1654d"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-caca082cae4956fc57633f1ba856ff4f" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-caca082cae4956fc57633f1ba856ff4f"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <hr>
 <p><em>最后更新：2023-12-19</em> | <a href="/sc-support/zh/software-features/export-recordings/index.html">在官方支持网站上查看</a></p>
 
@@ -312,7 +330,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">语言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-recordings/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-recordings/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-recordings/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-recordings/index.html" lang="fr">Français</option>
@@ -374,8 +391,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537816" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542928" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

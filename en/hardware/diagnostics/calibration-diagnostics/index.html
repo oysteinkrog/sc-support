@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="In order to use your Balance Plate it needs a calibration file. A calibration file is created for each Balance Plate, so no file is the same. If you do not...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Balance Plate calibration & diagnostics :: Swing Catalyst Support">
+    <meta name="twitter:description" content="In order to use your Balance Plate it needs a calibration file. A calibration file is created for each Balance Plate, so no file is the same. If you do not...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/en/hardware/diagnostics/calibration-diagnostics/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Support">
+    <meta property="og:title" content="Balance Plate calibration & diagnostics :: Swing Catalyst Support">
+    <meta property="og:description" content="In order to use your Balance Plate it needs a calibration file. A calibration file is created for each Balance Plate, so no file is the same. If you do not...">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Hardware">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Balance-Plate">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta itemprop="name" content="Balance Plate calibration & diagnostics :: Swing Catalyst Support">
+    <meta itemprop="description" content="In order to use your Balance Plate it needs a calibration file. A calibration file is created for each Balance Plate, so no file is the same. If you do not...">
+    <meta itemprop="wordCount" content="1160">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data">
+    <title>Balance Plate calibration &amp; diagnostics :: Swing Catalyst Support</title>
+    <link href="/sc-support/images/favicon.png?1772542919" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542919" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772542919";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542919" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/hardware\/diagnostics\/calibration-diagnostics\/index.html';
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/en/hardware/diagnostics/calibration-diagnostics/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#part-1-using-the-se-utility-to-obtain-calibration-file">Part 1: Using the SE utility to obtain calibration file.</a></li>
+    <li><a href="#registering-your-balance-plate">Registering your Balance Plate</a></li>
+    <li><a href="#make-sure-to-remove-the-carpet-and-any-other-objects-from-the-balance-plate-this-is-to-ensure-that-the-readings-are-not-impacted-by-any-external-factors">Make sure to remove the carpet and any other objects from the Balance Plate, this is to ensure that the readings are not impacted by any external factors.</a></li>
+    <li><a href="#seu_"><img src="../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png" alt="SEU_2021-08-11_13-05-17.png"></a></li>
+    <li><a href="#executing-the-calibration-process">Executing the calibration process</a></li>
+    <li><a href="#positioning">Positioning</a>
+      <ul>
+        <li><a href="#completed-recording">Completed recording</a></li>
+      </ul>
+    </li>
+    <li><a href="#part-2-installing-the-calibration-file">Part 2: Installing the calibration file</a>
+      <ul>
+        <li><a href="#continue-with-these-steps">Continue with these steps</a></li>
+        <li><a href="#sensor-plate-settings">Sensor Plate Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting">Troubleshooting</a>
+      <ul>
+        <li><a href="#the-balance-plate-is-not-recognized-or-not-showing-as-connected">The Balance Plate is not recognized or not showing as connected:</a></li>
+        <li><a href="#calibration-is-not-installed-successfully">Calibration is not installed successfully</a></li>
+        <li><a href="#there-is-noise-on-the-plate-even-though-ive-run-the-utility">There is noise on the plate even though I&rsquo;ve run the utility</a></li>
+        <li><a href="#hardware-incompatibilities">Hardware incompatibilities</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/hardware/index.html"><span itemprop="name">Hardware</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/hardware/diagnostics/index.html"><span itemprop="name">Diagnostics &amp; Setup</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Balance Plate calibration &amp; diagnostics</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/hardware/diagnostics/index.html" title="Diagnostics & Setup (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/hardware/diagnostics/force-plate-troubleshooting/index.html" title="Force Plate technical troubleshooting guide (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable hardware" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/en/tags/balance-plate/index.html">Balance-Plate</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/en/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+
+<h1 id="running-the-calibration-utility">Running the calibration utility<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>In order to use your Balance Plate it needs a calibration file. A calibration file is created for each Balance Plate, so no file is the same. If you do not have a calibration file installed, it&rsquo;s also likely that your plate is not registered for warranty purposes. This article covers the process of obtaining a calibration file &amp; registering the plate.</p>
+<p>This article is for removing unwanted noise and improving the pressure distribution for Balance Plate 3 &amp; up.</p>
+<p>The Balance Plate consists of 2048 high accuracy pressure sensors, and using the Sensor Edge Utility to zero the plate may be necessary to ensure best accuracy. This article is a step by step tutorial on how to zero set the Balance Plate.</p>
+<p><strong>IMPORTANT!</strong>** **</p>
+<p>There are two parts to this process</p>
+<p>Part 1. Using the Sensor Edge utility to obtain the latest calibration file for your plate.</p>
+<p>Part 2. Installing that calibration file in Swing Catalyst. Please be sure to read this entire support article.</p>
+<h2 id="part-1-using-the-se-utility-to-obtain-calibration-file">Part 1: Using the SE utility to obtain calibration file.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p><a href="https://cloudfront.swingcatalyst.com/drivers/SensorEdgeUtilitySetup.exe" rel="external">Download the calibration utility</a></p>
+</li>
+<li>
+<p>If asked to install drivers, click yes.</p>
+</li>
+</ul>
+<p>Connect the plate to the computer.</p>
+<ul>
+<li>
+<p>Make sure Swing Catalyst software is closed, SE Utility will not be able to detect your plate if Swing Catalyst is running.</p>
+</li>
+<li>
+<p>Open the newly installed SE Utility</p>
+</li>
+<li>
+<p>Follow the instructions below.</p>
+</li>
+<li>
+<p>Make sure you have a monitor or TV connected to your computer so you can see the screen when standing on the Balance Plate.</p>
+</li>
+</ul>
+<p>If you have an older version installed please uninstall it first via <a href="https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs" rel="external">Add or Remove Programs</a>.</p>
+<p>Click Start:</p>
+<p><a href="#R-image-0fee88cbba88a9541d62910f6d31587f" class="lightbox-link"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fee88cbba88a9541d62910f6d31587f"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
+<p>After clicking start it will automatically attempt to scan for devices, if it does not find your plate, click the drop down menu and select your Balance Plate.</p>
+<p><a href="#R-image-ece9181d829623f3dc783cf4283a62fe" class="lightbox-link"><img alt="SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ece9181d829623f3dc783cf4283a62fe"><img alt="SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
+<p>Click Scan<a href="#R-image-09aa70fe918943a66a7c463db9d7cd91" class="lightbox-link"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-09aa70fe918943a66a7c463db9d7cd91"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
+<p>Select the device that matches your plate&rsquo;s serial number and click Next.</p>
+<h2 id="registering-your-balance-plate">Registering your Balance Plate<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-9e7d2fb806ca62603246ed0619f3a2cc" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e7d2fb806ca62603246ed0619f3a2cc"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
+<p>Example of filled out registration information<a href="#R-image-0608713fc5f5f4bf949b05391d1a03b2" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0608713fc5f5f4bf949b05391d1a03b2"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
+<p>Once you&rsquo;ve filled out the required information for warranty and service purposes click Continue.</p>
+<p>If possible select a camera and point it to show the Balance Plate, and click Next.</p>
+<p>A camera is not required though, you can still proceed if no camera is detected.</p>
+<p><a href="#R-image-064b4b9aa26b0aff79985f519685fb35" class="lightbox-link"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-064b4b9aa26b0aff79985f519685fb35"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
+<h2 id="make-sure-to-remove-the-carpet-and-any-other-objects-from-the-balance-plate-this-is-to-ensure-that-the-readings-are-not-impacted-by-any-external-factors">Make sure to remove the carpet and any other objects from the Balance Plate, this is to ensure that the readings are not impacted by any external factors.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="seu_"><a href="#R-image-141e25446f30a1b7241f677bba5c6a50" class="lightbox-link"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-141e25446f30a1b7241f677bba5c6a50"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="executing-the-calibration-process">Executing the calibration process<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Before stepping on the plate the utility collects data in order to have a baseline to compare to.</p>
+<p>Please make sure you don&rsquo;t accidentally stand on the plate until the utility instructs you to do so.</p>
+<p><a href="#R-image-04fa295cd7f69f26f480234a4dc1c6c5" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04fa295cd7f69f26f480234a4dc1c6c5"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
+<h2 id="positioning">Positioning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>It&rsquo;s important that you stand on the plate as indicated by the utility.</p>
+<p>The dark feet show where you should be standing, and the grey feet show where you should stand next.</p>
+<p><a href="#R-image-3015ba375d16b459b4227c35efe2e036" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3015ba375d16b459b4227c35efe2e036"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
+<p>Please follow each step as it is important to activate all of the regions of the plate.</p>
+<h3 id="completed-recording">Completed recording<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>If you are not happy with the recording, perhaps you made a mistake? You can easily restart the process by clicking restart.</p>
+<p>Click Continue if you wish to proceed.</p>
+<p><a href="#R-image-664951e57e13c0ee366d2e7a7ad329a9" class="lightbox-link"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-664951e57e13c0ee366d2e7a7ad329a9"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
+<p>Click the Save button then click the Send button</p>
+<p><a href="#R-image-6705ea270fce1c6257d6fd73c8b441ed" class="lightbox-link"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6705ea270fce1c6257d6fd73c8b441ed"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
+<p>Before the data is sent to the manufacturer for review enter the approximate weight and usage.</p>
+<p>In notes you can specify issues that you have with the plate, for example weak left foot, or other concerns.</p>
+<p>The reason the manufacturer wishes to collect this data is to further improve the recalibration algorithms to provide more accurate sensor readings.</p>
+<p>Enter the information and click send:</p>
+<p><a href="#R-image-afec568555220fc58246db95047b20fd" class="lightbox-link"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-afec568555220fc58246db95047b20fd"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
+<p>Once finished the calibration file is saved to your Documents folder, press &ldquo;No&rdquo; and then close the utility.</p>
+<p><a href="#R-image-552b6ddd614c2d16abe08a227d8e880b" class="lightbox-link"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-552b6ddd614c2d16abe08a227d8e880b"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
+<h2 id="part-2-installing-the-calibration-file">Part 2: Installing the calibration file<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="continue-with-these-steps">Continue with these steps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Start Swing Catalyst and go to Settings &ndash;&gt; Hardware in the main menu.</li>
+</ul>
+<p>The plate should be detected automatically, if not please see the troubleshooting section.</p>
+<p><a href="#R-image-c25bccbe9af1d6c88cf59b2d5b203a8b" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c25bccbe9af1d6c88cf59b2d5b203a8b"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
+<p> Click the &ldquo;Configure&hellip;&rdquo; button to open the configuration dialog.</p>
+<h3 id="sensor-plate-settings">Sensor Plate Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Go to the Stance Sensor tab, and click Browse and Install.<a href="#R-image-e8a47ee0bb4c27e7bb13e7cf65850676" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e8a47ee0bb4c27e7bb13e7cf65850676"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
+<p>Go to the directory you saved the calibration file, e.g: C:\User\YourUsername\Documents and select the mxd file you just saved from the utility and click Open.<a href="#R-image-ed768660b8f2ca17fed1e3147f9a91b9" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed768660b8f2ca17fed1e3147f9a91b9"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
+<p>When installation is completed it will let you know and you can click OK to close the windows.</p>
+<p>Your Balance Plate should now be ready to use.
+Start a new session in Swing Analysis and verify you get pressure readings in the Pressure and stance databox when capturing swings.</p>
+<p><a href="#R-image-68e81acd41c38b796675b45d92c00512" class="lightbox-link"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-68e81acd41c38b796675b45d92c00512"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
+<p>Note: It may be necessary to run a re-calibration of your Balance Plate with heavy usage, this can be done by clicking the diagnostics button in Swing Catalyst Settings, which will launch the SE Utility.</p>
+<h2 id="troubleshooting">Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="the-balance-plate-is-not-recognized-or-not-showing-as-connected">The Balance Plate is not recognized or not showing as connected:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Make sure the device is recognized by Windows.</li>
+</ul>
+<p>Open Windows device manager. <a href="http://kb.laplink.com/index.php/article/359" rel="external">How?</a></p>
+<ul>
+<li>
+<p>Verify the **Sensor Edge **device is present under <strong>Ports (COM &amp; LPT)</strong></p>
+</li>
+<li>
+<p>If it is not, or has a warning symbol, then try reinstalling the drivers and reconnecting the device to a different USB port.</p>
+</li>
+<li>
+<p>Connect the device to a different USB port on the computer.</p>
+</li>
+<li>
+<p>If using a USB extender, try connecting the device to the PC without an extender.</p>
+</li>
+<li>
+<p>Restart Swing Catalyst.</p>
+</li>
+<li>
+<p>Restart the computer.</p>
+</li>
+<li>
+<p>If you tried all these steps and it still shows as not connected in Swing Catalyst, please contact our support team.</p>
+</li>
+</ul>
+<h3 id="calibration-is-not-installed-successfully">Calibration is not installed successfully<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>The calibration file you received from the Sensor Edge Utility may be bad or the file may have become corrupted, try to run the utility again and install the <em>new</em> calibration file. If this doesn&rsquo;t work, contact our support team.</li>
+</ul>
+<h3 id="there-is-noise-on-the-plate-even-though-ive-run-the-utility">There is noise on the plate even though I&rsquo;ve run the utility<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-a509a52d1f1026c7390b1a80b9efd98d" class="lightbox-link"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a509a52d1f1026c7390b1a80b9efd98d"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
+<p>Noise can be present due several factors:</p>
+<ul>
+<li>
+<p>Wrong or no calibration file installed in Swing Catalyst.</p>
+</li>
+<li>
+<p>Heavy usage:
+The calibration utility should be run often, even once a month for heavily used plates.</p>
+</li>
+<li>
+<p>Direct exposure to sunlight.</p>
+</li>
+<li>
+<p>Wear and tear on the sensors themselves.</p>
+</li>
+</ul>
+<p>The utility may not be able to filter out the noise if the signal to noise ratio is not good enough, the plate will in this case need to be recalibrated through an RMA. The manufacturer will then manually inspect the session that is generated by the utility to see if they can improve upon it.</p>
+<p>If the manufacturer is unable to fix the issue and the plate is under warranty or <a href="/sc-support/en/hardware/pressure-plates/balance-plate-warranty/index.html">ESA (extended service agreement)</a>, the plate can be shipped back to the manufacturer as long as an RMA is present.</p>
+<h3 id="hardware-incompatibilities">Hardware incompatibilities<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Some issues have been seen with <strong>AMD 300-Series</strong> chipsets (AMD Ryzen 1700 / 2700 series ) with USB 1.1 devices. Specifically with the Balance Plate, where you only get 75 samples per second instead of ~145 samples per second. We recommend using a USB 2.0 hub which will allow the Balance Plate to stream at full sample rate.</p>
+<p>There are no known issues as far as using the AMD 300 series chipsets with USB 3.0 devices.</p>
+<hr>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/en/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Support</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/getting-started/index.html"><a class="padding default-animation" href="/sc-support/en/getting-started/index.html">Getting Started</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/en/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/en/hardware/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/sc-support/en/hardware/pressure-plates/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/pressure-plates/index.html">Pressure Plates</a><ul id="R-subsections-63285dbd7376ac29fc7e706aa54d833f" class="collapsible-menu"></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/hardware/launch-monitors/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/launch-monitors/index.html">Launch Monitors</a><ul id="R-subsections-053a1449d630049332707e9a11bb7bb7" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/sc-support/en/hardware/diagnostics/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/diagnostics/index.html">Diagnostics &amp; Setup</a><ul id="R-subsections-a0ebc3eb5165dc0eb070c142539d771a" class="collapsible-menu">
+            <li class="active " data-nav-id="/sc-support/en/hardware/diagnostics/calibration-diagnostics/index.html"><a class="padding" href="/sc-support/en/hardware/diagnostics/calibration-diagnostics/index.html">Balance Plate calibration &amp; diagnostics</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/diagnostics/force-plate-troubleshooting/index.html"><a class="padding" href="/sc-support/en/hardware/diagnostics/force-plate-troubleshooting/index.html">Force Plate technical troubleshooting guide</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/diagnostics/find-serial-number/index.html"><a class="padding" href="/sc-support/en/hardware/diagnostics/find-serial-number/index.html">How to find the serial number of your Swing Catalyst Balance Plate</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/diagnostics/nvidia-gpu-encoder/index.html"><a class="padding" href="/sc-support/en/hardware/diagnostics/nvidia-gpu-encoder/index.html">How to setup NVIDIA GPU Encoder</a></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/diagnostics/trackman-troubleshooting/index.html"><a class="padding" href="/sc-support/en/hardware/diagnostics/trackman-troubleshooting/index.html">Trackman is not triggering Swing Catalyst technical troubleshooting</a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/index.html">Software &amp; Features</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/account-setup/index.html"><a class="padding default-animation" href="/sc-support/en/account-setup/index.html">Account &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/reference/index.html"><a class="padding default-animation" href="/sc-support/en/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/diagnostics/calibration-diagnostics/index.html" lang="en" selected data-selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542919" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1389">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Налаштування FLIR BlackFly S GigE у Swing Catalyst :: Підтримка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537831" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537831" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537831" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542945" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542945" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542945" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.uk.js?1772537831";
+      window.relearn.index_js_url="/sc-support/searchindex.uk.js?1772542945";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537831" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542945" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537831" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537831" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537831" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537831" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537831" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542945" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542945" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542945" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542945" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542945" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,37 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#повязані-теми-та-рекомендації">Пов&rsquo;язані теми та рекомендації:</a></li>
+      </ul>
+    </li>
+    <li><a href="#ця-стаття-поділена-на-різні-розділи">Ця стаття поділена на різні розділи</a>
+      <ul>
+        <li><a href="#повязані-теми-та-рекомендації-1">Пов&rsquo;язані теми та рекомендації:</a></li>
+      </ul>
+    </li>
+    <li><a href="#початок-роботи-налаштування-обладнання">Початок роботи: налаштування обладнання</a></li>
+    <li><a href="#встановлення-двопортової-мережевої-карти">Встановлення двопортової мережевої карти</a></li>
+    <li><a href="#початок-роботи-встановлення-драйверів">Початок роботи: встановлення Драйверів</a></li>
+    <li><a href="#конфігурація-ip">Конфігурація IP</a></li>
+    <li><a href="#налаштування-камери-в-параметрах-swing-catalyst">Налаштування камери в параметрах Swing Catalyst</a></li>
+    <li><a href="#усунення-несправностей">Усунення несправностей</a>
+      <ul>
+        <li><a href="#опис-індикаторів-стану">Опис індикаторів стану</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/uk/index.html"><span itemprop="name">Підтримка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/uk/cameras-video/index.html"><span itemprop="name">Камери та відео</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Налаштування FLIR BlackFly S GigE у Swing Catalyst</span><meta itemprop="position" content="3"></li>
@@ -244,21 +274,21 @@
 <p><a href="/sc-support/uk/cameras-video/point-grey-flir-gige/index.html">Застарілі статті: Point Grey Blackfly GigE у Swing Catalyst (для старіших версій Swing Catalyst)</a></p>
 <h2 id="початок-роботи-налаштування-обладнання">Початок роботи: налаштування обладнання<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Прикріпіть адаптер для штатива до корпусу камери за допомогою 4 чорних гвинтів із хрестоподібним шліцом, що входять до комплекту поставки.</p>
-<p><a href="#R-image-b2686b9d4f90325938a4ea0a951718f8" class="lightbox-link"><img alt="20200812_150256.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2686b9d4f90325938a4ea0a951718f8"><img alt="20200812_150256.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png"></a></p>
+<p><a href="#R-image-cf587f15832bde9e35e3d7dbeaaf3f24" class="lightbox-link"><img alt="20200812_150256.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf587f15832bde9e35e3d7dbeaaf3f24"><img alt="20200812_150256.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png"></a></p>
 <p>Розпакуйте об&rsquo;єктив і обов&rsquo;язково зніміть пластикові захисні кришки</p>
-<p><a href="#R-image-07118bedfce6d8ddf53ce9e7b38f49cb" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-07118bedfce6d8ddf53ce9e7b38f49cb"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png"></a></p>
+<p><a href="#R-image-41caf24ce70fd98d9229b99ac1234570" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-41caf24ce70fd98d9229b99ac1234570"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png"></a></p>
 <p>Зніміть захисну кришку сенсора з камери:</p>
-<p><a href="#R-image-c7ca69fe78b46a37381ecf7496980787" class="lightbox-link"><img alt="20200812_150131.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c7ca69fe78b46a37381ecf7496980787"><img alt="20200812_150131.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png"></a><a href="#R-image-b163db5b5848ca25713ecdf6df4085d6" class="lightbox-link"><img alt="20200812_151418.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b163db5b5848ca25713ecdf6df4085d6"><img alt="20200812_151418.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png"></a></p>
+<p><a href="#R-image-568bea2bf9119294bcab343b80b61553" class="lightbox-link"><img alt="20200812_150131.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-568bea2bf9119294bcab343b80b61553"><img alt="20200812_150131.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png"></a><a href="#R-image-45b4ba1de7c7b52678535cce45d66297" class="lightbox-link"><img alt="20200812_151418.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-45b4ba1de7c7b52678535cce45d66297"><img alt="20200812_151418.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png"></a></p>
 <p>Кріплення об&rsquo;єктива до камери</p>
-<p><a href="#R-image-adaf1c26f4995c304c9d151a899af5e7" class="lightbox-link"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-adaf1c26f4995c304c9d151a899af5e7"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png"></a></p>
+<p><a href="#R-image-df6fab328a65d46743d24690652e94fb" class="lightbox-link"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-df6fab328a65d46743d24690652e94fb"><img alt="2020-08-14_13-21-08.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png"></a></p>
 <p><strong>Регулювання об&rsquo;єктива камери:</strong></p>
-<p><a href="#R-image-2456be49f91fedb3b7e8a59355943b26" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2456be49f91fedb3b7e8a59355943b26"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png"></a></p>
+<p><a href="#R-image-b3094a953d3195b6a7011d05244e2314" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b3094a953d3195b6a7011d05244e2314"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png"></a></p>
 <p>Цей об&rsquo;єктив має три регулювання, зверху вниз:</p>
 <ul>
 <li>
@@ -285,75 +315,75 @@
 <p>Залиште прапорець «I will use GigE Cameras» встановленим.</p>
 </li>
 </ul>
-<p><a href="#R-image-d49b0f4e2f84d32ca23643b6ad551401" class="lightbox-link"><img alt="J079Itbw6G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d49b0f4e2f84d32ca23643b6ad551401"><img alt="J079Itbw6G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png"></a></p>
+<p><a href="#R-image-cdecd9078930225a691b83ec1c8f640d" class="lightbox-link"><img alt="J079Itbw6G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cdecd9078930225a691b83ec1c8f640d"><img alt="J079Itbw6G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png"></a></p>
 <h2 id="конфігурація-ip">Конфігурація IP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Після встановлення Драйвера вам може бути запропоновано запустити AdapterConfigGUI. Якщо ні, його можна знайти за шляхом C:\Program Files\FLIR Systems\Spinnaker\shortcuts\utilities</p>
 <p>Утиліта налаштування адаптера виглядає так</p>
-<p><a href="#R-image-7fa055bcafba755332c70512b7475616" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7fa055bcafba755332c70512b7475616"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png"></a></p>
+<p><a href="#R-image-bcfba6e4083dceb249a952a683524f16" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bcfba6e4083dceb249a952a683524f16"><img alt="AdapterConfigGUI_v140_2020-08-27_16-30-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png"></a></p>
 <p>Натисніть «Start» і виберіть усі адаптери «Intel(R) 82574L».</p>
-<p><a href="#R-image-4c2e5d7dba4959f1613447a5523bf8f6" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c2e5d7dba4959f1613447a5523bf8f6"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png"></a></p>
+<p><a href="#R-image-815a21895a53813f04ef5b3a19573966" class="lightbox-link"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-815a21895a53813f04ef5b3a19573966"><img alt="AdapterConfigGUI_v140_2020-08-27_16-35-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png"></a></p>
 <p>Натисніть «Smart Config», і утиліта виконає решту дій автоматично.</p>
 <h2 id="налаштування-камери-в-параметрах-swing-catalyst">Налаштування камери в параметрах Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Переконайтеся, що камера підключена до комп&rsquo;ютера і що світлодіод на задній панелі камери блимає зеленим.</p>
-<p>Запустіть Swing Catalyst і натисніть «Налаштування» -&gt; «Камери».<a href="#R-image-558193ecc03539dbc3133df3f7cc0165" class="lightbox-link"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-558193ecc03539dbc3133df3f7cc0165"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png"></a></p>
+<p>Запустіть Swing Catalyst і натисніть «Налаштування» -&gt; «Камери».<a href="#R-image-dd2fbfb913bb01c0a53d43a408f3cbf0" class="lightbox-link"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd2fbfb913bb01c0a53d43a408f3cbf0"><img alt="2020-08-12_15-31-11.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png"></a></p>
 <p>Камери Spinnaker позначені в списку камер словом Spinnaker.</p>
 <p>Натисніть «Розширені налаштування&hellip;»</p>
-<p><a href="#R-image-91a8d0031d2088de35d68a4581228886" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-91a8d0031d2088de35d68a4581228886"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png"></a></p>
+<p><a href="#R-image-8d04f22b24e801f7d9d42f024b458b71" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d04f22b24e801f7d9d42f024b458b71"><img alt="MotionCatalyst_2020-08-14_13-38-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png"></a></p>
 <p>Вікно розширених налаштувань камери відображає всі налаштування, які можуть стати вам у нагоді. Розглянемо кожне з них.</p>
 <p>Налаштування, що відображаються вище, є стандартними налаштуваннями камери; зверніть увагу, що більшість із них встановлено у режим Auto. Ми можемо змінити ці налаштування для кращого контролю над якістю відеозображення для спортивного аналізу.</p>
-<p><a href="#R-image-61c747f83ac839c568f965127f97f71c" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-61c747f83ac839c568f965127f97f71c"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png"></a></p>
+<p><a href="#R-image-16de0c3f89d47ccbbbedf4485ee9f949" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-16de0c3f89d47ccbbbedf4485ee9f949"><img alt="MotionCatalyst_2020-08-14_13-37-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png"></a></p>
 <p><strong>Зміна Частоти кадрів:</strong></p>
 <p>Встановлення прапорця «Frame rate control enable» дозволить вам вручну задати Частоту кадрів; якщо цей прапорець знятий, Частота кадрів фактично встановлюється в режим Auto (зверніть увагу: максимальна Частота кадрів цієї камери становить 78 FPS. Для досягнення максимальної Частоти кадрів усі налаштування мають бути встановлені вручну).</p>
 <p>Частота кадрів може обмежуватися витримкою та налаштуваннями пропускної здатності канального зв&rsquo;язку пристрою. У цьому випадку для досягнення повної Частоти кадрів необхідно збільшити пропускну здатність (докладніше про це далі).</p>
-<p><a href="#R-image-5f974d8d20d3fcd4ef99388ab147ca14" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f974d8d20d3fcd4ef99388ab147ca14"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png"></a></p>
+<p><a href="#R-image-cc5fd86c6f2b02ef836801e00295e44e" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc5fd86c6f2b02ef836801e00295e44e"><img alt="MotionCatalyst_2020-08-14_13-42-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png"></a></p>
 <p><strong>Зміна витримки:</strong></p>
 <p>Якщо ви не знаходитесь надворі при сонячному освітленні, краще використовувати ручну витримку, інакше відео, швидше за все, буде надто розмитим для спортивного аналізу. Для зменшення розмиття ми рекомендуємо витримку менше 2 мс (2000 мкс); за достатнього освітлення витримка може бути менше 1 мс (1000 мкс).</p>
-<p><a href="#R-image-e46ddf9c86eb77ccd677eeea6135c6af" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e46ddf9c86eb77ccd677eeea6135c6af"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png"></a></p>
+<p><a href="#R-image-270c3cb099d8e94b478e79a2037d2fce" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-270c3cb099d8e94b478e79a2037d2fce"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png"></a></p>
 <p>Яскравість відеозображення визначається поєднанням витримки, налаштувань Gain, діафрагми об&rsquo;єктива та кількості доступного світла.</p>
 <p><strong>Зміна Gain камери:</strong></p>
 <p>Встановлення Gain у режим Auto є кращим варіантом при мінливих умовах освітлення, але для приміщень краще встановити Gain вручну.</p>
 <p>Чим вище значення в дБ, тим яскравіше зображення, однак це також призводить до збільшення шуму, що може погіршити загальну якість відео. Іноді варто допустити дещо вищий Gain за рахунок шуму, щоб знизити витримку та отримати чітке покадрове відео об&rsquo;єкта (наприклад, клюшки в Момент удару, бейсбольної бити тощо).</p>
-<p><a href="#R-image-4bb66137ef308db71f8966dfe76a86b6" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4bb66137ef308db71f8966dfe76a86b6"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png"></a></p>
+<p><a href="#R-image-c011ff117b68efadd38d7bb97b7bf846" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c011ff117b68efadd38d7bb97b7bf846"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png"></a></p>
 <p><strong>Зміна Gamma та рівнів чорного:</strong></p>
 <p>Рівень чорного можна розглядати як форму регулювання яскравості, де рівень чорного відповідає мінімальному значенню, яке повертає будь-який піксель сенсора камери.</p>
 <p>Збільшуючи значення рівня чорного, ми можемо зробити зображення яскравішим.</p>
 <p>Наша рекомендація — залишати ці значення за замовчуванням.</p>
-<p><a href="#R-image-5a1cee8ee1a3628d8395f59213f1bf50" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a1cee8ee1a3628d8395f59213f1bf50"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png"></a></p>
+<p><a href="#R-image-8f4c5797168bf801bab64a9107df421e" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f4c5797168bf801bab64a9107df421e"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png"></a></p>
 <p>Докладніше про покращення якості відеозображення дивіться у цій статті підтримки з фотографіями для порівняння: <a href="/sc-support/uk/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
 <p><strong>Зміна балансу білого камери:</strong></p>
-<p><a href="#R-image-0cad53b4948d9fbf68a81535d7f35e92" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0cad53b4948d9fbf68a81535d7f35e92"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png"></a></p>
+<p><a href="#R-image-040b3b0324a8a747c4363e0e3b10e67e" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-040b3b0324a8a747c4363e0e3b10e67e"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png"></a></p>
 <p>Зазвичай ми рекомендуємо залишати це налаштування у режимі Auto (безперервний), але для досягнення максимальної Частоти кадрів його також потрібно вимкнути.</p>
 <p>Баланс білого впливає на колірну температуру відеозображення, і якщо баланс білого налаштований неправильно, зображення виглядатиме незадовільно — часто занадто червоним або зеленим.</p>
 <p>Увімкнення автоматичного балансу білого жертвує деякою Частотою кадрів, залишаючи нас на 200 FPS замість максимальних 226 FPS камери.</p>
 <p><strong>Пропускна здатність канального зв&rsquo;язку пристрою:</strong></p>
 <p>На камерах GigE пропускна здатність канального зв&rsquo;язку пристрою та розмір пакета пов&rsquo;язані між собою в тому сенсі, що для використання максимальної пропускної здатності розмір пакета має бути встановлений на 9000. Для досягнення повної Частоти кадрів це необхідно зробити.</p>
-<p><a href="#R-image-ba2ffd0acf0103947425e9f7aff8b784" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba2ffd0acf0103947425e9f7aff8b784"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
+<p><a href="#R-image-12e17a568944009fa1bc4a2c9d909e8b" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-12e17a568944009fa1bc4a2c9d909e8b"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
 <p><strong>Застосування Region of Interest (ROI):</strong></p>
-<p><a href="#R-image-02fd7db41928eed1a116762acc5976c9" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-02fd7db41928eed1a116762acc5976c9"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png"></a></p>
+<p><a href="#R-image-b32bfeef41f472a71dcec56ca30703be" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b32bfeef41f472a71dcec56ca30703be"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png"></a></p>
 <p>Region of Interest — це спосіб зменшити розмір зображення і, відповідно, необхідну смугу пропускання для кожного зображення. Зменшуючи розмір зображення, ми можемо збільшити Частоту кадрів, оскільки загальна вимога до зчитування пікселів стає меншою.</p>
 <p>Зменшення висоти та ширини може позитивно вплинути на Частоту кадрів і знизити вимоги до смуги пропускання.</p>
 <p>Щоб змінити Region of Interest, можна перетягнути повзунок висоти вліво для зменшення висоти зображення.</p>
-<p><a href="#R-image-b16830e2d64b3675550c219689d549f5" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b16830e2d64b3675550c219689d549f5"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png"></a></p>
+<p><a href="#R-image-6b3c5112226e5facb73beecee3792491" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b3c5112226e5facb73beecee3792491"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png"></a></p>
 <p>Оскільки ми змінили висоту зображення, тепер можна також змінити зміщення по осі Y, що може бути корисним як альтернатива фізичному переміщенню камери через зменшений розмір зображення.</p>
-<p><a href="#R-image-8fed2f2a731ac320b123049e9d3b053e" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8fed2f2a731ac320b123049e9d3b053e"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png"></a></p>
+<p><a href="#R-image-3d526cf126ad1ebdf306a290d48dfd75" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d526cf126ad1ebdf306a290d48dfd75"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png"></a></p>
 <p>Якщо повернутися на вкладку «Камера» і подивитися на Частоту кадрів, тепер видно, що максимальну Частоту кадрів можна збільшити — це відбувається тому, що ми застосували Region of Interest, зменшивши висоту сенсора камери.</p>
-<p><a href="#R-image-58825022ab9eacbbc26099276ae88a0b" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-58825022ab9eacbbc26099276ae88a0b"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png"></a></p>
+<p><a href="#R-image-49fe4fe425831f436107cc79e311ffa2" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-49fe4fe425831f436107cc79e311ffa2"><img alt="MotionCatalyst_2020-08-14_13-46-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png"></a></p>
 <h2 id="усунення-несправностей">Усунення несправностей<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Будь ласка, ознайомтеся з нашими рекомендаціями щодо GigE Vision / Gigabit Ethernet:</p>
 <p><a href="/sc-support/uk/cameras-video/gige-network-setup/index.html">gige-network-setup.md</a></p>
@@ -363,8 +393,8 @@
 <p><strong>Втрачені кадри:</strong></p>
 <p>Хоча більшість камер GigE є дуже надійними, залежно від налаштувань мережі та камери може знадобитися налаштування параметрів для уникнення втрати Кадрів.</p>
 <p>Переконайтеся, що розмір пакета встановлено на 9000 — це є вирішальним для хорошої Продуктивності, інакше існує реальна можливість втрати Кадрів. Також важливо, щоб мережевий адаптер був налаштований на використання jumbo frames розміром 9 кБ, щоб камера та мережевий адаптер відповідали одне одному.</p>
-<p><a href="#R-image-cd1c2e56f00a2a93a19c77b63f9b8cd5" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cd1c2e56f00a2a93a19c77b63f9b8cd5"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
+<p><a href="#R-image-f44d2e74a509e4c8d426a8c62f1ad907" class="lightbox-link"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f44d2e74a509e4c8d426a8c62f1ad907"><img alt="MotionCatalyst_2020-08-14_13-47-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
 <p>Одна камера GigE з роздільною здатністю 1440 x 1200 при 78 FPS використовуватиме приблизно 134 МБ/с на камеру. — Тому важливо мати окрему мережеву карту контролера відповідно до наших рекомендацій для систем із кількома камерами (у більшості випадків). Якщо ви придбали камеру GigE у нас, у комплекті буде двопортова мережева карта PCI Express для встановлення.</p>
 <p>Зазвичай ми не рекомендуємо підключати більше однієї камери до одного мережевого адаптера.</p>
 <p><strong>Фільтр Драйвер:</strong></p>
@@ -530,7 +560,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-gige-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html" lang="fr">Français</option>
@@ -592,8 +621,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537831" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542945" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

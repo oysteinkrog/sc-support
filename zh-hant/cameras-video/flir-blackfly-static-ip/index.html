@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="206">
     <meta itemprop="keywords" content="Gige-Camera,Flir">
     <title>如何為 FLIR Blackfly GigE 攝影機設定靜態 IP :: Swing Catalyst 支援</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537819" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537819" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537819" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542932" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542932" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772537819";
+      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772542932";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537819" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542932" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,28 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="導航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目錄 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#安裝-spinnaker">安裝 Spinnaker</a></li>
+    <li><a href="#在乙太網路介面卡上設定靜態-ip">在乙太網路介面卡上設定靜態 IP</a></li>
+    <li><a href="#建議靜態-ip-配置">建議靜態 IP 配置</a></li>
+    <li><a href="#在攝影機上設定靜態-ip">在攝影機上設定靜態 IP</a>
+      <ul>
+        <li><a href="#spinview_"><img src="../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" alt="SpinView_WPF_v140_76YBSasBIN.png"></a></li>
+        <li><a href="#攝影機建議靜態-ip-配置">攝影機建議靜態 IP 配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用-spinview-啟用巨型幀並優化攝影機的網路介面卡">使用 SpinView 啟用巨型幀並優化攝影機的網路介面卡</a></li>
+    <li><a href="#sharex_"><img src="../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png" alt="ShareX_ZAAgAqcrm3.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/index.html"><span itemprop="name">Swing Catalyst 支援</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/cameras-video/index.html"><span itemprop="name">相機與影片</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">如何為 FLIR Blackfly GigE 攝影機設定靜態 IP</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -230,25 +251,25 @@
 <p>安裝完成後，重新啟動電腦。</p>
 </li>
 </ul>
-<p><a href="#R-image-d8ad06b3bc200f17a7a25119f182bc1d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d8ad06b3bc200f17a7a25119f182bc1d"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
+<p><a href="#R-image-3d88a411f47198707fbba5df3cf992bb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d88a411f47198707fbba5df3cf992bb"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
 <h2 id="在乙太網路介面卡上設定靜態-ip">在乙太網路介面卡上設定靜態 IP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>每個攝影機和網路介面卡必須擁有各自唯一的靜態 IP 位址。例如，若您為攝影機指定靜態 IP 位址，請確保網路介面卡依照下方「建議靜態 IP 配置」對照表，設定對應的 IP 位址。</p>
 <p><strong>警告</strong></p>
 <p>請根據所對應的攝影機來設定網路介面卡，而非依介面卡編號。僅針對已識別的攝影機變更設定，其他介面卡保持不變。若將攝影機連接至不同的介面卡，則必須重新設定才能正常使用。</p>
 <p>在控制台中，前往「網路和網際網路」，再進入「網路和共用中心」，然後點擊「變更介面卡設定」。</p>
-<p><a href="#R-image-12100fa32efb82165c4a1df8e0e4f51c" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-12100fa32efb82165c4a1df8e0e4f51c"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
-<p><a href="#R-image-018aed03cc71a4feb3f7a8c7fe497726" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-018aed03cc71a4feb3f7a8c7fe497726"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
+<p><a href="#R-image-cf68b9cedfefa34f0e6e05e1580252cc" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf68b9cedfefa34f0e6e05e1580252cc"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
+<p><a href="#R-image-6e39bb9acb9fdd3ca1a61734c98f87d5" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e39bb9acb9fdd3ca1a61734c98f87d5"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
 <p>此處可看到電腦上所有網路介面卡的清單。在本例中，我們希望設定裝置名稱為「Intel Pro/1000」的「Ethernet 2」和「Ethernet 3」。請務必只設定用於攝影機的網路介面卡，避免影響其他介面卡的網際網路連線。</p>
 <p>在您要修改的網路介面卡上按右鍵，點擊「內容」，然後向下捲動至「網際網路通訊協定第 4 版 (TCP/IPv4)」並點擊「內容」。</p>
-<p><a href="#R-image-cb314403396b6886e3443efd914ecbfb" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb314403396b6886e3443efd914ecbfb"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
-<p><a href="#R-image-f3b842b3778d5d05d8c4b7cba8885281" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f3b842b3778d5d05d8c4b7cba8885281"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
-<p><a href="#R-image-175431c5cafeeb2ca5811487869f9c7f" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-175431c5cafeeb2ca5811487869f9c7f"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
+<p><a href="#R-image-a48a9b92425b9cf1e5e7588994a83357" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a48a9b92425b9cf1e5e7588994a83357"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
+<p><a href="#R-image-ac7d2acda3973042ad2f9dfc1e46fc33" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac7d2acda3973042ad2f9dfc1e46fc33"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
+<p><a href="#R-image-4606c05342a7cc73add5630c6adfb3a6" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4606c05342a7cc73add5630c6adfb3a6"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
 <ul>
 <li>
 <p>選取「使用下列 IP 位址」。</p>
@@ -316,10 +337,10 @@
 <p>閘道可同時在攝影機上設定。</p>
 <h2 id="在攝影機上設定靜態-ip">在攝影機上設定靜態 IP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>請對每台需要設定靜態 IP 的攝影機重複以下步驟。若要進入攝影機 IP 配置，請開啟 SpinView 應用程式，並在您要設定 IP 的攝影機上按右鍵。</p>
-<p><a href="#R-image-faf701f58a49de5c99ffd1eb6d470c46" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-faf701f58a49de5c99ffd1eb6d470c46"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
-<h3 id="spinview_"><a href="#R-image-d9000807f4a7af467449f700c24867bd" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d9000807f4a7af467449f700c24867bd"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-96e9b24e764a201b1da78e5af763e893" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96e9b24e764a201b1da78e5af763e893"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
+<h3 id="spinview_"><a href="#R-image-cdf75d4a911f930a76669a395aae1445" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cdf75d4a911f930a76669a395aae1445"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>在裝置清單中的攝影機上按右鍵，選取「GigE Configuration」。</p>
@@ -346,8 +367,8 @@
 <p>點擊「Set Current and Persistent IP Configuration」。</p>
 </li>
 </ul>
-<p><a href="#R-image-bb4b818f1099771bd2123d23c40c6d19" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bb4b818f1099771bd2123d23c40c6d19"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
+<p><a href="#R-image-df6715f25b46b6edcb4605819ac3d4b1" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-df6715f25b46b6edcb4605819ac3d4b1"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
 <h3 id="攝影機建議靜態-ip-配置">攝影機建議靜態 IP 配置<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <table>
   <thead>
@@ -418,16 +439,16 @@
 <p>點擊「Configure」以套用變更。</p>
 </li>
 </ul>
-<h2 id="sharex_"><a href="#R-image-631cfaed2a5f3e361ca967b918718c40" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-631cfaed2a5f3e361ca967b918718c40"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-2764696d9389f0da45d52bbd853e7c71" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2764696d9389f0da45d52bbd853e7c71"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
-<p><a href="#R-image-ee9faafa438903c6ef42088bd3c829b3" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee9faafa438903c6ef42088bd3c829b3"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
-<p><a href="#R-image-57344236da88e4748cd333683f4293a3" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-57344236da88e4748cd333683f4293a3"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
-<p><a href="#R-image-d2b66a3626e98d475c30b738638cf0d0" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2b66a3626e98d475c30b738638cf0d0"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
+<h2 id="sharex_"><a href="#R-image-2c7d3e1b6bb0cfb71505c0a3f36733e7" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2c7d3e1b6bb0cfb71505c0a3f36733e7"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-24368288b36f55f33c866a745bd84226" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-24368288b36f55f33c866a745bd84226"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
+<p><a href="#R-image-6f8c3e779f4101437b5aeab7889029f2" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6f8c3e779f4101437b5aeab7889029f2"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
+<p><a href="#R-image-a6109407c62e5dd4ac62edcb632f1c82" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a6109407c62e5dd4ac62edcb632f1c82"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
+<p><a href="#R-image-111fb10b901067dc965edc00b39e3952" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-111fb10b901067dc965edc00b39e3952"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
 <hr>
 <p><em>最後更新：2024-02-22</em> | <a href="/sc-support/zh-hant/cameras-video/flir-blackfly-static-ip/index.html">在官方支援網站上檢視</a></p>
 
@@ -538,7 +559,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">語言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" lang="fr">Français</option>
@@ -600,8 +620,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542932" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

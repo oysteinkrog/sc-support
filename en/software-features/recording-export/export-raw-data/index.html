@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="This article covers how to export raw data from Swing Catalyst or Motion Catalyst as tsv files.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to export raw data :: Swing Catalyst Support">
+    <meta name="twitter:description" content="This article covers how to export raw data from Swing Catalyst or Motion Catalyst as tsv files.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/en/software-features/recording-export/export-raw-data/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Support">
+    <meta property="og:title" content="How to export raw data :: Swing Catalyst Support">
+    <meta property="og:description" content="This article covers how to export raw data from Swing Catalyst or Motion Catalyst as tsv files.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Software & Features">
+    <meta itemprop="name" content="How to export raw data :: Swing Catalyst Support">
+    <meta itemprop="description" content="This article covers how to export raw data from Swing Catalyst or Motion Catalyst as tsv files.">
+    <meta itemprop="wordCount" content="271">
+    <title>How to export raw data :: Swing Catalyst Support</title>
+    <link href="/sc-support/images/favicon.png?1772542919" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542919" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.en.js?1772542919";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/lunr/lunr.en.min.js?1772542919" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542919" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542919" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542919" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/recording-export\/export-raw-data\/index.html';
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/en/software-features/recording-export/export-raw-data/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#exporting-data-from-the-explorer">Exporting data from the Explorer</a></li>
+    <li><a href="#data-export-selection">Data Export selection</a></li>
+    <li><a href="#raw-data-options">Raw Data options</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/software-features/index.html"><span itemprop="name">Software &amp; Features</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/en/software-features/recording-export/index.html"><span itemprop="name">Recording &amp; Export</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">How to export raw data</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/software-features/recording-export/change-recording-user/index.html" title="How to change the user on a existing recording (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/en/software-features/recording-export/export-contacts/index.html" title="How to export student contact information (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+
+<h1 id="how-to-export-data-to-be-viewed-in-a-spreadsheet">How to export data to be viewed in a spreadsheet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>This article covers how to export raw data from Swing Catalyst or Motion Catalyst as tsv files.</p>
+<p>Note, files exported aside from student details are tab separated, make sure to select tab delimited in your spreadsheet viewer.</p>
+<p>Looking to export student information? See this <a href="/sc-support/en/software-features/recording-export/export-contacts/index.html">article</a>.</p>
+<p>There are several ways to export data, through the Explorer and from the stack. Both options allow the same functionality.</p>
+<h2 id="exporting-data-from-the-explorer">Exporting data from the Explorer<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-d35fc11d45f36e48475903038291d6cd" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d35fc11d45f36e48475903038291d6cd"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p>In the Explorer data can be exported by right clicking on a recording, selecting Export and choosing from the available options, or dragging the recording(s) to the Export List.</p>
+<p>Menu selection</p>
+<p>Function</p>
+<p>Add recording to export list
+Adds the selected recording to the export list. Same as dragging the recording to the export list</p>
+<p>Add session to export list
+Adds a whole session to the export list. Amount of recordings that appear in the export list</p>
+<p>depend on how many recordings are in the session itself.</p>
+<p>Export recording as raw data files
+Exports the selected recording with the raw data export options</p>
+<p>Export session as raw data files
+Exports the whole session with raw data export options</p>
+<p>An overview of the export options that are available by right clicking:</p>
+<p><a href="#R-image-c2ad69448b223c98830aa09f8713238f" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2ad69448b223c98830aa09f8713238f"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
+<p>The export list:</p>
+<p><a href="#R-image-0ac7288df1299476b148da1d1f32b547" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ac7288df1299476b148da1d1f32b547"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<h2 id="data-export-selection">Data Export selection<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>It&rsquo;s possible to choose from a few different options when exporting data.</p>
+<p>This article mainly focuses on raw data.</p>
+<p>To export raw data, make sure to select &ldquo;Raw Data&rdquo; in the Export dialog.</p>
+<p><a href="#R-image-15c7425ec78950791d6303b26c8a2b01" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-15c7425ec78950791d6303b26c8a2b01"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<h2 id="raw-data-options">Raw Data options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-23b8cb49ce029d9b036f6ef84da14748" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23b8cb49ce029d9b036f6ef84da14748"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
+<p>Please note that this functionality is still being improved on, currently a lot of options are bundled with &ldquo;Raw data&rdquo;.</p>
+<hr>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/en/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Support</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/getting-started/index.html"><a class="padding default-animation" href="/sc-support/en/getting-started/index.html">Getting Started</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/en/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/hardware/index.html"><a class="padding default-animation" href="/sc-support/en/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/en/software-features/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/index.html">Software &amp; Features</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="parent alwaysopen " data-nav-id="/sc-support/en/software-features/recording-export/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/recording-export/index.html">Recording &amp; Export</a><ul id="R-subsections-389e7819eaf6edeb83e633463d6bf938" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/export-recordings/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/export-recordings/index.html">Export recordings</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/change-recording-user/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/change-recording-user/index.html">How to change the user on a existing recording</a></li>
+            <li class="active " data-nav-id="/sc-support/en/software-features/recording-export/export-raw-data/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/export-raw-data/index.html">How to export raw data</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/export-contacts/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/export-contacts/index.html">How to export student contact information</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/import-from-v1/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/import-from-v1/index.html">How to Import videos from V1</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/record-a-lesson/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/record-a-lesson/index.html">How to record a lesson</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/email-sharing/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/email-sharing/index.html">How to set up email sharing in Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/swing-catalyst-online/index.html">How to use Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/ios-app-sharing/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/ios-app-sharing/index.html">Sharing recorded videos with the Swing Catalyst app for iOS</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/bookmarks/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/bookmarks/index.html">What are bookmarks?</a></li>
+            <li class="" data-nav-id="/sc-support/en/software-features/recording-export/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/en/software-features/recording-export/raw-data-export-guide/index.html">What is included in the raw data export</a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/software-features/motion-capture/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/motion-capture/index.html">Motion Capture</a><ul id="R-subsections-cb6f98da72eeb199eca24d21772eee2e" class="collapsible-menu"></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/software-features/data-analysis/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/data-analysis/index.html">Data &amp; Analysis</a><ul id="R-subsections-dae222f9a14c57b07343dc6fee85e824" class="collapsible-menu"></ul></li>
+            <li class="alwaysopen " data-nav-id="/sc-support/en/software-features/setup-configuration/index.html"><a class="padding default-animation" href="/sc-support/en/software-features/setup-configuration/index.html">Setup &amp; Configuration</a><ul id="R-subsections-e3182db2f7f022117c20d684e78c4445" class="collapsible-menu"></ul></li></ul></li>
+            <li class="" data-nav-id="/sc-support/en/account-setup/index.html"><a class="padding default-animation" href="/sc-support/en/account-setup/index.html">Account &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/en/reference/index.html"><a class="padding default-animation" href="/sc-support/en/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/recording-export/export-raw-data/index.html" lang="en" selected data-selected>English</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542919" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542919" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

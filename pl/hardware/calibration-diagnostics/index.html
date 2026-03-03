@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1005">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data">
     <title>Kalibracja i diagnostyka Płyty Równowagi :: Wsparcie Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537829" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537829" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537829" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542943" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542943" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542943" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.pl.js?1772537829";
+      window.relearn.index_js_url="/sc-support/searchindex.pl.js?1772542943";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537829" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542943" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537829" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537829" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537829" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537829" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537829" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542943" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542943" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542943" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542943" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542943" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Spis terści (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#część-1-używanie-narzędzia-se-do-uzyskania-pliku-kalibracyjnego">Część 1: Używanie narzędzia SE do uzyskania pliku kalibracyjnego.</a></li>
+    <li><a href="#rejestracja-płyty-równowagi">Rejestracja Płyty Równowagi</a></li>
+    <li><a href="#upewnij-się-że-usunięto-dywan-i-wszelkie-inne-przedmioty-z-płyty-równowagi--ma-to-na-celu-zapewnienie-że-odczyty-nie-będą-zakłócane-przez-żadne-czynniki-zewnętrzne">Upewnij się, że usunięto dywan i wszelkie inne przedmioty z Płyty Równowagi — ma to na celu zapewnienie, że odczyty nie będą zakłócane przez żadne czynniki zewnętrzne.</a></li>
+    <li><a href="#seu_"><img src="../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png" alt="SEU_2021-08-11_13-05-17.png"></a></li>
+    <li><a href="#wykonywanie-procesu-kalibracji">Wykonywanie procesu kalibracji</a></li>
+    <li><a href="#pozycjonowanie">Pozycjonowanie</a>
+      <ul>
+        <li><a href="#ukończone-nagranie">Ukończone Nagranie</a></li>
+      </ul>
+    </li>
+    <li><a href="#część-2-instalacja-pliku-kalibracyjnego">Część 2: Instalacja pliku kalibracyjnego</a>
+      <ul>
+        <li><a href="#kontynuuj-wykonując-poniższe-kroki">Kontynuuj, wykonując poniższe kroki</a></li>
+        <li><a href="#ustawienia-płyty-czujnika">Ustawienia Płyty czujnika</a></li>
+      </ul>
+    </li>
+    <li><a href="#rozwiązywanie-problemów">Rozwiązywanie problemów</a>
+      <ul>
+        <li><a href="#płyta-równowagi-nie-jest-rozpoznawana-lub-nie-jest-wyświetlana-jako-podłączona">Płyta Równowagi nie jest rozpoznawana lub nie jest wyświetlana jako podłączona:</a></li>
+        <li><a href="#kalibracja-nie-jest-instalowana-pomyślnie">Kalibracja nie jest instalowana pomyślnie</a></li>
+        <li><a href="#na-płycie-występują-zakłócenia-mimo-że-uruchomiłem-narzędzie">Na płycie występują zakłócenia, mimo że uruchomiłem narzędzie</a></li>
+        <li><a href="#niezgodności-sprzętowe">Niezgodności sprzętowe</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pl/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pl/hardware/index.html"><span itemprop="name">Sprzęt</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kalibracja i diagnostyka Płyty Równowagi</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -235,74 +269,74 @@
 </ul>
 <p>Jeśli masz zainstalowaną starszą wersję, najpierw odinstaluj ją za pomocą <a href="https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs" rel="external">Dodaj lub usuń programy</a>.</p>
 <p>Kliknij Start:</p>
-<p><a href="#R-image-dd89a646986325c944437da75d3669ac" class="lightbox-link"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd89a646986325c944437da75d3669ac"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
+<p><a href="#R-image-7376ad9b955d5323261aa95713e4c186" class="lightbox-link"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7376ad9b955d5323261aa95713e4c186"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
 <p>Po kliknięciu przycisku Start narzędzie automatycznie spróbuje wyszukać urządzenia. Jeśli nie znajdzie Twojej płyty, kliknij menu rozwijane i wybierz swoją Płytę Równowagi.</p>
-<p><a href="#R-image-116be93e9c140a937ade68aab56af218" class="lightbox-link"><img alt="SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-116be93e9c140a937ade68aab56af218"><img alt="SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
-<p>Kliknij Scan<a href="#R-image-a99b81d95fe5e1783067ee120278312b" class="lightbox-link"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a99b81d95fe5e1783067ee120278312b"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
+<p><a href="#R-image-2e021abaf70acf00f02762b52d1a0454" class="lightbox-link"><img alt="SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e021abaf70acf00f02762b52d1a0454"><img alt="SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
+<p>Kliknij Scan<a href="#R-image-9bf7a9aa17b2ff371de8ec5805be14a6" class="lightbox-link"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9bf7a9aa17b2ff371de8ec5805be14a6"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
 <p>Wybierz urządzenie odpowiadające numerowi seryjnemu Twojej płyty i kliknij Next.</p>
 <h2 id="rejestracja-płyty-równowagi">Rejestracja Płyty Równowagi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-288ca9ea93550cddcf39f88a2571d4d7" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-288ca9ea93550cddcf39f88a2571d4d7"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
-<p>Przykład wypełnionych danych rejestracyjnych<a href="#R-image-24c67a538965ce9020c4f87e365a7997" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-24c67a538965ce9020c4f87e365a7997"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
+<p><a href="#R-image-f63c9a7922c7125048beb9cd20748228" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f63c9a7922c7125048beb9cd20748228"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
+<p>Przykład wypełnionych danych rejestracyjnych<a href="#R-image-7e8bdb95384b9f74548be5fe224d7d24" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e8bdb95384b9f74548be5fe224d7d24"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
 <p>Po wypełnieniu wymaganych informacji dotyczących gwarancji i serwisu kliknij Continue.</p>
 <p>Jeśli to możliwe, wybierz kamerę i skieruj ją tak, aby widoczna była Płyta Równowagi, a następnie kliknij Next.</p>
 <p>Kamera nie jest jednak wymagana — możesz kontynuować, nawet jeśli żadna kamera nie zostanie wykryta.</p>
-<p><a href="#R-image-eb1e9496ef3d1d75b584362593d8e2bc" class="lightbox-link"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb1e9496ef3d1d75b584362593d8e2bc"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
+<p><a href="#R-image-33c2b2cea3aedc96166cec81078b68db" class="lightbox-link"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-33c2b2cea3aedc96166cec81078b68db"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
 <h2 id="upewnij-się-że-usunięto-dywan-i-wszelkie-inne-przedmioty-z-płyty-równowagi--ma-to-na-celu-zapewnienie-że-odczyty-nie-będą-zakłócane-przez-żadne-czynniki-zewnętrzne">Upewnij się, że usunięto dywan i wszelkie inne przedmioty z Płyty Równowagi — ma to na celu zapewnienie, że odczyty nie będą zakłócane przez żadne czynniki zewnętrzne.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h2 id="seu_"><a href="#R-image-53441e0509be3a4bebdc5157569198c7" class="lightbox-link"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-53441e0509be3a4bebdc5157569198c7"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="seu_"><a href="#R-image-98fd9611497580cc50392ce7c64f2a84" class="lightbox-link"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-98fd9611497580cc50392ce7c64f2a84"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="wykonywanie-procesu-kalibracji">Wykonywanie procesu kalibracji<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Przed wejściem na płytę narzędzie zbiera dane, aby ustalić Linię bazową do porównania.</p>
 <p>Upewnij się, że nie staniesz przypadkowo na płycie, dopóki narzędzie nie wyda takiego polecenia.</p>
-<p><a href="#R-image-0254214d45e52c687074da9ca4b5b2b0" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0254214d45e52c687074da9ca4b5b2b0"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
+<p><a href="#R-image-a194ad6876bf53dff862b393287b1158" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a194ad6876bf53dff862b393287b1158"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
 <h2 id="pozycjonowanie">Pozycjonowanie<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Ważne jest, aby stać na płycie zgodnie ze wskazówkami narzędzia.</p>
 <p>Ciemne stopy pokazują, gdzie powinieneś stać, a szare stopy wskazują, gdzie powinieneś stanąć następnie.</p>
-<p><a href="#R-image-57d3d4f95e45cc665850762580afc0cd" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-57d3d4f95e45cc665850762580afc0cd"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
+<p><a href="#R-image-94f572cd0d0d6eba90e2e1eb5685450b" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94f572cd0d0d6eba90e2e1eb5685450b"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
 <p>Postępuj zgodnie z każdym krokiem, ponieważ jest to ważne dla aktywowania wszystkich obszarów płyty.</p>
 <h3 id="ukończone-nagranie">Ukończone Nagranie<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Jeśli nie jesteś zadowolony z Nagrania — może popełniłeś błąd? Możesz łatwo zrestartować proces, klikając restart.</p>
 <p>Kliknij Continue, jeśli chcesz kontynuować.</p>
-<p><a href="#R-image-a2fbee7c4018acc4c2fc6f879c7a2f3c" class="lightbox-link"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2fbee7c4018acc4c2fc6f879c7a2f3c"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
+<p><a href="#R-image-f40cff17afbd01b2a48d9901333e3de5" class="lightbox-link"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f40cff17afbd01b2a48d9901333e3de5"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
 <p>Kliknij przycisk Save, a następnie przycisk Send.</p>
-<p><a href="#R-image-fa31b163c1157a303b9f472a265d1363" class="lightbox-link"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa31b163c1157a303b9f472a265d1363"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
+<p><a href="#R-image-23cff3d7807f14801a01cc1a6ac0a7eb" class="lightbox-link"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23cff3d7807f14801a01cc1a6ac0a7eb"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
 <p>Przed wysłaniem danych do producenta w celu weryfikacji wprowadź przybliżoną wagę i częstotliwość użytkowania.</p>
 <p>W polu notatek możesz opisać problemy z płytą, na przykład słaby odczyt lewej stopy lub inne zastrzeżenia.</p>
 <p>Producent zbiera te dane w celu dalszego doskonalenia algorytmów rekalibracji, aby zapewnić dokładniejsze odczyty czujników.</p>
 <p>Wprowadź informacje i kliknij send:</p>
-<p><a href="#R-image-d24ba03fd99040c1ec5e704aa686ddb8" class="lightbox-link"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d24ba03fd99040c1ec5e704aa686ddb8"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
+<p><a href="#R-image-ef4af9f05f584080a8458d56cc81e988" class="lightbox-link"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef4af9f05f584080a8458d56cc81e988"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
 <p>Po zakończeniu plik kalibracyjny zostanie zapisany w folderze Dokumenty. Naciśnij „No&quot;, a następnie zamknij narzędzie.</p>
-<p><a href="#R-image-7e21f4fbab7b33312c956b5be2a2461b" class="lightbox-link"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e21f4fbab7b33312c956b5be2a2461b"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
+<p><a href="#R-image-7cbdf2b9c9b0dc4ff62c294a2ec40ea2" class="lightbox-link"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7cbdf2b9c9b0dc4ff62c294a2ec40ea2"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
 <h2 id="część-2-instalacja-pliku-kalibracyjnego">Część 2: Instalacja pliku kalibracyjnego<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="kontynuuj-wykonując-poniższe-kroki">Kontynuuj, wykonując poniższe kroki<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Uruchom SwingCatalyst i przejdź do Ustawienia &ndash;&gt; Sprzęt w menu głównym.</li>
 </ul>
 <p>Płyta powinna zostać wykryta automatycznie. Jeśli tak się nie stanie, zapoznaj się z sekcją rozwiązywania problemów.</p>
-<p><a href="#R-image-840bc68b29f274510dc74fe326c77a2d" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-840bc68b29f274510dc74fe326c77a2d"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
+<p><a href="#R-image-da227106c5075ecf2fc8bed96e70f10b" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-da227106c5075ecf2fc8bed96e70f10b"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
 <p>Kliknij przycisk „Konfiguruj&hellip;&quot;, aby otworzyć okno dialogowe konfiguracji.</p>
 <h3 id="ustawienia-płyty-czujnika">Ustawienia Płyty czujnika<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Przejdź do zakładki Czujnik Postawy i kliknij Przeglądaj i Zainstaluj.<a href="#R-image-ebd0c8f235fb72465e1bbb6e18957f06" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ebd0c8f235fb72465e1bbb6e18957f06"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
-<p>Przejdź do katalogu, w którym zapisałeś plik kalibracyjny, np.: C:\User\YourUsername\Documents, a następnie wybierz plik mxd właśnie zapisany za pomocą narzędzia i kliknij Otwórz.<a href="#R-image-f406df0359ea9c27a8e3824350547540" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f406df0359ea9c27a8e3824350547540"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
+<p>Przejdź do zakładki Czujnik Postawy i kliknij Przeglądaj i Zainstaluj.<a href="#R-image-6553e4f6fa603e921e56d03ea42be6aa" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6553e4f6fa603e921e56d03ea42be6aa"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
+<p>Przejdź do katalogu, w którym zapisałeś plik kalibracyjny, np.: C:\User\YourUsername\Documents, a następnie wybierz plik mxd właśnie zapisany za pomocą narzędzia i kliknij Otwórz.<a href="#R-image-a03c17cef718139def873fdc550ca9ad" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a03c17cef718139def873fdc550ca9ad"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
 <p>Po zakończeniu instalacji zostaniesz o tym poinformowany i możesz kliknąć OK, aby zamknąć okna.</p>
 <p>Twoja Płyta Równowagi powinna być teraz gotowa do użytku.
 Rozpocznij nową Sesję w Analizie Swingu i sprawdź, czy podczas rejestrowania swingów w polu danych Nacisku i Postawy wyświetlają się pomiary nacisku.</p>
-<p><a href="#R-image-038a9eb6f8a8a89ce73743086e57af35" class="lightbox-link"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-038a9eb6f8a8a89ce73743086e57af35"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
+<p><a href="#R-image-b639c5f2ca3c069a16d2ddb99b7ca465" class="lightbox-link"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b639c5f2ca3c069a16d2ddb99b7ca465"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
 <p>Note: Przy intensywnym użytkowaniu może być konieczne przeprowadzenie ponownej kalibracji Płyty Równowagi. Można to zrobić, klikając przycisk diagnostyki w Ustawieniach SwingCatalyst, co spowoduje uruchomienie narzędzia SE Utility.</p>
 <h2 id="rozwiązywanie-problemów">Rozwiązywanie problemów<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="płyta-równowagi-nie-jest-rozpoznawana-lub-nie-jest-wyświetlana-jako-podłączona">Płyta Równowagi nie jest rozpoznawana lub nie jest wyświetlana jako podłączona:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -338,8 +372,8 @@ Rozpocznij nową Sesję w Analizie Swingu i sprawdź, czy podczas rejestrowania 
 <li>Plik kalibracyjny otrzymany z narzędzia Sensor Edge Utility może być wadliwy lub uszkodzony. Spróbuj ponownie uruchomić narzędzie i zainstalować <em>nowy</em> plik kalibracyjny. Jeśli to nie pomoże, skontaktuj się z naszym zespołem pomocy technicznej.</li>
 </ul>
 <h3 id="na-płycie-występują-zakłócenia-mimo-że-uruchomiłem-narzędzie">Na płycie występują zakłócenia, mimo że uruchomiłem narzędzie<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-29682ae6a74b4e1887e4c09138e394ea" class="lightbox-link"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-29682ae6a74b4e1887e4c09138e394ea"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
+<p><a href="#R-image-95964b02edafb0083f9b2ff36c96cf79" class="lightbox-link"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95964b02edafb0083f9b2ff36c96cf79"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
 <p>Zakłócenia mogą być spowodowane kilkoma czynnikami:</p>
 <ul>
 <li>
@@ -455,7 +489,6 @@ Narzędzie kalibracyjne powinno być uruchamiane regularnie — nawet raz w mies
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Język</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/calibration-diagnostics/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/calibration-diagnostics/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/calibration-diagnostics/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/calibration-diagnostics/index.html" lang="fr">Français</option>
@@ -517,8 +550,8 @@ Narzędzie kalibracyjne powinno być uruchamiane regularnie — nawet raz w mies
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537829" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542943" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

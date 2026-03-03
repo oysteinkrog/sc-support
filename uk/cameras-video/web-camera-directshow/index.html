@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="364">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
     <title>Як використовувати веб-камеру (інтеграція DirectShow) з SwingCatalyst :: Підтримка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
@@ -61,26 +60,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537831" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537831" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537831" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542945" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542945" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542945" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.uk.js?1772537831";
+      window.relearn.index_js_url="/sc-support/searchindex.uk.js?1772542945";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537831" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542945" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537831" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537831" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537831" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537831" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537831" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542945" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542945" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542945" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542945" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542945" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,31 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#підключення-камери">Підключення камери</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#меню-налаштувань">Меню налаштувань</a></li>
+    <li><a href="#розширені-налаштування-камери">Розширені налаштування камери</a></li>
+    <li><a href="#усунення-несправностей"><a href="web-camera-directshow.md">Усунення несправностей</a></a>
+      <ul>
+        <li><a href="#низька-частота-кадрів">Низька частота кадрів:</a></li>
+        <li><a href="#втрата-кадрів">Втрата кадрів:</a></li>
+        <li><a href="#вибір-іншого-типу-медіа">Вибір іншого типу медіа</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/uk/index.html"><span itemprop="name">Підтримка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/uk/cameras-video/index.html"><span itemprop="name">Камери та відео</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Як використовувати веб-камеру (інтеграція DirectShow) з SwingCatalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -203,26 +227,26 @@
 <h2 id="підключення-камери">Підключення камери<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="увімкніть-камеру-в-меню-налаштувань">Увімкніть камеру в меню Налаштувань.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Натисніть на значок шестерні.</p>
-<p><a href="#R-image-6d4b079ecfc905c671f21351359a5b6e" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d4b079ecfc905c671f21351359a5b6e"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<p><a href="#R-image-721ab0642c593386d09f9a6623075785" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-721ab0642c593386d09f9a6623075785"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
 <h2 id="меню-налаштувань">Меню налаштувань<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Зверніть увагу, що тип інтеграції камери визначається, наприклад: DirectShow, Spinnaker:</p>
-<p><a href="#R-image-1fe9b2f1d1ba0f710d9504ed4471178d" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1fe9b2f1d1ba0f710d9504ed4471178d"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p><a href="#R-image-3aae5f90e536a8275ba1e84eb24c9960" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3aae5f90e536a8275ba1e84eb24c9960"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
 <p>Якщо камеру правильно розпізнано, вона автоматично з&rsquo;явиться у списку камер.</p>
 <p>Щоб використовувати камеру, їй потрібно призначити кут огляду: натисніть на значок «Вимкнено» та виберіть кут, після чого переведіть перемикач «ВИМК» у положення «УВМ», щоб увімкнути камеру.</p>
-<p><a href="#R-image-8378af73d1d68a98e6d78f24ea2f9d74" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8378af73d1d68a98e6d78f24ea2f9d74"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-95528e36c64f97de2cecb010db96d520" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95528e36c64f97de2cecb010db96d520"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
 <p>Камеру Dragon увімкнено і призначено як камеру з боку грані праворуч (тобто вона знімає користувача з правого боку).</p>
-<p><a href="#R-image-04eaeeefef95145237e55eba2e8481c6" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-04eaeeefef95145237e55eba2e8481c6"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<p><a href="#R-image-0499eaed5d57a3e728a88a66cbecc668" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0499eaed5d57a3e728a88a66cbecc668"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
 <h2 id="розширені-налаштування-камери">Розширені налаштування камери<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Розширені налаштування камери дозволяють змінити назву камери, дзеркально відобразити та повернути зображення, обрізати його, а також налаштувати відеозображення та внести зміни до параметрів.</p>
 <p>Примітка: Auto доступний лише для певних властивостей, таких як баланс білого, витримка та фокус).</p>
-<p><a href="#R-image-a0ad7cd25428b02fab2110561ce439d0" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0ad7cd25428b02fab2110561ce439d0"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
-<p><a href="#R-image-146a4d7699b967835baa608f378b95ab" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-146a4d7699b967835baa608f378b95ab"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p><a href="#R-image-599938d095140e31f5ded880ba9ac296" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-599938d095140e31f5ded880ba9ac296"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-4e1fa06ed2ed0832f08c93c60f78359d" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e1fa06ed2ed0832f08c93c60f78359d"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
 <p>Якщо ви внесли будь-які помилкові зміни, ви можете повернутися до значень за замовчуванням, натиснувши «Відновити стандартні».</p>
 <h2 id="усунення-несправностей"><a href="/sc-support/uk/cameras-video/web-camera-directshow/index.html">Усунення несправностей</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="низька-частота-кадрів">Низька частота кадрів:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -230,8 +254,8 @@
 <p>За замовчуванням більшість камер працюють з автоматичною витримкою; якщо освітлення недостатнє, час витримки на кадр буде великим, і камера не зможе забезпечити максимальну частоту кадрів.</p>
 <p>Якщо витримка надто велика, частота кадрів зменшиться, а запис буде розмитішим.</p>
 <h3 id="втрата-кадрів">Втрата кадрів:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Якщо камера втрачає кадри (тобто не видає потрібну кількість FPS), це може призводити до візуальних артефактів.<a href="#R-image-0c49380d9092f57c024cf3596e2292e9" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c49380d9092f57c024cf3596e2292e9"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<p>Якщо камера втрачає кадри (тобто не видає потрібну кількість FPS), це може призводити до візуальних артефактів.<a href="#R-image-93ea98cd7c834b3be62ec89e1ce46c36" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-93ea98cd7c834b3be62ec89e1ce46c36"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
 <ul>
 <li>
 <p>Переконайтеся, що камеру підключено безпосередньо до комп&rsquo;ютера, бажано до одного з USB-портів на задній панелі комп&rsquo;ютера.</p>
@@ -254,8 +278,8 @@
 </li>
 </ul>
 <p>Певні формати використовують меншу пропускну здатність, ніж інші. Якщо камера підтримує RAW8, GREY8 або інші 8-бітні формати зображення, вони є кращими за будь-які типи медіа RGB або MPEG, оскільки потребують значно меншої пропускної здатності.</p>
-<p><a href="#R-image-232884fdfe21665799a53fd71125755b" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-232884fdfe21665799a53fd71125755b"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<p><a href="#R-image-497fd17792c21f0aecf0cdd2f709b12e" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-497fd17792c21f0aecf0cdd2f709b12e"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
 <hr>
 <p><em>Останнє оновлення: 2023-12-15</em> | <a href="/sc-support/uk/cameras-video/web-camera-directshow/index.html">Переглянути на офіційному сайті підтримки</a></p>
 
@@ -366,7 +390,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
@@ -428,8 +451,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537831" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542945" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

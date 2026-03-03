@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="577">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Force-Data,Launch-Monitor">
     <title>Trackman không kích hoạt Swing Catalyst - hướng dẫn xử lý sự cố kỹ thuật :: Hỗ trợ Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/trackman-troubleshooting/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537826" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537826" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537826" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542940" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542940" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542940" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772537826";
+      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772542940";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772537826" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772542940" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['vi'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537826" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537826" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537826" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537826" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537826" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542940" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542940" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542940" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542940" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542940" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,23 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#bù-trừ-độ-trễ-launch-monitor-trong-swing-catalyst">Bù trừ độ trễ Launch Monitor trong Swing Catalyst</a>
+      <ul>
+        <li><a href="#trackman-3e">Trackman 3e</a></li>
+      </ul>
+    </li>
+    <li><a href="#địa-chỉ-ip-qua-wifi--usb">Địa chỉ IP qua WiFi &amp; USB</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/index.html"><span itemprop="name">Hỗ Trợ Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/hardware/index.html"><span itemprop="name">Phần cứng</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Trackman không kích hoạt Swing Catalyst - hướng dẫn xử lý sự cố kỹ thuật</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -219,8 +235,8 @@
 <p>Trong Swing Catalyst 9.7.8 và 9.7.9, vấn đề này đã được cải thiện thêm. Nếu bạn đã làm theo các hướng dẫn này mà vẫn chưa thành công, hãy đảm bảo rằng bạn đang chạy phiên bản 9.7.9 hoặc mới hơn để giúp giảm thiểu độ trễ.</p>
 <h2 id="bù-trừ-độ-trễ-launch-monitor-trong-swing-catalyst">Bù trừ độ trễ Launch Monitor trong Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nếu bạn đang nhận được dữ liệu nhưng Swing Catalyst không Kích Hoạt một Bản Ghi, hãy thử thay đổi giá trị &ldquo;Trigger delay&rdquo; thành 1400.</p>
-<p><a href="#R-image-aec68799c6801fe6831085600339ebfb" class="lightbox-link"><img alt="Hình ảnh cài đặt độ trễ kích hoạt" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-aec68799c6801fe6831085600339ebfb"><img alt="Hình ảnh cài đặt độ trễ kích hoạt" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png"></a></p>
+<p><a href="#R-image-0ba9a46f5956fecd38d7d0301e8edafa" class="lightbox-link"><img alt="Hình ảnh cài đặt độ trễ kích hoạt" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ba9a46f5956fecd38d7d0301e8edafa"><img alt="Hình ảnh cài đặt độ trễ kích hoạt" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/2021-11-25-14-21-29-png.png"></a></p>
 <h3 id="trackman-3e">Trackman 3e<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Bạn cũng có thể kiểm tra xem &ldquo;legacy SDK&rdquo; có được bật hay không từ giao diện web của thiết bị. Bạn có thể vào giao diện web từ Cài đặt TPS, bật chế độ operator bắt buộc và kiểm tra trong phần Chuẩn bị.</p>
 <p>Nếu SDK output đã được thiết lập trong TPS và trên thiết bị mà bạn vẫn không nhận được dữ liệu, hãy thử kết nối với thiết bị hoặc SDK bằng công cụ có tên Hercules.</p>
@@ -269,8 +285,8 @@
 <li>Kết nối trực tiếp đến máy chủ TPS SDK tại 127.0.0.1 cổng: 52950</li>
 </ul>
 <p>Nếu kết nối đúng cách trong Hercules, bạn sẽ thấy đầu ra sau khi nhấn nút kết nối.</p>
-<p><a href="#R-image-c9fd77cd6784748492a8406b919a9f3a" class="lightbox-link"><img alt="Ảnh chụp màn hình đầu ra Hercules" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9fd77cd6784748492a8406b919a9f3a"><img alt="Ảnh chụp màn hình đầu ra Hercules" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png"></a></p>
+<p><a href="#R-image-c70411c71863985f0dc68848e736aaea" class="lightbox-link"><img alt="Ảnh chụp màn hình đầu ra Hercules" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c70411c71863985f0dc68848e736aaea"><img alt="Ảnh chụp màn hình đầu ra Hercules" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/215051238/gvim-2018-08-01-13-41-00-png.png"></a></p>
 <p>Nếu không thấy, hãy thử khởi động lại thiết bị TrackMan, TrackMan Legacy SDK không đang xuất dữ liệu.</p>
 <p>Nếu bạn có thể kết nối, bạn sẽ nhận được dữ liệu cũng như dữ liệu cú đánh ngay khi một cú đánh được theo dõi.</p>
 <p>Đây là dữ liệu tương tự mà Swing Catalyst nhận được, và là cách tốt để xác nhận rằng TPS và TrackMan thực sự đang gửi dữ liệu.</p>
@@ -373,7 +389,6 @@ Nếu bạn thấy thông báo sau trong nhật ký, <a href="http://www.techfle
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/trackman-troubleshooting/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/trackman-troubleshooting/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/trackman-troubleshooting/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/trackman-troubleshooting/index.html" lang="fr">Français</option>
@@ -435,8 +450,8 @@ Nếu bạn thấy thông báo sau trong nhật ký, <a href="http://www.techfle
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537826" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542940" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

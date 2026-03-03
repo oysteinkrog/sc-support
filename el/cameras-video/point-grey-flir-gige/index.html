@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1587">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Πώς να ρυθμίσετε κάμερες Point Grey / FLIR GigE (Blackfly) με το SwingCatalyst :: Υποστήριξη Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537833" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537833" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537833" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542947" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542947" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542947" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772537833";
+      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772542947";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537833" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542947" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537833" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537833" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537833" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537833" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537833" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542947" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542947" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542947" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542947" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542947" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,34 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#απαιτήσεις">Απαιτήσεις:</a></li>
+        <li><a href="#εγκατάσταση-της-κάρτας-δικτύου">Εγκατάσταση της κάρτας δικτύου</a></li>
+      </ul>
+    </li>
+    <li><a href="#κάρτα-δικτύου-flir-gige-pcie-με-2-θύρες"><img src="../../assets/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" alt="Κάρτα δικτύου FLIR GigE PCIe με 2 θύρες"></a>
+      <ul>
+        <li><a href="#ρύθμιση-των-διευθύνσεων-ip-με-το-βοηθητικό-πρόγραμμα-gige-configurator">&lt;&gt;Ρύθμιση των διευθύνσεων IP με το βοηθητικό πρόγραμμα GigE Configurator</a></li>
+        <li><a href="#βελτιστοποίηση-της-κάρτας-δικτύου">Βελτιστοποίηση της κάρτας δικτύου</a></li>
+        <li><a href="#ρύθμιση-της-διεύθυνσης-ip-της-κάμερας">Ρύθμιση της διεύθυνσης IP της κάμερας</a></li>
+      </ul>
+    </li>
+    <li><a href="#ρύθμιση-περισσότερων-από-1-κάμερας">Ρύθμιση περισσότερων από 1 κάμερας</a></li>
+    <li><a href="#χρήση-τηςτων-κάμερας-ών-στο-swingcatalyst">Χρήση της/των κάμερας/-ών στο SwingCatalyst</a></li>
+    <li><a href="#πώς-να-αλλάξετε-την-ταχύτητα-κλείστρου-και-άλλες-ρυθμίσεις-κάμερας">Πώς να αλλάξετε την ταχύτητα κλείστρου και άλλες ρυθμίσεις κάμερας</a></li>
+    <li><a href="#χρήση-δύο-καμερών-σε-network-switch">Χρήση δύο καμερών σε network switch:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/index.html"><span itemprop="name">Υποστήριξη Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/cameras-video/index.html"><span itemprop="name">Κάμερες &amp; Βίντεο</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Πώς να ρυθμίσετε κάμερες Point Grey / FLIR GigE (Blackfly) με το SwingCatalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -231,72 +258,72 @@
 </ul>
 <p><strong>Σημείωση:</strong> Κατά την εγκατάσταση του Flycap, βεβαιωθείτε ότι το πλαίσιο ελέγχου για τον οδηγό Point Grey Image Filter driver είναι επιλεγμένο.</p>
 <h3 id="εγκατάσταση-της-κάρτας-δικτύου">Εγκατάσταση της κάρτας δικτύου<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h2 id="κάρτα-δικτύου-flir-gige-pcie-με-2-θύρες"><a href="#R-image-f934cbd13b69f5ddcd08a834d9f6092a" class="lightbox-link"><img alt="Κάρτα δικτύου FLIR GigE PCIe με 2 θύρες" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f934cbd13b69f5ddcd08a834d9f6092a"><img alt="Κάρτα δικτύου FLIR GigE PCIe με 2 θύρες" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="κάρτα-δικτύου-flir-gige-pcie-με-2-θύρες"><a href="#R-image-9b47733d932616412572a99272eb7e94" class="lightbox-link"><img alt="Κάρτα δικτύου FLIR GigE PCIe με 2 θύρες" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9b47733d932616412572a99272eb7e94"><img alt="Κάρτα δικτύου FLIR GigE PCIe με 2 θύρες" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Για την εγκατάσταση της κάρτας δικτύου, παρακαλούμε ανατρέξτε στα βήματα που παρέχονται εδώ: <a href="https://www.wikihow.com/Install-a-PCI-Card" rel="external">https://www.wikihow.com/Install-a-PCI-Card</a> — τα βήματα εγκατάστασης της κάρτας δικτύου διπλής θύρας από τη FLiR είναι περίπου τα ίδια.</p>
 <h3 id="ρύθμιση-των-διευθύνσεων-ip-με-το-βοηθητικό-πρόγραμμα-gige-configurator">&lt;&gt;Ρύθμιση των διευθύνσεων IP με το βοηθητικό πρόγραμμα GigE Configurator<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Πρέπει να ρυθμίσουμε τις διευθύνσεις IP τόσο για την κάρτα δικτύου (θύρα) όσο και για τη συνδεδεμένη κάμερα.</p>
 <p>Ας ξεκινήσουμε με τη ρύθμιση της κάρτας δικτύου!</p>
 <ul>
-<li>Ανοίξτε την εφαρμογή Point Grey GigE Configurator. Μπορεί να βρεθεί στο: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-b93c2c4b05d79c18bcd006533ace23b2" class="lightbox-link"><img alt="Εξερεύνηση αρχείων με άνοιγμα του GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b93c2c4b05d79c18bcd006533ace23b2"><img alt="Εξερεύνηση αρχείων με άνοιγμα του GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
+<li>Ανοίξτε την εφαρμογή Point Grey GigE Configurator. Μπορεί να βρεθεί στο: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-55a8a6fb549abf24f64a8c7b7aaa546f" class="lightbox-link"><img alt="Εξερεύνηση αρχείων με άνοιγμα του GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-55a8a6fb549abf24f64a8c7b7aaa546f"><img alt="Εξερεύνηση αρχείων με άνοιγμα του GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
 </ul>
 <ol start="2">
 <li>Ανοίξτε την εφαρμογή Point Grey GigE Configurator και κάντε κλικ στην κάμερα.</li>
 </ol>
-<p><a href="#R-image-4c1781c0bcff0eedc166fb75ec70a7a2" class="lightbox-link"><img alt="Παράθυρο GigE Configurator με επισήμανση σύνδεσης κάμερας" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c1781c0bcff0eedc166fb75ec70a7a2"><img alt="Παράθυρο GigE Configurator με επισήμανση σύνδεσης κάμερας" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
+<p><a href="#R-image-08dc71e0da1e67b9dad718d9e8cfec85" class="lightbox-link"><img alt="Παράθυρο GigE Configurator με επισήμανση σύνδεσης κάμερας" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08dc71e0da1e67b9dad718d9e8cfec85"><img alt="Παράθυρο GigE Configurator με επισήμανση σύνδεσης κάμερας" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
 <p>Σημειώστε σε ποια κάρτα δικτύου είναι συνδεδεμένη η κάμερα (βλ. επισημασμένο με κόκκινο).</p>
 <p>Στην περίπτωσή μας, η κάμερα είναι συνδεδεμένη στο Ethernet 9.</p>
 <p>Κάντε κλικ στο Ethernet 9 κάτω από την ενότητα Network Adapters στη λίστα, όπως φαίνεται στα αριστερά του παραπάνω στιγμιότυπου οθόνης.</p>
 <p>Ρύθμιση της διεύθυνσης IP της κάρτας δικτύου:</p>
 <p>Αλλάξτε τη διεύθυνση IP και τη μάσκα υποδικτύου ώστε να ταιριάζουν με το παρακάτω στιγμιότυπο οθόνης, και κάντε κλικ στο Set IP address / Subnet, έπειτα κάντε κλικ στο Yes και OK.</p>
-<p><a href="#R-image-b7ec31d61b14efa3ac0040cafc459435" class="lightbox-link"><img alt="Ρύθμιση διεύθυνσης IP κάρτας δικτύου στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7ec31d61b14efa3ac0040cafc459435"><img alt="Ρύθμιση διεύθυνσης IP κάρτας δικτύου στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
-<p><a href="#R-image-7c1967be2799c910af6c95d7080b0c44" class="lightbox-link"><img alt="Επιβεβαίωση ρύθμισης IP κάρτας δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c1967be2799c910af6c95d7080b0c44"><img alt="Επιβεβαίωση ρύθμισης IP κάρτας δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
+<p><a href="#R-image-c60b056dafbac6c37fd8908800dcb9ab" class="lightbox-link"><img alt="Ρύθμιση διεύθυνσης IP κάρτας δικτύου στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c60b056dafbac6c37fd8908800dcb9ab"><img alt="Ρύθμιση διεύθυνσης IP κάρτας δικτύου στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
+<p><a href="#R-image-414d2eaf9effcfe5ef7e96f836b17caa" class="lightbox-link"><img alt="Επιβεβαίωση ρύθμισης IP κάρτας δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-414d2eaf9effcfe5ef7e96f836b17caa"><img alt="Επιβεβαίωση ρύθμισης IP κάρτας δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
 <p>Τώρα έχουμε ορίσει τη διεύθυνση IP της πρώτης κάρτας δικτύου. Το επόμενο βήμα είναι η βελτιστοποίηση των ρυθμίσεων της κάρτας δικτύου.</p>
 <h3 id="βελτιστοποίηση-της-κάρτας-δικτύου">Βελτιστοποίηση της κάρτας δικτύου<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Σύμφωνα με το παρακάτω στιγμιότυπο οθόνης, σημειώστε τον αριθμό με κόκκινο που ονομάζεται <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit" rel="external">MTU</a></p>
 <p>Χρειάζεται να αυξήσουμε αυτόν τον αριθμό. Κάντε κλικ στο Open Network Connections στην επισημασμένη περιοχή παρακάτω.</p>
-<p><a href="#R-image-4d2ba227ebb97590cbd7b460968267bb" class="lightbox-link"><img alt="Παράθυρο GigE Configurator με επισήμανση MTU και σύνδεσης δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4d2ba227ebb97590cbd7b460968267bb"><img alt="Παράθυρο GigE Configurator με επισήμανση MTU και σύνδεσης δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
+<p><a href="#R-image-0f2661620708a1dc3bd6c4d77b359a12" class="lightbox-link"><img alt="Παράθυρο GigE Configurator με επισήμανση MTU και σύνδεσης δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f2661620708a1dc3bd6c4d77b359a12"><img alt="Παράθυρο GigE Configurator με επισήμανση MTU και σύνδεσης δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
 <p>Κάντε κλικ στην καρτέλα Advanced και εντοπίστε το Jumbo Packet και ορίστε την τιμή σε 9014 Bytes.</p>
-<p><a href="#R-image-52f8dd014e41155518147f50e6382494" class="lightbox-link"><img alt="Ρυθμίσεις προηγμένων παραμέτρων κάρτας δικτύου - Jumbo Packet" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52f8dd014e41155518147f50e6382494"><img alt="Ρυθμίσεις προηγμένων παραμέτρων κάρτας δικτύου - Jumbo Packet" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
+<p><a href="#R-image-ddae6044e4a713949749b8663852352e" class="lightbox-link"><img alt="Ρυθμίσεις προηγμένων παραμέτρων κάρτας δικτύου - Jumbo Packet" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ddae6044e4a713949749b8663852352e"><img alt="Ρυθμίσεις προηγμένων παραμέτρων κάρτας δικτύου - Jumbo Packet" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
 <p>Αλλαγή του Interrupt Moderation</p>
 <p>Ορίστε το Interrupt Moderation σε Enabled</p>
-<p><a href="#R-image-7a4b447c29ad45da8cf5207d3130d623" class="lightbox-link"><img alt="Ρύθμιση Interrupt Moderation στην κάρτα δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a4b447c29ad45da8cf5207d3130d623"><img alt="Ρύθμιση Interrupt Moderation στην κάρτα δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
+<p><a href="#R-image-45e5fa1dc002dbecf50fb8368b5c4ec4" class="lightbox-link"><img alt="Ρύθμιση Interrupt Moderation στην κάρτα δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-45e5fa1dc002dbecf50fb8368b5c4ec4"><img alt="Ρύθμιση Interrupt Moderation στην κάρτα δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
 <p>Κάντε κλικ στο Interrupt Moderation Rate και ορίστε την τιμή Value σε Extreme.</p>
 <p>Σημαντικό: Εάν πρόκειται να χρησιμοποιήσετε περισσότερες από 2 κάμερες, ίσως χρειαστεί να ορίσετε το Interrupt Moderation σε Disabled για να αποφύγετε απώλεια Πλαισίων.</p>
 <h3 id="ρύθμιση-της-διεύθυνσης-ip-της-κάμερας">Ρύθμιση της διεύθυνσης IP της κάμερας<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-8f6d8e7d16d31279da3866d3dff63acc" class="lightbox-link"><img alt="Επιλογή κάμερας στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f6d8e7d16d31279da3866d3dff63acc"><img alt="Επιλογή κάμερας στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
+<p><a href="#R-image-6c8145e6be18001ae5fbdfec8278941b" class="lightbox-link"><img alt="Επιλογή κάμερας στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c8145e6be18001ae5fbdfec8278941b"><img alt="Επιλογή κάμερας στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
 <p>Κάντε κλικ στην κάμερα που είναι διαθέσιμη στη λίστα (στην περίπτωσή μας έχουμε μόνο μία κάμερα συνδεδεμένη, οπότε γνωρίζουμε ότι είναι η σωστή κάμερα).</p>
 <p>Εισαγάγετε το παρακάτω IP (σημειώστε ότι ορίζουμε τη διεύθυνση IP της κάμερας που είναι συνδεδεμένη στο Ethernet 9 σύμφωνα με τα παραπάνω):</p>
-<p><a href="#R-image-b573cbca93ce68718f7a13cc78e2a52e" class="lightbox-link"><img alt="Εισαγωγή διεύθυνσης IP κάμερας στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b573cbca93ce68718f7a13cc78e2a52e"><img alt="Εισαγωγή διεύθυνσης IP κάμερας στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
+<p><a href="#R-image-147b328afe67bee961d0942d91509676" class="lightbox-link"><img alt="Εισαγωγή διεύθυνσης IP κάμερας στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-147b328afe67bee961d0942d91509676"><img alt="Εισαγωγή διεύθυνσης IP κάμερας στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
 <p>Κάντε κλικ στο Set IP Address / Subnet και έπειτα Yes και OK.</p>
-<p><a href="#R-image-76078810c8b0ed9d73baba5c9a74d1ce" class="lightbox-link"><img alt="Επιβεβαίωση ρύθμισης IP κάμερας" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-76078810c8b0ed9d73baba5c9a74d1ce"><img alt="Επιβεβαίωση ρύθμισης IP κάμερας" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
+<p><a href="#R-image-19ce9342f085f0d647fc2703c15ba3e8" class="lightbox-link"><img alt="Επιβεβαίωση ρύθμισης IP κάμερας" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-19ce9342f085f0d647fc2703c15ba3e8"><img alt="Επιβεβαίωση ρύθμισης IP κάμερας" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
 <p>Βρείτε την κάμερα για την οποία μόλις ορίσατε τη διεύθυνση IP στη λίστα στην αριστερή πλευρά του FLiR GigE Configurator και κάντε κλικ πάνω της.</p>
 <p>Ρύθμιση παραμέτρων εκχώρησης διεύθυνσης IP</p>
 <p>Αυτό είναι σημαντικό να γίνει, καθώς χρειαζόμαστε οι αλλαγές στη διεύθυνση IP των καμερών να είναι μόνιμες· διαφορετικά, η κάμερα θα χάσει τις ρυθμίσεις της μετά από διακοπή ρεύματος.</p>
 <p>Αποεπιλέξτε το DHCP και επιλέξτε Persistent IP</p>
-<p><a href="#R-image-3d260e32cdbe84217919c384ef6f2f69" class="lightbox-link"><img alt="Ρύθμιση Persistent IP στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d260e32cdbe84217919c384ef6f2f69"><img alt="Ρύθμιση Persistent IP στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
+<p><a href="#R-image-aa52ef2ef1f32a07cd70396af50f9196" class="lightbox-link"><img alt="Ρύθμιση Persistent IP στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa52ef2ef1f32a07cd70396af50f9196"><img alt="Ρύθμιση Persistent IP στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
 <p>Κάντε κλικ στο Copy from Current και έπειτα στο Set IP Address / Subnet</p>
-<p><a href="#R-image-78f4fdc34f490fc32a612d355a57177b" class="lightbox-link"><img alt="Αντιγραφή τρέχουσας ρύθμισης IP και αποθήκευση" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-78f4fdc34f490fc32a612d355a57177b"><img alt="Αντιγραφή τρέχουσας ρύθμισης IP και αποθήκευση" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
+<p><a href="#R-image-7ac83eb70002e4d54afa906723d4435e" class="lightbox-link"><img alt="Αντιγραφή τρέχουσας ρύθμισης IP και αποθήκευση" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7ac83eb70002e4d54afa906723d4435e"><img alt="Αντιγραφή τρέχουσας ρύθμισης IP και αποθήκευση" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
 <p>Επαλήθευση μεγέθους πακέτου</p>
 <p>Ας επαληθεύσουμε ότι το μέγεθος πακέτου (MTU) ορίστηκε σωστά.</p>
 <p>Κάντε κλικ στο Discover Maximum Packet Size· θα πρέπει να εμφανίζει 9000.</p>
-<p><a href="#R-image-da67fb64fca6bbf2a8d1fa93a4a20a0b" class="lightbox-link"><img alt="Επαλήθευση μέγιστου μεγέθους πακέτου στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-da67fb64fca6bbf2a8d1fa93a4a20a0b"><img alt="Επαλήθευση μέγιστου μεγέθους πακέτου στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
+<p><a href="#R-image-d914a92e05db68572d9157699ea0e260" class="lightbox-link"><img alt="Επαλήθευση μέγιστου μεγέθους πακέτου στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d914a92e05db68572d9157699ea0e260"><img alt="Επαλήθευση μέγιστου μεγέθους πακέτου στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
 <p>Κάντε κλικ στο Test Camera Connection για να επαληθεύσετε ότι η σύνδεση λειτουργεί και ότι λαμβάνετε δεδομένα από την κάμερα.</p>
-<p><a href="#R-image-442bd3e45bb36d986701d85657f19362" class="lightbox-link"><img alt="Δοκιμή σύνδεσης κάμερας στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-442bd3e45bb36d986701d85657f19362"><img alt="Δοκιμή σύνδεσης κάμερας στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
+<p><a href="#R-image-8d143b1d7a1ec586b4c2cb7022d5a9ea" class="lightbox-link"><img alt="Δοκιμή σύνδεσης κάμερας στο GigE Configurator" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d143b1d7a1ec586b4c2cb7022d5a9ea"><img alt="Δοκιμή σύνδεσης κάμερας στο GigE Configurator" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
 <h2 id="ρύθμιση-περισσότερων-από-1-κάμερας">Ρύθμιση περισσότερων από 1 κάμερας<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Τώρα που έχετε ρυθμίσει μία κάμερα και μία κάρτα δικτύου, μπορείτε να επαναλάβετε τα παραπάνω βήματα για να ρυθμίσετε πολλαπλές κάμερες.</p>
 <p>Έχοντας υπόψη τα βήματα και τα στιγμιότυπα οθόνης παραπάνω, έχουμε ήδη ορίσει την IP της κάμερας και του Ethernet Adapter 9· η ρύθμιση πολλαπλών καμερών ακολουθεί την ίδια διαδικασία, απλά με διαφορετικές IPs.</p>
@@ -328,8 +355,8 @@ Subnet: 255.255.255.0</p>
 <h2 id="χρήση-τηςτων-κάμερας-ών-στο-swingcatalyst">Χρήση της/των κάμερας/-ών στο SwingCatalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Η χρήση καμερών Point Grey στο SwingCatalyst είναι θέμα ρύθμισης της Γωνίας της κάμερας και κλικ στην επιλογή ενεργοποίησης. Κάντε κλικ στο κουμπί Play για να βεβαιωθείτε ότι η κάμερα λειτουργεί.</p>
 <p>Όλη η ρύθμιση παραμέτρων της κάμερας πρέπει να γίνεται μέσω του λογισμικού FlyCapture της Point Grey.</p>
-<p><a href="#R-image-c8d64bc0f913cc1e8249c97f15b440b0" class="lightbox-link"><img alt="SwingCatalyst με ρυθμίσεις κάμερας Point Grey GigE" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c8d64bc0f913cc1e8249c97f15b440b0"><img alt="SwingCatalyst με ρυθμίσεις κάμερας Point Grey GigE" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
+<p><a href="#R-image-f786dd6c9ded629900998de417343a60" class="lightbox-link"><img alt="SwingCatalyst με ρυθμίσεις κάμερας Point Grey GigE" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f786dd6c9ded629900998de417343a60"><img alt="SwingCatalyst με ρυθμίσεις κάμερας Point Grey GigE" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
 <h2 id="πώς-να-αλλάξετε-την-ταχύτητα-κλείστρου-και-άλλες-ρυθμίσεις-κάμερας">Πώς να αλλάξετε την ταχύτητα κλείστρου και άλλες ρυθμίσεις κάμερας<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Εκκινήστε το λογισμικό Point Grey Flycap2 και μεταβείτε στις Camera Settings.</p>
 <ol>
@@ -341,8 +368,8 @@ Subnet: 255.255.255.0</p>
 </ol>
 <p>Για αποθήκευση ρυθμίσεων βλέπε βήμα 3.</p>
 <p>Ενδέχεται επίσης να χρειαστεί να προσαρμόσετε το FPS· μπορείτε να αποεπιλέξετε το auto και να το ορίσετε στο επιθυμητό FPS, και έπειτα να ακολουθήσετε το βήμα 3.</p>
-<p><a href="#R-image-52c8b2d3072e3fb2c2bb852373090454" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52c8b2d3072e3fb2c2bb852373090454"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
+<p><a href="#R-image-53974be214e096b593a0eef61b9f0248" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-53974be214e096b593a0eef61b9f0248"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
 <p>Ενδέχεται επίσης να χρειαστεί να προσαρμόσετε το FPS· μπορείτε να αποεπιλέξετε το auto και να το ορίσετε στο επιθυμητό FPS, και έπειτα να ακολουθήσετε το βήμα 3.</p>
 <p><strong>Ρύθμιση τιμών Gain</strong></p>
 <p>Όπως και με την έκθεση, η ρύθμιση του Gain σε χειροκίνητη λειτουργία για στατικές / εσωτερικές συνθήκες φωτισμού είναι η καλύτερη επιλογή. Όσο υψηλότερη είναι η έκθεση, τόσο πιο κοκκώδης θα είναι η εικόνα και τόσο περισσότερο χρόνο θα απαιτεί η κωδικοποίηση βίντεο σε σχέση με χαμηλό Gain.</p>
@@ -350,19 +377,19 @@ Subnet: 255.255.255.0</p>
 <p>Παρακαλούμε δείτε αυτό το άρθρο για οδηγίες ρύθμισης της κάμερας: <a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a></p>
 <p>Αντιμετώπιση προβλημάτων και περαιτέρω βελτιστοποιήσεις</p>
 <p>Εάν χάνετε Πλαίσια ή αντιμετωπίζετε προβλήματα συγχρονισμού με τις κάμερες FLiR / Point Grey, παρακαλούμε ελέγξτε το μέγεθος πακέτου μέσω Flycapture2 -&gt; Custom Video modes.</p>
-<p><a href="#R-image-e82abba09f3c4511d259a064df6d5713" class="lightbox-link"><img alt="Παράθυρο Flycap2 με ρυθμίσεις Custom Video Modes" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e82abba09f3c4511d259a064df6d5713"><img alt="Παράθυρο Flycap2 με ρυθμίσεις Custom Video Modes" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
+<p><a href="#R-image-33fc56bc23a2d6e34b0e69b4384ee241" class="lightbox-link"><img alt="Παράθυρο Flycap2 με ρυθμίσεις Custom Video Modes" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-33fc56bc23a2d6e34b0e69b4384ee241"><img alt="Παράθυρο Flycap2 με ρυθμίσεις Custom Video Modes" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
 <p>Μπορείτε να δοκιμάσετε να μειώσετε το μέγεθος πακέτου από τη μέγιστη τιμή των 9000 σε μικρότερη τιμή. Ανάλογα με τον CPU σας, αυτό που λειτουργεί καλύτερα μπορεί να διαφέρει ανάλογα με τον υπολογιστή.</p>
 <p>Εάν χρησιμοποιείτε 2 κάμερες σε μία κάρτα δικτύου, συνιστάται να ορίσετε την καθυστέρηση πακέτου (packet delay) σε: 9500.</p>
-<p><a href="#R-image-61037b8a1be97725f11b0534d4d3c001" class="lightbox-link"><img alt="Ρύθμιση καθυστέρησης πακέτου στο Flycap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-61037b8a1be97725f11b0534d4d3c001"><img alt="Ρύθμιση καθυστέρησης πακέτου στο Flycap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
+<p><a href="#R-image-06060f2ccdc76b31f5a9f2ae3c721724" class="lightbox-link"><img alt="Ρύθμιση καθυστέρησης πακέτου στο Flycap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06060f2ccdc76b31f5a9f2ae3c721724"><img alt="Ρύθμιση καθυστέρησης πακέτου στο Flycap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
 <p>Θυμηθείτε να μεταβείτε στις Advanced Camera Settings και να αποθηκεύσετε τις ρυθμίσεις στο bank 1, όπως καλύπτεται από το άρθρο ρύθμισης κάμερας, ** <a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><strong><a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-ed05a8cec2cbf41b90676b147ba13e53" class="lightbox-link"><img alt="Αποθήκευση ρυθμίσεων στο Memory Channel 1 στο Flycap2" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed05a8cec2cbf41b90676b147ba13e53"><img alt="Αποθήκευση ρυθμίσεων στο Memory Channel 1 στο Flycap2" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
+<p><strong><a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-1541bfc51fba4423fc61835c51b684dc" class="lightbox-link"><img alt="Αποθήκευση ρυθμίσεων στο Memory Channel 1 στο Flycap2" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1541bfc51fba4423fc61835c51b684dc"><img alt="Αποθήκευση ρυθμίσεων στο Memory Channel 1 στο Flycap2" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
 <p><strong>Θυμηθείτε να κάνετε κλικ στο save κάτω από τα Memory Channels και βεβαιωθείτε ότι είναι επιλεγμένο το Channel 1!</strong></p>
 <p>Εάν δεν λαμβάνετε καμία εικόνα ή εμφανίζεται σφάλμα στο SwingCatalyst, παρακαλούμε δοκιμάστε να αλλάξετε το μέγεθος πακέτου και να αποθηκεύσετε στο bank 1 (όπως στην παραπάνω εικόνα)</p>
-<p><strong><a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-20a02ff2012bd5fb831b92ce7bcff484" class="lightbox-link"><img alt="Ρύθμιση μεγέθους πακέτου στο Flycap2" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-20a02ff2012bd5fb831b92ce7bcff484"><img alt="Ρύθμιση μεγέθους πακέτου στο Flycap2" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
+<p><strong><a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-80bef35ca768ad782cbb11575935911a" class="lightbox-link"><img alt="Ρύθμιση μεγέθους πακέτου στο Flycap2" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80bef35ca768ad782cbb11575935911a"><img alt="Ρύθμιση μεγέθους πακέτου στο Flycap2" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
 <p>Απώλεια Πλαισίων σε σετάπ με 4 κάμερες:</p>
 <p>Σε ορισμένες διατάξεις με 4 κάμερες, συνιστάται να απενεργοποιήσετε το interrupt moderation ή να αλλάξετε το interrupt moderation rate από extreme σε low. Εάν ο ρυθμός moderation είναι υψηλός, ο αριθμός των διακοπών θα καταστέλλεται, γεγονός που οδηγεί σε χαμηλότερο φόρτο CPU. Ωστόσο, όσο λιγότερο συχνά συμβαίνει η διακοπή, τόσο πιο πιθανό είναι η απόκριση ACK από τον κεντρικό υπολογιστή να είναι αργή. Αυτό μπορεί να οδηγήσει σε απώλεια πακέτων εάν μεταδίδετε εικόνες με υψηλό FPS.</p>
 <p>Η επιλογή διαφορετικού ρυθμού moderation ανάλογα με το σύστημά σας μπορεί να βελτιώσει την Απόδοση δικτύου και συστήματος.</p>
@@ -372,15 +399,15 @@ Subnet: 255.255.255.0</p>
 <p>Περαιτέρω βελτιστοποιήσεις κάρτας δικτύου</p>
 <p>Receive Buffers</p>
 <p>Συνιστάται να ορίσετε αυτή την τιμή όσο το δυνατόν υψηλότερα. Αυτό μπορεί να βοηθήσει στην αποφυγή απώλειας Πλαισίων κατά τη χρήση πολλαπλών καμερών ή/και GigE καμερών υψηλότερης ανάλυσης.</p>
-<p><a href="#R-image-9aaabfe50200b28f906419ccd2877039" class="lightbox-link"><img alt="Ρύθμιση Receive Buffers στις ιδιότητες κάρτας δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9aaabfe50200b28f906419ccd2877039"><img alt="Ρύθμιση Receive Buffers στις ιδιότητες κάρτας δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-2a424805ebeb33e9289835db35de101f" class="lightbox-link"><img alt="Ρύθμιση Receive Buffers στις ιδιότητες κάρτας δικτύου" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a424805ebeb33e9289835db35de101f"><img alt="Ρύθμιση Receive Buffers στις ιδιότητες κάρτας δικτύου" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="χρήση-δύο-καμερών-σε-network-switch">Χρήση δύο καμερών σε network switch:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Παρακαλούμε σημειώστε ότι υποστηρίζεται μόνο η κάμερα Blackfly BFLY-PGE-03S3C (90FPS). Η χρήση άλλων καμερών ενδέχεται να οδηγήσει σε απώλεια Πλαισίων.</p>
 <p>Σημαντικό: Το network switch πρέπει να υποστηρίζει Jumbo Frames 9KB (τα περισσότερα network switches το υποστηρίζουν). Συνιστούμε το switch <a href="https://www.netgear.com/support/product/GS105.aspx" rel="external">https://www.netgear.com/support/product/GS105.aspx</a> ή παρόμοια switches με το μοντέλο GS105.</p>
 <p>Εάν πρόκειται να χρησιμοποιήσετε network switch, είναι σημαντικό να ορίσετε το Packet Delay σε 9500, όπως φαίνεται στο παρακάτω στιγμιότυπο οθόνης.</p>
 <p>Αφού ορίσετε το Packet Delay σε 9500, μεταβείτε στις Advanced Camera Settings και αποθηκεύστε στο bank 1, όπως καλύπτεται από το άρθρο ρύθμισης κάμερας, ** <a href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><a href="#R-image-7abab8265e6e40870d8dde522c234b99" class="lightbox-link"><img alt="Ρύθμιση Packet Delay σε 9500 στο Flycap2 για χρήση με network switch" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7abab8265e6e40870d8dde522c234b99"><img alt="Ρύθμιση Packet Delay σε 9500 στο Flycap2 για χρήση με network switch" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
+<p><a href="#R-image-568cfbd86a8ece94e288d5bad2e2ca03" class="lightbox-link"><img alt="Ρύθμιση Packet Delay σε 9500 στο Flycap2 για χρήση με network switch" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-568cfbd86a8ece94e288d5bad2e2ca03"><img alt="Ρύθμιση Packet Delay σε 9500 στο Flycap2 για χρήση με network switch" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
 <p>Η ρύθμιση του Packet Delay βοηθά στην αποφυγή απώλειας Πλαισίων κατά τη χρήση δύο καμερών Blackfly 03S3C σε μία κάρτα δικτύου.</p>
 <p>Περισσότερες λεπτομέρειες σχετικά με τη ρύθμιση πολλαπλών καμερών μπορείτε να βρείτε εδώ: <a href="https://www.ptgrey.com/tan/10351" rel="external">https://www.ptgrey.com/tan/10351</a></p>
 <hr>
@@ -493,7 +520,6 @@ Subnet: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/point-grey-flir-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/point-grey-flir-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/point-grey-flir-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" lang="fr">Français</option>
@@ -555,8 +581,8 @@ Subnet: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537833" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542947" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

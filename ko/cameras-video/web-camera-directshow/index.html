@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="303">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
     <title>Swing Catalyst에서 웹 카메라(DirectShow 통합) 사용 방법 :: Swing Catalyst 지원</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537815" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537815" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537815" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542927" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542927" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542927" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ko.js?1772537815";
+      window.relearn.index_js_url="/sc-support/searchindex.ko.js?1772542927";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ko.min.js?1772537815" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ko.min.js?1772542927" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537815" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537815" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537815" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537815" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537815" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542927" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542927" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542927" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542927" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,31 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="메뉴 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="목차 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#카메라-연결">카메라 연결</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#설정-메뉴">설정 메뉴</a></li>
+    <li><a href="#고급-카메라-설정">고급 카메라 설정</a></li>
+    <li><a href="#문제-해결"><a href="web-camera-directshow.md">문제 해결</a></a>
+      <ul>
+        <li><a href="#낮은-프레임-레이트">낮은 프레임 레이트:</a></li>
+        <li><a href="#프레임-드롭">프레임 드롭:</a></li>
+        <li><a href="#다른-미디어-유형-선택">다른 미디어 유형 선택</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ko/index.html"><span itemprop="name">Swing Catalyst 지원</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ko/cameras-video/index.html"><span itemprop="name">카메라 및 비디오</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Swing Catalyst에서 웹 카메라(DirectShow 통합) 사용 방법</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -204,26 +228,26 @@
 <h2 id="카메라-연결">카메라 연결<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="설정-메뉴에서-카메라를-활성화하세요">설정 메뉴에서 카메라를 활성화하세요.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>기어 아이콘을 클릭하세요.</p>
-<p><a href="#R-image-9a7ae0e7c205e6b7550d0ecad26c240e" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a7ae0e7c205e6b7550d0ecad26c240e"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<p><a href="#R-image-f287596b05903512975138b01aecc095" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f287596b05903512975138b01aecc095"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
 <h2 id="설정-메뉴">설정 메뉴<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>카메라 통합 유형(예: DirectShow, Spinnaker)이 표시되는 방식을 참고하세요:</p>
-<p><a href="#R-image-169108ecc8c5543a0d7f8bbd1e9b5a2f" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-169108ecc8c5543a0d7f8bbd1e9b5a2f"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p><a href="#R-image-1305de7b48b54cfc7cd008f5e764122c" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1305de7b48b54cfc7cd008f5e764122c"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
 <p>카메라가 올바르게 감지되면 카메라 목록에 자동으로 표시됩니다.</p>
 <p>카메라를 사용하려면 카메라 각도를 지정해야 합니다. &ldquo;Disabled&rdquo; 아이콘을 클릭하여 각도를 선택한 후, &ldquo;OFF&rdquo; 스위치를 &ldquo;ON&quot;으로 전환하여 카메라를 활성화하세요.</p>
-<p><a href="#R-image-07b7a749f00406bc1e86c537eb9dc023" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-07b7a749f00406bc1e86c537eb9dc023"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-50ed4217ff23cd84fe24ce8cde75ea38" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-50ed4217ff23cd84fe24ce8cde75ea38"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
 <p>Dragon 카메라가 활성화되어 페이스온 우측 카메라로 지정되어 있습니다(즉, 오른쪽에서 사용자를 향하고 있음).</p>
-<p><a href="#R-image-9357ca65a4f0c7ecaeae133ea6af3703" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9357ca65a4f0c7ecaeae133ea6af3703"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<p><a href="#R-image-695781bbd192b1d993544d6ae3d94410" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-695781bbd192b1d993544d6ae3d94410"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
 <h2 id="고급-카메라-설정">고급 카메라 설정<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>고급 카메라 설정에서는 카메라 이름 변경, 미러 및 회전, 크롭, 영상 이미지 조정 및 설정 변경 등을 수행할 수 있습니다.</p>
 <p>참고: Auto는 화이트 밸런스, 노출, 포커스 등 특정 속성에 대해서만 사용 가능합니다.</p>
-<p><a href="#R-image-0bea5ec668d2e75c1dcf81243781c4f9" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0bea5ec668d2e75c1dcf81243781c4f9"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
-<p><a href="#R-image-ae2fc9d3351a200c4868c1aef62bc941" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae2fc9d3351a200c4868c1aef62bc941"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p><a href="#R-image-959483ee4cf412a6463f3de9de1d6079" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-959483ee4cf412a6463f3de9de1d6079"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-b7f0e3950d944c704c639acb83afb5e1" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7f0e3950d944c704c639acb83afb5e1"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
 <p>잘못된 변경 사항이 있을 경우, &ldquo;Restore defaults&quot;를 클릭하여 기본값으로 되돌릴 수 있습니다.</p>
 <h2 id="문제-해결"><a href="/sc-support/ko/cameras-video/web-camera-directshow/index.html">문제 해결</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="낮은-프레임-레이트">낮은 프레임 레이트:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -231,8 +255,8 @@
 <p>대부분의 카메라는 기본적으로 Auto 노출로 설정되어 있으며, 조명이 충분하지 않을 경우 프레임당 노출 시간이 길어져 카메라가 최대 프레임 레이트를 제공하지 못할 수 있습니다.</p>
 <p>노출이 너무 높으면 프레임 레이트가 감소하고 녹화 영상이 더 흐릿해집니다.</p>
 <h3 id="프레임-드롭">프레임 드롭:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>카메라에서 프레임이 드롭되는 경우(즉, 설정된 FPS를 제공하지 못하는 경우), 시각적 아티팩트가 발생할 수 있습니다.<a href="#R-image-8afbae6769b7613ba1a66a56572f0ca9" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8afbae6769b7613ba1a66a56572f0ca9"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<p>카메라에서 프레임이 드롭되는 경우(즉, 설정된 FPS를 제공하지 못하는 경우), 시각적 아티팩트가 발생할 수 있습니다.<a href="#R-image-3ccbf0349aa14c8ed53abcf368533d58" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3ccbf0349aa14c8ed53abcf368533d58"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
 <ul>
 <li>
 <p>카메라가 컴퓨터에 직접 연결되어 있는지 확인하고, 가능하면 컴퓨터 후면의 USB 포트에 연결하세요.</p>
@@ -255,8 +279,8 @@
 </li>
 </ul>
 <p>특정 포맷은 다른 포맷보다 대역폭을 적게 사용합니다. 카메라가 RAW8, GREY8 또는 기타 8비트 이미징 포맷을 지원하는 경우, 이러한 포맷은 RGB 또는 MPEG 계열의 미디어 유형보다 대역폭을 훨씬 적게 사용하므로 더 권장됩니다.</p>
-<p><a href="#R-image-95d0fc782b926d159c8d50b2aee13b66" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-95d0fc782b926d159c8d50b2aee13b66"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<p><a href="#R-image-e738d3f862d6bb5badb7adc9b55689ae" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e738d3f862d6bb5badb7adc9b55689ae"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
 <hr>
 <p><em>최종 업데이트: 2023-12-15</em> | <a href="/sc-support/ko/cameras-video/web-camera-directshow/index.html">공식 지원 사이트에서 보기</a></p>
 
@@ -367,7 +391,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">언어</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
@@ -429,8 +452,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537815" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542927" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="292">
     <meta itemprop="keywords" content="Motion-Plate,Force-Data">
     <title>Використання бібліотеки графіків :: Підтримка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/graph-library/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/graph-library/index.html" rel="alternate" hreflang="fr">
@@ -61,26 +60,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/graph-library/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/graph-library/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/graph-library/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537831" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537831" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537831" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542945" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542945" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542945" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.uk.js?1772537831";
+      window.relearn.index_js_url="/sc-support/searchindex.uk.js?1772542945";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537831" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542945" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537831" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537831" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537831" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537831" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537831" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542945" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542945" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542945" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542945" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542945" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,32 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#вступ">Вступ</a>
+      <ul>
+        <li><a href="#функції-включають">Функції включають:</a></li>
+      </ul>
+    </li>
+    <li><a href="#функція-масштабування">Функція масштабування</a>
+      <ul>
+        <li><a href="#клік-і-перетягування">Клік і перетягування</a></li>
+        <li><a href="#масштабування-прокруткою-з-ctrl">Масштабування прокруткою з Ctrl</a></li>
+      </ul>
+    </li>
+    <li><a href="#переміщення">Переміщення</a></li>
+    <li><a href="#перегляд-даних-окремих-платформ">Перегляд даних окремих платформ</a></li>
+    <li><a href="#параметри-перегляду-графіків">Параметри перегляду графіків</a></li>
+    <li><a href="#покращена-продуктивність">Покращена продуктивність</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/uk/index.html"><span itemprop="name">Підтримка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/uk/software-features/index.html"><span itemprop="name">Програмне забезпечення та функції</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Використання бібліотеки графіків</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -233,8 +258,8 @@
 <li>Клікніть і перетягніть, щоб вибрати ділянку, яку ви хочете розглянути детальніше.</li>
 </ul>
 <p>Tip: Двічі клікніть мишею, щоб скинути рівень масштабу.</p>
-<p><a href="#R-image-be10424f5bb66a6e756bc67ab99e3a97" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-be10424f5bb66a6e756bc67ab99e3a97"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png"></a></p>
+<p><a href="#R-image-eac30c68199a2095a0c400c337d3cfb1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eac30c68199a2095a0c400c337d3cfb1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png"></a></p>
 <h3 id="масштабування-прокруткою-з-ctrl">Масштабування прокруткою з Ctrl<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
@@ -245,35 +270,35 @@
 </li>
 </ul>
 <p>Tip: Для скидання двічі клікніть мишею.</p>
-<p><a href="#R-image-d01d82148108b3b89e1cdeb68fe13851" class="lightbox-link"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d01d82148108b3b89e1cdeb68fe13851"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png"></a></p>
+<p><a href="#R-image-5e9bbc2773d858bef5f90c44ec28cb6b" class="lightbox-link"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e9bbc2773d858bef5f90c44ec28cb6b"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png"></a></p>
 <p>Масштабування відносно осі X (Ctrl Shift + прокрутка):</p>
-<p><a href="#R-image-f7082ca2e6be033b907510296f86e339" class="lightbox-link"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7082ca2e6be033b907510296f86e339"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png"></a></p>
+<p><a href="#R-image-37155b6982fcf2ddb0b86170cd2e42a9" class="lightbox-link"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-37155b6982fcf2ddb0b86170cd2e42a9"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png"></a></p>
 <h2 id="переміщення">Переміщення<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Ctrl Shift + прокрутка для переміщення</li>
 </ul>
-<p><a href="#R-image-8ea454558033a6161e47bfa4b6effc84" class="lightbox-link"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8ea454558033a6161e47bfa4b6effc84"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png"></a></p>
+<p><a href="#R-image-d38161b2ed759122508c17d519bcfa10" class="lightbox-link"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d38161b2ed759122508c17d519bcfa10"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png"></a></p>
 <h2 id="перегляд-даних-окремих-платформ">Перегляд даних окремих платформ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Note: Це функціональність, що стосується виключно Dual Motion Plate / Подвійної силової платформи</li>
 </ul>
 <p>З подвійними силовими платформами можна переглядати дані кожної платформи окремо, натискаючи кнопку індикатора платформи ліворуч від значка шестерні. Виділена платформа вказує, дані якої платформи відображаються.</p>
 <p>У цьому прикладі ми переглядаємо об&rsquo;єднані дані (верхній графік), а також дані кожної платформи окремо (ліва та права стопа):</p>
-<p><a href="#R-image-b6445a106ad02d47b1a0e70552c0b766" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b6445a106ad02d47b1a0e70552c0b766"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png"></a></p>
+<p><a href="#R-image-f602a8ccb20ba1de705287b81b2dc924" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f602a8ccb20ba1de705287b81b2dc924"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png"></a></p>
 <h2 id="параметри-перегляду-графіків">Параметри перегляду графіків<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Натискання значка шестерні відкриває параметри відображення даних. Наприклад, можна відображати дані у відсотках або Newton (або фунт-силах на фут: lbf⋅ft, якщо в загальних налаштуваннях вибрано імперську систему).</p>
-<p><a href="#R-image-59a80016172febea6808f6c018c74cb3" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-59a80016172febea6808f6c018c74cb3"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png"></a></p>
+<p><a href="#R-image-4e34717b97e4e07dd4ae87f074bf294a" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e34717b97e4e07dd4ae87f074bf294a"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png"></a></p>
 <h2 id="покращена-продуктивність">Покращена продуктивність<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Нова бібліотека графіків може використовувати відеокарти для апаратного прискорення, що означає значно більш чуйний досвід роботи з користувачем без суттєвих витрат (з точки зору CPU та використання пам&rsquo;яті).</p>
-<p><a href="#R-image-65c4f53ea28d7352a23a18e9596aa167" class="lightbox-link"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-65c4f53ea28d7352a23a18e9596aa167"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png"></a></p>
-<p><a href="#R-image-1563bfd21b04013251130c0b92bb25ac" class="lightbox-link"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1563bfd21b04013251130c0b92bb25ac"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png"></a></p>
+<p><a href="#R-image-3561cd694be6800395a7e8a6cdf0462e" class="lightbox-link"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3561cd694be6800395a7e8a6cdf0462e"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png"></a></p>
+<p><a href="#R-image-bc79b0c5296997cffbc7a1b855ecdb77" class="lightbox-link"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc79b0c5296997cffbc7a1b855ecdb77"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png"></a></p>
 <hr>
 <p><em>Останнє оновлення: 2024-02-16</em> | <a href="/sc-support/uk/software-features/graph-library/index.html">Переглянути на офіційному сайті підтримки</a></p>
 
@@ -377,7 +402,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/graph-library/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/graph-library/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/graph-library/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/graph-library/index.html" lang="fr">Français</option>
@@ -439,8 +463,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537831" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537831" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542945" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542945" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

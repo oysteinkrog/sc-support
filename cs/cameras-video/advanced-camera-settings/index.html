@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1010">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Průvodce pokročilým nastavením kamery :: Podpora Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537834" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537834" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537834" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542949" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542949" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772537834";
+      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772542949";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537834" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542949" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,29 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Obsah (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#záložka-kamera">Záložka Kamera</a>
+      <ul>
+        <li><a href="#snímková-frekvence">Snímková Frekvence</a></li>
+      </ul>
+    </li>
+    <li><a href="#záložka-region-of-interest-roi--aoi">Záložka Region of Interest (ROI / AOI)</a></li>
+    <li><a href="#záložka-filtr">Záložka Filtr</a></li>
+    <li><a href="#řešení-problémů"><a href="flir-blackfly-usb-setup.md">Řešení problémů</a></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/cameras-video/index.html"><span itemprop="name">Kamery a video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Průvodce pokročilým nastavením kamery</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -203,63 +225,63 @@
 
 <p>Tento článek popisuje různá nastavení kamery. Některá z těchto nastavení mají mírně odlišné názvy v závislosti na typu kamery / výrobci.</p>
 <p>Nastavení kamery je rozděleno do různých záložek.</p>
-<p><a href="#R-image-1783e064e96244c2da851ee2a98602c7" class="lightbox-link"><img alt="mceclip7.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1783e064e96244c2da851ee2a98602c7"><img alt="mceclip7.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png"></a></p>
+<p><a href="#R-image-f67c003d03aa24b00e4fcead02577ea9" class="lightbox-link"><img alt="mceclip7.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f67c003d03aa24b00e4fcead02577ea9"><img alt="mceclip7.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png"></a></p>
 <p>Okno Pokročilého nastavení kamery zpřístupňuje veškerá nastavení, která se vám mohou hodit. Pojďme se podívat na každé jednotlivé nastavení.</p>
 <h2 id="záložka-kamera">Záložka Kamera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p>Příklad výchozího nastavení kamery FLIR Blackfly S:<a href="#R-image-13188da9b82b6f346f8c308f61b578ea" class="lightbox-link"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-13188da9b82b6f346f8c308f61b578ea"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png"></a></p>
+<p>Příklad výchozího nastavení kamery FLIR Blackfly S:<a href="#R-image-bad46153a3451c7a1b676df8ade50e3c" class="lightbox-link"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bad46153a3451c7a1b676df8ade50e3c"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png"></a></p>
 <p>Nastavení zobrazená výše jsou výchozí nastavení kamery. Většina z nich je nastavena na Auto – tato nastavení však můžeme změnit, abychom získali lepší kontrolu nad kvalitou obrazu pro analýzu sportovních pohybů.</p>
 <h3 id="snímková-frekvence">Snímková Frekvence<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Zaškrtnutím políčka pro povolení řízení Snímkové Frekvence můžete Snímkovou Frekvenci nastavit ručně. Pokud toto políčko není zaškrtnuto, Snímková Frekvence je v podstatě nastavena na Auto (poznámka: maximální Snímková Frekvence této kamery je 226 FPS).</p>
 <p>Pokud dosahujete nižší Snímkové Frekvence, než očekáváte, může to být způsobeno expozicí / rychlostí závěrky kamery – například příliš vysoká expozice znemožňuje použití vysoké rychlosti závěrky. Viz část Řešení problémů.</p>
-<p><a href="#R-image-f737bdf4a60bab597dde4bf433c1eed1" class="lightbox-link"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f737bdf4a60bab597dde4bf433c1eed1"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png"></a></p>
+<p><a href="#R-image-b0b89e374d0e54502fa9f11d97fcde09" class="lightbox-link"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0b89e374d0e54502fa9f11d97fcde09"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png"></a></p>
 <p><strong>Změna rychlosti závěrky:</strong></p>
 <p>Pokud nejste venku nebo v prostředí s velkým množstvím světla, je lepší použít ruční nastavení rychlosti závěrky.</p>
 <p>Doba expozice / rychlost závěrky nad 2 ms může při analýze sportovních pohybů způsobit rozmazání pohybu.</p>
 <p>Pro snížení rozmazání Snímků doporučujeme rychlost závěrky nižší než 2 ms (2 000 μs); při dostatečném osvětlení může být rychlost závěrky nižší než 1 ms (1 000 μs).</p>
-<p><a href="#R-image-5c1061dbed4f56417fbd191076827acc" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c1061dbed4f56417fbd191076827acc"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png"></a></p>
+<p><a href="#R-image-06b0cbb85713f3bdc0308ab44ccb650f" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06b0cbb85713f3bdc0308ab44ccb650f"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png"></a></p>
 <p>Jas výsledného obrazu závisí na kombinaci rychlosti závěrky, nastavení gainu, clony objektivu a množství dostupného světla.</p>
 <p><strong>Změna gainu kamery:</strong></p>
 <p>Nastavení gainu na Auto je vhodné při proměnlivých světelných podmínkách, ale v interiérovém prostředí je lepší nastavit gain ručně.</p>
 <p>Čím vyšší hodnota dB, tím jasnější obraz – výsledkem však bude také větší šum, který může celkovou kvalitu videa snižovat. Někdy se vyplatí přijmout o něco vyšší gain na úkor šumu, aby bylo možné snížit rychlost závěrky a dosáhnout ostrého Snímku po Snímku u rychlých předmětů (např. hůl při Úderu, baseballová pálka apod.).</p>
-<p><a href="#R-image-52a40ce014a38a2d7c91c016fc817973" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52a40ce014a38a2d7c91c016fc817973"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png"></a></p>
+<p><a href="#R-image-e60cc2325afcd14c71d4d93cf8733d99" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e60cc2325afcd14c71d4d93cf8733d99"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png"></a></p>
 <p>Poznámka: Skutečné hodnoty gainu (dB) se mohou lišit v závislosti na modelu a výrobci.</p>
 <p><strong>Změna gammy a úrovní černé:</strong></p>
 <p>Úroveň černé lze považovat za určitou formu nastavení jasu, přičemž úroveň černé odpovídá minimální hodnotě, kterou může vrátit jakýkoli pixel na snímači kamery.</p>
 <p>Zvýšením hodnoty úrovně černé lze obraz zesvětlit.</p>
 <p>Doporučujeme ponechat toto nastavení na výchozích hodnotách.</p>
-<p><a href="#R-image-7b2f115442ebaeb9eaefada034016497" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b2f115442ebaeb9eaefada034016497"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png"></a></p>
+<p><a href="#R-image-abebf3a19fd82350558458870b0740d8" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-abebf3a19fd82350558458870b0740d8"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png"></a></p>
 <p>Více informací o zlepšení kvality obrazu z kamery naleznete v tomto podpůrném článku, který obsahuje srovnávací fotografie: <a href="/sc-support/cs/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
 <p><strong>Změna vyvážení bílé kamery:</strong></p>
-<p><a href="#R-image-4497f35b138212a790eef496b7b71ce4" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4497f35b138212a790eef496b7b71ce4"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png"></a></p>
+<p><a href="#R-image-498c853cb5af681ee19c1d84f74594f1" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-498c853cb5af681ee19c1d84f74594f1"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png"></a></p>
 <p>Obvykle doporučujeme ponechat toto nastavení na Auto (průběžné), ale pro dosažení maximální Snímkové Frekvence je nutné tuto funkci také vypnout.</p>
 <p>Vyvážení bílé ovlivňuje barevnou teplotu obrazu – pokud je vyvážení bílé velmi špatně nastaveno, obraz nebude vypadat dobře a bude často působit příliš červeně nebo zeleně.</p>
 <p>Povolením automatického vyvážení bílé obětujeme část Snímkové Frekvence, takže namísto maximálních 226 FPS kamery dosáhneme 200 FPS.</p>
 <p><strong>Propustnost propojení zařízení:</strong></p>
 <p>Doporučujeme ponechat toto nastavení na výchozí hodnotě, ale jeho snížení může omezit výpadky Snímků na úkor nižšího FPS.</p>
 <p>Poznámka: Toto nastavení nemají všechny kamery.</p>
-<p><strong><a href="#R-image-5c03cee15af7b5c01105a25840f4bd68" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c03cee15af7b5c01105a25840f4bd68"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
+<p><strong><a href="#R-image-06c7365f745357112ab119a53824886c" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-06c7365f745357112ab119a53824886c"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
 <h2 id="záložka-region-of-interest-roi--aoi">Záložka Region of Interest (ROI / AOI)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-515483022aa99ebc7b6362bdfc95d7ac" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-515483022aa99ebc7b6362bdfc95d7ac"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png"></a></p>
+<p><a href="#R-image-89def55726fc3395dd0aba1af1c58946" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-89def55726fc3395dd0aba1af1c58946"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png"></a></p>
 <p>U kamer, které tuto funkci podporují, je vhodnější používat Region of Interest / Area of Interest namísto ořezu.</p>
 <p>Region of Interest (ROI) je způsob, jak zmenšit velikost obrazu a snížit šířku pásma potřebnou pro každý snímek. Zmenšením velikosti obrazu lze zvýšit Snímkovou Frekvenci, protože celkový požadavek na čtení pixelů je menší. ROI může mít pozitivní vliv na Snímkovou Frekvenci a může snížit využití šířky pásma kamery.</p>
 <p>Ke změně oblasti zájmu můžeme přetáhnout posuvník výšky doleva, čímž zmenšíme výšku obrazu.</p>
-<p><a href="#R-image-fbbeb73e0c3521446d6eef4064ce17a4" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fbbeb73e0c3521446d6eef4064ce17a4"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png"></a></p>
+<p><a href="#R-image-1e878e2a1d23d519c62e0936b1b52f7c" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1e878e2a1d23d519c62e0936b1b52f7c"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png"></a></p>
 <p>Protože jsme změnili výšku obrazu, můžeme nyní také změnit posun Y, což může být užitečné jako alternativa k fyzickému přesunutí kamery v důsledku zmenšené velikosti obrazu.</p>
-<p><a href="#R-image-7fe6de602cadcb1b13345a4aec53c7d9" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7fe6de602cadcb1b13345a4aec53c7d9"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png"></a></p>
+<p><a href="#R-image-6ab85f8e412cc4f4926d64a800a6680c" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ab85f8e412cc4f4926d64a800a6680c"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png"></a></p>
 <p>Pokud se vrátíme na záložku Kamera a podíváme se na Snímkovou Frekvenci, uvidíme, že maximální Snímková Frekvence nyní může být nastavena na 288 (je tomu tak proto, že jsme použili Region of Interest zmenšením výšky snímače kamery).</p>
-<p><a href="#R-image-dfaf2cc871227cd6fbcceac13203cbfb" class="lightbox-link"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dfaf2cc871227cd6fbcceac13203cbfb"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png"></a></p>
+<p><a href="#R-image-5856b76f3cec74d7d840a03e1743dd8d" class="lightbox-link"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5856b76f3cec74d7d840a03e1743dd8d"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png"></a></p>
 <h2 id="záložka-filtr">Záložka Filtr<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Tato nastavení jsou dostupná pro všechny typy kamer, ale výsledky se mohou lišit v závislosti na rozlišení a nastavení kamery. Chcete-li se dozvědět více o tom, jak zlepšit kvalitu obrazu kamery, přečtěte si <a href="/sc-support/cs/cameras-video/improving-image-quality/index.html">tento článek.</a></p>
 <h2 id="řešení-problémů"><a href="/sc-support/cs/cameras-video/flir-blackfly-usb-setup/index.html">Řešení problémů</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -270,8 +292,8 @@
 <p>Ruční nastavení FPS na 60 nebo 120 FPS by mělo výrazně snížit viditelnost blikání. Zvažte přechod na LED osvětlení.</p>
 <h4 id="výpadky-snímků"><strong>Výpadky Snímků</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Snížení propustnosti propojení zařízení u každého zařízení může pomoci předejít výpadkům Snímků. Při dostatečném snížení propustnost ovlivní Snímkovou Frekvenci.</p>
-<p><strong><a href="#R-image-db2c2704013a52d2f4c173aba3c60b53" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-db2c2704013a52d2f4c173aba3c60b53"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
+<p><strong><a href="#R-image-ea6f4aa9b69f9af1dbe8d8d122063954" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea6f4aa9b69f9af1dbe8d8d122063954"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
 <p>Zejména u sestav s více kamerami může snížení propustnosti pomoci stabilizovat systém na úkor několika Snímků za sekundu. U kamer, které toto nastavení nemají, může snížení FPS a použití Region Of Interest pomoci snížit využití šířky pásma.</p>
 <p>Příklad využití šířky pásma:</p>
 <p>USB 3.0 je inzerováno jako schopné dosáhnout 5 Gb/s, tedy 625 MB/s.</p>
@@ -393,7 +415,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Jazyk</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/advanced-camera-settings/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/advanced-camera-settings/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/advanced-camera-settings/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/advanced-camera-settings/index.html" lang="fr">Français</option>
@@ -455,8 +476,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542949" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

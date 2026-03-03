@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="1427">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera">
     <title>Cách cấu hình camera IDS uEye GigE với Swing Catalyst :: Hỗ trợ Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="fr">
@@ -62,27 +61,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537826" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537826" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537826" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542940" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542940" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542940" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772537826";
+      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772542940";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772537826" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772542940" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['vi'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537826" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537826" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537826" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537826" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537826" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542940" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542940" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542940" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542940" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542940" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,35 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#cài-đặt-camera-ids-ueye-gige-của-bạn">Cài đặt camera IDS uEye GigE của bạn</a>
+      <ul>
+        <li><a href="#các-bước">Các bước:</a></li>
+        <li><a href="#ứng-dụng-ids-camera-manager">Ứng dụng IDS Camera Manager:</a></li>
+        <li><a href="#lưu-ý-về-cấu-hình-địa-chỉ-ip--khuyến-nghị-của-chúng-tôi">Lưu ý về cấu hình địa chỉ IP &amp; khuyến nghị của chúng tôi**</a></li>
+      </ul>
+    </li>
+    <li><a href="#cài-đặt-ip-được-khuyến-nghị">Cài đặt IP được khuyến nghị:</a>
+      <ul>
+        <li><a href="#kích-hoạt-dịch-vụ-mạng-ueye">Kích hoạt dịch vụ mạng uEye</a></li>
+      </ul>
+    </li>
+    <li><a href="#chọn-bộ-điều-hợp-mạng-bạn-muốn-cấu-hình-trong-trường-hợp-này-là-bộ-điều-hợp-cổng-đôi">Chọn bộ điều hợp mạng bạn muốn cấu hình (trong trường hợp này là bộ điều hợp cổng đôi)</a></li>
+    <li><a href="#cài-đặt-ip-tự-động-để-cài-đặt-ip-thủ-công-xem-bên-dưới">Cài đặt IP tự động (để cài đặt IP thủ công, xem bên dưới)</a></li>
+    <li><a href="#cài-đặt-ip-thủ-công">Cài đặt IP thủ công</a></li>
+    <li><a href="#cấu-hình-bộ-điều-hợp-mạng-để-sử-dụng-với-camera-ids-ueye">Cấu hình Bộ điều hợp Mạng để sử dụng với camera IDS uEye</a></li>
+    <li><a href="#sử-dụng-switch-mạng">Sử dụng switch mạng:</a></li>
+    <li><a href="#sử-dụng-camera-trong-swingcatalyst">Sử dụng camera trong SwingCatalyst</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/index.html"><span itemprop="name">Hỗ Trợ Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/cameras-video/index.html"><span itemprop="name">Cameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cách cấu hình camera IDS uEye GigE với Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -211,15 +239,15 @@
 <h2 id="cài-đặt-camera-ids-ueye-gige-của-bạn">Cài đặt camera IDS uEye GigE của bạn<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="các-bước">Các bước:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Trước khi tiến hành, hãy cài đặt driver IDS uEye. Tìm và mở ứng dụng IDS Camera Manager (có thể tìm thấy tại: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\IDS).</p>
-<p><a href="#R-image-d0caad1ac010294b0acc9cfcf75f8368" class="lightbox-link"><img alt="Ảnh chụp màn hình IDS Camera Manager trong Start Menu" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0caad1ac010294b0acc9cfcf75f8368"><img alt="Ảnh chụp màn hình IDS Camera Manager trong Start Menu" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png"></a></p>
+<p><a href="#R-image-bf999350928f0497ef0dc345d3807b6e" class="lightbox-link"><img alt="Ảnh chụp màn hình IDS Camera Manager trong Start Menu" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf999350928f0497ef0dc345d3807b6e"><img alt="Ảnh chụp màn hình IDS Camera Manager trong Start Menu" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png"></a></p>
 <h3 id="ứng-dụng-ids-camera-manager">Ứng dụng IDS Camera Manager:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-6e4054b89cfde413c208e4e7f23b8289" class="lightbox-link"><img alt="Ứng dụng IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e4054b89cfde413c208e4e7f23b8289"><img alt="Ứng dụng IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png"></a></p>
+<p><a href="#R-image-e2a8eb1392484db50cbb6c5f8786f675" class="lightbox-link"><img alt="Ứng dụng IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e2a8eb1392484db50cbb6c5f8786f675"><img alt="Ứng dụng IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png"></a></p>
 <p>Lưu ý cảnh báo ở phần cuối ứng dụng. Có một số cảnh báo có thể xuất hiện do địa chỉ IP được cài đặt sai, hoặc liên quan đến firmware của camera.</p>
 <p>Ví dụ:</p>
-<p><a href="#R-image-9c3d15aba62d01f381f1db7ffcbec10a" class="lightbox-link"><img alt="Ví dụ về cảnh báo trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c3d15aba62d01f381f1db7ffcbec10a"><img alt="Ví dụ về cảnh báo trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png"></a></p>
+<p><a href="#R-image-08ecc8884161acdf9827ec3031eda25d" class="lightbox-link"><img alt="Ví dụ về cảnh báo trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08ecc8884161acdf9827ec3031eda25d"><img alt="Ví dụ về cảnh báo trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png"></a></p>
 <h3 id="lưu-ý-về-cấu-hình-địa-chỉ-ip--khuyến-nghị-của-chúng-tôi">Lưu ý về cấu hình địa chỉ IP &amp; khuyến nghị của chúng tôi**<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>**</p>
 <p>Khuyến nghị của chúng tôi là sử dụng một card mạng hoặc giao diện mạng riêng cho mỗi camera. Tuy nhiên, với dòng IDS UI-3220, bạn có thể dùng hai camera cho mỗi cổng mạng bằng cách sử dụng một switch mạng (xem phần Sử dụng switch mạng).</p>
@@ -237,92 +265,92 @@ subnet mask: 255.255.255.0</p>
 <h3 id="kích-hoạt-dịch-vụ-mạng-ueye">Kích hoạt dịch vụ mạng uEye<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Lưu ý: Nếu bạn đang sử dụng các loại camera khác nhau từ nhiều nhà sản xuất, việc bật dịch vụ mạng uEye có thể gây ra sự cố khi sử dụng camera từ nhà sản xuất khác.</p>
 <p>Nhấp vào ETH network service</p>
-<p><a href="#R-image-0d3c0eda7a8fca4a878f1c601c45b707" class="lightbox-link"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d3c0eda7a8fca4a878f1c601c45b707"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
+<p><a href="#R-image-63cef2ddcc3fb24148a2f62fc7b6bdf7" class="lightbox-link"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-63cef2ddcc3fb24148a2f62fc7b6bdf7"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
 <h2 id="chọn-bộ-điều-hợp-mạng-bạn-muốn-cấu-hình-trong-trường-hợp-này-là-bộ-điều-hợp-cổng-đôi">Chọn bộ điều hợp mạng bạn muốn cấu hình (trong trường hợp này là bộ điều hợp cổng đôi)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Biểu tượng card mạng bị mờ đi, điều này là do nó chưa được cài đặt đúng. Dịch vụ mạng uEye cần được kích hoạt để camera có thể hiển thị trên mạng.</p>
 <p>Hãy đảm bảo đặt địa chỉ IP và subnet mask theo khuyến nghị (xem ở trên), sau đó nhấp vào <em>Enable uEye network service</em> và nhấp <em>Apply changes</em> (bạn vừa đặt địa chỉ IP tĩnh cho một trong các cổng của bộ điều hợp đôi!).</p>
-<p><a href="#R-image-b61dd1c70277612e473b30762118ef36" class="lightbox-link"><img alt="Cấu hình dịch vụ mạng uEye trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b61dd1c70277612e473b30762118ef36"><img alt="Cấu hình dịch vụ mạng uEye trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png"></a></p>
-<p><a href="#R-image-c3237233725a0f9ed6d6daf784284636" class="lightbox-link"><img alt="Áp dụng thay đổi trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3237233725a0f9ed6d6daf784284636"><img alt="Áp dụng thay đổi trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png"></a></p>
+<p><a href="#R-image-e395306365a5486211fa829f79dd2dd6" class="lightbox-link"><img alt="Cấu hình dịch vụ mạng uEye trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e395306365a5486211fa829f79dd2dd6"><img alt="Cấu hình dịch vụ mạng uEye trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png"></a></p>
+<p><a href="#R-image-3bc27fe3401b198633e26426ed62bc39" class="lightbox-link"><img alt="Áp dụng thay đổi trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3bc27fe3401b198633e26426ed62bc39"><img alt="Áp dụng thay đổi trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png"></a></p>
 <h2 id="cài-đặt-ip-tự-động-để-cài-đặt-ip-thủ-công-xem-bên-dưới">Cài đặt IP tự động (để cài đặt IP thủ công, xem bên dưới)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Để sử dụng cấu hình cài đặt IP tự động, nhấp vào Automatic ETH configuration và nhấp OK.</p>
 <p>IDS Camera Manager sẽ tự động đặt địa chỉ IP trên card mạng và camera cho bạn.</p>
 <p>Lưu ý: Chúng tôi khuyến nghị cài đặt IP thủ công khi sử dụng nhiều camera.</p>
-<p><a href="#R-image-ee472cf3de5e349a050627a3866f93a0" class="lightbox-link"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee472cf3de5e349a050627a3866f93a0"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
-<p><a href="#R-image-c527beafe17a9070864bb05da52a5df5" class="lightbox-link"><img alt="Cấu hình ETH tự động trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c527beafe17a9070864bb05da52a5df5"><img alt="Cấu hình ETH tự động trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png"></a></p>
+<p><a href="#R-image-7744b6f72159811c59f92e6d24d7769f" class="lightbox-link"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7744b6f72159811c59f92e6d24d7769f"><img alt="Nhấp vào ETH network service trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
+<p><a href="#R-image-1fdad0088af956cb74d7f9ad1aa166b1" class="lightbox-link"><img alt="Cấu hình ETH tự động trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1fdad0088af956cb74d7f9ad1aa166b1"><img alt="Cấu hình ETH tự động trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png"></a></p>
 <h2 id="cài-đặt-ip-thủ-công">Cài đặt IP thủ công<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Quay lại IDS Camera Manager, bây giờ bạn sẽ thấy danh sách các camera. Vì trước đó bạn đã đặt địa chỉ IP tĩnh cho bộ điều hợp mạng, bây giờ bạn cần đặt IP tĩnh cho camera để bộ điều hợp mạng và camera có thể giao tiếp đúng cách với nhau.</p>
 <p>Tích vào ô Expert Mode như hình dưới đây:</p>
-<p><a href="#R-image-b73d837ab8c43fdb054851483662e78d" class="lightbox-link"><img alt="Bật Expert Mode trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b73d837ab8c43fdb054851483662e78d"><img alt="Bật Expert Mode trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png"></a></p>
+<p><a href="#R-image-c04f6e63feb7df9f30fb5c6dddc22254" class="lightbox-link"><img alt="Bật Expert Mode trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c04f6e63feb7df9f30fb5c6dddc22254"><img alt="Bật Expert Mode trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png"></a></p>
 <p>Lưu ý cảnh báo màu đỏ ở trên.</p>
 <p>Nhấp vào Manual ETH configuration:</p>
-<p><a href="#R-image-1f4f6ec49d67cc33ef8993a6ee89b429" class="lightbox-link"><img alt="Cấu hình ETH thủ công trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f4f6ec49d67cc33ef8993a6ee89b429"><img alt="Cấu hình ETH thủ công trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png"></a></p>
+<p><a href="#R-image-fbc8fc747033e0e16a2f0f7bdf6585eb" class="lightbox-link"><img alt="Cấu hình ETH thủ công trong IdsCameraManager" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fbc8fc747033e0e16a2f0f7bdf6585eb"><img alt="Cấu hình ETH thủ công trong IdsCameraManager" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png"></a></p>
 <p>Trong ảnh chụp màn hình trên, địa chỉ IP của camera được đặt là 10.0.1.10 (card mạng của chúng tôi là 10.0.1.1). Nhập như trong ảnh chụp màn hình trên và nhấp OK.</p>
 <p>Lưu ý, việc đặt địa chỉ IP tĩnh không bắt buộc nhưng được khuyến nghị cao vì cấu hình IP tự động có thể gây ra sự cố xung đột địa chỉ IP, ví dụ: cùng một địa chỉ IP được sử dụng ở nơi khác. Chúng tôi đặc biệt khuyến nghị thiết lập cấu hình tĩnh cho tất cả các lắp đặt studio.</p>
 <p>Lặp lại cho các camera và NIC khác theo cấu hình IP được khuyến nghị ở trên.</p>
 <h2 id="cấu-hình-bộ-điều-hợp-mạng-để-sử-dụng-với-camera-ids-ueye">Cấu hình Bộ điều hợp Mạng để sử dụng với camera IDS uEye<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Giả sử bạn đã cài đặt xong địa chỉ IP tĩnh cho cả camera lẫn card mạng, hãy tiến hành cấu hình bộ điều hợp mạng để đạt Hiệu Suất tốt nhất.</p>
 <p>Từ Control Panel\Network and Internet\Network Connections, nhấp đúp vào bộ điều hợp bạn muốn cấu hình, trong trường hợp của chúng tôi là Ethernet 4, Intel (PRO/1000 PT Dual port).</p>
-<p><a href="#R-image-73203b87bdad1119ba890b703a52e509" class="lightbox-link"><img alt="Cửa sổ Network Connections trong Trình Duyệt" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-73203b87bdad1119ba890b703a52e509"><img alt="Cửa sổ Network Connections trong Trình Duyệt" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png"></a></p>
+<p><a href="#R-image-b03bebec197be357122e66ab17ac4729" class="lightbox-link"><img alt="Cửa sổ Network Connections trong Trình Duyệt" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b03bebec197be357122e66ab17ac4729"><img alt="Cửa sổ Network Connections trong Trình Duyệt" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png"></a></p>
 <p>Nhấp đúp vào bộ điều hợp mạng bạn muốn cấu hình.</p>
 <p>Nhấp vào tab Advanced. Lưu ý: Cấu hình khác nhau đối với mỗi bộ điều hợp mạng và tùy thuộc vào driver, vui lòng tham khảo tài liệu của card mạng để biết thông tin cụ thể về cách thay đổi các cài đặt được hiển thị bên dưới.</p>
-<p><a href="#R-image-a4e9a26690bef4fa3620d73b14960e04" class="lightbox-link"><img alt="Tab Advanced trong cài đặt bộ điều hợp mạng" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a4e9a26690bef4fa3620d73b14960e04"><img alt="Tab Advanced trong cài đặt bộ điều hợp mạng" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png"></a></p>
+<p><a href="#R-image-997ae0579044b1bb727e617b7858b19b" class="lightbox-link"><img alt="Tab Advanced trong cài đặt bộ điều hợp mạng" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-997ae0579044b1bb727e617b7858b19b"><img alt="Tab Advanced trong cài đặt bộ điều hợp mạng" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png"></a></p>
 <p>Đảm bảo Interrupt Moderation được bật và Interrupt Moderation Rate được đặt thành Extreme.</p>
 <p>Nếu bạn không có tùy chọn Extreme, hãy đặt thành High.</p>
 <p>Trong một số trường hợp, việc tắt interrupt moderation có thể hữu ích nếu không có tốc độ điều chế ngắt cao nào hoạt động, nhưng miễn là bạn có card mạng được khuyến nghị thì các tùy chọn High &amp; Extreme sẽ khả dụng. Việc bật interrupt moderation rất quan trọng để giảm mức sử dụng CPU khi xử lý lượng lớn gói tin, đặc biệt với camera có độ phân giải cao và/hoặc FPS cao.</p>
 <p>Interrupt moderation rate:</p>
-<p><a href="#R-image-d53a9c748d8b50830efd071b979e80a5" class="lightbox-link"><img alt="Cài đặt Interrupt Moderation Rate" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d53a9c748d8b50830efd071b979e80a5"><img alt="Cài đặt Interrupt Moderation Rate" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png"></a></p>
+<p><a href="#R-image-206f249e2cb3dbc42df09f67818e8799" class="lightbox-link"><img alt="Cài đặt Interrupt Moderation Rate" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-206f249e2cb3dbc42df09f67818e8799"><img alt="Cài đặt Interrupt Moderation Rate" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png"></a></p>
 <p>Bật hỗ trợ Jumbo Packets (đặt thành 9014 Bytes):</p>
-<p><a href="#R-image-cc39db92096d75a20bc8127ae6d51827" class="lightbox-link"><img alt="Cài đặt Jumbo Packets" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc39db92096d75a20bc8127ae6d51827"><img alt="Cài đặt Jumbo Packets" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png"></a></p>
+<p><a href="#R-image-b96c89ec289eba1da10c1f8ceb088ae0" class="lightbox-link"><img alt="Cài đặt Jumbo Packets" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b96c89ec289eba1da10c1f8ceb088ae0"><img alt="Cài đặt Jumbo Packets" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png"></a></p>
 <p>Receive Buffers:</p>
 <p>Khuyến nghị đặt giá trị này ở mức cao nhất có thể. Điều này có thể giúp tránh mất Khung hình khi sử dụng nhiều camera và/hoặc camera GigE có độ phân giải cao.</p>
-<p><a href="#R-image-249ce6d44a7fc4e5fb666a6031f2534c" class="lightbox-link"><img alt="Cài đặt Receive Buffers" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-249ce6d44a7fc4e5fb666a6031f2534c"><img alt="Cài đặt Receive Buffers" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-649039d139ea2687d6e72a766945d60c" class="lightbox-link"><img alt="Cài đặt Receive Buffers" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-649039d139ea2687d6e72a766945d60c"><img alt="Cài đặt Receive Buffers" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="sử-dụng-switch-mạng">Sử dụng switch mạng:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nếu bạn định sử dụng switch mạng, điều quan trọng là switch phải hỗ trợ Jumbo Frames 9KB, và bộ điều hợp mạng phải được cấu hình để sử dụng Jumbo Frames 9KB. Tuy nhiên, trong một số trường hợp, một số switch có thể không hoạt động tốt với kích thước frame 9KB, trong những trường hợp đó, nên giảm từ 9KB xuống giá trị thấp hơn và kiểm tra lại cài đặt.</p>
 <h2 id="sử-dụng-camera-trong-swingcatalyst">Sử dụng camera trong SwingCatalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Sau khi đã cấu hình địa chỉ IP và bộ điều hợp mạng theo các khuyến nghị trên, bạn có thể khởi động SwingCatalyst và camera sẽ hiển thị trong danh sách camera.</p>
-<p><a href="#R-image-3a8dd399202551b413819150db6a1d2e" class="lightbox-link"><img alt="Camera hiển thị trong danh sách camera của SwingCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a8dd399202551b413819150db6a1d2e"><img alt="Camera hiển thị trong danh sách camera của SwingCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png"></a></p>
+<p><a href="#R-image-f25533f96dd6d50c97054434636d68bb" class="lightbox-link"><img alt="Camera hiển thị trong danh sách camera của SwingCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f25533f96dd6d50c97054434636d68bb"><img alt="Camera hiển thị trong danh sách camera của SwingCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png"></a></p>
 <p>Đặt Góc camera và bật camera, sau đó nhấp Configure.</p>
 <p>Đảm bảo pixel clock ở mức tối đa (hoặc giảm xuống nếu bạn bị mất Khung hình).</p>
 <p>Đặt tốc độ màn trập &amp; Gain (lưu ý các giá trị này có thể thay đổi nhiều tùy thuộc vào yêu cầu, loại camera và lượng ánh sáng bạn có).</p>
-<p><a href="#R-image-b8cd2ada05ec645b831f1d3a7061b638" class="lightbox-link"><img alt="Cài đặt cấu hình camera trong SwingCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8cd2ada05ec645b831f1d3a7061b638"><img alt="Cài đặt cấu hình camera trong SwingCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png"></a></p>
+<p><a href="#R-image-68c1ebb6e06682d9cbfd1aa739429354" class="lightbox-link"><img alt="Cài đặt cấu hình camera trong SwingCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-68c1ebb6e06682d9cbfd1aa739429354"><img alt="Cài đặt cấu hình camera trong SwingCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png"></a></p>
 <p>Khắc phục sự cố camera IDS</p>
 <p>Nếu bạn bị mất Khung hình hoặc gặp sự cố đồng bộ với camera IDS uEye GigE, hãy sử dụng tiện ích uEye Cockpit.</p>
-<p><a href="#R-image-f078fd15ab92f848175c1473eccb110c" class="lightbox-link"><img alt="Tiện ích uEye Cockpit trong Trình Duyệt" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f078fd15ab92f848175c1473eccb110c"><img alt="Tiện ích uEye Cockpit trong Trình Duyệt" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png"></a></p>
+<p><a href="#R-image-b66181ac0b32ad3e08781006eca8e90d" class="lightbox-link"><img alt="Tiện ích uEye Cockpit trong Trình Duyệt" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b66181ac0b32ad3e08781006eca8e90d"><img alt="Tiện ích uEye Cockpit trong Trình Duyệt" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png"></a></p>
 <p>Nhấp vào Live Video</p>
-<p><a href="#R-image-bae35f3ec79f630e196da716eea880da" class="lightbox-link"><img alt="Giao diện uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bae35f3ec79f630e196da716eea880da"><img alt="Giao diện uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png"></a></p>
+<p><a href="#R-image-5c07a1d47ac18fca666cea40c6faf102" class="lightbox-link"><img alt="Giao diện uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c07a1d47ac18fca666cea40c6faf102"><img alt="Giao diện uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png"></a></p>
 <p>Nhấp vào biểu tượng phát rồi nhấp vào biểu tượng cờ lê</p>
-<p><a href="#R-image-418e0dce6e828ff96489f410c1cf4f37" class="lightbox-link"><img alt="Biểu tượng phát và cờ lê trong uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-418e0dce6e828ff96489f410c1cf4f37"><img alt="Biểu tượng phát và cờ lê trong uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png"></a></p>
+<p><a href="#R-image-5bb385470018279f91b50662d2429f83" class="lightbox-link"><img alt="Biểu tượng phát và cờ lê trong uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bb385470018279f91b50662d2429f83"><img alt="Biểu tượng phát và cờ lê trong uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png"></a></p>
 <p>Lưu ý mức sử dụng băng thông được liệt kê. Trong tab Camera, tăng Pixel clock và tích vào ô Max trong phần Frame rate (Freerun), sau đó giảm thời gian phơi sáng (tốc độ màn trập) xuống.</p>
-<p><a href="#R-image-486553bdfcb8a206fb195c84a17bb937" class="lightbox-link"><img alt="Cài đặt Camera trong uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-486553bdfcb8a206fb195c84a17bb937"><img alt="Cài đặt Camera trong uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png"></a></p>
+<p><a href="#R-image-6cc4e7fadcda8be37c9f0f7ded4804d3" class="lightbox-link"><img alt="Cài đặt Camera trong uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6cc4e7fadcda8be37c9f0f7ded4804d3"><img alt="Cài đặt Camera trong uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png"></a></p>
 <p>Sau khi cài đặt camera để phát trực tiếp, nhấp vào Chế Độ Xem -&gt; Performance Overview</p>
-<p><a href="#R-image-bd9b5bcf0f76d47684c9c55162a524e3" class="lightbox-link"><img alt="Chế Độ Xem Performance Overview trong uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd9b5bcf0f76d47684c9c55162a524e3"><img alt="Chế Độ Xem Performance Overview trong uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png"></a></p>
+<p><a href="#R-image-1694272e4b0dfc81af1aedc10100baae" class="lightbox-link"><img alt="Chế Độ Xem Performance Overview trong uEye Cockpit" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1694272e4b0dfc81af1aedc10100baae"><img alt="Chế Độ Xem Performance Overview trong uEye Cockpit" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png"></a></p>
 <p>Chế Độ Xem Host Performance có thể rất hữu ích để khắc phục sự cố nếu bạn gặp vấn đề về độ ổn định và mất Khung hình.</p>
 <p>Sử dụng thanh trạng thái trong uEye Cockpit để chỉ báo các Khung hình bị mất hoặc sự cố kết nối trong khi phát trực tuyến video:</p>
 <p>Độ phân giải của camera, Khung hình đã nhận, Khung hình đã hiển thị, Khung hình lỗi &amp; Số lần thử kết nối lại theo ảnh chụp màn hình:</p>
-<p><a href="#R-image-6ba643fc08f40c4eb844e42506075c05" class="lightbox-link"><img alt="Thanh trạng thái uEye Cockpit hiển thị thống kê Khung hình" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ba643fc08f40c4eb844e42506075c05"><img alt="Thanh trạng thái uEye Cockpit hiển thị thống kê Khung hình" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png"></a></p>
+<p><a href="#R-image-387c59a9ed9ff5062b9de9f4b77df7cd" class="lightbox-link"><img alt="Thanh trạng thái uEye Cockpit hiển thị thống kê Khung hình" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-387c59a9ed9ff5062b9de9f4b77df7cd"><img alt="Thanh trạng thái uEye Cockpit hiển thị thống kê Khung hình" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png"></a></p>
 <p>Transfer OK &amp; Tốc độ Khung hình cũng có thể được xem trong thanh trạng thái:</p>
-<p><a href="#R-image-b8c59af20f7539aaa7494f159aa45022" class="lightbox-link"><img alt="Thanh trạng thái uEye Cockpit hiển thị Transfer OK và Tốc độ Khung hình" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8c59af20f7539aaa7494f159aa45022"><img alt="Thanh trạng thái uEye Cockpit hiển thị Transfer OK và Tốc độ Khung hình" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png"></a></p>
+<p><a href="#R-image-b9be94647fc299ad9e998ce70a51ed14" class="lightbox-link"><img alt="Thanh trạng thái uEye Cockpit hiển thị Transfer OK và Tốc độ Khung hình" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b9be94647fc299ad9e998ce70a51ed14"><img alt="Thanh trạng thái uEye Cockpit hiển thị Transfer OK và Tốc độ Khung hình" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png"></a></p>
 <hr>
 <p><em>Cập nhật lần cuối: 2023-12-19</em> | <a href="/sc-support/vi/cameras-video/ids-ueye-gige/index.html">Xem trên trang hỗ trợ chính thức</a></p>
 
@@ -433,7 +461,6 @@ subnet mask: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/ids-ueye-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/ids-ueye-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/ids-ueye-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/ids-ueye-gige/index.html" lang="fr">Français</option>
@@ -495,8 +522,8 @@ subnet mask: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537826" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542940" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

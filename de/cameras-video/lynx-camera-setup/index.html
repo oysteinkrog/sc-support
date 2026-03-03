@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="943">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Lynx-Camera,Fox-Camera">
     <title>Einrichtung der Swing Catalyst Lynx GigE-Kamera(s) :: Swing Catalyst Support</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537809" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537809" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537809" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542922" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542922" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772537809";
+      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772542922";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.de.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.de.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['de'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537809" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542922" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Inhalt (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#dieser-artikel-enthält-grundlegende-kamerainformationen-sowie-eine-anleitung-zur-einrichtung-und-konfiguration-der-lynx-gige-kamera-von-swing-catalyst">Dieser Artikel enthält grundlegende Kamerainformationen sowie eine Anleitung zur Einrichtung und Konfiguration der Lynx GigE-Kamera von Swing Catalyst.</a>
+      <ul>
+        <li><a href="#eine-kurze-schritt-für-schritt-anleitung-finden-sie-hier--httpsswingcatalystcomcamera-guide">Eine kurze Schritt-für-Schritt-Anleitung finden Sie hier <strong>:</strong> <a href="https://swingcatalyst.com/camera-guide/">https://swingcatalyst.com/camera-guide</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#dieser-artikel-ist-in-verschiedene-abschnitte-unterteilt">Dieser Artikel ist in verschiedene Abschnitte unterteilt</a>
+      <ul>
+        <li><a href="#erste-schritte-hardware-einrichtung">Erste Schritte: Hardware-Einrichtung</a></li>
+        <li><a href="#installation-der-dual-port-netzwerkkarte">Installation der Dual-Port-Netzwerkkarte</a></li>
+        <li><a href="#treiberinstallation-und-aktivierung-der-kameras">Treiberinstallation und Aktivierung der Kamera(s)</a></li>
+        <li><a href="#tipps-zur-fehlerbehebung">Tipps zur Fehlerbehebung</a></li>
+      </ul>
+    </li>
+    <li><a href="#kamerainformationen">Kamerainformationen:</a></li>
+    <li><a href="#erste-schritte-kameramontage">Erste Schritte: Kameramontage</a></li>
+    <li><a href="#20230110_"><a href="#section1"><img src="__PH0__" alt="20230110_095547.jpg"></a></a></li>
+    <li><a href="#installation-der-dual-port-netzwerkkarte-1">Installation der Dual-Port-Netzwerkkarte:</a></li>
+    <li><a href="#so-konfigurieren-sie-ihre-netzwerkkarte">So konfigurieren Sie Ihre Netzwerkkarte</a>
+      <ul>
+        <li><a href="#jumbo-frames-aktivieren">Jumbo Frames aktivieren</a></li>
+      </ul>
+    </li>
+    <li><a href="#treiberinstallation-und-aktivierung-der-kameras-1">Treiberinstallation und Aktivierung der Kamera(s):</a></li>
+    <li><a href="#kameraeinstellungen-konfigurieren">Kameraeinstellungen konfigurieren:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/cameras-video/index.html"><span itemprop="name">Kameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Einrichtung der Swing Catalyst Lynx GigE-Kamera(s)</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -226,21 +260,21 @@
 </ul>
 <h2 id="erste-schritte-kameramontage">Erste Schritte: Kameramontage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Befestigen Sie den Stativadapter mit den 4 im Lieferumfang enthaltenen schwarzen Kreuzschlitzschrauben am Kameragehäuse.</p>
-<h2 id="20230110_"><a href="/sc-support/de/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-a9b36a66df54737a6a8bce8f12cc008c" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9b36a66df54737a6a8bce8f12cc008c"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="20230110_"><a href="/sc-support/de/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-99dd3aa4d6dafa0abfffa7bba699b66a" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-99dd3aa4d6dafa0abfffa7bba699b66a"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Entnehmen Sie das Objektiv aus der Verpackung und entfernen Sie die Kunststoffschutzdeckel.</p>
-<p><a href="#R-image-43885ad0522df0cfd045ce0761460e1e" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-43885ad0522df0cfd045ce0761460e1e"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
+<p><a href="#R-image-c1f905d3af4c8a0ffdd96e497cd3cf55" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c1f905d3af4c8a0ffdd96e497cd3cf55"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
 <p>Entfernen Sie die Sensorabdeckung von der Kamera.</p>
-<p><a href="#R-image-127b26c54b9efbdce3a823b7600097b0" class="lightbox-link"><img alt="20230110_095616.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-127b26c54b9efbdce3a823b7600097b0"><img alt="20230110_095616.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-88ad59ccfa32a86159f897783d076719" class="lightbox-link"><img alt="20230110_095634.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-88ad59ccfa32a86159f897783d076719"><img alt="20230110_095634.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
+<p><a href="#R-image-9e77533c03651bcf364233c97cab3e6a" class="lightbox-link"><img alt="20230110_095616.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e77533c03651bcf364233c97cab3e6a"><img alt="20230110_095616.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-51ef8faaf92f0279702d8fad080cebdf" class="lightbox-link"><img alt="20230110_095634.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-51ef8faaf92f0279702d8fad080cebdf"><img alt="20230110_095634.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
 <p>Objektiv an der Kamera befestigen</p>
-<p><a href="#R-image-1b2f48437d891ea9547fdf7bc4637c9a" class="lightbox-link"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b2f48437d891ea9547fdf7bc4637c9a"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
+<p><a href="#R-image-f949591a63296b2297608a4411ea176a" class="lightbox-link"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f949591a63296b2297608a4411ea176a"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
 <p>Kameraobjektiv einstellen</p>
-<p><a href="#R-image-e226f5fbd88f162388cb99d7b9c46c8c" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e226f5fbd88f162388cb99d7b9c46c8c"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
+<p><a href="#R-image-d6c554719edc2625670abf8215fe4c24" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d6c554719edc2625670abf8215fe4c24"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
 <p>Dieses Objektiv verfügt über drei Einstellmöglichkeiten, von oben nach unten:</p>
 <ul>
 <li>
@@ -275,20 +309,20 @@
 </li>
 </ul>
 <p>Setzen Sie „Empfangspuffer&quot; auf 2048.</p>
-<p><a href="#R-image-95f866e5e0c417803fd851034096cc2e" class="lightbox-link"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-95f866e5e0c417803fd851034096cc2e"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-46c7667c55b2d9724a2fea327544e11c" class="lightbox-link"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-46c7667c55b2d9724a2fea327544e11c"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
-<p><a href="#R-image-6ffb17bbefc890df6be280147970da1a" class="lightbox-link"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6ffb17bbefc890df6be280147970da1a"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
-<p><a href="#R-image-e1c7273b2413763772bf76a5db1493bb" class="lightbox-link"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e1c7273b2413763772bf76a5db1493bb"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
+<p><a href="#R-image-3fb84aa367592581b3e223ed59308335" class="lightbox-link"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fb84aa367592581b3e223ed59308335"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-2d8774da5f04850144d3b35262938417" class="lightbox-link"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2d8774da5f04850144d3b35262938417"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
+<p><a href="#R-image-86b7bb1ebae1461b016672c3870ab854" class="lightbox-link"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-86b7bb1ebae1461b016672c3870ab854"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
+<p><a href="#R-image-e454570ecfbeb254d06071999371d62a" class="lightbox-link"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e454570ecfbeb254d06071999371d62a"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
 <h2 id="treiberinstallation-und-aktivierung-der-kameras-1">Treiberinstallation und Aktivierung der Kamera(s):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Schritt 1: Verbinden Sie Ihre Kamera(s) über ein Cat5- oder Cat6-Ethernet-Kabel mit den PoE-Netzwerk-Ports Ihres PCs und stellen Sie sicher, dass auf der Rückseite der Kamera eine blau leuchtende Kontrollleuchte erscheint.</p>
 <p>Schritt 2: <a href="https://cloudfront.swingcatalyst.com/drivers/NA_SDK_V3_5_3_3_MVFG_V1_1_4_2_VC90_Runtime_NEU.exe" rel="external">Zum Herunterladen klicken</a> und die Driver für Ihre Kamera(s) installieren.</p>
 <p>Schritt 3: Öffnen Sie SwingCatalyst und klicken Sie auf das Zahnradsymbol in der unteren linken Ecke des Hauptmenüs und rufen Sie Ihre Kameraeinstellungen auf.</p>
 <p>Schritt 4: Klicken Sie auf die Wiedergabetaste, um eine Vorschau zu erhalten. Klicken Sie dann auf „Deaktiviert&quot; und weisen Sie jeder Kamera den entsprechenden Winkel zu. Stellen Sie die Kamera abschließend von „Aus&quot; auf „Ein&quot;.</p>
-<p><a href="#R-image-efc641fa6c1383ffbdde2e6fcbcd9e00" class="lightbox-link"><img alt="mceclip1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-efc641fa6c1383ffbdde2e6fcbcd9e00"><img alt="mceclip1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
+<p><a href="#R-image-ec0be1d9d5646c371aee69d9fbef4b9c" class="lightbox-link"><img alt="mceclip1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec0be1d9d5646c371aee69d9fbef4b9c"><img alt="mceclip1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
 <h2 id="kameraeinstellungen-konfigurieren">Kameraeinstellungen konfigurieren:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>WICHTIG</strong></p>
 <p>Für eine klare Ansicht von Schläger und Schaft halten Sie die Belichtung unter 600. Erhöhen Sie die Bildhelligkeit durch Anpassung des Gain. Optimale Beleuchtung: Installieren Sie drei Thomann 100-W-Leuchten – je eine Von der Linie, rechts und links – mindestens 1,5 Meter vom Ball entfernt, entweder an der Decke oder an der Wand.</p>
@@ -308,17 +342,17 @@
 </ul>
 <p><strong>Hinweis</strong>: Bei 3 oder 4 Kameras empfehlen wir, GEV SCPD auf 150 zu setzen.</p>
 <p>Sie sollten nun in der Lage sein, die Einstellungen zu schließen und in den Erfassen-Modus zu wechseln, um mit der Aufnahme zu beginnen.</p>
-<p><a href="#R-image-b819f0aa6c448add662d3090dfe93b23" class="lightbox-link"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b819f0aa6c448add662d3090dfe93b23"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
-<p><a href="#R-image-fd9aa6fcdff074205ce04247c32be595" class="lightbox-link"><img alt="mceclip5.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd9aa6fcdff074205ce04247c32be595"><img alt="mceclip5.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
+<p><a href="#R-image-7844136d5c09712a5f7597e4ff2820f8" class="lightbox-link"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7844136d5c09712a5f7597e4ff2820f8"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
+<p><a href="#R-image-3e4015c4ab98f23da6315d3949563f5f" class="lightbox-link"><img alt="mceclip5.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e4015c4ab98f23da6315d3949563f5f"><img alt="mceclip5.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
 <p><a href="/sc-support/de/cameras-video/lynx-camera-setup/index.html#troubleshooting-tips">Tipps zur Fehlerbehebung:</a></p>
 <p><strong>Kameras werden in den SwingCatalyst-Einstellungen nicht angezeigt:</strong></p>
 <p>Stellen Sie sicher, dass Sie die neueste MVS/Runtime-Version installiert haben (4.6.1).</p>
 <p><strong>Verlorene Frames:</strong></p>
 <p>Eine Reduzierung der Bildrate an jeder Kamera kann helfen, verlorene Frames zu vermeiden oder zu reduzieren.</p>
-<p><a href="#R-image-edc71b3bfab41645e0898e564d6569d1" class="lightbox-link"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-edc71b3bfab41645e0898e564d6569d1"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
+<p><a href="#R-image-c3520023d12d7960320f430439954ec9" class="lightbox-link"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3520023d12d7960320f430439954ec9"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
 <p>Verwenden Sie eine der empfohlenen Netzwerkkarten? Falls nicht, könnte die Netzwerkkarte selbst das Problem verursachen. Bitte kontaktieren Sie unser Vertriebsteam, um sicherzustellen, dass Sie die richtige Netzwerkausrüstung haben.</p>
 <ul>
 <li>
@@ -343,8 +377,8 @@
 <p>Überprüfen Sie den Status des Netzwerkadapters in der Windows-Systemsteuerung.</p>
 </li>
 </ul>
-<p><a href="#R-image-21581438472a6b23b7bdae4c37c8cda8" class="lightbox-link"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-21581438472a6b23b7bdae4c37c8cda8"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
+<p><a href="#R-image-78f7f796ea0b2e08a748d240021c4346" class="lightbox-link"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-78f7f796ea0b2e08a748d240021c4346"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
 <p>Hinweis: Die Geschwindigkeit sollte 1,0 Gbps (1000 Mbps) betragen, nicht 100 Mbps.</p>
 <p><strong>Reduzierung verlorener Frames zusätzlich durch die Verwendung von Region of Interest (ROI):</strong></p>
 <p>Die Verwendung einer Region of Interest (oder eines Interessenbereichs) reduziert die Gesamtbildgröße und erhöht die FPS, kann aber auch die Bandbreitennutzung verringern, was wiederum verlorene Frames reduzieren kann (siehe oben zur Verwendung von ROI).</p>
@@ -475,7 +509,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Sprache</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/lynx-camera-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/lynx-camera-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/lynx-camera-setup/index.html" lang="de" selected data-selected>Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/lynx-camera-setup/index.html" lang="fr">Français</option>
@@ -537,8 +570,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542922" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

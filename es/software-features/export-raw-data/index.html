@@ -21,8 +21,7 @@
     <meta itemprop="description" content="Este artículo explica cómo exportar datos sin procesar desde Swing Catalyst o Motion Catalyst como archivos TSV.">
     <meta itemprop="wordCount" content="325">
     <title>Cómo exportar datos sin procesar :: Soporte de Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-raw-data/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-raw-data/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-raw-data/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-raw-data/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-raw-data/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537808" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537808" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537808" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542920" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542920" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772537808";
+      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772542920";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.es.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.es.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['es'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537808" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542920" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,20 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#exportar-datos-desde-el-explorador">Exportar datos desde el Explorador</a></li>
+    <li><a href="#selección-de-exportación-de-datos">Selección de exportación de datos</a></li>
+    <li><a href="#opciones-de-datos-sin-procesar">Opciones de datos sin procesar</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/software-features/index.html"><span itemprop="name">Software y funciones</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cómo exportar datos sin procesar</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -194,8 +207,8 @@
 <p>¿Deseas exportar información de Estudiantes? Consulta este <a href="/sc-support/es/software-features/export-contacts/index.html">artículo</a>.</p>
 <p>Existen varias formas de exportar datos: a través del Explorador y desde la Pila. Ambas opciones ofrecen la misma funcionalidad.</p>
 <h2 id="exportar-datos-desde-el-explorador">Exportar datos desde el Explorador<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-2cecbbfbc6c448413aa4b00c65a573e5" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2cecbbfbc6c448413aa4b00c65a573e5"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-61451c919ae145e49c3a7217f57ec744" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-61451c919ae145e49c3a7217f57ec744"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>En el Explorador, los datos se pueden exportar haciendo clic derecho sobre una Grabación, seleccionando Exportar y eligiendo entre las opciones disponibles, o arrastrando la(s) Grabación(es) a la Lista de Exportación.</p>
 <p>Selección del menú</p>
 <p>Función</p>
@@ -208,20 +221,20 @@ Exporta la Grabación seleccionada con las opciones de exportación de datos sin
 <p>Exportar Sesión como archivos de datos sin procesar
 Exporta la Sesión completa con las opciones de exportación de datos sin procesar.</p>
 <p>Una descripción general de las opciones de exportación disponibles al hacer clic derecho:</p>
-<p><a href="#R-image-b5e41a4ade31794e91e7235cafff6383" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b5e41a4ade31794e91e7235cafff6383"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-88f5f414078a6d5f1c9c2ea22d937fa5" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-88f5f414078a6d5f1c9c2ea22d937fa5"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
 <p>La lista de exportación:</p>
-<p><a href="#R-image-8e88ba344893ce3c717c0f6108e93768" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e88ba344893ce3c717c0f6108e93768"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-477b610cd3b9615ea80fb9c762ebfea6" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-477b610cd3b9615ea80fb9c762ebfea6"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="selección-de-exportación-de-datos">Selección de exportación de datos<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Es posible elegir entre algunas opciones diferentes al exportar datos.</p>
 <p>Este artículo se centra principalmente en los datos sin procesar.</p>
 <p>Para exportar datos sin procesar, asegúrate de seleccionar &ldquo;Raw Data&rdquo; en el cuadro de diálogo de exportación.</p>
-<p><a href="#R-image-52c24bcc28e8762f47c1cf8cbaad526e" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-52c24bcc28e8762f47c1cf8cbaad526e"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-2372053a52d4d7f9f6eab9da0f8ee9d3" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2372053a52d4d7f9f6eab9da0f8ee9d3"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <h2 id="opciones-de-datos-sin-procesar">Opciones de datos sin procesar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-171934a9049c998b7e94316a9b295421" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-171934a9049c998b7e94316a9b295421"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
+<p><a href="#R-image-edc628b6d99308cd3d5305c9d0b94eb7" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-edc628b6d99308cd3d5305c9d0b94eb7"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
 <p>Ten en cuenta que esta funcionalidad sigue mejorándose; actualmente, muchas opciones están agrupadas dentro de &ldquo;Raw data&rdquo;.</p>
 <hr>
 <p><em>Última actualización: 2023-12-15</em> | <a href="/sc-support/es/software-features/export-raw-data/index.html">Ver en el sitio de soporte oficial</a></p>
@@ -326,7 +339,6 @@ Exporta la Sesión completa con las opciones de exportación de datos sin proces
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-raw-data/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-raw-data/index.html" lang="es" selected data-selected>Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-raw-data/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-raw-data/index.html" lang="fr">Français</option>
@@ -388,8 +400,8 @@ Exporta la Sesión completa con las opciones de exportación de datos sin proces
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542920" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

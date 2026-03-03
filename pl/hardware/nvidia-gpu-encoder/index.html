@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="281">
     <meta itemprop="keywords" content="Troubleshooting,Force-Data,Backup">
     <title>Jak skonfigurować koder GPU NVIDIA :: Wsparcie Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="fr">
@@ -62,26 +61,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537829" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537829" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537829" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542943" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542943" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542943" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.pl.js?1772537829";
+      window.relearn.index_js_url="/sc-support/searchindex.pl.js?1772542943";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537829" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542943" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537829" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537829" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537829" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537829" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537829" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542943" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542943" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542943" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542943" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542943" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,23 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Spis terści (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#w-pierwszej-kolejności-upewnij-się-że-gpu-nvidia-jest-wybrane-w-ustawieniach-wideo-i-przechwytywania-w-swingcatalyst">W pierwszej kolejności upewnij się, że GPU NVIDIA jest wybrane w ustawieniach wideo i Przechwytywania w SwingCatalyst.</a></li>
+        <li><a href="#przejdź-do-trybu-przechwytywania-i-nagraj-swing--jeśli-swing-zostanie-wyzwolony-ale-nie-zakończy-się-zapoznaj-się-z-poniższymi-instrukcjami">Przejdź do trybu Przechwytywania i nagraj Swing — jeśli Swing zostanie wyzwolony, ale nie zakończy się, zapoznaj się z poniższymi instrukcjami.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pl/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pl/hardware/index.html"><span itemprop="name">Sprzęt</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Jak skonfigurować koder GPU NVIDIA</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -205,30 +221,30 @@
 <p><strong>UWAGA: GPU AMD ATI nie są obsługiwane w ogóle.</strong></p>
 <h3 id="w-pierwszej-kolejności-upewnij-się-że-gpu-nvidia-jest-wybrane-w-ustawieniach-wideo-i-przechwytywania-w-swingcatalyst">W pierwszej kolejności upewnij się, że GPU NVIDIA jest wybrane w ustawieniach wideo i Przechwytywania w SwingCatalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Jeśli masz więcej niż 2 kamery, upewnij się, że włączono poprawkę w sekcji „Ustawienia zaawansowane&quot; w obszarze Kodowanie wideo.</p>
-<p><a href="#R-image-084627a4a4a361d6f776d0c76121ec77" class="lightbox-link"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-084627a4a4a361d6f776d0c76121ec77"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png"></a></p>
+<p><a href="#R-image-a0a2a3d0d1a1c1295d26b644e4d2deff" class="lightbox-link"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0a2a3d0d1a1c1295d26b644e4d2deff"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png"></a></p>
 <h3 id="przejdź-do-trybu-przechwytywania-i-nagraj-swing--jeśli-swing-zostanie-wyzwolony-ale-nie-zakończy-się-zapoznaj-się-z-poniższymi-instrukcjami">Przejdź do trybu Przechwytywania i nagraj Swing — jeśli Swing zostanie wyzwolony, ale nie zakończy się, zapoznaj się z poniższymi instrukcjami.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Krok 1: Kliknij przycisk Start i wyszukaj w systemie Windows „Ustawienia grafiki&quot;</p>
-<p><a href="../../assets/images/zendesk/chrome_DpivtZCRtz.png"><a href="#R-image-8968983950fc640febbe90e961259f08" class="lightbox-link"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox figure-image" loading="lazy" src="__PH1__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8968983950fc640febbe90e961259f08"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH1__"></a></a></p>
+<p><a href="../../assets/images/zendesk/chrome_DpivtZCRtz.png"><a href="#R-image-43d756d56e80df8a6af144aab05bbcec" class="lightbox-link"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox figure-image" loading="lazy" src="__PH1__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43d756d56e80df8a6af144aab05bbcec"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH1__"></a></a></p>
 <p>Krok 2: Włącz opcję „Zmniejsz opóźnienie i zwiększ wydajność&quot;</p>
 <p>Krok 3: W sekcji „Wybierz aplikację, aby ustawić preferencje&quot; upewnij się, że wybrana jest opcja aplikacji desktopowej, a następnie kliknij Przeglądaj.</p>
 <p>Krok 4: Przejdź do folderu C:\Program Files\Initial Force\Swing Catalyst\bin, zaznacz plik MotionCatalyst.exe i kliknij Dodaj.</p>
-<p><a href="https://i.imgur.com/rGV83TV.png" rel="external"><a href="#R-image-f53ddddf483a929ae18e6ccbf9abf427" class="lightbox-link"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox figure-image" loading="lazy" src="__PH2__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f53ddddf483a929ae18e6ccbf9abf427"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH2__"></a></a></p>
+<p><a href="https://i.imgur.com/rGV83TV.png" rel="external"><a href="#R-image-9ec7e8d382adc007d3823ec6567c9303" class="lightbox-link"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox figure-image" loading="lazy" src="__PH2__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ec7e8d382adc007d3823ec6567c9303"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH2__"></a></a></p>
 <p>Krok 5: Zaznacz nowo dodany Motion Catalyst, kliknij „Opcje&quot;, a następnie wybierz „GPU wysokiej wydajności: NVIDIA XXXX&quot;</p>
-<p><a href="../../assets/images/zendesk/ApplicationFrameHost_Dqc3KHmWXa.png"><a href="#R-image-d5618d6672dfb655c3599dbc5af82388" class="lightbox-link"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox figure-image" loading="lazy" src="__PH3__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5618d6672dfb655c3599dbc5af82388"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH3__"></a></a></p>
+<p><a href="../../assets/images/zendesk/ApplicationFrameHost_Dqc3KHmWXa.png"><a href="#R-image-17bdff64112a364cf0b8cc5b64773839" class="lightbox-link"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox figure-image" loading="lazy" src="__PH3__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-17bdff64112a364cf0b8cc5b64773839"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH3__"></a></a></p>
 <p><strong>Możliwe rozwiązanie alternatywne dla niektórych laptopów</strong></p>
 <p>Krok 1: Kliknij prawym przyciskiem myszy na pulpicie i przejdź do „Panel sterowania NVIDIA&quot;. Jeśli opcja nie jest dostępna, pobierz i zainstaluj najnowsze Drajwery oraz panel sterowania tutaj: <a href="https://www.nvidia.com/en-us/geforce/drivers/" rel="external">https://www.nvidia.com/en-us/geforce/drivers/</a></p>
 <p>Krok 2: W panelu sterowania przejdź do „Zarządzaj ustawieniami 3D&quot; — powinna to być druga opcja od góry po lewej stronie.</p>
 <p>Krok 3: Kliknij listę rozwijaną „Preferowany procesor graficzny&quot; i zmień ustawienie z „Zintegrowana grafika&quot; na „Procesor NVIDIA wysokiej wydajności&quot;</p>
 <p>Krok 4: Kliknij Zastosuj i zamknij panel sterowania, następnie otwórz SwingCatalyst i wykonaj kolejne Nagranie, aby sprawdzić, czy problem został rozwiązany. Jeśli nie, napisz na adres <a href="mailto:support@swingcatalyst.com" rel="external">support@swingcatalyst.com</a></p>
-<p><a href="../../assets/images/zendesk/KVIjNueytJ.png"><a href="#R-image-e997e5bd7248f95e40710d7731cac44b" class="lightbox-link"><img alt="KVIjNueytJ.png" class="lazy lightbox figure-image" loading="lazy" src="__PH4__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e997e5bd7248f95e40710d7731cac44b"><img alt="KVIjNueytJ.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH4__"></a></a></p>
+<p><a href="../../assets/images/zendesk/KVIjNueytJ.png"><a href="#R-image-d4d5fca642f10bee9eccbeb60d834c08" class="lightbox-link"><img alt="KVIjNueytJ.png" class="lazy lightbox figure-image" loading="lazy" src="__PH4__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d4d5fca642f10bee9eccbeb60d834c08"><img alt="KVIjNueytJ.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH4__"></a></a></p>
 <p><em>kliknij, aby powiększyć</em></p>
-<p><a href="../../assets/images/zendesk/TeamViewer_VXO8AAYFU0.png"><a href="#R-image-d6a22f7557e862920cfc953cdd5e7815" class="lightbox-link"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox figure-image" loading="lazy" src="__PH5__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d6a22f7557e862920cfc953cdd5e7815"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH5__"></a></a></p>
+<p><a href="../../assets/images/zendesk/TeamViewer_VXO8AAYFU0.png"><a href="#R-image-78dff234bd414fb900a34abc0bbfae50" class="lightbox-link"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox figure-image" loading="lazy" src="__PH5__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-78dff234bd414fb900a34abc0bbfae50"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH5__"></a></a></p>
 <hr>
 <p><em>Ostatnia aktualizacja: 2023-12-15</em> | <a href="/sc-support/pl/hardware/nvidia-gpu-encoder/index.html">Wyświetl na oficjalnej stronie pomocy technicznej</a></p>
 
@@ -323,7 +339,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Język</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/nvidia-gpu-encoder/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/nvidia-gpu-encoder/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/nvidia-gpu-encoder/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/nvidia-gpu-encoder/index.html" lang="fr">Français</option>
@@ -385,8 +400,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537829" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537829" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542943" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542943" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

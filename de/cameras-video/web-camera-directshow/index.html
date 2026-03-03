@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="417">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
     <title>So verwenden Sie eine Webkamera (DirectShow-Integration) mit Swing Catalyst :: Swing Catalyst Support</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537809" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537809" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537809" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542922" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542922" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772537809";
+      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772542922";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.de.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.de.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['de'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537809" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542922" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,31 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Inhalt (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#anschließen-einer-kamera">Anschließen einer Kamera</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#einstellungsmenü">Einstellungsmenü</a></li>
+    <li><a href="#erweiterte-kameraeinstellungen">Erweiterte Kameraeinstellungen</a></li>
+    <li><a href="#fehlerbehebung"><a href="web-camera-directshow.md">Fehlerbehebung</a></a>
+      <ul>
+        <li><a href="#niedrige-bildrate">Niedrige Bildrate:</a></li>
+        <li><a href="#verlorene-frames">Verlorene Frames:</a></li>
+        <li><a href="#auswahl-eines-anderen-medientyps">Auswahl eines anderen Medientyps</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/cameras-video/index.html"><span itemprop="name">Kameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">So verwenden Sie eine Webkamera (DirectShow-Integration) mit Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -204,26 +228,26 @@
 <h2 id="anschließen-einer-kamera">Anschließen einer Kamera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="aktivieren-sie-die-kamera-über-das-einstellungsmenü">Aktivieren Sie die Kamera über das Einstellungsmenü.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Klicken Sie auf das Zahnrad-Symbol.</p>
-<p><a href="#R-image-a3be88ace05d3365e80fa5f3944ff1b9" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3be88ace05d3365e80fa5f3944ff1b9"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<p><a href="#R-image-d5ace744a908d331b1fdc16ac0debbb8" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5ace744a908d331b1fdc16ac0debbb8"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
 <h2 id="einstellungsmenü">Einstellungsmenü<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Beachten Sie, dass der Kamera-Integrationstyp angegeben wird, z. B. DirectShow, Spinnaker:</p>
-<p><a href="#R-image-2e2df01e790b8b8b669708b7eb695b9e" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e2df01e790b8b8b669708b7eb695b9e"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p><a href="#R-image-9f0234b6bb24a0b321f8c70f320e1171" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f0234b6bb24a0b321f8c70f320e1171"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
 <p>Wenn die Kamera ordnungsgemäß erkannt wurde, erscheint sie automatisch in der Kameraliste.</p>
 <p>Um die Kamera verwenden zu können, muss ihr ein Kamerawinkel zugewiesen werden. Klicken Sie auf das Symbol „Deaktiviert&quot; und wählen Sie einen Winkel aus. Stellen Sie anschließend den Schalter von „AUS&quot; auf „EIN&quot;, um die Kamera zu aktivieren.</p>
-<p><a href="#R-image-00f42d58d0814b2e2b428e7be57eeb7d" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00f42d58d0814b2e2b428e7be57eeb7d"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-c0018fde7da49b21420f444c217accb2" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c0018fde7da49b21420f444c217accb2"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
 <p>Die Dragon-Kamera ist aktiviert und als Frontalansicht-Kamera rechts festgelegt (d. h. sie zeigt auf den Benutzer von rechts).</p>
-<p><a href="#R-image-35de7c45ce40125b9f26ce88071790be" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-35de7c45ce40125b9f26ce88071790be"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<p><a href="#R-image-f21d08df9cfd5d839d4c47d53e6efe8f" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f21d08df9cfd5d839d4c47d53e6efe8f"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
 <h2 id="erweiterte-kameraeinstellungen">Erweiterte Kameraeinstellungen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Die erweiterten Kameraeinstellungen ermöglichen es Ihnen, den Namen der Kamera zu ändern, das Bild zu spiegeln und zu drehen, zuzuschneiden sowie das Videobild anzupassen und weitere Einstellungen vorzunehmen.</p>
 <p>Hinweis: Auto ist nur für bestimmte Eigenschaften verfügbar, wie z. B. Weißabgleich, Belichtung und Fokus).</p>
-<p><a href="#R-image-514c416470d8a5129616e254832edcc0" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-514c416470d8a5129616e254832edcc0"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
-<p><a href="#R-image-1fe950040be0259bbdcc1e17a7f4f308" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1fe950040be0259bbdcc1e17a7f4f308"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p><a href="#R-image-3feee57f86d27fd10c2486ea95962e1a" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3feee57f86d27fd10c2486ea95962e1a"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-92ed07326d30e42b4ce47d07ef592aed" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-92ed07326d30e42b4ce47d07ef592aed"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
 <p>Wenn Sie fehlerhafte Änderungen vorgenommen haben, können Sie die Standardeinstellungen wiederherstellen, indem Sie auf „Standardwerte wiederherstellen&quot; klicken.</p>
 <h2 id="fehlerbehebung"><a href="/sc-support/de/cameras-video/web-camera-directshow/index.html">Fehlerbehebung</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="niedrige-bildrate">Niedrige Bildrate:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -231,8 +255,8 @@
 <p>Standardmäßig sind die meisten Kameras auf automatische Belichtung eingestellt. Wenn nicht genügend Licht vorhanden ist, ist die Belichtungszeit pro Bild hoch, und die Kamera kann die maximale Bildrate nicht erreichen.</p>
 <p>Ist die Belichtung zu hoch, wird die Bildrate reduziert und die Aufnahme wird unschärfer.</p>
 <h3 id="verlorene-frames">Verlorene Frames:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Wenn die Kamera Frames verliert (d. h. sie liefert nicht die erwarteten FPS), kann dies zu visuellen Artefakten führen.<a href="#R-image-f82c54981ae3132557db52c0d6c70a99" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f82c54981ae3132557db52c0d6c70a99"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<p>Wenn die Kamera Frames verliert (d. h. sie liefert nicht die erwarteten FPS), kann dies zu visuellen Artefakten führen.<a href="#R-image-7b6b152097dd73a57c11dc9d06ce8d5a" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b6b152097dd73a57c11dc9d06ce8d5a"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
 <ul>
 <li>
 <p>Stellen Sie sicher, dass die Kamera direkt mit dem Computer verbunden ist, idealerweise über einen der USB-Anschlüsse an der Rückseite des Computers.</p>
@@ -255,8 +279,8 @@
 </li>
 </ul>
 <p>Bestimmte Formate benötigen weniger Bandbreite als andere. Wenn die Kamera RAW8, GREY8 oder andere 8-Bit-Bildformate unterstützt, sind diese gegenüber RGB- oder MPEG-Medientypen zu bevorzugen, da sie deutlich weniger Bandbreite erfordern.</p>
-<p><a href="#R-image-cbd6830e142f628a9c18dd72c10872b1" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cbd6830e142f628a9c18dd72c10872b1"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<p><a href="#R-image-f386d6c3988e2c8e0e005a470656111c" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f386d6c3988e2c8e0e005a470656111c"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
 <hr>
 <p><em>Zuletzt aktualisiert: 2023-12-15</em> | <a href="/sc-support/de/cameras-video/web-camera-directshow/index.html">Auf der offiziellen Support-Seite anzeigen</a></p>
 
@@ -367,7 +391,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Sprache</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de" selected data-selected>Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
@@ -429,8 +452,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542922" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

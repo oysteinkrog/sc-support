@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="1313">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera">
     <title>Cómo configurar la cámara IDS uEye GigE con Swing Catalyst :: Soporte de Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="fr">
@@ -62,27 +61,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/ids-ueye-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537808" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537808" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537808" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542920" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542920" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772537808";
+      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772542920";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.es.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.es.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['es'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537808" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542920" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,35 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#configuración-de-tus-cámaras-ids-ueye-gige">Configuración de tus cámaras IDS uEye GigE</a>
+      <ul>
+        <li><a href="#pasos">Pasos:</a></li>
+        <li><a href="#la-aplicación-ids-camera-manager">La aplicación IDS Camera Manager:</a></li>
+        <li><a href="#nota-sobre-la-configuración-de-la-dirección-ip-y-nuestras-recomendaciones">Nota sobre la configuración de la dirección IP y nuestras recomendaciones**</a></li>
+      </ul>
+    </li>
+    <li><a href="#nuestra-configuración-de-ip-recomendada">Nuestra configuración de IP recomendada:</a>
+      <ul>
+        <li><a href="#activar-el-servicio-de-red-ueye">Activar el servicio de red uEye</a></li>
+      </ul>
+    </li>
+    <li><a href="#selecciona-el-adaptador-de-red-que-deseas-configurar-en-este-caso-son-los-adaptadores-de-doble-puerto">Selecciona el adaptador de red que deseas configurar (en este caso son los adaptadores de doble puerto)</a></li>
+    <li><a href="#configuración-automática-de-ip-para-ip-manual-ver-más-abajo">Configuración automática de IP (para IP manual, ver más abajo)</a></li>
+    <li><a href="#configuración-manual-de-ip">Configuración manual de IP</a></li>
+    <li><a href="#configuración-de-los-adaptadores-de-red-para-usarlos-con-cámaras-ids-ueye">Configuración de los adaptadores de red para usarlos con cámaras IDS uEye</a></li>
+    <li><a href="#uso-de-un-switch-de-red">Uso de un switch de red:</a></li>
+    <li><a href="#uso-de-las-cámaras-en-swing-catalyst">Uso de las cámaras en Swing Catalyst</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/cameras-video/index.html"><span itemprop="name">Cámaras y Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cómo configurar la cámara IDS uEye GigE con Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -211,15 +239,15 @@
 <h2 id="configuración-de-tus-cámaras-ids-ueye-gige">Configuración de tus cámaras IDS uEye GigE<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="pasos">Pasos:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Antes de continuar, instala los Drivers de IDS uEye. Localiza y abre la aplicación IDS Camera Manager (se encuentra en: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\IDS).</p>
-<p><a href="#R-image-b99e61de2921f182583216777c018e8d" class="lightbox-link"><img alt="Captura 2017-11-17_12-15-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b99e61de2921f182583216777c018e8d"><img alt="Captura 2017-11-17_12-15-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png"></a></p>
+<p><a href="#R-image-3b2701d5a6eebe8e5e5e83c9e6945ae7" class="lightbox-link"><img alt="Captura 2017-11-17_12-15-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b2701d5a6eebe8e5e5e83c9e6945ae7"><img alt="Captura 2017-11-17_12-15-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/2017-11-17-12-15-50-png.png"></a></p>
 <h3 id="la-aplicación-ids-camera-manager">La aplicación IDS Camera Manager:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-64cf6f7b76192ce0a1674f6dea6d831f" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-15-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-64cf6f7b76192ce0a1674f6dea6d831f"><img alt="IdsCameraManager_2017-11-17_12-15-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png"></a></p>
+<p><a href="#R-image-ead20a81ec236d76897657291e189dd1" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-15-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ead20a81ec236d76897657291e189dd1"><img alt="IdsCameraManager_2017-11-17_12-15-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-15-59-png.png"></a></p>
 <p>Observa el aviso en la parte inferior de la aplicación. Pueden aparecer varios avisos debido a direcciones IP configuradas incorrectamente o relacionados con el firmware de la cámara.</p>
 <p>Ejemplo:</p>
-<p><a href="#R-image-3e10bbd932ca9d5c2a69f5d641f2aae2" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-21-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e10bbd932ca9d5c2a69f5d641f2aae2"><img alt="IdsCameraManager_2017-11-17_12-21-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png"></a></p>
+<p><a href="#R-image-ab448b9a84248b470e11377a272b9459" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-21-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab448b9a84248b470e11377a272b9459"><img alt="IdsCameraManager_2017-11-17_12-21-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-21-58-png.png"></a></p>
 <h3 id="nota-sobre-la-configuración-de-la-dirección-ip-y-nuestras-recomendaciones">Nota sobre la configuración de la dirección IP y nuestras recomendaciones**<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>**</p>
 <p>Nuestra recomendación es disponer de una tarjeta de red dedicada, o interfaz de red, para cada cámara. Sin embargo, con el modelo IDS UI-3220 puedes usar dos cámaras por cada puerto de red mediante el uso de un switch de red (consulta Uso de un switch de red).</p>
@@ -237,92 +265,92 @@ subnet mask: 255.255.255.0</p>
 <h3 id="activar-el-servicio-de-red-ueye">Activar el servicio de red uEye<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Nota: Si usas diferentes tipos de cámaras de distintos fabricantes, tener el servicio de red uEye activado puede causar problemas al usar una cámara de otro fabricante.</p>
 <p>Haz clic en ETH network service</p>
-<p><a href="#R-image-ba7b8f74203012ac1647786f08f85a5e" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba7b8f74203012ac1647786f08f85a5e"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
+<p><a href="#R-image-3c29817dcffbbbf623cdcf493d6a2a31" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c29817dcffbbbf623cdcf493d6a2a31"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
 <h2 id="selecciona-el-adaptador-de-red-que-deseas-configurar-en-este-caso-son-los-adaptadores-de-doble-puerto">Selecciona el adaptador de red que deseas configurar (en este caso son los adaptadores de doble puerto)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>El gráfico de la tarjeta de red aparece en gris, esto se debe a que no está configurada correctamente. El servicio de red uEye debe estar activado para que la cámara sea visible en la red.</p>
 <p>Asegúrate de establecer la dirección IP y la máscara de subred según las recomendaciones (ver arriba), luego haz clic en <em>Enable uEye network service</em> y en <em>Apply changes</em> (¡ahora has asignado una IP estática a uno de los adaptadores de doble puerto!).</p>
-<p><a href="#R-image-f611e4324784b6027169114ecaa76ec0" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-20-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f611e4324784b6027169114ecaa76ec0"><img alt="IdsCameraManager_2017-11-17_13-20-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png"></a></p>
-<p><a href="#R-image-d0a9ef4ba666382cbf2e20afebaea449" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-38-43.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0a9ef4ba666382cbf2e20afebaea449"><img alt="IdsCameraManager_2017-11-17_12-38-43.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png"></a></p>
+<p><a href="#R-image-d93ff7debbc6603a59feca6a763a99ee" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-20-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d93ff7debbc6603a59feca6a763a99ee"><img alt="IdsCameraManager_2017-11-17_13-20-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-20-07-png.png"></a></p>
+<p><a href="#R-image-e4b8a9e473b0fde636362bf23e2d132c" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-38-43.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4b8a9e473b0fde636362bf23e2d132c"><img alt="IdsCameraManager_2017-11-17_12-38-43.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-38-43-png.png"></a></p>
 <h2 id="configuración-automática-de-ip-para-ip-manual-ver-más-abajo">Configuración automática de IP (para IP manual, ver más abajo)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Para usar la configuración automática de IP, haz clic en Automatic ETH configuration y luego en OK.</p>
 <p>El IDS Camera Manager asignará automáticamente una dirección IP a la tarjeta de red y a la cámara.</p>
 <p>Nota: Recomendamos una configuración de IP manual cuando se usan varias cámaras.</p>
-<p><a href="#R-image-d27dd76d0eb7fa5ffce4d644ee5d39ca" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d27dd76d0eb7fa5ffce4d644ee5d39ca"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
-<p><a href="#R-image-eb999f0bd76b799ab13ec5005de0547d" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-32-13.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb999f0bd76b799ab13ec5005de0547d"><img alt="IdsCameraManager_2017-11-17_13-32-13.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png"></a></p>
+<p><a href="#R-image-9163e873084cd1c63273301675cfd6dc" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9163e873084cd1c63273301675cfd6dc"><img alt="IdsCameraManager_2017-11-17_13-16-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-16-18-png.png"></a></p>
+<p><a href="#R-image-9228cbbac0906afa760ee6f9708841a2" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_13-32-13.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9228cbbac0906afa760ee6f9708841a2"><img alt="IdsCameraManager_2017-11-17_13-32-13.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-13-32-13-png.png"></a></p>
 <h2 id="configuración-manual-de-ip">Configuración manual de IP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>De vuelta en el IDS Camera Manager, ahora deberías ver las cámaras listadas. Dado que anteriormente configuraste una IP estática para el adaptador de red, ahora debes asignar una IP estática a la cámara para que el adaptador de red y la cámara puedan comunicarse correctamente entre sí.</p>
 <p>Marca la casilla Expert Mode como se muestra aquí:</p>
-<p><a href="#R-image-cfc233c331b27002df82e16656934609" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-22-24.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cfc233c331b27002df82e16656934609"><img alt="IdsCameraManager_2017-11-17_12-22-24.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png"></a></p>
+<p><a href="#R-image-237b5627babcdaee8e970eb1ef2fa98a" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-22-24.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-237b5627babcdaee8e970eb1ef2fa98a"><img alt="IdsCameraManager_2017-11-17_12-22-24.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-22-24-png.png"></a></p>
 <p>Observa el aviso en rojo mostrado arriba.</p>
 <p>Haz clic en Manual ETH configuration:</p>
-<p><a href="#R-image-a11e7c6f235f1efbf351010590ff139e" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-39-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a11e7c6f235f1efbf351010590ff139e"><img alt="IdsCameraManager_2017-11-17_12-39-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png"></a></p>
+<p><a href="#R-image-ba00ad9c02a10793de379d40c0df2821" class="lightbox-link"><img alt="IdsCameraManager_2017-11-17_12-39-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba00ad9c02a10793de379d40c0df2821"><img alt="IdsCameraManager_2017-11-17_12-39-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/idscameramanager-2017-11-17-12-39-17-png.png"></a></p>
 <p>En la captura de pantalla anterior, la dirección IP de la cámara está configurada como 10.0.1.10 (nuestra tarjeta de red es 10.0.1.1). Introduce los valores como se muestra en la captura de pantalla anterior y haz clic en OK.</p>
 <p>Nota: Configurar direcciones IP estáticas no es obligatorio, pero sí muy recomendable, ya que las configuraciones de IP automáticas pueden generar problemas por conflictos de direcciones IP, por ejemplo, que la misma dirección IP se use en otro lugar. Recomendamos encarecidamente configurar una instalación estática para todas las instalaciones de estudio.</p>
 <p>Repite el proceso para las demás cámaras y NICs según nuestras configuraciones de IP recomendadas anteriores.</p>
 <h2 id="configuración-de-los-adaptadores-de-red-para-usarlos-con-cámaras-ids-ueye">Configuración de los adaptadores de red para usarlos con cámaras IDS uEye<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Dado que ya has configurado las direcciones IP estáticas tanto para las cámaras como para la tarjeta de red, pasemos a configurar el adaptador de red para obtener el mejor Rendimiento.</p>
 <p>Desde Panel de control\Red e Internet\Conexiones de red, haz doble clic en el adaptador que deseas configurar; en nuestro caso es Ethernet 4, Intel (PRO/1000 PT Dual port).</p>
-<p><a href="#R-image-5c9f0a47302e7664e48425cfeb88e17d" class="lightbox-link"><img alt="Explorador_2017-11-17_13-37-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c9f0a47302e7664e48425cfeb88e17d"><img alt="Explorador_2017-11-17_13-37-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png"></a></p>
+<p><a href="#R-image-59b51573e2140c6f7bc4aded190d15ce" class="lightbox-link"><img alt="Explorador_2017-11-17_13-37-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-59b51573e2140c6f7bc4aded190d15ce"><img alt="Explorador_2017-11-17_13-37-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-37-31-png.png"></a></p>
 <p>Haz doble clic en el adaptador de red que deseas configurar.</p>
 <p>Haz clic en la pestaña Avanzado. Nota: La configuración varía según el adaptador de red y el Driver; consulta la documentación de tu tarjeta de red para obtener información específica sobre cómo modificar los ajustes indicados a continuación.</p>
-<p><a href="#R-image-6161f1aa79967d14f68bac5518397dc0" class="lightbox-link"><img alt="rundll32_2017-05-09_12-49-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6161f1aa79967d14f68bac5518397dc0"><img alt="rundll32_2017-05-09_12-49-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png"></a></p>
+<p><a href="#R-image-e9fad7fc929e873cf1788810e059c0c7" class="lightbox-link"><img alt="rundll32_2017-05-09_12-49-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9fad7fc929e873cf1788810e059c0c7"><img alt="rundll32_2017-05-09_12-49-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-49-14-png.png"></a></p>
 <p>Asegúrate de que la moderación de interrupciones esté activada y de que la tasa de moderación de interrupciones esté configurada en Extreme.</p>
 <p>Si no tienes la opción Extreme, configúrala en High.</p>
 <p>En algunas circunstancias, desactivar la moderación de interrupciones puede ayudar si ninguna de las tasas de moderación de interrupciones de valor alto funciona; sin embargo, siempre que tengas una tarjeta de red recomendada, las opciones High y Extreme deberían estar disponibles. Tener la moderación de interrupciones activada es fundamental para reducir el uso de CPU al gestionar grandes cantidades de paquetes, especialmente con cámaras de mayor resolución y/o alta velocidad en FPS.</p>
 <p>Tasa de moderación de interrupciones:</p>
-<p><a href="#R-image-fe05c15f49e5b0a616fcdb4f14212e88" class="lightbox-link"><img alt="rundll32_2017-05-09_12-47-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe05c15f49e5b0a616fcdb4f14212e88"><img alt="rundll32_2017-05-09_12-47-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png"></a></p>
+<p><a href="#R-image-127ef8e54cf6527b78be0ca6a7c6cd4a" class="lightbox-link"><img alt="rundll32_2017-05-09_12-47-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-127ef8e54cf6527b78be0ca6a7c6cd4a"><img alt="rundll32_2017-05-09_12-47-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-47-50-png.png"></a></p>
 <p>Activa el soporte para Jumbo Packets (configúralo en 9014 Bytes):</p>
-<p><a href="#R-image-c909b93b4f6ac9f59599d59a079f7903" class="lightbox-link"><img alt="rundll32_2017-05-09_12-53-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c909b93b4f6ac9f59599d59a079f7903"><img alt="rundll32_2017-05-09_12-53-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png"></a></p>
+<p><a href="#R-image-ce90ea0f7303e6ed6f46393ed99f61fb" class="lightbox-link"><img alt="rundll32_2017-05-09_12-53-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce90ea0f7303e6ed6f46393ed99f61fb"><img alt="rundll32_2017-05-09_12-53-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-12-53-02-png.png"></a></p>
 <p>Búferes de recepción:</p>
 <p>Se recomienda establecer este valor lo más alto posible. Esto puede ayudar a evitar la pérdida de Fotogramas al usar varias cámaras y/o cámaras GigE de mayor resolución.</p>
-<p><a href="#R-image-7f1fd75fe9a0fa2c3d6004ab0d3c107f" class="lightbox-link"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f1fd75fe9a0fa2c3d6004ab0d3c107f"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-82b09b9192be1f9fbb993c819c69f055" class="lightbox-link"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-82b09b9192be1f9fbb993c819c69f055"><img alt="rundll32_2017-05-09_13-00-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="uso-de-un-switch-de-red">Uso de un switch de red:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Si vas a usar un switch de red, es importante que el switch sea compatible con Jumbo Frames de 9 KB y que el adaptador de red esté configurado para usar Jumbo Frames de 9 KB. Sin embargo, en algunos casos ciertos switches pueden no funcionar bien con tamaños de Fotograma de 9 KB; en esos casos se recomienda reducir el valor de 9 KB a uno inferior y volver a probar la configuración.</p>
 <h2 id="uso-de-las-cámaras-en-swing-catalyst">Uso de las cámaras en Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Tras haber configurado las direcciones IP y los adaptadores de red según las recomendaciones anteriores, puedes iniciar Swing Catalyst y la cámara debería aparecer visible en la lista de cámaras.</p>
-<p><a href="#R-image-82ac5f4e1cf87cffb17a0610fdefb825" class="lightbox-link"><img alt="SwingCatalyst_2017-11-17_13-42-53.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-82ac5f4e1cf87cffb17a0610fdefb825"><img alt="SwingCatalyst_2017-11-17_13-42-53.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png"></a></p>
+<p><a href="#R-image-c393baa79689479bdb7342551c658bc8" class="lightbox-link"><img alt="SwingCatalyst_2017-11-17_13-42-53.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c393baa79689479bdb7342551c658bc8"><img alt="SwingCatalyst_2017-11-17_13-42-53.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-42-53-png.png"></a></p>
 <p>Establece un Ángulo de cámara y activa la cámara, luego haz clic en Configure.</p>
 <p>Asegúrate de que el reloj de píxeles esté al máximo (o redúcelo si estás perdiendo Fotogramas).</p>
 <p>Configura la velocidad de obturador y el Gain (ten en cuenta que estos valores pueden variar considerablemente según los requisitos, el tipo de cámara y la cantidad de luz disponible).</p>
-<p><a href="#R-image-6edcaa1e7d5d7d483b5bf19fd8e717c9" class="lightbox-link"><img alt="SwingCatalyst_2017-11-17_13-43-35.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6edcaa1e7d5d7d483b5bf19fd8e717c9"><img alt="SwingCatalyst_2017-11-17_13-43-35.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png"></a></p>
+<p><a href="#R-image-0fe0568c7117e1d33b2330c81351b254" class="lightbox-link"><img alt="SwingCatalyst_2017-11-17_13-43-35.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fe0568c7117e1d33b2330c81351b254"><img alt="SwingCatalyst_2017-11-17_13-43-35.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/swingcatalyst-2017-11-17-13-43-35-png.png"></a></p>
 <p>Solución de problemas con cámaras IDS</p>
 <p>Si estás perdiendo Fotogramas o tienes problemas de sincronización con tu cámara IDS uEye GigE, usa la utilidad uEye Cockpit.</p>
-<p><a href="#R-image-697c3644e3cb37d8a706356094ddb8ae" class="lightbox-link"><img alt="Explorador_2017-11-17_13-48-38.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-697c3644e3cb37d8a706356094ddb8ae"><img alt="Explorador_2017-11-17_13-48-38.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png"></a></p>
+<p><a href="#R-image-ae4c2b414103ad6ee76bc5fbba089baa" class="lightbox-link"><img alt="Explorador_2017-11-17_13-48-38.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae4c2b414103ad6ee76bc5fbba089baa"><img alt="Explorador_2017-11-17_13-48-38.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/explorer-2017-11-17-13-48-38-png.png"></a></p>
 <p>Haz clic en Live Video</p>
-<p><a href="#R-image-566355a0c5517baf3feecec2cd05b685" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-48-25.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-566355a0c5517baf3feecec2cd05b685"><img alt="uEyeCockpit_2017-11-17_13-48-25.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png"></a></p>
+<p><a href="#R-image-cf005bd1cca82015055d6cbe480847c2" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-48-25.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf005bd1cca82015055d6cbe480847c2"><img alt="uEyeCockpit_2017-11-17_13-48-25.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-48-25-png.png"></a></p>
 <p>Haz clic en el icono de reproducción y luego en la llave inglesa</p>
-<p><a href="#R-image-bcc6aaff1f2d18e15e7d23d388758311" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-49-11.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bcc6aaff1f2d18e15e7d23d388758311"><img alt="uEyeCockpit_2017-11-17_13-49-11.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png"></a></p>
+<p><a href="#R-image-9a331937df6a59f9e3341f6ef191b1b0" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-49-11.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a331937df6a59f9e3341f6ef191b1b0"><img alt="uEyeCockpit_2017-11-17_13-49-11.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-49-11-png.png"></a></p>
 <p>Observa el uso de ancho de banda indicado. En la pestaña Camera, aumenta el Pixel clock y marca la casilla Max bajo Frame rate (Freerun), luego reduce el tiempo de exposición (velocidad de obturador).</p>
-<p><a href="#R-image-162317a621b2660fe00d498c73d98ed5" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-50-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-162317a621b2660fe00d498c73d98ed5"><img alt="uEyeCockpit_2017-11-17_13-50-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png"></a></p>
+<p><a href="#R-image-ef6d9eb9f1b33987851769a51503178c" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-50-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef6d9eb9f1b33987851769a51503178c"><img alt="uEyeCockpit_2017-11-17_13-50-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-50-09-png.png"></a></p>
 <p>Después de configurar tus cámaras para transmitir en directo, haz clic en Vista -&gt; Performance Overview</p>
-<p><a href="#R-image-b2d4795d8aded61cea07e516545576b7" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-51-38.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2d4795d8aded61cea07e516545576b7"><img alt="uEyeCockpit_2017-11-17_13-51-38.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png"></a></p>
+<p><a href="#R-image-1644229c9b0f4a3ee4287761e4a95675" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-51-38.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1644229c9b0f4a3ee4287761e4a95675"><img alt="uEyeCockpit_2017-11-17_13-51-38.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-51-38-png.png"></a></p>
 <p>La Vista de Rendimiento del host puede ser muy útil para solucionar problemas de estabilidad y pérdida de Fotogramas.</p>
 <p>Uso de la barra de estado en uEye Cockpit para indicar Fotogramas perdidos o problemas de conectividad durante la transmisión de vídeo:</p>
 <p>Resolución de la cámara, Fotogramas recibidos, Fotogramas mostrados, Fotogramas fallidos e intentos de reconexión según la captura de pantalla:</p>
-<p><a href="#R-image-a8f2f9f65e8abc9fdfbd4cdf7f783a11" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-57-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a8f2f9f65e8abc9fdfbd4cdf7f783a11"><img alt="uEyeCockpit_2017-11-17_13-57-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png"></a></p>
+<p><a href="#R-image-28151f18c49e3183f24deb113d042bc0" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-57-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-28151f18c49e3183f24deb113d042bc0"><img alt="uEyeCockpit_2017-11-17_13-57-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-57-58-png.png"></a></p>
 <p>Transfer OK y la Velocidad de Fotogramas también pueden verse en la barra de estado:</p>
-<p><a href="#R-image-9640ed4adfc9600199f458312e7599f0" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-58-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9640ed4adfc9600199f458312e7599f0"><img alt="uEyeCockpit_2017-11-17_13-58-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png"></a></p>
+<p><a href="#R-image-ea0c3e6658a88b3b9d1cd4db74da27d1" class="lightbox-link"><img alt="uEyeCockpit_2017-11-17_13-58-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea0c3e6658a88b3b9d1cd4db74da27d1"><img alt="uEyeCockpit_2017-11-17_13-58-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115003700393/ueyecockpit-2017-11-17-13-58-09-png.png"></a></p>
 <hr>
 <p><em>Última actualización: 2023-12-19</em> | <a href="/sc-support/es/cameras-video/ids-ueye-gige/index.html">Ver en el sitio de soporte oficial</a></p>
 
@@ -433,7 +461,6 @@ subnet mask: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/ids-ueye-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/ids-ueye-gige/index.html" lang="es" selected data-selected>Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/ids-ueye-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/ids-ueye-gige/index.html" lang="fr">Français</option>
@@ -495,8 +522,8 @@ subnet mask: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542920" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

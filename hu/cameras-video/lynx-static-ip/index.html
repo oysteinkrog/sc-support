@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="476">
     <meta itemprop="keywords" content="Gige-Camera,Lynx-Camera">
     <title>Hogyan állítsunk be statikus IP-t Lynx GigE kamerákon :: Swing Catalyst Támogatás</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/lynx-static-ip/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537835" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537835" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537835" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542950" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542950" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542950" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.hu.js?1772537835";
+      window.relearn.index_js_url="/sc-support/searchindex.hu.js?1772542950";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/lunr/lunr.hu.min.js?1772537835" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/lunr/lunr.hu.min.js?1772542950" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['hu'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537835" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537835" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537835" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537835" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537835" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542950" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542950" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542950" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542950" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542950" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,30 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menü (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tartalomjegyzék (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#statikus-ip-beállítása-az-ethernet-adapteren">Statikus IP beállítása az Ethernet adapteren</a>
+      <ul>
+        <li></li>
+        <li><a href="#az-egyes-ethernet-adapterek-ajánlott-statikus-ip-konfigurációja">Az egyes Ethernet adapterek ajánlott statikus IP-konfigurációja</a></li>
+      </ul>
+    </li>
+    <li><a href="#statikus-ip-beállítása-a-kamerán">Statikus IP beállítása a kamerán</a>
+      <ul>
+        <li><a href="#kamerák-ajánlott-statikus-ip-konfigurációja">Kamerák ajánlott statikus IP-konfigurációja</a></li>
+      </ul>
+    </li>
+    <li><a href="#mvs-kamera-ip-módosítás-képernyője"><img src="../../assets/images/9017496012060/mvs-k2smycenxz-png.png" alt="MVS kamera IP-módosítás képernyője"></a></li>
+    <li><a href="#mvs-kamera-konfigurációs-képernyője"><img src="../../assets/images/9017496012060/mvs-wkz7zjgs5v-png.png" alt="MVS kamera konfigurációs képernyője"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hu/index.html"><span itemprop="name">Swing Catalyst Támogatás</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hu/cameras-video/index.html"><span itemprop="name">Kamerák és videó</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Hogyan állítsunk be statikus IP-t Lynx GigE kamerákon</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -231,9 +254,9 @@ Normál használat esetén erre nincs szükség, mivel a Swing Catalyst automati
 <p>Kattintson a Befejezés gombra.</p>
 </li>
 </ul>
-<p><a href="#R-image-eaa46ca1294a17dd89557ccdf3bc504f" class="lightbox-link"><img alt="Az MVS telepítővarázsló képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-r8xazpx31o-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eaa46ca1294a17dd89557ccdf3bc504f"><img alt="Az MVS telepítővarázsló képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-r8xazpx31o-png.png"></a><a href="#R-image-55e05d418235c53d9bf2fa25fc389c73" class="lightbox-link"><img alt="Az MVS telepítővarázsló második képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-1rig5jearx-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-55e05d418235c53d9bf2fa25fc389c73"><img alt="Az MVS telepítővarázsló második képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-1rig5jearx-png.png"></a></p>
+<p><a href="#R-image-99f2db1fa5b675b89cc7faaccbd2297a" class="lightbox-link"><img alt="Az MVS telepítővarázsló képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-r8xazpx31o-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-99f2db1fa5b675b89cc7faaccbd2297a"><img alt="Az MVS telepítővarázsló képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-r8xazpx31o-png.png"></a><a href="#R-image-2c722ce8882596755afae8666d091752" class="lightbox-link"><img alt="Az MVS telepítővarázsló második képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-1rig5jearx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2c722ce8882596755afae8666d091752"><img alt="Az MVS telepítővarázsló második képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-std-3-4-1-220407-1rig5jearx-png.png"></a></p>
 <h2 id="statikus-ip-beállítása-az-ethernet-adapteren">Statikus IP beállítása az Ethernet adapteren<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Miután a kamerákhoz statikus IP-címek lettek rendelve, konfigurálni kell a használni kívánt hálózati adaptereket statikus IP-vel. Ezt úgy kell beállítani, hogy illeszkedjen minden csatlakoztatott kamerához.</p>
 <p>Ez azt jelenti, hogy ha lecsatlakoztatja a kamerát és egy másik Ethernet adapterhez csatlakoztatja, nem fog „működni&quot;, hacsak újra nem konfigurálja.</p>
@@ -310,12 +333,12 @@ Normál használat esetén erre nincs szükség, mivel a Swing Catalyst automati
       </tr>
   </tbody>
 </table>
-<p><a href="#R-image-5e5251847a1312eabc865b2c0e2ae8e4" class="lightbox-link"><img alt="MVS hálózati adapter beállítások képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-kfhfmqxy5f-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e5251847a1312eabc865b2c0e2ae8e4"><img alt="MVS hálózati adapter beállítások képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-kfhfmqxy5f-png.png"></a></p>
-<p><a href="#R-image-dc2f746dd4f8b10d496a3d0207c20bcd" class="lightbox-link"><img alt="NIC konfigurátor ablak" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/nic-configurator-cjbnhvpbal-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc2f746dd4f8b10d496a3d0207c20bcd"><img alt="NIC konfigurátor ablak" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/nic-configurator-cjbnhvpbal-png.png"></a></p>
-<p><a href="#R-image-3d87a853508bc01d7464a2d52c39d108" class="lightbox-link"><img alt="MVS IP-konfiguráció képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-czlirhpx3x-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d87a853508bc01d7464a2d52c39d108"><img alt="MVS IP-konfiguráció képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-czlirhpx3x-png.png"></a></p>
+<p><a href="#R-image-20535d0c8f297f9c13dfdd3dcad2f932" class="lightbox-link"><img alt="MVS hálózati adapter beállítások képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-kfhfmqxy5f-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-20535d0c8f297f9c13dfdd3dcad2f932"><img alt="MVS hálózati adapter beállítások képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-kfhfmqxy5f-png.png"></a></p>
+<p><a href="#R-image-10c359413275ca1cb29ff0367d58a2a1" class="lightbox-link"><img alt="NIC konfigurátor ablak" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/nic-configurator-cjbnhvpbal-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-10c359413275ca1cb29ff0367d58a2a1"><img alt="NIC konfigurátor ablak" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/nic-configurator-cjbnhvpbal-png.png"></a></p>
+<p><a href="#R-image-d0111b6c69c6c39079dd800350c7b18f" class="lightbox-link"><img alt="MVS IP-konfiguráció képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-czlirhpx3x-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0111b6c69c6c39079dd800350c7b18f"><img alt="MVS IP-konfiguráció képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-czlirhpx3x-png.png"></a></p>
 <h2 id="statikus-ip-beállítása-a-kamerán">Statikus IP beállítása a kamerán<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Győződjön meg arról, hogy Lynx kamerá(i) csatlakoztatva van(nak). Ha az alkalmazás elindítása után csatlakoztatta, vigye az egeret a „GigE&quot; menü fölé, és kattintson a frissítés gombra.</p>
 <p>Ezt a folyamatot meg kell ismételni minden olyan csatlakoztatott Lynx kameránál, amelyhez statikus IP-t állított be.</p>
@@ -371,10 +394,10 @@ Normál használat esetén erre nincs szükség, mivel a Swing Catalyst automati
       </tr>
   </tbody>
 </table>
-<h2 id="mvs-kamera-ip-módosítás-képernyője"><a href="#R-image-32be03c5c9ddb6fc068f100e5c3d77c5" class="lightbox-link"><img alt="MVS kamera IP-módosítás képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-k2smycenxz-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-32be03c5c9ddb6fc068f100e5c3d77c5"><img alt="MVS kamera IP-módosítás képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-k2smycenxz-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h2 id="mvs-kamera-konfigurációs-képernyője"><a href="#R-image-605e7efeb7b517f9cbda7f4c16909411" class="lightbox-link"><img alt="MVS kamera konfigurációs képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-wkz7zjgs5v-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-605e7efeb7b517f9cbda7f4c16909411"><img alt="MVS kamera konfigurációs képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-wkz7zjgs5v-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="mvs-kamera-ip-módosítás-képernyője"><a href="#R-image-fc0323737ee1fbf7f4059a4c06bbdcbd" class="lightbox-link"><img alt="MVS kamera IP-módosítás képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-k2smycenxz-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fc0323737ee1fbf7f4059a4c06bbdcbd"><img alt="MVS kamera IP-módosítás képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-k2smycenxz-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="mvs-kamera-konfigurációs-képernyője"><a href="#R-image-3f416758099d245c94bd86b1cc105df9" class="lightbox-link"><img alt="MVS kamera konfigurációs képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-wkz7zjgs5v-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f416758099d245c94bd86b1cc105df9"><img alt="MVS kamera konfigurációs képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9017496012060/mvs-wkz7zjgs5v-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <hr>
 <p><em>Utoljára frissítve: 2024-01-08</em> | <a href="/sc-support/hu/cameras-video/lynx-static-ip/index.html">Megtekintés a hivatalos támogatási oldalon</a></p>
 
@@ -485,7 +508,6 @@ Normál használat esetén erre nincs szükség, mivel a Swing Catalyst automati
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Nyelv</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/lynx-static-ip/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/lynx-static-ip/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/lynx-static-ip/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/lynx-static-ip/index.html" lang="fr">Français</option>
@@ -547,8 +569,8 @@ Normál használat esetén erre nincs szükség, mivel a Swing Catalyst automati
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537835" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542950" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

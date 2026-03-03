@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="364">
     <meta itemprop="keywords" content="Motion-Plate,Force-Data">
     <title>Usando a biblioteca de gráficos :: Suporte Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/graph-library/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/graph-library/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/graph-library/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/graph-library/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/graph-library/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537812" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537812" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537812" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542924" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542924" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542924" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.pt.js?1772537812";
+      window.relearn.index_js_url="/sc-support/searchindex.pt.js?1772542924";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/lunr/lunr.pt.min.js?1772537812" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/lunr/lunr.pt.min.js?1772542924" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['pt'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537812" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537812" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537812" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537812" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537812" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542924" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542924" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542924" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542924" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542924" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,32 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Índice (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introdução">Introdução</a>
+      <ul>
+        <li><a href="#os-recursos-incluem">Os recursos incluem:</a></li>
+      </ul>
+    </li>
+    <li><a href="#funcionalidade-de-zoom">Funcionalidade de zoom</a>
+      <ul>
+        <li><a href="#clique-e-arraste">Clique e Arraste</a></li>
+        <li><a href="#zoom-com-rolagem-ctrl">Zoom com rolagem Ctrl</a></li>
+      </ul>
+    </li>
+    <li><a href="#movimentação">Movimentação</a></li>
+    <li><a href="#visualizando-dados-individuais-da-placa">Visualizando dados individuais da placa</a></li>
+    <li><a href="#opções-de-visualização-do-gráfico">Opções de Visualização do gráfico</a></li>
+    <li><a href="#desempenho-melhorado">Desempenho melhorado</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pt/index.html"><span itemprop="name">Suporte Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pt/software-features/index.html"><span itemprop="name">Software e Funcionalidades</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Usando a biblioteca de gráficos</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -234,8 +259,8 @@
 <li>Clique e arraste para selecionar uma seção que você deseja examinar mais de perto.</li>
 </ul>
 <p>Tip: Dê um duplo clique com o mouse para redefinir o nível de zoom.</p>
-<p><a href="#R-image-136eea39d3be709ad795c398a5794b51" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-136eea39d3be709ad795c398a5794b51"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png"></a></p>
+<p><a href="#R-image-c1f8db819d4598758b29123dbdcafd6f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c1f8db819d4598758b29123dbdcafd6f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png"></a></p>
 <h3 id="zoom-com-rolagem-ctrl">Zoom com rolagem Ctrl<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
@@ -246,35 +271,35 @@
 </li>
 </ul>
 <p>Tip: Para redefinir, dê um duplo clique com o mouse.</p>
-<p><a href="#R-image-a9998d0c7a1fa2da8df1539620586116" class="lightbox-link"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9998d0c7a1fa2da8df1539620586116"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png"></a></p>
+<p><a href="#R-image-017be34af7aa7ca9795ca01a26d2d243" class="lightbox-link"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-017be34af7aa7ca9795ca01a26d2d243"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png"></a></p>
 <p>Zoom sobre o Eixo X (Ctrl Shift + rolagem):</p>
-<p><a href="#R-image-3898083bd5e48a36c8fdd3a0f944967e" class="lightbox-link"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3898083bd5e48a36c8fdd3a0f944967e"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png"></a></p>
+<p><a href="#R-image-ae21eaf2290c1c21f17d97dc37c92337" class="lightbox-link"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae21eaf2290c1c21f17d97dc37c92337"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png"></a></p>
 <h2 id="movimentação">Movimentação<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Ctrl Shift + rolagem para movimentar</li>
 </ul>
-<p><a href="#R-image-0d0d3b8c8fb9d4dcc15d3672764e86cc" class="lightbox-link"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d0d3b8c8fb9d4dcc15d3672764e86cc"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png"></a></p>
+<p><a href="#R-image-6e360d83478acd6555297a23bd47a692" class="lightbox-link"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e360d83478acd6555297a23bd47a692"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png"></a></p>
 <h2 id="visualizando-dados-individuais-da-placa">Visualizando dados individuais da placa<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Note: Esta é uma funcionalidade específica para Dual Motion Plate / Placa de Força Dupla</li>
 </ul>
 <p>Com Placas de Força Duplas é possível visualizar dados de cada placa individualmente clicando no botão indicador de placa à esquerda do ícone de engrenagem. A placa destacada indica qual placa está sendo exibida.</p>
 <p>Neste exemplo estamos visualizando dados combinados (gráfico superior), mas também dados de cada placa individualmente (Pé esquerdo e direito):</p>
-<p><a href="#R-image-3832de1182ac8bb96e79b5a19b7d9a51" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3832de1182ac8bb96e79b5a19b7d9a51"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png"></a></p>
+<p><a href="#R-image-865ab8f68282dad40d73ca8f6064de94" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-865ab8f68282dad40d73ca8f6064de94"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png"></a></p>
 <h2 id="opções-de-visualização-do-gráfico">Opções de Visualização do gráfico<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Clicar no ícone de engrenagem oferece opções sobre como visualizar os dados. Por exemplo, para exibir dados em porcentagem ou Newton (ou libra-força por pé: lbf⋅ft, se o sistema imperial estiver selecionado nas Configurações Gerais).</p>
-<p><a href="#R-image-0803abef146722b8099ee8c70e672dce" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0803abef146722b8099ee8c70e672dce"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png"></a></p>
+<p><a href="#R-image-94a27ec3b38af9ffc33b2ce7c82309c8" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94a27ec3b38af9ffc33b2ce7c82309c8"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png"></a></p>
 <h2 id="desempenho-melhorado">Desempenho melhorado<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>A nova biblioteca de gráficos pode utilizar placas de vídeo para aceleração de hardware, o que significa uma experiência de usuário significativamente mais responsiva sem custos significativos (em termos de uso de CPU e memória).</p>
-<p><a href="#R-image-46e6fd84cf8f2d3544cd4938a3b60b7a" class="lightbox-link"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-46e6fd84cf8f2d3544cd4938a3b60b7a"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png"></a></p>
-<p><a href="#R-image-14dc8dd175c7cce37c59be55f13b6ed5" class="lightbox-link"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-14dc8dd175c7cce37c59be55f13b6ed5"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png"></a></p>
+<p><a href="#R-image-53451f8dac498d054d6802064959e14f" class="lightbox-link"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-53451f8dac498d054d6802064959e14f"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png"></a></p>
+<p><a href="#R-image-9941aa50ca377000465acd910e48355e" class="lightbox-link"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9941aa50ca377000465acd910e48355e"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png"></a></p>
 <hr>
 <p><em>Última atualização: 2024-02-16</em> | <a href="/sc-support/pt/software-features/graph-library/index.html">Ver no site de suporte oficial</a></p>
 
@@ -378,7 +403,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/graph-library/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/graph-library/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/graph-library/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/graph-library/index.html" lang="fr">Français</option>
@@ -440,8 +464,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537812" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542924" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

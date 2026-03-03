@@ -21,8 +21,7 @@
     <meta itemprop="description" content="El Explorador proporciona una interfaz para navegar, seleccionar y gestionar Grabaciones de Video organizadas por Sesiones. Este documento explica cómo utilizar de manera efectiva...">
     <meta itemprop="wordCount" content="792">
     <title>Cómo usar el Explorador :: Soporte de Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/explorer/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/explorer/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/explorer/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/explorer/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/explorer/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/explorer/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/explorer/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/explorer/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/explorer/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537808" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537808" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537808" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542920" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542920" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772537808";
+      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772542920";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.es.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.es.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['es'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537808" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542920" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,45 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#descripción-general">Descripción General</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#comportamiento-de-selección">Comportamiento de Selección</a>
+      <ul>
+        <li><a href="#selección-individual">Selección Individual</a></li>
+        <li><a href="#selección-múltiple-con-ratón">Selección Múltiple con Ratón</a></li>
+        <li><a href="#selección-múltiple-con-teclado">Selección Múltiple con Teclado</a></li>
+        <li><a href="#información-de-selección">Información de Selección</a></li>
+      </ul>
+    </li>
+    <li><a href="#menús-y-acciones-contextuales">Menús y Acciones Contextuales</a>
+      <ul>
+        <li><a href="#menú-contextual-de-grabación">Menú Contextual de Grabación</a></li>
+        <li><a href="#menú-contextual-de-estudiantegrupo">Menú Contextual de Estudiante/Grupo</a></li>
+        <li><a href="#comandos-globales">Comandos Globales</a></li>
+      </ul>
+    </li>
+    <li><a href="#arrastrar-y-soltar">Arrastrar y Soltar</a>
+      <ul>
+        <li><a href="#arrastrar-tomas">Arrastrar Tomas</a></li>
+        <li><a href="#zonas-de-destino">Zonas de Destino</a></li>
+      </ul>
+    </li>
+    <li><a href="#consejos-para-un-uso-eficiente">Consejos para un Uso Eficiente</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/software-features/index.html"><span itemprop="name">Software y funciones</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cómo usar el Explorador</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -191,8 +229,8 @@
 <h2 id="introducción">Introducción<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>El Explorador proporciona una interfaz para navegar, seleccionar y gestionar Grabaciones de Video organizadas por Sesiones. Este documento explica cómo navegar y utilizar de manera efectiva todas las funciones del Explorador en las versiones 25.3 y posteriores.</p>
 <h2 id="descripción-general">Descripción General<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-df16a534798d845b05b6e98ad15a8d3c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-df16a534798d845b05b6e98ad15a8d3c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png"></a></p>
+<p><a href="#R-image-a5261f914631041500d4ba4fdbd8d568" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5261f914631041500d4ba4fdbd8d568"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/23084205889692/23084198047388.png"></a></p>
 <p><strong>Barra de herramientas:</strong> Barra de herramientas con botones para acceder rápidamente a todas las funciones principales del Explorador.</p>
 <p><strong>Lista de Usuarios:</strong> Lista de Usuarios registrados con funciones de comodidad como una barra de búsqueda y un botón de ordenación.</p>
 <p><strong>Lista de contenido descargable:</strong> Lista de Grabaciones descargadas, como Swings de Tour.</p>
@@ -480,7 +518,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/explorer/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/explorer/index.html" lang="es" selected data-selected>Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/explorer/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/explorer/index.html" lang="fr">Français</option>
@@ -542,8 +579,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542920" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

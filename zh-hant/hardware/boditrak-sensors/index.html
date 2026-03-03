@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="229">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Pressure-Data">
     <title>如何在 Swing Catalyst 中使用 BodiTrak 感測器 :: Swing Catalyst 支援</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="fr">
@@ -62,27 +61,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537819" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537819" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537819" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542932" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542932" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772537819";
+      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772542932";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537819" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542932" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,36 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="導航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目錄 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#簡介">簡介</a></li>
+    <li><a href="#系統需求">系統需求</a></li>
+    <li><a href="#支援哪些感測器">支援哪些感測器？</a></li>
+    <li><a href="#驅動程式安裝">驅動程式安裝</a></li>
+    <li><a href="#配置">配置</a>
+      <ul>
+        <li></li>
+        <li><a href="#感測板設定">感測板設定</a></li>
+        <li><a href="#旋轉如何旋轉鏡像或翻轉壓力數據">旋轉（如何旋轉、鏡像或翻轉壓力數據）</a></li>
+      </ul>
+    </li>
+    <li><a href="#疑難排解"><a href="install-balance-plate-3s.md">疑難排解</a></a>
+      <ul>
+        <li><a href="#數據顯示翻轉即使墊子方向擺放正確">數據顯示翻轉，即使墊子方向擺放正確</a></li>
+        <li><a href="#boditrak-感測器未被識別或未顯示為已連接">BodiTrak 感測器未被識別或未顯示為已連接：</a></li>
+        <li><a href="#感測墊上的雜訊--校準問題">感測墊上的雜訊 / 校準問題</a></li>
+        <li><a href="#足部印記不清晰">足部印記不清晰</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/index.html"><span itemprop="name">Swing Catalyst 支援</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/hardware/index.html"><span itemprop="name">硬體</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">如何在 Swing Catalyst 中使用 BodiTrak 感測器</span><meta itemprop="position" content="3"></li>
@@ -262,14 +291,14 @@
 <p>確認其已開啟（否則整合功能將無法運作）。</p>
 </li>
 </ul>
-<p><a href="#R-image-95a98b7125cf89b7413c249b24d705ca" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_13-21-39.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-95a98b7125cf89b7413c249b24d705ca"><img alt="MotionCatalyst_2021-08-31_13-21-39.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png"></a></p>
+<p><a href="#R-image-daa96d7b4effd9ec9e6ab2a25221707b" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_13-21-39.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-daa96d7b4effd9ec9e6ab2a25221707b"><img alt="MotionCatalyst_2021-08-31_13-21-39.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png"></a></p>
 <p>若要開啟感測器配置對話框，請點擊「Configure&hellip;」。</p>
 <h4 id="注意若無法連接至感測器或收到錯誤訊息請參閱我們的疑難排解章節">注意：若無法連接至感測器或收到錯誤訊息，請參閱我們的<a href="/sc-support/zh-hant/hardware/boditrak-sensors/index.html#note-if-you-cannot-connect-to-the-sensor-or-receive-an-error-doing-see-our-troubleshooting-sectionh_01fa3bkc0v70z6g4752n1f4145">疑難排解章節</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <h3 id="感測板設定">感測板設定<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>您可以在感測板設定視窗中檢視即時數據、套用旋轉，以及查看其他感測器資訊（例如序號）。</p>
-<p><a href="#R-image-91699de0f70f0ab974e1187efec10831" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_15-51-10.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-91699de0f70f0ab974e1187efec10831"><img alt="MotionCatalyst_2021-08-31_15-51-10.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png"></a></p>
+<p><a href="#R-image-9168ca5ee53c65062ea7c13a62e9b910" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_15-51-10.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9168ca5ee53c65062ea7c13a62e9b910"><img alt="MotionCatalyst_2021-08-31_15-51-10.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png"></a></p>
 <p>中間的大白點表示壓力中心（CoP），
 這是衡量您身體平衡狀態的指標。</p>
 <p>當您保持平衡時，CoP 將位於雙腳之間的中央位置；當身體向前或向後傾斜時，
@@ -281,8 +310,8 @@ CoP 會相應地向前或向後移動。
 <h3 id="旋轉如何旋轉鏡像或翻轉壓力數據">旋轉（如何旋轉、鏡像或翻轉壓力數據）<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>點擊「Rotate Stance Data」按鈕即可旋轉感測板的方向。點擊此按鈕可將數據旋轉 180 度，如需更進階的設定，請參閱「進階」選項。</p>
 <p>點擊「進階」即可存取進階旋轉設定：</p>
-<p><a href="#R-image-d5a6c4ebaa8bec218469543e3e3dff05" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_14-34-36.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5a6c4ebaa8bec218469543e3e3dff05"><img alt="MotionCatalyst_2021-08-31_14-34-36.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png"></a></p>
+<p><a href="#R-image-5fad76435f927ccde9f715ace0077a35" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_14-34-36.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5fad76435f927ccde9f715ace0077a35"><img alt="MotionCatalyst_2021-08-31_14-34-36.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png"></a></p>
 <p>若要垂直翻轉數據，可點擊「翻轉」。</p>
 <h2 id="疑難排解"><a href="/sc-support/zh-hant/hardware/install-balance-plate-3s/index.html">疑難排解</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>請注意：</strong></p>
@@ -304,12 +333,12 @@ CoP 會相應地向前或向後移動。
 </ul>
 <p>停止服務：點擊 Windows 開始功能表按鈕並輸入「服務」，點擊「服務」應用程式，找到「BodiTrak Data Port」，按右鍵並選擇停止。</p>
 <p>若要停止服務，請按下 Windows 開始功能表的 Windows 圖示，然後輸入「服務」。</p>
-<p><a href="#R-image-b085e2bfdc7e6651cf30d0d3f0302a67" class="lightbox-link"><img alt="2021-09-02_14-11-50.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b085e2bfdc7e6651cf30d0d3f0302a67"><img alt="2021-09-02_14-11-50.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png"></a><a href="#R-image-9c6d59931f8d5a52d8c1d7624bfe90e2" class="lightbox-link"><img alt="explorer_2021-09-02_14-10-31.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c6d59931f8d5a52d8c1d7624bfe90e2"><img alt="explorer_2021-09-02_14-10-31.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png"></a></p>
+<p><a href="#R-image-78bd030aa47ae110f72ef5c40db36eda" class="lightbox-link"><img alt="2021-09-02_14-11-50.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-78bd030aa47ae110f72ef5c40db36eda"><img alt="2021-09-02_14-11-50.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png"></a><a href="#R-image-4a3879a395dbee602360ad42f177fd38" class="lightbox-link"><img alt="explorer_2021-09-02_14-10-31.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4a3879a395dbee602360ad42f177fd38"><img alt="explorer_2021-09-02_14-10-31.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png"></a></p>
 <p>開啟服務應用程式，找到 BodiTrak DataPort，按右鍵並點擊停止。</p>
-<p><a href="#R-image-50846bd47fade33a35d3c4bbec8e7b90" class="lightbox-link"><img alt="mmc_2021-09-01_12-54-32.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-50846bd47fade33a35d3c4bbec8e7b90"><img alt="mmc_2021-09-01_12-54-32.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png"></a></p>
+<p><a href="#R-image-e9e782ba2ad1ccb8d70ab3d591eb43f5" class="lightbox-link"><img alt="mmc_2021-09-01_12-54-32.png 的畫面截圖" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e9e782ba2ad1ccb8d70ab3d591eb43f5"><img alt="mmc_2021-09-01_12-54-32.png 的畫面截圖" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png"></a></p>
 <p>停止該服務可能會導致其他使用 BodiTrak 的應用程式無法正常運作，但將允許 Swing Catalyst 連接至感測器。</p>
 <p>若未安裝 BodiTrak DataPort，請繼續執行以下疑難排解步驟。</p>
 <ul>
@@ -446,7 +475,6 @@ CoP 會相應地向前或向後移動。
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">語言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/boditrak-sensors/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/boditrak-sensors/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/boditrak-sensors/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/boditrak-sensors/index.html" lang="fr">Français</option>
@@ -508,8 +536,8 @@ CoP 會相應地向前或向後移動。
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542932" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

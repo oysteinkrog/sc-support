@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="729">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Pressure-Data">
     <title>Kuidas kasutada BodiTrak andureid koos Swing Catalystiga :: Swing Catalyst Tugi</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="fr">
@@ -62,26 +61,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537842" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537842" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537842" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542959" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542959" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542959" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.et.js?1772537842";
+      window.relearn.index_js_url="/sc-support/searchindex.et.js?1772542959";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537842" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542959" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537842" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537842" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537842" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537842" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537842" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542959" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542959" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542959" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542959" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542959" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,36 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#sissejuhatus">Sissejuhatus</a></li>
+    <li><a href="#nõuded">Nõuded</a></li>
+    <li><a href="#milliseid-andureid-toetatakse">Milliseid andureid toetatakse?</a></li>
+    <li><a href="#draiveri-installimine">Draiveri installimine</a></li>
+    <li><a href="#konfigureerimine">Konfigureerimine</a>
+      <ul>
+        <li></li>
+        <li><a href="#anduri-plaadi-seaded">Anduri plaadi seaded</a></li>
+        <li><a href="#pöörlemine-kuidas-pöörata-peegeldada-või-ümber-pöörata-rõhu-andmeid">Pöörlemine (Kuidas pöörata, peegeldada või ümber pöörata rõhu andmeid)</a></li>
+      </ul>
+    </li>
+    <li><a href="#tõrkeotsing"><a href="install-balance-plate-3s.md">Tõrkeotsing</a></a>
+      <ul>
+        <li><a href="#andmed-näivad-ümberpööratud-kuigi-matt-on-õiges-asendis">Andmed näivad ümberpööratud, kuigi matt on õiges asendis</a></li>
+        <li><a href="#boditrak-andur-ei-ole-tuvastatud-või-ei-kuva-ühendatuna">BodiTrak andur ei ole tuvastatud või ei kuva ühendatuna:</a></li>
+        <li><a href="#müra-anduri-matil--kalibreerimine">Müra anduri matil / kalibreerimine</a></li>
+        <li><a href="#nõrgad-jalatäljed">Nõrgad jalatäljed</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/et/index.html"><span itemprop="name">Swing Catalyst tugi</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/et/hardware/index.html"><span itemprop="name">Riistvara</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kuidas kasutada BodiTrak andureid koos Swing Catalystiga</span><meta itemprop="position" content="3"></li>
@@ -261,14 +290,14 @@ Mõõtmed (Laius x Kõrgus) cm</p>
 <p>Veenduge, et see on SISSE lülitatud (muidu integratsioon ei tööta).</p>
 </li>
 </ul>
-<p><a href="#R-image-10c7d188708e5ce5897a95a9614f3b90" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_13-21-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-10c7d188708e5ce5897a95a9614f3b90"><img alt="MotionCatalyst_2021-08-31_13-21-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png"></a></p>
+<p><a href="#R-image-32c6e1158b7addc4441727cdaa7f41b6" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_13-21-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-32c6e1158b7addc4441727cdaa7f41b6"><img alt="MotionCatalyst_2021-08-31_13-21-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png"></a></p>
 <p>Anduri konfiguratsiooni dialoogi avamiseks klõpsake „Konfigureeri&hellip;&quot;.</p>
 <h4 id="märkus-kui-te-ei-saa-anduriga-ühendust-luua-või-saate-tõrketeate-vaadake-meie-tõrkeotsingu-jaotist">Märkus: Kui te ei saa anduriga ühendust luua või saate tõrketeate, vaadake meie <a href="/sc-support/et/hardware/boditrak-sensors/index.html#note-if-you-cannot-connect-to-the-sensor-or-receive-an-error-doing-see-our-troubleshooting-sectionh_01fa3bkc0v70z6g4752n1f4145">Tõrkeotsingu jaotist</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <h3 id="anduri-plaadi-seaded">Anduri plaadi seaded<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Saate vaadata reaalajas andmeid, rakendada Pööramist ning vaadata lisateavet anduri kohta, näiteks seerianumbrit, Anduri plaadi seadete aknast.</p>
-<p><a href="#R-image-621d9ab43e63744f53b46e30dced06f0" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_15-51-10.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-621d9ab43e63744f53b46e30dced06f0"><img alt="MotionCatalyst_2021-08-31_15-51-10.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png"></a></p>
+<p><a href="#R-image-23ce01c9de397033ac128362434f2f2b" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_15-51-10.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23ce01c9de397033ac128362434f2f2b"><img alt="MotionCatalyst_2021-08-31_15-51-10.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png"></a></p>
 <p>Suur valge punkt keskel tähistab Rõhu Keskpunkti (CoP),
 mis on teie keha Tasakaalu mõõdik.</p>
 <p>Kui olete tasakaalus, asub CoP jalgade vahel keskel; ettepoole või tahapoole kallutades
@@ -280,8 +309,8 @@ Neid ühendav joon näitab tasapinda, millel seisate.</p>
 <h3 id="pöörlemine-kuidas-pöörata-peegeldada-või-ümber-pöörata-rõhu-andmeid">Pöörlemine (Kuidas pöörata, peegeldada või ümber pöörata rõhu andmeid)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Plaadi pööramist saab teha, klõpsates nupul „Pööra Seisaku Andmeid&quot;. Sellel nupul klõpsamine võimaldab andmeid 180 kraadi pöörata; täpsemate seadete jaoks vaadake Täpsemalt.</p>
 <p>Täpsematele pööramise seadetele pääsete ligi, klõpsates Täpsemalt:</p>
-<p><a href="#R-image-9aaeadb283b6553d126138aba3bfee69" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_14-34-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9aaeadb283b6553d126138aba3bfee69"><img alt="MotionCatalyst_2021-08-31_14-34-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png"></a></p>
+<p><a href="#R-image-81989cfda21cd055e8fd05127417d5b2" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_14-34-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-81989cfda21cd055e8fd05127417d5b2"><img alt="MotionCatalyst_2021-08-31_14-34-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png"></a></p>
 <p>Andmete vertikaalseks ümberpööramiseks saate klõpsata pööra.</p>
 <h2 id="tõrkeotsing"><a href="/sc-support/et/hardware/install-balance-plate-3s/index.html">Tõrkeotsing</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Palun pange tähele:</strong></p>
@@ -303,12 +332,12 @@ Neid ühendav joon näitab tasapinda, millel seisate.</p>
 </ul>
 <p>Teenuse peatamiseks klõpsake Windowsi Start-menüü nuppu ja tippige Teenused, klõpsake rakendust Teenused ning otsige üles BodiTrak Data Port, paremklõpsake ja valige Peata</p>
 <p>Teenuse peatamiseks vajutage Windowsi Start-menüü Windowsi ikooni ja tippige seejärel Teenused.</p>
-<p><a href="#R-image-824bca87d1c130f7c47d89e76cbb484f" class="lightbox-link"><img alt="2021-09-02_14-11-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-824bca87d1c130f7c47d89e76cbb484f"><img alt="2021-09-02_14-11-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png"></a><a href="#R-image-2f1b990a5de1b92db1fa11b4b6078ca3" class="lightbox-link"><img alt="explorer_2021-09-02_14-10-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f1b990a5de1b92db1fa11b4b6078ca3"><img alt="explorer_2021-09-02_14-10-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png"></a></p>
+<p><a href="#R-image-89f5456c7865c9af7c66bbbbd9450f6b" class="lightbox-link"><img alt="2021-09-02_14-11-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-89f5456c7865c9af7c66bbbbd9450f6b"><img alt="2021-09-02_14-11-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png"></a><a href="#R-image-822fe88a2cd202c36c3dbd15c346f732" class="lightbox-link"><img alt="explorer_2021-09-02_14-10-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-822fe88a2cd202c36c3dbd15c346f732"><img alt="explorer_2021-09-02_14-10-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png"></a></p>
 <p>Avage teenuste rakendus ja leidke BodiTrak DataPort, paremklõpsake ja klõpsake Peata.</p>
-<p><a href="#R-image-28927fc7b300b4982d8f97140cce760a" class="lightbox-link"><img alt="mmc_2021-09-01_12-54-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-28927fc7b300b4982d8f97140cce760a"><img alt="mmc_2021-09-01_12-54-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png"></a></p>
+<p><a href="#R-image-0cbf4da488105a049c14d240350c4d69" class="lightbox-link"><img alt="mmc_2021-09-01_12-54-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0cbf4da488105a049c14d240350c4d69"><img alt="mmc_2021-09-01_12-54-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png"></a></p>
 <p>Teenuse peatamine võib takistada teiste BodiTraki kasutavate rakenduste tööd, kuid võimaldab Swing Catalystil anduriga ühenduse luua.</p>
 <p>Kui BodiTrak DataPort ei ole installitud, jätkake allpool toodud tõrkeotsingu sammudega.</p>
 <ul>
@@ -445,7 +474,6 @@ Neid ühendav joon näitab tasapinda, millel seisate.</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/boditrak-sensors/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/boditrak-sensors/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/boditrak-sensors/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/boditrak-sensors/index.html" lang="fr">Français</option>
@@ -507,8 +535,8 @@ Neid ühendav joon näitab tasapinda, millel seisate.</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537842" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542959" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="216">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>USB3 相機疑難排解 :: Swing Catalyst 支援</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/usb3-troubleshooting/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537819" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537819" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537819" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542932" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542932" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772537819";
+      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772542932";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537819" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542932" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,32 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="導航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目錄 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#疑難排解最常見問題"><a href="flir-blackfly-usb-setup.md">疑難排解（最常見問題）</a></a></li>
+    <li><a href="#接收資料不足--裝置未同步時鐘偏移">接收資料不足 / 裝置未同步（時鐘偏移）</a></li>
+    <li><a href="#掉幀">掉幀</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#未接收到任何資料">未接收到任何資料</a></li>
+    <li><a href="#發生錯誤">發生錯誤</a></li>
+    <li><a href="#相機未顯示在相機設定清單中">相機未顯示在相機設定清單中</a></li>
+    <li><a href="#連接問題相機斷線">連接問題（相機斷線）</a>
+      <ul>
+        <li><a href="#其他">其他</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/index.html"><span itemprop="name">Swing Catalyst 支援</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/cameras-video/index.html"><span itemprop="name">相機與影片</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">USB3 相機疑難排解</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -206,8 +231,8 @@
 <p>最常見的問題與相機線纜、連接方式、USB 延長器等有關。</p>
 <p>本文旨在協助您解決問題，或縮小問題的可能原因範圍。</p>
 <h2 id="接收資料不足--裝置未同步時鐘偏移">接收資料不足 / 裝置未同步（時鐘偏移）<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-a3407ef52d136e286326594e863af1b3" class="lightbox-link"><img alt="SnoopScreenshot_96.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-96-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3407ef52d136e286326594e863af1b3"><img alt="SnoopScreenshot_96.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-96-png.png"></a></p>
+<p><a href="#R-image-010f5d03143e1473062025b40470f2db" class="lightbox-link"><img alt="SnoopScreenshot_96.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-96-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-010f5d03143e1473062025b40470f2db"><img alt="SnoopScreenshot_96.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-96-png.png"></a></p>
 <ol>
 <li>接收資料不足（Swing / Motion Catalyst 未取得足夠的視訊資料以完成捕捉）</li>
 </ol>
@@ -236,8 +261,8 @@
 <p>網路攝影機使用者的最後手段：嘗試在進階相機設定 &ndash;&gt; 選項標籤中啟用「手動時間戳」。</p>
 </li>
 </ul>
-<p><a href="#R-image-1ff8b10073833190b090fa17b150f091" class="lightbox-link"><img alt="MotionCatalyst_vI2Da0hHCn.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-vi2da0hhcn-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ff8b10073833190b090fa17b150f091"><img alt="MotionCatalyst_vI2Da0hHCn.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-vi2da0hhcn-png.png"></a></p>
+<p><a href="#R-image-e1fb10cbaa6f8df82a02350ab902221c" class="lightbox-link"><img alt="MotionCatalyst_vI2Da0hHCn.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-vi2da0hhcn-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e1fb10cbaa6f8df82a02350ab902221c"><img alt="MotionCatalyst_vI2Da0hHCn.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-vi2da0hhcn-png.png"></a></p>
 <h2 id="掉幀">掉幀<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Q：什麼是掉幀？</p>
 <p>A：掉幀是指從相機接收到的視訊幀在不同程度上遭到遺失。</p>
@@ -338,8 +363,8 @@
 <p>使用 Region of Interest（或感興趣區域）有助於減少相機的頻寬消耗並提升 FPS，也可用於降低掉幀數量。</p>
 <p>請參閱我們關於如何使用 <a href="/sc-support/zh-hant/cameras-video/advanced-camera-settings/index.html">Region Of Interest</a> 的文章。</p>
 <h2 id="未接收到任何資料">未接收到任何資料<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-cdd3d98df136c16f3a649dea612085c0" class="lightbox-link"><img alt="SnoopScreenshot_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-150-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cdd3d98df136c16f3a649dea612085c0"><img alt="SnoopScreenshot_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-150-png.png"></a></p>
+<p><a href="#R-image-594e9d947f51616b26c21d0bad91d9a5" class="lightbox-link"><img alt="SnoopScreenshot_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-594e9d947f51616b26c21d0bad91d9a5"><img alt="SnoopScreenshot_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/snoopscreenshot-150-png.png"></a></p>
 <p>這表示 Swing Catalyst 未收到任何視訊影像或可處理的資料。</p>
 <p>此類錯誤的可能原因包括：</p>
 <ul>
@@ -351,8 +376,8 @@
 </li>
 </ul>
 <h2 id="發生錯誤">發生錯誤<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-fed065de6ce3d038364bdbb14e4a2405" class="lightbox-link"><img alt="MotionCatalyst_2021-12-13_12-54-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-2021-12-13-12-54-23-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fed065de6ce3d038364bdbb14e4a2405"><img alt="MotionCatalyst_2021-12-13_12-54-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-2021-12-13-12-54-23-png.png"></a></p>
+<p><a href="#R-image-5b7ef5488968400816eb26056384c238" class="lightbox-link"><img alt="MotionCatalyst_2021-12-13_12-54-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-2021-12-13-12-54-23-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5b7ef5488968400816eb26056384c238"><img alt="MotionCatalyst_2021-12-13_12-54-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5516849894930/motioncatalyst-2021-12-13-12-54-23-png.png"></a></p>
 <p>此類錯誤常發生於相機正被其他應用程式使用的情況下。</p>
 <p>網路攝影機尤其容易被第三方軟體佔用，請嘗試關閉其他程式後重試。若錯誤持續發生，請嘗試重新啟動電腦。</p>
 <h2 id="相機未顯示在相機設定清單中">相機未顯示在相機設定清單中<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -485,7 +510,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">語言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/usb3-troubleshooting/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/usb3-troubleshooting/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/usb3-troubleshooting/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/usb3-troubleshooting/index.html" lang="fr">Français</option>
@@ -547,8 +571,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542932" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="538">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>การตั้งค่า FLIR BlackFly S GigE ใน Swing Catalyst :: การสนับสนุน Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,28 +62,28 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537820" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537820" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537820" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537820" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537820" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542933" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542933" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542933" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542933" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542933" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.th.js?1772537820";
+      window.relearn.index_js_url="/sc-support/searchindex.th.js?1772542933";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537820" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537820" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537820" defer></script>
-    <script src="/sc-support/js/lunr/wordcut.js?1772537820" defer></script>
-    <script src="/sc-support/js/lunr/lunr.th.min.js?1772537820" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542933" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542933" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542933" defer></script>
+    <script src="/sc-support/js/lunr/wordcut.js?1772542933" defer></script>
+    <script src="/sc-support/js/lunr/lunr.th.min.js?1772542933" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['th'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537820" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537820" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537820" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537820" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537820" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542933" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542933" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542933" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542933" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542933" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,37 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#หวขอทเกยวของและคำแนะนำ">หัวข้อที่เกี่ยวข้องและคำแนะนำ:</a></li>
+      </ul>
+    </li>
+    <li><a href="#บทความนแบงออกเปนหวขอตางๆ">บทความนี้แบ่งออกเป็นหัวข้อต่างๆ</a>
+      <ul>
+        <li><a href="#หวขอทเกยวของและคำแนะนำ-1">หัวข้อที่เกี่ยวข้องและคำแนะนำ:</a></li>
+      </ul>
+    </li>
+    <li><a href="#เรมตนใชงาน-การตดตงฮารดแวร">เริ่มต้นใช้งาน: การติดตั้งฮาร์ดแวร์</a></li>
+    <li><a href="#การตดตงการดเครอขายแบบ-dual-port">การติดตั้งการ์ดเครือข่ายแบบ dual port</a></li>
+    <li><a href="#เรมตนใชงาน-การตดตงไดรเวอร">เริ่มต้นใช้งาน: การติดตั้งไดรเวอร์</a></li>
+    <li><a href="#การกำหนดคา-ip">การกำหนดค่า IP</a></li>
+    <li><a href="#การกำหนดคากลองใน-swing-catalyst-settings">การกำหนดค่ากล้องใน Swing Catalyst Settings</a></li>
+    <li><a href="#การแกไขปญหา">การแก้ไขปัญหา</a>
+      <ul>
+        <li><a href="#คำอธบายตวบงชสถานะ">คำอธิบายตัวบ่งชี้สถานะ</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/th/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/th/cameras-video/index.html"><span itemprop="name">กล้องและวิดีโอ</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">การตั้งค่า FLIR BlackFly S GigE ใน Swing Catalyst</span><meta itemprop="position" content="3"></li>
@@ -246,21 +276,21 @@
 <p><a href="/sc-support/th/cameras-video/point-grey-flir-gige/index.html">บทความรุ่นเก่า: Point Grey Blackfly GigE ใน Swing Catalyst (สำหรับ Swing Catalyst เวอร์ชันเก่า)</a></p>
 <h2 id="เรมตนใชงาน-การตดตงฮารดแวร">เริ่มต้นใช้งาน: การติดตั้งฮาร์ดแวร์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>ติดอะแดปเตอร์ขาตั้งกล้องเข้ากับตัวกล้องโดยใช้สกรูหัว Phillips สีดำ 4 ตัวที่มาพร้อมกับกล้อง</p>
-<p><a href="#R-image-d34b30fde5e63979fe1a5414da2e2a5b" class="lightbox-link"><img alt="ภาพการติดตั้งอะแดปเตอร์ขาตั้งกล้อง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d34b30fde5e63979fe1a5414da2e2a5b"><img alt="ภาพการติดตั้งอะแดปเตอร์ขาตั้งกล้อง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png"></a></p>
+<p><a href="#R-image-1d9e864e80cbdb9154fd56bda9815bd6" class="lightbox-link"><img alt="ภาพการติดตั้งอะแดปเตอร์ขาตั้งกล้อง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1d9e864e80cbdb9154fd56bda9815bd6"><img alt="ภาพการติดตั้งอะแดปเตอร์ขาตั้งกล้อง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150256-jpg.png"></a></p>
 <p>แกะเลนส์ออกและตรวจสอบให้แน่ใจว่าได้ถอดฝาครอบเลนส์พลาสติกออกแล้ว</p>
-<p><a href="#R-image-cf8fedef3a87150445a364a9186424c4" class="lightbox-link"><img alt="ภาพการแกะเลนส์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf8fedef3a87150445a364a9186424c4"><img alt="ภาพการแกะเลนส์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png"></a></p>
+<p><a href="#R-image-21354f6ab9c732c7d81f0d636f18b801" class="lightbox-link"><img alt="ภาพการแกะเลนส์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-21354f6ab9c732c7d81f0d636f18b801"><img alt="ภาพการแกะเลนส์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150221-jpg.png"></a></p>
 <p>ถอดฝาครอบเซ็นเซอร์ออกจากกล้อง:</p>
-<p><a href="#R-image-beb9b30bd7c604d9ae2604b3b782ea55" class="lightbox-link"><img alt="ภาพการถอดฝาครอบเซ็นเซอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-beb9b30bd7c604d9ae2604b3b782ea55"><img alt="ภาพการถอดฝาครอบเซ็นเซอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png"></a><a href="#R-image-5a4d71e0cd7439626b948918a4cb2b59" class="lightbox-link"><img alt="ภาพกล้องหลังถอดฝาครอบเซ็นเซอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a4d71e0cd7439626b948918a4cb2b59"><img alt="ภาพกล้องหลังถอดฝาครอบเซ็นเซอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png"></a></p>
+<p><a href="#R-image-32784ddacb0a4dcc540216e2a2aa0112" class="lightbox-link"><img alt="ภาพการถอดฝาครอบเซ็นเซอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-32784ddacb0a4dcc540216e2a2aa0112"><img alt="ภาพการถอดฝาครอบเซ็นเซอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-150131-jpg.png"></a><a href="#R-image-9f8fcfb7443ff957d49838c120e5efbd" class="lightbox-link"><img alt="ภาพกล้องหลังถอดฝาครอบเซ็นเซอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f8fcfb7443ff957d49838c120e5efbd"><img alt="ภาพกล้องหลังถอดฝาครอบเซ็นเซอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200812-151418-jpg.png"></a></p>
 <p>การติดเลนส์เข้ากับกล้อง</p>
-<p><a href="#R-image-05743383012e556ed0eea62db923e84b" class="lightbox-link"><img alt="ภาพเคลื่อนไหวการติดเลนส์เข้ากับกล้อง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-05743383012e556ed0eea62db923e84b"><img alt="ภาพเคลื่อนไหวการติดเลนส์เข้ากับกล้อง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png"></a></p>
+<p><a href="#R-image-1e9ef324884b616572fc767c0de441a9" class="lightbox-link"><img alt="ภาพเคลื่อนไหวการติดเลนส์เข้ากับกล้อง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1e9ef324884b616572fc767c0de441a9"><img alt="ภาพเคลื่อนไหวการติดเลนส์เข้ากับกล้อง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-13-21-08-gif.png"></a></p>
 <p><strong>การปรับเลนส์กล้อง:</strong></p>
-<p><a href="#R-image-2db86757f2dcca9c2f892ad277709e27" class="lightbox-link"><img alt="ภาพการปรับเลนส์กล้อง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2db86757f2dcca9c2f892ad277709e27"><img alt="ภาพการปรับเลนส์กล้อง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png"></a></p>
+<p><a href="#R-image-3194c60468e1208b05fbb77b4f6f37b0" class="lightbox-link"><img alt="ภาพการปรับเลนส์กล้อง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3194c60468e1208b05fbb77b4f6f37b0"><img alt="ภาพการปรับเลนส์กล้อง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/20200814-132604-jpg.png"></a></p>
 <p>เลนส์นี้มีการปรับสามส่วน จากบนลงล่าง:</p>
 <ul>
 <li>
@@ -287,75 +317,75 @@
 <p>เว้นให้กล่อง &ldquo;I will use GigE Cameras&rdquo; ถูกเลือกไว้</p>
 </li>
 </ul>
-<p><a href="#R-image-5bcb0c3f85a25ffe6ceec814c0730194" class="lightbox-link"><img alt="ภาพหน้าจอการติดตั้งไดรเวอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bcb0c3f85a25ffe6ceec814c0730194"><img alt="ภาพหน้าจอการติดตั้งไดรเวอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png"></a></p>
+<p><a href="#R-image-04c7ad3475930ab47c344eee6600085a" class="lightbox-link"><img alt="ภาพหน้าจอการติดตั้งไดรเวอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04c7ad3475930ab47c344eee6600085a"><img alt="ภาพหน้าจอการติดตั้งไดรเวอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/j079itbw6g-png.png"></a></p>
 <h2 id="การกำหนดคา-ip">การกำหนดค่า IP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>หลังจากติดตั้งไดรเวอร์ คุณควรได้รับแจ้งให้รัน AdapterConfigGUI หากไม่ได้รับแจ้ง สามารถหาได้ที่ C:\Program Files\FLIR Systems\Spinnaker\shortcuts\utilities</p>
 <p>ยูทิลิตี้การกำหนดค่าอะแดปเตอร์จะมีลักษณะดังนี้</p>
-<p><a href="#R-image-fc98abfc9a52092ab895c822c02f3494" class="lightbox-link"><img alt="ภาพหน้าต่าง AdapterConfigGUI" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fc98abfc9a52092ab895c822c02f3494"><img alt="ภาพหน้าต่าง AdapterConfigGUI" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png"></a></p>
+<p><a href="#R-image-5625a5906f221620aeb4c23a6347c282" class="lightbox-link"><img alt="ภาพหน้าต่าง AdapterConfigGUI" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5625a5906f221620aeb4c23a6347c282"><img alt="ภาพหน้าต่าง AdapterConfigGUI" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-30-3.png"></a></p>
 <p>คลิก &ldquo;Start&rdquo; และเลือกอะแดปเตอร์ &ldquo;Intel(R) 82574L&rdquo; ที่มีอยู่</p>
-<p><a href="#R-image-42d68bf475e9f60d589a4e553b8e723d" class="lightbox-link"><img alt="ภาพการเลือกอะแดปเตอร์ใน AdapterConfigGUI" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-42d68bf475e9f60d589a4e553b8e723d"><img alt="ภาพการเลือกอะแดปเตอร์ใน AdapterConfigGUI" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png"></a></p>
+<p><a href="#R-image-a164fbaab2c74473ebaeee27b98d6830" class="lightbox-link"><img alt="ภาพการเลือกอะแดปเตอร์ใน AdapterConfigGUI" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a164fbaab2c74473ebaeee27b98d6830"><img alt="ภาพการเลือกอะแดปเตอร์ใน AdapterConfigGUI" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/adapterconfiggui-v140-2020-08-27-16-35-0.png"></a></p>
 <p>คลิก &ldquo;Smart Config&rdquo; และยูทิลิตี้จะดำเนินการส่วนที่เหลือให้</p>
 <h2 id="การกำหนดคากลองใน-swing-catalyst-settings">การกำหนดค่ากล้องใน Swing Catalyst Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>ตรวจสอบให้แน่ใจว่ากล้องเชื่อมต่อกับคอมพิวเตอร์แล้ว และไฟ LED ที่ด้านหลังของกล้องกะพริบสีเขียว</p>
-<p>เริ่ม Swing Catalyst และคลิก Settings -&gt; Cameras<a href="#R-image-b71e3ea40a9609a88a28b80d90f9aa74" class="lightbox-link"><img alt="ภาพหน้าจอเมนู Settings Cameras" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b71e3ea40a9609a88a28b80d90f9aa74"><img alt="ภาพหน้าจอเมนู Settings Cameras" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png"></a></p>
+<p>เริ่ม Swing Catalyst และคลิก Settings -&gt; Cameras<a href="#R-image-e738a53a09ee75e08ce8459280a66dfb" class="lightbox-link"><img alt="ภาพหน้าจอเมนู Settings Cameras" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e738a53a09ee75e08ce8459280a66dfb"><img alt="ภาพหน้าจอเมนู Settings Cameras" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-12-15-31-11-png.png"></a></p>
 <p>กล้อง Spinnaker จะแสดงคำว่า Spinnaker ในรายการกล้อง</p>
 <p>คลิก Advanced&hellip;</p>
-<p><a href="#R-image-075df09cdd3bf9ee53720c50acb4e481" class="lightbox-link"><img alt="ภาพหน้าต่าง Advanced Camera Settings" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-075df09cdd3bf9ee53720c50acb4e481"><img alt="ภาพหน้าต่าง Advanced Camera Settings" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png"></a></p>
+<p><a href="#R-image-e844af09236a4cd10d9152d3a15bd27c" class="lightbox-link"><img alt="ภาพหน้าต่าง Advanced Camera Settings" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e844af09236a4cd10d9152d3a15bd27c"><img alt="ภาพหน้าต่าง Advanced Camera Settings" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-38-23-png.png"></a></p>
 <p>หน้าต่าง Advanced Camera Settings จะแสดงการตั้งค่าทั้งหมดที่อาจเป็นประโยชน์ มาดูการตั้งค่าแต่ละรายการกัน</p>
 <p>การตั้งค่าที่เห็นด้านบนเป็นการตั้งค่าเริ่มต้นของกล้อง โปรดสังเกตว่าการตั้งค่าส่วนใหญ่ถูกตั้งเป็น Auto เราสามารถเปลี่ยนการตั้งค่าเหล่านี้เพื่อควบคุมคุณภาพภาพวิดีโอสำหรับการวิเคราะห์กีฬาได้ดียิ่งขึ้น</p>
-<p><a href="#R-image-09286bf309e9daecda7ce75348377766" class="lightbox-link"><img alt="ภาพการตั้งค่ากล้องขั้นสูง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-09286bf309e9daecda7ce75348377766"><img alt="ภาพการตั้งค่ากล้องขั้นสูง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png"></a></p>
+<p><a href="#R-image-82a6b55d07f1d76a919b7e8a1fffa9f9" class="lightbox-link"><img alt="ภาพการตั้งค่ากล้องขั้นสูง" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-82a6b55d07f1d76a919b7e8a1fffa9f9"><img alt="ภาพการตั้งค่ากล้องขั้นสูง" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-37-45-png.png"></a></p>
 <p><strong>การเปลี่ยนอัตราเฟรม:</strong></p>
 <p>การเลือกช่อง Frame rate control enable จะช่วยให้คุณตั้งอัตราเฟรมด้วยตนเองได้ หากไม่ได้เลือกช่องนี้ อัตราเฟรมจะถูกตั้งเป็น Auto (หมายเหตุ: อัตราเฟรมสูงสุดของกล้องนี้คือ 78 FPS เพื่อให้ได้อัตราเฟรมสูงสุด การตั้งค่าทั้งหมดต้องเป็นแบบ manual)</p>
 <p>อัตราเฟรมอาจถูกจำกัดโดยความเร็วชัตเตอร์และการตั้งค่า device link throughput ในกรณีนี้ เพื่อให้ได้อัตราเฟรมเต็มที่ เราต้องเพิ่ม throughput (จะอธิบายเพิ่มเติมในภายหลัง)</p>
-<p><a href="#R-image-5cfc6fc481f499ae94b22fa90df3b458" class="lightbox-link"><img alt="ภาพการตั้งค่าอัตราเฟรม" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5cfc6fc481f499ae94b22fa90df3b458"><img alt="ภาพการตั้งค่าอัตราเฟรม" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png"></a></p>
+<p><a href="#R-image-45428d8e3a7c2a6b26482c0cd7f6573c" class="lightbox-link"><img alt="ภาพการตั้งค่าอัตราเฟรม" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-45428d8e3a7c2a6b26482c0cd7f6573c"><img alt="ภาพการตั้งค่าอัตราเฟรม" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-42-55-png.png"></a></p>
 <p><strong>การเปลี่ยนความเร็วชัตเตอร์:</strong></p>
 <p>หากไม่ได้ถ่ายกลางแจ้งในแสงแดด ควรใช้ความเร็วชัตเตอร์แบบ manual จะดีกว่า มิฉะนั้นวิดีโออาจเบลอเกินไปสำหรับการวิเคราะห์กีฬา เพื่อลดความเบลอ เราแนะนำให้ใช้ความเร็วชัตเตอร์น้อยกว่า 2ms (2000μs) หากมีแสงสว่างเพียงพอ ความเร็วชัตเตอร์อาจน้อยกว่า 1ms (1000μs)</p>
-<p><a href="#R-image-13aa6c5b2781e6e4ec03285344942614" class="lightbox-link"><img alt="ภาพการตั้งค่าความเร็วชัตเตอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-13aa6c5b2781e6e4ec03285344942614"><img alt="ภาพการตั้งค่าความเร็วชัตเตอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png"></a></p>
+<p><a href="#R-image-a890cdf4ac39bba65e7d40e06462aa0e" class="lightbox-link"><img alt="ภาพการตั้งค่าความเร็วชัตเตอร์" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a890cdf4ac39bba65e7d40e06462aa0e"><img alt="ภาพการตั้งค่าความเร็วชัตเตอร์" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-32-02-png.png"></a></p>
 <p>ความสว่างของภาพวิดีโอเป็นผลรวมของความเร็วชัตเตอร์ การตั้งค่า Gain รูรับแสงของเลนส์ และปริมาณแสงที่มีอยู่</p>
 <p><strong>การเปลี่ยน Gain ของกล้อง:</strong></p>
 <p>การตั้ง Gain เป็น Auto เหมาะสำหรับสภาพแสงที่เปลี่ยนแปลง แต่หากคุณอยู่ในสภาพแวดล้อมในอาคาร การตั้ง Gain เป็น manual จะเป็นวิธีที่ดีกว่า</p>
 <p>ยิ่งค่า dB สูง ภาพยิ่งสว่าง อย่างไรก็ตามจะมี noise มากขึ้นด้วย ซึ่งอาจทำให้คุณภาพวิดีโอโดยรวมดูแย่ลง บางครั้งอาจคุ้มค่าที่จะตั้ง Gain สูงขึ้นเล็กน้อยโดยยอมรับ noise เพื่อให้สามารถลดความเร็วชัตเตอร์ลงได้ เพื่อให้ได้วิดีโอที่คมชัดในแต่ละเฟรมของวัตถุ (เช่น ไม้กอล์ฟที่จุดกระทบ, ไม้เบสบอล เป็นต้น)</p>
-<p><a href="#R-image-3e2a11fb460f1e555bcceb752405d425" class="lightbox-link"><img alt="ภาพการตั้งค่า Gain" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e2a11fb460f1e555bcceb752405d425"><img alt="ภาพการตั้งค่า Gain" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png"></a></p>
+<p><a href="#R-image-67881b7a8e40dfe3070eea679641969e" class="lightbox-link"><img alt="ภาพการตั้งค่า Gain" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-67881b7a8e40dfe3070eea679641969e"><img alt="ภาพการตั้งค่า Gain" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-35-58-png.png"></a></p>
 <p><strong>การเปลี่ยน Gamma และระดับสีดำ:</strong></p>
 <p>ระดับสีดำสามารถถือเป็นรูปแบบหนึ่งของการปรับความสว่าง โดยระดับสีดำสอดคล้องกับค่าต่ำสุดที่พิกเซลใดๆ บนเซ็นเซอร์กล้องจะส่งกลับมา</p>
 <p>การเพิ่มค่าระดับสีดำสามารถทำให้ภาพสว่างขึ้นได้</p>
 <p>คำแนะนำของเราคือปล่อยให้เป็นค่าเริ่มต้น</p>
-<p><a href="#R-image-af4f49d1674be61086aee1bd897897e8" class="lightbox-link"><img alt="ภาพการตั้งค่า Gamma และระดับสีดำ" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-af4f49d1674be61086aee1bd897897e8"><img alt="ภาพการตั้งค่า Gamma และระดับสีดำ" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png"></a></p>
+<p><a href="#R-image-f64d85b46f637d145f68b47e7c3f8fc3" class="lightbox-link"><img alt="ภาพการตั้งค่า Gamma และระดับสีดำ" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f64d85b46f637d145f68b47e7c3f8fc3"><img alt="ภาพการตั้งค่า Gamma และระดับสีดำ" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-10-41-19-png.png"></a></p>
 <p>สำหรับรายละเอียดเพิ่มเติมเกี่ยวกับการปรับปรุงภาพวิดีโอ โปรดดูบทความสนับสนุนนี้ซึ่งมีภาพเปรียบเทียบ: <a href="/sc-support/th/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
 <p><strong>การเปลี่ยนสมดุลสีขาวของกล้อง:</strong></p>
-<p><a href="#R-image-05cc1abcb30ba112403df38bb1859b6d" class="lightbox-link"><img alt="ภาพการตั้งค่าสมดุลสีขาว" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-05cc1abcb30ba112403df38bb1859b6d"><img alt="ภาพการตั้งค่าสมดุลสีขาว" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png"></a></p>
+<p><a href="#R-image-61bbab6c6cd1dd13493885aa6619623a" class="lightbox-link"><img alt="ภาพการตั้งค่าสมดุลสีขาว" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-61bbab6c6cd1dd13493885aa6619623a"><img alt="ภาพการตั้งค่าสมดุลสีขาว" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-13-11-02-14-png.png"></a></p>
 <p>โดยทั่วไปเราแนะนำให้ปล่อยการตั้งค่านี้เป็น Auto (ต่อเนื่อง) แต่เพื่อให้ได้อัตราเฟรมสูงสุด การตั้งค่านี้ก็ต้องปิดด้วยเช่นกัน</p>
 <p>สมดุลสีขาวจะส่งผลต่ออุณหภูมิสีของภาพวิดีโอ และหากสมดุลสีขาวผิดพลาดมาก ภาพจะดูไม่ดี มักทำให้ภาพดูแดงหรือเขียวเกินไป</p>
 <p>การเปิดใช้สมดุลสีขาวอัตโนมัติจะทำให้อัตราเฟรมลดลงเหลือ 200 FPS แทนที่จะเป็น 226 FPS ซึ่งเป็นค่าสูงสุดของกล้อง</p>
 <p><strong>Device link throughput:</strong></p>
 <p>สำหรับกล้อง GigE device link throughput และขนาด packet มีความเชื่อมโยงกัน ในแง่ที่ว่าเพื่อใช้ throughput สูงสุด ขนาด packet ต้องถูกตั้งเป็น 9000 เพื่อให้ได้อัตราเฟรมเต็มที่ ต้องดำเนินการนี้</p>
-<p><a href="#R-image-0ae1fcc33368ed5808f387aacb5d129a" class="lightbox-link"><img alt="ภาพการตั้งค่า device link throughput" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0ae1fcc33368ed5808f387aacb5d129a"><img alt="ภาพการตั้งค่า device link throughput" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
+<p><a href="#R-image-6a2131a951b304704608cd9b62c40fc3" class="lightbox-link"><img alt="ภาพการตั้งค่า device link throughput" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6a2131a951b304704608cd9b62c40fc3"><img alt="ภาพการตั้งค่า device link throughput" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
 <p><strong>การใช้ Region Of Interest (ROI):</strong></p>
-<p><a href="#R-image-0f7d6915dfeb7b7a5b977236b7b46677" class="lightbox-link"><img alt="ภาพการตั้งค่า Region of Interest" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0f7d6915dfeb7b7a5b977236b7b46677"><img alt="ภาพการตั้งค่า Region of Interest" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png"></a></p>
+<p><a href="#R-image-2e899b68e61933a52cfac1962d76aa08" class="lightbox-link"><img alt="ภาพการตั้งค่า Region of Interest" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e899b68e61933a52cfac1962d76aa08"><img alt="ภาพการตั้งค่า Region of Interest" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-44-07-png.png"></a></p>
 <p>Region of Interest เป็นวิธีลดขนาดภาพ และด้วยเหตุนี้ยังลดแบนด์วิดท์ที่จำเป็นสำหรับแต่ละภาพด้วย การลดขนาดภาพช่วยให้เพิ่มอัตราเฟรมได้เนื่องจากความต้องการในการอ่านพิกเซลโดยรวมน้อยลง</p>
 <p>การลดความสูงและความกว้างสามารถส่งผลดีต่ออัตราเฟรมและลดความต้องการแบนด์วิดท์</p>
 <p>ในการเปลี่ยน Region of Interest เราสามารถลากแถบเลื่อนความสูงไปทางซ้ายเพื่อลดความสูงของภาพ</p>
-<p><a href="#R-image-59d1ae46486a87c6573101536301a816" class="lightbox-link"><img alt="ภาพเคลื่อนไหวการปรับความสูงของ Region of Interest" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-59d1ae46486a87c6573101536301a816"><img alt="ภาพเคลื่อนไหวการปรับความสูงของ Region of Interest" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png"></a></p>
+<p><a href="#R-image-5bd9e196c7827fbc239423856cd7a431" class="lightbox-link"><img alt="ภาพเคลื่อนไหวการปรับความสูงของ Region of Interest" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bd9e196c7827fbc239423856cd7a431"><img alt="ภาพเคลื่อนไหวการปรับความสูงของ Region of Interest" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-52-58-gif.png"></a></p>
 <p>เนื่องจากเราได้เปลี่ยนความสูงของภาพแล้ว เราสามารถเปลี่ยนค่าออฟเซต Y ได้ด้วย ซึ่งอาจเป็นประโยชน์เป็นทางเลือกแทนการเคลื่อนย้ายกล้องจริงๆ เนื่องจากขนาดภาพที่ลดลง</p>
-<p><a href="#R-image-e6bcf1b1c8679f39d9e2c3458c462a7f" class="lightbox-link"><img alt="ภาพเคลื่อนไหวการปรับค่าออฟเซต Y" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6bcf1b1c8679f39d9e2c3458c462a7f"><img alt="ภาพเคลื่อนไหวการปรับค่าออฟเซต Y" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png"></a></p>
+<p><a href="#R-image-c0bfbae593be62b28ba30c887fda25c7" class="lightbox-link"><img alt="ภาพเคลื่อนไหวการปรับค่าออฟเซต Y" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c0bfbae593be62b28ba30c887fda25c7"><img alt="ภาพเคลื่อนไหวการปรับค่าออฟเซต Y" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/2020-08-14-12-51-48-gif.png"></a></p>
 <p>หากเรากลับไปที่แท็บ Camera และดูที่อัตราเฟรม เราจะเห็นว่าขณะนี้สามารถตั้งอัตราเฟรมสูงสุดได้เพิ่มขึ้น เนื่องจากเราได้ใช้ Region of Interest โดยการลดความสูงของเซ็นเซอร์กล้อง</p>
-<p><a href="#R-image-c03996b711e57ee25d0b87358d6f85ad" class="lightbox-link"><img alt="ภาพหน้าต่างการตั้งค่ากล้องหลังปรับ ROI" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c03996b711e57ee25d0b87358d6f85ad"><img alt="ภาพหน้าต่างการตั้งค่ากล้องหลังปรับ ROI" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png"></a></p>
+<p><a href="#R-image-fb322e9124534ca1002a7cbeca2638d5" class="lightbox-link"><img alt="ภาพหน้าต่างการตั้งค่ากล้องหลังปรับ ROI" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fb322e9124534ca1002a7cbeca2638d5"><img alt="ภาพหน้าต่างการตั้งค่ากล้องหลังปรับ ROI" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-46-45-png.png"></a></p>
 <h2 id="การแกไขปญหา">การแก้ไขปัญหา<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>โปรดดูคำแนะนำเกี่ยวกับ GigE Vision / Gigabit Ethernet ของเรา:</p>
 <p><a href="/sc-support/th/cameras-video/gige-network-setup/index.html">gige-network-setup.md</a></p>
@@ -365,8 +395,8 @@
 <p><strong>เฟรมหาย:</strong></p>
 <p>แม้ว่ากล้อง GigE ส่วนใหญ่จะมีความน่าเชื่อถือสูง แต่ขึ้นอยู่กับการตั้งค่าเครือข่ายและการตั้งค่ากล้อง อาจจำเป็นต้องปรับแต่งการตั้งค่าเพื่อหลีกเลี่ยงเฟรมหาย</p>
 <p>ตรวจสอบให้แน่ใจว่าขนาด packet ถูกตั้งเป็น 9000 ซึ่งเป็นสิ่งสำคัญมากสำหรับการแสดงออกที่ดี มิฉะนั้นมีความเป็นไปได้จริงที่คุณอาจสูญเสียเฟรม นอกจากนี้ยังสำคัญที่อะแดปเตอร์เครือข่ายต้องถูกตั้งค่าให้ใช้ jumbo frames ขนาด 9kB ด้วย เพื่อให้กล้องและอะแดปเตอร์เครือข่ายตรงกัน</p>
-<p><a href="#R-image-bc2b1a4fad4ab106fdde743a722cf983" class="lightbox-link"><img alt="ภาพการตั้งค่า packet size และ throughput" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc2b1a4fad4ab106fdde743a722cf983"><img alt="ภาพการตั้งค่า packet size และ throughput" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
+<p><a href="#R-image-c10aa5653e6248b3ae582180e6e13eb0" class="lightbox-link"><img alt="ภาพการตั้งค่า packet size และ throughput" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c10aa5653e6248b3ae582180e6e13eb0"><img alt="ภาพการตั้งค่า packet size และ throughput" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360015862520/motioncatalyst-2020-08-14-13-47-17-png.png"></a></p>
 <p>กล้อง GigE หนึ่งตัวที่มีความละเอียด 1440 x 1200 ที่ 78 FPS จะใช้แบนด์วิดท์ประมาณ 134MB/s ต่อกล้อง ดังนั้นจึงเป็นเรื่องสำคัญที่ต้องมีการ์ดควบคุมเครือข่ายเฉพาะตามคำแนะนำของเราสำหรับการติดตั้งกล้องหลายตัว (ในกรณีส่วนใหญ่) หากคุณซื้อกล้อง GigE ผ่านเรา คุณจะได้รับการ์ดเครือข่าย PCI Express แบบ dual port สำหรับติดตั้ง</p>
 <p>โดยปกติเราไม่แนะนำให้รันกล้องมากกว่าหนึ่งตัวบนอะแดปเตอร์เครือข่ายเดียวกัน</p>
 <p><strong>ตัวกรองไดรเวอร์:</strong></p>
@@ -532,7 +562,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-gige-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html" lang="fr">Français</option>
@@ -594,8 +623,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537820" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537820" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542933" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542933" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

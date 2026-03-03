@@ -21,8 +21,7 @@
     <meta itemprop="description" content="Ovaj članak opisuje kako izvesti neobrađene podatke iz Swing Catalyst ili Motion Catalyst kao TSV datoteke.">
     <meta itemprop="wordCount" content="262">
     <title>Kako izvesti neobrađene podatke :: Podrška Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-raw-data/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-raw-data/index.html" rel="alternate" hreflang="fr">
@@ -58,26 +57,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-raw-data/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-raw-data/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-raw-data/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537837" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537837" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537837" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537837" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537837" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542953" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542953" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542953" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542953" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542953" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.hr.js?1772537837";
+      window.relearn.index_js_url="/sc-support/searchindex.hr.js?1772542953";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537837" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537837" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537837" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542953" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542953" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542953" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537837" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537837" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537837" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537837" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537837" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542953" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542953" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542953" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542953" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542953" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -157,6 +156,20 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#izvoz-podataka-iz-explorera">Izvoz podataka iz Explorera</a></li>
+    <li><a href="#odabir-izvoza-podataka">Odabir izvoza podataka</a></li>
+    <li><a href="#opcije-neobrađenih-podataka">Opcije neobrađenih podataka</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hr/index.html"><span itemprop="name">Swing Catalyst podrška</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hr/software-features/index.html"><span itemprop="name">Softver i značajke</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kako izvesti neobrađene podatke</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -193,8 +206,8 @@
 <p>Želite li izvesti podatke o učeniku? Pogledajte ovaj <a href="/sc-support/hr/software-features/export-contacts/index.html">članak</a>.</p>
 <p>Postoji nekoliko načina za izvoz podataka — putem Explorera i iz Niza. Obje opcije nude istu funkcionalnost.</p>
 <h2 id="izvoz-podataka-iz-explorera">Izvoz podataka iz Explorera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-10c45de48e7e826cea5e13a4b55c24b4" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-10c45de48e7e826cea5e13a4b55c24b4"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-9cdccd6cb44ad625da47ab81faf0d6df" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9cdccd6cb44ad625da47ab81faf0d6df"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>U Exploreru se podaci mogu izvesti desnim klikom na Snimak, odabirom opcije Izvoz i odabirom između dostupnih mogućnosti, ili povlačenjem Snimaka na popis za izvoz.</p>
 <p>Odabir iz izbornika</p>
 <p>Funkcija</p>
@@ -208,20 +221,20 @@ Izvozi odabrani Snimak s opcijama izvoza neobrađenih podataka</p>
 <p>Izvezi sesiju kao datoteke neobrađenih podataka
 Izvozi cijelu Sesiju s opcijama izvoza neobrađenih podataka</p>
 <p>Pregled opcija izvoza dostupnih desnim klikom:</p>
-<p><a href="#R-image-4837c9af814a0fac0684697ccf84557f" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4837c9af814a0fac0684697ccf84557f"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-7156add6271deb9884abe3a9b528254f" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7156add6271deb9884abe3a9b528254f"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
 <p>Popis za izvoz:</p>
-<p><a href="#R-image-8361076521aaf270bfa512d9042588d3" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8361076521aaf270bfa512d9042588d3"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-0c80fc54bb9b213d1a26f8f0cc00d501" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c80fc54bb9b213d1a26f8f0cc00d501"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="odabir-izvoza-podataka">Odabir izvoza podataka<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Moguće je odabrati između nekoliko različitih opcija pri izvozu podataka.</p>
 <p>Ovaj članak uglavnom se fokusira na neobrađene podatke.</p>
 <p>Za izvoz neobrađenih podataka, provjerite jeste li odabrali „Raw Data&quot; u dijaloškom okviru za izvoz.</p>
-<p><a href="#R-image-dcb3185b21200197fe4094acc3842aa9" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dcb3185b21200197fe4094acc3842aa9"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-289ea81cd2f5a3c4fe9c0fdbec5f6a60" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-289ea81cd2f5a3c4fe9c0fdbec5f6a60"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <h2 id="opcije-neobrađenih-podataka">Opcije neobrađenih podataka<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-d110f67018a896ad1463b32228ff06a2" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d110f67018a896ad1463b32228ff06a2"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
+<p><a href="#R-image-65165364ca3d4a42e7c8cd3a14e4efc6" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-65165364ca3d4a42e7c8cd3a14e4efc6"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
 <p>Napominjemo da se ova funkcionalnost još uvijek poboljšava — trenutačno je mnogo opcija objedinjeno pod „Raw data&quot;.</p>
 <hr>
 <p><em>Zadnje ažuriranje: 2023-12-15</em> | <a href="/sc-support/hr/software-features/export-raw-data/index.html">Pogledaj na službenom stranici podrške</a></p>
@@ -326,7 +339,6 @@ Izvozi cijelu Sesiju s opcijama izvoza neobrađenih podataka</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-raw-data/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-raw-data/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-raw-data/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-raw-data/index.html" lang="fr">Français</option>
@@ -388,8 +400,8 @@ Izvozi cijelu Sesiju s opcijama izvoza neobrađenih podataka</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537837" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537837" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542953" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542953" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

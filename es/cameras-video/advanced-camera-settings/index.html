@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1318">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Guía de la Configuración Avanzada de Cámara :: Soporte de Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/advanced-camera-settings/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537808" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537808" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537808" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542920" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542920" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772537808";
+      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772542920";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.es.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.es.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['es'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537808" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542920" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,29 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#pestaña-de-cámara">Pestaña de Cámara</a>
+      <ul>
+        <li><a href="#velocidad-de-fotogramas">Velocidad de Fotogramas</a></li>
+      </ul>
+    </li>
+    <li><a href="#pestaña-region-of-interest-roi--aoi">Pestaña Region of Interest (ROI / AOI)</a></li>
+    <li><a href="#pestaña-de-filtro">Pestaña de Filtro</a></li>
+    <li><a href="#resolución-de-problemas"><a href="flir-blackfly-usb-setup.md">Resolución de problemas</a></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/cameras-video/index.html"><span itemprop="name">Cámaras y Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Guía de la Configuración Avanzada de Cámara</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -204,63 +226,63 @@
 
 <p>Este artículo repasa las diferentes configuraciones de cámara. Algunos de estos ajustes tienen nombres ligeramente diferentes según el tipo de cámara o el fabricante.</p>
 <p>La configuración de cámara está dividida en diferentes pestañas.</p>
-<p><a href="#R-image-acb0fdd0d7e706cb1011f0ac428040ec" class="lightbox-link"><img alt="mceclip7.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-acb0fdd0d7e706cb1011f0ac428040ec"><img alt="mceclip7.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png"></a></p>
+<p><a href="#R-image-fad5dd5b33d602a9cc20f791077481ed" class="lightbox-link"><img alt="mceclip7.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fad5dd5b33d602a9cc20f791077481ed"><img alt="mceclip7.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/mceclip7-png.png"></a></p>
 <p>La ventana de Configuración Avanzada de Cámara muestra todos los ajustes que pueden resultarte útiles. Veamos cada uno de ellos individualmente.</p>
 <h2 id="pestaña-de-cámara">Pestaña de Cámara<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p>Ejemplo de configuración predeterminada de una cámara FLIR Blackfly S:<a href="#R-image-3a4d5ead175f91d6efa0d14e3ec47359" class="lightbox-link"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a4d5ead175f91d6efa0d14e3ec47359"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png"></a></p>
+<p>Ejemplo de configuración predeterminada de una cámara FLIR Blackfly S:<a href="#R-image-df467b5c61f2b40d2ba2462055bbba60" class="lightbox-link"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-df467b5c61f2b40d2ba2462055bbba60"><img alt="2020-08-13_09-55-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-09-55-40-png.png"></a></p>
 <p>Los ajustes que ves arriba son los de configuración predeterminada de la cámara. Ten en cuenta que la mayoría están en modo Auto; podemos cambiarlos para tener un mejor control sobre la calidad de la imagen de vídeo en el análisis deportivo.</p>
 <h3 id="velocidad-de-fotogramas">Velocidad de Fotogramas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Marcar la casilla de habilitación del control de Velocidad de Fotogramas te permitirá establecerla manualmente. Si esta casilla no está marcada, la velocidad de fotogramas se establece esencialmente en Auto (nota: la velocidad de fotogramas máxima de esta cámara es de 226 FPS).</p>
 <p>Si obtienes una velocidad de fotogramas inferior a la esperada, podría deberse a la exposición/velocidad de obturación de la cámara; por ejemplo, si la exposición es demasiado alta, no es posible alcanzar velocidades de obturación altas. Consulta la sección de resolución de problemas.</p>
-<p><a href="#R-image-853f3de4af2e16e8db228b8c7033dd45" class="lightbox-link"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-853f3de4af2e16e8db228b8c7033dd45"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png"></a></p>
+<p><a href="#R-image-3e34de6a8e5f2e118fe62dd500315904" class="lightbox-link"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e34de6a8e5f2e118fe62dd500315904"><img alt="2020-08-13_10-29-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-29-02-png.png"></a></p>
 <p><strong>Cambiar la velocidad de obturación:</strong></p>
 <p>A menos que estés en exteriores o con una gran cantidad de luz, es mejor usar una velocidad de obturación manual.</p>
 <p>Un tiempo de exposición/velocidad de obturación superior a 2 ms puede provocar imágenes borrosas en movimiento durante el análisis deportivo.</p>
 <p>Para reducir el desenfoque de fotogramas, recomendamos una velocidad de obturación inferior a 2 ms (2000 μs); con una iluminación adecuada, la velocidad de obturación puede ser inferior a 1 ms (1000 μs).</p>
-<p><a href="#R-image-49674f3a3bc7ed48c7e0f6d0fd593f3e" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-49674f3a3bc7ed48c7e0f6d0fd593f3e"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png"></a></p>
+<p><a href="#R-image-bc8053376b9e040d05ac6121ddf763c4" class="lightbox-link"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc8053376b9e040d05ac6121ddf763c4"><img alt="2020-08-13_10-32-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-32-02-png.png"></a></p>
 <p>El brillo de la imagen de vídeo depende de una combinación de la velocidad de obturación, los ajustes de Gain, la apertura del objetivo y la cantidad de luz disponible.</p>
 <p><strong>Cambiar el Gain de la cámara:</strong></p>
 <p>Tener el Gain en Auto es preferible en condiciones de luz cambiante, pero si trabajas en un entorno de interior, configurarlo manualmente es la mejor opción.</p>
 <p>Cuanto mayor sea el valor en dB, más brillante será la imagen; sin embargo, también habrá más ruido como resultado, lo que puede hacer que la calidad general del vídeo parezca deficiente. A veces vale la pena tener un Gain ligeramente más alto a expensas del ruido, con el fin de reducir la velocidad de obturación y obtener un vídeo nítido fotograma a fotograma de un objeto (por ejemplo, el palo en el Impacto, un bate de béisbol, etc.).</p>
-<p><a href="#R-image-e68b1a5eb2e452688c15ba20e052ea4c" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e68b1a5eb2e452688c15ba20e052ea4c"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png"></a></p>
+<p><a href="#R-image-f2e4df870c64dea8c95395fea95d9e94" class="lightbox-link"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f2e4df870c64dea8c95395fea95d9e94"><img alt="2020-08-13_10-35-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-35-58-png.png"></a></p>
 <p>Nota: Los valores reales de Gain (dB) pueden variar entre modelos y fabricantes.</p>
 <p><strong>Cambiar Gamma y los niveles de negro:</strong></p>
 <p>El nivel de negro puede considerarse una forma de ajuste de brillo, donde dicho nivel corresponde al valor mínimo que devolverá cualquier píxel del sensor de la cámara.</p>
 <p>Al aumentar el valor del nivel de negro, podemos hacer que la imagen sea más brillante.</p>
 <p>Nuestra recomendación es dejarlo en los valores predeterminados.</p>
-<p><a href="#R-image-9da6bd288488c579e32f5527ca54c60b" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9da6bd288488c579e32f5527ca54c60b"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png"></a></p>
+<p><a href="#R-image-e20562d3a64ee725af3115e5b20f5d92" class="lightbox-link"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e20562d3a64ee725af3115e5b20f5d92"><img alt="2020-08-13_10-41-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-10-41-19-png.png"></a></p>
 <p>Para más detalles sobre cómo mejorar la imagen de vídeo, consulta este artículo de soporte que incluye fotos comparativas: <a href="/sc-support/es/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
 <p><strong>Cambiar el balance de blancos de la cámara:</strong></p>
-<p><a href="#R-image-b7ffbfedc021f3c060ef70dd81746466" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7ffbfedc021f3c060ef70dd81746466"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png"></a></p>
+<p><a href="#R-image-5303dca1b69887d72a353b5a569c49b3" class="lightbox-link"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5303dca1b69887d72a353b5a569c49b3"><img alt="2020-08-13_11-02-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-02-14-png.png"></a></p>
 <p>Normalmente recomendamos dejar este ajuste en Auto (continuo), pero para alcanzar la velocidad de fotogramas máxima también es necesario desactivarlo.</p>
 <p>El balance de blancos afecta a la temperatura de color de la imagen de vídeo y, si está muy desajustado, la imagen no se verá bien, dejándola con un aspecto demasiado rojizo o verdoso.</p>
 <p>Al activar el balance de blancos automático, sacrificamos algo de velocidad de fotogramas, quedándonos en 200 FPS en lugar de los 226 FPS máximos de la cámara.</p>
 <p><strong>Rendimiento del enlace del dispositivo:</strong></p>
 <p>Recomendamos dejarlo en el ajuste predeterminado, aunque reducirlo puede disminuir los fotogramas perdidos a costa de un menor FPS.</p>
 <p>Nota: No todas las cámaras disponen de este ajuste.</p>
-<p><strong><a href="#R-image-c9eace1af948dc1d00aebd0089b8216b" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9eace1af948dc1d00aebd0089b8216b"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
+<p><strong><a href="#R-image-8d005b0d8a1e059ffb0a0ebdccad28c0" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d005b0d8a1e059ffb0a0ebdccad28c0"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
 <h2 id="pestaña-region-of-interest-roi--aoi">Pestaña Region of Interest (ROI / AOI)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-f6c87c36b51aa870ee892ff3975e08bc" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f6c87c36b51aa870ee892ff3975e08bc"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png"></a></p>
+<p><a href="#R-image-ad5a7003b4ee1bd9470ad8449eb1789a" class="lightbox-link"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ad5a7003b4ee1bd9470ad8449eb1789a"><img alt="2020-08-14_12-44-07.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-44-07-png.png"></a></p>
 <p>Para las cámaras que disponen de esta funcionalidad, es preferible usar Region of Interest / Área de interés en lugar de recorte.</p>
 <p>Region of Interest (ROI) es una forma de reducir el tamaño de la imagen y también el ancho de banda necesario para cada imagen. Al reducir el tamaño de la imagen, podemos aumentar la velocidad de fotogramas, ya que el requisito total de lectura de píxeles es menor. El ROI puede tener un efecto positivo en la velocidad de fotogramas y puede reducir el uso de ancho de banda de la cámara.</p>
 <p>Para cambiar la Region of Interest, podemos arrastrar el control deslizante de altura hacia la izquierda para reducir la altura de la imagen.</p>
-<p><a href="#R-image-00e43c55a31b116a23efe12a13625db7" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00e43c55a31b116a23efe12a13625db7"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png"></a></p>
+<p><a href="#R-image-c8567a4667299dfbe4eb364de7080360" class="lightbox-link"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c8567a4667299dfbe4eb364de7080360"><img alt="2020-08-14_12-52-58.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-52-58-gif.png"></a></p>
 <p>Como hemos cambiado la altura de la imagen, ahora también podemos cambiar el desplazamiento en Y, lo que puede ser útil como alternativa a mover físicamente la cámara debido al tamaño reducido de la imagen.</p>
-<p><a href="#R-image-c4d6f49d73f9f315a74b238326c756b8" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c4d6f49d73f9f315a74b238326c756b8"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png"></a></p>
+<p><a href="#R-image-539f06dec5982065c15e35399b79b3ef" class="lightbox-link"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-539f06dec5982065c15e35399b79b3ef"><img alt="2020-08-14_12-51-48.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-51-48-gif.png"></a></p>
 <p>Si volvemos a la pestaña de Cámara y miramos la velocidad de fotogramas, ahora vemos que la velocidad de fotogramas máxima se puede establecer en 288 (esto se debe a que hemos aplicado una Region of Interest reduciendo la altura del sensor de la cámara).</p>
-<p><a href="#R-image-bd82cfea5d69303f682f704646806bbe" class="lightbox-link"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd82cfea5d69303f682f704646806bbe"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png"></a></p>
+<p><a href="#R-image-3d215d484a702254bc7820f4949f64c7" class="lightbox-link"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d215d484a702254bc7820f4949f64c7"><img alt="2020-08-14_12-53-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-14-12-53-18-png.png"></a></p>
 <h2 id="pestaña-de-filtro">Pestaña de Filtro<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Estos ajustes están disponibles para todos los tipos de cámara, aunque los resultados pueden variar según la resolución y la configuración de la cámara. Para leer más sobre cómo mejorar la calidad de imagen de tu cámara, consulta <a href="/sc-support/es/cameras-video/improving-image-quality/index.html">este artículo.</a></p>
 <h2 id="resolución-de-problemas"><a href="/sc-support/es/cameras-video/flir-blackfly-usb-setup/index.html">Resolución de problemas</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -271,8 +293,8 @@
 <p>Establecer manualmente tus FPS en 60 o 120 FPS debería ayudar a que el parpadeo sea mucho menos perceptible. Considera actualizar las luces a LED.</p>
 <h4 id="fotogramas-perdidos"><strong>Fotogramas perdidos</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Reducir el rendimiento del enlace del dispositivo en cada dispositivo puede ayudar a evitar fotogramas perdidos. Si se reduce lo suficiente, el rendimiento afectará a la velocidad de fotogramas.</p>
-<p><strong><a href="#R-image-8c836e3f7b8b4a6030a7649361831e9a" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c836e3f7b8b4a6030a7649361831e9a"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
+<p><strong><a href="#R-image-f864be0f291fdf2b870648bb473e4e88" class="lightbox-link"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f864be0f291fdf2b870648bb473e4e88"><img alt="2020-08-13_11-09-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/5515971190290/2020-08-13-11-09-01-png.png"></a></strong></p>
 <p>Especialmente en configuraciones con varias cámaras, reducir el rendimiento puede ayudar a estabilizar el sistema a expensas de algunos fotogramas por segundo. Para las cámaras que no disponen de este ajuste, reducir los FPS y usar Region Of Interest puede ayudar a disminuir el consumo de ancho de banda.</p>
 <p>Ejemplo de uso de ancho de banda:</p>
 <p>Se dice que USB 3.0 es capaz de alcanzar 5 Gb/s, es decir, 625 MB/s.</p>
@@ -394,7 +416,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/advanced-camera-settings/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/advanced-camera-settings/index.html" lang="es" selected data-selected>Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/advanced-camera-settings/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/advanced-camera-settings/index.html" lang="fr">Français</option>
@@ -456,8 +477,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542920" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

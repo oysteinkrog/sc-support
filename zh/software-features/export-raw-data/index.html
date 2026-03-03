@@ -21,8 +21,7 @@
     <meta itemprop="description" content="本文介绍如何将 Swing Catalyst 或 Motion Catalyst 中的原始数据导出为 TSV 文件。">
     <meta itemprop="wordCount" content="39">
     <title>如何导出原始数据 :: Swing Catalyst 支持</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-raw-data/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-raw-data/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-raw-data/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-raw-data/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-raw-data/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537816" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537816" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537816" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542928" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542928" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542928" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772537816";
+      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772542928";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537816" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542928" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537816" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537816" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537816" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537816" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537816" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542928" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542928" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542928" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542928" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542928" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,20 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#从资源管理器导出数据">从资源管理器导出数据</a></li>
+    <li><a href="#数据导出选项">数据导出选项</a></li>
+    <li><a href="#原始数据选项">原始数据选项</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/index.html"><span itemprop="name">Swing Catalyst 支持</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/software-features/index.html"><span itemprop="name">软件与功能</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">如何导出原始数据</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -194,8 +207,8 @@
 <p>希望导出学生信息？请参阅此<a href="/sc-support/zh/software-features/export-contacts/index.html">文章</a>。</p>
 <p>导出数据有多种方式，可通过资源管理器或从堆栈进行操作，两种方式提供相同的功能。</p>
 <h2 id="从资源管理器导出数据">从资源管理器导出数据<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-7a345c13404e1ed238e7c6df639c0989" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a345c13404e1ed238e7c6df639c0989"><img alt="MotionCatalyst_94hdcRa9My.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-7d6c756d509a35697ea3bb51defd6e95" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d6c756d509a35697ea3bb51defd6e95"><img alt="MotionCatalyst_94hdcRa9My.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>在资源管理器中，可通过右键单击某条录制，选择&quot;导出&quot;并从可用选项中进行选择，或将录制拖动到导出列表来导出数据。</p>
 <p>菜单选项</p>
 <p>功能</p>
@@ -209,20 +222,20 @@
 <p>将会话导出为原始数据文件
 使用原始数据导出选项导出整个会话</p>
 <p>右键单击后可用导出选项概览：</p>
-<p><a href="#R-image-d3e703f5d7ecfde7a64bfc45225e2cd1" class="lightbox-link"><img alt="l38taztNxr.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d3e703f5d7ecfde7a64bfc45225e2cd1"><img alt="l38taztNxr.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-f9c9cc24bde4b5af27fd37a255f96d2b" class="lightbox-link"><img alt="l38taztNxr.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f9c9cc24bde4b5af27fd37a255f96d2b"><img alt="l38taztNxr.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
 <p>导出列表：</p>
-<p><a href="#R-image-047498f3ee13d62b8e0ade9796d83c9e" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-047498f3ee13d62b8e0ade9796d83c9e"><img alt="MotionCatalyst_fng2UlTl9G.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-f2e8c250eb61f95b79c3cf26f4f2fb5b" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f2e8c250eb61f95b79c3cf26f4f2fb5b"><img alt="MotionCatalyst_fng2UlTl9G.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="数据导出选项">数据导出选项<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>导出数据时可从几种不同选项中进行选择。</p>
 <p>本文主要介绍原始数据的导出。</p>
 <p>如需导出原始数据，请确保在导出对话框中选择&quot;Raw Data&quot;。</p>
-<p><a href="#R-image-5135445e516a04b8be1dfd425b746e85" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5135445e516a04b8be1dfd425b746e85"><img alt="MotionCatalyst_kvn32jJ3Qh.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-3e86e7ff777e1619e7673e01a6a8f6c7" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e86e7ff777e1619e7673e01a6a8f6c7"><img alt="MotionCatalyst_kvn32jJ3Qh.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <h2 id="原始数据选项">原始数据选项<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-b83f0c0f0303dc67706b84cb40309fd1" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b83f0c0f0303dc67706b84cb40309fd1"><img alt="MotionCatalyst_YCBDGYuqJi.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
+<p><a href="#R-image-43eeb18ea99ebc9123be984616f7dec6" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png 的界面截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43eeb18ea99ebc9123be984616f7dec6"><img alt="MotionCatalyst_YCBDGYuqJi.png 的界面截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
 <p>请注意，此功能仍在持续改进中，目前许多选项已归入&quot;Raw data&quot;类别中。</p>
 <hr>
 <p><em>最后更新：2023-12-15</em> | <a href="/sc-support/zh/software-features/export-raw-data/index.html">在官方支持网站上查看</a></p>
@@ -327,7 +340,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">语言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-raw-data/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-raw-data/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-raw-data/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-raw-data/index.html" lang="fr">Français</option>
@@ -389,8 +401,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537816" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537816" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542928" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542928" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

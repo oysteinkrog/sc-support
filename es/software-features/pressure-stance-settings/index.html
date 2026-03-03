@@ -23,8 +23,7 @@
     <meta itemprop="wordCount" content="546">
     <meta itemprop="keywords" content="Pressure-Data">
     <title>Uso de las nuevas configuraciones de Presión y Postura :: Soporte de Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="fr">
@@ -60,27 +59,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/pressure-stance-settings/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537808" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537808" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537808" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542920" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542920" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772537808";
+      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772542920";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/lunr/lunr.es.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/lunr/lunr.es.min.js?1772542920" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['es'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537808" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537808" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537808" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542920" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542920" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542920" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -160,6 +159,25 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#ancho-de-postura-dinámico"><strong>Ancho de Postura Dinámico</strong></a></li>
+    <li><a href="#distancia-de-placas-configurable"><strong>Distancia de Placas Configurable</strong></a>
+      <ul>
+        <li><a href="#beneficios-clave">Beneficios Clave</a></li>
+        <li><a href="#cómo-usar-la-posición-de-las-placas">Cómo Usar la Posición de las Placas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/software-features/index.html"><span itemprop="name">Software y funciones</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Uso de las nuevas configuraciones de Presión y Postura</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -215,8 +233,8 @@
 <p><strong>Cómo Usar el Ancho de Postura Dinámico</strong></p>
 <p><strong>Acceso a la Función</strong>: Navegue a la sección de herramientas de análisis y seleccione 1) &lsquo;Bloquear a la primera Fase&rsquo;, 2) &lsquo;Bloquear a la Fase actual&rsquo; o 3) &lsquo;Desbloqueado&rsquo;.</p>
 <p><strong>Análisis Comparativo</strong>: Use los datos para comparar entre múltiples Swings, lo que ayuda a identificar patrones o áreas de mejora.</p>
-<p><a href="#R-image-eb198ab14b40dbfbaaa89ed5f57fb6b8" class="lightbox-link"><img alt="nueva configuración" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/new-setting-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb198ab14b40dbfbaaa89ed5f57fb6b8"><img alt="nueva configuración" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/new-setting-png.png"></a></p>
+<p><a href="#R-image-97ae353f345737725e4e06ecbccb8ce7" class="lightbox-link"><img alt="nueva configuración" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/new-setting-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-97ae353f345737725e4e06ecbccb8ce7"><img alt="nueva configuración" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/new-setting-png.png"></a></p>
 <h2 id="distancia-de-placas-configurable"><strong>Distancia de Placas Configurable</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>La función &lsquo;Posición de las placas&rsquo; en el cuadro de datos &lsquo;Presión y Postura&rsquo; permite a los Usuarios establecer con precisión la distancia entre las <strong>Placas de Presión Dual</strong>. Esto garantiza que el Ancho de postura se Capture y refleje con exactitud durante el análisis del Swing, lo que conduce a datos e información más confiables. Establecer correctamente la distancia entre las placas es fundamental para obtener mediciones precisas del Ancho de postura.</p>
 <h3 id="beneficios-clave">Beneficios Clave<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -238,8 +256,8 @@
 </li>
 </ul>
 <p><strong>Garantizar la Precisión</strong>: Verifique siempre que la distancia ingresada refleje la Configuración real de las placas. Ingresar el valor correcto es esencial para obtener mediciones precisas del Ancho de postura.</p>
-<p><a href="#R-image-ce8ce462836292e5c880031c7adf233c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/15754080839580.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce8ce462836292e5c880031c7adf233c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/15754080839580.png"></a></p>
+<p><a href="#R-image-491fd237675c717f855406150b653726" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/15754080839580.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-491fd237675c717f855406150b653726"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/15715732237084/15754080839580.png"></a></p>
 <hr>
 <p><em>Última actualización: 2024-09-05</em> | <a href="/sc-support/es/software-features/pressure-stance-settings/index.html">Ver en el sitio de soporte oficial</a></p>
 
@@ -343,7 +361,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/pressure-stance-settings/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/pressure-stance-settings/index.html" lang="es" selected data-selected>Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/pressure-stance-settings/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/pressure-stance-settings/index.html" lang="fr">Français</option>
@@ -405,8 +422,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537808" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537808" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542920" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542920" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

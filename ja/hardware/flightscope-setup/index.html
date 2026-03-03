@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="61">
     <meta itemprop="keywords" content="Usb-Camera,Launch-Monitor">
     <title>FlightScopeをSwing Catalystで使用する方法 :: Swing Catalyst サポート</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/flightscope-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/flightscope-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/flightscope-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/flightscope-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/flightscope-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/flightscope-setup/index.html" rel="alternate" hreflang="fr">
@@ -61,28 +60,28 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/flightscope-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/flightscope-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/flightscope-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537814" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537814" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537814" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537814" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537814" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542926" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542926" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542926" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542926" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542926" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ja.js?1772537814";
+      window.relearn.index_js_url="/sc-support/searchindex.ja.js?1772542926";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537814" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537814" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537814" defer></script>
-    <script src="/sc-support/js/lunr/tinyseg.js?1772537814" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ja.min.js?1772537814" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542926" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542926" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542926" defer></script>
+    <script src="/sc-support/js/lunr/tinyseg.js?1772542926" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ja.min.js?1772542926" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ja'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537814" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537814" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537814" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537814" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537814" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542926" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542926" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542926" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542926" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542926" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,22 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="メニュー (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目次 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#対象ユーザー">対象ユーザー</a></li>
+    <li><a href="#対応モデル">対応モデル：</a></li>
+    <li><a href="#インストール">インストール</a></li>
+    <li><a href="#既知の問題">既知の問題</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ja/index.html"><span itemprop="name">Swing Catalyst サポート</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ja/hardware/index.html"><span itemprop="name">ハードウェア</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">FlightScopeをSwing Catalystで使用する方法</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -219,30 +234,30 @@
 <ul>
 <li>FlightScopeを起動し、メインメニューの「Advanced Settings」ボタンをクリックします。（新しいバージョンのFlightScopeでは、キーボードのALTキーを押すだけでメニューバーを表示できます。）</li>
 </ul>
-<p><a href="#R-image-ac00072833e4364aa9676262b80e4e9a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-00-44.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac00072833e4364aa9676262b80e4e9a"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-00-44.png"></a></p>
+<p><a href="#R-image-69b4cd3e6c49fa00d6753e55f9fa04d0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-00-44.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-69b4cd3e6c49fa00d6753e55f9fa04d0"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-00-44.png"></a></p>
 <ul>
 <li>画面右下にある「Advanced Settings」ボタンをクリックすると、画面上部にメニューバーが表示されます。</li>
 </ul>
-<p><a href="#R-image-919eaa87b0eb6db6d21a5b6b1105b7a6" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-02-33.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-919eaa87b0eb6db6d21a5b6b1105b7a6"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-02-33.png"></a></p>
+<p><a href="#R-image-f0cb151380918e1e2ab6e2e61c0c7354" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-02-33.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f0cb151380918e1e2ab6e2e61c0c7354"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-02-33.png"></a></p>
 <ul>
 <li>
-<p>「Networking」をクリックし、リストから「Server」を選択します。<a href="#R-image-d4660e7a56669761e2d9e398d3939936" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/server.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d4660e7a56669761e2d9e398d3939936"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/server.png"></a></p>
+<p>「Networking」をクリックし、リストから「Server」を選択します。<a href="#R-image-3bfe2b5d5361210d83cdbba23c9b3e52" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/server.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3bfe2b5d5361210d83cdbba23c9b3e52"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/server.png"></a></p>
 </li>
 <li>
 <p>「Server Port」が1248に設定されていることを確認し、OKを押します。</p>
 </li>
 </ul>
 <p><strong>注意：サーバー名およびサーバーのIP アドレスは、USB X2（X2 EliteはEthernet）経由またはWiFi経由での接続状況によって異なる場合があります。この設定を変更する必要は通常ありません。</strong></p>
-<p><a href="#R-image-0cfc7b811fe463bf1ba88938a8415b5b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-11-22.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0cfc7b811fe463bf1ba88938a8415b5b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-11-22.png"></a></p>
+<p><a href="#R-image-02e27ea8dde3675614c33aea8a66e991" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-11-22.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-02e27ea8dde3675614c33aea8a66e991"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-11-22.png"></a></p>
 <ul>
 <li>FlightScopeで「Player Comparison」または同様のモードに移動します。</li>
 </ul>
-<p><a href="#R-image-7328c1c7d0df463dd67a914b017d322e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-16-36.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7328c1c7d0df463dd67a914b017d322e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-16-36.jpg"></a></p>
+<p><a href="#R-image-eef36003d772a2b7bafde4dbd57a51a1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-16-36.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eef36003d772a2b7bafde4dbd57a51a1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-16-36.jpg"></a></p>
 <ul>
 <li>
 <p>FlightScopeがショットを追跡・表示していることを確認します。</p>
@@ -254,11 +269,11 @@
 <p>Swing Catalystのメインメニュー → セットアップ → ハードウェアに移動し、Launch Monitorの「有効」にチェックを入れます。</p>
 </li>
 </ul>
-<p><a href="#R-image-4ed6bdbae93978ceb0ef9c224566e56b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-18-47.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4ed6bdbae93978ceb0ef9c224566e56b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-18-47.png"></a></p>
+<p><a href="#R-image-0256b2b4bf80e8159e3535a3cddeaf4f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-18-47.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0256b2b4bf80e8159e3535a3cddeaf4f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-18-47.png"></a></p>
 <p>「切断済み」と表示される場合は、FlightScopeアプリケーションが起動していること、およびFlightScope本体がPCまたはWiFiネットワークに接続されていることを確認してください。</p>
-<p><a href="#R-image-943f7474dd99e57040725db7cd06868b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-20-22.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-943f7474dd99e57040725db7cd06868b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-20-22.png"></a></p>
+<p><a href="#R-image-d040c450b6813cba73bffc20c63ac7a2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-20-22.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d040c450b6813cba73bffc20c63ac7a2"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-12-03_13-20-22.png"></a></p>
 <p>FlightScopeに「Server active, 1 clients」と表示されれば、Swing CatalystがFlightScopeへの接続に成功しています。</p>
 <h2 id="既知の問題">既知の問題<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="リンクをクリップボードにコピー"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
@@ -374,7 +389,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">言語</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/flightscope-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/flightscope-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/flightscope-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/flightscope-setup/index.html" lang="fr">Français</option>
@@ -436,8 +450,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537814" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537814" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542926" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542926" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

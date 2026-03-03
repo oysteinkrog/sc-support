@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1330">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>Jak nakonfigurovat kamery Point Grey / FLIR GigE (Blackfly) se SwingCatalyst :: Podpora Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537834" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537834" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537834" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542949" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542949" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772537834";
+      window.relearn.index_js_url="/sc-support/searchindex.cs.js?1772542949";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542949" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537834" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537834" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537834" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542949" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542949" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542949" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,34 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Obsah (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#požadavky">Požadavky:</a></li>
+        <li><a href="#instalace-síťové-karty">Instalace síťové karty</a></li>
+      </ul>
+    </li>
+    <li><a href="#instalace-síťové-karty-pcie"><img src="../../assets/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" alt="Instalace síťové karty PCIe"></a>
+      <ul>
+        <li><a href="#nastavení-ip-adres-pomocí-nástroje-gige-configurator">&lt;&gt;Nastavení IP adres pomocí nástroje GigE Configurator</a></li>
+        <li><a href="#optimalizace-síťového-adaptéru">Optimalizace síťového adaptéru</a></li>
+        <li><a href="#nastavení-ip-adresy-kamery">Nastavení IP adresy kamery</a></li>
+      </ul>
+    </li>
+    <li><a href="#nastavení-více-než-1-kamery">Nastavení více než 1 kamery</a></li>
+    <li><a href="#použití-kamer-ve-swingcatalyst">Použití kamer ve SwingCatalyst</a></li>
+    <li><a href="#jak-změnit-rychlost-závěrky-a-další-nastavení-kamery">Jak změnit rychlost závěrky a další nastavení kamery</a></li>
+    <li><a href="#použití-dvou-kamer-na-síťovém-přepínači">Použití dvou kamer na síťovém přepínači:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/cs/cameras-video/index.html"><span itemprop="name">Kamery a video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Jak nakonfigurovat kamery Point Grey / FLIR GigE (Blackfly) se SwingCatalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -231,72 +258,72 @@
 </ul>
 <p><strong>Poznámka:</strong> Při instalaci Flycap se ujistěte, že je zaškrtnuto políčko pro ovladač Point Grey Image Filter.</p>
 <h3 id="instalace-síťové-karty">Instalace síťové karty<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h2 id="instalace-síťové-karty-pcie"><a href="#R-image-c6a1064f058f4fa3ec148a5fe6f6b899" class="lightbox-link"><img alt="Instalace síťové karty PCIe" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6a1064f058f4fa3ec148a5fe6f6b899"><img alt="Instalace síťové karty PCIe" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="instalace-síťové-karty-pcie"><a href="#R-image-956146234eadf6211c94ee2b89a508f1" class="lightbox-link"><img alt="Instalace síťové karty PCIe" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-956146234eadf6211c94ee2b89a508f1"><img alt="Instalace síťové karty PCIe" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Pro instalaci síťové karty si prosím prohlédněte kroky uvedené zde: <a href="https://www.wikihow.com/Install-a-PCI-Card" rel="external">https://www.wikihow.com/Install-a-PCI-Card</a> – kroky pro instalaci dvouportové síťové karty od FLiR jsou přibližně stejné.</p>
 <h3 id="nastavení-ip-adres-pomocí-nástroje-gige-configurator">&lt;&gt;Nastavení IP adres pomocí nástroje GigE Configurator<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Potřebujeme nakonfigurovat IP adresy pro síťový adaptér (port) i připojenou kameru.</p>
 <p>Začněme nastavením síťového adaptéru!</p>
 <ul>
-<li>Otevřete aplikaci Point Grey GigE Configurator. Najdete ji v: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-c3930e84b57318de1b72947ad24bafde" class="lightbox-link"><img alt="Průzkumník souborů" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3930e84b57318de1b72947ad24bafde"><img alt="Průzkumník souborů" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
+<li>Otevřete aplikaci Point Grey GigE Configurator. Najdete ji v: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-ecc9198cf37367cd34d7f30b06c3d6bf" class="lightbox-link"><img alt="Průzkumník souborů" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ecc9198cf37367cd34d7f30b06c3d6bf"><img alt="Průzkumník souborů" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
 </ul>
 <ol start="2">
 <li>Otevřete aplikaci Point Grey GigE Configurator a klikněte na kameru.</li>
 </ol>
-<p><a href="#R-image-217120f803b940c51c037a2b4a3272bd" class="lightbox-link"><img alt="Snímek obrazovky GigE Configuratoru" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-217120f803b940c51c037a2b4a3272bd"><img alt="Snímek obrazovky GigE Configuratoru" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
+<p><a href="#R-image-de45d6c1d734c8b01125a18a399afad4" class="lightbox-link"><img alt="Snímek obrazovky GigE Configuratoru" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-de45d6c1d734c8b01125a18a399afad4"><img alt="Snímek obrazovky GigE Configuratoru" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
 <p>Poznamenejte si, ke kterému síťovému adaptéru je kamera připojena (viz zvýraznění červeně).</p>
 <p>V našem případě je kamera připojena k Ethernet 9.</p>
 <p>Klikněte na Ethernet 9 v části Síťové adaptéry v seznamu, jak je znázorněno vlevo na výše uvedeném snímku obrazovky.</p>
 <p>Nastavení IP adresy síťového adaptéru:</p>
 <p>Změňte IP adresu a masku podsítě tak, aby odpovídaly níže uvedenému snímku obrazovky, a klikněte na Set IP address / Subnet, poté klikněte na Yes a OK.</p>
-<p><a href="#R-image-4a0d7be7219707e3e6e0a430ccf7c6fe" class="lightbox-link"><img alt="Nastavení IP adresy síťového adaptéru – krok 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4a0d7be7219707e3e6e0a430ccf7c6fe"><img alt="Nastavení IP adresy síťového adaptéru – krok 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
-<p><a href="#R-image-5a52058a87059e01dd5bab5b64e025f5" class="lightbox-link"><img alt="Nastavení IP adresy síťového adaptéru – krok 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a52058a87059e01dd5bab5b64e025f5"><img alt="Nastavení IP adresy síťového adaptéru – krok 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
+<p><a href="#R-image-7c8c2aab0b0a10664467349002759626" class="lightbox-link"><img alt="Nastavení IP adresy síťového adaptéru – krok 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c8c2aab0b0a10664467349002759626"><img alt="Nastavení IP adresy síťového adaptéru – krok 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
+<p><a href="#R-image-ab81d22024f12d91a851781d3379ea53" class="lightbox-link"><img alt="Nastavení IP adresy síťového adaptéru – krok 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab81d22024f12d91a851781d3379ea53"><img alt="Nastavení IP adresy síťového adaptéru – krok 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
 <p>Nyní jsme nastavili IP adresu prvního síťového adaptéru. Dalším krokem je optimalizace nastavení síťového adaptéru.</p>
 <h3 id="optimalizace-síťového-adaptéru">Optimalizace síťového adaptéru<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Podle níže uvedeného snímku obrazovky si prosím všimněte čísla označeného červeně s názvem <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit" rel="external">MTU</a></p>
 <p>Toto číslo potřebujeme zvýšit. Klikněte na Open Network Connections ve zvýrazněné oblasti níže.</p>
-<p><a href="#R-image-a50018663ac873f251aba674874e2aab" class="lightbox-link"><img alt="Optimalizace síťového adaptéru – MTU" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a50018663ac873f251aba674874e2aab"><img alt="Optimalizace síťového adaptéru – MTU" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
+<p><a href="#R-image-b091a683dec4cc7c2eaba52b43953d17" class="lightbox-link"><img alt="Optimalizace síťového adaptéru – MTU" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b091a683dec4cc7c2eaba52b43953d17"><img alt="Optimalizace síťového adaptéru – MTU" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
 <p>Klikněte na kartu Advanced, najděte Jumbo Packet a nastavte hodnotu na 9014 Bytes.</p>
-<p><a href="#R-image-7c95c2d3594b050588c9886e1bc5f3ab" class="lightbox-link"><img alt="Nastavení Jumbo Packet" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c95c2d3594b050588c9886e1bc5f3ab"><img alt="Nastavení Jumbo Packet" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
+<p><a href="#R-image-f183f0d52afa03418f145adfe445c28d" class="lightbox-link"><img alt="Nastavení Jumbo Packet" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f183f0d52afa03418f145adfe445c28d"><img alt="Nastavení Jumbo Packet" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
 <p>Změna modulace přerušení</p>
 <p>Nastavte Interrupt Moderation na Enabled</p>
-<p><a href="#R-image-895b788763cee39f33f97e719da8e168" class="lightbox-link"><img alt="Nastavení Interrupt Moderation" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-895b788763cee39f33f97e719da8e168"><img alt="Nastavení Interrupt Moderation" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
+<p><a href="#R-image-211e7beedddb62f89de81e5708926763" class="lightbox-link"><img alt="Nastavení Interrupt Moderation" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-211e7beedddb62f89de81e5708926763"><img alt="Nastavení Interrupt Moderation" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
 <p>Klikněte na Interrupt Moderation Rate a nastavte hodnotu na Extreme.</p>
 <p>Důležité: Pokud budete používat více než 2 kamery, možná bude nutné nastavit Interrupt Moderation na Disabled, aby nedocházelo ke ztrátě Snímků.</p>
 <h3 id="nastavení-ip-adresy-kamery">Nastavení IP adresy kamery<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-90886269239090c8ce047ba653548010" class="lightbox-link"><img alt="Nastavení IP adresy kamery – krok 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-90886269239090c8ce047ba653548010"><img alt="Nastavení IP adresy kamery – krok 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
+<p><a href="#R-image-3402318d4cd3284a82f1a55639af2f93" class="lightbox-link"><img alt="Nastavení IP adresy kamery – krok 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3402318d4cd3284a82f1a55639af2f93"><img alt="Nastavení IP adresy kamery – krok 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
 <p>Klikněte na kameru dostupnou v seznamu (v našem případě máme připojenou pouze jednu kameru, takže víme, že je to správná kamera).</p>
 <p>Zadejte následující IP (všimněte si, že nastavujeme IP adresu kamery připojené k Ethernet 9 dle výše):</p>
-<p><a href="#R-image-dda9b53f67ae81595d958186c369a047" class="lightbox-link"><img alt="Nastavení IP adresy kamery – krok 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dda9b53f67ae81595d958186c369a047"><img alt="Nastavení IP adresy kamery – krok 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
+<p><a href="#R-image-9268d0184a1eb7dab5406b09410353c6" class="lightbox-link"><img alt="Nastavení IP adresy kamery – krok 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9268d0184a1eb7dab5406b09410353c6"><img alt="Nastavení IP adresy kamery – krok 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
 <p>Klikněte na Set IP Address / Subnet, poté klikněte na Yes a OK.</p>
-<p><a href="#R-image-2238933629f0c6023efa26a0661e4032" class="lightbox-link"><img alt="Nastavení IP adresy kamery – krok 3" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2238933629f0c6023efa26a0661e4032"><img alt="Nastavení IP adresy kamery – krok 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
+<p><a href="#R-image-dfd951b5331f43caadc732ebb753062b" class="lightbox-link"><img alt="Nastavení IP adresy kamery – krok 3" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dfd951b5331f43caadc732ebb753062b"><img alt="Nastavení IP adresy kamery – krok 3" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
 <p>Najděte kameru, které jste právě nastavili IP adresu, v seznamu na levé straně FLiR GigE Configuratoru a klikněte na ni.</p>
 <p>Nastavení konfigurace přiřazení IP adresy</p>
 <p>Toto je důležité provést, protože potřebujeme, aby změny IP adres na kamerách byly trvalé – jinak kamera zapomene svou konfiguraci po výpadku napájení.</p>
 <p>Zrušte zaškrtnutí DHCP a zaškrtněte Persistent IP</p>
-<p><a href="#R-image-85430838969558c795fae6aecbba0b6c" class="lightbox-link"><img alt="Nastavení Persistent IP" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-85430838969558c795fae6aecbba0b6c"><img alt="Nastavení Persistent IP" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
+<p><a href="#R-image-6fa6ba3b09cd9e37d07d6e97299da476" class="lightbox-link"><img alt="Nastavení Persistent IP" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6fa6ba3b09cd9e37d07d6e97299da476"><img alt="Nastavení Persistent IP" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
 <p>Klikněte na Copy from Current a poté na Set IP Address / Subnet</p>
-<p><a href="#R-image-8328758f20df48f63251b68ef95535bc" class="lightbox-link"><img alt="Kopírování aktuální IP konfigurace" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8328758f20df48f63251b68ef95535bc"><img alt="Kopírování aktuální IP konfigurace" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
+<p><a href="#R-image-e81f2d17b3d55f53301fcbb0ccbd8340" class="lightbox-link"><img alt="Kopírování aktuální IP konfigurace" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e81f2d17b3d55f53301fcbb0ccbd8340"><img alt="Kopírování aktuální IP konfigurace" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
 <p>Ověření velikosti paketu</p>
 <p>Ověřme, zda byla velikost paketu (MTU) nastavena správně.</p>
 <p>Klikněte na Discover Maximum Packet Size – mělo by se zobrazit 9000.</p>
-<p><a href="#R-image-8536e44a4053afd8e6a8da3689c65f53" class="lightbox-link"><img alt="Ověření velikosti paketu" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8536e44a4053afd8e6a8da3689c65f53"><img alt="Ověření velikosti paketu" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
+<p><a href="#R-image-57dc0a1e7472d364bbdae18ba90ca5d7" class="lightbox-link"><img alt="Ověření velikosti paketu" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-57dc0a1e7472d364bbdae18ba90ca5d7"><img alt="Ověření velikosti paketu" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
 <p>Klikněte na Test Camera Connection a ověřte, zda připojení funguje a zda přijímáte data z kamery.</p>
-<p><a href="#R-image-3e034ea3e846820c558ea8ea795632ed" class="lightbox-link"><img alt="Test připojení kamery" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e034ea3e846820c558ea8ea795632ed"><img alt="Test připojení kamery" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
+<p><a href="#R-image-fc4541b472033fa878645e65c3845f39" class="lightbox-link"><img alt="Test připojení kamery" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fc4541b472033fa878645e65c3845f39"><img alt="Test připojení kamery" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
 <h2 id="nastavení-více-než-1-kamery">Nastavení více než 1 kamery<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nyní, když jste nakonfigurovali jednu kameru a jeden síťový adaptér, můžete výše uvedené kroky opakovat pro konfiguraci více kamer.</p>
 <p>S ohledem na výše uvedené kroky a snímky obrazovky jsme již nastavili IP adresu kamery a síťového adaptéru Ethernet 9. Nastavení více kamer se řídí stejným postupem, jen s různými IP adresami.</p>
@@ -328,8 +355,8 @@ Subnet: 255.255.255.0</p>
 <h2 id="použití-kamer-ve-swingcatalyst">Použití kamer ve SwingCatalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Použití kamer Point Grey ve SwingCatalyst spočívá v nastavení Úhlu kamery a kliknutí na enable. Klikněte na tlačítko Play a ujistěte se, že kamera funguje.</p>
 <p>Veškerá konfigurace kamery musí být provedena prostřednictvím softwaru FlyCapture od Point Grey.</p>
-<p><a href="#R-image-c49f534f2b55f7c43855117d6419d222" class="lightbox-link"><img alt="SwingCatalyst – nastavení kamer Point Grey" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c49f534f2b55f7c43855117d6419d222"><img alt="SwingCatalyst – nastavení kamer Point Grey" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
+<p><a href="#R-image-fa207bb44c89215e464e9e7ba31680e4" class="lightbox-link"><img alt="SwingCatalyst – nastavení kamer Point Grey" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa207bb44c89215e464e9e7ba31680e4"><img alt="SwingCatalyst – nastavení kamer Point Grey" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
 <h2 id="jak-změnit-rychlost-závěrky-a-další-nastavení-kamery">Jak změnit rychlost závěrky a další nastavení kamery<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Spusťte software Point Grey Flycap2 a přejděte do Camera Settings.</p>
 <ol>
@@ -341,8 +368,8 @@ Subnet: 255.255.255.0</p>
 </ol>
 <p>Uložení nastavení viz krok 3.</p>
 <p>Může být také nutné upravit Snímkovou Frekvenci – můžete zrušit zaškrtnutí Auto a nastavit ji na požadovanou hodnotu, poté postupujte podle kroku 3.</p>
-<p><a href="#R-image-802fb24b283f9d11d3e34f8e125f7988" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-802fb24b283f9d11d3e34f8e125f7988"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
+<p><a href="#R-image-536554fa0263db0be24b041fabd94bd7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-536554fa0263db0be24b041fabd94bd7"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
 <p>Může být také nutné upravit Snímkovou Frekvenci – můžete zrušit zaškrtnutí Auto a nastavit ji na požadovanou hodnotu, poté postupujte podle kroku 3.</p>
 <p><strong>Nastavení hodnot Gain</strong></p>
 <p>Podobně jako u expozice je pro statické / vnitřní světelné podmínky nejlepší nastavit Gain ručně. Čím vyšší expozice, tím zrnitější bude obraz a tím déle bude trvat kódování videa ve srovnání s nízkým Gain.</p>
@@ -350,19 +377,19 @@ Subnet: 255.255.255.0</p>
 <p>Přečtěte si prosím tento článek o nastavení kamery: <a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a></p>
 <p>Řešení problémů a další optimalizace</p>
 <p>Pokud dochází ke ztrátě Snímků nebo máte problémy se synchronizací kamer FLiR / Point Grey, zkontrolujte prosím velikost paketu v části Flycapture2 -&gt; Custom Video modes.</p>
-<p><a href="#R-image-4a3cb883853a09170cc099feac3170d4" class="lightbox-link"><img alt="Nastavení vlastních video režimů Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4a3cb883853a09170cc099feac3170d4"><img alt="Nastavení vlastních video režimů Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
+<p><a href="#R-image-9f6f31b19327381dfb2d950e043285f5" class="lightbox-link"><img alt="Nastavení vlastních video režimů Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9f6f31b19327381dfb2d950e043285f5"><img alt="Nastavení vlastních video režimů Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
 <p>Můžete zkusit snížit velikost paketu z maximální hodnoty 9000 na menší hodnotu. V závislosti na vašem CPU může být optimální hodnota různá pro různé počítače.</p>
 <p>Pokud používáte 2 kamery na jednom síťovém adaptéru, doporučuje se nastavit zpoždění paketu na: 9500.</p>
-<p><a href="#R-image-7a2278c38e81d6e69ec0e6d27b627026" class="lightbox-link"><img alt="Nastavení zpoždění paketu Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a2278c38e81d6e69ec0e6d27b627026"><img alt="Nastavení zpoždění paketu Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
+<p><a href="#R-image-a66ddae583c6e56aa081384d1c8fcfad" class="lightbox-link"><img alt="Nastavení zpoždění paketu Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a66ddae583c6e56aa081384d1c8fcfad"><img alt="Nastavení zpoždění paketu Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
 <p>Nezapomeňte přejít do Advanced Camera Settings a uložit nastavení do bank 1, jak je popsáno v článku o nastavení kamery, ** <a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><strong><a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-9487099ccb3fff199dee6b639b4b5d76" class="lightbox-link"><img alt="Uložení nastavení do paměťového kanálu" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9487099ccb3fff199dee6b639b4b5d76"><img alt="Uložení nastavení do paměťového kanálu" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
+<p><strong><a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-cb31af86106d5f5b25016e9af8f7a0f3" class="lightbox-link"><img alt="Uložení nastavení do paměťového kanálu" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb31af86106d5f5b25016e9af8f7a0f3"><img alt="Uložení nastavení do paměťového kanálu" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
 <p><strong>Nezapomeňte kliknout na save v části Memory Channels a ujistěte se, že je vybrán Channel 1!</strong></p>
 <p>Pokud nezískáváte žádný obraz nebo se ve SwingCatalyst zobrazuje chyba, zkuste změnit velikost paketu a uložit do bank 1 (dle obrázku výše)</p>
-<p><strong><a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-f09ea0179a4578b1254e0ddde736ae8a" class="lightbox-link"><img alt="Nastavení velikosti paketu v Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f09ea0179a4578b1254e0ddde736ae8a"><img alt="Nastavení velikosti paketu v Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
+<p><strong><a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-7222e54b8136cdee978704c479afe6c8" class="lightbox-link"><img alt="Nastavení velikosti paketu v Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7222e54b8136cdee978704c479afe6c8"><img alt="Nastavení velikosti paketu v Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
 <p>Ztráta Snímků při nastavení 4 kamer:</p>
 <p>V některých konfiguracích se 4 kamerami se doporučuje vypnout modulaci přerušení nebo změnit rychlost modulace přerušení z extreme na low. Pokud je rychlost modulace vysoká, počet přerušení bude potlačen, což vede k nižšímu zatížení CPU. Čím méně často však přerušení nastane, tím je pravděpodobnější, že odezva ACK od hostitele bude pomalá. To může vést ke ztrátě paketů při streamování obrazu s vysokou Snímkovou Frekvencí.</p>
 <p>Výběr jiné modulace v závislosti na vašem systému může zlepšit výkon sítě a systému.</p>
@@ -372,15 +399,15 @@ Subnet: 255.255.255.0</p>
 <p>Další optimalizace síťového adaptéru</p>
 <p>Receive Buffers</p>
 <p>Doporučuje se nastavit tuto hodnotu na maximum. To může pomoci předejít ztrátě Snímků při použití více kamer a/nebo kamer GigE s vyšším rozlišením.</p>
-<p><a href="#R-image-b469095d5e0362920ca8daf8edba2426" class="lightbox-link"><img alt="Nastavení Receive Buffers síťového adaptéru" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b469095d5e0362920ca8daf8edba2426"><img alt="Nastavení Receive Buffers síťového adaptéru" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-f75e291c170d56f86782f7b10282eee0" class="lightbox-link"><img alt="Nastavení Receive Buffers síťového adaptéru" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f75e291c170d56f86782f7b10282eee0"><img alt="Nastavení Receive Buffers síťového adaptéru" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="použití-dvou-kamer-na-síťovém-přepínači">Použití dvou kamer na síťovém přepínači:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopírovat odkaz do schránky"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Upozorňujeme, že je podporována pouze kamera Blackfly BFLY-PGE-03S3C (90FPS). Použití jiných kamer může vést ke ztrátě Snímků.</p>
 <p>Důležité: Síťový přepínač musí podporovat Jumbo Frames o velikosti 9 KB (většina síťových přepínačů toto podporuje). Doporučujeme přepínač: <a href="https://www.netgear.com/support/product/GS105.aspx" rel="external">https://www.netgear.com/support/product/GS105.aspx</a> nebo podobné přepínače modelu GS105.</p>
 <p>Pokud budete používat síťový přepínač, je důležité nastavit Packet Delay na 9500 dle níže uvedeného snímku obrazovky.</p>
 <p>Po nastavení Packet Delay na 9500 přejděte do Advanced Camera Settings a uložte do bank 1, jak je popsáno v článku o nastavení kamery, ** <a href="/sc-support/cs/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><a href="#R-image-7e6fe1ed0191aa1453fc8d9b85366963" class="lightbox-link"><img alt="Nastavení zpoždění paketu pro dvě kamery na přepínači" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7e6fe1ed0191aa1453fc8d9b85366963"><img alt="Nastavení zpoždění paketu pro dvě kamery na přepínači" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
+<p><a href="#R-image-3f979de44591937e60f216ba870cb951" class="lightbox-link"><img alt="Nastavení zpoždění paketu pro dvě kamery na přepínači" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f979de44591937e60f216ba870cb951"><img alt="Nastavení zpoždění paketu pro dvě kamery na přepínači" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
 <p>Nastavení Packet Delay pomáhá předejít ztrátě Snímků při použití dvou kamer Blackfly 03S3C na jednom síťovém adaptéru.</p>
 <p>Podrobnější informace o nastavení více kamer najdete zde: <a href="https://www.ptgrey.com/tan/10351" rel="external">https://www.ptgrey.com/tan/10351</a></p>
 <hr>
@@ -493,7 +520,6 @@ Subnet: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Jazyk</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/point-grey-flir-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/point-grey-flir-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/point-grey-flir-gige/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" lang="fr">Français</option>
@@ -555,8 +581,8 @@ Subnet: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537834" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537834" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542949" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542949" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

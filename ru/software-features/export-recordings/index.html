@@ -21,8 +21,7 @@
     <meta itemprop="description" content="Записи можно экспортировать несколькими способами — из Стопки или непосредственно из Обозревателя. Функционально между ними нет разницы.">
     <meta itemprop="wordCount" content="144">
     <title>Экспорт записей :: Поддержка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-recordings/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-recordings/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-recordings/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-recordings/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-recordings/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-recordings/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-recordings/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-recordings/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-recordings/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537813" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537813" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537813" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542925" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542925" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772537813";
+      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772542925";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ru'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537813" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542925" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,25 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Меню (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Оглавление (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#как-экспортировать-записи">Как экспортировать записи</a></li>
+    <li><a href="#экспорт-из-стопки">Экспорт из Стопки</a></li>
+    <li><a href="#экспорт-из-обозревателя">Экспорт из Обозревателя</a>
+      <ul>
+        <li><a href="#список-экспорта-в-обозревателе">Список экспорта в Обозревателе</a></li>
+      </ul>
+    </li>
+    <li><a href="#параметры-экспорта">Параметры экспорта</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/index.html"><span itemprop="name">Поддержка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/software-features/index.html"><span itemprop="name">Программное обеспечение и функции</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Экспорт записей</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -192,23 +210,23 @@
 <h2 id="как-экспортировать-записи">Как экспортировать записи<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Записи можно экспортировать несколькими способами — из Стопки или непосредственно из Обозревателя. Функционально между ними нет разницы.</p>
 <h2 id="экспорт-из-стопки">Экспорт из Стопки<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-e81e98250c393d017de9dda06144ee1d" class="lightbox-link"><img alt="Экспорт из Стопки в MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e81e98250c393d017de9dda06144ee1d"><img alt="Экспорт из Стопки в MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png"></a></p>
+<p><a href="#R-image-ab909a5132cfd21e54607d9828965256" class="lightbox-link"><img alt="Экспорт из Стопки в MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab909a5132cfd21e54607d9828965256"><img alt="Экспорт из Стопки в MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-yjrveg402y-png.png"></a></p>
 <h2 id="экспорт-из-обозревателя">Экспорт из Обозревателя<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-1ab796174f2a1bf186afc80941f5458d" class="lightbox-link"><img alt="Экспорт из Обозревателя в MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ab796174f2a1bf186afc80941f5458d"><img alt="Экспорт из Обозревателя в MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-bf7b88dfba1e75a7660373a8735e55a9" class="lightbox-link"><img alt="Экспорт из Обозревателя в MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf7b88dfba1e75a7660373a8735e55a9"><img alt="Экспорт из Обозревателя в MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>Записи можно экспортировать из Обозревателя, перетащив запись в список экспорта (см. снимок экрана ниже) или щёлкнув по записи правой кнопкой мыши и выбрав один из доступных вариантов экспорта.</p>
-<p><a href="#R-image-717bba5a45a2ca6886e643d0cf57abb8" class="lightbox-link"><img alt="Контекстное меню экспорта" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-717bba5a45a2ca6886e643d0cf57abb8"><img alt="Контекстное меню экспорта" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-3e301ecd21c17b4a4b88109b52ce662b" class="lightbox-link"><img alt="Контекстное меню экспорта" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e301ecd21c17b4a4b88109b52ce662b"><img alt="Контекстное меню экспорта" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/l38taztnxr-png.png"></a></p>
 <h3 id="список-экспорта-в-обозревателе">Список экспорта в Обозревателе<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-7364ad6f0c6380a5c8f68bd55c964033" class="lightbox-link"><img alt="Список экспорта в Обозревателе MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7364ad6f0c6380a5c8f68bd55c964033"><img alt="Список экспорта в Обозревателе MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-f97c006141439bbc17146cebb92388c0" class="lightbox-link"><img alt="Список экспорта в Обозревателе MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f97c006141439bbc17146cebb92388c0"><img alt="Список экспорта в Обозревателе MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="параметры-экспорта">Параметры экспорта<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Экспорт в виде файла дубля (вариант по умолчанию) позволяет импортировать запись другим Пользователям SwingCatalyst или MotionCatalyst. Все данные, собранные вместе с записью, хранятся в файле дубля.</p>
 <p>Если вы хотите экспортировать только видеофайл(ы), выберите «Video only». Обратите внимание: если у вас несколько камер, каждый Угол будет экспортирован как отдельный видеофайл.</p>
 <p>Подробнее о параметре экспорта необработанных данных см. в нашей <a href="/sc-support/ru/software-features/export-raw-data/index.html">статье о необработанных данных.</a></p>
-<p><a href="#R-image-e70dc90b641691bbd4ead691aa6e9cdb" class="lightbox-link"><img alt="Параметры экспорта в MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e70dc90b641691bbd4ead691aa6e9cdb"><img alt="Параметры экспорта в MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-55edb0ab558bd565b077756959f17baf" class="lightbox-link"><img alt="Параметры экспорта в MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-55edb0ab558bd565b077756959f17baf"><img alt="Параметры экспорта в MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9363208544924/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <hr>
 <p><em>Последнее обновление: 2023-12-19</em> | <a href="/sc-support/ru/software-features/export-recordings/index.html">Просмотреть на официальном сайте поддержки</a></p>
 
@@ -312,7 +330,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Язык</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-recordings/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-recordings/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-recordings/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-recordings/index.html" lang="fr">Français</option>
@@ -374,8 +391,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542925" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

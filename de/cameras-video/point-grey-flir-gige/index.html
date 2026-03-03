@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1438">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>So konfigurieren Sie Point Grey / FLIR GigE (Blackfly) Kameras mit SwingCatalyst :: Swing Catalyst Support</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/point-grey-flir-gige/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537809" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537809" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537809" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542922" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542922" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772537809";
+      window.relearn.index_js_url="/sc-support/searchindex.de.js?1772542922";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/lunr/lunr.de.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.de.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['de'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537809" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537809" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537809" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542922" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,34 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Inhalt (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#voraussetzungen">Voraussetzungen:</a></li>
+        <li><a href="#installieren-der-netzwerkkarte">Installieren der Netzwerkkarte</a></li>
+      </ul>
+    </li>
+    <li><a href="#point-grey-pcie-netzwerkkarte"><img src="../../assets/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" alt="Point Grey PCIe Netzwerkkarte"></a>
+      <ul>
+        <li><a href="#festlegen-der-ip-adressen-mit-dem-gige-configurator-dienstprogramm">&lt;&gt;Festlegen der IP-Adressen mit dem GigE Configurator-Dienstprogramm</a></li>
+        <li><a href="#optimieren-des-netzwerkadapters">Optimieren des Netzwerkadapters</a></li>
+        <li><a href="#festlegen-der-ip-adresse-der-kamera">Festlegen der IP-Adresse der Kamera</a></li>
+      </ul>
+    </li>
+    <li><a href="#einrichten-von-mehr-als-1-kamera">Einrichten von mehr als 1 Kamera</a></li>
+    <li><a href="#verwenden-der-kameras-in-swingcatalyst">Verwenden der Kamera(s) in SwingCatalyst</a></li>
+    <li><a href="#so-ändern-sie-die-verschlusszeit-und-andere-kameraeinstellungen">So ändern Sie die Verschlusszeit und andere Kameraeinstellungen</a></li>
+    <li><a href="#verwenden-von-zwei-kameras-an-einem-netzwerk-switch">Verwenden von zwei Kameras an einem Netzwerk-Switch:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/de/cameras-video/index.html"><span itemprop="name">Kameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">So konfigurieren Sie Point Grey / FLIR GigE (Blackfly) Kameras mit SwingCatalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -232,72 +259,72 @@
 </ul>
 <p><strong>Hinweis:</strong> Stellen Sie bei der Installation von Flycap sicher, dass das Kontrollkästchen für den Point Grey Image Filter Driver aktiviert ist.</p>
 <h3 id="installieren-der-netzwerkkarte">Installieren der Netzwerkkarte<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<h2 id="point-grey-pcie-netzwerkkarte"><a href="#R-image-036aa0e8557dee389f058ad94518bc33" class="lightbox-link"><img alt="Point Grey PCIe Netzwerkkarte" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-036aa0e8557dee389f058ad94518bc33"><img alt="Point Grey PCIe Netzwerkkarte" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="point-grey-pcie-netzwerkkarte"><a href="#R-image-b73897fabfe12b3e78dbf430ea65d865" class="lightbox-link"><img alt="Point Grey PCIe Netzwerkkarte" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b73897fabfe12b3e78dbf430ea65d865"><img alt="Point Grey PCIe Netzwerkkarte" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/acc-flir-gige-pcie2-2p02-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Zur Installation der Netzwerkkarte empfehlen wir die hier beschriebenen Schritte: <a href="https://www.wikihow.com/Install-a-PCI-Card" rel="external">https://www.wikihow.com/Install-a-PCI-Card</a> – die Schritte zur Installation der Dual-Port-Netzwerkkarte von FLiR sind in etwa dieselben.</p>
 <h3 id="festlegen-der-ip-adressen-mit-dem-gige-configurator-dienstprogramm">&lt;&gt;Festlegen der IP-Adressen mit dem GigE Configurator-Dienstprogramm<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Wir müssen die IP-Adressen sowohl für den Netzwerkadapter (Port) als auch für die angeschlossene Kamera konfigurieren.</p>
 <p>Beginnen wir mit der Einrichtung des Netzwerkadapters!</p>
 <ul>
-<li>Öffnen Sie die Point Grey GigE Configurator Anwendung. Sie befindet sich unter: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-e2aadb4630f676780c6ed48c24520c20" class="lightbox-link"><img alt="Explorer mit geöffnetem Verzeichnis" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e2aadb4630f676780c6ed48c24520c20"><img alt="Explorer mit geöffnetem Verzeichnis" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
+<li>Öffnen Sie die Point Grey GigE Configurator Anwendung. Sie befindet sich unter: C:\Program Files\Point Grey Research\FlyCap2 Viewer\bin64<a href="#R-image-fff46439c8e7beb0b6163a9d97b2c884" class="lightbox-link"><img alt="Explorer mit geöffnetem Verzeichnis" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fff46439c8e7beb0b6163a9d97b2c884"><img alt="Explorer mit geöffnetem Verzeichnis" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/explorer-2020-02-18-09-47-16-png.png"></a></li>
 </ul>
 <ol start="2">
 <li>Öffnen Sie die Point Grey GigE Configurator Anwendung und klicken Sie auf die Kamera.</li>
 </ol>
-<p><a href="#R-image-163819247b09a45fda3df02bf275af7b" class="lightbox-link"><img alt="GigE Configurator Kameraansicht" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-163819247b09a45fda3df02bf275af7b"><img alt="GigE Configurator Kameraansicht" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
+<p><a href="#R-image-add039823370527c59616220bcc5fc3e" class="lightbox-link"><img alt="GigE Configurator Kameraansicht" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-add039823370527c59616220bcc5fc3e"><img alt="GigE Configurator Kameraansicht" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-09-57-25-png.png"></a></p>
 <p>Bitte beachten Sie, mit welchem Netzwerkadapter die Kamera verbunden ist (rot hervorgehoben).</p>
 <p>In unserem Fall ist die Kamera mit Ethernet 9 verbunden.</p>
 <p>Klicken Sie in der Liste unter „Netzwerkadapter&quot; auf Ethernet 9, wie im linken Bereich des obigen Screenshots gezeigt.</p>
 <p>Festlegen der IP-Adresse des Netzwerkadapters:</p>
 <p>Ändern Sie die IP-Adresse und die Subnetzmaske entsprechend dem folgenden Screenshot und klicken Sie auf „IP-Adresse / Subnetz festlegen&quot;, dann auf „Ja&quot; und „OK&quot;.</p>
-<p><a href="#R-image-8368d901b567fb97dc5d61e333997fa3" class="lightbox-link"><img alt="IP-Adresse des Netzwerkadapters festlegen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8368d901b567fb97dc5d61e333997fa3"><img alt="IP-Adresse des Netzwerkadapters festlegen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
-<p><a href="#R-image-43fe633c75f906cb2c6230be9a2e6df3" class="lightbox-link"><img alt="Bestätigung der IP-Adresse" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-43fe633c75f906cb2c6230be9a2e6df3"><img alt="Bestätigung der IP-Adresse" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
+<p><a href="#R-image-26a91c7a22fdd71ad3340b0446fa2173" class="lightbox-link"><img alt="IP-Adresse des Netzwerkadapters festlegen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-26a91c7a22fdd71ad3340b0446fa2173"><img alt="IP-Adresse des Netzwerkadapters festlegen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-00-36-png.png"></a></p>
+<p><a href="#R-image-ab22436da39308b306ce24b60f86d895" class="lightbox-link"><img alt="Bestätigung der IP-Adresse" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab22436da39308b306ce24b60f86d895"><img alt="Bestätigung der IP-Adresse" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-01-56-png.png"></a></p>
 <p>Jetzt haben wir die IP-Adresse des ersten Netzwerkadapters festgelegt. Der nächste Schritt besteht darin, die Einstellungen des Netzwerkadapters zu optimieren.</p>
 <h3 id="optimieren-des-netzwerkadapters">Optimieren des Netzwerkadapters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Beachten Sie gemäß dem folgenden Screenshot die rot markierte Zahl namens <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit" rel="external">MTU</a></p>
 <p>Wir müssen diesen Wert erhöhen. Klicken Sie auf „Netzwerkverbindungen öffnen&quot; im hervorgehobenen Bereich unten.</p>
-<p><a href="#R-image-7075be7079a3c2b9a8811902285f8ff3" class="lightbox-link"><img alt="Netzwerkverbindungen öffnen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7075be7079a3c2b9a8811902285f8ff3"><img alt="Netzwerkverbindungen öffnen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
+<p><a href="#R-image-21e4c5d028f4461493053107a01c0306" class="lightbox-link"><img alt="Netzwerkverbindungen öffnen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-21e4c5d028f4461493053107a01c0306"><img alt="Netzwerkverbindungen öffnen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-26-52-png.png"></a></p>
 <p>Klicken Sie auf die Registerkarte „Erweitert&quot;, suchen Sie „Jumbo-Paket&quot; und setzen Sie den Wert auf 9014 Bytes.</p>
-<p><a href="#R-image-c2848573922c3cd24008997bec8607b9" class="lightbox-link"><img alt="Jumbo-Paket auf 9014 Bytes setzen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c2848573922c3cd24008997bec8607b9"><img alt="Jumbo-Paket auf 9014 Bytes setzen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
+<p><a href="#R-image-dea30e3b8343f42f63c3bf163bd14a86" class="lightbox-link"><img alt="Jumbo-Paket auf 9014 Bytes setzen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dea30e3b8343f42f63c3bf163bd14a86"><img alt="Jumbo-Paket auf 9014 Bytes setzen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-28-36-png.png"></a></p>
 <p>Ändern der Interrupt-Moderation</p>
 <p>Setzen Sie die Interrupt-Moderation auf „Aktiviert&quot;.</p>
-<p><a href="#R-image-4e5129aa7cff33e6463275b961c22fc0" class="lightbox-link"><img alt="Interrupt-Moderation aktivieren" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e5129aa7cff33e6463275b961c22fc0"><img alt="Interrupt-Moderation aktivieren" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
+<p><a href="#R-image-ae640ffe37a99ce9ca00d431e8e0af06" class="lightbox-link"><img alt="Interrupt-Moderation aktivieren" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae640ffe37a99ce9ca00d431e8e0af06"><img alt="Interrupt-Moderation aktivieren" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-30-22-png.png"></a></p>
 <p>Klicken Sie auf „Interrupt-Moderationsrate&quot; und setzen Sie den Wert auf „Extrem&quot;.</p>
 <p>Wichtig: Wenn Sie mehr als 2 Kameras verwenden möchten, müssen Sie die Interrupt-Moderation möglicherweise auf „Deaktiviert&quot; setzen, um verworfene Frames zu vermeiden.</p>
 <h3 id="festlegen-der-ip-adresse-der-kamera">Festlegen der IP-Adresse der Kamera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-b26ad636cc376523fc112121c3dbbdfe" class="lightbox-link"><img alt="IP-Adresse der Kamera festlegen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b26ad636cc376523fc112121c3dbbdfe"><img alt="IP-Adresse der Kamera festlegen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
+<p><a href="#R-image-1936ad955af88f07d902e9c5412ad6c4" class="lightbox-link"><img alt="IP-Adresse der Kamera festlegen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1936ad955af88f07d902e9c5412ad6c4"><img alt="IP-Adresse der Kamera festlegen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-13-51-png.png"></a></p>
 <p>Klicken Sie auf die in der Liste verfügbare Kamera (in unserem Fall ist nur eine Kamera angeschlossen, sodass wir wissen, dass es die richtige Kamera ist).</p>
 <p>Geben Sie die folgende IP-Adresse ein (beachten Sie, dass wir die IP-Adresse der mit Ethernet 9 verbundenen Kamera wie oben beschrieben festlegen):</p>
-<p><a href="#R-image-347954504dbbbb4eff0d83d22312f319" class="lightbox-link"><img alt="IP-Adresseingabe für die Kamera" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-347954504dbbbb4eff0d83d22312f319"><img alt="IP-Adresseingabe für die Kamera" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
+<p><a href="#R-image-2cea65f616d0a251eb68d2477f65dbc4" class="lightbox-link"><img alt="IP-Adresseingabe für die Kamera" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2cea65f616d0a251eb68d2477f65dbc4"><img alt="IP-Adresseingabe für die Kamera" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-15-30-png.png"></a></p>
 <p>Klicken Sie auf „IP-Adresse / Subnetz festlegen&quot; und dann auf „Ja&quot; und „OK&quot;.</p>
-<p><a href="#R-image-c535fc2afc849101c6a685c7bafb85c5" class="lightbox-link"><img alt="Bestätigung der Kamera-IP-Adresse" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c535fc2afc849101c6a685c7bafb85c5"><img alt="Bestätigung der Kamera-IP-Adresse" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
+<p><a href="#R-image-03bb62300ca69ef7ae78c56dc366b048" class="lightbox-link"><img alt="Bestätigung der Kamera-IP-Adresse" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-03bb62300ca69ef7ae78c56dc366b048"><img alt="Bestätigung der Kamera-IP-Adresse" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-16-35-png.png"></a></p>
 <p>Suchen Sie die Kamera, deren IP-Adresse Sie soeben festgelegt haben, in der Liste auf der linken Seite des FLiR GigE Configurators und klicken Sie darauf.</p>
 <p>Festlegen der IP-Adresszuweisungskonfiguration</p>
 <p>Dies ist ein wichtiger Schritt, da wir sicherstellen müssen, dass die IP-Adressänderungen an den Kameras dauerhaft gespeichert werden – andernfalls vergisst die Kamera ihre Konfiguration nach einem Stromausfall.</p>
 <p>Deaktivieren Sie DHCP und aktivieren Sie „Persistente IP&quot;.</p>
-<p><a href="#R-image-51d15bfb8d797d28ae6b989b25ec006a" class="lightbox-link"><img alt="DHCP deaktivieren und persistente IP aktivieren" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-51d15bfb8d797d28ae6b989b25ec006a"><img alt="DHCP deaktivieren und persistente IP aktivieren" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
+<p><a href="#R-image-0c9eaa1d84a5c4bbbecca1f3a530edf9" class="lightbox-link"><img alt="DHCP deaktivieren und persistente IP aktivieren" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c9eaa1d84a5c4bbbecca1f3a530edf9"><img alt="DHCP deaktivieren und persistente IP aktivieren" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-21-34-png.png"></a></p>
 <p>Klicken Sie auf „Von aktuellen Einstellungen kopieren&quot; und dann auf „IP-Adresse / Subnetz festlegen&quot;.</p>
-<p><a href="#R-image-c506c513f3a9cb2e20f29f7e955a067d" class="lightbox-link"><img alt="Von aktuellen Einstellungen kopieren" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c506c513f3a9cb2e20f29f7e955a067d"><img alt="Von aktuellen Einstellungen kopieren" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
+<p><a href="#R-image-b6744c00dc1983a30c6806bf2edd0c51" class="lightbox-link"><img alt="Von aktuellen Einstellungen kopieren" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b6744c00dc1983a30c6806bf2edd0c51"><img alt="Von aktuellen Einstellungen kopieren" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-18-59-png.png"></a></p>
 <p>Paketgröße überprüfen</p>
 <p>Überprüfen wir, ob die Paketgröße (MTU) korrekt eingestellt wurde.</p>
 <p>Klicken Sie auf „Maximale Paketgröße ermitteln&quot; – der Wert sollte 9000 anzeigen.</p>
-<p><a href="#R-image-7c0639eb2717f7bfa118a32f1da73f75" class="lightbox-link"><img alt="Maximale Paketgröße ermitteln" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c0639eb2717f7bfa118a32f1da73f75"><img alt="Maximale Paketgröße ermitteln" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
+<p><a href="#R-image-3250283de78da369a7eaa1f89b98fe68" class="lightbox-link"><img alt="Maximale Paketgröße ermitteln" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3250283de78da369a7eaa1f89b98fe68"><img alt="Maximale Paketgröße ermitteln" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/teamviewer-2020-02-18-10-34-33-png.png"></a></p>
 <p>Klicken Sie auf „Kameraverbindung testen&quot;, um zu überprüfen, ob die Verbindung funktioniert und ob Sie Daten von der Kamera empfangen.</p>
-<p><a href="#R-image-7f733b5f55872ddba8d16308d749d701" class="lightbox-link"><img alt="Kameraverbindung testen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f733b5f55872ddba8d16308d749d701"><img alt="Kameraverbindung testen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
+<p><a href="#R-image-a905c3e03b496442b87dad1473c12a38" class="lightbox-link"><img alt="Kameraverbindung testen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a905c3e03b496442b87dad1473c12a38"><img alt="Kameraverbindung testen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/gigeconfigurator-2017-05-09-12-35-04-png.png"></a></p>
 <h2 id="einrichten-von-mehr-als-1-kamera">Einrichten von mehr als 1 Kamera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Nachdem Sie eine Kamera und einen Netzwerkadapter konfiguriert haben, können Sie die obigen Schritte wiederholen, um mehrere Kameras zu konfigurieren.</p>
 <p>Unter Berücksichtigung der obigen Schritte und Screenshots haben wir bereits die IP-Adresse der Kamera und des Ethernet-Adapters 9 festgelegt. Das Einrichten mehrerer Kameras erfolgt nach demselben Verfahren, jedoch mit unterschiedlichen IP-Adressen.</p>
@@ -329,8 +356,8 @@ Subnetz: 255.255.255.0</p>
 <h2 id="verwenden-der-kameras-in-swingcatalyst">Verwenden der Kamera(s) in SwingCatalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Die Verwendung von Point Grey Kameras in SwingCatalyst ist einfach: Stellen Sie den Kamerawinkel ein und klicken Sie auf „Aktivieren&quot;. Klicken Sie auf die Wiedergabetaste, um sicherzustellen, dass die Kamera funktioniert.</p>
 <p>Alle Kamerakonfigurationen müssen über die FlyCapture Software von Point Grey vorgenommen werden.</p>
-<p><a href="#R-image-08368006a2a7729a48df798a4449094f" class="lightbox-link"><img alt="SwingCatalyst Kameraansicht" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-08368006a2a7729a48df798a4449094f"><img alt="SwingCatalyst Kameraansicht" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
+<p><a href="#R-image-559c8391ecf108dc4592a35268079cdb" class="lightbox-link"><img alt="SwingCatalyst Kameraansicht" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-559c8391ecf108dc4592a35268079cdb"><img alt="SwingCatalyst Kameraansicht" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/swingcatalyst-2017-05-09-13-42-02-png.png"></a></p>
 <h2 id="so-ändern-sie-die-verschlusszeit-und-andere-kameraeinstellungen">So ändern Sie die Verschlusszeit und andere Kameraeinstellungen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Starten Sie die Point Grey Flycap2 Software und navigieren Sie zu „Kameraeinstellungen&quot;.</p>
 <ol>
@@ -342,8 +369,8 @@ Subnetz: 255.255.255.0</p>
 </ol>
 <p>Informationen zum Speichern der Einstellungen finden Sie unter Schritt 3.</p>
 <p>Es kann auch erforderlich sein, die Bildrate anzupassen. Sie können „Auto&quot; deaktivieren und die gewünschte Bildrate einstellen, und dann Schritt 3 ausführen.</p>
-<p><a href="#R-image-73816a06d0d359f24da5c045c86b5b30" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-73816a06d0d359f24da5c045c86b5b30"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
+<p><a href="#R-image-77e6cfaf8eca749220f724dd2d48222d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-77e6cfaf8eca749220f724dd2d48222d"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2015-11-10_08-22-43.png"></a></p>
 <p>Es kann auch erforderlich sein, die Bildrate anzupassen. Sie können „Auto&quot; deaktivieren und die gewünschte Bildrate einstellen, und dann Schritt 3 ausführen.</p>
 <p><strong>Gain-Werte einstellen</strong></p>
 <p>Ähnlich wie bei der Belichtung ist es am besten, den Gain für statische / Indoor-Beleuchtungsbedingungen auf manuell zu setzen. Je höher die Belichtung, desto körniger wird das Bild, und desto länger dauert die Videokodierung im Vergleich zu niedrigem Gain.</p>
@@ -351,19 +378,19 @@ Subnetz: 255.255.255.0</p>
 <p>Lesen Sie diesen Artikel zur Einrichtung der Kamera: <a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a></p>
 <p>Fehlerbehebung und weitere Optimierungen</p>
 <p>Wenn Sie Frames verlieren oder Synchronisationsprobleme mit Ihren FLiR / Point Grey Kameras haben, überprüfen Sie bitte die Paketgröße unter Flycapture2 -&gt; Benutzerdefinierte Videomodi.</p>
-<p><a href="#R-image-7aefaf85019eddfd8a98e081e824d96d" class="lightbox-link"><img alt="Point Grey FlyCap2 benutzerdefinierte Videomodi" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7aefaf85019eddfd8a98e081e824d96d"><img alt="Point Grey FlyCap2 benutzerdefinierte Videomodi" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
+<p><a href="#R-image-a3d8aaca7f68e0016df17195c1e86dd0" class="lightbox-link"><img alt="Point Grey FlyCap2 benutzerdefinierte Videomodi" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3d8aaca7f68e0016df17195c1e86dd0"><img alt="Point Grey FlyCap2 benutzerdefinierte Videomodi" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-46-18-p.png"></a></p>
 <p>Sie können versuchen, die Paketgröße vom Maximum von 9000 auf einen kleineren Wert zu reduzieren. Je nach CPU kann das Optimum je nach Computer variieren.</p>
 <p>Wenn Sie 2 Kameras an einem Netzwerkadapter verwenden, wird empfohlen, die Paketverzögerung auf 9500 einzustellen.</p>
-<p><a href="#R-image-31e1610bb2b948955cfdd81c9af8892f" class="lightbox-link"><img alt="Point Grey FlyCap2 Paketverzögerung" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-31e1610bb2b948955cfdd81c9af8892f"><img alt="Point Grey FlyCap2 Paketverzögerung" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
+<p><a href="#R-image-971e1d9f18fd76907d4088ec2a6e3f92" class="lightbox-link"><img alt="Point Grey FlyCap2 Paketverzögerung" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-971e1d9f18fd76907d4088ec2a6e3f92"><img alt="Point Grey FlyCap2 Paketverzögerung" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-02-16-43-20-p.png"></a></p>
 <p>Denken Sie daran, die erweiterten Kameraeinstellungen aufzurufen und die Einstellungen in Bank 1 zu speichern, wie im Kameraeinrichtungsartikel beschrieben: ** <a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><strong><a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-b38fa9b103f96d078965079748e8028f" class="lightbox-link"><img alt="Point Grey FlyCap2 erweiterte Kameraeinstellungen" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b38fa9b103f96d078965079748e8028f"><img alt="Point Grey FlyCap2 erweiterte Kameraeinstellungen" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
+<p><strong><a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-1262b9e1751a9d01d64d24f4fe1f9463" class="lightbox-link"><img alt="Point Grey FlyCap2 erweiterte Kameraeinstellungen" class="lazy lightbox figure-image" loading="lazy" src="__PH19__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1262b9e1751a9d01d64d24f4fe1f9463"><img alt="Point Grey FlyCap2 erweiterte Kameraeinstellungen" class="lazy lightbox lightbox-image" loading="lazy" src="__PH19__"></a></a></strong></p>
 <p><strong>Denken Sie daran, unter „Speicherkanäle&quot; auf Speichern zu klicken und sicherzustellen, dass Kanal 1 ausgewählt ist!</strong></p>
 <p>Wenn Sie kein Bild erhalten oder eine Fehlermeldung in SwingCatalyst angezeigt wird, versuchen Sie bitte, die Paketgröße zu ändern und in Bank 1 zu speichern (wie im Bild oben gezeigt).</p>
-<p><strong><a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-8f99a74ef36a93eb518cd1d32c241d55" class="lightbox-link"><img alt="Point Grey FlyCap2 Paketgröße" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f99a74ef36a93eb518cd1d32c241d55"><img alt="Point Grey FlyCap2 Paketgröße" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
+<p><strong><a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html"><a href="#R-image-70b1042340bae2637ea812df430da29e" class="lightbox-link"><img alt="Point Grey FlyCap2 Paketgröße" class="lazy lightbox figure-image" loading="lazy" src="__PH20__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-70b1042340bae2637ea812df430da29e"><img alt="Point Grey FlyCap2 Paketgröße" class="lazy lightbox lightbox-image" loading="lazy" src="__PH20__"></a></a></strong></p>
 <p>4-Kamera-Setup mit verworfenen Frames:</p>
 <p>Bei einigen 4-Kamera-Setups wird empfohlen, die Interrupt-Moderation zu deaktivieren oder die Interrupt-Moderationsrate von „Extrem&quot; auf „Niedrig&quot; zu ändern. Wenn die Moderationsrate hoch ist, wird die Anzahl der Interrupts unterdrückt, was zu einer geringeren CPU-Last führt. Je seltener der Interrupt jedoch ausgelöst wird, desto wahrscheinlicher ist es, dass die ACK-Antwort des Hosts langsam ist. Dies kann zu verworfenen Paketen führen, wenn Sie Bilder mit hoher Bildrate übertragen.</p>
 <p>Die Wahl einer anderen Moderationsrate je nach System kann die Netzwerk- und Systemleistung verbessern.</p>
@@ -373,15 +400,15 @@ Subnetz: 255.255.255.0</p>
 <p>Weitere Netzwerkadapter-Optimierungen</p>
 <p>Empfangspuffer</p>
 <p>Es wird empfohlen, diesen Wert so hoch wie möglich einzustellen. Dies kann dazu beitragen, verworfene Frames bei der Verwendung mehrerer Kameras und/oder hochauflösender GigE Kameras zu vermeiden.</p>
-<p><a href="#R-image-1f9166c6e2bd6b8bfa60a2c3af8aae59" class="lightbox-link"><img alt="Empfangspuffer-Einstellungen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f9166c6e2bd6b8bfa60a2c3af8aae59"><img alt="Empfangspuffer-Einstellungen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
+<p><a href="#R-image-209e3f088ed480587e73ef34b7e07cc5" class="lightbox-link"><img alt="Empfangspuffer-Einstellungen" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-209e3f088ed480587e73ef34b7e07cc5"><img alt="Empfangspuffer-Einstellungen" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/rundll32-2017-05-09-13-00-48-png.png"></a></p>
 <h2 id="verwenden-von-zwei-kameras-an-einem-netzwerk-switch">Verwenden von zwei Kameras an einem Netzwerk-Switch:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link in Zwischenablage kopieren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Bitte beachten Sie: Nur die Blackfly BFLY-PGE-03S3C (90FPS) Kamera wird unterstützt. Die Verwendung anderer Kameras kann zu verworfenen Frames führen.</p>
 <p>Wichtig: Der Netzwerk-Switch muss 9-KB-Jumbo-Frames unterstützen (die meisten Netzwerk-Switches unterstützen dies). Wir empfehlen den: <a href="https://www.netgear.com/support/product/GS105.aspx" rel="external">https://www.netgear.com/support/product/GS105.aspx</a> Switch oder ähnliche Switches des Modells GS105.</p>
 <p>Wenn Sie einen Netzwerk-Switch verwenden, ist es wichtig, dass die Paketverzögerung wie im folgenden Screenshot auf 9500 eingestellt ist.</p>
 <p>Nachdem Sie die Paketverzögerung auf 9500 eingestellt haben, rufen Sie die erweiterten Kameraeinstellungen auf und speichern Sie in Bank 1, wie im Kameraeinrichtungsartikel beschrieben: ** <a href="/sc-support/de/cameras-video/point-grey-flir-usb/index.html">point-grey-flir-usb.md</a>**</p>
-<p><a href="#R-image-f7ae4338228ca8c8e3728c8124826df5" class="lightbox-link"><img alt="Point Grey FlyCap2 Paketverzögerung Switch-Setup" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7ae4338228ca8c8e3728c8124826df5"><img alt="Point Grey FlyCap2 Paketverzögerung Switch-Setup" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
+<p><a href="#R-image-358ce6e06dc55996f4dd21acc44df4e0" class="lightbox-link"><img alt="Point Grey FlyCap2 Paketverzögerung Switch-Setup" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-358ce6e06dc55996f4dd21acc44df4e0"><img alt="Point Grey FlyCap2 Paketverzögerung Switch-Setup" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115006992508/point-grey-flycap2-2017-10-26-12-36-37-p.png"></a></p>
 <p>Das Einstellen der Paketverzögerung hilft, verworfene Frames zu vermeiden, wenn zwei Blackfly 03S3C Kameras an einem Netzwerkadapter verwendet werden.</p>
 <p>Ausführlichere Informationen zu einem Mehrfachkamera-Setup finden Sie hier: <a href="https://www.ptgrey.com/tan/10351" rel="external">https://www.ptgrey.com/tan/10351</a></p>
 <hr>
@@ -494,7 +521,6 @@ Subnetz: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Sprache</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/point-grey-flir-gige/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/point-grey-flir-gige/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/point-grey-flir-gige/index.html" lang="de" selected data-selected>Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html" lang="fr">Français</option>
@@ -556,8 +582,8 @@ Subnetz: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537809" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537809" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542922" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

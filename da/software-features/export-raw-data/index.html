@@ -21,8 +21,7 @@
     <meta itemprop="description" content="Denne artikel beskriver, hvordan man eksporterer rådata fra Swing Catalyst eller Motion Catalyst som TSV-filer.">
     <meta itemprop="wordCount" content="247">
     <title>Sådan eksporteres rådata :: Swing Catalyst Support</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-raw-data/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-raw-data/index.html" rel="alternate" hreflang="fr">
@@ -58,27 +57,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-raw-data/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-raw-data/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-raw-data/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537823" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537823" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537823" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537823" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537823" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542937" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542937" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542937" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542937" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542937" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.da.js?1772537823";
+      window.relearn.index_js_url="/sc-support/searchindex.da.js?1772542937";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537823" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537823" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537823" defer></script>
-    <script src="/sc-support/js/lunr/lunr.da.min.js?1772537823" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542937" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542937" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542937" defer></script>
+    <script src="/sc-support/js/lunr/lunr.da.min.js?1772542937" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['da'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537823" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537823" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537823" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537823" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537823" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542937" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542937" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542937" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542937" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542937" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -158,6 +157,20 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Indholdsfortegnelse (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#eksport-af-data-fra-explorer">Eksport af data fra Explorer</a></li>
+    <li><a href="#valg-af-dataeksport">Valg af dataeksport</a></li>
+    <li><a href="#indstillinger-for-rådata">Indstillinger for rådata</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/da/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/da/software-features/index.html"><span itemprop="name">Software &amp; funktioner</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Sådan eksporteres rådata</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -194,8 +207,8 @@
 <p>Ønsker du at eksportere elevoplysninger? Se denne <a href="/sc-support/da/software-features/export-contacts/index.html">artikel</a>.</p>
 <p>Der er flere måder at eksportere data på: via Explorer og fra Stack. Begge muligheder giver den samme funktionalitet.</p>
 <h2 id="eksport-af-data-fra-explorer">Eksport af data fra Explorer<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopier link til udklipsholder"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-7ba398b79908023fd54ef7c8285a6290" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7ba398b79908023fd54ef7c8285a6290"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-094dd64d19b603d91dcb86a1ed8557a1" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-094dd64d19b603d91dcb86a1ed8557a1"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>I Explorer kan data eksporteres ved at højreklikke på en Optagelse, vælge Eksporter og vælge blandt de tilgængelige muligheder, eller ved at trække Optagelsen/Optagelserne til eksportlisten.</p>
 <p>Menuvalg</p>
 <p>Funktion</p>
@@ -209,20 +222,20 @@ Eksporterer den valgte Optagelse med indstillingerne for rådata-eksport</p>
 <p>Eksporter Session som rådata-filer
 Eksporterer hele Sessionen med indstillingerne for rådata-eksport</p>
 <p>En oversigt over de eksportmuligheder, der er tilgængelige ved højreklik:</p>
-<p><a href="#R-image-bfd87107179748593c117b93ba824970" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfd87107179748593c117b93ba824970"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-2f96c0cbc7d132e946df0d0945a360c7" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f96c0cbc7d132e946df0d0945a360c7"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
 <p>Eksportlisten:</p>
-<p><a href="#R-image-4fd9f622cd02492faf14a909fafbaefb" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4fd9f622cd02492faf14a909fafbaefb"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-bd1202c7747eddc205d9f46d61c4c2f5" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd1202c7747eddc205d9f46d61c4c2f5"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="valg-af-dataeksport">Valg af dataeksport<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopier link til udklipsholder"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Det er muligt at vælge mellem et par forskellige muligheder ved eksport af data.</p>
 <p>Denne artikel fokuserer primært på rådata.</p>
 <p>For at eksportere rådata skal du sørge for at vælge &ldquo;Raw Data&rdquo; i eksportdialogboksen.</p>
-<p><a href="#R-image-87d4f2a054e652690c10974d67c55142" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-87d4f2a054e652690c10974d67c55142"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-6a6b88a7e7a71f04c6ecc9be519bccb8" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6a6b88a7e7a71f04c6ecc9be519bccb8"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <h2 id="indstillinger-for-rådata">Indstillinger for rådata<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopier link til udklipsholder"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-046cf4efc9fd67a8c4e04196e5057cb3" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-046cf4efc9fd67a8c4e04196e5057cb3"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
+<p><a href="#R-image-d1c833e384845c24274c9f190179536d" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d1c833e384845c24274c9f190179536d"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
 <p>Bemærk venligst, at denne funktionalitet stadig er under forbedring – i øjeblikket er mange indstillinger samlet under &ldquo;Raw data&rdquo;.</p>
 <hr>
 <p><em>Sidst opdateret: 2023-12-15</em> | <a href="/sc-support/da/software-features/export-raw-data/index.html">Se på den officielle supportside</a></p>
@@ -327,7 +340,6 @@ Eksporterer hele Sessionen med indstillingerne for rådata-eksport</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Sprog</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-raw-data/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-raw-data/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-raw-data/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-raw-data/index.html" lang="fr">Français</option>
@@ -389,8 +401,8 @@ Eksporterer hele Sessionen med indstillingerne for rådata-eksport</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537823" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537823" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542937" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542937" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

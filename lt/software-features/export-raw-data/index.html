@@ -21,8 +21,7 @@
     <meta itemprop="description" content="Šiame straipsnyje aprašoma, kaip eksportuoti neapdorotus duomenis iš SwingCatalyst arba MotionCatalyst kaip TSV failus.">
     <meta itemprop="wordCount" content="234">
     <title>Kaip eksportuoti neapdorotus duomenis :: Swing Catalyst Pagalba</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/export-raw-data/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/export-raw-data/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/export-raw-data/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/export-raw-data/index.html" rel="alternate" hreflang="fr">
@@ -58,26 +57,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/export-raw-data/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/export-raw-data/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/export-raw-data/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537840" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537840" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537840" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542956" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542956" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772537840";
+      window.relearn.index_js_url="/sc-support/searchindex.lt.js?1772542956";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542956" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537840" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537840" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537840" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542956" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542956" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542956" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -157,6 +156,20 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#duomenų-eksportavimas-iš-žiniaraščio">Duomenų eksportavimas iš Žiniaraščio</a></li>
+    <li><a href="#duomenų-eksporto-pasirinkimas">Duomenų eksporto pasirinkimas</a></li>
+    <li><a href="#neapdorotų-duomenų-parinktys">Neapdorotų duomenų parinktys</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/index.html"><span itemprop="name">Swing Catalyst Palaikymas</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lt/software-features/index.html"><span itemprop="name">Programinė įranga ir funkcijos</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kaip eksportuoti neapdorotus duomenis</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -193,8 +206,8 @@
 <p>Norite eksportuoti mokinio informaciją? Žiūrėkite šį <a href="/sc-support/lt/software-features/export-contacts/index.html">straipsnį</a>.</p>
 <p>Duomenis galima eksportuoti keliais būdais – per Žiniaraštį ir iš Sąrašo. Abiem atvejais galimybės yra vienodos.</p>
 <h2 id="duomenų-eksportavimas-iš-žiniaraščio">Duomenų eksportavimas iš Žiniaraščio<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-cebec5b5ac835e7e5b09925f2c3b82d5" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cebec5b5ac835e7e5b09925f2c3b82d5"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
+<p><a href="#R-image-a8ff441a2771240511ab89e0791611a9" class="lightbox-link"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a8ff441a2771240511ab89e0791611a9"><img alt="MotionCatalyst_94hdcRa9My.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-94hdcra9my-png.png"></a></p>
 <p>Žiniaraštyje duomenis galima eksportuoti dešiniuoju pelės mygtuku spustelėjus ant Įrašo, pasirinkus Eksportuoti ir pasirinkus vieną iš galimų parinkčių arba nuvilkus Įrašą (-us) į Eksporto sąrašą.</p>
 <p>Meniu pasirinkimas</p>
 <p>Funkcija</p>
@@ -208,20 +221,20 @@ Eksportuoja pasirinktą Įrašą su neapdorotų duomenų eksporto parinktimis.</
 <p>Eksportuoti sesiją kaip neapdorotų duomenų failus
 Eksportuoja visą Sesiją su neapdorotų duomenų eksporto parinktimis.</p>
 <p>Dešiniuoju pelės mygtuku spustelėjus galimų eksporto parinkčių apžvalga:</p>
-<p><a href="#R-image-8800b40434f7961496c48b07d73ab368" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8800b40434f7961496c48b07d73ab368"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
+<p><a href="#R-image-56676b0e71d43524cc6fe16e0d31bdae" class="lightbox-link"><img alt="l38taztNxr.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56676b0e71d43524cc6fe16e0d31bdae"><img alt="l38taztNxr.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/l38taztnxr-png.png"></a></p>
 <p>Eksporto sąrašas:</p>
-<p><a href="#R-image-a3786dff91659bc07e91dcb4a888ae4f" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3786dff91659bc07e91dcb4a888ae4f"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
+<p><a href="#R-image-30a74be7cf08469834e5511b8f9a8eed" class="lightbox-link"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30a74be7cf08469834e5511b8f9a8eed"><img alt="MotionCatalyst_fng2UlTl9G.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-fng2ultl9g-png.png"></a></p>
 <h2 id="duomenų-eksporto-pasirinkimas">Duomenų eksporto pasirinkimas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Eksportuojant duomenis galima rinktis iš kelių skirtingų parinkčių.</p>
 <p>Šiame straipsnyje daugiausia dėmesio skiriama neapdorotiems duomenims.</p>
 <p>Norėdami eksportuoti neapdorotus duomenis, eksporto dialogo lange būtinai pasirinkite „Raw Data&quot;.</p>
-<p><a href="#R-image-eec038a5b18197c870e4a3a9e3fbcaa2" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eec038a5b18197c870e4a3a9e3fbcaa2"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
+<p><a href="#R-image-4f2785a708d4b163ded60cae0bdd0388" class="lightbox-link"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4f2785a708d4b163ded60cae0bdd0388"><img alt="MotionCatalyst_kvn32jJ3Qh.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-kvn32jj3qh-png.png"></a></p>
 <h2 id="neapdorotų-duomenų-parinktys">Neapdorotų duomenų parinktys<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-b26644b4e438a9857a84762f5cf55829" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b26644b4e438a9857a84762f5cf55829"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
+<p><a href="#R-image-b5b0ba00f675f281febbd2b99374ce5c" class="lightbox-link"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b5b0ba00f675f281febbd2b99374ce5c"><img alt="MotionCatalyst_YCBDGYuqJi.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/115002492234/motioncatalyst-ycbdgyuqji-png.png"></a></p>
 <p>Atkreipkite dėmesį, kad ši funkcija vis dar tobulinama – šiuo metu daug parinkčių yra sujungtos su „Raw data&quot;.</p>
 <hr>
 <p><em>Paskutinį kartą atnaujinta: 2023-12-15</em> | <a href="/sc-support/lt/software-features/export-raw-data/index.html">Peržiūrėti oficialioje pagalbos svetainėje</a></p>
@@ -326,7 +339,6 @@ Eksportuoja visą Sesiją su neapdorotų duomenų eksporto parinktimis.</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/export-raw-data/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/export-raw-data/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/export-raw-data/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/export-raw-data/index.html" lang="fr">Français</option>
@@ -388,8 +400,8 @@ Eksportuoja visą Sesiją su neapdorotų duomenų eksporto parinktimis.</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537840" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537840" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542956" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542956" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="808">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
     <title>Как да настроите Basler GigE камери със Swing Catalyst :: Поддръжка на Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537836" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537836" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537836" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542952" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542952" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542952" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.bg.js?1772537836";
+      window.relearn.index_js_url="/sc-support/searchindex.bg.js?1772542952";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537836" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542952" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537836" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537836" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537836" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537836" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537836" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542952" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542952" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542952" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542952" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542952" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,19 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#задаване-на-ip-адреса-на-камерите">Задаване на IP адреса на камерите</a></li>
+    <li><a href="#ipconfigurator_"><img src="../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" alt="IpConfigurator_2018-12-03_12-38-59.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/bg/index.html"><span itemprop="name">Поддръжка на Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/bg/cameras-video/index.html"><span itemprop="name">Камери и видео</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Как да настроите Basler GigE камери със Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -211,8 +223,8 @@
 <p>Уверете се, че SwingCatalyst има разрешение в защитната стена на Windows Defender както за частни, така и за публични мрежи.</p>
 <blockquote>
 <p>example:</p></blockquote>
-<p><a href="#R-image-6cb31e2095d510da5497efabc2f357fc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6cb31e2095d510da5497efabc2f357fc"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
+<p><a href="#R-image-ab988a56e2d48f82edec0f8461a418e4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab988a56e2d48f82edec0f8461a418e4"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
 <h2 id="задаване-на-ip-адреса-на-камерите">Задаване на IP адреса на камерите<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Подготовка на IP</p>
 <p>Всяка камера и Ethernet карта (NIC / мрежов интерфейсен контролер) трябва да бъдат конфигурирани със статични IP адреси в различни подмрежи (и маска на подмрежата).</p>
@@ -238,20 +250,20 @@ subnet mask: 255.255.255.0</p>
 <p>Първо трябва да зададем IP адреса на камерата — това се прави чрез Pylon IP Configurator.</p>
 <p>Натиснете бутона за стартово меню на клавиатурата и въведете pylon ip — IP Configurator трябва да се появи. Ако не се появи, вероятно нямате инсталиран софтуера.</p>
 <p>За да инсталирате Pylon софтуера, вижте: <a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external"></a><a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external">https://www.baslerweb.com/en/sales-support/downloads/software-downloads/</a> и потърсете: pylon 5.1.0 Camera Software Suite Windows.</p>
-<p><a href="#R-image-0509da352cea851a32cc868ec8434845" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0509da352cea851a32cc868ec8434845"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
+<p><a href="#R-image-5cb3ada92c69cfbb59bc6cd90a01c9dd" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5cb3ada92c69cfbb59bc6cd90a01c9dd"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
 <p>Кликнете върху камерата и изберете Static IP</p>
-<h2 id="ipconfigurator_"><a href="#R-image-5a224bc65849e5c423bcda7416e0e0bf" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a224bc65849e5c423bcda7416e0e0bf"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="ipconfigurator_"><a href="#R-image-94cd0ccdc338c1a75cbfdf440cfd4e6e" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94cd0ccdc338c1a75cbfdf440cfd4e6e"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Задайте IP адреса на камерата и маската на подмрежата съгласно примера по-горе.</p>
 <blockquote>
 <p>note: Ако използвате няколко камери, трябва да</p></blockquote>
-<p><a href="#R-image-d15b162ed67abc6c5d9ba6ceb087439c" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d15b162ed67abc6c5d9ba6ceb087439c"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
+<p><a href="#R-image-29515a32fda44fd146456554da7a7252" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-29515a32fda44fd146456554da7a7252"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
 <p>Конфигуриране на Basler GigE камери чрез Halcon</p>
 <p>В SwingCatalyst отидете в раздела Настройки и след това в Камери.</p>
-<p><a href="#R-image-bc7c3ac0c9506e23aad38e4749c87a21" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc7c3ac0c9506e23aad38e4749c87a21"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
+<p><a href="#R-image-c84e19e7d2bc0f595c15524d1a3fa08d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c84e19e7d2bc0f595c15524d1a3fa08d"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
 <p>Кликнете върху Разширено.</p>
 <ul>
 <li>
@@ -261,33 +273,33 @@ subnet mask: 255.255.255.0</p>
 <p>Активирайте отметката GtlNumBuffers и въведете 200 като стойност.</p>
 </li>
 </ul>
-<p><a href="#R-image-1359e694298e07fd8d84bca304a64a2f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1359e694298e07fd8d84bca304a64a2f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
+<p><a href="#R-image-aa686cb75704b5002bbb12db451aef00" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa686cb75704b5002bbb12db451aef00"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
 <p>Настройване на Basler GigE камери:</p>
 <p>Нека разгледаме как да зададем експозиция, скорост на затвора и Честота на кадрите.</p>
 <blockquote>
 <p>note: Ако не можете да видите настройките и получавате грешка в SwingCatalyst, моля проверете настройките на защитната стена на Windows. Опитайте да изключите защитната стена, за да проверите дали тя блокира достъпа на SwingCatalyst до камерите.</p></blockquote>
 <p>Ако настройките работят и можете да стриймвате без проблем, уверете се, че SwingCatalyst има разрешение както в публични, така и в частни мрежи в защитната стена на Windows Defender.</p>
 <p>Разгънете раздела AcquisitionTrigger и въведете максималната (или по-ниска) Честота на кадрите, след което кликнете върху Enable Acquisition Frame Rate. Това ще ви позволи да зададете Честота на кадрите. Забележка: Честота на кадрите може да бъде ограничена от стойностите на експозицията.</p>
-<p><a href="#R-image-7a9e75c9f83654706eb970bac1085b5b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a9e75c9f83654706eb970bac1085b5b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
+<p><a href="#R-image-f4ad3aca19a50448bec265602f71e1e4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4ad3aca19a50448bec265602f71e1e4"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
 <p>Задаване на стойности на експозицията</p>
 <p>Обикновено е най-добре да се използва ръчна експозиция за статични среди, като например закрити студия. Напълно автоматичната експозиция може да доведе до промяна на Честота на кадрите и до непоследователно изображение. В случая не използваме Auto експозиция, тъй като искаме да можем да я контролираме сами. Като цяло се препоръчва стойност на времето на експозиция под 2000 (2ms).</p>
 <p>Задаване на стойности на Gain</p>
 <p>Подобно на експозицията, задаването на ръчен Gain за статични / закрити условия на осветление е най-добрият вариант. Колкото по-висока е стойността на Gain, толкова по-зърнесто ще бъде изображението и толкова по-дълго ще отнеме видео кодирането в сравнение с нисък Gain.</p>
 <p>За да зададете ръчен Gain, сменете Gain Auto от Continuous на Off, след което натиснете Пауза и стартирайте отново Възпроизвеждането, за да презаредите настройките. Задайте стойностите на Gain, като промените числовите стойности в Gain (Raw).</p>
-<p><a href="#R-image-dda9c133db1bbb64241e1cf6c6d6cf29" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dda9c133db1bbb64241e1cf6c6d6cf29"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
+<p><a href="#R-image-cda3a54c0661b44e5d408efc9ea536ae" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cda3a54c0661b44e5d408efc9ea536ae"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
 <p>Промяна на размера на изображението, зона на интерес, Region of Interest и други</p>
 <p>В някои случаи искате да намалите размера на изображението, за да се фокусирате върху конкретна зона от видео изображението — например за да видите в детайли клюшката и топката при Удар.</p>
 <p>Това може да се направи чрез зона на интерес, известна още като AOI, и ROI — Region of Interest. Намаляването на общия размер на изображението с тази функция може също така да увеличи Честота на кадрите.</p>
-<p><a href="#R-image-a7b556fe41901cb283f6cdfe56c1f9e3" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a7b556fe41901cb283f6cdfe56c1f9e3"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
+<p><a href="#R-image-0c2933ca862bb89478774e316ce43e14" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c2933ca862bb89478774e316ce43e14"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
 <p>Записване на настройките в камерата</p>
 <p>Важно е да запишете настройките в камерата. Ако това не бъде направено, всичко, което сте конфигурирали, ще бъде изгубено.</p>
 <p>Уверете се, че сте задали Default Set Selector и Default Startup Set. Разполагате с различни потребителски набори, от които да избирате, и теоретично можете да имате различни настройки, записани в отделни набори. Т.е. можете да изберете „User Set 1&quot; като ваш набор по подразбиране, след което да натиснете User Set Save, за да запишете текущите си настройки в този профил.</p>
-<p><a href="#R-image-fa1d996a8753e6e8e057b9954b2d5c89" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa1d996a8753e6e8e057b9954b2d5c89"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
+<p><a href="#R-image-e09ea93d985e13ab5a5b97761b60086e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e09ea93d985e13ab5a5b97761b60086e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
 <hr>
 <p><em>Последна актуализация: 2022-10-10</em> | <a href="/sc-support/bg/cameras-video/basler-gige-setup/index.html">Вижте на официалния сайт за поддръжка</a></p>
 
@@ -398,7 +410,6 @@ subnet mask: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/basler-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/basler-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/basler-gige-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/basler-gige-setup/index.html" lang="fr">Français</option>
@@ -460,8 +471,8 @@ subnet mask: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537836" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537836" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542952" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542952" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

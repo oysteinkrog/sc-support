@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="329">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
     <title>千兆乙太網路與 GigE Vision 攝影機網路建議 :: Swing Catalyst 支援</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537819" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537819" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537819" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542932" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542932" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772537819";
+      window.relearn.index_js_url="/sc-support/searchindex.zh-hant.js?1772542932";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772542932" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537819" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537819" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537819" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542932" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542932" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542932" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,47 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="導航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目錄 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#本文說明如何設定-gige-攝影機以搭配-swing-catalyst-使用">本文說明如何設定 GigE 攝影機以搭配 Swing Catalyst 使用。</a></li>
+      </ul>
+    </li>
+    <li><a href="#建議">建議</a>
+      <ul>
+        <li><a href="#建議的網路介面卡">建議的網路介面卡</a></li>
+        <li><a href="#poe-網路卡">PoE 網路卡</a></li>
+        <li><a href="#不支援的介面卡">不支援的介面卡</a></li>
+        <li><a href="#每張網路介面卡連接多台攝影機">每張網路介面卡連接多台攝影機</a></li>
+      </ul>
+    </li>
+    <li><a href="#網路介面卡設定">網路介面卡設定</a>
+      <ul>
+        <li><a href="#ip-位址設定">IP 位址設定</a></li>
+        <li><a href="#選用">選用</a></li>
+        <li><a href="#進階網路介面卡設定">進階網路介面卡設定</a></li>
+      </ul>
+    </li>
+    <li><a href="#疑難排解">疑難排解</a>
+      <ul>
+        <li></li>
+        <li><a href="#連線速度為-100-mbps">連線速度為 100 Mbps：</a></li>
+        <li><a href="#透過使用-region-of-interestroi進一步減少掉幀">透過使用 Region Of Interest（ROI）進一步減少掉幀：</a></li>
+        <li><a href="#連線問題攝影機斷線">連線問題（攝影機斷線）：</a></li>
+        <li><a href="#其他問題">其他問題：</a></li>
+        <li><a href="#jumbo-幀相容性">Jumbo 幀相容性</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/index.html"><span itemprop="name">Swing Catalyst 支援</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh-hant/cameras-video/index.html"><span itemprop="name">相機與影片</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">千兆乙太網路與 GigE Vision 攝影機網路建議</span><meta itemprop="position" content="3"></li>
@@ -308,12 +348,12 @@
 <p>最佳方式是為每台攝影機配置一張<em>專用</em>網路介面卡。</p>
 <h2 id="網路介面卡設定">網路介面卡設定<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>若要設定網路介面卡，請前往「控制台」-&gt;「網路和網際網路」-&gt;「網路和共用中心」，然後點選左側的「變更介面卡設定」。</p>
-<p><a href="#R-image-5939439bf72e0c81366c0fdb8661d87c" class="lightbox-link"><img alt="開啟檔案總管 explorer_9azqaIPFLV.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-9azqaipflv-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5939439bf72e0c81366c0fdb8661d87c"><img alt="開啟檔案總管 explorer_9azqaIPFLV.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-9azqaipflv-png.png"></a></p>
-<p><a href="#R-image-694770d5eb6e81ab6d9e5649dbaf3c43" class="lightbox-link"><img alt="開啟網路和共用中心 explorer_fZtM7nQP24.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-fztm7nqp24-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-694770d5eb6e81ab6d9e5649dbaf3c43"><img alt="開啟網路和共用中心 explorer_fZtM7nQP24.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-fztm7nqp24-png.png"></a></p>
-<p><a href="#R-image-754f6dc9ed745ef53928c9a4cc56c370" class="lightbox-link"><img alt="網路介面卡清單 explorer_Pj7z6kHK0L.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-pj7z6khk0l-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-754f6dc9ed745ef53928c9a4cc56c370"><img alt="網路介面卡清單 explorer_Pj7z6kHK0L.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-pj7z6khk0l-png.png"></a></p>
+<p><a href="#R-image-d2fb9f037b8f325f2644d5e640cd1070" class="lightbox-link"><img alt="開啟檔案總管 explorer_9azqaIPFLV.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-9azqaipflv-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2fb9f037b8f325f2644d5e640cd1070"><img alt="開啟檔案總管 explorer_9azqaIPFLV.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-9azqaipflv-png.png"></a></p>
+<p><a href="#R-image-019759b59d858222599046f0e79ed1e3" class="lightbox-link"><img alt="開啟網路和共用中心 explorer_fZtM7nQP24.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-fztm7nqp24-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-019759b59d858222599046f0e79ed1e3"><img alt="開啟網路和共用中心 explorer_fZtM7nQP24.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-fztm7nqp24-png.png"></a></p>
+<p><a href="#R-image-74772ce47e2846b3b6aad2afc354534a" class="lightbox-link"><img alt="網路介面卡清單 explorer_Pj7z6kHK0L.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-pj7z6khk0l-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-74772ce47e2846b3b6aad2afc354534a"><img alt="網路介面卡清單 explorer_Pj7z6kHK0L.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-pj7z6khk0l-png.png"></a></p>
 <ul>
 <li>
 <p>將網路卡設定為接受「Jumbo 幀（9K）」</p>
@@ -330,8 +370,8 @@
 </ul>
 <p>設定範例：</p>
 <p>我們已取消勾選未使用 / 不必要的項目，此步驟並非強制要求。</p>
-<p><a href="#R-image-d33dac80ee7330b45cac7a1fe384cdff" class="lightbox-link"><img alt="網路介面卡內容設定 dllhost_WxISH9UBwG.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-wxish9ubwg-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d33dac80ee7330b45cac7a1fe384cdff"><img alt="網路介面卡內容設定 dllhost_WxISH9UBwG.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-wxish9ubwg-png.png"></a></p>
+<p><a href="#R-image-9eebed555150ad2036b58b062e44d52a" class="lightbox-link"><img alt="網路介面卡內容設定 dllhost_WxISH9UBwG.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-wxish9ubwg-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9eebed555150ad2036b58b062e44d52a"><img alt="網路介面卡內容設定 dllhost_WxISH9UBwG.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-wxish9ubwg-png.png"></a></p>
 <h3 id="ip-位址設定">IP 位址設定<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>我們建議在攝影機和網路介面卡上均使用靜態 IP 設定，以確保最佳穩定性。</p>
 <p>在變更每張網路介面卡的 IP 位址之前，請先設定攝影機上的 IP 位址。例如，對於正面視角右側攝影機，請確認攝影機已設為使用靜態 IP，並依照以下建議將 IP 設為 10.0.1.10。請儲存攝影機上的變更後，再對網路介面卡進行設定。</p>
@@ -353,25 +393,25 @@
 子網路遮罩：255.255.255.0</p>
 <h3 id="選用">選用<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>取消勾選不必要的項目：</p>
-<p><a href="#R-image-0e5fd9660571d1fffec13ca25849be05" class="lightbox-link"><img alt="取消勾選不必要項目 dllhost_5htydM4paz.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-5htydm4paz-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e5fd9660571d1fffec13ca25849be05"><img alt="取消勾選不必要項目 dllhost_5htydM4paz.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-5htydm4paz-png.png"></a><a href="#R-image-4620c4fcf157631673089782ff226f9b" class="lightbox-link"><img alt="取消勾選不必要項目（續） dllhost_xFqWSG573S.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-xfqwsg573s-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4620c4fcf157631673089782ff226f9b"><img alt="取消勾選不必要項目（續） dllhost_xFqWSG573S.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-xfqwsg573s-png.png"></a></p>
+<p><a href="#R-image-59ce7ef0ec14110b3fd3989888e855de" class="lightbox-link"><img alt="取消勾選不必要項目 dllhost_5htydM4paz.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-5htydm4paz-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-59ce7ef0ec14110b3fd3989888e855de"><img alt="取消勾選不必要項目 dllhost_5htydM4paz.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-5htydm4paz-png.png"></a><a href="#R-image-fc6be6f60f2805502844e4cc70274012" class="lightbox-link"><img alt="取消勾選不必要項目（續） dllhost_xFqWSG573S.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-xfqwsg573s-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fc6be6f60f2805502844e4cc70274012"><img alt="取消勾選不必要項目（續） dllhost_xFqWSG573S.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-xfqwsg573s-png.png"></a></p>
 <p>若取消勾選項目後，請確認點選「OK」，然後返回網路介面卡內容。</p>
 <h3 id="進階網路介面卡設定">進階網路介面卡設定<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <h4 id="jumbo-幀啟用-jumbo-封包--jumbo-幀並確認將其設為-9000-位元組以上">Jumbo 幀：啟用 Jumbo 封包 / Jumbo 幀，並確認將其設為 9000 位元組以上。<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p><a href="#R-image-c662519a862c94b6d396e74bbcbc2d60" class="lightbox-link"><img alt="啟用 Jumbo 幀設定 rundll32_2017-10-30_15-12-25.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-12-25-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c662519a862c94b6d396e74bbcbc2d60"><img alt="啟用 Jumbo 幀設定 rundll32_2017-10-30_15-12-25.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-12-25-png.png"></a></p>
+<p><a href="#R-image-0690bf1e70462538c60673f10293e61d" class="lightbox-link"><img alt="啟用 Jumbo 幀設定 rundll32_2017-10-30_15-12-25.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-12-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0690bf1e70462538c60673f10293e61d"><img alt="啟用 Jumbo 幀設定 rundll32_2017-10-30_15-12-25.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-12-25-png.png"></a></p>
 <h4 id="中斷調節若有提供請設為高或極高">中斷調節：若有提供，請設為「高」或「極高」。<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p><a href="#R-image-0c5cb81d47217d1f610a2eb32375f322" class="lightbox-link"><img alt="中斷調節設定 LMIIgnition_2017-10-30_13-52-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/lmiignition-2017-10-30-13-52-45-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0c5cb81d47217d1f610a2eb32375f322"><img alt="中斷調節設定 LMIIgnition_2017-10-30_13-52-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/lmiignition-2017-10-30-13-52-45-png.png"></a></p>
+<p><a href="#R-image-721292d1f47026334da6ad7122934a0a" class="lightbox-link"><img alt="中斷調節設定 LMIIgnition_2017-10-30_13-52-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/lmiignition-2017-10-30-13-52-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-721292d1f47026334da6ad7122934a0a"><img alt="中斷調節設定 LMIIgnition_2017-10-30_13-52-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/lmiignition-2017-10-30-13-52-45-png.png"></a></p>
 <h4 id="接收緩衝區將接收緩衝區設為最大值">接收緩衝區：將接收緩衝區設為最大值。<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p><a href="#R-image-985d04471163fe0e4f73b74deb187b34" class="lightbox-link"><img alt="接收緩衝區設定 rundll32_2017-10-30_15-33-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-33-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-985d04471163fe0e4f73b74deb187b34"><img alt="接收緩衝區設定 rundll32_2017-10-30_15-33-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-33-17-png.png"></a></p>
+<p><a href="#R-image-b247fae26fd6886819f68d97dc87836a" class="lightbox-link"><img alt="接收緩衝區設定 rundll32_2017-10-30_15-33-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-33-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b247fae26fd6886819f68d97dc87836a"><img alt="接收緩衝區設定 rundll32_2017-10-30_15-33-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-33-17-png.png"></a></p>
 <h2 id="疑難排解">疑難排解<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="掉幀">掉幀<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>降低每台攝影機的幀速率可能有助於避免或減少掉幀情況。</p>
-<p><a href="#R-image-7cbb726fe773bc4ca1d0f2dc98983faf" class="lightbox-link"><img alt="MotionCatalyst 幀速率設定 MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7cbb726fe773bc4ca1d0f2dc98983faf"><img alt="MotionCatalyst 幀速率設定 MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/motioncatalyst-w1fkpdypkx-png.png"></a></p>
+<p><a href="#R-image-fbbf144ce5e2dd77af872632fb95a60c" class="lightbox-link"><img alt="MotionCatalyst 幀速率設定 MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fbbf144ce5e2dd77af872632fb95a60c"><img alt="MotionCatalyst 幀速率設定 MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/motioncatalyst-w1fkpdypkx-png.png"></a></p>
 <p>您是否使用了建議的網路卡？若否，可能是網路卡本身造成問題。請聯繫我們的銷售團隊，確認您擁有合適的網路設備。</p>
 <ul>
 <li>
@@ -396,8 +436,8 @@
 <p>從 Windows 控制台檢查網路介面卡的狀態。</p>
 </li>
 </ul>
-<p><a href="#R-image-142f02c90ec78d0e9dc7c0c55e330799" class="lightbox-link"><img alt="網路介面卡狀態 explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-142f02c90ec78d0e9dc7c0c55e330799"><img alt="網路介面卡狀態 explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-zol1iapqml-png.png"></a></p>
+<p><a href="#R-image-83d48bd122794b1c810ef6b1746b7326" class="lightbox-link"><img alt="網路介面卡狀態 explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-83d48bd122794b1c810ef6b1746b7326"><img alt="網路介面卡狀態 explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-zol1iapqml-png.png"></a></p>
 <p>注意：速度應為 1.0 Gbps（1000Mbps），而非 100Mbps。</p>
 <h3 id="透過使用-region-of-interestroi進一步減少掉幀">透過使用 Region Of Interest（ROI）進一步減少掉幀：<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="複製連結到剪貼簿"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>使用 Region of Interest（或感興趣區域）可縮小整體影像尺寸並提升 FPS，同時也有助於降低頻寬使用量，進而減少掉幀情況（請參閱上方說明以了解如何使用 ROI）。</p>
@@ -423,8 +463,8 @@
 <p>例如，若您將攝影機連接至僅支援 4KB Jumbo 幀的交換器，而網路介面卡卻設定為 9KB Jumbo 幀，將會造成問題。</p>
 <p>您可以使用命令列工具 ping 來測試網路介面卡的性能（如截圖所示）：</p>
 <p>此處我們以 9000 位元組（9KB）的封包大小對網路介面卡進行 ping 測試。若請求逾時，表示該介面卡可能不支援 9KB Jumbo 幀。</p>
-<p><a href="#R-image-228fd55a749651078525bc0dcc969958" class="lightbox-link"><img alt="ping 指令測試 Jumbo 幀 cmd_2017-11-06_12-40-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/cmd-2017-11-06-12-40-18-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-228fd55a749651078525bc0dcc969958"><img alt="ping 指令測試 Jumbo 幀 cmd_2017-11-06_12-40-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/cmd-2017-11-06-12-40-18-png.png"></a></p>
+<p><a href="#R-image-67da95d9abc3f4abee50642c8d40c9a4" class="lightbox-link"><img alt="ping 指令測試 Jumbo 幀 cmd_2017-11-06_12-40-18.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/cmd-2017-11-06-12-40-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-67da95d9abc3f4abee50642c8d40c9a4"><img alt="ping 指令測試 Jumbo 幀 cmd_2017-11-06_12-40-18.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/cmd-2017-11-06-12-40-18-png.png"></a></p>
 <hr>
 <p><em>最後更新：2025-04-11</em> | <a href="/sc-support/zh-hant/cameras-video/gige-network-setup/index.html">在官方支援網站上檢視</a></p>
 
@@ -535,7 +575,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">語言</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/gige-network-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/gige-network-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/gige-network-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/gige-network-setup/index.html" lang="fr">Français</option>
@@ -597,8 +636,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537819" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537819" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542932" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542932" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

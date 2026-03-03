@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="269">
     <meta itemprop="keywords" content="Motion-Plate,Pressure-Data,Force-Data">
     <title>Fasi del grafico delle forze :: Supporto Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/force-graph-phases/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/force-graph-phases/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/force-graph-phases/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/force-graph-phases/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/force-graph-phases/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/force-graph-phases/index.html" rel="alternate" hreflang="fr">
@@ -62,27 +61,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/force-graph-phases/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/force-graph-phases/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/force-graph-phases/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537811" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537811" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537811" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542923" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542923" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542923" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.it.js?1772537811";
+      window.relearn.index_js_url="/sc-support/searchindex.it.js?1772542923";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/lunr/lunr.it.min.js?1772537811" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/lunr/lunr.it.min.js?1772542923" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['it'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537811" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537811" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537811" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537811" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537811" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542923" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542923" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542923" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542923" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542923" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,27 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Indice (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#cosa-sono-le-fasi">Cosa sono le fasi?</a></li>
+    <li><a href="#fasi-evidenziate">Fasi evidenziate</a></li>
+    <li><a href="#esempio-di-salto-con-contromovimento-in-motioncatalyst"><img src="../../assets/images/9375032729884/motioncatalyst-vnmvuzfeku-png.png" alt="Esempio di salto con contromovimento in MotionCatalyst"></a></li>
+    <li><a href="#opzioni">Opzioni</a></li>
+    <li><a href="#immagine"><img src="../../assets/images/9375032729884/image.png" alt="immagine"></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#esempio-di-fasi-non-evidenziate-in-motioncatalyst"><img src="../../assets/images/9375032729884/motioncatalyst-bsjmc0qg8e-png.png" alt="Esempio di fasi non evidenziate in MotionCatalyst"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/it/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/it/software-features/index.html"><span itemprop="name">Software e Funzionalità</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Fasi del grafico delle forze</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -235,15 +255,15 @@
 <p>Ogni fase ha un diverso colore di evidenziazione per permetterti di distinguerle facilmente.</p>
 <p>Le fasi sono disponibili per i riquadri dati dell&rsquo;asse &ldquo;Forza&rdquo; e dell&rsquo;asse &ldquo;Centro di Pressione&rdquo;. Se i <a href="/sc-support/it/software-features/bookmarks/index.html">Segnalibri vengono modificati</a>, la posizione di queste fasi cambierà.</p>
 <p>Esempio di un salto con contromovimento:</p>
-<h2 id="esempio-di-salto-con-contromovimento-in-motioncatalyst"><a href="#R-image-6e28e8d65ce65b01e7bcc62f9b7844ff" class="lightbox-link"><img alt="Esempio di salto con contromovimento in MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-vnmvuzfeku-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e28e8d65ce65b01e7bcc62f9b7844ff"><img alt="Esempio di salto con contromovimento in MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-vnmvuzfeku-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="esempio-di-salto-con-contromovimento-in-motioncatalyst"><a href="#R-image-2ae25a5e48a16953cc1eca8f0d6f3d4b" class="lightbox-link"><img alt="Esempio di salto con contromovimento in MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-vnmvuzfeku-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ae25a5e48a16953cc1eca8f0d6f3d4b"><img alt="Esempio di salto con contromovimento in MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-vnmvuzfeku-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="opzioni">Opzioni<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>È possibile disattivare l&rsquo;evidenziazione delle fasi facendo clic sull&rsquo;icona a forma di ingranaggio accanto al riquadro dati e deselezionando l&rsquo;opzione &ldquo;Evidenzia fasi&rdquo;.</p>
-<h2 id="immagine"><a href="#R-image-b75e6b279cca0c3ac7643bbd1ada59d6" class="lightbox-link"><img alt="immagine" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/image.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b75e6b279cca0c3ac7643bbd1ada59d6"><img alt="immagine" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/image.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="immagine"><a href="#R-image-2643c74182d852b3403fa0094c499006" class="lightbox-link"><img alt="immagine" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/image.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2643c74182d852b3403fa0094c499006"><img alt="immagine" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/image.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="esempio-con-levidenziazione-delle-fasi-disattivata">Esempio con l&rsquo;evidenziazione delle fasi disattivata:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<h2 id="esempio-di-fasi-non-evidenziate-in-motioncatalyst"><a href="#R-image-7f160ad9c2c3d6e42fcb4aac5fcf57f0" class="lightbox-link"><img alt="Esempio di fasi non evidenziate in MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-bsjmc0qg8e-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f160ad9c2c3d6e42fcb4aac5fcf57f0"><img alt="Esempio di fasi non evidenziate in MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-bsjmc0qg8e-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="esempio-di-fasi-non-evidenziate-in-motioncatalyst"><a href="#R-image-a0e35b69deefc1b4dd75aab0d739982f" class="lightbox-link"><img alt="Esempio di fasi non evidenziate in MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-bsjmc0qg8e-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0e35b69deefc1b4dd75aab0d739982f"><img alt="Esempio di fasi non evidenziate in MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/9375032729884/motioncatalyst-bsjmc0qg8e-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copia collegamento negli appunti"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <hr>
 <p><em>Ultimo aggiornamento: 2023-12-15</em> | <a href="/sc-support/it/software-features/force-graph-phases/index.html">Visualizza sul sito di supporto ufficiale</a></p>
 
@@ -347,7 +367,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Lingua</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/force-graph-phases/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/force-graph-phases/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/force-graph-phases/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/force-graph-phases/index.html" lang="fr">Français</option>
@@ -409,8 +428,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537811" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537811" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542923" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542923" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

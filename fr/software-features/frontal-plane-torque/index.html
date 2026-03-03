@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1486">
     <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
     <title>Analyse du Couple de Rotation en Plan Frontal - Guide de l&#39;Utilisateur :: Support Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537810" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537810" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537810" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542922" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542922" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.fr.js?1772537810";
+      window.relearn.index_js_url="/sc-support/searchindex.fr.js?1772542922";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/lunr/lunr.fr.min.js?1772537810" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/lunr/lunr.fr.min.js?1772542922" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['fr'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537810" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537810" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537810" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537810" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537810" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542922" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542922" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542922" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,54 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table des matières (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#quest-ce-que-le-couple-de-rotation-en-plan-frontal-">Qu&rsquo;est-ce que le Couple de Rotation en Plan Frontal ?</a></li>
+        <li><a href="#composantes-de-la-fonctionnalité">Composantes de la Fonctionnalité</a></li>
+        <li><a href="#pourquoi-est-ce-important-">Pourquoi est-ce Important ?</a></li>
+        <li><a href="#prérequis">Prérequis</a></li>
+      </ul>
+    </li>
+    <li><a href="#prise-en-main">Prise en Main</a>
+      <ul>
+        <li><a href="#ajouter-la-databox-fpt-à-votre-disposition">Ajouter la DataBox FPT à Votre Disposition</a></li>
+        <li><a href="#activer-la-visualisation-3d">Activer la Visualisation 3D</a></li>
+        <li><a href="#données-requises">Données Requises</a></li>
+      </ul>
+    </li>
+    <li><a href="#comprendre-laffichage">Comprendre l&rsquo;Affichage</a>
+      <ul>
+        <li><a href="#le-graphique">Le Graphique</a></li>
+        <li><a href="#métriques-clés">Métriques Clés</a></li>
+        <li><a href="#mise-en-évidence-des-phases">Mise en Évidence des Phases</a></li>
+      </ul>
+    </li>
+    <li><a href="#visualisation-3d">Visualisation 3D</a>
+      <ul>
+        <li><a href="#visualisation-du-bras-de-levier">Visualisation du Bras de Levier</a></li>
+        <li><a href="#décomposition-du-vecteur-de-force">Décomposition du Vecteur de Force</a></li>
+        <li><a href="#paramètres-de-visualisation-3d">Paramètres de Visualisation 3D</a></li>
+      </ul>
+    </li>
+    <li><a href="#options-de-configuration-graphique">Options de Configuration (Graphique)</a></li>
+    <li><a href="#dépannage">Dépannage</a>
+      <ul>
+        <li><a href="#message--aucune-personne-sur-le-plateau-">Message « Aucune personne sur le plateau »</a></li>
+        <li><a href="#graphique-vide-ou-données-manquantes">Graphique vide ou données manquantes</a></li>
+        <li><a href="#métriques-de-timing-non-affichées">Métriques de Timing non affichées</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fr/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fr/software-features/index.html"><span itemprop="name">Logiciels &amp; Fonctionnalités</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Analyse du Couple de Rotation en Plan Frontal - Guide de l&#39;Utilisateur</span><meta itemprop="position" content="3"></li>
@@ -597,7 +644,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Langue</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/frontal-plane-torque/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/frontal-plane-torque/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/frontal-plane-torque/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/frontal-plane-torque/index.html" lang="fr" selected data-selected>Français</option>
@@ -659,8 +705,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537810" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537810" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542922" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542922" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

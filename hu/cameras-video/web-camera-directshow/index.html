@@ -24,8 +24,7 @@
     <meta itemprop="wordCount" content="353">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
     <title>Hogyan használjunk webkamerát (DirectShow integráció) a Swing Catalysttal :: Swing Catalyst Támogatás</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
@@ -61,27 +60,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537835" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537835" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537835" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542950" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542950" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542950" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.hu.js?1772537835";
+      window.relearn.index_js_url="/sc-support/searchindex.hu.js?1772542950";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/lunr/lunr.hu.min.js?1772537835" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/lunr/lunr.hu.min.js?1772542950" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['hu'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537835" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537835" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537835" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537835" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537835" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542950" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542950" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542950" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542950" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542950" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -161,6 +160,31 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menü (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tartalomjegyzék (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#kamera-csatlakoztatása">Kamera csatlakoztatása</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#beállítások-menü">Beállítások menü</a></li>
+    <li><a href="#speciális-kamerabeállítások">Speciális kamerabeállítások</a></li>
+    <li><a href="#hibaelhárítás"><a href="web-camera-directshow.md">Hibaelhárítás</a></a>
+      <ul>
+        <li><a href="#alacsony-képkockasebesség">Alacsony képkockasebesség:</a></li>
+        <li><a href="#kiesett-képkockák">Kiesett képkockák:</a></li>
+        <li><a href="#eltérő-médiatípus-kiválasztása">Eltérő médiatípus kiválasztása</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hu/index.html"><span itemprop="name">Swing Catalyst Támogatás</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hu/cameras-video/index.html"><span itemprop="name">Kamerák és videó</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Hogyan használjunk webkamerát (DirectShow integráció) a Swing Catalysttal</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -204,26 +228,26 @@
 <h2 id="kamera-csatlakoztatása">Kamera csatlakoztatása<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h4 id="engedélyezze-a-kamerát-a-beállítások-menüből">Engedélyezze a kamerát a Beállítások menüből.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Kattintson a fogaskerék ikonra.</p>
-<p><a href="#R-image-23d85225a2aa5db1981573b72d632464" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23d85225a2aa5db1981573b72d632464"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<p><a href="#R-image-ca3aca22c019265c3c49d1cfd88231a7" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ca3aca22c019265c3c49d1cfd88231a7"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
 <h2 id="beállítások-menü">Beállítások menü<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Megjegyzés: a kamera integrációs típusa azonosítva van, pl. DirectShow, Spinnaker:</p>
-<p><a href="#R-image-cc9f154b355a5b843f3110f4b0222915" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc9f154b355a5b843f3110f4b0222915"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p><a href="#R-image-6c60563ccbcf17a4d355a8286de5b8f7" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c60563ccbcf17a4d355a8286de5b8f7"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
 <p>Ha a kamera megfelelően észlelve van, automatikusan megjelenik a kameralistában.</p>
 <p>A kamera használatához hozzá kell rendelni egy kameraszöget: kattintson a „Disabled&quot; ikonra, és válasszon egy szöget, majd kapcsolja az „OFF&quot; kapcsolót „ON&quot; állásba a kamera engedélyezéséhez.</p>
-<p><a href="#R-image-574b1a51a8dfab9d404342202acfa1bd" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-574b1a51a8dfab9d404342202acfa1bd"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-c40e76c1d2edbdb95c79959408199b94" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c40e76c1d2edbdb95c79959408199b94"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
 <p>A Dragon kamera engedélyezve van, és elölnézet jobb oldali kameraként van kijelölve (azaz a felhasználóval szemben, jobbról néz).</p>
-<p><a href="#R-image-2892dac40f30fcf91e9ab6760199d7f8" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2892dac40f30fcf91e9ab6760199d7f8"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<p><a href="#R-image-63d94e4f0444569ff2223d985b9224f7" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-63d94e4f0444569ff2223d985b9224f7"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
 <h2 id="speciális-kamerabeállítások">Speciális kamerabeállítások<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>A speciális kamerabeállítások lehetővé teszik a kamera nevének módosítását, tükrözését és forgatását, vágását, a videókép beállítását, valamint egyéb konfigurációs változtatások elvégzését.</p>
 <p>Megjegyzés: Az Auto csak bizonyos tulajdonságoknál érhető el, például fehéregyensúly, expozíció és fókusz esetén.</p>
-<p><a href="#R-image-19a224a83f26adaa5a11061bb9eb0168" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-19a224a83f26adaa5a11061bb9eb0168"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
-<p><a href="#R-image-1d0918aab757213c8293caf4083e1646" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1d0918aab757213c8293caf4083e1646"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p><a href="#R-image-83e395fc406b3addf40cde86f91f884b" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-83e395fc406b3addf40cde86f91f884b"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-f56a5327e3a86ad16c8e378923ef2faf" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f56a5327e3a86ad16c8e378923ef2faf"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
 <p>Ha hibás módosításokat végzett, az alapértelmezett beállításokat visszaállíthatja az „Restore defaults&quot; gombra kattintva.</p>
 <h2 id="hibaelhárítás"><a href="/sc-support/hu/cameras-video/web-camera-directshow/index.html">Hibaelhárítás</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="alacsony-képkockasebesség">Alacsony képkockasebesség:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -231,8 +255,8 @@
 <p>Alapértelmezés szerint a legtöbb kamera automatikus expozícióra van állítva; ha nincs elegendő fény, a képkockánkénti expozíciós idő magas lesz, és a kamera nem tudja biztosítani a maximális képkockasebességet.</p>
 <p>Ha az expozíció túl magas, a képkockasebesség csökken, és a felvétel elmosódottabb lesz.</p>
 <h3 id="kiesett-képkockák">Kiesett képkockák:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Ha a kamera képkockákat ejt ki (azaz nem nyújtja az elvárt FPS értéket), az vizuális hibákat okozhat.<a href="#R-image-89d046561385aa1a83aae48708261a25" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-89d046561385aa1a83aae48708261a25"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<p>Ha a kamera képkockákat ejt ki (azaz nem nyújtja az elvárt FPS értéket), az vizuális hibákat okozhat.<a href="#R-image-90f4dd018c20bcdda4dfa03a9129b796" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-90f4dd018c20bcdda4dfa03a9129b796"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
 <ul>
 <li>
 <p>Győződjön meg arról, hogy a kamera közvetlenül a számítógéphez van csatlakoztatva, lehetőleg a számítógép hátulján lévő USB portok egyikéhez.</p>
@@ -255,8 +279,8 @@
 </li>
 </ul>
 <p>Bizonyos formátumok kevesebb sávszélességet igényelnek, mint mások. Ha a kamera támogatja a RAW8, GREY8 vagy más 8 bites képalkotási formátumokat, ezek előnyben részesítendők az RGB vagy MPEG típusú médiatípusokkal szemben, mivel jóval kevesebb sávszélességet igényelnek.</p>
-<p><a href="#R-image-9ad809dd3ca95f9856480fbb39b8d9c5" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ad809dd3ca95f9856480fbb39b8d9c5"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<p><a href="#R-image-6058a0926aac8769d4d715f99b95ea88" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6058a0926aac8769d4d715f99b95ea88"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
 <hr>
 <p><em>Utolsó frissítés: 2023-12-15</em> | <a href="/sc-support/hu/cameras-video/web-camera-directshow/index.html">Megtekintés a hivatalos támogatási oldalon</a></p>
 
@@ -367,7 +391,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Nyelv</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
@@ -429,8 +452,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537835" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537835" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542950" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542950" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

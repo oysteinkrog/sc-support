@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="700">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Lynx-Camera,Fox-Camera">
     <title>Swing Catalyst Lynx GigE 카메라 설정하기 :: Swing Catalyst 지원</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537815" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537815" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537815" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542927" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542927" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542927" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ko.js?1772537815";
+      window.relearn.index_js_url="/sc-support/searchindex.ko.js?1772542927";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ko.min.js?1772537815" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ko.min.js?1772542927" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ko'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537815" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537815" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537815" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537815" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537815" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542927" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542927" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542927" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542927" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="메뉴 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="목차 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#이-문서에서는-기본-카메라-정보와-함께-swing-catalyst의-lynx-gige-카메라를-설정하고-구성하는-방법을-설명합니다">이 문서에서는 기본 카메라 정보와 함께 Swing Catalyst의 Lynx GigE 카메라를 설정하고 구성하는 방법을 설명합니다.</a>
+      <ul>
+        <li><a href="#간단한-단계별-가이드는-다음을-참조하십시오--httpsswingcatalystcomcamera-guide">간단한 단계별 가이드는 다음을 참조하십시오 <strong>:</strong> <a href="https://swingcatalyst.com/camera-guide/">https://swingcatalyst.com/camera-guide</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#이-문서는-다음-섹션으로-나뉩니다">이 문서는 다음 섹션으로 나뉩니다</a>
+      <ul>
+        <li><a href="#시작하기-하드웨어-설정">시작하기: 하드웨어 설정</a></li>
+        <li><a href="#듀얼-포트-네트워크-카드-설치">듀얼 포트 네트워크 카드 설치</a></li>
+        <li><a href="#드라이버-설치-및-카메라-활성화">드라이버 설치 및 카메라 활성화</a></li>
+        <li><a href="#문제-해결-팁">문제 해결 팁</a></li>
+      </ul>
+    </li>
+    <li><a href="#카메라-정보">카메라 정보:</a></li>
+    <li><a href="#시작하기-카메라-조립">시작하기: 카메라 조립</a></li>
+    <li><a href="#20230110_"><a href="#section1"><img src="__PH0__" alt="20230110_095547.jpg"></a></a></li>
+    <li><a href="#듀얼-포트-네트워크-카드-설치-1">듀얼 포트 네트워크 카드 설치:</a></li>
+    <li><a href="#네트워크-카드-구성-방법">네트워크 카드 구성 방법</a>
+      <ul>
+        <li><a href="#점보-프레임-활성화">점보 프레임 활성화</a></li>
+      </ul>
+    </li>
+    <li><a href="#드라이버-설치-및-카메라-활성화-1">드라이버 설치 및 카메라 활성화:</a></li>
+    <li><a href="#카메라-설정-구성">카메라 설정 구성:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ko/index.html"><span itemprop="name">Swing Catalyst 지원</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ko/cameras-video/index.html"><span itemprop="name">카메라 및 비디오</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Swing Catalyst Lynx GigE 카메라 설정하기</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -226,21 +260,21 @@
 </ul>
 <h2 id="시작하기-카메라-조립">시작하기: 카메라 조립<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>카메라에 포함된 4개의 검은색 십자 나사를 사용하여 삼각대 어댑터를 카메라 본체에 부착합니다.</p>
-<h2 id="20230110_"><a href="/sc-support/ko/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-75fb03086aa0c988acba1de3a3340451" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-75fb03086aa0c988acba1de3a3340451"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="20230110_"><a href="/sc-support/ko/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-1505824c27a52fc9fb579d820141a429" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1505824c27a52fc9fb579d820141a429"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>렌즈를 개봉하고 플라스틱 렌즈 커버를 제거하십시오.</p>
-<p><a href="#R-image-4494c9a596475a1ab76df73be204a851" class="lightbox-link"><img alt="렌즈 커버 제거" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4494c9a596475a1ab76df73be204a851"><img alt="렌즈 커버 제거" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
+<p><a href="#R-image-ae8df9e68e86d991ec3e0df04c3cbabe" class="lightbox-link"><img alt="렌즈 커버 제거" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae8df9e68e86d991ec3e0df04c3cbabe"><img alt="렌즈 커버 제거" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
 <p>카메라에서 센서 커버를 제거합니다.</p>
-<p><a href="#R-image-069305577994b55cd54bb0708863bb95" class="lightbox-link"><img alt="센서 커버 제거 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-069305577994b55cd54bb0708863bb95"><img alt="센서 커버 제거 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-d7f50396a546adc39798ff600ccaf57d" class="lightbox-link"><img alt="센서 커버 제거 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d7f50396a546adc39798ff600ccaf57d"><img alt="센서 커버 제거 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
+<p><a href="#R-image-876a88f5b93274fcf1b6ed3e32c63c00" class="lightbox-link"><img alt="센서 커버 제거 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-876a88f5b93274fcf1b6ed3e32c63c00"><img alt="센서 커버 제거 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-c61666a8e244b0284e4d48d7c367146e" class="lightbox-link"><img alt="센서 커버 제거 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c61666a8e244b0284e4d48d7c367146e"><img alt="센서 커버 제거 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
 <p>카메라에 렌즈 부착하기</p>
-<p><a href="#R-image-7936c6148e40280ae96d3b307bb608c6" class="lightbox-link"><img alt="렌즈 부착 애니메이션" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7936c6148e40280ae96d3b307bb608c6"><img alt="렌즈 부착 애니메이션" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
+<p><a href="#R-image-d98781975f15579fe8491caa8811d354" class="lightbox-link"><img alt="렌즈 부착 애니메이션" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d98781975f15579fe8491caa8811d354"><img alt="렌즈 부착 애니메이션" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
 <p>카메라 렌즈 조정하기</p>
-<p><a href="#R-image-e6ef06b9144148155dcf11910c79a03b" class="lightbox-link"><img alt="렌즈 조정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6ef06b9144148155dcf11910c79a03b"><img alt="렌즈 조정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
+<p><a href="#R-image-e223da5ce9a5885ff6682cc63ba6b87c" class="lightbox-link"><img alt="렌즈 조정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e223da5ce9a5885ff6682cc63ba6b87c"><img alt="렌즈 조정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
 <p>이 렌즈에는 위에서 아래 순서로 세 가지 조정 기능이 있습니다:</p>
 <ul>
 <li>
@@ -275,20 +309,20 @@
 </li>
 </ul>
 <p>&ldquo;수신 버퍼&quot;를 2048로 설정합니다.</p>
-<p><a href="#R-image-38f3e50b1a48b244accc3402b6f0eae0" class="lightbox-link"><img alt="네트워크 연결 탐색기" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-38f3e50b1a48b244accc3402b6f0eae0"><img alt="네트워크 연결 탐색기" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-cc5950cbccf7629eb04fb0c51b4d5e2f" class="lightbox-link"><img alt="네트워크 속성 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc5950cbccf7629eb04fb0c51b4d5e2f"><img alt="네트워크 속성 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
-<p><a href="#R-image-2731284a6f375d44b21b0155385ec8b0" class="lightbox-link"><img alt="점보 패킷 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2731284a6f375d44b21b0155385ec8b0"><img alt="점보 패킷 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
-<p><a href="#R-image-91b93dfa8b35c7094450b7da0f2b568d" class="lightbox-link"><img alt="수신 버퍼 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-91b93dfa8b35c7094450b7da0f2b568d"><img alt="수신 버퍼 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
+<p><a href="#R-image-b7079e5489cb9fb27bfe7421b323d4e1" class="lightbox-link"><img alt="네트워크 연결 탐색기" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7079e5489cb9fb27bfe7421b323d4e1"><img alt="네트워크 연결 탐색기" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-8aa2441a02297da5d27cae70bd5ea596" class="lightbox-link"><img alt="네트워크 속성 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8aa2441a02297da5d27cae70bd5ea596"><img alt="네트워크 속성 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
+<p><a href="#R-image-d5c3c53795c552bd333988be32f1b9a1" class="lightbox-link"><img alt="점보 패킷 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5c3c53795c552bd333988be32f1b9a1"><img alt="점보 패킷 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
+<p><a href="#R-image-f21c600446a302efaac4a5bc8550266a" class="lightbox-link"><img alt="수신 버퍼 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f21c600446a302efaac4a5bc8550266a"><img alt="수신 버퍼 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
 <h2 id="드라이버-설치-및-카메라-활성화-1">드라이버 설치 및 카메라 활성화:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>1단계: Cat5 또는 Cat6 이더넷 케이블을 사용하여 PC의 PoE 네트워크 포트에 카메라를 연결하고, 카메라 뒷면의 파란색 표시등이 켜져 있는지 확인합니다.</p>
 <p>2단계: <a href="https://cloudfront.swingcatalyst.com/drivers/NA_SDK_V3_5_3_3_MVFG_V1_1_4_2_VC90_Runtime_NEU.exe" rel="external">클릭하여 다운로드</a> 후 카메라 드라이버를 설치합니다.</p>
 <p>3단계: SwingCatalyst를 열고 메인 메뉴 왼쪽 하단의 기어 아이콘을 클릭하여 카메라 설정으로 이동합니다.</p>
 <p>4단계: 재생 버튼을 클릭하여 미리보기를 확인합니다. 그런 다음 &ldquo;비활성화됨&quot;을 클릭하여 각 카메라에 적절한 각도를 지정합니다. 마지막으로 카메라를 &ldquo;꺼짐&quot;에서 &ldquo;켜짐&quot;으로 전환합니다.</p>
-<p><a href="#R-image-54bd7fcfc0f32fd650b0aa0bdd6a08db" class="lightbox-link"><img alt="카메라 설정 화면" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-54bd7fcfc0f32fd650b0aa0bdd6a08db"><img alt="카메라 설정 화면" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
+<p><a href="#R-image-e7a100c7554b960854e2f968690e8d22" class="lightbox-link"><img alt="카메라 설정 화면" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7a100c7554b960854e2f968690e8d22"><img alt="카메라 설정 화면" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
 <h2 id="카메라-설정-구성">카메라 설정 구성:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="링크를 클립보드에 복사"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>중요</strong></p>
 <p>클럽과 샤프트를 선명하게 보려면 노출을 600 미만으로 유지하십시오. Gain을 조정하여 이미지 밝기를 높이십시오. 최적의 조명 조건: Thomann 100W 조명 3개를 설치하되, 다운더라인, 오른쪽, 왼쪽에 각각 하나씩 배치하고, 공으로부터 최소 1.5미터 이상 떨어진 천장 또는 벽에 부착하십시오.</p>
@@ -308,17 +342,17 @@
 </ul>
 <p><strong>참고</strong>: 카메라가 3~4대인 경우 GEV SCPD를 150으로 설정하는 것을 권장합니다.</p>
 <p>이제 설정을 닫고 캡처 모드로 진입하여 녹화를 시작할 수 있습니다.</p>
-<p><a href="#R-image-d8d85f9e600379d1394fbaa328f73336" class="lightbox-link"><img alt="카메라 설정 화면 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d8d85f9e600379d1394fbaa328f73336"><img alt="카메라 설정 화면 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
-<p><a href="#R-image-4e924b9f37df85480afe98009516ec53" class="lightbox-link"><img alt="카메라 설정 화면 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e924b9f37df85480afe98009516ec53"><img alt="카메라 설정 화면 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
+<p><a href="#R-image-2cd43a9ee190d44392078100f793bda7" class="lightbox-link"><img alt="카메라 설정 화면 1" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2cd43a9ee190d44392078100f793bda7"><img alt="카메라 설정 화면 1" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
+<p><a href="#R-image-a17e8328c7da64c5439b9f35fb60bfbc" class="lightbox-link"><img alt="카메라 설정 화면 2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a17e8328c7da64c5439b9f35fb60bfbc"><img alt="카메라 설정 화면 2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
 <p><a href="/sc-support/ko/cameras-video/lynx-camera-setup/index.html#troubleshooting-tips">문제 해결 팁:</a></p>
 <p><strong>SwingCatalyst 설정에 카메라가 표시되지 않는 경우:</strong></p>
 <p>최신 MVS/Runtime(4.6.1)이 설치되어 있는지 확인하십시오.</p>
 <p><strong>프레임 드롭:</strong></p>
 <p>각 카메라의 프레임 레이트를 낮추면 프레임 드롭을 방지하거나 줄이는 데 도움이 될 수 있습니다.</p>
-<p><a href="#R-image-c48dac47223c9e27bfb3c9ab2d545df3" class="lightbox-link"><img alt="프레임 레이트 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c48dac47223c9e27bfb3c9ab2d545df3"><img alt="프레임 레이트 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
+<p><a href="#R-image-d730923f0fcb54554bfff705c766952a" class="lightbox-link"><img alt="프레임 레이트 설정" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d730923f0fcb54554bfff705c766952a"><img alt="프레임 레이트 설정" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
 <p>권장 네트워크 카드를 사용하고 있습니까? 그렇지 않다면 네트워크 카드 자체가 문제의 원인일 수 있습니다. 적절한 네트워크 장비를 갖추었는지 확인하려면 영업팀에 문의하십시오.</p>
 <ul>
 <li>
@@ -343,8 +377,8 @@
 <p>Windows 제어판에서 네트워크 어댑터 상태를 확인하십시오.</p>
 </li>
 </ul>
-<p><a href="#R-image-81e26bef3f69ef73f395e92a95b4e8cd" class="lightbox-link"><img alt="네트워크 어댑터 상태" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-81e26bef3f69ef73f395e92a95b4e8cd"><img alt="네트워크 어댑터 상태" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
+<p><a href="#R-image-0cb54989c589949975d31bd0a5ac56f1" class="lightbox-link"><img alt="네트워크 어댑터 상태" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0cb54989c589949975d31bd0a5ac56f1"><img alt="네트워크 어댑터 상태" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
 <p>참고: 속도는 100Mbps가 아닌 1.0Gbps(1000Mbps)여야 합니다.</p>
 <p><strong>Region Of Interest (ROI)를 사용하여 프레임 드롭 추가 감소:</strong></p>
 <p>Region of Interest(또는 관심 영역)를 사용하면 전체 이미지 크기를 줄이고 FPS를 높일 수 있으며, 대역폭 사용량을 낮춰 프레임 드롭을 줄이는 데도 도움이 됩니다(ROI 활용 방법은 위 내용을 참조하십시오).</p>
@@ -475,7 +509,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">언어</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/lynx-camera-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/lynx-camera-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/lynx-camera-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/lynx-camera-setup/index.html" lang="fr">Français</option>
@@ -537,8 +570,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537815" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537815" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542927" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542927" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

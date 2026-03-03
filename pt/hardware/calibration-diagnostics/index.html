@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1226">
     <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data">
     <title>Calibração e diagnóstico da Plataforma de Equilíbrio :: Suporte Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537812" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537812" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537812" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542924" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542924" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542924" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.pt.js?1772537812";
+      window.relearn.index_js_url="/sc-support/searchindex.pt.js?1772542924";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/lunr/lunr.pt.min.js?1772537812" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/lunr/lunr.pt.min.js?1772542924" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['pt'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537812" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537812" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537812" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537812" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537812" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542924" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542924" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542924" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542924" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542924" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -163,6 +162,41 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Índice (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#parte-1-usando-o-utilitário-se-para-obter-o-arquivo-de-calibração">Parte 1: Usando o utilitário SE para obter o arquivo de Calibração.</a></li>
+    <li><a href="#registrando-sua-plataforma-de-equilíbrio">Registrando sua Plataforma de Equilíbrio</a></li>
+    <li><a href="#certifique-se-de-remover-o-tapete-e-quaisquer-outros-objetos-da-plataforma-de-equilíbrio-a-fim-de-garantir-que-as-leituras-não-sejam-afetadas-por-fatores-externos">Certifique-se de remover o tapete e quaisquer outros objetos da Plataforma de Equilíbrio, a fim de garantir que as leituras não sejam afetadas por fatores externos.</a></li>
+    <li><a href="#seu_"><img src="../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png" alt="SEU_2021-08-11_13-05-17.png"></a></li>
+    <li><a href="#executando-o-processo-de-calibração">Executando o processo de Calibração</a></li>
+    <li><a href="#posicionamento">Posicionamento</a>
+      <ul>
+        <li><a href="#gravação-concluída">Gravação concluída</a></li>
+      </ul>
+    </li>
+    <li><a href="#parte-2-instalando-o-arquivo-de-calibração">Parte 2: Instalando o arquivo de Calibração</a>
+      <ul>
+        <li><a href="#continue-com-estas-etapas">Continue com estas etapas</a></li>
+        <li><a href="#configurações-da-placa-de-sensor">Configurações da Placa de Sensor</a></li>
+      </ul>
+    </li>
+    <li><a href="#solução-de-problemas">Solução de Problemas</a>
+      <ul>
+        <li><a href="#a-plataforma-de-equilíbrio-não-é-reconhecida-ou-não-aparece-como-conectada">A Plataforma de Equilíbrio não é reconhecida ou não aparece como conectada:</a></li>
+        <li><a href="#a-calibração-não-é-instalada-com-sucesso">A Calibração não é instalada com sucesso</a></li>
+        <li><a href="#há-ruído-na-plataforma-mesmo-após-executar-o-utilitário">Há ruído na plataforma mesmo após executar o utilitário</a></li>
+        <li><a href="#incompatibilidades-de-hardware">Incompatibilidades de hardware</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pt/index.html"><span itemprop="name">Suporte Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pt/hardware/index.html"><span itemprop="name">Hardware</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Calibração e diagnóstico da Plataforma de Equilíbrio</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -236,74 +270,74 @@
 </ul>
 <p>Se você tiver uma versão mais antiga instalada, desinstale-a primeiro através de <a href="https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs" rel="external">Adicionar ou Remover Programas</a>.</p>
 <p>Clique em Iniciar:</p>
-<p><a href="#R-image-bebb1830f3c1328ee8d2f1406b97cfb1" class="lightbox-link"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bebb1830f3c1328ee8d2f1406b97cfb1"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
+<p><a href="#R-image-4dcdb685a654d5d9104246970fe1b494" class="lightbox-link"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4dcdb685a654d5d9104246970fe1b494"><img alt="SEU_2021-08-11_12-32-46.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
 <p>Após clicar em Iniciar, o utilitário tentará automaticamente verificar os dispositivos; caso não encontre sua plataforma, clique no menu suspenso e selecione sua Plataforma de Equilíbrio.</p>
-<p><a href="#R-image-d68122802730eb307b7e7a5757c30418" class="lightbox-link"><img alt="SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d68122802730eb307b7e7a5757c30418"><img alt="SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
-<p>Clique em Verificar<a href="#R-image-0991d08ae9ea8d67b024d4a2d1960d85" class="lightbox-link"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0991d08ae9ea8d67b024d4a2d1960d85"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
+<p><a href="#R-image-44196cc9c8f1015a01bee9f9fbc158e0" class="lightbox-link"><img alt="SnoopScreenshot_300.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-44196cc9c8f1015a01bee9f9fbc158e0"><img alt="SnoopScreenshot_300.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
+<p>Clique em Verificar<a href="#R-image-c5f250f9aaee094f6e7f7ff54a898404" class="lightbox-link"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5f250f9aaee094f6e7f7ff54a898404"><img alt="SEU_2021-08-11_13-10-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
 <p>Selecione o dispositivo que corresponde ao número de série da sua plataforma e clique em Avançar.</p>
 <h2 id="registrando-sua-plataforma-de-equilíbrio">Registrando sua Plataforma de Equilíbrio<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-9715a9ef8b9a9033f9fe0ed1bdcd68fb" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9715a9ef8b9a9033f9fe0ed1bdcd68fb"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
-<p>Exemplo de informações de registro preenchidas<a href="#R-image-ddab71b97a7b51360284f675c0a635e1" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ddab71b97a7b51360284f675c0a635e1"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
+<p><a href="#R-image-474d3d66bbf04e6055701edaf3848879" class="lightbox-link"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-474d3d66bbf04e6055701edaf3848879"><img alt="2021-08-11_12-59-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
+<p>Exemplo de informações de registro preenchidas<a href="#R-image-6a41a9d113dc36ab093d0b89ff2544c4" class="lightbox-link"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6a41a9d113dc36ab093d0b89ff2544c4"><img alt="2021-08-11_13-02-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
 <p>Após preencher as informações necessárias para fins de garantia e manutenção, clique em Continuar.</p>
 <p>Se possível, selecione uma câmera e aponte-a para mostrar a Plataforma de Equilíbrio, e clique em Avançar.</p>
 <p>Uma câmera não é obrigatória; você ainda pode prosseguir caso nenhuma câmera seja detectada.</p>
-<p><a href="#R-image-95bb5bc1b95a97e86603bdb9c3567a4e" class="lightbox-link"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-95bb5bc1b95a97e86603bdb9c3567a4e"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
+<p><a href="#R-image-6c929b5773a7583145663ff5d87c92eb" class="lightbox-link"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c929b5773a7583145663ff5d87c92eb"><img alt="SEU_2021-08-11_13-04-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
 <h2 id="certifique-se-de-remover-o-tapete-e-quaisquer-outros-objetos-da-plataforma-de-equilíbrio-a-fim-de-garantir-que-as-leituras-não-sejam-afetadas-por-fatores-externos">Certifique-se de remover o tapete e quaisquer outros objetos da Plataforma de Equilíbrio, a fim de garantir que as leituras não sejam afetadas por fatores externos.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<h2 id="seu_"><a href="#R-image-5939c647f0f351ba4ce00cb3acd31721" class="lightbox-link"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5939c647f0f351ba4ce00cb3acd31721"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="seu_"><a href="#R-image-334e5bc1a9593e72e94f8daeaebccde1" class="lightbox-link"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-334e5bc1a9593e72e94f8daeaebccde1"><img alt="SEU_2021-08-11_13-05-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h2 id="executando-o-processo-de-calibração">Executando o processo de Calibração<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Antes de subir na plataforma, o utilitário coleta dados para ter uma Linha de Base de comparação.</p>
 <p>Certifique-se de não subir acidentalmente na plataforma até que o utilitário instrua você a fazê-lo.</p>
-<p><a href="#R-image-608c047f140d15e2224fd55296440579" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-608c047f140d15e2224fd55296440579"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
+<p><a href="#R-image-3a58077e09af35db59220a10fe19fdca" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a58077e09af35db59220a10fe19fdca"><img alt="SEU_2021-08-11_13-12-19.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
 <h2 id="posicionamento">Posicionamento<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>É importante que você fique em pé sobre a plataforma conforme indicado pelo utilitário.</p>
 <p>Os pés escuros mostram onde você deve estar posicionado, e os pés cinzas mostram onde você deve se posicionar em seguida.</p>
-<p><a href="#R-image-590cff429cefd9f78eeef9e0f7059b39" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-590cff429cefd9f78eeef9e0f7059b39"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
+<p><a href="#R-image-8d23d41f1608c112365a5fdf0b02a7d5" class="lightbox-link"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d23d41f1608c112365a5fdf0b02a7d5"><img alt="SEU_2021-08-11_13-12-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
 <p>Siga cada etapa, pois é importante ativar todas as regiões da plataforma.</p>
 <h3 id="gravação-concluída">Gravação concluída<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Se você não estiver satisfeito com a Gravação, talvez tenha cometido um erro. Você pode reiniciar o processo facilmente clicando em reiniciar.</p>
 <p>Clique em Continuar se desejar prosseguir.</p>
-<p><a href="#R-image-9b1d4eb9c2f427f62173d46227aefcb3" class="lightbox-link"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9b1d4eb9c2f427f62173d46227aefcb3"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
+<p><a href="#R-image-f48e15a308ac3e81183ef97034016c91" class="lightbox-link"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f48e15a308ac3e81183ef97034016c91"><img alt="SEU_2021-08-11_13-13-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
 <p>Clique no botão Salvar e depois no botão Enviar.</p>
-<p><a href="#R-image-ddb408d66ab205c653a4137fbf6c3803" class="lightbox-link"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ddb408d66ab205c653a4137fbf6c3803"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
+<p><a href="#R-image-42c89420fba4b4be71a6ef4150160751" class="lightbox-link"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-42c89420fba4b4be71a6ef4150160751"><img alt="SEU_2021-08-11_13-19-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
 <p>Antes de os dados serem enviados ao fabricante para análise, insira o peso aproximado e o uso.</p>
 <p>No campo de notas, você pode especificar problemas que tem com a plataforma, por exemplo, Pé esquerdo fraco ou outras preocupações.</p>
 <p>O motivo pelo qual o fabricante deseja coletar esses dados é para continuar aprimorando os algoritmos de recalibração e fornecer Leituras de Pressão mais precisas.</p>
 <p>Insira as informações e clique em enviar:</p>
-<p><a href="#R-image-5bc973c04d0c2411d106514df5d3ca34" class="lightbox-link"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5bc973c04d0c2411d106514df5d3ca34"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
+<p><a href="#R-image-6c0ef836e217d7cd1d0d28308a954440" class="lightbox-link"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c0ef836e217d7cd1d0d28308a954440"><img alt="2018-12-05_14-49-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
 <p>Após a conclusão, o arquivo de Calibração é salvo na sua pasta Documentos; pressione &ldquo;Não&rdquo; e feche o utilitário.</p>
-<p><a href="#R-image-ba167c0e1026d51047ffd6c894bd3932" class="lightbox-link"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba167c0e1026d51047ffd6c894bd3932"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
+<p><a href="#R-image-be10dd4240e80974dd9f4a04a9932014" class="lightbox-link"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-be10dd4240e80974dd9f4a04a9932014"><img alt="SEU_2021-08-11_13-40-30.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
 <h2 id="parte-2-instalando-o-arquivo-de-calibração">Parte 2: Instalando o arquivo de Calibração<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="continue-com-estas-etapas">Continue com estas etapas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Inicie o Swing Catalyst e vá para Configurações &ndash;&gt; Hardware no menu principal.</li>
 </ul>
 <p>A plataforma deverá ser detectada automaticamente; caso contrário, consulte a seção de solução de problemas.</p>
-<p><a href="#R-image-68b8f78fe5d26d741ec9df8951fcc904" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-68b8f78fe5d26d741ec9df8951fcc904"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
+<p><a href="#R-image-a2a8c5c7bb2246996e0e453be4b12c29" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2a8c5c7bb2246996e0e453be4b12c29"><img alt="MotionCatalyst_2021-08-11_13-51-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
 <p>Clique no botão &ldquo;Configurar&hellip;&rdquo; para abrir o diálogo de configuração.</p>
 <h3 id="configurações-da-placa-de-sensor">Configurações da Placa de Sensor<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p>Vá para a aba Sensor de Postura e clique em Procurar e Instalar.<a href="#R-image-6db697ddaaa0fe3b6c0a3260cc24de95" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6db697ddaaa0fe3b6c0a3260cc24de95"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
-<p>Vá até o diretório onde você salvou o arquivo de Calibração, por exemplo: C:\User\SeuNomeDeUsuário\Documents, e selecione o arquivo mxd que acabou de salvar pelo utilitário e clique em Abrir.<a href="#R-image-67533fe6055165b3f40d1173678f16cc" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-67533fe6055165b3f40d1173678f16cc"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
+<p>Vá para a aba Sensor de Postura e clique em Procurar e Instalar.<a href="#R-image-edefc4cc1aaea6cbfcd2e1e2732910f0" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-edefc4cc1aaea6cbfcd2e1e2732910f0"><img alt="MotionCatalyst_2021-08-11_13-52-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
+<p>Vá até o diretório onde você salvou o arquivo de Calibração, por exemplo: C:\User\SeuNomeDeUsuário\Documents, e selecione o arquivo mxd que acabou de salvar pelo utilitário e clique em Abrir.<a href="#R-image-11b528f0c1660f944311524ac54c8885" class="lightbox-link"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11b528f0c1660f944311524ac54c8885"><img alt="MotionCatalyst_2021-08-11_13-54-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
 <p>Quando a instalação for concluída, você será notificado e poderá clicar em OK para fechar as janelas.</p>
 <p>Sua Plataforma de Equilíbrio agora deve estar pronta para uso.
 Inicie uma nova Sessão na Análise de Swing e verifique se você obtém Leituras de Pressão na caixa de dados de Pressão e Postura ao capturar Swings.</p>
-<p><a href="#R-image-afa2f9bc6cab5195397622486b99b9c9" class="lightbox-link"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-afa2f9bc6cab5195397622486b99b9c9"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
+<p><a href="#R-image-b0608c88cfba50cfc3408c783e29f316" class="lightbox-link"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0608c88cfba50cfc3408c783e29f316"><img alt="2017-03-03_14-30-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
 <p>Nota: Pode ser necessário executar uma recalibração da sua Plataforma de Equilíbrio com uso intenso; isso pode ser feito clicando no botão de diagnóstico nas Configurações do Swing Catalyst, que iniciará o utilitário SE.</p>
 <h2 id="solução-de-problemas">Solução de Problemas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <h3 id="a-plataforma-de-equilíbrio-não-é-reconhecida-ou-não-aparece-como-conectada">A Plataforma de Equilíbrio não é reconhecida ou não aparece como conectada:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -339,8 +373,8 @@ Inicie uma nova Sessão na Análise de Swing e verifique se você obtém Leitura
 <li>O arquivo de Calibração recebido pelo utilitário Sensor Edge pode estar com defeito ou corrompido; tente executar o utilitário novamente e instalar o <em>novo</em> arquivo de Calibração. Se isso não funcionar, entre em contato com nossa equipe de suporte.</li>
 </ul>
 <h3 id="há-ruído-na-plataforma-mesmo-após-executar-o-utilitário">Há ruído na plataforma mesmo após executar o utilitário<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar link para a área de transferência"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
-<p><a href="#R-image-776b51a6cb2615dc89783baa560b66f4" class="lightbox-link"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-776b51a6cb2615dc89783baa560b66f4"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
+<p><a href="#R-image-f85ad76b42b7a5f1754394a812479ddd" class="lightbox-link"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f85ad76b42b7a5f1754394a812479ddd"><img alt="TeamViewer_2019-05-03_09-53-27.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
 <p>O ruído pode estar presente devido a vários fatores:</p>
 <ul>
 <li>
@@ -456,7 +490,6 @@ O utilitário de Calibração deve ser executado com frequência, até mesmo uma
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Idioma</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/calibration-diagnostics/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/calibration-diagnostics/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/calibration-diagnostics/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/calibration-diagnostics/index.html" lang="fr">Français</option>
@@ -518,8 +551,8 @@ O utilitário de Calibração deve ser executado com frequência, até mesmo uma
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537812" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537812" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542924" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542924" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

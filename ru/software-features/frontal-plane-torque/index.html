@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="1094">
     <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
     <title>Анализ крутящего момента во фронтальной плоскости — Руководство пользователя :: Поддержка Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fr">
@@ -63,27 +62,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537813" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537813" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537813" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542925" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542925" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772537813";
+      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772542925";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772542925" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['ru'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537813" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537813" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537813" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542925" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542925" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542925" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,54 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Меню (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Оглавление (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#введение">Введение</a>
+      <ul>
+        <li><a href="#что-такое-крутящий-момент-во-фронтальной-плоскости">Что такое крутящий момент во фронтальной плоскости?</a></li>
+        <li><a href="#компоненты-функции">Компоненты функции</a></li>
+        <li><a href="#почему-это-важно">Почему это важно?</a></li>
+        <li><a href="#предварительные-требования">Предварительные требования</a></li>
+      </ul>
+    </li>
+    <li><a href="#начало-работы">Начало работы</a>
+      <ul>
+        <li><a href="#добавление-databox-fpt-в-макет">Добавление DataBox FPT в макет</a></li>
+        <li><a href="#включение-3d-визуализации">Включение 3D Визуализации</a></li>
+        <li><a href="#необходимые-данные">Необходимые данные</a></li>
+      </ul>
+    </li>
+    <li><a href="#понимание-отображения">Понимание отображения</a>
+      <ul>
+        <li><a href="#график">График</a></li>
+        <li><a href="#ключевые-показатели">Ключевые показатели</a></li>
+        <li><a href="#выделение-фаз">Выделение фаз</a></li>
+      </ul>
+    </li>
+    <li><a href="#3d-визуализация">3D Визуализация</a>
+      <ul>
+        <li><a href="#визуализация-плеча-момента">Визуализация плеча момента</a></li>
+        <li><a href="#декомпозиция-вектора-силы">Декомпозиция вектора силы</a></li>
+        <li><a href="#настройки-3d-визуализации">Настройки 3D Визуализации</a></li>
+      </ul>
+    </li>
+    <li><a href="#параметры-конфигурации-график">Параметры конфигурации (график)</a></li>
+    <li><a href="#устранение-неполадок">Устранение неполадок</a>
+      <ul>
+        <li><a href="#сообщение-нет-спортсмена-на-платформе">Сообщение «Нет спортсмена на платформе»</a></li>
+        <li><a href="#пустой-или-отсутствующий-график-данных">Пустой или отсутствующий график данных</a></li>
+        <li><a href="#метрики-временной-последовательности-не-отображаются">Метрики временной последовательности не отображаются</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/index.html"><span itemprop="name">Поддержка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/software-features/index.html"><span itemprop="name">Программное обеспечение и функции</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Анализ крутящего момента во фронтальной плоскости — Руководство пользователя</span><meta itemprop="position" content="3"></li>
@@ -597,7 +644,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Язык</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/frontal-plane-torque/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/frontal-plane-torque/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/frontal-plane-torque/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/frontal-plane-torque/index.html" lang="fr">Français</option>
@@ -659,8 +705,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537813" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537813" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542925" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542925" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

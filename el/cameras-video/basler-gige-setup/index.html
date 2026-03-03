@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="813">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
     <title>Πώς να ρυθμίσετε κάμερες Basler GigE με το Swing Catalyst :: Υποστήριξη Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537833" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537833" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537833" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542947" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542947" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542947" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772537833";
+      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772542947";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537833" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542947" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537833" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537833" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537833" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537833" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537833" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542947" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542947" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542947" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542947" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542947" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,19 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#ρύθμιση-της-ip-των-καμερών">Ρύθμιση της IP των καμερών</a></li>
+    <li><a href="#ipconfigurator_"><img src="../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" alt="IpConfigurator_2018-12-03_12-38-59.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/index.html"><span itemprop="name">Υποστήριξη Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/cameras-video/index.html"><span itemprop="name">Κάμερες &amp; Βίντεο</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Πώς να ρυθμίσετε κάμερες Basler GigE με το Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -210,8 +222,8 @@
 <p>Βεβαιωθείτε ότι έχετε εγκαταστήσει το φίλτρο Ντράιβερ MVTec Halcon, καθώς οι κάμερες δεν θα λειτουργούν σωστά χωρίς αυτό. Επίσης, βεβαιωθείτε ότι έχετε αποεπιλέξει τυχόν άλλα φίλτρα Ντράιβερ που είναι εγκατεστημένα, π.χ. φίλτρο Ντράιβερ Basler.</p>
 <p>Βεβαιωθείτε ότι το Swing Catalyst επιτρέπεται τόσο σε ιδιωτικά όσο και σε δημόσια δίκτυα στο τείχος προστασίας Windows Defender</p>
 <p>Παράδειγμα:</p>
-<p><a href="#R-image-62801f86b5ffeda87474066e0a2ea971" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-62801f86b5ffeda87474066e0a2ea971"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
+<p><a href="#R-image-22769df383259da24d30444c8fab8f39" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-22769df383259da24d30444c8fab8f39"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
 <h2 id="ρύθμιση-της-ip-των-καμερών">Ρύθμιση της IP των καμερών<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Προετοιμασία IP</p>
 <p>Κάθε κάμερα και κάρτα Ethernet (NIC / Network interface controller) πρέπει να διαμορφωθεί με στατικές IP σε διαφορετικά subnets (και subnet mask)</p>
@@ -237,19 +249,19 @@ subnet mask: 255.255.255.0</p>
 <p>Αρχικά πρέπει να ρυθμίσουμε την IP της κάμερας, κάτι που γίνεται μέσω του Pylon IP Configurator.</p>
 <p>Πατήστε το κουμπί του μενού έναρξης στο πληκτρολόγιό σας και πληκτρολογήστε pylon ip και ο IP Configurator θα εμφανιστεί. Αν δεν εμφανιστεί, πιθανόν να μην έχετε εγκατεστημένο το λογισμικό.</p>
 <p>Για να εγκαταστήσετε το λογισμικό Pylon δείτε: <a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external"></a><a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external">https://www.baslerweb.com/en/sales-support/downloads/software-downloads/</a> και αναζητήστε: pylon 5.1.0 Camera Software Suite Windows.</p>
-<p><a href="#R-image-d6566dd8f6e21d979e21df94d1ef0c23" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d6566dd8f6e21d979e21df94d1ef0c23"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
+<p><a href="#R-image-cc7f496fe1f516fd115ea7b49240edf7" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc7f496fe1f516fd115ea7b49240edf7"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
 <p>Κάντε κλικ στην κάμερα και επιλέξτε Static IP</p>
-<h2 id="ipconfigurator_"><a href="#R-image-81c86fe32e23665745490aa87dfc8caf" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-81c86fe32e23665745490aa87dfc8caf"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="ipconfigurator_"><a href="#R-image-2ae259ba3e56e7c8a81cc134423e28ba" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ae259ba3e56e7c8a81cc134423e28ba"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Ορίστε τη διεύθυνση IP της κάμερας και το subnet mask σύμφωνα με το παραπάνω παράδειγμα.</p>
 <p>Σημείωση: αν χρησιμοποιείτε πολλαπλές κάμερες πρέπει να</p>
-<p><a href="#R-image-6e9725c76571e1a51ec6058e20c56ce8" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e9725c76571e1a51ec6058e20c56ce8"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
+<p><a href="#R-image-b1f42eee9a7eae03f08c945caee5bc4d" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b1f42eee9a7eae03f08c945caee5bc4d"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
 <p>Διαμόρφωση καμερών Basler GigE μέσω Halcon</p>
 <p>Στο Swing Catalyst, μεταβείτε στην καρτέλα Ρυθμίσεων και στις Κάμερες.</p>
-<p><a href="#R-image-c3a422ce7a3aed78be614600b8039398" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c3a422ce7a3aed78be614600b8039398"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
+<p><a href="#R-image-3c4b6bbec99a05ffdc95e2b35f8f37b1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c4b6bbec99a05ffdc95e2b35f8f37b1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
 <p>Κάντε κλικ στο Advanced.</p>
 <ul>
 <li>
@@ -259,32 +271,32 @@ subnet mask: 255.255.255.0</p>
 <p>Ενεργοποιήστε το πλαίσιο ελέγχου GtlNumBuffers και εισαγάγετε 200 ως τιμή.</p>
 </li>
 </ul>
-<p><a href="#R-image-4680e40f49a4b8356a8d26bf1793c67f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4680e40f49a4b8356a8d26bf1793c67f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
+<p><a href="#R-image-11e65ad8a7aea87219045fdb8a9b66cf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11e65ad8a7aea87219045fdb8a9b66cf"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
 <p>Ρύθμιση καμερών Basler GigE:</p>
 <p>Ας δούμε πώς να ορίσετε την έκθεση, την ταχύτητα κλείστρου και τον Ρυθμό Πλαισίων.</p>
 <p>ΣΗΜΕΙΩΣΗ: Αν δεν μπορείτε να δείτε τις ρυθμίσεις και λαμβάνετε σφάλμα στο Swing Catalyst, ελέγξτε τις ρυθμίσεις του τείχους προστασίας Windows. Δοκιμάστε να απενεργοποιήσετε το τείχος προστασίας για να ελέγξετε αν αυτό εμποδίζει την πρόσβαση του Swing Catalyst στις κάμερες.</p>
 <p>Αν οι ρυθμίσεις λειτουργούν και η ροή εικόνας είναι ομαλή, βεβαιωθείτε ότι το Swing Catalyst επιτρέπεται τόσο σε δημόσια όσο και σε ιδιωτικά δίκτυα στο τείχος προστασίας Windows Defender.</p>
 <p>Αναπτύξτε την καρτέλα AcquisitionTrigger και εισαγάγετε τον μέγιστο (ή χαμηλότερο) Ρυθμό Πλαισίων, έπειτα κάντε κλικ στο Enable Acquisition Frame Rate. Αυτό θα σας επιτρέψει να ορίσετε τον Ρυθμό Πλαισίων. Σημείωση: Ο Ρυθμός Πλαισίων μπορεί να περιοριστεί από τις τιμές έκθεσης.</p>
-<p><a href="#R-image-65b8ea604336cf34f4db3ed747a38973" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-65b8ea604336cf34f4db3ed747a38973"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
+<p><a href="#R-image-56e29c949f294f814cb72999d0ba4f69" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56e29c949f294f814cb72999d0ba4f69"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
 <p>Ρύθμιση τιμών έκθεσης</p>
 <p>Συνήθως είναι καλύτερο να χρησιμοποιείτε χειροκίνητη έκθεση για στατικά περιβάλλοντα, όπως εσωτερικά στούντιο. Μια πλήρως αυτόματη έκθεση μπορεί να προκαλέσει αλλαγή του Ρυθμού Πλαισίων και να οδηγήσει σε ασταθή εικόνα. Στην προκειμένη περίπτωση δεν χρησιμοποιούμε αυτόματη έκθεση καθώς θέλουμε να την ελέγχουμε εμείς. Γενικά, συνιστάται χρόνος έκθεσης μικρότερος από 2000 (2ms).</p>
 <p>Ρύθμιση τιμών Gain</p>
 <p>Παρόμοια με την έκθεση, η ρύθμιση του Gain σε χειροκίνητο για στατικές / εσωτερικές συνθήκες φωτισμού είναι η καλύτερη επιλογή. Όσο υψηλότερη είναι η έκθεση, τόσο πιο κοκκώδης θα είναι η εικόνα και τόσο περισσότερο χρόνο θα χρειαστεί η κωδικοποίηση βίντεο σε σύγκριση με χαμηλό Gain.</p>
 <p>Για να ορίσετε χειροκίνητο Gain, αλλάξτε το Gain Auto από Continuous σε Off, έπειτα θέστε σε Παύση και ξεκινήστε την Αναπαραγωγή για να επαναφορτώσετε τις ρυθμίσεις. Ορίστε τις τιμές Gain αλλάζοντας τις αριθμητικές τιμές στο Gain (Raw).</p>
-<p><a href="#R-image-6028e3bd9da64d1c5bfd4352dda5cad7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6028e3bd9da64d1c5bfd4352dda5cad7"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
+<p><a href="#R-image-a95d6e34636c00de38f3eb4d5710be8f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a95d6e34636c00de38f3eb4d5710be8f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
 <p>Αλλαγή μεγέθους εικόνας, περιοχής ενδιαφέροντος, Region of Interest και άλλα</p>
 <p>Σε ορισμένες περιπτώσεις θέλετε να μειώσετε το μέγεθος της εικόνας για να εστιάσετε σε μια συγκεκριμένη περιοχή της βιντεοεικόνας, για παράδειγμα για να δείτε τη μπαστούνα και τη μπάλα κατά την Κρούση με λεπτομέρεια.</p>
 <p>Αυτό μπορεί να γίνει με την περιοχή ενδιαφέροντος, γνωστή και ως AOI, και ROI, Region of Interest. Η μείωση του συνολικού μεγέθους εικόνας με αυτή τη λειτουργία μπορεί επίσης να αυξήσει τον Ρυθμό Πλαισίων.</p>
-<p><a href="#R-image-712c94c36cebb8708bd8cb72778bfb0c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-712c94c36cebb8708bd8cb72778bfb0c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
+<p><a href="#R-image-c339886eecba1a906302d04cb3f1bdc4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c339886eecba1a906302d04cb3f1bdc4"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
 <p>Αποθήκευση ρυθμίσεων στην κάμερα</p>
 <p>Είναι σημαντικό να αποθηκεύετε τις ρυθμίσεις στην κάμερα. Αν δεν γίνει αυτό, όλες οι διαμορφώσεις που έχετε κάνει θα χαθούν.</p>
 <p>Βεβαιωθείτε ότι έχετε ορίσει το Default Set Selector &amp; Default Startup Set. Υπάρχουν διαφορετικά σύνολα χρήστη για να επιλέξετε και θεωρητικά μπορείτε να έχετε διαφορετικές ρυθμίσεις αποθηκευμένες σε κάθε σύνολο. Δηλαδή, μπορείτε να επιλέξετε &ldquo;User Set 1&rdquo; ως προεπιλογή σας και στη συνέχεια να πατήσετε User Set Save για να αποθηκεύσετε τις τρέχουσες ρυθμίσεις σας σε αυτό το προφίλ.</p>
-<p><a href="#R-image-3c5cc7ad28ed1e1ea5704cdeeee1e587" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c5cc7ad28ed1e1ea5704cdeeee1e587"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
+<p><a href="#R-image-dc2a4a2976970fb5ebba37a1cc663dbf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc2a4a2976970fb5ebba37a1cc663dbf"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
 <hr>
 <p><em>Τελευταία ενημέρωση: 2022-10-10</em> | <a href="/sc-support/el/cameras-video/basler-gige-setup/index.html">Προβολή στον επίσημο ιστότοπο υποστήριξης</a></p>
 
@@ -395,7 +407,6 @@ subnet mask: 255.255.255.0</p>
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/basler-gige-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/basler-gige-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/basler-gige-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/basler-gige-setup/index.html" lang="fr">Français</option>
@@ -457,8 +468,8 @@ subnet mask: 255.255.255.0</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537833" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537833" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542947" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542947" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

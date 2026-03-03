@@ -99,10 +99,9 @@ body {
   line-height: 1.7;
 }
 
-/* Let content fill available width — no empty right gap */
+/* Content width for readability */
 #R-body .flex-block-wrapper {
   max-width: 52rem;
-  margin-right: auto;
 }
 
 #R-body-inner p, #body-inner p {
@@ -213,19 +212,11 @@ button::after,
   animation: sc-fade-in-up 0.6s var(--ease-out);
 }
 
-.sc-hero__logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.sc-hero__logo svg {
-  width: 80px;
-  height: 80px;
-  filter: drop-shadow(0 4px 20px rgba(255, 92, 0, 0.25));
-}
-
 .sc-hero__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
   font-size: clamp(2.5rem, 7vw, 4.2rem);
   font-weight: 900;
   color: #1a1a20;
@@ -236,8 +227,11 @@ button::after,
   padding: 0 !important;
 }
 
-.sc-hero__title-swing {
-  color: #FF5C00;
+.sc-hero__logo-inline {
+  width: 0.85em;
+  height: 0.85em;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 20px rgba(255, 92, 0, 0.25));
 }
 
 .sc-hero__subtitle {
@@ -976,6 +970,67 @@ body.sc-homepage #R-body-overlay {
 }
 
 /* ================================================================
+   STICKY TABLE OF CONTENTS
+   ================================================================ */
+
+#R-navigation {
+  position: sticky;
+  top: 3.5rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* ================================================================
+   BACK TO TOP BUTTON
+   ================================================================ */
+
+.sc-back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--INTERNAL-MAIN-TEXT-color) 15%, transparent);
+  background: var(--INTERNAL-MAIN-BG-color);
+  color: var(--INTERNAL-MAIN-TEXT-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.sc-back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.sc-back-to-top:hover {
+  background: var(--sc-accent);
+  border-color: var(--sc-accent);
+  color: #fff;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--sc-accent) 35%, transparent);
+}
+
+.sc-back-to-top svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ================================================================
    READING PROGRESS BAR
    ================================================================ */
 
@@ -1046,7 +1101,7 @@ body.sc-homepage #R-body-overlay {
 
 @media (max-width: 768px) {
   .sc-hero { padding: 3rem 1rem 4rem; min-height: 60vh; }
-  .sc-hero__logo svg { width: 64px; height: 64px; }
+  .sc-hero__title { gap: 0.35em; }
   .sc-hero__title { font-size: clamp(2rem, 5vw, 2.8rem); }
   .sc-categories { grid-template-columns: 1fr; }
   .sc-quick-links__grid, .sc-popular__grid { grid-template-columns: 1fr; }

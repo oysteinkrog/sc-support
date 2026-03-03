@@ -25,8 +25,7 @@
     <meta itemprop="wordCount" content="396">
     <meta itemprop="keywords" content="Troubleshooting,Force-Data,Backup">
     <title>Cách cài đặt NVIDIA GPU Encoder :: Hỗ trợ Swing Catalyst</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="fr">
@@ -62,27 +61,27 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/hardware/nvidia-gpu-encoder/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537826" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537826" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537826" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542940" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542940" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542940" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772537826";
+      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772542940";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772537826" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772542940" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['vi'];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537826" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537826" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537826" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537826" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537826" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542940" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542940" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542940" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542940" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542940" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,23 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#trước-tiên-hãy-đảm-bảo-gpu-nvidia-đã-được-chọn-trong-cài-đặt-video--ghi-lại-của-swingcatalyst">Trước tiên, hãy đảm bảo GPU NVIDIA đã được chọn trong cài đặt Video &amp; Ghi lại của SwingCatalyst.</a></li>
+        <li><a href="#vào-chế-độ-ghi-lại-và-ghi-lại-một-cú-gôn-nếu-cú-gôn-được-kích-hoạt-nhưng-không-hoàn-thành-hãy-xem-hướng-dẫn-bên-dưới">Vào chế độ Ghi lại và ghi lại một Cú Gôn. Nếu Cú Gôn được Kích Hoạt nhưng không hoàn thành, hãy xem hướng dẫn bên dưới.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/index.html"><span itemprop="name">Hỗ Trợ Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/hardware/index.html"><span itemprop="name">Phần cứng</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cách cài đặt NVIDIA GPU Encoder</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -206,30 +222,30 @@
 <p><strong>LƯU Ý: GPU AMD ATI hoàn toàn không được hỗ trợ.</strong></p>
 <h3 id="trước-tiên-hãy-đảm-bảo-gpu-nvidia-đã-được-chọn-trong-cài-đặt-video--ghi-lại-của-swingcatalyst">Trước tiên, hãy đảm bảo GPU NVIDIA đã được chọn trong cài đặt Video &amp; Ghi lại của SwingCatalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Nếu bạn có hơn 2 camera, hãy đảm bảo bật bản vá trong mục &ldquo;Advanced Settings&rdquo; (Cài đặt nâng cao) dưới phần Video Encoding.</p>
-<p><a href="#R-image-760f04383644d2f64b2a3c2a04b01d1c" class="lightbox-link"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-760f04383644d2f64b2a3c2a04b01d1c"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png"></a></p>
+<p><a href="#R-image-f207b54d8100d0f819fa0b0c5002ae3f" class="lightbox-link"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f207b54d8100d0f819fa0b0c5002ae3f"><img alt="MotionCatalyst_NU2REqbu1B.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407741742994/motioncatalyst-nu2reqbu1b-png.png"></a></p>
 <h3 id="vào-chế-độ-ghi-lại-và-ghi-lại-một-cú-gôn-nếu-cú-gôn-được-kích-hoạt-nhưng-không-hoàn-thành-hãy-xem-hướng-dẫn-bên-dưới">Vào chế độ Ghi lại và ghi lại một Cú Gôn. Nếu Cú Gôn được Kích Hoạt nhưng không hoàn thành, hãy xem hướng dẫn bên dưới.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Bước 1: Nhấp vào nút Start và tìm kiếm &ldquo;Graphics setting&rdquo; trong Windows.</p>
-<p><a href="../../assets/images/zendesk/chrome_DpivtZCRtz.png"><a href="#R-image-6139359397d0a48c627da02d13e8156f" class="lightbox-link"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox figure-image" loading="lazy" src="__PH1__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6139359397d0a48c627da02d13e8156f"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH1__"></a></a></p>
+<p><a href="../../assets/images/zendesk/chrome_DpivtZCRtz.png"><a href="#R-image-25fa0739f0a024b578e112231df07801" class="lightbox-link"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox figure-image" loading="lazy" src="__PH1__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-25fa0739f0a024b578e112231df07801"><img alt="chrome_DpivtZCRtz.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH1__"></a></a></p>
 <p>Bước 2: Bật tùy chọn &ldquo;Reduce latency and improve performance&rdquo; (Giảm độ trễ và cải thiện Hiệu Suất).</p>
 <p>Bước 3: Trong mục &ldquo;Choose an app to set preference&rdquo; (Chọn ứng dụng để đặt tùy chọn), hãy đảm bảo chọn &ldquo;desktop app&rdquo; (ứng dụng máy tính) rồi nhấp &ldquo;Browse&rdquo; (Duyệt).</p>
 <p>Bước 4: Điều hướng đến C:\Program Files\Initial Force\Swing Catalyst\bin, chọn tệp MotionCatalyst.exe rồi nhấp &ldquo;Add&rdquo; (Thêm).</p>
-<p><a href="https://i.imgur.com/rGV83TV.png" rel="external"><a href="#R-image-04a3b23c14c1e2e593fa25fd0300ddce" class="lightbox-link"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox figure-image" loading="lazy" src="__PH2__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-04a3b23c14c1e2e593fa25fd0300ddce"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH2__"></a></a></p>
+<p><a href="https://i.imgur.com/rGV83TV.png" rel="external"><a href="#R-image-d368fccbfe10319e97d8ae5e23eb216d" class="lightbox-link"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox figure-image" loading="lazy" src="__PH2__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d368fccbfe10319e97d8ae5e23eb216d"><img alt="ApplicationFrameHost_e2u4uOrbTj.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH2__"></a></a></p>
 <p>Bước 5: Chọn MotionCatalyst vừa được thêm vào, nhấp &ldquo;Options&rdquo; (Tùy chọn) rồi chọn &ldquo;High performance GPU: NVIDIA XXXX&rdquo; (GPU Hiệu Suất cao: NVIDIA XXXX).</p>
-<p><a href="../../assets/images/zendesk/ApplicationFrameHost_Dqc3KHmWXa.png"><a href="#R-image-132c7a70c2e5eeb2da6ce91facc3e248" class="lightbox-link"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox figure-image" loading="lazy" src="__PH3__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-132c7a70c2e5eeb2da6ce91facc3e248"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH3__"></a></a></p>
+<p><a href="../../assets/images/zendesk/ApplicationFrameHost_Dqc3KHmWXa.png"><a href="#R-image-966907b908614782847cba512d638589" class="lightbox-link"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox figure-image" loading="lazy" src="__PH3__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-966907b908614782847cba512d638589"><img alt="ApplicationFrameHost_Dqc3KHmWXa.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH3__"></a></a></p>
 <p><strong>Giải pháp dự phòng cho một số máy tính xách tay</strong></p>
 <p>Bước 1: Nhấp chuột phải vào màn hình nền và chọn &ldquo;NVIDIA Control Panel&rdquo; (Bảng điều khiển NVIDIA). Nếu không thấy tùy chọn này, hãy tải xuống và cài đặt driver và bảng điều khiển phiên bản mới nhất tại đây: <a href="https://www.nvidia.com/en-us/geforce/drivers/" rel="external">https://www.nvidia.com/en-us/geforce/drivers/</a></p>
 <p>Bước 2: Trong bảng điều khiển, vào mục &ldquo;Manage 3D settings&rdquo; (Quản lý cài đặt 3D) — thường là tùy chọn thứ 2 từ trên xuống ở phía bên trái.</p>
 <p>Bước 3: Nhấp vào menu thả xuống &ldquo;Preferred graphics processor&rdquo; (Bộ xử lý đồ họa ưu tiên) và thay đổi từ &ldquo;Integrated graphics&rdquo; (Đồ họa tích hợp) sang &ldquo;High-performance NVIDIA processor&rdquo; (Bộ xử lý NVIDIA Hiệu Suất cao).</p>
 <p>Bước 4: Nhấp &ldquo;Apply&rdquo; (Áp dụng) và đóng bảng điều khiển, mở SwingCatalyst và Ghi lại thêm một Bản Ghi để kiểm tra xem đã được khắc phục chưa. Nếu vẫn chưa được, vui lòng gửi email đến <a href="mailto:support@swingcatalyst.com" rel="external">support@swingcatalyst.com</a></p>
-<p><a href="../../assets/images/zendesk/KVIjNueytJ.png"><a href="#R-image-2c8714b2b795532fd356a5fce430c117" class="lightbox-link"><img alt="KVIjNueytJ.png" class="lazy lightbox figure-image" loading="lazy" src="__PH4__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2c8714b2b795532fd356a5fce430c117"><img alt="KVIjNueytJ.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH4__"></a></a></p>
+<p><a href="../../assets/images/zendesk/KVIjNueytJ.png"><a href="#R-image-85968fa4418f516c78dcf230973f2c78" class="lightbox-link"><img alt="KVIjNueytJ.png" class="lazy lightbox figure-image" loading="lazy" src="__PH4__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-85968fa4418f516c78dcf230973f2c78"><img alt="KVIjNueytJ.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH4__"></a></a></p>
 <p><em>nhấp để phóng to</em></p>
-<p><a href="../../assets/images/zendesk/TeamViewer_VXO8AAYFU0.png"><a href="#R-image-19c17e96ce031b2b6899d65a5d4ce7b7" class="lightbox-link"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox figure-image" loading="lazy" src="__PH5__" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-19c17e96ce031b2b6899d65a5d4ce7b7"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH5__"></a></a></p>
+<p><a href="../../assets/images/zendesk/TeamViewer_VXO8AAYFU0.png"><a href="#R-image-9e17faafec5089b744ac46e3e6b2a95b" class="lightbox-link"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox figure-image" loading="lazy" src="__PH5__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e17faafec5089b744ac46e3e6b2a95b"><img alt="TeamViewer_VXO8AAYFU0.png" class="lazy lightbox lightbox-image" loading="lazy" src="__PH5__"></a></a></p>
 <hr>
 <p><em>Cập nhật lần cuối: 2023-12-15</em> | <a href="/sc-support/vi/hardware/nvidia-gpu-encoder/index.html">Xem trên trang hỗ trợ chính thức</a></p>
 
@@ -324,7 +340,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/nvidia-gpu-encoder/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/nvidia-gpu-encoder/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/nvidia-gpu-encoder/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/nvidia-gpu-encoder/index.html" lang="fr">Français</option>
@@ -386,8 +401,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537826" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537826" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542940" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542940" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

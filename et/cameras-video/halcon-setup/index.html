@@ -26,8 +26,7 @@
     <meta itemprop="wordCount" content="459">
     <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
     <title>Kuidas seadistada Halcon rakendusega Swing Catalyst :: Swing Catalyst Tugi</title>
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="x-default">
-    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="x-default">
     <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="es">
     <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="de">
     <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="fr">
@@ -63,26 +62,26 @@
     <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="lt">
     <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="lv">
     <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/halcon-setup/index.html" rel="alternate" hreflang="et">
-    <link href="/sc-support/images/favicon.png?1772537842" rel="icon" type="image/png">
-    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772537842" rel="stylesheet">
-    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/search-lunr.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/search.min.js?1772537842" defer></script>
+    <link href="/sc-support/images/favicon.png?1772542959" rel="icon" type="image/png">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772542959" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/search.min.js?1772542959" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/sc-support/searchindex.et.js?1772537842";
+      window.relearn.index_js_url="/sc-support/searchindex.et.js?1772542959";
     </script>
-    <script src="/sc-support/js/lunr/lunr.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772537842" defer></script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772542959" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537842" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772537842" rel="stylesheet"></noscript>
-    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772537842" rel="stylesheet">
-    <link href="/sc-support/css/theme.min.css?1772537842" rel="stylesheet">
-    <link href="/sc-support/css/format-html.min.css?1772537842" rel="stylesheet" id="R-format-style">
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542959" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772542959" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772542959" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772542959" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772542959" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -162,6 +161,25 @@
             <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#warning">WARNING</a>
+      <ul>
+        <li><a href="#swingcatalyst-toetab-ainult-halcon-versiooni-12">SwingCatalyst toetab ainult HALCON versiooni 12.</a></li>
+        <li><a href="#usb-litsentsidongel-on-ühildumatu-windows-10-ja-11-ga">USB litsentsidongel on ühildumatu Windows 10 ja 11-ga!</a></li>
+      </ul>
+    </li>
+    <li><a href="#halconi-põhiline-kaamera-konfiguratsioon-swingcatalystis">Halconi põhiline kaamera konfiguratsioon SwingCatalystis</a></li>
+    <li><a href="#tõrkeotsing">Tõrkeotsing</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/et/index.html"><span itemprop="name">Swing Catalyst tugi</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/et/cameras-video/index.html"><span itemprop="name">Kaamerad ja video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kuidas seadistada Halcon rakendusega Swing Catalyst</span><meta itemprop="position" content="3"></li>
           </ol>
@@ -203,10 +221,10 @@
 
 <h1 id="kuidas-seadistada-halcon-kasutamiseks-rakendusega-swing-catalyst">Kuidas seadistada Halcon kasutamiseks rakendusega Swing Catalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Swing Catalyst 6.0 väljalase toob kaasa toe kolmele levinuimale masinvisioonistandardile.</p>
-<p><a href="#R-image-eb4446c7d01311233c208f83c0025c8f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb4446c7d01311233c208f83c0025c8f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg"></a>    <a href="#R-image-798dd9923eae62ea80959a7a35b92713" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-798dd9923eae62ea80959a7a35b92713"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png"></a>  <a href="#R-image-4a6b6345f4a3244b8073d90534cf7ada" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4a6b6345f4a3244b8073d90534cf7ada"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif"></a></p>
+<p><a href="#R-image-c0bb4724b76b253f86e04248f6f8d886" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c0bb4724b76b253f86e04248f6f8d886"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/117687_wm_usb3-vision-camera-support-gallery-image1.jpg"></a>    <a href="#R-image-31bb49d7b621de5c029170e2320b0f37" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31bb49d7b621de5c029170e2320b0f37"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/GigE_vision_logo.png"></a>  <a href="#R-image-463820600403671d2cdf6797873ffa93" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-463820600403671d2cdf6797873ffa93"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/80682_wm_genicam_tn.gif"></a></p>
 <pre><code>  USB3 Vision                      GigE Vision                             GENiCAM
 </code></pre>
 <p>Enne alustamist</p>
@@ -295,23 +313,23 @@
 <p>Jätkake ekraanil kuvatavate juhiste järgi.</p>
 </li>
 </ul>
-<p><a href="#R-image-8eb9670d67ea14660fdc321a5dfc7e9b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8eb9670d67ea14660fdc321a5dfc7e9b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG"></a></p>
-<p><a href="#R-image-c41d8a34e678339f319184597870b484" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c41d8a34e678339f319184597870b484"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG"></a></p>
-<p><a href="#R-image-dc830e745d77d0a82dd353743a940748" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc830e745d77d0a82dd353743a940748"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG"></a></p>
+<p><a href="#R-image-d58e599b2c37317390bbb504eaef1f45" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d58e599b2c37317390bbb504eaef1f45"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer.PNG"></a></p>
+<p><a href="#R-image-fdbac4bf12bfb2d0e53385e462029411" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fdbac4bf12bfb2d0e53385e462029411"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_architecture_selection.PNG"></a></p>
+<p><a href="#R-image-55e8135282a20ba47e2636ba684de794" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-55e8135282a20ba47e2636ba684de794"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_OCR_not_needed.PNG"></a></p>
 <h4 id="warning-tühistage-kindlasti-valik-install-driver-for-usb-dongles-kui-kasutate-windows-10-või-11">WARNING: Tühistage kindlasti valik „Install driver for USB dongles&quot;, kui kasutate Windows 10 või 11<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
-<p><a href="#R-image-009b7b2a54afa4ca2b3c4831b3ae7cbc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-009b7b2a54afa4ca2b3c4831b3ae7cbc"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG"></a></p>
+<p><a href="#R-image-084210f5ec1af13e80edc585266d1bed" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-084210f5ec1af13e80edc585266d1bed"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Install_USB_driver.PNG"></a></p>
 <p>Veenduge, et installite GigE Vision Filteri (<strong>Märkus:</strong> <strong>see on nõutav, kui teil on GigE kaamera</strong>).</p>
-<p><a href="#R-image-575f749554d091cca6171667e035347a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-575f749554d091cca6171667e035347a"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG"></a></p>
-<p><a href="#R-image-ea8df2aff116cc41ebbc21f08c29e36d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea8df2aff116cc41ebbc21f08c29e36d"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG"></a></p>
+<p><a href="#R-image-b8a9a9d511374ec2bd89535ab17153a1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8a9a9d511374ec2bd89535ab17153a1"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/installer_gigefilter_driver.PNG"></a></p>
+<p><a href="#R-image-5ecb0b519b4caff76ad9712272e2f2bd" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ecb0b519b4caff76ad9712272e2f2bd"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Windows_Security_Install.PNG"></a></p>
 <p>Leidke e-posti teel saadud fail license.dat ja klõpsake „Next&quot;.</p>
-<p><a href="#R-image-0538bd31d8f5ea1ea9ef74cccdd61f6d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0538bd31d8f5ea1ea9ef74cccdd61f6d"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG"></a></p>
+<p><a href="#R-image-2b38f931c395ea6aab5a5d3c4f1bf2f5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2b38f931c395ea6aab5a5d3c4f1bf2f5"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/Installer_License_File.PNG"></a></p>
 <p>Viige installimine lõpule. Kui palutakse arvuti taaskäivitada, klõpsake „Yes&quot;.</p>
 <h2 id="halconi-põhiline-kaamera-konfiguratsioon-swingcatalystis">Halconi põhiline kaamera konfiguratsioon SwingCatalystis<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Vaadake järgmiste tootjate konfiguratsioonijuhiseid:</p>
@@ -438,7 +456,6 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/halcon-setup/index.html" lang="en">English</option>
                     <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/halcon-setup/index.html" lang="es">Español</option>
                     <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/halcon-setup/index.html" lang="de">Deutsch</option>
                     <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/halcon-setup/index.html" lang="fr">Français</option>
@@ -500,8 +517,8 @@
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772537842" defer></script>
-    <script src="/sc-support/js/theme.min.js?1772537842" defer></script>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772542959" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772542959" defer></script>
 <link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
 <script src="/sc-support/js/sc-extras.js"></script>
 

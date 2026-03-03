@@ -471,6 +471,34 @@
   }
 
   // ================================================================
+  // BACK TO TOP BUTTON
+  // ================================================================
+  function initBackToTop() {
+    if (document.querySelector('.sc-hero')) return;
+
+    var btn = document.createElement('button');
+    btn.className = 'sc-back-to-top';
+    btn.setAttribute('aria-label', 'Back to top');
+    btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>';
+    document.body.appendChild(btn);
+
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(function () {
+          btn.classList.toggle('visible', window.scrollY > 400);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ================================================================
   // INIT
   // ================================================================
   function init() {
@@ -480,6 +508,7 @@
     initFeedback();
     initKeyboardShortcuts();
     initParticles();
+    initBackToTop();
   }
 
   if (document.readyState === 'loading') {
