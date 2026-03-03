@@ -10,7 +10,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video",
     "content": "",
-    "description": "",
+    "description": "Network configuration, lighting, and general camera setup guides.",
     "tags": [],
     "title": "Camera Setup",
     "uri": "/sc-support/en/cameras-video/setup/index.html"
@@ -18,7 +18,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Hardware",
     "content": "",
-    "description": "",
+    "description": "Install, calibrate, and configure balance plates and BodiTrak sensors.",
     "tags": [],
     "title": "Pressure Plates",
     "uri": "/sc-support/en/hardware/pressure-plates/index.html"
@@ -26,7 +26,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features",
     "content": "",
-    "description": "",
+    "description": "Record lessons, export videos, and share sessions with students and coaches.",
     "tags": [],
     "title": "Recording \u0026 Export",
     "uri": "/sc-support/en/software-features/recording-export/index.html"
@@ -34,7 +34,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video",
     "content": "",
-    "description": "",
+    "description": "Model-specific guides for FLIR, IDS, Basler, Fox, and Lynx cameras.",
     "tags": [],
     "title": "Camera Models",
     "uri": "/sc-support/en/cameras-video/camera-models/index.html"
@@ -50,7 +50,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Hardware",
     "content": "",
-    "description": "",
+    "description": "Connect FlightScope, Foresight, Trackman, and other launch monitors.",
     "tags": [],
     "title": "Launch Monitors",
     "uri": "/sc-support/en/hardware/launch-monitors/index.html"
@@ -58,7 +58,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features",
     "content": "",
-    "description": "",
+    "description": "Set up and use motion capture for 3D body tracking and swing analysis.",
     "tags": [],
     "title": "Motion Capture",
     "uri": "/sc-support/en/software-features/motion-capture/index.html"
@@ -74,7 +74,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features",
     "content": "",
-    "description": "",
+    "description": "Understand force vectors, key metrics, graphs, and data visualization tools.",
     "tags": [],
     "title": "Data \u0026 Analysis",
     "uri": "/sc-support/en/software-features/data-analysis/index.html"
@@ -82,7 +82,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Hardware",
     "content": "",
-    "description": "",
+    "description": "Calibration diagnostics, force plate troubleshooting, and hardware setup.",
     "tags": [],
     "title": "Diagnostics \u0026 Setup",
     "uri": "/sc-support/en/hardware/diagnostics/index.html"
@@ -90,7 +90,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Cameras \u0026 Video",
     "content": "",
-    "description": "",
+    "description": "Fix dropped frames, upgrade issues, and other camera problems.",
     "tags": [],
     "title": "Troubleshooting",
     "uri": "/sc-support/en/cameras-video/troubleshooting/index.html"
@@ -98,7 +98,7 @@ var relearn_searchindex = [
   {
     "breadcrumb": "Swing Catalyst Support \u003e Software \u0026 Features",
     "content": "",
-    "description": "",
+    "description": "Configure keyboard shortcuts, feedback screens, and application settings.",
     "tags": [],
     "title": "Setup \u0026 Configuration",
     "uri": "/sc-support/en/software-features/setup-configuration/index.html"
@@ -113,48 +113,48 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Swing Catalyst Support",
-    "content": "",
-    "description": "",
+    "content": "New to Swing Catalyst? Start here for system requirements, installation guides, and an overview of the platform.\nFrequently Asked Questions\nThis is an overview of the most frequently asked questions.\nGetting Started - Swing Catalyst Home\nThis article is the getting started guide for the Swing Catalyst Home.\nHow to install \u0026 uninstall Swing Catalyst\nThis support article describes how to install or uninstall Swing Catalyst*.\nHow to install or change your license key\nLearn how to install or change your license key in Swing Catalyst\nRecommended computer specifications\nImportant Note: Swing Catalyst is not compatible with Mac OS (Arm Architecture) or Windows 11 Arm.\nSwing Catalyst - User Guide\nThis article is the user guide for Swing Catalyst.\nWhat is Swing Catalyst Home?\nThis support aims to cover Swing Catalyst Home.\nWhich version of the software am I using?\nThe version is listed in the bottom right corner",
+    "description": "New to Swing Catalyst? Start here for system requirements, installation guides, and an overview of the platform.\nFrequently Asked Questions\nThis is an overview of the most frequently asked questions.\nGetting Started - Swing Catalyst Home\nThis article is the getting started guide for the Swing Catalyst Home.\nHow to install \u0026 uninstall Swing Catalyst\nThis support article describes how to install or uninstall Swing Catalyst*.\nHow to install or change your license key",
     "tags": [],
     "title": "Getting Started",
     "uri": "/sc-support/en/getting-started/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support",
-    "content": "",
-    "description": "",
+    "content": "Everything about setting up and using cameras with Swing Catalyst, from supported models to network configuration and troubleshooting.\nCamera Setup Network configuration, lighting, and general camera setup guides. Camera Models Model-specific guides for FLIR, IDS, Basler, Fox, and Lynx cameras. Troubleshooting Fix dropped frames, upgrade issues, and other camera problems.",
+    "description": "Everything about setting up and using cameras with Swing Catalyst, from supported models to network configuration and troubleshooting.\nCamera Setup Network configuration, lighting, and general camera setup guides. Camera Models Model-specific guides for FLIR, IDS, Basler, Fox, and Lynx cameras. Troubleshooting Fix dropped frames, upgrade issues, and other camera problems.",
     "tags": [],
     "title": "Cameras \u0026 Video",
     "uri": "/sc-support/en/cameras-video/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support",
-    "content": "",
-    "description": "",
+    "content": "Set up and configure hardware devices that integrate with Swing Catalyst, including pressure plates, launch monitors, and diagnostics tools.\nPressure Plates Install, calibrate, and configure balance plates and BodiTrak sensors. Launch Monitors Connect FlightScope, Foresight, Trackman, and other launch monitors. Diagnostics \u0026 Setup Calibration diagnostics, force plate troubleshooting, and hardware setup.",
+    "description": "Set up and configure hardware devices that integrate with Swing Catalyst, including pressure plates, launch monitors, and diagnostics tools.\nPressure Plates Install, calibrate, and configure balance plates and BodiTrak sensors. Launch Monitors Connect FlightScope, Foresight, Trackman, and other launch monitors. Diagnostics \u0026 Setup Calibration diagnostics, force plate troubleshooting, and hardware setup.",
     "tags": [],
     "title": "Hardware",
     "uri": "/sc-support/en/hardware/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support",
-    "content": "",
-    "description": "",
+    "content": "Learn how to use Swing Catalyst’s software features, from recording and exporting sessions to motion capture analysis and data visualization.\nRecording \u0026 Export Record lessons, export videos, and share sessions with students and coaches. Motion Capture Set up and use motion capture for 3D body tracking and swing analysis. Data \u0026 Analysis Understand force vectors, key metrics, graphs, and data visualization tools. Setup \u0026 Configuration Configure keyboard shortcuts, feedback screens, and application settings.",
+    "description": "Learn how to use Swing Catalyst’s software features, from recording and exporting sessions to motion capture analysis and data visualization.\nRecording \u0026 Export Record lessons, export videos, and share sessions with students and coaches. Motion Capture Set up and use motion capture for 3D body tracking and swing analysis. Data \u0026 Analysis Understand force vectors, key metrics, graphs, and data visualization tools. Setup \u0026 Configuration Configure keyboard shortcuts, feedback screens, and application settings.",
     "tags": [],
     "title": "Software \u0026 Features",
     "uri": "/sc-support/en/software-features/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support",
-    "content": "",
-    "description": "",
+    "content": "Manage your Swing Catalyst account, subscription, installation, backups, and system configuration.\nBilling \u0026 Subscriptions Manage your Swing Catalyst subscription, payments, and account billing. Installation \u0026 Setup Install, update, and configure Swing Catalyst on your system. Backup \u0026 Database Back up, copy, move, and manage your Swing Catalyst database and settings. System \u0026 Diagnostics Check system specs, collect logs, and optimize your computer for Swing Catalyst.",
+    "description": "Manage your Swing Catalyst account, subscription, installation, backups, and system configuration.\nBilling \u0026 Subscriptions Manage your Swing Catalyst subscription, payments, and account billing. Installation \u0026 Setup Install, update, and configure Swing Catalyst on your system. Backup \u0026 Database Back up, copy, move, and manage your Swing Catalyst database and settings. System \u0026 Diagnostics Check system specs, collect logs, and optimize your computer for Swing Catalyst.",
     "tags": [],
     "title": "Account \u0026 Setup",
     "uri": "/sc-support/en/account-setup/index.html"
   },
   {
     "breadcrumb": "Swing Catalyst Support",
-    "content": "",
-    "description": "",
+    "content": "Technical reference material including release notes, specifications, and detailed documentation.\nImproved sensor plate rendering\nIn version 24.1.2 and above, we have enhanced the design of the Pressure and Stance Databox. These changes were implemented to support the new Dual Pressure…\nSoftware Version Changelog\nDESKTOP-11248: Add shortcuts for switching between UI layouts\nSoftware Version Changelog (9.8 - 2.6.3)\nDetailed changelog for Swing Catalyst software versions 9.8 through 2.6.3\nUser Guide Swing Catalyst Software \u0026 Online\nComprehensive user guide for Swing Catalyst software and online platform",
+    "description": "Technical reference material including release notes, specifications, and detailed documentation.\nImproved sensor plate rendering\nIn version 24.1.2 and above, we have enhanced the design of the Pressure and Stance Databox. These changes were implemented to support the new Dual Pressure…\nSoftware Version Changelog\nDESKTOP-11248: Add shortcuts for switching between UI layouts\nSoftware Version Changelog (9.8 - 2.6.3)\nDetailed changelog for Swing Catalyst software versions 9.8 through 2.6.3\nUser Guide Swing Catalyst Software \u0026 Online",
     "tags": [],
     "title": "Reference",
     "uri": "/sc-support/en/reference/index.html"
