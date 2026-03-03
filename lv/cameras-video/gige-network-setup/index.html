@@ -1,26 +1,643 @@
-<!doctype html><html id=R-html lang=lv dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="GigE Vision ir saskarnes standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongli."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts"><meta name=twitter:description content="GigE Vision ir saskarnes standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongli."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/lv/cameras-video/gige-network-setup/index.html"><meta property="og:site_name" content="Swing Catalyst Atbalsts"><meta property="og:title" content="Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts"><meta property="og:description" content="GigE Vision ir saskarnes standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongli."><meta property="og:locale" content="lv"><meta property="og:type" content="article"><meta property="article:section" content="Kameras un video"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Gige-Camera"><meta property="article:tag" content="Usb-Camera"><meta property="article:tag" content="Flir"><meta itemprop=name content="Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts"><meta itemprop=description content="GigE Vision ir saskarnes standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongli."><meta itemprop=wordCount content="1298"><meta itemprop=keywords content="Troubleshooting,Gige-Camera,Usb-Camera,Flir"><title>Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/gige-network-setup/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/gige-network-setup/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/gige-network-setup/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/gige-network-setup/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/gige-network-setup/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/gige-network-setup/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/gige-network-setup/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/gige-network-setup/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/gige-network-setup/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/gige-network-setup/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/gige-network-setup/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/gige-network-setup/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/gige-network-setup/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/gige-network-setup/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/gige-network-setup/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/gige-network-setup/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/gige-network-setup/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/gige-network-setup/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/gige-network-setup/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/gige-network-setup/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/gige-network-setup/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/gige-network-setup/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/gige-network-setup/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/gige-network-setup/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/gige-network-setup/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/gige-network-setup/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/gige-network-setup/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/gige-network-setup/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/gige-network-setup/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/gige-network-setup/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/gige-network-setup/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/gige-network-setup/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/gige-network-setup/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/gige-network-setup/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/gige-network-setup/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/gige-network-setup/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/gige-network-setup/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763290 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763290 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763290 defer></script><script src=/sc-support/js/search.min.js?1771763290 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.lv.js?1771763290"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763290 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763290 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763290 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763290 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763290 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763290 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763290 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763290 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/gige-network-setup/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/lv/cameras-video/gige-network-setup/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><ul><li><a href=#šis-raksts-apskata-kā-iestatīt-gige-kameru-lietošanai-ar-swing-catalyst>Šis raksts apskata, kā iestatīt GigE kameru lietošanai ar Swing Catalyst.</a></li></ul></li><li><a href=#recommendations>Recommendations</a><ul><li><a href=#recommended-network-adapters>Recommended Network Adapters</a></li><li><a href=#poe-network-cards>PoE Network cards</a></li><li><a href=#non-supported-adapters>Non supported adapters</a></li><li><a href=#using-more-than-one-camera-per-network-adapter>Using more than one camera per network adapter</a></li></ul></li><li><a href=#network-adapter-configuration>Network adapter configuration</a><ul><li><a href=#ip-address-configuration>IP Address Configuration</a></li><li><a href=#optional>Optional</a></li><li><a href=#advanced-network-adapter-configuration>Advanced network adapter configuration</a></li></ul></li><li><a href=#troubleshooting>Troubleshooting</a><ul><li></li><li><a href=#link-speed-is-100-mbps>Link speed is 100 Mbps:</a></li><li><a href=#reducing-dropped-frames-additionally-by-using-region-of-interest-roi>Reducing dropped frames additionally by using Region Of Interest (ROI):</a></li><li><a href=#connectivity-problems-camera-disconnects>Connectivity problems (camera disconnects):</a></li><li><a href=#other-problems>Other problems:</a></li><li><a href=#jumbo-frame-compatibility>Jumbo Frame compatibility</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/lv/index.html><span itemprop=name>Swing Catalyst atbalsts</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/lv/cameras-video/index.html><span itemprop=name>Kameras un video</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/lv/cameras-video/flir-warranty-service/index.html title="FLIR kameras garantija un servisa informācija (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/lv/cameras-video/recommended-lighting/index.html title="Ieteiktais apgaismojums studijām un garāžas telpu uzstādīšanām (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/lv/tags/flir/index.html>Flir</a></li><li><a class=term-link href=/sc-support/lv/tags/gige-camera/index.html>Gige-Camera</a></li><li><a class=term-link href=/sc-support/lv/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/lv/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=gigabita-ethernet-un-gige-vision-kameru-tīkla-ieteikumi>Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi</h1><h1 id=kā-iestatīt-gige-kameras-ar-swing-catalyst>Kā iestatīt GigE kameras ar Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1><h3 id=šis-raksts-apskata-kā-iestatīt-gige-kameru-lietošanai-ar-swing-catalyst>Šis raksts apskata, kā iestatīt GigE kameru lietošanai ar Swing Catalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>GigE Vision ir interfeisa standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongli.</p><p>Swing Catalyst arī atbalsta vairākas gigabitu Ethernet kameras no dažādiem ražotājiem.</p><ul><li><p>Swing Catalyst mārka: Fox & Lynx.</p></li><li><p>FLIR (Spinnaker SDK).</p></li><li><p>AVT, IDS, Point Grey (mantojuma / vecās SDK integrācijas).</p></li><li><p>Citas GigE Vision kameras, izmantojot trešo pušu licencēšanu.</p></li></ul><p>For more information related to our supported cameras please see this article: <a href=/sc-support/lv/cameras-video/supported-cameras/index.html>supported-cameras.md</a></p><p>For the most accurate recommendations please refer to your camera manufacturer&rsquo;s setup articles.</p><p>This article is split into sections:</p><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#recommended-network-adapters>Network Adapters</a></p><ul><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#recommended-adapters>Recommended adapters</a></p></li><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#poe-adapters>PoE adapters</a></p></li><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#non-supported-adapters>Non supported adapters</a></p></li></ul><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#network-adapter-configuration>Network adapter configuration</a></p><ul><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#ip-address-configuration>IP Address Configuration</a></p></li><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#optional>Optional configuration</a></p></li><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#jumbo-frames-enable-jumbo-packet-jumbo-frames-and-make-sure-to-set-it-to-a-value-above-9000-bytes>Jumbo Frames</a></p></li><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#interrupt-moderation-set-to-high-or-extreme-if-available>Interrupt moderation</a></p></li><li><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#receive-buffers-set-receive-buffers-to-the-maximum-value>Receive buffers</a></p></li></ul><p><a href=/sc-support/lv/cameras-video/gige-network-setup/index.html#troubleshooting>Troubleshooting</a></p><h2 id=recommendations>Recommendations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=recommended-network-adapters>Recommended Network Adapters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>To setup and install GigE cameras you will require one or more free network ports in your computer, please make sure you have the correct type of PCIe slot available. Generally most dual port cards require 1 x4 PCIe slot.</p><p>We recommend using one of the following network cards since they have been tested and verified to work by the manufacturer:</p><ul><li><p>Intel Pro 1000 PT Dual Port (PCIe x4, 2 ports)</p></li><li><p>Intel Pro 1000 PT Quad Port Low Profile (PCIe x4, 4 ports)</p></li><li><p>Intel Pro 1000 PT (PCIe x1, 1 port)</p></li><li><p>Intel CT (PCIe x1, 1 port)</p></li></ul><p>The network cards sold by us through our webshop uses Intel and is verified for use with Machine Vision cameras: <a href=https://shop-world.swingcatalyst.com/products/poe-dual-network-card rel=external>https://shop-world.swingcatalyst.com/products/poe-dual-network-card</a></p><h3 id=poe-network-cards>PoE Network cards<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Recommended models:</p><ul><li><p><a href=https://shop-world.swingcatalyst.com/products/poe-dual-network-card rel=external>Swing Catalyst brand Dual port or Quad Port network cards (PCIe 2x or 4x)</a></p></li><li><p><a href="http://www.adlinktech.com/PD/web/PD_detail.php?mktg_source=&cKind=&pid=1665" rel=external>Adlink GIE72/74 Dual or Quad port Card</a></p></li><li><p><a href="http://www.adlinktech.com/PD/web/PD_detail.php?pid=1350%C2%A0" rel=external>Adlink GIE64 Quad Port Card(PCIx x4 4 ports)</a></p></li></ul><p>Please note PoE network cards require power from the computers power supply, a SATA to 4-pin Molex connector / adapter might be necessary.</p><p>It is also possible to use other Gigabit network cards, but it is important to note that the card must support Jumbo Frames / Jumbo Packets. Generally speaking we don&rsquo;t recommend using other chipsets than those by Intel for compatibility purposes.</p><h3 id=non-supported-adapters>Non supported adapters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>These are some network cards we&rsquo;ve run into trouble with and generally don&rsquo;t recommend to use:</p><ul><li><p>Qualcomm Killer / Etherkiller e2200 network card series.</p></li><li><p>Realtek network cards</p></li><li><p>StarTech network cards.</p></li></ul><p>Some Realtek network adapters don&rsquo;t have support for interrupt moderation control.</p><p>In some cases disabling interrupt moderation can help with dropped frames.</p><h3 id=using-more-than-one-camera-per-network-adapter>Using more than one camera per network adapter<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>We generally don&rsquo;t recommend this anymore as the cameras sold today have higher frame rates than before and use much more bandwidth.</p><p>It&rsquo;s best to have one <em>dedicated</em> network adapter for each camera.</p><h2 id=network-adapter-configuration>Network adapter configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To configure the network adapter(s) go to the Control Panel -> Network and Internet -> Network and Sharing Center and click &ldquo;Change Adapter Settings&rdquo; (on the left).</p><p><a href=#R-image-6de1680bcd24a78433bbb0335f456901 class=lightbox-link><img alt=explorer_9azqaIPFLV.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/explorer-9azqaipflv-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6de1680bcd24a78433bbb0335f456901><img alt=explorer_9azqaIPFLV.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/explorer-9azqaipflv-png.png></a></p><p><a href=#R-image-3643a41e9c9a0750cf279eb8ef2c5f6e class=lightbox-link><img alt=explorer_fZtM7nQP24.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/explorer-fztm7nqp24-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-3643a41e9c9a0750cf279eb8ef2c5f6e><img alt=explorer_fZtM7nQP24.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/explorer-fztm7nqp24-png.png></a></p><p><a href=#R-image-dbf816712f2877cd1385d153f026be5b class=lightbox-link><img alt=explorer_Pj7z6kHK0L.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/explorer-pj7z6khk0l-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-dbf816712f2877cd1385d153f026be5b><img alt=explorer_Pj7z6kHK0L.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/explorer-pj7z6khk0l-png.png></a></p><ul><li><p>Configure the network card to accept &ldquo;Jumbo Frames (9K)&rdquo;</p></li><li><p>Install the drivers and make sure to accept installation of the &ldquo;filter&rdquo; driver (note: the filter driver is different for each camera manufacturer, make sure you install and enable the one for the camera type you&rsquo;re using).</p></li><li><p>Enable Interrupt Moderation & set rate Extreme or High.</p></li><li><p>Disable all network modules on the network card except IPv4 & the filter driver.</p></li></ul><p>Example configuration:</p><p>We have deselected the unused / unnecessary items, this is not a strict requirement.</p><p><a href=#R-image-87f7b82c9bdb6f47474143eeaf658b74 class=lightbox-link><img alt=dllhost_WxISH9UBwG.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/dllhost-wxish9ubwg-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-87f7b82c9bdb6f47474143eeaf658b74><img alt=dllhost_WxISH9UBwG.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/dllhost-wxish9ubwg-png.png></a></p><h3 id=ip-address-configuration>IP Address Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>We recommend using a static IP setup on both the camera and network adapter to ensure optimal stability</p><p>Before changing the IP addresses on each network adapter, set the IP address on the camera first. For example for face on right, make sure the camera is set to use a static IP and set the IP to 10.0.1.10 (per the recommendation below). Make sure to save the changes to the camera, and then make the changes to the network adapter.</p><p>This is a generic article, please use our camera specific articles for camera IP setup specifics.</p><p>Example configuration for two GigE cameras connected to a dual port network card:</p><h4 id=network-adapter-1>Network adapter 1<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>-Connected to the face on right camera.</p><p>Adapter IP: 10.0.1.1
-Camera IP: 10.0.1.10
-Subnet mask: 255.255.255.0</p><p>Network adapter 2</p><p>-Connected to the down the line camera.</p><p>Adapter IP: 10.0.2.1
-Camera IP: 10.0.2.10
-Subnet mask: 255.255.255.0</p><h3 id=optional>Optional<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Uncheck unnecessary items:</p><p><a href=#R-image-85ff3701aaba35dbf22b685c2e3ad819 class=lightbox-link><img alt=dllhost_5htydM4paz.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/dllhost-5htydm4paz-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-85ff3701aaba35dbf22b685c2e3ad819><img alt=dllhost_5htydM4paz.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/dllhost-5htydm4paz-png.png></a><a href=#R-image-335bab6ac362ee2ac9dc5993bbf41e37 class=lightbox-link><img alt=dllhost_xFqWSG573S.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/dllhost-xfqwsg573s-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-335bab6ac362ee2ac9dc5993bbf41e37><img alt=dllhost_xFqWSG573S.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/dllhost-xfqwsg573s-png.png></a></p><p>If you uncheck items make sure you click &ldquo;OK&rdquo; and then go back to the network adapter properties.</p><h3 id=advanced-network-adapter-configuration>Advanced network adapter configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h4 id=jumbo-frames-enable-jumbo-packet--jumbo-frames-and-make-sure-to-set-it-to-a-value-above-9000-bytes>Jumbo Frames: Enable Jumbo Packet / Jumbo Frames and make sure to set it to a value above 9000 Bytes.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-436effb3b2c38f2fffb2acc57a8642b1 class=lightbox-link><img alt=rundll32_2017-10-30_15-12-25.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/rundll32-2017-10-30-15-12-25-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-436effb3b2c38f2fffb2acc57a8642b1><img alt=rundll32_2017-10-30_15-12-25.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/rundll32-2017-10-30-15-12-25-png.png></a></p><h4 id=interrupt-moderation-set-to-high-or-extreme-if-available>Interrupt Moderation: Set to High or Extreme if available.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-e4db220ef64923018d61323a45619623 class=lightbox-link><img alt=LMIIgnition_2017-10-30_13-52-45.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/lmiignition-2017-10-30-13-52-45-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-e4db220ef64923018d61323a45619623><img alt=LMIIgnition_2017-10-30_13-52-45.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/lmiignition-2017-10-30-13-52-45-png.png></a></p><h4 id=receive-buffers-set-receive-buffers-to-the-maximum-value>Receive Buffers: Set Receive Buffers to the maximum value.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-8ceaf1248baa3e785c519a94c9594a65 class=lightbox-link><img alt=rundll32_2017-10-30_15-33-17.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/rundll32-2017-10-30-15-33-17-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8ceaf1248baa3e785c519a94c9594a65><img alt=rundll32_2017-10-30_15-33-17.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/rundll32-2017-10-30-15-33-17-png.png></a></p><h2 id=troubleshooting>Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h4 id=dropped-frames>Dropped frames<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Reducing the frame rate on each camera may help avoid or reduce dropped frames.</p><p><a href=#R-image-6cea03b7636258e236d56595cdbde1d9 class=lightbox-link><img alt=MotionCatalyst_W1FKPdYpkX.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/motioncatalyst-w1fkpdypkx-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6cea03b7636258e236d56595cdbde1d9><img alt=MotionCatalyst_W1FKPdYpkX.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/motioncatalyst-w1fkpdypkx-png.png></a></p><p>Do you have one of the recommended network cards? If not it may be the network card itself that is causing problems. Please contact our sales team to ensure you have the proper network equipment.</p><ul><li><p>Improper network card configuration. Check that 9kB jumbo frames is enabled on each network adapter. <a href=/sc-support/lv/cameras-video/gige-network-setup/index.html>See our support article on recommended configuration</a></p></li><li><p>Set GEV SCPD to 150 if using more than 2 cameras (see the camera settings under the Device / Link section).</p></li><li><p>Confirm that the link speed is 1000 Mbps not 100 Mbps (see &ldquo;Device Link Speed&rdquo; under the Device / Link section in camera settings).</p></li></ul><h3 id=link-speed-is-100-mbps>Link speed is 100 Mbps:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>If the link speed is 100Mbps instead of 1000Mbps the cable you&rsquo;re using may be bad or damaged, or the network adapter might not support Gigabit speeds. Try replacing the cable.</p></li><li><p>Try to reset camera the camera settings to defaults, check link speed again under the &ldquo;Device/ Link&rdquo; section in camera settings.</p></li><li><p>Check the status of the network adapter from the Windows Control Panel</p></li></ul><p><a href=#R-image-88e15c5e2a63f9b8a7511bcf2af250ed class=lightbox-link><img alt=explorer_zOL1iapQMl.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/explorer-zol1iapqml-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-88e15c5e2a63f9b8a7511bcf2af250ed><img alt=explorer_zOL1iapQMl.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/explorer-zol1iapqml-png.png></a></p><p>Note: Speed should be 1.0 Gbps (1000Mbps), not 100Mbps.</p><h3 id=reducing-dropped-frames-additionally-by-using-region-of-interest-roi>Reducing dropped frames additionally by using Region Of Interest (ROI):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Using a region of interest (or area of interest) will reduce the overall image size and boost the FPS, but  also it can help lower the bandwidth usage which in turns could reduce dropped frames (see above on how to utilize ROI).</p><h3 id=connectivity-problems-camera-disconnects>Connectivity problems (camera disconnects):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Inspect network cabling.</p></li><li><p>If using external power supplies to cameras, check power supply connection.</p></li></ul><h3 id=other-problems>Other problems:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Depending on your hardware it might not be the best to have the sharpening and denoise filters on, turning these off will reduce some CPU & GPU usage. You can find the camera filters in the Advanced Camera Settings Filters tab. More info on filters here: <a href=/sc-support/lv/cameras-video/improving-image-quality/index.html>improving-image-quality.md</a></p><h3 id=jumbo-frame-compatibility>Jumbo Frame compatibility<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Not all network adapters support 9KB Jumbo Frames. It&rsquo;s best to use the highest jumbo frame KB size the network adapter supports, but generally it&rsquo;s best to use a network adapter that supports 9KB to improve performance.</p><h4 id=example>Example:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>-Multiple cameras connected through a switch to a NIC.</p><p>Not all network switches support 9KB jumbo frames, and if the NIC (network adapter) is set to use 9KB (or a higher packet size than what the switch can handle) it will result in packet loss. This results in dropped frames in Swing Catalyst.</p><p>Many switches support jumbo frames (as often noted in the specifications), but not all support 9KB jumbo frames, often you will find equipment supports up to 4KB.</p><p>For example if you were to connect a camera to a switch that only support 4KB jumbo frames and have your network adapter set to 9KB jumbo frames it will cause issues.</p><p>You can test the performance of the network adapter by using the command line utility, ping (as demonstrated in the screenshot):</p><p>Here we&rsquo;re pinging the network adapter with packet size of 9000 bytes (9KB). If the request times out it&rsquo;s likely it doesn&rsquo;t support 9KB jumbo frames.</p><p><a href=#R-image-17c011ea68e28263a9b20a1e634a2439 class=lightbox-link><img alt=cmd_2017-11-06_12-40-18.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/205460708/cmd-2017-11-06-12-40-18-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-17c011ea68e28263a9b20a1e634a2439><img alt=cmd_2017-11-06_12-40-18.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/205460708/cmd-2017-11-06-12-40-18-png.png></a></p><hr><p><em>Last updated: 2025-04-11</em> | <a href=/sc-support/lv/cameras-video/gige-network-setup/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/lv/index.html><span class="logo-title default-animation">Swing Catalyst Atbalsts</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/lv/getting-started/index.html><a class="padding default-animation" href=/sc-support/lv/getting-started/index.html>Sākuma Pamācība</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/lv/cameras-video/index.html><a class="padding default-animation" href=/sc-support/lv/cameras-video/index.html>Kameras un video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/lv/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/lv/cameras-video/supported-cameras/index.html>Atbalstītās kameras</a></li><li data-nav-id=/sc-support/lv/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/lv/cameras-video/pci-express-slots/index.html>Atšķirības starp PCI / PCI Express slotiem</a></li><li data-nav-id=/sc-support/lv/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/lv/cameras-video/lens-distortion-correction/index.html>Automātiskā objektīva distorsijas korekcija Swing Catalyst: Uzlabojot jūsu vizuālo pieredzi</a></li><li data-nav-id=/sc-support/lv/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/lv/cameras-video/advanced-camera-settings/index.html>Ceļvedis Advanced Camera Settings</a></li><li data-nav-id=/sc-support/lv/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/lv/cameras-video/halcon-bluescreen-fix/index.html>Dators Bluescreens savienojot Halcon USB licences dongli</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html>FLiR / Point Grey (Blackfly/Chameleon) kamera vairs nedarbojas pēc Swing Catalyst jauninājuma</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-spinnaker-cameras/index.html>FLIR Blackfly S (Spinnaker) kameru lietošana ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html>FLIR BlackFly S GigE iestatīšana Swing Catalyst programmā</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-firmware-upgrade/index.html>FLIR Blackfly S mikroprogrammatūras jauninājums</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-blackfly-usb-setup/index.html>FLIR BlackFly S USB konfigurēšana Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-warranty-service/index.html>FLIR kameras garantija un servisa informācija</a></li><li class=active data-nav-id=/sc-support/lv/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/gige-network-setup/index.html>Gigabita Ethernet un GigE Vision kameru tīkla ieteikumi</a></li><li data-nav-id=/sc-support/lv/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/lv/cameras-video/recommended-lighting/index.html>Ieteiktais apgaismojums studijām un garāžas telpu uzstādīšanām</a></li><li data-nav-id=/sc-support/lv/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/lv/cameras-video/recommended-usb3-components/index.html>Ieteiktie USB 3.0 komponenti</a></li><li data-nav-id=/sc-support/lv/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/lv/cameras-video/halcon-camera-standards/index.html>Kā atrast, kādus standartus atbalsta jūsu kameras lietošanai ar Halcon</a></li><li data-nav-id=/sc-support/lv/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/lv/cameras-video/ids-ueye-highspeed/index.html>Kā iestatīt iDS uEye USB ātrās kameras</a></li><li data-nav-id=/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html>Kā iestatīt statisko IP uz FLIR Blackfly GigE kamerām</a></li><li data-nav-id=/sc-support/lv/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/lv/cameras-video/lynx-static-ip/index.html>Kā iestatīt statisko IP uz Lynx GigE kamerām</a></li><li data-nav-id=/sc-support/lv/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/lv/cameras-video/avt-manta-install/index.html>Kā instalēt AVT Manta/Prosilica GigE kameras</a></li><li data-nav-id=/sc-support/lv/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/lv/cameras-video/dragon-usb2-camera/index.html>Kā izmantot Dragon (120 FPS) USB 2.0 kameru ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/lv/cameras-video/ids-ueye-usb/index.html>Kā izmantot IDS uEye USB kameras ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/lv/cameras-video/point-grey-flir-usb/index.html>Kā izmantot Point Grey / FLiR USB kameras ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/lv/cameras-video/hardware-encoding/index.html>Kā izmantot Swing Catalyst aparatūras kodēšanu</a></li><li data-nav-id=/sc-support/lv/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/lv/cameras-video/web-camera-directshow/index.html>Kā izmantot tīmekļa kameru (DirectShow integrācija) ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/lv/cameras-video/fox-lynx-firmware/index.html>Kā jaunināt vai pazemināt Fox / Lynx programmatūru</a></li><li data-nav-id=/sc-support/lv/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/lv/cameras-video/avt-manta-configure/index.html>Kā konfigurēt AVT Manta/Prosilica GigE augstā ātruma kameras</a></li><li data-nav-id=/sc-support/lv/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/basler-gige-setup/index.html>Kā konfigurēt Basler GigE kameras ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/halcon-setup/index.html>Kā konfigurēt Halcon Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/lv/cameras-video/ids-ueye-gige/index.html>Kā konfigurēt IDS uEye GigE kameru ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/lv/cameras-video/point-grey-flir-gige/index.html>Kā konfigurēt Point Grey / FLIR GigE (Blackfly) kameras ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/lv/cameras-video/led-light-flicker/index.html>Kā mazināt LED gaismas mirdzēšanu</a></li><li data-nav-id=/sc-support/lv/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/lv/cameras-video/fix-dropped-frames/index.html>Kā novērst 'pazudušos kadrus' ar USB 3.0 vai 2.0 kamerām.</a></li><li data-nav-id=/sc-support/lv/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/lv/cameras-video/cctv-cameras/index.html>Kā uzstādīt CCTV kameras</a></li><li data-nav-id=/sc-support/lv/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/lv/cameras-video/improving-image-quality/index.html>Kameras attēla kvalitātes uzlabošana</a></li><li data-nav-id=/sc-support/lv/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/lv/cameras-video/minimum-distances/index.html>Minimālie kameras attālumi</a></li><li data-nav-id=/sc-support/lv/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/fox-camera-setup/index.html>Swing Catalyst Fox USB 3.0 kameras(-u) iestatīšana</a></li><li data-nav-id=/sc-support/lv/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/lynx-camera-setup/index.html>Swing Catalyst Lynx GigE kameras(-u) konfigurēšana</a></li><li data-nav-id=/sc-support/lv/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/lv/cameras-video/usb3-troubleshooting/index.html>USB3 kameras problēmu novēršana</a></li><li data-nav-id=/sc-support/lv/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/lv/cameras-video/ximea-usb3-setup/index.html>Ximea USB3 Vision kameru uzstādīšana ar Swing Catalyst</a></li></ul></li><li data-nav-id=/sc-support/lv/hardware/index.html><a class="padding default-animation" href=/sc-support/lv/hardware/index.html>Aparatūra</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/lv/software-features/index.html><a class="padding default-animation" href=/sc-support/lv/software-features/index.html>Programmatūra un funkcijas</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/lv/account-setup/index.html><a class="padding default-animation" href=/sc-support/lv/account-setup/index.html>Konts un konfigurācija</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/lv/reference/index.html><a class="padding default-animation" href=/sc-support/lv/reference/index.html>Atsauce</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/gige-network-setup/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/gige-network-setup/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/gige-network-setup/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/gige-network-setup/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/gige-network-setup/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/gige-network-setup/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/gige-network-setup/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/gige-network-setup/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/gige-network-setup/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/gige-network-setup/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/gige-network-setup/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/gige-network-setup/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/gige-network-setup/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/gige-network-setup/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/gige-network-setup/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/gige-network-setup/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/gige-network-setup/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/gige-network-setup/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/gige-network-setup/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/gige-network-setup/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/gige-network-setup/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/gige-network-setup/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/gige-network-setup/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/gige-network-setup/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/gige-network-setup/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/gige-network-setup/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/gige-network-setup/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/gige-network-setup/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/gige-network-setup/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/gige-network-setup/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/gige-network-setup/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/gige-network-setup/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/gige-network-setup/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/gige-network-setup/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/gige-network-setup/index.html lang=lv selected data-selected>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/gige-network-setup/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763290 defer></script><script src=/sc-support/js/theme.min.js?1771763290 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="lv" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="GigE Vision ir interfeisa standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongle.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts">
+    <meta name="twitter:description" content="GigE Vision ir interfeisa standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongle.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/lv/cameras-video/gige-network-setup/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Atbalsts">
+    <meta property="og:title" content="Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts">
+    <meta property="og:description" content="GigE Vision ir interfeisa standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongle.">
+    <meta property="og:locale" content="lv">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Kameras & Video">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Gige-Camera">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Flir">
+    <meta itemprop="name" content="Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts">
+    <meta itemprop="description" content="GigE Vision ir interfeisa standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongle.">
+    <meta itemprop="wordCount" content="1134">
+    <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Flir">
+    <title>Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi :: Swing Catalyst Atbalsts</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/gige-network-setup/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520165" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520165" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.lv.js?1772520165";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520165" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520165" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520165" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520165" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520165" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520165" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/gige-network-setup\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/lv/cameras-video/gige-network-setup/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#šis-raksts-apraksta-kā-uzstādīt-gige-kameru-lietošanai-ar-swing-catalyst">Šis raksts apraksta, kā uzstādīt GigE kameru lietošanai ar Swing Catalyst.</a></li>
+      </ul>
+    </li>
+    <li><a href="#ieteikumi">Ieteikumi</a>
+      <ul>
+        <li><a href="#ieteicamie-tīkla-adapteri">Ieteicamie tīkla adapteri</a></li>
+        <li><a href="#poe-tīkla-kartes">PoE tīkla kartes</a></li>
+        <li><a href="#neatbalstītie-adapteri">Neatbalstītie adapteri</a></li>
+        <li><a href="#vairāk-nekā-vienas-kameras-izmantošana-uz-viena-tīkla-adaptera">Vairāk nekā vienas kameras izmantošana uz viena tīkla adaptera</a></li>
+      </ul>
+    </li>
+    <li><a href="#tīkla-adaptera-konfigurācija">Tīkla adaptera konfigurācija</a>
+      <ul>
+        <li><a href="#ip-adreses-konfigurācija">IP adreses konfigurācija</a></li>
+        <li><a href="#papildu-konfigurācija">Papildu konfigurācija</a></li>
+        <li><a href="#papildu-tīkla-adaptera-konfigurācija">Papildu tīkla adaptera konfigurācija</a></li>
+      </ul>
+    </li>
+    <li><a href="#problēmu-novēršana">Problēmu novēršana</a>
+      <ul>
+        <li></li>
+        <li><a href="#savienojuma-ātrums-ir-100-mbps">Savienojuma ātrums ir 100 Mbps:</a></li>
+        <li><a href="#zaudēto-kadru-samazināšana-izmantojot-region-of-interest-roi">Zaudēto kadru samazināšana, izmantojot Region of Interest (ROI):</a></li>
+        <li><a href="#savienojamības-problēmas-kameras-atvienošanās">Savienojamības problēmas (kameras atvienošanās):</a></li>
+        <li><a href="#citas-problēmas">Citas problēmas:</a></li>
+        <li><a href="#jumbo-frame-saderība">Jumbo Frame saderība</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lv/index.html"><span itemprop="name">Swing Catalyst Atbalsts</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lv/cameras-video/index.html"><span itemprop="name">Kameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/lv/cameras-video/flir-warranty-service/index.html" title="FLIR kameru garantija un apkopes informācija (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/lv/cameras-video/recommended-lighting/index.html" title="Ieteicamais apgaismojums studijām un garāžas boksiem (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/lv/tags/flir/index.html">Flir</a></li>
+    <li><a class="term-link" href="/sc-support/lv/tags/gige-camera/index.html">Gige-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/lv/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/lv/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="gigabit-ethernet-un-gige-vision-kameru-tīkla-ieteikumi">Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi</h1>
+
+<h1 id="kā-uzstādīt-gige-kameras-ar-swing-catalyst">Kā uzstādīt GigE kameras ar Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h3 id="šis-raksts-apraksta-kā-uzstādīt-gige-kameru-lietošanai-ar-swing-catalyst">Šis raksts apraksta, kā uzstādīt GigE kameru lietošanai ar Swing Catalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>GigE Vision ir interfeisa standarts mašīnredzes kamerām. Swing Catalyst atbalsta GigE Vision standartu, izmantojot licencētu USB dongle.</p>
+<p>Swing Catalyst arī atbalsta vairākas gigabitu Ethernet kameras no dažādiem ražotājiem.</p>
+<ul>
+<li>
+<p>Swing Catalyst zīmols: Fox &amp; Lynx.</p>
+</li>
+<li>
+<p>FLIR (Spinnaker SDK).</p>
+</li>
+<li>
+<p>AVT, IDS, Point Grey (mantotās / vecās SDK integrācijas).</p>
+</li>
+<li>
+<p>Citas GigE Vision kameras, izmantojot trešo pušu licencēšanu.</p>
+</li>
+</ul>
+<p>Lai iegūtu plašāku informāciju par atbalstītajām kamerām, lūdzu, skatiet šo rakstu: <a href="/sc-support/lv/cameras-video/supported-cameras/index.html">atbalstītās-kameras.md</a></p>
+<p>Precīzākajiem ieteikumiem lūdzu skatiet sava kameras ražotāja uzstādīšanas rakstus.</p>
+<p>Šis raksts ir sadalīts sadaļās:</p>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#recommended-network-adapters">Tīkla adapteri</a></p>
+<ul>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#recommended-adapters">Ieteicamie adapteri</a></p>
+</li>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#poe-adapters">PoE adapteri</a></p>
+</li>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#non-supported-adapters">Neatbalstītie adapteri</a></p>
+</li>
+</ul>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#network-adapter-configuration">Tīkla adaptera konfigurācija</a></p>
+<ul>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#ip-address-configuration">IP adreses konfigurācija</a></p>
+</li>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#optional">Papildu konfigurācija</a></p>
+</li>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#jumbo-frames-enable-jumbo-packet-jumbo-frames-and-make-sure-to-set-it-to-a-value-above-9000-bytes">Jumbo Frames</a></p>
+</li>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#interrupt-moderation-set-to-high-or-extreme-if-available">Pārtraukumu modulācija</a></p>
+</li>
+<li>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#receive-buffers-set-receive-buffers-to-the-maximum-value">Saņemšanas buferis</a></p>
+</li>
+</ul>
+<p><a href="/sc-support/lv/cameras-video/gige-network-setup/index.html#troubleshooting">Problēmu novēršana</a></p>
+<h2 id="ieteikumi">Ieteikumi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="ieteicamie-tīkla-adapteri">Ieteicamie tīkla adapteri<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Lai uzstādītu un instalētu GigE kameras, jūsu datorā būs nepieciešams viens vai vairāki brīvi tīkla porti. Lūdzu, pārliecinieties, ka jums ir pieejams pareizā veida PCIe slots. Parasti lielākajai daļai divportu karšu nepieciešams 1 x4 PCIe slots.</p>
+<p>Mēs iesakām izmantot vienu no šīm tīkla kartēm, jo tās ir pārbaudītas un apstiprinātas ražotāja darbībai:</p>
+<ul>
+<li>
+<p>Intel Pro 1000 PT Dual Port (PCIe x4, 2 porti)</p>
+</li>
+<li>
+<p>Intel Pro 1000 PT Quad Port Low Profile (PCIe x4, 4 porti)</p>
+</li>
+<li>
+<p>Intel Pro 1000 PT (PCIe x1, 1 ports)</p>
+</li>
+<li>
+<p>Intel CT (PCIe x1, 1 ports)</p>
+</li>
+</ul>
+<p>Tīkla kartes, ko mēs pārdodam caur savu veikalu, izmanto Intel un ir apstiprinātas lietošanai ar mašīnredzes kamerām: <a href="https://shop-world.swingcatalyst.com/products/poe-dual-network-card" rel="external">https://shop-world.swingcatalyst.com/products/poe-dual-network-card</a></p>
+<h3 id="poe-tīkla-kartes">PoE tīkla kartes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Ieteicamie modeļi:</p>
+<ul>
+<li>
+<p><a href="https://shop-world.swingcatalyst.com/products/poe-dual-network-card" rel="external">Swing Catalyst zīmola divportu vai četrportu tīkla kartes (PCIe 2x vai 4x)</a></p>
+</li>
+<li>
+<p><a href="http://www.adlinktech.com/PD/web/PD_detail.php?mktg_source=&cKind=&pid=1665" rel="external">Adlink GIE72/74 divportu vai četrportu karte</a></p>
+</li>
+<li>
+<p><a href="http://www.adlinktech.com/PD/web/PD_detail.php?pid=1350%C2%A0" rel="external">Adlink GIE64 četrportu karte (PCIe x4, 4 porti)</a></p>
+</li>
+</ul>
+<p>Lūdzu, ņemiet vērā, ka PoE tīkla kartēm nepieciešama barošana no datora barošanas bloka — var būt nepieciešams SATA uz 4-pin Molex savienotājs / adapteris.</p>
+<p>Ir iespējams izmantot arī citas gigabitu tīkla kartes, taču svarīgi ņemt vērā, ka kartei jāatbalsta Jumbo Frames / Jumbo Packets. Kopumā saderības nolūkos mēs neiesakām izmantot citus mikroshēmojumus kā Intel.</p>
+<h3 id="neatbalstītie-adapteri">Neatbalstītie adapteri<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Šīs ir dažas tīkla kartes, ar kurām esam saskārušies ar problēmām un parasti neiesakām tās izmantot:</p>
+<ul>
+<li>
+<p>Qualcomm Killer / Etherkiller e2200 tīkla karšu sērija.</p>
+</li>
+<li>
+<p>Realtek tīkla kartes</p>
+</li>
+<li>
+<p>StarTech tīkla kartes.</p>
+</li>
+</ul>
+<p>Dažiem Realtek tīkla adapteriem nav atbalsta pārtraukumu modulācijas vadībai.</p>
+<p>Dažos gadījumos pārtraukumu modulācijas atspējošana var palīdzēt ar zaudētajiem kadriem.</p>
+<h3 id="vairāk-nekā-vienas-kameras-izmantošana-uz-viena-tīkla-adaptera">Vairāk nekā vienas kameras izmantošana uz viena tīkla adaptera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Mēs kopumā to vairs neiesakām, jo mūsdienās pārdotajām kamerām ir augstāks kadru ātrums nekā iepriekš un tās izmanto daudz lielāku joslas platumu.</p>
+<p>Vislabāk katrai kamerai ir viens <em>dedikēts</em> tīkla adapteris.</p>
+<h2 id="tīkla-adaptera-konfigurācija">Tīkla adaptera konfigurācija<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Lai konfigurētu tīkla adapteri(-us), dodieties uz Vadības panelis -&gt; Tīkls un internets -&gt; Tīkla un koplietošanas centrs un noklikšķiniet uz &ldquo;Mainīt adaptera iestatījumus&rdquo; (kreisajā pusē).</p>
+<p><a href="#R-image-bdbc5b858b8cc581363f1421ca06f6e9" class="lightbox-link"><img alt="Pārlūka logs ar tīkla iestatījumiem" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-9azqaipflv-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bdbc5b858b8cc581363f1421ca06f6e9"><img alt="Pārlūka logs ar tīkla iestatījumiem" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-9azqaipflv-png.png"></a></p>
+<p><a href="#R-image-091fecbf82493e56981f62caeb266db9" class="lightbox-link"><img alt="Tīkla un koplietošanas centra logs" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-fztm7nqp24-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-091fecbf82493e56981f62caeb266db9"><img alt="Tīkla un koplietošanas centra logs" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-fztm7nqp24-png.png"></a></p>
+<p><a href="#R-image-56d6ac0ebe4949667d961898a2e3583d" class="lightbox-link"><img alt="Adaptera iestatījumu logs" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-pj7z6khk0l-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56d6ac0ebe4949667d961898a2e3583d"><img alt="Adaptera iestatījumu logs" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-pj7z6khk0l-png.png"></a></p>
+<ul>
+<li>
+<p>Konfigurējiet tīkla karti, lai tā pieņemtu &ldquo;Jumbo Frames (9K)&rdquo;</p>
+</li>
+<li>
+<p>Instalējiet vadītājus un pārliecinieties, ka pieņemat &ldquo;filter&rdquo; vadītāja instalāciju (piezīme: filter vadītājs ir atšķirīgs katram kameras ražotājam — pārliecinieties, ka instalējat un iespējojat to, kas atbilst jūsu izmantotajam kameras veidam).</p>
+</li>
+<li>
+<p>Iespējojiet pārtraukumu modulāciju un iestatiet ātrumu uz Extreme vai High.</p>
+</li>
+<li>
+<p>Atspējojiet visus tīkla moduļus uz tīkla kartes, izņemot IPv4 un filter vadītāju.</p>
+</li>
+</ul>
+<p>Konfigurācijas piemērs:</p>
+<p>Mēs esam noņēmuši atzīmes neizmantotajiem / nevajadzīgajiem elementiem — tas nav stingts prasījums.</p>
+<p><a href="#R-image-9ba305b534cb7e02f0c26545afcc0324" class="lightbox-link"><img alt="Tīkla kartes rekvizītu logs ar atzīmēm" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-wxish9ubwg-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ba305b534cb7e02f0c26545afcc0324"><img alt="Tīkla kartes rekvizītu logs ar atzīmēm" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-wxish9ubwg-png.png"></a></p>
+<h3 id="ip-adreses-konfigurācija">IP adreses konfigurācija<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Mēs iesakām izmantot statisku IP Uzstādīšana gan kamerai, gan tīkla adapterim, lai nodrošinātu optimālu stabilitāti.</p>
+<p>Pirms IP adrešu maiņas katram tīkla adapterim, vispirms iestatiet IP adresi kamerai. Piemēram, Sejas perspektīva labā kamerai — pārliecinieties, ka kamera ir iestatīta izmantot statisku IP, un iestatiet IP uz 10.0.1.10 (saskaņā ar zemāk sniegto ieteikumu). Pārliecinieties, ka saglabājat izmaiņas kamerā, un pēc tam veiciet izmaiņas tīkla adapterī.</p>
+<p>Šis ir vispārīgs raksts — lūdzu, izmantojiet mūsu kameras specifiskos rakstus detalizētai kameras IP Uzstādīšana informācijai.</p>
+<p>Konfigurācijas piemērs divām GigE kamerām, kas pievienotas divportu tīkla kartei:</p>
+<h4 id="tīkla-adapteris-1">Tīkla adapteris 1<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>Pievienots Sejas perspektīva labās puses kamerai.</li>
+</ul>
+<p>Adaptera IP: 10.0.1.1
+Kameras IP: 10.0.1.10
+Apakštīkla maska: 255.255.255.0</p>
+<p>Tīkla adapteris 2</p>
+<ul>
+<li>Pievienots Pa līniju kameras skatam.</li>
+</ul>
+<p>Adaptera IP: 10.0.2.1
+Kameras IP: 10.0.2.10
+Apakštīkla maska: 255.255.255.0</p>
+<h3 id="papildu-konfigurācija">Papildu konfigurācija<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Noņemiet atzīmes nevajadzīgajiem elementiem:</p>
+<p><a href="#R-image-92315b4256de383994d81ae97ad7a1e0" class="lightbox-link"><img alt="Tīkla adaptera rekvizītu logs — nevajadzīgās opcijas" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-5htydm4paz-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-92315b4256de383994d81ae97ad7a1e0"><img alt="Tīkla adaptera rekvizītu logs — nevajadzīgās opcijas" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-5htydm4paz-png.png"></a><a href="#R-image-436c9bb3a5fe23dc1af90714ae501cbd" class="lightbox-link"><img alt="Tīkla adaptera rekvizītu logs — filtru opcijas" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-xfqwsg573s-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-436c9bb3a5fe23dc1af90714ae501cbd"><img alt="Tīkla adaptera rekvizītu logs — filtru opcijas" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/dllhost-xfqwsg573s-png.png"></a></p>
+<p>Ja noņemat atzīmes elementiem, pārliecinieties, ka noklikšķināt uz &ldquo;OK&rdquo; un pēc tam atgriežaties tīkla adaptera rekvizītos.</p>
+<h3 id="papildu-tīkla-adaptera-konfigurācija">Papildu tīkla adaptera konfigurācija<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="jumbo-frames-iespējojiet-jumbo-packet--jumbo-frames-un-pārliecinieties-ka-iestatāt-vērtību-virs-9000-baiti">Jumbo Frames: Iespējojiet Jumbo Packet / Jumbo Frames un pārliecinieties, ka iestatāt vērtību virs 9000 baiti.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-f4ec8f872167626ce713dbf984d13d28" class="lightbox-link"><img alt="Jumbo Frames iestatījumu logs" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-12-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4ec8f872167626ce713dbf984d13d28"><img alt="Jumbo Frames iestatījumu logs" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-12-25-png.png"></a></p>
+<h4 id="pārtraukumu-modulācija-iestatiet-uz-high-vai-extreme-ja-pieejams">Pārtraukumu modulācija: Iestatiet uz High vai Extreme, ja pieejams.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-2f81fce186ea5982b87dc7a136e4e8df" class="lightbox-link"><img alt="Pārtraukumu modulācijas iestatījumu logs" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/lmiignition-2017-10-30-13-52-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f81fce186ea5982b87dc7a136e4e8df"><img alt="Pārtraukumu modulācijas iestatījumu logs" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/lmiignition-2017-10-30-13-52-45-png.png"></a></p>
+<h4 id="saņemšanas-buferis-iestatiet-saņemšanas-buferi-uz-maksimālo-vērtību">Saņemšanas buferis: Iestatiet saņemšanas buferi uz maksimālo vērtību.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-a84b273d36dd02610cb6454da9bca924" class="lightbox-link"><img alt="Saņemšanas bufera iestatījumu logs" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-33-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a84b273d36dd02610cb6454da9bca924"><img alt="Saņemšanas bufera iestatījumu logs" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/rundll32-2017-10-30-15-33-17-png.png"></a></p>
+<h2 id="problēmu-novēršana">Problēmu novēršana<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h4 id="zaudētie-kadri">Zaudētie kadri<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Kadru ātruma samazināšana katrai kamerai var palīdzēt izvairīties no zaudētajiem kadriem vai samazināt to skaitu.</p>
+<p><a href="#R-image-f5bc47b0f4ce788c0144a9eea5ec3b3e" class="lightbox-link"><img alt="MotionCatalyst kadru ātruma iestatījumu logs" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f5bc47b0f4ce788c0144a9eea5ec3b3e"><img alt="MotionCatalyst kadru ātruma iestatījumu logs" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/motioncatalyst-w1fkpdypkx-png.png"></a></p>
+<p>Vai jums ir viena no ieteicamajām tīkla kartēm? Ja nē, iespējams, pati tīkla karte rada problēmas. Lūdzu, sazinieties ar mūsu pārdošanas komandu, lai pārliecinātos, ka jums ir piemērots tīkla aprīkojums.</p>
+<ul>
+<li>
+<p>Nepareiza tīkla kartes konfigurācija. Pārbaudiet, vai 9kB jumbo frames ir iespējots katram tīkla adapterim. <a href="/sc-support/lv/cameras-video/gige-network-setup/index.html">Skatiet mūsu atbalsta rakstu par ieteicamo konfigurāciju</a></p>
+</li>
+<li>
+<p>Iestatiet GEV SCPD uz 150, ja izmantojat vairāk nekā 2 kameras (skatiet kameras iestatījumus sadaļā Device / Link).</p>
+</li>
+<li>
+<p>Pārliecinieties, ka savienojuma ātrums ir 1000 Mbps, nevis 100 Mbps (skatiet &ldquo;Device Link Speed&rdquo; sadaļā Device / Link kameras iestatījumos).</p>
+</li>
+</ul>
+<h3 id="savienojuma-ātrums-ir-100-mbps">Savienojuma ātrums ir 100 Mbps:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Ja savienojuma ātrums ir 100 Mbps, nevis 1000 Mbps, iespējams, izmantojamais kabelis ir bojāts vai tīkla adapteris neatbalsta Gigabit ātrumu. Mēģiniet nomainīt kabeli.</p>
+</li>
+<li>
+<p>Mēģiniet atiestatīt kameras iestatījumus uz noklusējuma vērtībām un vēlreiz pārbaudiet savienojuma ātrumu sadaļā &ldquo;Device / Link&rdquo; kameras iestatījumos.</p>
+</li>
+<li>
+<p>Pārbaudiet tīkla adaptera statusu Windows Vadības panelī.</p>
+</li>
+</ul>
+<p><a href="#R-image-00a8c82e6142710358f42b38dc9eb5c9" class="lightbox-link"><img alt="Tīkla adaptera statusa logs ar savienojuma informāciju" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00a8c82e6142710358f42b38dc9eb5c9"><img alt="Tīkla adaptera statusa logs ar savienojuma informāciju" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/explorer-zol1iapqml-png.png"></a></p>
+<p>Piezīme: ātrumam jābūt 1,0 Gbps (1000 Mbps), nevis 100 Mbps.</p>
+<h3 id="zaudēto-kadru-samazināšana-izmantojot-region-of-interest-roi">Zaudēto kadru samazināšana, izmantojot Region of Interest (ROI):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Izmantojot region of interest (vai interesējošo apgabalu), tiks samazināts kopējais attēla izmērs un palielināts FPS, kā arī tas var palīdzēt samazināt joslas platuma patēriņu, kas savukārt var mazināt zaudētos kadrus (skatiet augstāk, kā izmantot ROI).</p>
+<h3 id="savienojamības-problēmas-kameras-atvienošanās">Savienojamības problēmas (kameras atvienošanās):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Pārbaudiet tīkla kabeļus.</p>
+</li>
+<li>
+<p>Ja kamerām tiek izmantoti ārējie barošanas avoti, pārbaudiet barošanas avota savienojumu.</p>
+</li>
+</ul>
+<h3 id="citas-problēmas">Citas problēmas:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Atkarībā no jūsu aparatūras var nebūt optimāli iespējot asināšanas un trokšņu mazināšanas filtrus — to atspējošana samazinās CPU un GPU noslodzi. Kameras filtrus varat atrast Advanced Camera Settings cilnē Filters. Plašāka informācija par filtriem šeit: <a href="/sc-support/lv/cameras-video/improving-image-quality/index.html">attēla-kvalitātes-uzlabošana.md</a></p>
+<h3 id="jumbo-frame-saderība">Jumbo Frame saderība<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Ne visi tīkla adapteri atbalsta 9KB Jumbo Frames. Vislabāk izmantot lielāko jumbo frame KB izmēru, ko tīkla adapteris atbalsta, taču kopumā ieteicams izmantot tīkla adapteri, kas atbalsta 9KB, lai uzlabotu veiktspēju.</p>
+<h4 id="piemērs">Piemērs:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<ul>
+<li>Vairākas kameras pievienotas caur slēdzi tīkla adapterim.</li>
+</ul>
+<p>Ne visi tīkla slēdži atbalsta 9KB jumbo frames, un, ja tīkla adapteris ir iestatīts izmantot 9KB (vai lielāku pakešu izmēru, nekā slēdzis var apstrādāt), tas izraisīs pakešu zudumu. Tas izraisa zaudētos kadrus Swing Catalyst.</p>
+<p>Daudzi slēdži atbalsta jumbo frames (kā bieži norādīts specifikācijās), taču ne visi atbalsta 9KB jumbo frames — bieži vien aprīkojums atbalsta līdz 4KB.</p>
+<p>Piemēram, ja kamera tiktu pievienota slēdzim, kas atbalsta tikai 4KB jumbo frames, un jūsu tīkla adapteris ir iestatīts uz 9KB jumbo frames, tas radīs problēmas.</p>
+<p>Tīkla adaptera veiktspēju varat pārbaudīt, izmantojot komandrindas utilītu ping (kā parādīts ekrānuzņēmumā):</p>
+<p>Šeit mēs pingojam tīkla adapteri ar paketes izmēru 9000 baiti (9KB). Ja pieprasījums nobeiguma laiks beidzas, visticamāk tas neatbalsta 9KB jumbo frames.</p>
+<p><a href="#R-image-1cdd9a7b2ec76eebbccd0981b0ab163a" class="lightbox-link"><img alt="Komandrindiņas logs ar ping testu un 9000 baitu paketes izmēru" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/cmd-2017-11-06-12-40-18-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cdd9a7b2ec76eebbccd0981b0ab163a"><img alt="Komandrindiņas logs ar ping testu un 9000 baitu paketes izmēru" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/205460708/cmd-2017-11-06-12-40-18-png.png"></a></p>
+<hr>
+<p><em>Pēdējo reizi atjaunināts: 2025-04-11</em> | <a href="/sc-support/lv/cameras-video/gige-network-setup/index.html">Skatīt oficiālajā atbalsta vietnē</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/lv/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Atbalsts</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/lv/getting-started/index.html"><a class="padding default-animation" href="/sc-support/lv/getting-started/index.html">Darba sākšana</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/lv/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/lv/cameras-video/index.html">Kameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/lv/cameras-video/supported-cameras/index.html">Atbalstītās kameras</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/lv/cameras-video/pci-express-slots/index.html">Atšķirības starp PCI / PCI Express slotiem</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/lv/cameras-video/lens-distortion-correction/index.html">Automātiskā objektīva izkropļojumu korekcija SwingCatalyst: uzlabojiet savu vizuālo pieredzi</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/lv/cameras-video/halcon-bluescreen-fix/index.html">Dators sasalst ar zilo ekrānu, pievienojot Halcon USB licences dongli</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html">FLiR / Point Grey (Blackfly/Chameleon) kamera vairs nedarbojas pēc jaunināšanas</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-spinnaker-cameras/index.html">FLIR Blackfly S (Spinnaker) kameru izmantošana ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-blackfly-gige-setup/index.html">FLIR BlackFly S GigE uzstādīšana SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-firmware-upgrade/index.html">FLIR Blackfly S programmaparatūras jaunināšana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-blackfly-usb-setup/index.html">FLIR BlackFly S USB uzstādīšana SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-warranty-service/index.html">FLIR kameru garantija un apkopes informācija</a></li>
+            <li class="active " data-nav-id="/sc-support/lv/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/gige-network-setup/index.html">Gigabit Ethernet un GigE Vision kameru tīkla ieteikumi</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/lv/cameras-video/recommended-lighting/index.html">Ieteicamais apgaismojums studijām un garāžas boksiem</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/lv/cameras-video/recommended-usb3-components/index.html">Ieteicamie USB 3.0 komponenti</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html">Kā iestatīt statisku IP FLIR Blackfly GigE kamerām</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/lv/cameras-video/lynx-static-ip/index.html">Kā iestatīt statisku IP Lynx GigE kamerām</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/lv/cameras-video/avt-manta-install/index.html">Kā instalēt AVT Manta/Prosilica GigE kameras</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/lv/cameras-video/dragon-usb2-camera/index.html">Kā izmantot Dragon (120 FPS) USB 2.0 kameru ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/lv/cameras-video/ids-ueye-usb/index.html">Kā izmantot IDS uEye USB kameras ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/lv/cameras-video/hardware-encoding/index.html">Kā izmantot Swing Catalyst aparatūras kodēšanu</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/lv/cameras-video/fox-lynx-firmware/index.html">Kā jaunināt vai pazemināt Fox / Lynx programmaparatūru</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/lv/cameras-video/avt-manta-configure/index.html">Kā konfigurēt AVT Manta/Prosilica GigE augstā ātruma kameras</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/lv/cameras-video/ids-ueye-gige/index.html">Kā konfigurēt IDS uEye GigE kameru ar SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/lv/cameras-video/point-grey-flir-gige/index.html">Kā konfigurēt Point Grey / FLIR GigE (Blackfly) kameras ar SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/lv/cameras-video/point-grey-flir-usb/index.html">Kā lietot Point Grey / FLiR USB kameras ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/lv/cameras-video/web-camera-directshow/index.html">Kā lietot tīmekļa kameru (DirectShow integrācija) ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/lv/cameras-video/led-light-flicker/index.html">Kā mazināt LED gaismas mirgošanu</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/lv/cameras-video/halcon-camera-standards/index.html">Kā noskaidrot, kādus standartus atbalsta jūsu kameras lietošanai ar Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/lv/cameras-video/fix-dropped-frames/index.html">Kā novērst &#34;nomestos kadrus&#34; ar USB 3.0 vai 2.0 kamerām.</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/basler-gige-setup/index.html">Kā uzstādīt Basler GigE kameras ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/lv/cameras-video/cctv-cameras/index.html">Kā uzstādīt CCTV kameras</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/halcon-setup/index.html">Kā uzstādīt Halcon lietošanai ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/lv/cameras-video/ids-ueye-highspeed/index.html">Kā uzstādīt iDS uEye USB ātrdarbīgās kameras</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/lv/cameras-video/improving-image-quality/index.html">Kameras attēla kvalitātes uzlabošana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/lv/cameras-video/minimum-distances/index.html">Minimālais kameras attālums</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/lv/cameras-video/advanced-camera-settings/index.html">Pamācība par papildu kameras iestatījumiem</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/fox-camera-setup/index.html">Swing Catalyst Fox USB 3.0 kameras(-u) uzstādīšana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/lynx-camera-setup/index.html">Swing Catalyst Lynx GigE kameras(-u) uzstādīšana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/lv/cameras-video/usb3-troubleshooting/index.html">USB3 kameras problēmu novēršana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/lv/cameras-video/ximea-usb3-setup/index.html">Ximea USB3 Vision kameru uzstādīšana ar SwingCatalyst</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/hardware/index.html"><a class="padding default-animation" href="/sc-support/lv/hardware/index.html">Aparatūra</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/index.html"><a class="padding default-animation" href="/sc-support/lv/software-features/index.html">Programmatūra un funkcijas</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/account-setup/index.html"><a class="padding default-animation" href="/sc-support/lv/account-setup/index.html">Konts &amp; Uzstādīšana</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/reference/index.html"><a class="padding default-animation" href="/sc-support/lv/reference/index.html">Atsauce</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/gige-network-setup/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/gige-network-setup/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/gige-network-setup/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/gige-network-setup/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/gige-network-setup/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/gige-network-setup/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/gige-network-setup/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/gige-network-setup/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/gige-network-setup/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/gige-network-setup/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/gige-network-setup/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/gige-network-setup/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/gige-network-setup/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/gige-network-setup/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/gige-network-setup/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/gige-network-setup/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/gige-network-setup/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/gige-network-setup/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/gige-network-setup/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/gige-network-setup/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/gige-network-setup/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/gige-network-setup/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/gige-network-setup/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/gige-network-setup/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/gige-network-setup/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/gige-network-setup/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/gige-network-setup/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/gige-network-setup/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/gige-network-setup/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/gige-network-setup/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/gige-network-setup/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/gige-network-setup/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/gige-network-setup/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/gige-network-setup/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/gige-network-setup/index.html" lang="lv" selected data-selected>Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/gige-network-setup/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520165" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

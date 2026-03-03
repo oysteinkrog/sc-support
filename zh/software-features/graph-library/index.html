@@ -1,18 +1,472 @@
-<!doctype html><html id=R-html lang=zh dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="本文旨在演示 Swing Catalyst（9.7 版本及更新版本）中包含的新图形库的新功能"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="使用图形库 :: Swing Catalyst 支持"><meta name=twitter:description content="本文旨在演示 Swing Catalyst（9.7 版本及更新版本）中包含的新图形库的新功能"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh/software-features/graph-library/index.html"><meta property="og:site_name" content="Swing Catalyst 支持"><meta property="og:title" content="使用图形库 :: Swing Catalyst 支持"><meta property="og:description" content="本文旨在演示 Swing Catalyst（9.7 版本及更新版本）中包含的新图形库的新功能"><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="软件与功能"><meta property="article:tag" content="Motion-Plate"><meta property="article:tag" content="Force-Data"><meta itemprop=name content="使用图形库 :: Swing Catalyst 支持"><meta itemprop=description content="本文旨在演示 Swing Catalyst（9.7 版本及更新版本）中包含的新图形库的新功能"><meta itemprop=wordCount content="224"><meta itemprop=keywords content="Motion-Plate,Force-Data"><title>使用图形库 :: Swing Catalyst 支持</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/graph-library/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/graph-library/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/graph-library/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/graph-library/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/graph-library/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/graph-library/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/graph-library/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/graph-library/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/graph-library/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/graph-library/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/graph-library/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/graph-library/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/graph-library/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/graph-library/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/graph-library/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/graph-library/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/graph-library/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/graph-library/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/graph-library/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/graph-library/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/graph-library/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/graph-library/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/graph-library/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/graph-library/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/graph-library/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/graph-library/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/graph-library/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/graph-library/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/graph-library/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/graph-library/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/graph-library/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/graph-library/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/graph-library/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/graph-library/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763270 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763270 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763270 defer></script><script src=/sc-support/js/search.min.js?1771763270 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.zh.js?1771763270"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.zh.min.js?1771763270 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["zh"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763270 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763270 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763270 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763270 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763270 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/graph-library/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`复制文本到剪贴板`,window.T_Copied_to_clipboard=`文本已复制到剪贴板！`,window.T_Link_copied_to_clipboard=`链接已复制到剪贴板！`,window.T_Reset_view=`重置视图`,window.T_View_reset=`查看重置！`,window.T_No_results_found=`找不到"{0}"的结果`,window.T_N_results_found=`为"{0}"找到 {1} 个结果`,window.T_Browser_unsupported_feature=`此浏览器不支持此功能`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/zh/software-features/graph-library/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="导航 (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="目录 (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#介绍>介绍</a><ul><li><a href=#功能包括>功能包括：</a></li></ul></li><li><a href=#缩放功能>缩放功能</a><ul><li><a href=#点击并拖动>点击并拖动</a></li><li><a href=#ctrl-scroll-zoom>Ctrl Scroll zoom</a></li></ul></li><li><a href=#panning>Panning</a></li><li><a href=#viewing-individual-plate-data>Viewing individual plate data</a></li><li><a href=#graph-viewing-options>Graph viewing options</a></li><li><a href=#improved-performance>Improved performance</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh/index.html><span itemprop=name>Swing Catalyst 支持</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh/software-features/index.html><span itemprop=name>软件与功能</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>使用图形库</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh/software-features/markerless-motion-capture/index.html title="使用RTMPose和RTMDet增强高尔夫和棒球挥杆无标记动作捕捉：自上而下方法 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh/software-features/pressure-stance-settings/index.html title="使用新的压力和站姿设置 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=更多><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=标签 style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/zh/tags/force-data/index.html>Force-Data</a></li><li><a class=term-link href=/sc-support/zh/tags/motion-plate/index.html>Motion-Plate</a></li></ul></div></header><h1 id=使用图形库>使用图形库</h1><h2 id=介绍>介绍<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>本文旨在展示Swing Catalyst新图表库中包含的新功能（<em>版本9.7及更新版本</em>）</p><h3 id=功能包括>功能包括：<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>使用鼠标/键盘对图表进行缩放和平移。</p></li><li><p>支持在Dual Motion Plate / Dual Force Plate设置中显示每个压力板的单独数据。</p></li><li><p>大幅提升渲染性能。</p></li></ul><p>详细信息：</p><ul><li><p>CTRL + 鼠标滚轮将在鼠标指针所在的图表位置放大/缩小。</p></li><li><p>CTRL SHIFT + 鼠标滚轮进行平移。</p></li><li><p>双击重置缩放级别。</p></li><li><p>点击并拖动进行缩放。</p></li></ul><p>让我们来看看这些功能！</p><h2 id=缩放功能>缩放功能<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=点击并拖动>点击并拖动<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>点击并拖动选择要仔细查看的部分。</li></ul><p>提示：双击鼠标重置缩放级别。</p><p><a href=#R-image-4ffea3f7b713ee0b4e699d48c43bb6d5 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/12567046239132.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4ffea3f7b713ee0b4e699d48c43bb6d5><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/12567046239132.png></a></p><h3 id=ctrl-scroll-zoom>Ctrl Scroll zoom<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Hold CTRL while scrolling the mouse to zoom in / out on the data.</p></li><li><p>Hold Shift while scrolling the mouse to zoom about the X-axis.</p></li></ul><p>Tip: To reset, double click the mouse.</p><p><a href=#R-image-1d3dde265c528bdda2f569b009300cb3 class=lightbox-link><img alt=2021-11-16_16-28-14.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-28-14-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1d3dde265c528bdda2f569b009300cb3><img alt=2021-11-16_16-28-14.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-28-14-gif.png></a></p><p>Zooming about the X-axis (Ctrl Shift Scroll):</p><p><a href=#R-image-7d6b680a789254a491516fba0eef2153 class=lightbox-link><img alt=2021-11-16_16-32-53.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-32-53-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7d6b680a789254a491516fba0eef2153><img alt=2021-11-16_16-32-53.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-32-53-gif.png></a></p><h2 id=panning>Panning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>Ctrl Shift Scroll to pan</li></ul><p><a href=#R-image-65069b459bd29d8989b955185731c1f5 class=lightbox-link><img alt=2021-11-16_16-35-02.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-35-02-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-65069b459bd29d8989b955185731c1f5><img alt=2021-11-16_16-35-02.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-35-02-gif.png></a></p><h2 id=viewing-individual-plate-data>Viewing individual plate data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>Note: This is Dual Motion Plate / Dual Force plate specific functionality</li></ul><p>With dual force plates it&rsquo;s possible to view data from each plate individually by clicking the plate indicator button to the left of the gear icon. The highlighted plate indicates which plate is being displayed.</p><p>In this example we&rsquo;re viewing combined data (topmost graph), but also data from each plate individually (left & right foot):</p><p><a href=#R-image-c5bc184cca6393b23e2264909eff2c13 class=lightbox-link><img alt=MotionCatalyst_2021-11-16_16-10-15.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c5bc184cca6393b23e2264909eff2c13><img alt=MotionCatalyst_2021-11-16_16-10-15.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png></a></p><h2 id=graph-viewing-options>Graph viewing options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Clicking the gear icon gives you options on how to view the data. For example to show data in percentage or Newtons (or Pound foot: lbf⋅ft, if Imperial is selected in General Settings).</p><p><a href=#R-image-bac01c628ea79772b5ac658a48949c7b class=lightbox-link><img alt=MotionCatalyst_2021-11-16_16-16-56.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-bac01c628ea79772b5ac658a48949c7b><img alt=MotionCatalyst_2021-11-16_16-16-56.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png></a></p><h2 id=improved-performance>Improved performance<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>The new graph library can utilize graphics cards for hardware acceleration, this means a significantly more responsive user experience without any significant costs (in terms of CPU and memory usage).</p><p><a href=#R-image-d4d4a12c8c7fe80417d472222d8bf905 class=lightbox-link><img alt=2021-11-16_15-49-54.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-15-49-54-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d4d4a12c8c7fe80417d472222d8bf905><img alt=2021-11-16_15-49-54.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-15-49-54-gif.png></a></p><p><a href=#R-image-9c2dae705fde71ca10dc5e06fdbd73cf class=lightbox-link><img alt=2021-11-16_16-37-37.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-37-37-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9c2dae705fde71ca10dc5e06fdbd73cf><img alt=2021-11-16_16-37-37.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-37-37-gif.png></a></p><hr><p><em>Last updated: 2024-02-16</em> | <a href=/sc-support/zh/software-features/graph-library/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/zh/index.html><span class="logo-title default-animation">Swing Catalyst 支持</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="搜索 (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>搜索</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=搜索...>
-<button class=search-clear type=button data-search-clear title=清除搜索><i class="fas fa-fw fa-times" title=清除搜索></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/zh/getting-started/index.html><a class="padding default-animation" href=/sc-support/zh/getting-started/index.html>开始使用</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/cameras-video/index.html><a class="padding default-animation" href=/sc-support/zh/cameras-video/index.html>摄像机和视频</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/hardware/index.html><a class="padding default-animation" href=/sc-support/zh/hardware/index.html>硬件</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/zh/software-features/index.html><a class="padding default-animation" href=/sc-support/zh/software-features/index.html>软件与功能</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/zh/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/zh/software-features/motion-capture-faq/index.html>Swing Catalyst 动作捕捉常见问题</a></li><li data-nav-id=/sc-support/zh/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/zh/software-features/motion-capture-disclosures/index.html>Swing Catalyst 动作捕捉工具用户重要披露</a></li><li data-nav-id=/sc-support/zh/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/zh/software-features/motion-capture-settings/index.html>Swing Catalyst 动作捕捉设置</a></li><li data-nav-id=/sc-support/zh/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/zh/software-features/motion-capture-guide/index.html>Swing Catalyst 动作捕捉用户指南</a></li><li data-nav-id=/sc-support/zh/software-features/export-recordings/index.html><a class=padding href=/sc-support/zh/software-features/export-recordings/index.html>导出录制</a></li><li data-nav-id=/sc-support/zh/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/zh/software-features/multiple-forces-graph/index.html>多力图表</a></li><li data-nav-id=/sc-support/zh/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/zh/software-features/frontal-plane-torque/index.html>额状面扭矩分析 - 用户指南</a></li><li data-nav-id=/sc-support/zh/software-features/key-metrics/index.html><a class=padding href=/sc-support/zh/software-features/key-metrics/index.html>关键指标</a></li><li data-nav-id=/sc-support/zh/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/zh/software-features/keyboard-shortcuts/index.html>键盘快捷键和热键</a></li><li data-nav-id=/sc-support/zh/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/zh/software-features/force-graph-phases/index.html>力图表阶段</a></li><li data-nav-id=/sc-support/zh/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/zh/software-features/motion-capture-install/index.html>如何安装 Swing Catalyst 动作捕捉组件</a></li><li data-nav-id=/sc-support/zh/software-features/import-from-v1/index.html><a class=padding href=/sc-support/zh/software-features/import-from-v1/index.html>如何从V1导入视频</a></li><li data-nav-id=/sc-support/zh/software-features/export-contacts/index.html><a class=padding href=/sc-support/zh/software-features/export-contacts/index.html>如何导出学生联系信息</a></li><li data-nav-id=/sc-support/zh/software-features/export-raw-data/index.html><a class=padding href=/sc-support/zh/software-features/export-raw-data/index.html>如何导出原始数据</a></li><li data-nav-id=/sc-support/zh/software-features/change-recording-user/index.html><a class=padding href=/sc-support/zh/software-features/change-recording-user/index.html>如何更改现有录制的用户</a></li><li data-nav-id=/sc-support/zh/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/zh/software-features/record-a-lesson/index.html>如何录制课程</a></li><li data-nav-id=/sc-support/zh/software-features/feedback-screen/index.html><a class=padding href=/sc-support/zh/software-features/feedback-screen/index.html>如何设置反馈屏幕</a></li><li data-nav-id=/sc-support/zh/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/zh/software-features/swing-catalyst-online/index.html>如何使用 Swing Catalyst Online</a></li><li data-nav-id=/sc-support/zh/software-features/multiple-displays/index.html><a class=padding href=/sc-support/zh/software-features/multiple-displays/index.html>如何使用 Swing Catalyst 设置多个显示器</a></li><li data-nav-id=/sc-support/zh/software-features/force-vectors/index.html><a class=padding href=/sc-support/zh/software-features/force-vectors/index.html>如何使用力矢量</a></li><li data-nav-id=/sc-support/zh/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/zh/software-features/microphone-trigger/index.html>如何使用麦克风作为捕捉触发器</a></li><li data-nav-id=/sc-support/zh/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/zh/software-features/pressure-distribution-overlay/index.html>如何使用压力分布叠加功能</a></li><li data-nav-id=/sc-support/zh/software-features/remote-support/index.html><a class=padding href=/sc-support/zh/software-features/remote-support/index.html>如何使用远程支持</a></li><li data-nav-id=/sc-support/zh/software-features/explorer/index.html><a class=padding href=/sc-support/zh/software-features/explorer/index.html>如何使用资源管理器</a></li><li data-nav-id=/sc-support/zh/software-features/email-sharing/index.html><a class=padding href=/sc-support/zh/software-features/email-sharing/index.html>如何在Swing Catalyst中设置电子邮件分享</a></li><li data-nav-id=/sc-support/zh/software-features/bookmarks/index.html><a class=padding href=/sc-support/zh/software-features/bookmarks/index.html>什么是书签？</a></li><li data-nav-id=/sc-support/zh/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/zh/software-features/markerless-motion-capture/index.html>使用RTMPose和RTMDet增强高尔夫和棒球挥杆无标记动作捕捉：自上而下方法</a></li><li class=active data-nav-id=/sc-support/zh/software-features/graph-library/index.html><a class=padding href=/sc-support/zh/software-features/graph-library/index.html>使用图形库</a></li><li data-nav-id=/sc-support/zh/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/zh/software-features/pressure-stance-settings/index.html>使用新的压力和站姿设置</a></li><li data-nav-id=/sc-support/zh/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/zh/software-features/ios-app-sharing/index.html>通过 Swing Catalyst iOS 应用分享录制的视频</a></li><li data-nav-id=/sc-support/zh/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/zh/software-features/body-weight-measurement/index.html>新的体重测量功能</a></li><li data-nav-id=/sc-support/zh/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/zh/software-features/raw-data-export-guide/index.html>原始数据导出中包含的内容</a></li></ul></li><li data-nav-id=/sc-support/zh/account-setup/index.html><a class="padding default-animation" href=/sc-support/zh/account-setup/index.html>账户与设置</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/reference/index.html><a class="padding default-animation" href=/sc-support/zh/reference/index.html>参考资料</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>语言</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/graph-library/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/graph-library/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/graph-library/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/graph-library/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/graph-library/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/graph-library/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/graph-library/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/graph-library/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/graph-library/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/graph-library/index.html lang=zh selected data-selected>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/graph-library/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/graph-library/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/graph-library/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/graph-library/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/graph-library/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/graph-library/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/graph-library/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/graph-library/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/graph-library/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/graph-library/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/graph-library/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/graph-library/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/graph-library/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/graph-library/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/graph-library/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/graph-library/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/graph-library/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/graph-library/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/graph-library/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/graph-library/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/graph-library/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/graph-library/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/graph-library/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/graph-library/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/graph-library/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/graph-library/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>主题</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763270 defer></script><script src=/sc-support/js/theme.min.js?1771763270 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="zh" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="本文旨在介绍 Swing Catalyst（9.7 及更新版本）中新图表库所包含的新功能">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="使用图表库 :: Swing Catalyst 支持">
+    <meta name="twitter:description" content="本文旨在介绍 Swing Catalyst（9.7 及更新版本）中新图表库所包含的新功能">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh/software-features/graph-library/index.html">
+    <meta property="og:site_name" content="Swing Catalyst 支持">
+    <meta property="og:title" content="使用图表库 :: Swing Catalyst 支持">
+    <meta property="og:description" content="本文旨在介绍 Swing Catalyst（9.7 及更新版本）中新图表库所包含的新功能">
+    <meta property="og:locale" content="zh">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="软件与功能">
+    <meta property="article:tag" content="Motion-Plate">
+    <meta property="article:tag" content="Force-Data">
+    <meta itemprop="name" content="使用图表库 :: Swing Catalyst 支持">
+    <meta itemprop="description" content="本文旨在介绍 Swing Catalyst（9.7 及更新版本）中新图表库所包含的新功能">
+    <meta itemprop="wordCount" content="72">
+    <meta itemprop="keywords" content="Motion-Plate,Force-Data">
+    <title>使用图表库 :: Swing Catalyst 支持</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/graph-library/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/graph-library/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/graph-library/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/graph-library/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/graph-library/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/graph-library/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/graph-library/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/graph-library/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/graph-library/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/graph-library/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/graph-library/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/graph-library/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/graph-library/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/graph-library/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/graph-library/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/graph-library/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/graph-library/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/graph-library/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/graph-library/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/graph-library/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/graph-library/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/graph-library/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/graph-library/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/graph-library/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/graph-library/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/graph-library/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/graph-library/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/graph-library/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/graph-library/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/graph-library/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/graph-library/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/graph-library/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/graph-library/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/graph-library/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520116" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520116" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772520116";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772520116" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['zh'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520116" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520116" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520116" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520116" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520116" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/graph-library\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `复制文本到剪贴板`;
+      window.T_Copied_to_clipboard = `文本已复制到剪贴板！`;
+      window.T_Link_copied_to_clipboard = `链接已复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+      window.T_Browser_unsupported_feature = `此浏览器不支持此功能`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/zh/software-features/graph-library/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#简介">简介</a>
+      <ul>
+        <li><a href="#功能包括">功能包括：</a></li>
+      </ul>
+    </li>
+    <li><a href="#缩放功能">缩放功能</a>
+      <ul>
+        <li><a href="#单击并拖动">单击并拖动</a></li>
+        <li><a href="#ctrl-滚轮缩放">Ctrl 滚轮缩放</a></li>
+      </ul>
+    </li>
+    <li><a href="#平移">平移</a></li>
+    <li><a href="#查看各力板数据">查看各力板数据</a></li>
+    <li><a href="#图表查看选项">图表查看选项</a></li>
+    <li><a href="#表现提升">表现提升</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/index.html"><span itemprop="name">Swing Catalyst 支持</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/software-features/index.html"><span itemprop="name">软件与功能</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">使用图表库</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh/software-features/ios-app-sharing/index.html" title="使用 Swing Catalyst iOS 应用分享录制的视频 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh/software-features/pressure-stance-settings/index.html" title="使用新的 Pressure 和站姿设置 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/zh/tags/force-data/index.html">Force-Data</a></li>
+    <li><a class="term-link" href="/sc-support/zh/tags/motion-plate/index.html">Motion-Plate</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="使用图表库">使用图表库</h1>
+
+<h2 id="简介">简介<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>本文旨在介绍 Swing Catalyst（<em>9.7 及更新版本</em>）中新图表库所包含的新功能</p>
+<h3 id="功能包括">功能包括：<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>使用鼠标/键盘对图表进行缩放和平移。</p>
+</li>
+<li>
+<p>支持在 Dual Motion Plate / 双力板设置中按各力板单独显示数据。</p>
+</li>
+<li>
+<p>大幅提升渲染表现。</p>
+</li>
+</ul>
+<p>详细说明：</p>
+<ul>
+<li>
+<p>CTRL + 鼠标滚轮可在鼠标指针所在位置放大/缩小图表。</p>
+</li>
+<li>
+<p>CTRL SHIFT + 鼠标滚轮进行平移。</p>
+</li>
+<li>
+<p>双击可重置缩放级别。</p>
+</li>
+<li>
+<p>单击并拖动可进行缩放。</p>
+</li>
+</ul>
+<p>下面来看看各项功能！</p>
+<h2 id="缩放功能">缩放功能<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="单击并拖动">单击并拖动<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>单击并拖动以选择您希望仔细查看的区域。</li>
+</ul>
+<p>tip: 双击鼠标可重置缩放级别。</p>
+<p><a href="#R-image-092fb9c3b2107adf139823b065c4be66" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-092fb9c3b2107adf139823b065c4be66"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png"></a></p>
+<h3 id="ctrl-滚轮缩放">Ctrl 滚轮缩放<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>按住 CTRL 并滚动鼠标可放大/缩小数据。</p>
+</li>
+<li>
+<p>按住 Shift 并滚动鼠标可沿 X轴 进行缩放。</p>
+</li>
+</ul>
+<p>tip: 如需重置，请双击鼠标。</p>
+<p><a href="#R-image-7badfde4b16396e8fb028a968a1ccf2c" class="lightbox-link"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7badfde4b16396e8fb028a968a1ccf2c"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png"></a></p>
+<p>沿 X轴 缩放（Ctrl Shift 滚轮）：</p>
+<p><a href="#R-image-3320ad3a88fe1dc22408d3a21c91be2c" class="lightbox-link"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3320ad3a88fe1dc22408d3a21c91be2c"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png"></a></p>
+<h2 id="平移">平移<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>Ctrl Shift 滚轮进行平移</li>
+</ul>
+<p><a href="#R-image-ad46fb71cb2afc8e3471f1e5cd69d999" class="lightbox-link"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ad46fb71cb2afc8e3471f1e5cd69d999"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png"></a></p>
+<h2 id="查看各力板数据">查看各力板数据<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>note: 此功能专属于 Dual Motion Plate / 双力板</li>
+</ul>
+<p>使用双力板时，可通过单击齿轮图标左侧的力板指示按钮，分别查看每块力板的数据。高亮显示的力板表示当前正在显示的力板数据。</p>
+<p>在此示例中，我们正在查看合并数据（最上方的图表），以及每块力板的单独数据（左足部和右足部）：</p>
+<p><a href="#R-image-565f4fdea2cf086c026b3a102c7eee24" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-565f4fdea2cf086c026b3a102c7eee24"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png"></a></p>
+<h2 id="图表查看选项">图表查看选项<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>单击齿轮图标可获取数据显示方式的相关选项。例如，可选择以百分比或 Newton 为单位显示数据（如果在通用设置中选择了英制单位，则可选择磅力英尺：lbf⋅ft）。</p>
+<p><a href="#R-image-fc471041d2d540a0020cf2dafd425101" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fc471041d2d540a0020cf2dafd425101"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png"></a></p>
+<h2 id="表现提升">表现提升<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>新图表库可利用显卡进行硬件加速，这意味着在不显著增加 CPU 和内存占用的前提下，用户体验的响应速度将得到大幅提升。</p>
+<p><a href="#R-image-efa3d964ad445f5835b27e91822b1194" class="lightbox-link"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-efa3d964ad445f5835b27e91822b1194"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png"></a></p>
+<p><a href="#R-image-484b8824f725c7852ddd505f3a351585" class="lightbox-link"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-484b8824f725c7852ddd505f3a351585"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png"></a></p>
+<hr>
+<p><em>最后更新：2024-02-16</em> | <a href="/sc-support/zh/software-features/graph-library/index.html">在官方支持网站上查看</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/zh/index.html">
+          <span class="logo-title default-animation">Swing Catalyst 支持</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="搜索 (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-fw fa-times" title="清除搜索"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/zh/getting-started/index.html"><a class="padding default-animation" href="/sc-support/zh/getting-started/index.html">入门指南</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/zh/cameras-video/index.html">摄像头与视频</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/hardware/index.html"><a class="padding default-animation" href="/sc-support/zh/hardware/index.html">硬件</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/zh/software-features/index.html"><a class="padding default-animation" href="/sc-support/zh/software-features/index.html">软件与功能</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/zh/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/zh/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/zh/software-features/motion-capture-settings/index.html">Swing Catalyst 动作捕捉设置</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/zh/software-features/motion-capture-guide/index.html">Swing Catalyst 动作捕捉用户指南</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/zh/software-features/motion-capture-disclosures/index.html">SwingCatalyst 动作捕捉工具用户重要披露声明</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/zh/software-features/export-recordings/index.html">导出录制</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/zh/software-features/multiple-forces-graph/index.html">多力图表</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/zh/software-features/frontal-plane-torque/index.html">额状面扭矩分析 - 用户指南</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/zh/software-features/key-metrics/index.html">关键指标</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/zh/software-features/keyboard-shortcuts/index.html">键盘快捷键与热键</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/zh/software-features/force-graph-phases/index.html">力图表阶段</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/zh/software-features/body-weight-measurement/index.html">全新体重测量功能</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/zh/software-features/motion-capture-install/index.html">如何安装 Swing Catalyst 动作捕捉组件</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/zh/software-features/import-from-v1/index.html">如何从 V1 导入视频</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/zh/software-features/export-contacts/index.html">如何导出学生联系信息</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/zh/software-features/export-raw-data/index.html">如何导出原始数据</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/zh/software-features/change-recording-user/index.html">如何更改现有录制的用户</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/zh/software-features/record-a-lesson/index.html">如何录制课程</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/zh/software-features/feedback-screen/index.html">如何设置反馈屏幕</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/zh/software-features/swing-catalyst-online/index.html">如何使用 Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/zh/software-features/force-vectors/index.html">如何使用力矢量</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/zh/software-features/microphone-trigger/index.html">如何使用麦克风作为捕捉触发器</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/zh/software-features/pressure-distribution-overlay/index.html">如何使用压力分布叠加显示功能</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/remote-support/index.html"><a class="padding" href="/sc-support/zh/software-features/remote-support/index.html">如何使用远程支持</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/explorer/index.html"><a class="padding" href="/sc-support/zh/software-features/explorer/index.html">如何使用资源管理器</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/zh/software-features/multiple-displays/index.html">如何在 Swing Catalyst 中设置多显示器</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/zh/software-features/email-sharing/index.html">如何在 Swing Catalyst 中设置邮件分享</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/zh/software-features/bookmarks/index.html">什么是书签？</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/zh/software-features/markerless-motion-capture/index.html">使用 RTMPose 和 RTMDet 增强高尔夫和棒球挥杆无标记动作捕捉：自上而下方法</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/zh/software-features/ios-app-sharing/index.html">使用 Swing Catalyst iOS 应用分享录制的视频</a></li>
+            <li class="active " data-nav-id="/sc-support/zh/software-features/graph-library/index.html"><a class="padding" href="/sc-support/zh/software-features/graph-library/index.html">使用图表库</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/zh/software-features/pressure-stance-settings/index.html">使用新的 Pressure 和站姿设置</a></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/zh/software-features/raw-data-export-guide/index.html">原始数据导出包含哪些内容</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/account-setup/index.html"><a class="padding default-animation" href="/sc-support/zh/account-setup/index.html">账户与准备姿势</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/reference/index.html"><a class="padding default-animation" href="/sc-support/zh/reference/index.html">参考</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">语言</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/graph-library/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/graph-library/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/graph-library/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/graph-library/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/graph-library/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/graph-library/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/graph-library/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/graph-library/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/graph-library/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/graph-library/index.html" lang="zh" selected data-selected>简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/graph-library/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/graph-library/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/graph-library/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/graph-library/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/graph-library/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/graph-library/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/graph-library/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/graph-library/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/graph-library/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/graph-library/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/graph-library/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/graph-library/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/graph-library/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/graph-library/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/graph-library/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/graph-library/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/graph-library/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/graph-library/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/graph-library/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/graph-library/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/graph-library/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/graph-library/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/graph-library/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/graph-library/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/graph-library/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/graph-library/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">主题</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520116" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

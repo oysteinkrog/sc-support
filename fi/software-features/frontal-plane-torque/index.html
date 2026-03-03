@@ -1,60 +1,713 @@
-<!doctype html><html id=R-html lang=fi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Frontaalitason vääntömomentti (FPT) mittaa rotaatiovoimaa, jonka kehosi tuottaa frontaalitason akselin ympärillä golfswingin aikana. Voit ajatella sitä seuraavaksi..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Frontaalitason vääntömomentin analyysi - Käyttöopas :: Swing Catalyst Tuki"><meta name=twitter:description content="Frontaalitason vääntömomentti (FPT) mittaa rotaatiovoimaa, jonka kehosi tuottaa frontaalitason akselin ympärillä golfswingin aikana. Voit ajatella sitä seuraavaksi..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html"><meta property="og:site_name" content="Swing Catalyst Tuki"><meta property="og:title" content="Frontaalitason vääntömomentin analyysi - Käyttöopas :: Swing Catalyst Tuki"><meta property="og:description" content="Frontaalitason vääntömomentti (FPT) mittaa rotaatiovoimaa, jonka kehosi tuottaa frontaalitason akselin ympärillä golfswingin aikana. Voit ajatella sitä seuraavaksi..."><meta property="og:locale" content="fi"><meta property="og:type" content="article"><meta property="article:section" content="Ohjelmisto ja ominaisuudet"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Pressure-Data"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="Frontaalitason vääntömomentin analyysi - Käyttöopas :: Swing Catalyst Tuki"><meta itemprop=description content="Frontaalitason vääntömomentti (FPT) mittaa rotaatiovoimaa, jonka kehosi tuottaa frontaalitason akselin ympärillä golfswingin aikana. Voit ajatella sitä seuraavaksi..."><meta itemprop=wordCount content="850"><meta itemprop=keywords content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture"><title>Frontaalitason vääntömomentin analyysi - Käyttöopas :: Swing Catalyst Tuki</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763282 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763282 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763282 defer></script><script src=/sc-support/js/search.min.js?1771763282 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.fi.js?1771763282"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763282 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763282 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763282 defer></script><script src=/sc-support/js/lunr/lunr.fi.min.js?1771763282 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["fi"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763282 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763282 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763282 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763282 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763282 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/frontal-plane-torque/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Kopioi teksti leikepöydälle`,window.T_Copied_to_clipboard=`Teksti kopioitu leikepöydälle!`,window.T_Link_copied_to_clipboard=`Linkki kopioitu leikepöydälle!`,window.T_Reset_view=`Palauta näkymä`,window.T_View_reset=`Näkymä nollattu!`,window.T_No_results_found=`Ei tuloksia haulle "{0}"`,window.T_N_results_found=`{1} tulosta löytyi haulle "{0}"`,window.T_Browser_unsupported_feature=`Tämä selain ei tue tätä ominaisuutta`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/fi/software-features/frontal-plane-torque/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Valikko (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Sisältö (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#johdanto>Johdanto</a><ul><li><a href=#mikä-on-frontal-plane-torque>Mikä on Frontal Plane Torque?</a></li><li><a href=#ominaisuuden-komponentit>Ominaisuuden komponentit</a></li><li><a href=#miksi-tämä-on-tärkeää>Miksi tämä on tärkeää?</a></li><li><a href=#edellytykset>Edellytykset</a></li></ul></li><li><a href=#aloittaminen>Aloittaminen</a><ul><li><a href=#fpt-databoxin-lisääminen-asetteluusi>FPT DataBoxin lisääminen asetteluusi</a></li><li><a href=#3d-visualisoinnin-ottaminen-käyttöön>3D-visualisoinnin ottaminen käyttöön</a></li><li><a href=#vaadittava-data>Vaadittava data</a></li></ul></li><li><a href=#näytön-ymmärtäminen>Näytön ymmärtäminen</a><ul><li><a href=#kaavio>Kaavio</a></li><li><a href=#keskeiset-mittarit>Keskeiset mittarit</a></li><li><a href=#vaiheen-korostus>Vaiheen korostus</a></li></ul></li><li><a href=#3d-visualisointi>3D-visualisointi</a><ul><li><a href=#momenttivarren-visualisointi>Momenttivarren visualisointi</a></li><li><a href=#voimavektorin-hajoittaminen>Voimavektorin hajoittaminen</a></li><li><a href=#3d-visualisointiasetukset>3D-visualisointiasetukset</a></li></ul></li><li><a href=#konfigurointiasetukset-kaavio>Konfigurointiasetukset (kaavio)</a></li><li><a href=#vianmääritys>Vianmääritys</a><ul><li><a href=#henkilöä-ei-ole-lautalla--viesti>&ldquo;Henkilöä ei ole lautalla&rdquo; -viesti</a></li><li><a href=#tyhjä-tai-puuttuva-kaaviotietojen>Tyhjä tai puuttuva kaaviotietojen</a></li><li><a href=#aika-metriikka-ei-näy>Aika-metriikka ei näy</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/fi/index.html><span itemprop=name>Swing Catalyst -tuki</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/fi/software-features/index.html><span itemprop=name>Ohjelmisto ja ominaisuudet</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Frontaalitason vääntömomentin analyysi - Käyttöopas</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/fi/software-features/index.html title="Ohjelmisto ja ominaisuudet (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/fi/software-features/markerless-motion-capture/index.html title="Golfin ja pesäpallon heilautuksen markkeriton liikkeenjäljitys RTMPose- ja RTMDet-ratkaisuilla: Ylhäältä alas -menetelmä (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Lisää><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tunnisteet style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/fi/tags/force-data/index.html>Force-Data</a></li><li><a class=term-link href=/sc-support/fi/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/fi/tags/pressure-data/index.html>Pressure-Data</a></li><li><a class=term-link href=/sc-support/fi/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=frontaalitason-vääntömomentin-analyysi---käyttöopas>Frontaalitason vääntömomentin analyysi - Käyttöopas</h1><h2 id=johdanto>Johdanto<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=mikä-on-frontal-plane-torque>Mikä on Frontal Plane Torque?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frontal Plane Torque (FPT) mittaa kehosi tuottamaa pyörivää voimaa frontalitason akselin ympärillä golflyönnin aikana. Ajattele sitä mittaukseksi siitä, kuinka tehokkaasti käytät maareaktiovoimia pyörivän voiman luomiseen.</p><p>Kun heilautat golfmailaa, jalkasi työntävät maata vasten, ja maa työntää takaisin. Tämä vuorovaikutus kehosi massan keskipisteen ja jalkapohjissa olevien voimien välillä luo vääntömomentin - pyörivän voiman, joka auttaa heilahduksesi voimaa.</p><h3 id=ominaisuuden-komponentit>Ominaisuuden komponentit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>FPT-ominaisuus sisältää kaksi pääkomponenttia:</p><p><strong>FPT-kaavio (DataBox)</strong> - Aikasarjakaavio, joka näyttää vääntömomenttiarvot koko heilahduksesi ajan avainmittareiden kanssa</p><p><strong>3D-visualisointi</strong> - Reaaliaikainen momenttivarsi ja voiman hajotelmakerrokset liikkeenjäljityksen luurankonäkymässä</p><h3 id=miksi-tämä-on-tärkeää>Miksi tämä on tärkeää?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frontal plane torque -arvosi ymmärtäminen voi auttaa sinua:</p><p><strong>Tunnistaa voimantuotantokuviot</strong> - Katso, kuinka tehokkaasti siirrät maavoimia pyörivään energiaan</p><p><strong>Visualisoi biomekaniikan vipuvaikutus</strong> - Katso momenttivarren suhde massan keskipisteen ja maavoimien välillä 3D-muodossa</p><p><strong>Analysoi ajoitusta</strong> - Ymmärrä, milloin huippuvääntömomentti esiintyy suhteessa pallon osumaan</p><p><strong>Jaa voiman komponentit</strong> - Katso, kuinka maareaktiovoimasi jakautuu eri suuntiin</p><p><strong>Vertaa heilautuksia</strong> - Seuraa muutoksia voimantuotannossasi ajan myötä</p><h3 id=edellytykset>Edellytykset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frontal Plane Torque -analyysiin tarvitset:</p><p><strong>Pakollinen</strong>: Voimaanturin nauhoitus maareaktiovoimatiedoin</p><p><strong>Pakollinen</strong>: Liikkeenjäljitystiedot massan keskipisteen seuraamiseen</p><p><strong>Pakollinen</strong>: Kalibroitu kamerasetup</p><p><strong>Pakollinen</strong>: Kehon paino (normalisoiduille arvoille)</p><hr><h2 id=aloittaminen>Aloittaminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=fpt-databoxin-lisääminen-asetteluusi>FPT DataBoxin lisääminen asetteluusi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Avaa tallennettu heilautus analyysissa</p></li><li><p>Klikkaa <strong>DataBox</strong> -valikkoa tai asettelun muokkainta</p></li><li><p>Etsi <strong>Frontal Plane Torque</strong> käytettävissä olevien DataBox-luettelosta</p></li><li><p>Lisää se analyysiasetteluun</p></li><li><p>DataBox täyttyy automaattisesti nauhoituksesi tiedoilla</p></li></ul><h3 id=3d-visualisoinnin-ottaminen-käyttöön>3D-visualisoinnin ottaminen käyttöön<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Momenttivarren ja voiman hajottelun visuaalit näkyvät 3D-videoesityksessä luurangon rinnalla. Ota ne käyttöön seuraavasti:</p><ul><li><p>Avaa nauhoitus, joka sisältää liikkeenjäljitys- ja voimalevytiedot</p></li><li><p>Etsi <strong>Force Vector Settings</strong> -paneeli videoesityksestä</p></li><li><p>Ota käyttöön visualisointivalinnat, joita haluat nähdä</p></li></ul><h3 id=vaadittava-data>Vaadittava data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>FPT-analyysin toimiakseen oikein nauhoituksessasi on oltava:</p><p>Tietotyyppi
-Vaadittu
-Tarkoitus</p><p>Voimalevytiedot
-Kyllä
-Tarjoaa maan reaktiovoimat (Fx, Fz) ja painekeskuksen</p><p>Liikkeenjäljitys
-Kyllä
-Tarjoaa massan keskipisteen sijainnin momenttilaskentaan ja 3D-visualisointiin</p><p>Kehon paino
-Kyllä
-Käytetään momenttiarvojen normalisointiin vertailuun</p><p>Kameran kalibrointi
-Kyllä
-Vaaditaan oikeaan 3D-linjaukseen</p><p>Impact-kirjanmerkki
-Suositeltu
-Mahdollistaa ajoitusmetriikat suhteessa pallon osumaan</p><hr><h2 id=näytön-ymmärtäminen>Näytön ymmärtäminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=kaavio>Kaavio<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Pääkaaviossa näkyvät vääntömomenttien arvot ajan kuluessa:</p><p><strong>X-akseli (vaakasuora)</strong>: Aika heilautuksen alusta loppuun</p><p><strong>Y-akseli (pystysuora)</strong>: Vääntömomentin arvot (voi näyttää prosenttia ja/tai absoluuttista)</p><p><strong>Nolla-viiva</strong>: Vaakasuora viiva nollassa - arvot ylä- ja alapuolella osoittavat vastakkaisia kiertosuuntia</p><h4 id=kaksoisakselijärjestelmä>Kaksoisakselijärjestelmä<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Kaavio voi näyttää kaksi eri skaalausta samanaikaisesti:</p><p><strong>Vasen akseli (prosentti)</strong>: Näyttää vääntömomentin, joka on normalisoitu kehon painolla (Nm/kg, näytetään Force Factorina)</p><p><strong>Oikea akseli (Absoluuttinen)</strong>: Näyttää todellisen vääntömomentin Newton-metreissä (Nm)</p><h3 id=keskeiset-mittarit>Keskeiset mittarit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Graafin ohella näytetään kolme keskeistä mittaria:</p><h4 id=1-suurin-vääntömomentti-force-factor>1. Suurin vääntömomentti (Force Factor)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Mitä se näyttää</strong>: Vääntömomentin huippuarvo, normalisoitu kehon painolla</p><p><strong>Yksiköt</strong>: Nm/kg (näytetään Force Factoriin)</p><p><strong>Esimerkki</strong>: Arvo <strong>0,85</strong> tarkoittaa, että suurin vääntömomenttisi oli 0,85 Newton-metriä kehon kilogrammaa kohti</p><h4 id=2-suurimman-vääntömomentin-ajoitus>2. Suurimman vääntömomentin ajoitus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Mitä se näyttää</strong>: Milloin suurin vääntömomentti esiintyy suhteessa pallon osumaan</p><p><strong>Yksiköt</strong>: Millisekuntia (ms)</p><p><strong>Huomautus</strong>: Näytetään vain, kun iskun kirjanmerkki on asetettu</p><p><strong>Esimerkki</strong>: <strong>-50ms</strong> tarkoittaa, että suurin vääntömomentti esiintyi 50 ms <em>ennen</em> osumaa; <strong>+20ms</strong> tarkoittaa 20 ms <em>jälkeen</em> osumaa; <strong>0ms</strong> tarkoittaa osumassa</p><h4 id=3-force-factor-raaat>3. Force Factor (raa&rsquo;at)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Mitä se näyttää</strong>: Raa&rsquo;at normalisoidun vääntömomentin arvo, joka sisältää suunnan (positiivinen tai negatiivinen)</p><p><strong>Yksiköt</strong>: Nm/kg</p><p><strong>Esimerkki</strong>: <strong>+0,85</strong> ja <strong>-0,85</strong> ovat yhtä suuret, mutta vastakkaisiin kiertosuuntiin</p><h3 id=vaiheen-korostus>Vaiheen korostus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Kun tämä on käytössä, värilliset nauhat peittävät graafin osoittamaan heilautuksen eri vaiheita:</p><ul><li>Takasväi, laskuliike, isku, jatkeliike</li></ul><hr><h2 id=3d-visualisointi>3D-visualisointi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=momenttivarren-visualisointi>Momenttivarren visualisointi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Momenttivarren visualisointi näyttää biomekaniikan vipuvaativan suhteen massan keskipisteen (COM) ja maan reaktiovoiman välillä.</p><p>Elementti
-Ulkonäkö
-Mitä se näyttää</p><p><strong>Momenttivarren viiva</strong>
-Oranssi yhtenäinen viiva
-Kohtisuora etäisyys COM:stasi voiman vaikutuslinjan linjaan</p><p><strong>Voiman vaikutuslinja</strong>
-Oranssi katkoviiva
-Laajennettuja linja, jonka varrella voima vaikuttaa</p><p><strong>Etäisyyden merkintä</strong>
-Valkoinen teksti tummalla pohjalla
-Momentin varren etäisyys senttimetreinä (±X.X cm)</p><h3 id=voimavektorin-hajoittaminen>Voimavektorin hajoittaminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Voiman hajoittamisen visualisointi jakaa kokonais-maareaktiovoiman kolmeen toisiinsa nähden kohtisuoraan komponenttiin. Värit edustavat aina samaa fysikaalista voimasuuntaa kameran näkymästä riippumatta:</p><p>Komponentti
-Väri
-Fysikaalinen suunta
-Mitä se näyttää</p><p><strong>X-komponentti</strong>
-Vaaleanpunainen
-Sivu sivulle (mediaalilateri)
-Lateraalivoimajakauma</p><p><strong>Y-komponentti</strong>
-Sinivihreä
-Ylös-alas (pystysuora)
-Pystysuuntainen voimajakauma</p><p><strong>Z-komponentti</strong>
-Vihreä
-Edestä taakse (anteroposterior)
-Etä-/takasuuntainen voimajakauma</p><p>Jokainen komponenttinuoli näyttää myös <strong>prosenttuaalisen merkinnän</strong>, joka osoittaa kuinka suuri osa kokonaisvoimasta on kyseiseen suuntaan.</p><h4 id=kameran-näkymän-käyttäytyminen>Kameran näkymän käyttäytyminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Voimavektorit näytetään suhteessa kameran näkymään. Komponentit, jotka näkisivät syvyyden (menevät sisään/ulos ruudulta), piilotetaan selkeyden vuoksi:</p><p>Kameran näkymä
-Näkyvät komponentit
-Piilotettu komponentti</p><p><strong>Edestä</strong>
-X (Vaaleanpunainen, vaakasuora), Y (Sinivihreä, pystysuora)
-Z (Vihreä, syvyys)</p><p><strong>Kohdelinjaa pitkin</strong>
-Z (Vihreä, vaakasuora), Y (Sinivihreä, pystysuora)
-X (Vaaleanpunainen, syvyys)</p><p><strong>Huomautus</strong>: Värit edustavat aina samaa fyysikaalista suuntaa – vaaleanpunainen on aina mediaalilateri-voima, sinivihreä on aina pystysuora voima ja vihreä on aina anteroposterior-voima. Vain näytön sijainti muuttuu kameran kulman perusteella.</p><h3 id=3d-visualisointiasetukset>3D-visualisointiasetukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h4 id=moment-varren-asetukset>Moment-varren asetukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Asetus
-Oletusarvo
-Kuvaus</p><p><strong>Näytä momentin varsi</strong>
-Pois päältä
-Kytää oranssia kiinteää viivaa COM:sta voimalinjaan</p><p><strong>Näytä toimintarivi</strong>
-Pois päältä
-Kytää oranssia katkoviivaa, joka näyttää voiman suunnan jatkeena</p><p><strong>Näytä etäisyyden merkintä</strong>
-Pois päältä
-Kytää etäisyyden arvolabelia (±X.X cm)</p><h4 id=voimien-hajoittamisen-asetukset>Voimien hajoittamisen asetukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Asetus
-Oletusarvo
-Kuvaus</p><p><strong>Näytä X/Y/Z-komponentit</strong>
-Pois päältä
-Kytää kaikki kolme komponenttinuolta ja prosenttuaaliset merkinnät</p><hr><h2 id=konfigurointiasetukset-kaavio>Konfigurointiasetukset (kaavio)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>Näytä % (prosenttiakseli)</strong>: Oletusarvona päällä – Kytää normalisoitua vääntömomenttia (Nm/kg)</p><p><strong>Näytä Newton (Absoluuttinen akseli)</strong>: Oletuksena pois päältä - Muuttaa absoluuttisen vääntömomentin (Nm)</p><p><strong>Korosta vaiheita</strong>: Oletuksena pois päältä - Näyttää värilliset nauhat, jotka osoittavat heilahduksen vaiheita</p><p><strong>Näytä ruudukkoviivat</strong>: Oletuksena päällä - Näyttää vaakasuuntaiset ruudukkoviivat</p><p><strong>Kaavion tyyppi</strong>: Mountain Chart (oletus) tai Line Chart</p><hr><h2 id=vianmääritys>Vianmääritys<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=henkilöä-ei-ole-lautalla--viesti>&ldquo;Henkilöä ei ole lautalla&rdquo; -viesti<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Varmista, että urheilija seisoi voimalaudan päällä nauhoituksen alussa</p></li><li><p>Tarkista, että kehon paino on syötetty urheilijoiden profiiliin</p></li><li><p>Tarkista, että voimalaudan kalibrointi on valmis</p></li></ul><h3 id=tyhjä-tai-puuttuva-kaaviotietojen>Tyhjä tai puuttuva kaaviotietojen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Varmista, että voimalautaa käytettiin nauhoituksen aikana</p></li><li><p>Tarkista, että liikkeenjäljitys-data tallennettiin (vaaditaan FPT-laskelmille)</p></li><li><p>Tarkista, että nauhoitus sisältää koko heilahduksen keston</p></li></ul><h3 id=aika-metriikka-ei-näy>Aika-metriikka ei näy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>Aseta vaikutusleima nauhoitukseesi</li></ul><hr><p><em>Last updated: 2026-01-09</em> | <a href=/sc-support/fi/software-features/frontal-plane-torque/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/fi/index.html><span class="logo-title default-animation">Swing Catalyst Tuki</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Etsi (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Etsi</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Etsi...>
-<button class=search-clear type=button data-search-clear title="Tyhjennä haku"><i class="fas fa-fw fa-times" title="Tyhjennä haku"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/fi/getting-started/index.html><a class="padding default-animation" href=/sc-support/fi/getting-started/index.html>Aloittaminen</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fi/cameras-video/index.html><a class="padding default-animation" href=/sc-support/fi/cameras-video/index.html>Kamerat ja video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fi/hardware/index.html><a class="padding default-animation" href=/sc-support/fi/hardware/index.html>Laitteisto</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/fi/software-features/index.html><a class="padding default-animation" href=/sc-support/fi/software-features/index.html>Ohjelmisto ja ominaisuudet</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li class=active data-nav-id=/sc-support/fi/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/fi/software-features/frontal-plane-torque/index.html>Frontaalitason vääntömomentin analyysi - Käyttöopas</a></li><li data-nav-id=/sc-support/fi/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/fi/software-features/markerless-motion-capture/index.html>Golfin ja pesäpallon heilautuksen markkeriton liikkeenjäljitys RTMPose- ja RTMDet-ratkaisuilla: Ylhäältä alas -menetelmä</a></li><li data-nav-id=/sc-support/fi/software-features/graph-library/index.html><a class=padding href=/sc-support/fi/software-features/graph-library/index.html>Graafiohjelmiston käyttö</a></li><li data-nav-id=/sc-support/fi/software-features/key-metrics/index.html><a class=padding href=/sc-support/fi/software-features/key-metrics/index.html>Keskeiset mittarit</a></li><li data-nav-id=/sc-support/fi/software-features/remote-support/index.html><a class=padding href=/sc-support/fi/software-features/remote-support/index.html>Kuinka käyttää etätukeae</a></li><li data-nav-id=/sc-support/fi/software-features/explorer/index.html><a class=padding href=/sc-support/fi/software-features/explorer/index.html>Kuinka käyttää Selaimea</a></li><li data-nav-id=/sc-support/fi/software-features/import-from-v1/index.html><a class=padding href=/sc-support/fi/software-features/import-from-v1/index.html>Kuinka tuoda videoita V1:stä</a></li><li data-nav-id=/sc-support/fi/software-features/change-recording-user/index.html><a class=padding href=/sc-support/fi/software-features/change-recording-user/index.html>Kuinka vaihtaa käyttäjä olemassa olevassa nauhoituksessa</a></li><li data-nav-id=/sc-support/fi/software-features/export-contacts/index.html><a class=padding href=/sc-support/fi/software-features/export-contacts/index.html>Kuinka viedä opiskelijan yhteystiedot</a></li><li data-nav-id=/sc-support/fi/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/fi/software-features/microphone-trigger/index.html>Mikrofonin käyttäminen sieppausliipaisimena</a></li><li data-nav-id=/sc-support/fi/software-features/bookmarks/index.html><a class=padding href=/sc-support/fi/software-features/bookmarks/index.html>Mitä kirjanmerkit ovat?</a></li><li data-nav-id=/sc-support/fi/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/fi/software-features/raw-data-export-guide/index.html>Mitä raakatietojen vientiä sisältyy</a></li><li data-nav-id=/sc-support/fi/software-features/export-recordings/index.html><a class=padding href=/sc-support/fi/software-features/export-recordings/index.html>Nauhoitusten vieminen</a></li><li data-nav-id=/sc-support/fi/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/fi/software-features/keyboard-shortcuts/index.html>Näppäimistön pikanäppäimet ja pikakuvakkeet</a></li><li data-nav-id=/sc-support/fi/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/fi/software-features/record-a-lesson/index.html>Oppitunnin nauhoittaminen</a></li><li data-nav-id=/sc-support/fi/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/fi/software-features/pressure-distribution-overlay/index.html>Paineen jakauman peittokuvan toiminnon käyttäminen</a></li><li data-nav-id=/sc-support/fi/software-features/feedback-screen/index.html><a class=padding href=/sc-support/fi/software-features/feedback-screen/index.html>Palautenäytön asettaminen</a></li><li data-nav-id=/sc-support/fi/software-features/export-raw-data/index.html><a class=padding href=/sc-support/fi/software-features/export-raw-data/index.html>Raakatietojen vienti</a></li><li data-nav-id=/sc-support/fi/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/fi/software-features/motion-capture-install/index.html>Swing Catalyst -liikkeenjäljitysosia asentaminen</a></li><li data-nav-id=/sc-support/fi/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/fi/software-features/ios-app-sharing/index.html>Swing Catalyst -sovelluksen iOS-versiolla tallennettujen videoiden jakaminen</a></li><li data-nav-id=/sc-support/fi/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/fi/software-features/motion-capture-settings/index.html>Swing Catalyst liikkeenjäljityksen asetukset</a></li><li data-nav-id=/sc-support/fi/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/fi/software-features/motion-capture-guide/index.html>Swing Catalyst liikkeenjäljityksen käyttöopas</a></li><li data-nav-id=/sc-support/fi/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/fi/software-features/motion-capture-faq/index.html>Swing Catalyst liikkeenjäljitys -UKK</a></li><li data-nav-id=/sc-support/fi/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/fi/software-features/motion-capture-disclosures/index.html>Swing Catalyst liikkeenjäljitystyökalun käyttäjille tärkeitä tietouksiantoja</a></li><li data-nav-id=/sc-support/fi/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/fi/software-features/swing-catalyst-online/index.html>Swing Catalyst Online -ohjelman käyttäminen</a></li><li data-nav-id=/sc-support/fi/software-features/email-sharing/index.html><a class=padding href=/sc-support/fi/software-features/email-sharing/index.html>Sähköpostin jakamisen määrittäminen Swing Catalystissa</a></li><li data-nav-id=/sc-support/fi/software-features/multiple-displays/index.html><a class=padding href=/sc-support/fi/software-features/multiple-displays/index.html>Useiden näyttöjen asettaminen Swing Catalystin avulla</a></li><li data-nav-id=/sc-support/fi/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/fi/software-features/multiple-forces-graph/index.html>Useiden voimien kaavio</a></li><li data-nav-id=/sc-support/fi/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/fi/software-features/body-weight-measurement/index.html>Uusi kehon painon mittaustoiminnallisuus</a></li><li data-nav-id=/sc-support/fi/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/fi/software-features/pressure-stance-settings/index.html>Uusien Pressure ja Stance -asetusten käyttäminen</a></li><li data-nav-id=/sc-support/fi/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/fi/software-features/force-graph-phases/index.html>Voimakuvaajan vaiheet</a></li><li data-nav-id=/sc-support/fi/software-features/force-vectors/index.html><a class=padding href=/sc-support/fi/software-features/force-vectors/index.html>Voimavektorien käyttäminen</a></li></ul></li><li data-nav-id=/sc-support/fi/account-setup/index.html><a class="padding default-animation" href=/sc-support/fi/account-setup/index.html>Tili ja asetukset</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fi/reference/index.html><a class="padding default-animation" href=/sc-support/fi/reference/index.html>Viittaus</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Kieli</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/frontal-plane-torque/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/frontal-plane-torque/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/frontal-plane-torque/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/frontal-plane-torque/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/frontal-plane-torque/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/frontal-plane-torque/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/frontal-plane-torque/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/frontal-plane-torque/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/frontal-plane-torque/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/frontal-plane-torque/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/frontal-plane-torque/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/frontal-plane-torque/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/frontal-plane-torque/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/frontal-plane-torque/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/frontal-plane-torque/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/frontal-plane-torque/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/frontal-plane-torque/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/frontal-plane-torque/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/frontal-plane-torque/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/frontal-plane-torque/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/frontal-plane-torque/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/frontal-plane-torque/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/frontal-plane-torque/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/frontal-plane-torque/index.html lang=fi selected data-selected>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/frontal-plane-torque/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/frontal-plane-torque/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/frontal-plane-torque/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/frontal-plane-torque/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/frontal-plane-torque/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/frontal-plane-torque/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/frontal-plane-torque/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/frontal-plane-torque/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/frontal-plane-torque/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/frontal-plane-torque/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/frontal-plane-torque/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/frontal-plane-torque/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Teema</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763282 defer></script><script src=/sc-support/js/theme.min.js?1771763282 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="fi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Frontaalitason vääntömomentti (FPT) mittaa kiertovoiman, jonka kehosi tuottaa frontaalitason akselin ympäri golflyönnin aikana. Ajattele sitä mittauksena siitä, kuinka tehokkaasti...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Frontaalitason Vääntömomentin Analyysi - Käyttöopas :: Swing Catalyst Tuki">
+    <meta name="twitter:description" content="Frontaalitason vääntömomentti (FPT) mittaa kiertovoiman, jonka kehosi tuottaa frontaalitason akselin ympäri golflyönnin aikana. Ajattele sitä mittauksena siitä, kuinka tehokkaasti...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Tuki">
+    <meta property="og:title" content="Frontaalitason Vääntömomentin Analyysi - Käyttöopas :: Swing Catalyst Tuki">
+    <meta property="og:description" content="Frontaalitason vääntömomentti (FPT) mittaa kiertovoiman, jonka kehosi tuottaa frontaalitason akselin ympäri golflyönnin aikana. Ajattele sitä mittauksena siitä, kuinka tehokkaasti...">
+    <meta property="og:locale" content="fi">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Ohjelmisto & Ominaisuudet">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Motion-Capture">
+    <meta itemprop="name" content="Frontaalitason Vääntömomentin Analyysi - Käyttöopas :: Swing Catalyst Tuki">
+    <meta itemprop="description" content="Frontaalitason vääntömomentti (FPT) mittaa kiertovoiman, jonka kehosi tuottaa frontaalitason akselin ympäri golflyönnin aikana. Ajattele sitä mittauksena siitä, kuinka tehokkaasti...">
+    <meta itemprop="wordCount" content="840">
+    <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
+    <title>Frontaalitason Vääntömomentin Analyysi - Käyttöopas :: Swing Catalyst Tuki</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520133" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520133" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.fi.js?1772520133";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/lunr/lunr.fi.min.js?1772520133" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fi'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520133" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520133" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520133" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520133" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520133" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/frontal-plane-torque\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Kopioi teksti leikepöydälle`;
+      window.T_Copied_to_clipboard = `Teksti kopioitu leikepöydälle!`;
+      window.T_Link_copied_to_clipboard = `Linkki kopioitu leikepöydälle!`;
+      window.T_Reset_view = `Palauta näkymä`;
+      window.T_View_reset = `Näkymä nollattu!`;
+      window.T_No_results_found = `Ei tuloksia haulle "{0}"`;
+      window.T_N_results_found = `{1} tulosta löytyi haulle "{0}"`;
+      window.T_Browser_unsupported_feature = `Tämä selain ei tue tätä ominaisuutta`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/fi/software-features/frontal-plane-torque/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Valikko (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Sisältö (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#johdanto">Johdanto</a>
+      <ul>
+        <li><a href="#mikä-on-frontaalitason-vääntömomentti">Mikä on frontaalitason vääntömomentti?</a></li>
+        <li><a href="#ominaisuuden-osat">Ominaisuuden osat</a></li>
+        <li><a href="#miksi-tällä-on-merkitystä">Miksi tällä on merkitystä?</a></li>
+        <li><a href="#vaatimukset">Vaatimukset</a></li>
+      </ul>
+    </li>
+    <li><a href="#aloittaminen">Aloittaminen</a>
+      <ul>
+        <li><a href="#fpt-databoxin-lisääminen-asetteluusi">FPT DataBoxin lisääminen asetteluusi</a></li>
+        <li><a href="#3d-visualisoinnin-käyttöönotto">3D-visualisoinnin käyttöönotto</a></li>
+        <li><a href="#tarvittavat-tiedot">Tarvittavat tiedot</a></li>
+      </ul>
+    </li>
+    <li><a href="#näyttämisen-ymmärtäminen">Näyttämisen ymmärtäminen</a>
+      <ul>
+        <li><a href="#kaavio">Kaavio</a></li>
+        <li><a href="#keskeiset-mittarit">Keskeiset mittarit</a></li>
+        <li><a href="#vaiheiden-korostaminen">Vaiheiden korostaminen</a></li>
+      </ul>
+    </li>
+    <li><a href="#3d-visualisointi">3D-visualisointi</a>
+      <ul>
+        <li><a href="#momenttivarren-visualisointi">Momenttivarren visualisointi</a></li>
+        <li><a href="#voiman-vektorin-hajotelma">Voiman vektorin hajotelma</a></li>
+        <li><a href="#3d-visualisoinnin-asetukset">3D-visualisoinnin asetukset</a></li>
+      </ul>
+    </li>
+    <li><a href="#konfigurointivaihtoehdot-kaavio">Konfigurointivaihtoehdot (kaavio)</a></li>
+    <li><a href="#vianmääritys">Vianmääritys</a>
+      <ul>
+        <li><a href="#ei-henkilöä-levyllä--viesti">&ldquo;Ei henkilöä levyllä&rdquo; -viesti</a></li>
+        <li><a href="#tyhjä-tai-puuttuva-kaavion-data">Tyhjä tai puuttuva kaavion data</a></li>
+        <li><a href="#ajoitusmittarit-eivät-näy">Ajoitusmittarit eivät näy</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fi/index.html"><span itemprop="name">Swing Catalyst -tuki</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fi/software-features/index.html"><span itemprop="name">Ohjelmisto &amp; Ominaisuudet</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Frontaalitason Vääntömomentin Analyysi - Käyttöopas</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/fi/software-features/remote-support/index.html" title="Etätuen käyttäminen (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/fi/software-features/markerless-motion-capture/index.html" title="Golfin ja pesäpallon lyönnin markkeriton liikkeenjäljitys RTMPose- ja RTMDet-malleilla: Ylhäältä alas -menetelmä (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Lisää"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tunnisteet" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/fi/tags/force-data/index.html">Force-Data</a></li>
+    <li><a class="term-link" href="/sc-support/fi/tags/motion-capture/index.html">Motion-Capture</a></li>
+    <li><a class="term-link" href="/sc-support/fi/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/fi/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="frontaalitason-vääntömomentin-analyysi---käyttöopas">Frontaalitason Vääntömomentin Analyysi - Käyttöopas</h1>
+
+<h2 id="johdanto">Johdanto<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="mikä-on-frontaalitason-vääntömomentti">Mikä on frontaalitason vääntömomentti?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Frontaalitason vääntömomentti (FPT) mittaa kiertovoiman, jonka kehosi tuottaa frontaalitason akselin ympäri golflyönnin aikana. Ajattele sitä mittauksena siitä, kuinka tehokkaasti käytät maan reaktiovoimia kiertovoiman tuottamiseen.</p>
+<p>Kun heilautat golfmailaa, jalkasi työntävät maata vasten, ja maa työntää takaisin. Tämä kehosi massan keskipisteen ja jalkojesi voimien välinen vuorovaikutus luo vääntömomentin – kiertovoiman, joka auttaa voimistamaan lyöntiäsi.</p>
+<h3 id="ominaisuuden-osat">Ominaisuuden osat<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>FPT-ominaisuus sisältää kaksi pääosaa:</p>
+<p><strong>FPT-kaavio (DataBox)</strong> – Aikasarjakaavio, joka näyttää vääntömomentin arvot koko lyönnin ajalta keskeisine mittareineen</p>
+<p><strong>3D-visualisointi</strong> – Reaaliaikaiset momenttivarren ja voiman hajotelman peittokuvat liikkeenjäljityksen luurankonäkymässä</p>
+<h3 id="miksi-tällä-on-merkitystä">Miksi tällä on merkitystä?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Frontaalitason vääntömomentin ymmärtäminen voi auttaa sinua:</p>
+<p><strong>Tunnistamaan tehontuottomalleja</strong> – Näe, kuinka tehokkaasti siirrät maavoimat kiertovoimaksi</p>
+<p><strong>Visualisoimaan biomekaniikan vivutusvaikutuksen</strong> – Näe momenttivarren suhde massan keskipisteen ja maavoimien välillä 3D:ssä</p>
+<p><strong>Analysoimaan ajoitusta</strong> – Ymmärrä, milloin huippu vääntömomentti esiintyy suhteessa pallon iskuun</p>
+<p><strong>Hajottamaan voiman osat</strong> – Näe, miten maan reaktiovoima jakautuu eri suuntiin</p>
+<p><strong>Vertailemaan lyöntejä</strong> – Seuraa voimantuottosi muutoksia ajan myötä</p>
+<h3 id="vaatimukset">Vaatimukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Frontaalitason vääntömomentin analyysin käyttäminen edellyttää:</p>
+<p><strong>Pakollinen</strong>: Voimaanturin nauhoitus maan reaktiovoimatiedoilla</p>
+<p><strong>Pakollinen</strong>: MoCap-data massan keskipisteen seurantaa varten</p>
+<p><strong>Pakollinen</strong>: Kalibroitu kamera-asento</p>
+<p><strong>Pakollinen</strong>: Kehon painon mittaus (normalisoituja arvoja varten)</p>
+<hr>
+<h2 id="aloittaminen">Aloittaminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="fpt-databoxin-lisääminen-asetteluusi">FPT DataBoxin lisääminen asetteluusi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Avaa nauhoitettu lyönti analyysinäkymässä</p>
+</li>
+<li>
+<p>Napsauta <strong>DataBox</strong>-valikkoa tai asettelueditoria</p>
+</li>
+<li>
+<p>Etsi <strong>Frontaalitason vääntömomentti</strong> käytettävissä olevien DataBox-vaihtoehtojen luettelosta</p>
+</li>
+<li>
+<p>Lisää se analyysin asetteluusi</p>
+</li>
+<li>
+<p>DataBox täyttyy automaattisesti nauhoituksesi tiedoilla</p>
+</li>
+</ul>
+<h3 id="3d-visualisoinnin-käyttöönotto">3D-visualisoinnin käyttöönotto<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Momenttivarren ja voiman hajotelman visualisoinnit näkyvät 3D-videonäkymässä luurangon rinnalla. Voit ottaa ne käyttöön seuraavasti:</p>
+<ul>
+<li>
+<p>Avaa nauhoitus, jossa on MoCap- ja voimaanturin tiedot</p>
+</li>
+<li>
+<p>Etsi <strong>Voiman vektori -asetukset</strong> -paneeli videonäkymästä</p>
+</li>
+<li>
+<p>Ota haluamasi visualisointivaihtoehdot käyttöön</p>
+</li>
+</ul>
+<h3 id="tarvittavat-tiedot">Tarvittavat tiedot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Jotta FPT-analyysi toimii oikein, nauhoituksesi täytyy sisältää:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tietotyyppi</th>
+          <th>Pakollinen</th>
+          <th>Tarkoitus</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Voimaanturin tiedot</td>
+          <td>Kyllä</td>
+          <td>Tarjoaa maan reaktiovoimat (Fx, Fz) ja paineen keskipisteen</td>
+      </tr>
+      <tr>
+          <td>MoCap-data</td>
+          <td>Kyllä</td>
+          <td>Tarjoaa massan keskipisteen sijainnin vääntömomentin laskemista ja 3D-visualisointia varten</td>
+      </tr>
+      <tr>
+          <td>Kehon paino</td>
+          <td>Kyllä</td>
+          <td>Käytetään vääntömomentin arvojen normalisointiin vertailua varten</td>
+      </tr>
+      <tr>
+          <td>Kameran kalibrointi</td>
+          <td>Kyllä</td>
+          <td>Vaaditaan asianmukaista 3D-linjausta varten</td>
+      </tr>
+      <tr>
+          <td>Isku-kirjanmerkki</td>
+          <td>Suositeltu</td>
+          <td>Mahdollistaa ajoitusmittarit suhteessa pallon kosketukseen</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="näyttämisen-ymmärtäminen">Näyttämisen ymmärtäminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="kaavio">Kaavio<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Pääkaavio näyttää vääntömomentin arvot ajan myötä:</p>
+<p><strong>X-akseli (vaakasuora)</strong>: Aika lyönnin alusta viimeistelyyn</p>
+<p><strong>Y-akseli (pystysuora)</strong>: Vääntömomentin arvot (voi näyttää prosenttiosuuden ja/tai absoluuttisen arvon)</p>
+<p><strong>Nollaviiva</strong>: Vaakasuora viiva nollassa – ylä- ja alapuolella olevat arvot osoittavat vastakkaiset kiertosuunnat</p>
+<h4 id="kaksoisakselijärjestelmä">Kaksoisakselijärjestelmä<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Kaavio voi näyttää kaksi eri asteikkoa samanaikaisesti:</p>
+<p><strong>Vasen akseli (prosenttiosuus)</strong>: Näyttää kehon painolla normalisoidun vääntömomentin (Nm/kg, näytetään voimakertoimena)</p>
+<p><strong>Oikea akseli (absoluuttinen)</strong>: Näyttää todellisen vääntömomentin Newton-metreinä (Nm)</p>
+<h3 id="keskeiset-mittarit">Keskeiset mittarit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Kolme keskeistä mittaria näytetään kaavion rinnalla:</p>
+<h4 id="1-maksimivääntömomentti-voimakerroin">1. Maksimivääntömomentti (voimakerroin)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Mitä se näyttää</strong>: Huippuvääntömomentin suuruus normalisoituna kehon painolla</p>
+<p><strong>Yksiköt</strong>: Nm/kg (näytetään voimakertoimena)</p>
+<p><strong>Esimerkki</strong>: Arvo <strong>0,85</strong> tarkoittaa, että huippuvääntömomenttisi oli 0,85 Newton-metriä kehon painokilogrammaa kohden</p>
+<h4 id="2-maksimivääntömomentin-ajoitus">2. Maksimivääntömomentin ajoitus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Mitä se näyttää</strong>: Milloin huippuvääntömomentti esiintyy suhteessa pallon iskuun</p>
+<p><strong>Yksiköt</strong>: Millisekuntia (ms)</p>
+<p><strong>Huomio</strong>: Näytetään vain, kun isku-kirjanmerkki on asetettu</p>
+<p><strong>Esimerkki</strong>: <strong>-50ms</strong> tarkoittaa, että huippuvääntömomentti esiintyi 50 ms <em>ennen</em> iskua; <strong>+20ms</strong> tarkoittaa 20 ms <em>iskun jälkeen</em>; <strong>0ms</strong> tarkoittaa iskuhetkellä</p>
+<h4 id="3-voimakerroin-raaka">3. Voimakerroin (raaka)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Mitä se näyttää</strong>: Raaka normalisoitu vääntömomentin arvo mukaan lukien suunta (positiivinen tai negatiivinen)</p>
+<p><strong>Yksiköt</strong>: Nm/kg</p>
+<p><strong>Esimerkki</strong>: <strong>+0,85</strong> ja <strong>-0,85</strong> ovat yhtä suuria, mutta niillä on vastakkaiset kiertosuunnat</p>
+<h3 id="vaiheiden-korostaminen">Vaiheiden korostaminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Kun tämä on käytössä, värikkäät kaistaleet peittävät kaavion ja näyttävät lyönnin eri vaiheet:</p>
+<ul>
+<li>Takasväi, Laskuliike, Isku, Jatkeliike</li>
+</ul>
+<hr>
+<h2 id="3d-visualisointi">3D-visualisointi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="momenttivarren-visualisointi">Momenttivarren visualisointi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Momenttivarren visualisointi näyttää biomekaniikan vivutusvaikutuksen suhteen massan keskipisteen (CoM) ja maan reaktiovoiman välillä.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Elementti</th>
+          <th>Ulkoasu</th>
+          <th>Mitä se näyttää</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Momenttivarsilinja</strong></td>
+          <td>Oranssi yhtenäinen viiva</td>
+          <td>Kohtisuora etäisyys CoM:stasi toimintariville</td>
+      </tr>
+      <tr>
+          <td><strong>Toimintarivi</strong></td>
+          <td>Oranssi katkoviiva</td>
+          <td>Pidennetty viiva, jonka suuntaan voima vaikuttaa</td>
+      </tr>
+      <tr>
+          <td><strong>Etäisyysmerkintä</strong></td>
+          <td>Valkoinen teksti tummalla taustalla</td>
+          <td>Momenttivarren etäisyys senttimetreinä (±X,X cm)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="voiman-vektorin-hajotelma">Voiman vektorin hajotelma<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Voiman hajotelman visualisointi jakaa kokonaisen maan reaktiovoiman kolmeen kohtisuoraan komponenttiin. Värit edustavat aina samaa fyysistä voimasuuntaa riippumatta kameran näkymästä:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Komponentti</th>
+          <th>Väri</th>
+          <th>Fyysinen suunta</th>
+          <th>Mitä se näyttää</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>X-komponentti</strong></td>
+          <td>Vaaleanpunainen</td>
+          <td>Sivusuunta (mediolateraalinen)</td>
+          <td>Sivusuuntainen voimajakautuma</td>
+      </tr>
+      <tr>
+          <td><strong>Y-komponentti</strong></td>
+          <td>Sinivihreä</td>
+          <td>Ylös-alas (pystysuora)</td>
+          <td>Pystysuoran voiman jakautuma</td>
+      </tr>
+      <tr>
+          <td><strong>Z-komponentti</strong></td>
+          <td>Vihreä</td>
+          <td>Eteen-taakse (anteroposteriorinen)</td>
+          <td>Eteen/taaksepäin suuntautuvan voiman jakautuma</td>
+      </tr>
+  </tbody>
+</table>
+<p>Jokainen komponenttinuoli näyttää myös <strong>prosenttimerkinnän</strong>, joka kertoo, kuinka suuri osa kokonaisvoimasta on kyseisessä suunnassa.</p>
+<h4 id="kameran-näkymän-käyttäytyminen">Kameran näkymän käyttäytyminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Voimavektorit näytetään suhteessa kameran näkymääsi. Syvyyttä edustavat komponentit (jotka menevät ruutuun tai tulevat siitä ulos) piilotetaan selkeyden vuoksi:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Kameran näkymä</th>
+          <th>Näkyvät komponentit</th>
+          <th>Piilotettu komponentti</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Edestä katsottava näkymä</strong></td>
+          <td>X (vaaleanpunainen, vaakasuora), Y (sinivihreä, pystysuora)</td>
+          <td>Z (vihreä, syvyys)</td>
+      </tr>
+      <tr>
+          <td><strong>Kohdelinjaa pitkin</strong></td>
+          <td>Z (vihreä, vaakasuora), Y (sinivihreä, pystysuora)</td>
+          <td>X (vaaleanpunainen, syvyys)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Huomio</strong>: Värit edustavat aina samaa fyysistä suuntaa – vaaleanpunainen on aina mediolateraalinen voima, sinivihreä on aina pystysuora voima ja vihreä on aina anteroposteriorinen voima. Vain sijainti ruudulla muuttuu kamerakulman mukaan.</p>
+<h3 id="3d-visualisoinnin-asetukset">3D-visualisoinnin asetukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="momenttivarren-asetukset">Momenttivarren asetukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Asetus</th>
+          <th>Oletus</th>
+          <th>Kuvaus</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Näytä momenttivarsi</strong></td>
+          <td>Pois</td>
+          <td>Kytkee oranssin yhtenäisen viivan CoM:sta voimalinjalle</td>
+      </tr>
+      <tr>
+          <td><strong>Näytä toimintarivi</strong></td>
+          <td>Pois</td>
+          <td>Kytkee oranssin katkoviivan, joka näyttää voiman suunnan jatkeen</td>
+      </tr>
+      <tr>
+          <td><strong>Näytä etäisyysmerkintä</strong></td>
+          <td>Pois</td>
+          <td>Kytkee etäisyysarvon merkinnän (±X,X cm)</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="voiman-hajotelman-asetukset">Voiman hajotelman asetukset<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Asetus</th>
+          <th>Oletus</th>
+          <th>Kuvaus</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Näytä X/Y/Z-komponentit</strong></td>
+          <td>Pois</td>
+          <td>Kytkee kaikki kolme komponenttinuolta ja prosenttimerkinnät</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="konfigurointivaihtoehdot-kaavio">Konfigurointivaihtoehdot (kaavio)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>Näytä % (prosenttiakseli)</strong>: Oletus päällä – Kytkee normalisoidun vääntömomentin (Nm/kg)</p>
+<p><strong>Näytä Newton (absoluuttinen akseli)</strong>: Oletus pois – Kytkee absoluuttisen vääntömomentin (Nm)</p>
+<p><strong>Korosta vaiheet</strong>: Oletus pois – Näyttää värikkäät kaistaleet, jotka osoittavat lyönnin vaiheet</p>
+<p><strong>Näytä ruudukko</strong>: Oletus päällä – Näyttää vaakasuorat ruudukkoviivat</p>
+<p><strong>Kaaviotyyppi</strong>: Vuoristokäyräkaavio (oletus) tai viivakaavio</p>
+<hr>
+<h2 id="vianmääritys">Vianmääritys<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="ei-henkilöä-levyllä--viesti">&ldquo;Ei henkilöä levyllä&rdquo; -viesti<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Varmista, että urheilija seisoi voimaanturilla nauhoituksen alussa</p>
+</li>
+<li>
+<p>Tarkista, että kehon paino on syötetty urheilijan profiiliin</p>
+</li>
+<li>
+<p>Varmista, että voimaanturin kalibrointi on suoritettu</p>
+</li>
+</ul>
+<h3 id="tyhjä-tai-puuttuva-kaavion-data">Tyhjä tai puuttuva kaavion data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Vahvista, että voimaanturi oli aktiivinen nauhoituksen aikana</p>
+</li>
+<li>
+<p>Varmista, että MoCap-data nauhoitettiin (vaaditaan FPT-laskelmia varten)</p>
+</li>
+<li>
+<p>Tarkista, että nauhoitus kattaa koko lyönnin keston</p>
+</li>
+</ul>
+<h3 id="ajoitusmittarit-eivät-näy">Ajoitusmittarit eivät näy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Aseta isku-kirjanmerkki nauhoitukseesi</li>
+</ul>
+<hr>
+<p><em>Viimeksi päivitetty: 2026-01-09</em> | <a href="/sc-support/fi/software-features/frontal-plane-torque/index.html">Katso virallisella tukisivustolla</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/fi/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Tuki</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Etsi (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Etsi</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Etsi...">
+            <button class="search-clear" type="button" data-search-clear="" title="Tyhjennä haku"><i class="fas fa-fw fa-times" title="Tyhjennä haku"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/fi/getting-started/index.html"><a class="padding default-animation" href="/sc-support/fi/getting-started/index.html">Aloitusopas</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/fi/cameras-video/index.html">Kamerat ja video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/hardware/index.html"><a class="padding default-animation" href="/sc-support/fi/hardware/index.html">Laitteisto</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/fi/software-features/index.html"><a class="padding default-animation" href="/sc-support/fi/software-features/index.html">Ohjelmisto &amp; Ominaisuudet</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/fi/software-features/remote-support/index.html"><a class="padding" href="/sc-support/fi/software-features/remote-support/index.html">Etätuen käyttäminen</a></li>
+            <li class="active " data-nav-id="/sc-support/fi/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/fi/software-features/frontal-plane-torque/index.html">Frontaalitason Vääntömomentin Analyysi - Käyttöopas</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/fi/software-features/markerless-motion-capture/index.html">Golfin ja pesäpallon lyönnin markkeriton liikkeenjäljitys RTMPose- ja RTMDet-malleilla: Ylhäältä alas -menetelmä</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/graph-library/index.html"><a class="padding" href="/sc-support/fi/software-features/graph-library/index.html">Grafiikkakirjaston käyttäminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/fi/software-features/key-metrics/index.html">Keskeiset mittarit</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/fi/software-features/microphone-trigger/index.html">Kuinka käyttää mikrofonia sieppauksen liipaisimenа</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/fi/software-features/multiple-displays/index.html">Kuinka määrittää useita näyttöjä Swing Catalystin kanssa</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/fi/software-features/change-recording-user/index.html">Kuinka vaihtaa käyttäjä olemassa olevassa nauhoituksessa</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/fi/software-features/export-contacts/index.html">Kuinka viedä opiskelijoiden yhteystiedot</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/fi/software-features/bookmarks/index.html">Mitä kirjanmerkit ovat?</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/fi/software-features/raw-data-export-guide/index.html">Mitä raakadata-vienti sisältää</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/fi/software-features/export-recordings/index.html">Nauhoitusten vienti</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/fi/software-features/record-a-lesson/index.html">Oppitunnin nauhoittaminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/fi/software-features/pressure-distribution-overlay/index.html">Paineen jakauma -peittokuvatoiminnon käyttäminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/fi/software-features/feedback-screen/index.html">Palautenäytön asettaminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/fi/software-features/keyboard-shortcuts/index.html">Pikanäppäimet ja pikanäppäinyhdistelmät</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/fi/software-features/export-raw-data/index.html">Raakadatan vieminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/explorer/index.html"><a class="padding" href="/sc-support/fi/software-features/explorer/index.html">Selaimen käyttäminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/fi/software-features/motion-capture-settings/index.html">Swing Catalyst Liikkeenjäljitys-asetukset</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/fi/software-features/motion-capture-install/index.html">Swing Catalyst Motion Capture -komponenttien asentaminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/fi/software-features/motion-capture-guide/index.html">Swing Catalyst Motion Capture -käyttöopas</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/fi/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/fi/software-features/swing-catalyst-online/index.html">Swing Catalyst Onlinen käyttäminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/fi/software-features/email-sharing/index.html">Sähköpostijakamisen määrittäminen Swing Catalystissa</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/fi/software-features/ios-app-sharing/index.html">Tallennettujen videoiden jakaminen Swing Catalyst iOS-sovelluksella</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/fi/software-features/motion-capture-disclosures/index.html">Tärkeät tiedonannot SwingCatalyst-liikkeenjäljitystyökalun käyttäjille</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/fi/software-features/multiple-forces-graph/index.html">Useiden voimien kuvaaja</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/fi/software-features/body-weight-measurement/index.html">Uusi kehon painon mittaustoiminto</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/fi/software-features/pressure-stance-settings/index.html">Uusien Paine- ja Asento-asetusten käyttäminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/fi/software-features/import-from-v1/index.html">Videoiden tuominen V1:stä</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/fi/software-features/force-graph-phases/index.html">Voimagraafin vaiheet</a></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/fi/software-features/force-vectors/index.html">Voimavektoreiden käyttö</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/index.html"><a class="padding default-animation" href="/sc-support/fi/account-setup/index.html">Tili &amp; Asento</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/reference/index.html"><a class="padding default-animation" href="/sc-support/fi/reference/index.html">Viite</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Kieli</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/frontal-plane-torque/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/frontal-plane-torque/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/frontal-plane-torque/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/frontal-plane-torque/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/frontal-plane-torque/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/frontal-plane-torque/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/frontal-plane-torque/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/frontal-plane-torque/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/frontal-plane-torque/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/frontal-plane-torque/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/frontal-plane-torque/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/frontal-plane-torque/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/frontal-plane-torque/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/frontal-plane-torque/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/frontal-plane-torque/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/frontal-plane-torque/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/frontal-plane-torque/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/frontal-plane-torque/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/frontal-plane-torque/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/frontal-plane-torque/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/frontal-plane-torque/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/frontal-plane-torque/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/frontal-plane-torque/index.html" lang="fi" selected data-selected>Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/frontal-plane-torque/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/frontal-plane-torque/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/frontal-plane-torque/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/frontal-plane-torque/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/frontal-plane-torque/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/frontal-plane-torque/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/frontal-plane-torque/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/frontal-plane-torque/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/frontal-plane-torque/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/frontal-plane-torque/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/frontal-plane-torque/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/frontal-plane-torque/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Teema</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520133" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

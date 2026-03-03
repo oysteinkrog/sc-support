@@ -1,52 +1,792 @@
-<!doctype html><html id=R-html lang=zh dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="本文是 Swing Catalyst Home 的入门指南。"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="入门指南 - Swing Catalyst Home :: Swing Catalyst 支持"><meta name=twitter:description content="本文是 Swing Catalyst Home 的入门指南。"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh/getting-started/swing-catalyst-home/index.html"><meta property="og:site_name" content="Swing Catalyst 支持"><meta property="og:title" content="入门指南 - Swing Catalyst Home :: Swing Catalyst 支持"><meta property="og:description" content="本文是 Swing Catalyst Home 的入门指南。"><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="开始使用"><meta property="article:tag" content="Getting-Started"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Gige-Camera"><meta property="article:tag" content="Usb-Camera"><meta itemprop=name content="入门指南 - Swing Catalyst Home :: Swing Catalyst 支持"><meta itemprop=description content="本文是 Swing Catalyst Home 的入门指南。"><meta itemprop=wordCount content="2220"><meta itemprop=keywords content="Getting-Started,Troubleshooting,Gige-Camera,Usb-Camera"><title>入门指南 - Swing Catalyst Home :: Swing Catalyst 支持</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/getting-started/swing-catalyst-home/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763270 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763270 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763270 defer></script><script src=/sc-support/js/search.min.js?1771763270 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.zh.js?1771763270"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.zh.min.js?1771763270 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["zh"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763270 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763270 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763270 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763270 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763270 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/getting-started/swing-catalyst-home/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`复制文本到剪贴板`,window.T_Copied_to_clipboard=`文本已复制到剪贴板！`,window.T_Link_copied_to_clipboard=`链接已复制到剪贴板！`,window.T_Reset_view=`重置视图`,window.T_View_reset=`查看重置！`,window.T_No_results_found=`找不到"{0}"的结果`,window.T_N_results_found=`为"{0}"找到 {1} 个结果`,window.T_Browser_unsupported_feature=`此浏览器不支持此功能`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/zh/getting-started/swing-catalyst-home/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="导航 (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="目录 (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#介绍>介绍</a></li><li><a href=#要求>要求</a></li><li><a href=#image3png><img src=../../assets/images/4410620083090/image3-png.png alt=image3.png></a></li><li><a href=#getting-started>Getting Started</a></li><li><a href=#installing-the-software-and-license-key>Installing the software and license key</a></li><li><a href=#connecting-one-or-more-cameras>Connecting one or more cameras</a></li><li><a href=#connecting-a-launch-monitor>Connecting a Launch Monitor</a></li><li><a href=#creating-a-user>Creating a user</a></li><li><a href=#analyzing-a-swing>Analyzing a swing</a><ul><li></li></ul></li><li><a href=#capture>Capture</a><ul><li></li></ul></li><li><a href=#layouts>Layouts</a><ul><li></li><li><a href=#camera-layouts-selection>Camera layouts selection</a></li><li><a href=#switching-camera-angles>Switching camera angles</a></li></ul></li><li><a href=#drawing-tools>Drawing Tools</a></li><li><a href=#explorer>Explorer</a><ul><li></li><li><a href=#filtering>Filtering</a></li></ul></li><li><a href=#resources--troubleshooting>Resources & Troubleshooting</a></li><li><a href=#most-common-problems>Most common problems</a></li><li><a href=#camera-troubleshooting>Camera Troubleshooting</a><ul><li><a href=#cameras-not-showing-up-in-the-camera-settings-list>Camera(s) not showing up in the camera settings list</a></li><li><a href=#no-data-received>No Data received</a></li><li><a href=#something-went-wrong>Something went wrong</a></li><li><a href=#dropped-frames--insufficient-data-received>Dropped frames / Insufficient data Received</a></li></ul></li><li><a href=#launch-monitor-troubleshooting>Launch Monitor Troubleshooting</a><ul><li></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh/index.html><span itemprop=name>Swing Catalyst 支持</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh/getting-started/index.html><span itemprop=name>开始使用</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>入门指南 - Swing Catalyst Home</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh/getting-started/license-key/index.html title="如何安装或更改您的许可证密钥 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh/getting-started/what-is-sc-home/index.html title="什么是 Swing Catalyst Home? (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=更多><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable getting-started" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=标签 style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/zh/tags/getting-started/index.html>Getting-Started</a></li><li><a class=term-link href=/sc-support/zh/tags/gige-camera/index.html>Gige-Camera</a></li><li><a class=term-link href=/sc-support/zh/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/zh/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=入门指南---swing-catalyst-home>入门指南 - Swing Catalyst Home</h1><h2 id=介绍>介绍<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>本文是 Swing Catalyst Home 的入门指南。</p><p>您的产品与本指南中的屏幕截图可能存在一些差异。</p><h2 id=要求>要求<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>有效的 Home 订阅</li></ul><p>Swing Catalyst 9.7 or newer (<a href=/sc-support/zh/getting-started/check-version/index.html>Which version do I have?)</a></p><ul><li>Computer specifications:</li></ul><p>Please note that Swing Catalyst will only run on Windows 10/11.</p><p><a href=https://www.foresightsports.com/fsx-2020-download-and-installation-guide#section-1416 rel=external>Foresight (FSX 2020/Play Recommended PC specifications)</a> - Applies to Foresight customers.</p><ul><li><a href=/sc-support/zh/getting-started/system-requirements/index.html>Swing Catalyst Recommended specifications</a></li></ul><h2 id=image3png><a href=#R-image-3c6b2796fc49e3b2c0a69bf2f916fe8d class=lightbox-link><img alt=image3.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/image3-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-3c6b2796fc49e3b2c0a69bf2f916fe8d><img alt=image3.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/image3-png.png></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h2 id=getting-started>Getting Started<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>This guide is split up into different categories & steps.</p><ul><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#installing-the-software-and-license-key>Installing the software and license key</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#connecting-one-or-more-cameras>Connecting one or more cameras</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#connecting-a-launch-monitor>Connecting a launch monitor</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#creating-a-user>Creating a user</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#analyzing-a-swing>Analyzing a swing</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#capture>Capture</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#layouts>Layouts</a></p></li></ul><p><a href=/sc-support/zh/software-features/microphone-trigger/index.html>Microphone trigger (external page)</a></p><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#drawing-tools>Drawing Tools</a></p><ul><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#explorer>Explorer</a></p></li><li><p><a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#resources-troubleshooting>Resources & troubleshooting</a></p></li></ul><h2 id=installing-the-software-and-license-key>Installing the software and license key<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>With every new Swing Catalyst license there is an accompanying email with instructions. If you cannot find the email, please check your Spam folder or search your inbox</p><p>Follow the instructions to download & install Swing Catalyst, once installed enter the license key when prompted in the software.</p><p>Example email:</p><p><a href=#R-image-7a163a29356c41c38769e0560d6627de class=lightbox-link><img alt=firefox_2021-11-23_16-58-21.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/firefox-2021-11-23-16-58-21-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7a163a29356c41c38769e0560d6627de><img alt=firefox_2021-11-23_16-58-21.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/firefox-2021-11-23-16-58-21-png.png></a></p><p>Having problems getting the license key installed? Please see our <a href=/sc-support/zh/getting-started/license-key/index.html>step by step article</a>.</p><h2 id=connecting-one-or-more-cameras>Connecting one or more cameras<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Please see this <a href=/sc-support/zh/cameras-video/supported-cameras/index.html>list of supported cameras.</a></p><p>If you are using a FLIR, IDS or AVT camera, you may need to download & install appropriate drivers. Please take a look at our <a href=https://swingcatalyst.com/downloads/ rel=external>Driver section</a>. If you are using a FLIR camera, please see our <a href=/sc-support/zh/cameras-video/flir-spinnaker-cameras/index.html>dedicated camera guides</a>.</p><p>Note: We recommend making sure FSX and Swing Catalyst is <em>not running</em> before performing any camera related driver installation. Once the drivers are installed you may need to restart your computer.</p><p>From the main menu, settings can be found by clicking the gears icon.</p><p><a href=#R-image-b35788f55f5f0ede93887c31efa6b86a class=lightbox-link><img alt=MotionCatalyst_2021-11-23_17-48-52.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-17-48-52-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b35788f55f5f0ede93887c31efa6b86a><img alt=MotionCatalyst_2021-11-23_17-48-52.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-17-48-52-png.png></a></p><p>Detected cameras will automatically be listed in the camera list.</p><p><a href=#R-image-883617513df53af8abffd81e5ac48157 class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-02-40.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-02-40-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-883617513df53af8abffd81e5ac48157><img alt=MotionCatalyst_2021-11-23_18-02-40.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-02-40-png.png></a></p><p>In order to use the camera it needs to have an angle designated.</p><p>Select an angle by clicking the disabled icon and then enabling the camera by changing &ldquo;OFF&rdquo; to &ldquo;ON&rdquo;.</p><p><a href=#R-image-97d4a90042fd9ff754fe699547210215 class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-04-32.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-04-32-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-97d4a90042fd9ff754fe699547210215><img alt=MotionCatalyst_2021-11-23_18-04-32.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-04-32-png.png></a></p><p><a href=#R-image-3403f5d96e475f3c5fc2fdfe62dec8e7 class=lightbox-link><img alt=2021-11-23_18-06-57.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-23-18-06-57-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-3403f5d96e475f3c5fc2fdfe62dec8e7><img alt=2021-11-23_18-06-57.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-23-18-06-57-gif.png></a></p><h2 id=connecting-a-launch-monitor>Connecting a Launch Monitor<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Under “Hardware Settings” you can choose between supported launch monitors.</p><p>In 97. and 9.8 you can select your launch monitor in the list, switch it to “ON” and enable “Use as trigger".</p><p><a href=#R-image-1a524198a50b494eff6e42dc8e8c6de4 class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-11-28.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-11-28-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1a524198a50b494eff6e42dc8e8c6de4><img alt=MotionCatalyst_2021-11-23_18-11-28.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-11-28-png.png></a></p><p>In version 10.0 and later simply turn on launch monitor support and press search. SC should detect any connected and compatible launch monitors.</p><p><a href=#R-image-972d7eebf15394645b416523ac650e01 class=lightbox-link><img alt=MotionCatalyst_a9jakWp0of.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-a9jakwp0of-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-972d7eebf15394645b416523ac650e01><img alt=MotionCatalyst_a9jakWp0of.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-a9jakwp0of-gif.png></a></p><ul><li><p>Make sure that the launch monitor is switched on and connected to the PC.</p></li><li><p>We always recommend using a wired connection if possible, .e.g. USB or Ethernet over WiFi.</p></li></ul><p>For a more detailed description of how you set up your launch monitor, please refer to these guides:</p><ul><li><p><a href=/sc-support/zh/hardware/foresight-gcquad/index.html>Foresight GCQuad/GCHawk</a></p></li><li><p><a href=/sc-support/zh/hardware/foresight-gc3-launch-pro/index.html>Foresight GC3 / Bushnell Launch Pro</a></p></li><li><p><a href=/sc-support/zh/hardware/foresight-gc2-hmt/index.html>Foresight GC2*</a></p></li><li><p><a href=/sc-support/zh/hardware/flightscope-setup/index.html>Flightscope X-Series</a></p></li><li><p><a href=/sc-support/zh/hardware/full-swing-golf/index.html>FullSwing (E6)</a></p></li><li><p><a href=/sc-support/zh/hardware/flightscope-mevo/index.html>FlightScope Mevo+</a></p></li></ul><p>*The Foresight GC2 integration does not support simultaneous connection with FSX, to use the GC2 with FSX, Foresight GC2 (Sim) must be selected.</p><p>If you selected a launch monitor as a trigger device, it will automatically record your                              swing while in capture mode. If you do not have a launch monitor, no problem, you can use a <a href=/sc-support/zh/software-features/microphone-trigger/index.html>microphone as a trigger instead!</a></p><h2 id=creating-a-user>Creating a user<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Create a user by following these steps and recording a swing.</p><p>A user is automatically generated the first time you run Swing Catalyst. This user is generated based on the license details. If you wish to edit the profile information, feel free to do so.</p><p>From the main menu, click “Start”</p><p><a href=#R-image-9e943910ce98be8320e59135864a587a class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-36-22.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-36-22-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9e943910ce98be8320e59135864a587a><img alt=MotionCatalyst_2021-11-23_18-36-22.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-36-22-png.png></a></p><p>Click the Select User drop down button and click &ldquo;New&rdquo;:</p><p><a href=#R-image-1020372d2d0cd94b4c4cdaf79cb7e5db class=lightbox-link><img alt=2021-11-23_18-34-29.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-23-18-34-29-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1020372d2d0cd94b4c4cdaf79cb7e5db><img alt=2021-11-23_18-34-29.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-23-18-34-29-png.png></a></p><p>Note: A user is automatically generated based on your license details, if you wish to edit these or add a new user this can be done by clicking &ldquo;New&rdquo; or &ldquo;Edit&rdquo; respectively.</p><p>Enter a name and click &ldquo;Save&rdquo;</p><p><a href=#R-image-6f8d5a5e9d50cc81c49603cf83a4a846 class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-37-48.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-37-48-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6f8d5a5e9d50cc81c49603cf83a4a846><img alt=MotionCatalyst_2021-11-23_18-37-48.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-23-18-37-48-png.png></a>
-Some Home licenses have a max user restriction, this limits how many user profiles can be stored in Swing Catalyst.</p><h2 id=analyzing-a-swing>Analyzing a swing<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>In this example screenshot from Ian Poulter we have recorded a swing with two high speed cameras along with our Motion Plate and a Foresight GCQuad as launch monitor.</p><ul><li>P.s: Tour Swings can easily be purchased from our <a href=https://shop-world.swingcatalyst.com/pages/tour-swings rel=external>web shop!</a></li></ul><p><a href=#R-image-d1418adfb84bcf92a5b12a22d874173c class=lightbox-link><img alt=twocam.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/twocam-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d1418adfb84bcf92a5b12a22d874173c><img alt=twocam.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/twocam-png.png></a></p><p>Let&rsquo;s take a look at the Swing Catalyst interface and some of the menu&rsquo;s and buttons.</p><p>The Analysis menu toolbar</p><p><a href=#R-image-f534d57c38b30c11f52cbf4a69ef0f15 class=lightbox-link><img alt=SnoopScreenshot_AnalysisMenu2_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-analysismenu2-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-f534d57c38b30c11f52cbf4a69ef0f15><img alt=SnoopScreenshot_AnalysisMenu2_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-analysismenu2-150-png.png></a></p><p>From left to right: Menu, <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#explorer>Explorer</a>, <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#switch-user>Switch User</a>, <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#capture>Capture</a>, <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#capture-options>Capture Options</a> and <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#layouts>Layout</a>.</p><p>The Swing Catalyst icon is also the menu button which serves as a quick way to access settings and ending the current session.</p><p><a href=#R-image-df60e2465dbf5f4d79034919aae9db60 class=lightbox-link><img alt=2021-11-24_15-32-09.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-15-32-09-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-df60e2465dbf5f4d79034919aae9db60><img alt=2021-11-24_15-32-09.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-15-32-09-png.png></a></p><h4 id=switching-users>Switching Users<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-6f216894b0d39aafa360975ab4150e13 class=lightbox-link><img alt=2021-11-24_15-40-01.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-15-40-01-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6f216894b0d39aafa360975ab4150e13><img alt=2021-11-24_15-40-01.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-15-40-01-png.png></a></p><h2 id=capture>Capture<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>In order to record a swing you need to be in capture mode.</p><p>When clicking the &ldquo;Capture&rdquo; button you automatically go from playback to capture mode.</p><p>The &ldquo;Capture Ready&rdquo; icon in green signifies that the system is ready to capture. With Swing Catalyst Home you will enter this mode automatically on starting a session!</p><p><a href=#R-image-585bc0d718dba3b89b6eaee82694255f class=lightbox-link><img alt=2021-11-24_15-41-54.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-15-41-54-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-585bc0d718dba3b89b6eaee82694255f><img alt=2021-11-24_15-41-54.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-15-41-54-gif.png></a></p><p>&ldquo;Capture Ready&rdquo; simply means that the capture mode is armed and Swing Catalyst is actively streaming data. Only saved once a trigger event has happened e.g. (manual trigger, launch monitor, microphone).</p><h4 id=capture-options>Capture Options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Choose between different trigger options such as microphone or launch monitor, and change capture modes.</p><p><a href=#R-image-ce8ad7e09e41be79dca4d3a1aafba27e class=lightbox-link><img alt=MotionCatalyst_2021-11-24_16-05-48.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-16-05-48-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-ce8ad7e09e41be79dca4d3a1aafba27e><img alt=MotionCatalyst_2021-11-24_16-05-48.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-16-05-48-png.png></a></p><h2 id=layouts>Layouts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>You can choose different layouts in Swing Catalyst by using the &ldquo;Layout&rdquo; drop-down button.</p><p>Swing Catalyst remembers the last layout used in Playback and Capture mode respectively.</p><p><a href=#R-image-52d15bd06f7009fb410b80126a6b218d class=lightbox-link><img alt=MotionCatalyst_2021-11-24_12-09-17.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-12-09-17-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-52d15bd06f7009fb410b80126a6b218d><img alt=MotionCatalyst_2021-11-24_12-09-17.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-12-09-17-png.png></a></p><p>As visualized in the iconography, the layouts have some differences in what is shown and how it is shown.</p><p>Example of the &ldquo;Single Recording&rdquo; layout with 2 cameras.</p><p><a href=#R-image-b0e075a54724284934946775769b2d69 class=lightbox-link><img alt=twocam.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/twocam-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b0e075a54724284934946775769b2d69><img alt=twocam.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/twocam-png.png></a></p><p>The &ldquo;Compare&rdquo; mode layout with one camera:</p><p><a href=#R-image-44631eb22fff31a5f29cd50eb9e005e3 class=lightbox-link><img alt=compare.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/compare-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-44631eb22fff31a5f29cd50eb9e005e3><img alt=compare.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/compare-png.png></a></p><p>Here the recordings are split into two separate &ldquo;view ports&rdquo;, &ldquo;A&rdquo; and &ldquo;B&rdquo;. If we look more closely at the bottom of the screen, previously recorded (or opened) recordings show up in the stack.</p><h4 id=the-stack>The Stack<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-066aacbbbf4aae8b21b9c44bc4746f96 class=lightbox-link><img alt=MotionCatalyst_2021-11-25_13-41-24.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-25-13-41-24-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-066aacbbbf4aae8b21b9c44bc4746f96><img alt=MotionCatalyst_2021-11-25_13-41-24.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-25-13-41-24-png.png></a></p><p>The stack shows the last recording with the newest recordings leftmost.</p><p>In this example the recording tagged with an orange A is to show that this recording is open in &ldquo;View port A&rdquo;. The orange underlining of the recording indicates it&rsquo;s selected.</p><p>You can quickly view information about a recording by clicking it once:</p><p><a href=#R-image-56069fe69cc711490aaab47445d0b55c class=lightbox-link><img alt=2021-11-24_16-31-49.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-16-31-49-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-56069fe69cc711490aaab47445d0b55c><img alt=2021-11-24_16-31-49.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-16-31-49-gif.png></a></p><p>It&rsquo;s also possible to give a rating (1-3 stars) to a recording. For example, you can filter by rating in the <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html#explorer>Explorer</a></p><p>Swing Catalyst will display notifications bottom right of the screen while in capture mode.</p><p><a href=#R-image-73099882a454cd84191a69b3229e2ab6 class=lightbox-link><img alt=MotionCatalyst_2021-11-25_15-09-47.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-25-15-09-47-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-73099882a454cd84191a69b3229e2ab6><img alt=MotionCatalyst_2021-11-25_15-09-47.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-25-15-09-47-png.png></a></p><p><a href=#R-image-432210ade5a8c17e2556670753d2401a class=lightbox-link><img alt=SnoopScreenshot_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-432210ade5a8c17e2556670753d2401a><img alt=SnoopScreenshot_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-150-png.png></a></p><p>Recording progress & status is indicated by the progress circle where the stack is. The &ldquo;Discard Recording&rdquo; button allows you to cancel the recording at any time.</p><p><a href=#R-image-02705530b530b614d8783e131ac0a63d class=lightbox-link><img alt=SnoopScreenshot_Capturing1_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-capturing1-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-02705530b530b614d8783e131ac0a63d><img alt=SnoopScreenshot_Capturing1_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-capturing1-150-png.png></a></p><p>The indicator can be clicked to reveal more details about what is being processed.</p><p><a href=#R-image-9ec2e2439761c8b0c7b478a334b79178 class=lightbox-link><img alt=SnoopScreenshot_Capturing1_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-capturing1-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9ec2e2439761c8b0c7b478a334b79178><img alt=SnoopScreenshot_Capturing1_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-capturing1-150-png.png></a></p><h3 id=camera-layouts-selection>Camera layouts selection<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>In the same dropdown menu, &ldquo;Layout&rdquo;, you can select the amount of different camera angles to show, depending on the layout. In playback mode (when viewing a recorded swing) the camera selection depends solely on how many cameras were used to create the recording.</p><p>In capture mode, the amount of visible cameras depend on how many cameras you have enabled on your system, and whether or not the license supports the amount of cameras you wish to use.</p><h3 id=switching-camera-angles>Switching camera angles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If you have recordings with more than one camera it&rsquo;s possible to change the viewed camera by clicking the camera icon.</p><p><a href=#R-image-04604a1c172e1b58a9ccbb3580e09bb6 class=lightbox-link><img alt=2021-11-24_14-15-45.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-15-45-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-04604a1c172e1b58a9ccbb3580e09bb6><img alt=2021-11-24_14-15-45.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-15-45-png.png></a></p><p><a href=#R-image-bcad1a07cb9907da1d1838e268d556b7 class=lightbox-link><img alt=2021-11-24_14-17-09.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-17-09-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-bcad1a07cb9907da1d1838e268d556b7><img alt=2021-11-24_14-17-09.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-17-09-png.png></a></p><p>It&rsquo;s also possible to do some minor camera adjustments from here such as mirror and rotating the camera angle. These changes apply to the recording only, and can be helpful if you wish to compare a left handed user with a right handed etc.</p><p><a href=#R-image-02d708edfa92afa8bf3c607fbef79bba class=lightbox-link><img alt=2021-11-24_14-18-41.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-18-41-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-02d708edfa92afa8bf3c607fbef79bba><img alt=2021-11-24_14-18-41.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-18-41-png.png></a></p><h2 id=drawing-tools>Drawing Tools<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>As seen in the screenshot above, the drawing tools can be found on the left hand side of the software.</p><p><a href=#R-image-fd4be949c4f470913ed886fa00e78436 class=lightbox-link><img alt=mceclip0.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/mceclip0-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-fd4be949c4f470913ed886fa00e78436><img alt=mceclip0.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/mceclip0-png.png></a></p><p>Drawing tools allow you to draw on top of the video image, both on already recorded videos, but also on the live video &ldquo;feed&rdquo; (while in capture mode).</p><p>The line tool has a selection of different line types to choose from, the standard &ldquo;Line&rdquo; allows you to create a straight line between any point.</p><p><a href=#R-image-5caa8f2dec377a5e4b485a703746b1dd class=lightbox-link><img alt=2021-11-24_14-21-59.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-21-59-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5caa8f2dec377a5e4b485a703746b1dd><img alt=2021-11-24_14-21-59.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-21-59-png.png></a></p><p>There are three different line thicknesses to choose from.</p><p><a href=#R-image-112cda360d15ee138f5ff4dd5ddffcdc class=lightbox-link><img alt=2021-11-24_14-28-49.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-28-49-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-112cda360d15ee138f5ff4dd5ddffcdc><img alt=2021-11-24_14-28-49.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-28-49-png.png></a></p><p>Different colors make it easier to distinguish between different lines.</p><p><a href=#R-image-d7d203fa19e9b5636107dba771485344 class=lightbox-link><img alt=MotionCatalyst_2021-11-24_14-27-48.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-14-27-48-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d7d203fa19e9b5636107dba771485344><img alt=MotionCatalyst_2021-11-24_14-27-48.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-14-27-48-png.png></a></p><p>Zoom And Pan Tool</p><p>At the very bottom of the toolbar below the drawing tools, is the zoom and pan tool and the &ldquo;Fill Video View&rdquo; button.</p><p>It&rsquo;s also possible to zoom & manipulate the video image by holding the Ctrl button and scrolling the mouse wheel at the same time.</p><p><a href=#R-image-eb5839c1550987fee69768f6d976d98c class=lightbox-link><img alt=2021-11-24_14-33-19.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-33-19-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-eb5839c1550987fee69768f6d976d98c><img alt=2021-11-24_14-33-19.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/2021-11-24-14-33-19-gif.png></a></p><h2 id=explorer>Explorer<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>You can easily manage your recordings here. The Explorer is grouped into three &ldquo;sections&rdquo;:</p><p>On the left are users that are registered in the system, in the middle are all of the recordings for the respective user, and on the right is the preview section.</p><p>Recordings are automatically grouped into sessions and sorted by date.</p><ul><li>Click on a swing and it will automatically preview in the &ldquo;Preview&rdquo; section (on the right).</li></ul><p>You can also open recordings by right clicking and selecting which view port you wish to open them in, or alternatively drag the the &ldquo;Drop Recording here&rdquo; zones at the bottom.</p><p><a href=#R-image-2d97297945134b25cd16ae7051a51ae6 class=lightbox-link><img alt=MotionCatalyst_2021-11-24_15-33-38.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-15-33-38-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2d97297945134b25cd16ae7051a51ae6><img alt=MotionCatalyst_2021-11-24_15-33-38.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-24-15-33-38-png.png></a></p><h4 id=a-closeup-view-of-the-explorer-menu>A closeup view of the Explorer menu<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-005f8f1881a6b1591df4c786480330c5 class=lightbox-link><img alt=ExplorerMenu-SnoopScreenshot_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/explorermenu-snoopscreenshot-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-005f8f1881a6b1591df4c786480330c5><img alt=ExplorerMenu-SnoopScreenshot_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/explorermenu-snoopscreenshot-150-png.png></a></p><h3 id=filtering>Filtering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>It&rsquo;s possible to filter recordings based on different collected parameters such as:</p><ul><li><p>Sport (Although Swing Catalyst is only used for golf it&rsquo;s possible to view recordings from different sports)</p></li><li><p>Club type</p></li><li><p>Launch monitor data (carry distance, spin rate or smash factor)</p></li><li><p>Rating (1-3 star rating)</p></li></ul><p>This screenshot shows some of the filtering options available.</p><p><a href=#R-image-914f9d1f8512cb61568b25c419d647a9 class=lightbox-link><img alt=MotionCatalyst_2021-11-25_11-01-17.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-25-11-01-17-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-914f9d1f8512cb61568b25c419d647a9><img alt=MotionCatalyst_2021-11-25_11-01-17.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-11-25-11-01-17-png.png></a></p><h2 id=resources--troubleshooting>Resources & Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Here you can find resources and troubleshooting tips to solve the most common problems.</p><h2 id=most-common-problems>Most common problems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Most common problems users face are usually related to externally connected hardware, whether it is a camera, launch monitor, or sensor plate. Something as simple as a bad cable (for example, too long of a cable, or a incompatible USB extender) can cause problems. Therefor this section of the guide aims to help you either solve the issue or narrow down the cause of the issue.</p><h2 id=camera-troubleshooting>Camera Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Related articles & troubleshooting steps:</p><ul><li><p><a href=/sc-support/zh/cameras-video/dragon-usb2-camera/index.html>Web camera troubleshooting</a></p></li><li><p><a href=/sc-support/zh/cameras-video/flir-blackfly-usb-setup/index.html>FLIR BlackFly S USB - Getting started</a></p></li><li><p><a href=/sc-support/zh/cameras-video/flir-blackfly-gige-setup/index.html>FLIR BlackFly S GigE - Getting started</a></p></li></ul><h3 id=cameras-not-showing-up-in-the-camera-settings-list>Camera(s) not showing up in the camera settings list<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If the camera is not showing in the camera list the camera is not detected or connected properly.</p><ul><li><p>If the camera isn&rsquo;t showing up in the camera list it&rsquo;s most likely not recognized in Windows or in use by another application. Try disconnecting the camera and reconnecting it.</p></li><li><p>The camera might not be <a href=/sc-support/zh/cameras-video/supported-cameras/index.html>supported by Swing Catalyst</a>.</p></li><li><p>For The Imaging Source cameras: If you have the manufacturers driver installed you might need to uninstall it for it to work.</p></li><li><p>Ethernet (network) / GigE cameras might require IP configuration.</p></li></ul><h3 id=no-data-received>No Data received<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p><a href=#R-image-6203d134a061844a2c5b2653b7e2bdf2 class=lightbox-link><img alt=SnoopScreenshot_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6203d134a061844a2c5b2653b7e2bdf2><img alt=SnoopScreenshot_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-150-png.png></a></p><p>This indicates that Swing Catalyst is not receiving any video images or data to process.</p><p>Examples of causes for this type of error can be:</p><ul><li><p>Bad cable/connection: Try to disconnect the camera and connect it to a different USB port.</p></li><li><p>Erroneous settings: (Especially for web cameras and DirectShow cameras). Check the exposure setting, if auto-deselected and exposure is set very high the frame rate can drop significantly.</p></li><li><p>One fix for webcams may be to enable &ldquo;timestamp manually&rdquo; (see image below)</p></li></ul><p><a href=#R-image-580630b9c8ff24ba5135da876b654c4b class=lightbox-link><img alt=timestamp.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/timestamp-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-580630b9c8ff24ba5135da876b654c4b><img alt=timestamp.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/timestamp-png.png></a></p><h3 id=something-went-wrong>Something went wrong<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p><a href=#R-image-7d081f71d234e6573676b1463ab3cf28 class=lightbox-link><img alt=MotionCatalyst_2021-12-13_12-54-23.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-12-13-12-54-23-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7d081f71d234e6573676b1463ab3cf28><img alt=MotionCatalyst_2021-12-13_12-54-23.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/motioncatalyst-2021-12-13-12-54-23-png.png></a></p><p>This type of error is common if the camera is in use by another application. Especially web cameras can easily be in use by third-party software, try to close other programs and restart Swing Catalyst.</p><h3 id=dropped-frames--insufficient-data-received>Dropped frames / Insufficient data Received<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Dropped frames means the video frames/data that is transferred from the camera to the computer is lost in varying degree. Especially with multiple cameras, this is not good because suddenly one camera is missing parts of the swing. Swing Catalyst warns about this, and if the system is dropping too many frames it won&rsquo;t be possible to trigger a recording.</p><p>Causes for this could be:</p><ul><li><p>USB3 camera connected to a USB 2.0 port.</p></li><li><p>Using poorly designed cables or extender cables.</p></li><li><p>Exceeding the recommended cable length.</p></li><li><p>USB3 camera connected to a USB hub with other devices sharing the same hub, lack of bandwidth.</p></li><li><p>Ethernet camera connected to a network port that is not properly configured or doesn&rsquo;t support jumbo frames.</p></li><li><p>Camera uses too much bandwidth vs what is available on the system.</p></li></ul><p>Tips:</p><p>For USB cameras our recommendation is to try to lower the frame rate (and or device link throughput - for FLIR cameras) to reduce the bandwidth consumption.</p><ul><li><p>Lowering the frame rate (and or device link throughput).</p></li><li><p>If using multiple cameras, try to unplug or disable some cameras, does the system still report drop frames?</p></li><li><p>Examine cabling, are the cameras connected to a USB hub or extender? Try connecting them directly to the computer.</p></li><li><p>Try closing other software that is CPU and Graphics intensive to free up resources.</p></li></ul><h2 id=launch-monitor-troubleshooting>Launch Monitor Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>Launch monitor&rsquo;s support article section</li></ul><p>Here you can find a list of common issues with launch monitors and how to solve them.</p><h4 id=scenario-device-not-connected>Scenario: Device not connected<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><a href=#R-image-e522f76f857edd61f25c81040338bcb6 class=lightbox-link><img alt=SnoopScreenshot_150.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-150-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-e522f76f857edd61f25c81040338bcb6><img alt=SnoopScreenshot_150.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410620083090/snoopscreenshot-150-png.png></a></p><p>In the example scenario above, the launch monitor is enabled in settings but device is not connected / recognized.</p><p>Suggested troubleshooting steps:</p><ul><li><p>Check if the device is still turned on.</p></li><li><p>Try to restart the device.</p></li><li><p>Try to connect over USB or Ethernet where possible instead of WiFi.</p></li><li><p>Try to connect with the manufacturers software to confirm whether or not it&rsquo;s possible to connect.</p></li></ul><h4 id=scenario-not-triggering-recordings>Scenario: Not triggering recordings.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Launch monitor is connected and recognized but not triggering when in capture mode.</p><p>Suggested troubleshooting steps:</p><ul><li><p>Make sure <a href=/sc-support/zh/hardware/launch-monitor-trigger/index.html>trigger option is enabled.</a></p></li><li><p>Does ball and or club data appear on the device? (Can you verify it works outside of Swing Catalyst?).</p></li><li><p>Are there any dropped frame or insufficient data warnings? Swing Catalyst will not trigger if the camera is dropping frames.</p></li></ul><hr><p><em>Last updated: 2024-01-18</em> | <a href=/sc-support/zh/getting-started/swing-catalyst-home/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/zh/index.html><span class="logo-title default-animation">Swing Catalyst 支持</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="搜索 (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>搜索</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=搜索...>
-<button class=search-clear type=button data-search-clear title=清除搜索><i class="fas fa-fw fa-times" title=清除搜索></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li class=parent data-nav-id=/sc-support/zh/getting-started/index.html><a class="padding default-animation" href=/sc-support/zh/getting-started/index.html>开始使用</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu><li data-nav-id=/sc-support/zh/getting-started/user-guide/index.html><a class=padding href=/sc-support/zh/getting-started/user-guide/index.html>Swing Catalyst - 用户指南</a></li><li data-nav-id=/sc-support/zh/getting-started/faq/index.html><a class=padding href=/sc-support/zh/getting-started/faq/index.html>常见问题</a></li><li data-nav-id=/sc-support/zh/getting-started/install-uninstall/index.html><a class=padding href=/sc-support/zh/getting-started/install-uninstall/index.html>如何安装和卸载 Swing Catalyst</a></li><li data-nav-id=/sc-support/zh/getting-started/license-key/index.html><a class=padding href=/sc-support/zh/getting-started/license-key/index.html>如何安装或更改您的许可证密钥</a></li><li class=active data-nav-id=/sc-support/zh/getting-started/swing-catalyst-home/index.html><a class=padding href=/sc-support/zh/getting-started/swing-catalyst-home/index.html>入门指南 - Swing Catalyst Home</a></li><li data-nav-id=/sc-support/zh/getting-started/what-is-sc-home/index.html><a class=padding href=/sc-support/zh/getting-started/what-is-sc-home/index.html>什么是 Swing Catalyst Home?</a></li><li data-nav-id=/sc-support/zh/getting-started/system-requirements/index.html><a class=padding href=/sc-support/zh/getting-started/system-requirements/index.html>推荐的计算机规格</a></li><li data-nav-id=/sc-support/zh/getting-started/check-version/index.html><a class=padding href=/sc-support/zh/getting-started/check-version/index.html>我使用的是哪个版本的软件？</a></li></ul></li><li data-nav-id=/sc-support/zh/cameras-video/index.html><a class="padding default-animation" href=/sc-support/zh/cameras-video/index.html>摄像机和视频</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/hardware/index.html><a class="padding default-animation" href=/sc-support/zh/hardware/index.html>硬件</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/software-features/index.html><a class="padding default-animation" href=/sc-support/zh/software-features/index.html>软件与功能</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/account-setup/index.html><a class="padding default-animation" href=/sc-support/zh/account-setup/index.html>账户与设置</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/reference/index.html><a class="padding default-animation" href=/sc-support/zh/reference/index.html>参考资料</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>语言</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/getting-started/swing-catalyst-home/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/getting-started/swing-catalyst-home/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/getting-started/swing-catalyst-home/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/getting-started/swing-catalyst-home/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/getting-started/swing-catalyst-home/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/getting-started/swing-catalyst-home/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/getting-started/swing-catalyst-home/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/getting-started/swing-catalyst-home/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/getting-started/swing-catalyst-home/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/getting-started/swing-catalyst-home/index.html lang=zh selected data-selected>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/getting-started/swing-catalyst-home/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/getting-started/swing-catalyst-home/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/getting-started/swing-catalyst-home/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/getting-started/swing-catalyst-home/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/getting-started/swing-catalyst-home/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/getting-started/swing-catalyst-home/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/getting-started/swing-catalyst-home/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/getting-started/swing-catalyst-home/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/getting-started/swing-catalyst-home/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/getting-started/swing-catalyst-home/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/getting-started/swing-catalyst-home/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/getting-started/swing-catalyst-home/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/getting-started/swing-catalyst-home/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/getting-started/swing-catalyst-home/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/getting-started/swing-catalyst-home/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/getting-started/swing-catalyst-home/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/getting-started/swing-catalyst-home/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/getting-started/swing-catalyst-home/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/getting-started/swing-catalyst-home/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/getting-started/swing-catalyst-home/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/getting-started/swing-catalyst-home/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/getting-started/swing-catalyst-home/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/getting-started/swing-catalyst-home/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/getting-started/swing-catalyst-home/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/getting-started/swing-catalyst-home/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/getting-started/swing-catalyst-home/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>主题</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763270 defer></script><script src=/sc-support/js/theme.min.js?1771763270 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="zh" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="本文是 Swing Catalyst Home 的入门指南。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="入门指南 - Swing Catalyst Home :: Swing Catalyst 支持">
+    <meta name="twitter:description" content="本文是 Swing Catalyst Home 的入门指南。">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh/getting-started/swing-catalyst-home/index.html">
+    <meta property="og:site_name" content="Swing Catalyst 支持">
+    <meta property="og:title" content="入门指南 - Swing Catalyst Home :: Swing Catalyst 支持">
+    <meta property="og:description" content="本文是 Swing Catalyst Home 的入门指南。">
+    <meta property="og:locale" content="zh">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="入门指南">
+    <meta property="article:tag" content="Getting-Started">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Gige-Camera">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta itemprop="name" content="入门指南 - Swing Catalyst Home :: Swing Catalyst 支持">
+    <meta itemprop="description" content="本文是 Swing Catalyst Home 的入门指南。">
+    <meta itemprop="wordCount" content="330">
+    <meta itemprop="keywords" content="Getting-Started,Troubleshooting,Gige-Camera,Usb-Camera">
+    <title>入门指南 - Swing Catalyst Home :: Swing Catalyst 支持</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/getting-started/swing-catalyst-home/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520116" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520116" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772520116";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772520116" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['zh'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520116" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520116" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520116" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520116" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520116" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/getting-started\/swing-catalyst-home\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `复制文本到剪贴板`;
+      window.T_Copied_to_clipboard = `文本已复制到剪贴板！`;
+      window.T_Link_copied_to_clipboard = `链接已复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+      window.T_Browser_unsupported_feature = `此浏览器不支持此功能`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/zh/getting-started/swing-catalyst-home/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#系统要求">系统要求</a></li>
+    <li><a href="#image3png"><img src="../../assets/images/4410620083090/image3-png.png" alt="image3.png"></a></li>
+    <li><a href="#入门指南">入门指南</a></li>
+    <li><a href="#安装软件和许可证密钥">安装软件和许可证密钥</a></li>
+    <li><a href="#连接一个或多个摄像头">连接一个或多个摄像头</a></li>
+    <li><a href="#连接弹道仪">连接弹道仪</a></li>
+    <li><a href="#创建用户">创建用户</a></li>
+    <li><a href="#分析挥杆">分析挥杆</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#捕捉">捕捉</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#布局">布局</a>
+      <ul>
+        <li></li>
+        <li><a href="#摄像头布局选择">摄像头布局选择</a></li>
+        <li><a href="#切换摄像头角度">切换摄像头角度</a></li>
+      </ul>
+    </li>
+    <li><a href="#绘图工具">绘图工具</a></li>
+    <li><a href="#资源管理器">资源管理器</a>
+      <ul>
+        <li></li>
+        <li><a href="#滤波">滤波</a></li>
+      </ul>
+    </li>
+    <li><a href="#资源和故障排除">资源和故障排除</a></li>
+    <li><a href="#最常见的问题">最常见的问题</a></li>
+    <li><a href="#摄像头故障排除">摄像头故障排除</a>
+      <ul>
+        <li><a href="#摄像头未显示在摄像头设置列表中">摄像头未显示在摄像头设置列表中</a></li>
+        <li><a href="#未接收数据">未接收数据</a></li>
+        <li><a href="#出现错误">出现错误</a></li>
+        <li><a href="#丢帧--接收数据不足">丢帧 / 接收数据不足</a></li>
+      </ul>
+    </li>
+    <li><a href="#launch-monitor故障排除">Launch Monitor故障排除</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/index.html"><span itemprop="name">Swing Catalyst 支持</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/getting-started/index.html"><span itemprop="name">入门指南</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">入门指南 - Swing Catalyst Home</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh/getting-started/license-key/index.html" title="如何安装或更改您的许可证密钥 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh/getting-started/what-is-sc-home/index.html" title="什么是 Swing Catalyst Home？ (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable getting-started" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/zh/tags/getting-started/index.html">Getting-Started</a></li>
+    <li><a class="term-link" href="/sc-support/zh/tags/gige-camera/index.html">Gige-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/zh/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/zh/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="入门指南---swing-catalyst-home">入门指南 - Swing Catalyst Home</h1>
+
+<h2 id="简介">简介<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>本文是 Swing Catalyst Home 的入门指南。</p>
+<p>您的产品和本指南中的屏幕截图可能存在一些差异。</p>
+<h2 id="系统要求">系统要求<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>有效的 Home 订阅</li>
+</ul>
+<p>Swing Catalyst 9.7 或更新版本（<a href="/sc-support/zh/getting-started/check-version/index.html">我使用的是哪个版本？</a>）</p>
+<ul>
+<li>计算机规格：</li>
+</ul>
+<p>请注意，Swing Catalyst 仅在 Windows 10/11 上运行。</p>
+<p><a href="https://www.foresightsports.com/fsx-2020-download-and-installation-guide#section-1416" rel="external">Foresight (FSX 2020/Play 推荐 PC 规格)</a> - 适用于 Foresight 客户。</p>
+<ul>
+<li><a href="/sc-support/zh/getting-started/system-requirements/index.html">Swing Catalyst 推荐规格</a></li>
+</ul>
+<h2 id="image3png"><a href="#R-image-b0ad8be43f932fe9f387ef4fb4bd873a" class="lightbox-link"><img alt="image3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/image3-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0ad8be43f932fe9f387ef4fb4bd873a"><img alt="image3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/image3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="入门指南">入门指南<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>本指南分为不同的类别和步骤。</p>
+<ul>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#installing-the-software-and-license-key">安装软件和许可证密钥</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#connecting-one-or-more-cameras">连接一个或多个摄像头</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#connecting-a-launch-monitor">连接 Launch Monitor</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#creating-a-user">创建用户</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#analyzing-a-swing">分析挥杆</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#capture">捕捉</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#layouts">布局</a></p>
+</li>
+</ul>
+<p><a href="/sc-support/zh/software-features/microphone-trigger/index.html">麦克风触发器（外部页面）</a></p>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#drawing-tools">绘图工具</a></p>
+<ul>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#explorer">资源管理器</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#resources-troubleshooting">资源和故障排除</a></p>
+</li>
+</ul>
+<h2 id="安装软件和许可证密钥">安装软件和许可证密钥<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>每个新的 Swing Catalyst 许可证都附带一封电子邮件，其中包含说明。如果您找不到该电子邮件，请检查您的垃圾邮件文件夹或搜索您的收件箱。</p>
+<p>按照说明下载和安装 Swing Catalyst，安装后在软件出现提示时输入许可证密钥。</p>
+<p>示例电子邮件：</p>
+<p><a href="#R-image-41b0d4ead48bbb1248e589661be39fcc" class="lightbox-link"><img alt="firefox_2021-11-23_16-58-21.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/firefox-2021-11-23-16-58-21-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-41b0d4ead48bbb1248e589661be39fcc"><img alt="firefox_2021-11-23_16-58-21.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/firefox-2021-11-23-16-58-21-png.png"></a></p>
+<p>无法安装许可证密钥？请参阅我们的<a href="/sc-support/zh/getting-started/license-key/index.html">分步说明文章</a>。</p>
+<h2 id="连接一个或多个摄像头">连接一个或多个摄像头<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>请参阅此<a href="/sc-support/zh/cameras-video/supported-cameras/index.html">支持的摄像头列表。</a></p>
+<p>如果您使用的是 FLIR、IDS 或 AVT 摄像头，您可能需要下载并安装相应的驱动程序。请查看我们的<a href="https://swingcatalyst.com/downloads/" rel="external">驱动程序部分</a>。如果您使用的是 FLIR 摄像头，请参阅我们的<a href="/sc-support/zh/cameras-video/flir-spinnaker-cameras/index.html">专用摄像头指南</a>。</p>
+<p>注意：我们建议在执行任何与摄像头相关的驱动程序安装之前，确保 FSX 和 Swing Catalyst <em>未运行</em>。驱动程序安装完成后，您可能需要重新启动计算机。</p>
+<p>从主菜单，可以通过单击齿轮图标找到设置。</p>
+<p><a href="#R-image-dd2350e076bbd1cd4c074b0e35317f65" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_17-48-52.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-17-48-52-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd2350e076bbd1cd4c074b0e35317f65"><img alt="MotionCatalyst_2021-11-23_17-48-52.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-17-48-52-png.png"></a></p>
+<p>检测到的摄像头将自动列在摄像头列表中。</p>
+<p><a href="#R-image-405266422f6e09c3e8eac54f4d7d5790" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-02-40.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-02-40-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-405266422f6e09c3e8eac54f4d7d5790"><img alt="MotionCatalyst_2021-11-23_18-02-40.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-02-40-png.png"></a></p>
+<p>要使用摄像头，需要指定一个角度。</p>
+<p>通过单击禁用的图标选择一个角度，然后将&quot;OFF&quot;更改为&quot;ON&quot;来启用摄像头。</p>
+<p><a href="#R-image-805d1d8c4e300489d4480e53695c991c" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-805d1d8c4e300489d4480e53695c991c"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p><a href="#R-image-2798aa63177e8e996e2e8996d7cd0ec9" class="lightbox-link"><img alt="2021-11-23_18-06-57.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-23-18-06-57-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2798aa63177e8e996e2e8996d7cd0ec9"><img alt="2021-11-23_18-06-57.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-23-18-06-57-gif.png"></a></p>
+<h2 id="连接弹道仪">连接弹道仪<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>在&quot;硬件设置&quot;下，您可以在支持的弹道仪之间进行选择。</p>
+<p>在版本 9.7 和 9.8 中，您可以在列表中选择您的弹道仪，将其切换为&quot;打开&quot;并启用&quot;用作触发器&quot;。</p>
+<p><a href="#R-image-7763ab8a391592f7be152ac2454ee1f3" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-11-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-11-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7763ab8a391592f7be152ac2454ee1f3"><img alt="MotionCatalyst_2021-11-23_18-11-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-11-28-png.png"></a></p>
+<p>在版本 10.0 及更高版本中，只需打开弹道仪支持并按搜索。SC 应该会检测到任何已连接且兼容的弹道仪。</p>
+<p><a href="#R-image-97d932b55b854c5de4ad3f074eed10ce" class="lightbox-link"><img alt="MotionCatalyst_a9jakWp0of.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-a9jakwp0of-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-97d932b55b854c5de4ad3f074eed10ce"><img alt="MotionCatalyst_a9jakWp0of.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-a9jakwp0of-gif.png"></a></p>
+<ul>
+<li>
+<p>确保弹道仪已打开并连接到 PC。</p>
+</li>
+<li>
+<p>我们始终建议尽可能使用有线连接，例如 USB 或以太网而非 WiFi。</p>
+</li>
+</ul>
+<p>关于如何设置弹道仪的更详细说明，请参阅这些指南：</p>
+<ul>
+<li>
+<p><a href="/sc-support/zh/hardware/foresight-gcquad/index.html">Foresight GCQuad/GCHawk</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/hardware/foresight-gc3-launch-pro/index.html">Foresight GC3 / Bushnell Launch Pro</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/hardware/foresight-gc2-hmt/index.html">Foresight GC2*</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/hardware/flightscope-setup/index.html">FlightScope X-Series</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/hardware/full-swing-golf/index.html">FullSwing (E6)</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/hardware/flightscope-mevo/index.html">FlightScope Mevo+</a></p>
+</li>
+</ul>
+<p>*Foresight GC2 集成不支持与 FSX 同时连接，要将 GC2 与 FSX 一起使用，必须选择 Foresight GC2 (Sim)。</p>
+<p>如果您选择弹道仪作为触发设备，它将在捕捉模式下自动录制您的挥杆。如果您没有弹道仪，没关系，您可以<a href="/sc-support/zh/software-features/microphone-trigger/index.html">改为使用麦克风作为触发器！</a></p>
+<h2 id="创建用户">创建用户<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>按照以下步骤创建用户并录制一次挥杆。</p>
+<p>当您首次运行 Swing Catalyst 时，系统会自动生成一个用户。该用户是根据许可证详细信息生成的。如果您希望编辑配置文件信息，请随时进行编辑。</p>
+<p>从主菜单中，点击&quot;开始&quot;</p>
+<p><a href="#R-image-d88468b0a0734a228060492a78ee12c6" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-36-22.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-36-22-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d88468b0a0734a228060492a78ee12c6"><img alt="MotionCatalyst_2021-11-23_18-36-22.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-36-22-png.png"></a></p>
+<p>点击&quot;选择用户&quot;下拉按钮，然后点击&quot;新建&quot;：</p>
+<p><a href="#R-image-75ecba5533a0305c086976dbf70ddec6" class="lightbox-link"><img alt="2021-11-23_18-34-29.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-23-18-34-29-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-75ecba5533a0305c086976dbf70ddec6"><img alt="2021-11-23_18-34-29.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-23-18-34-29-png.png"></a></p>
+<p>注意：系统会根据您的许可证详细信息自动生成用户，如果您希望编辑这些或添加新用户，可以分别点击&quot;新建&quot;或&quot;编辑&quot;来进行操作。</p>
+<p>输入名称并点击&quot;保存&quot;</p>
+<p><a href="#R-image-3197e36ab0e15fc49bc8b32250256408" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-37-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-37-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3197e36ab0e15fc49bc8b32250256408"><img alt="MotionCatalyst_2021-11-23_18-37-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-23-18-37-48-png.png"></a>
+某些家庭许可证有最大用户限制，这限制了可以在 Swing Catalyst 中存储多少个用户配置文件。</p>
+<h2 id="分析挥杆">分析挥杆<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>在这个来自伊恩·保利特的示例截图中，我们使用两个高速摄像机以及我们的 Motion Plate 和 Foresight GCQuad 弹道仪录制了一次挥杆。</p>
+<ul>
+<li>附注：职业挥杆可以轻松从我们的<a href="https://shop-world.swingcatalyst.com/pages/tour-swings" rel="external">网店购买！</a></li>
+</ul>
+<p><a href="#R-image-120b47469d711e35d0fb3ac9903fb8ac" class="lightbox-link"><img alt="twocam.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/twocam-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-120b47469d711e35d0fb3ac9903fb8ac"><img alt="twocam.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/twocam-png.png"></a></p>
+<p>让我们来看一下 Swing Catalyst 界面和一些菜单和按钮。</p>
+<p>分析菜单工具栏</p>
+<p><a href="#R-image-dcfed385996afae6eb633fa2a6c70f1e" class="lightbox-link"><img alt="SnoopScreenshot_AnalysisMenu2_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-analysismenu2-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dcfed385996afae6eb633fa2a6c70f1e"><img alt="SnoopScreenshot_AnalysisMenu2_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-analysismenu2-150-png.png"></a></p>
+<p>从左到右：菜单、<a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#explorer">资源管理器</a>、<a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#switch-user">切换用户</a>、<a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#capture">捕捉</a>、<a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#capture-options">捕捉选项</a>和<a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#layouts">布局</a>。</p>
+<p>Swing Catalyst 图标也是菜单按钮，它可以快速访问设置和结束当前会话。</p>
+<p><a href="#R-image-c126ffd7434db17c255e3abe70a07395" class="lightbox-link"><img alt="2021-11-24_15-32-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-15-32-09-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c126ffd7434db17c255e3abe70a07395"><img alt="2021-11-24_15-32-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-15-32-09-png.png"></a></p>
+<h4 id="切换用户">切换用户<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-4669d1efea0c96e3a10ec45543765af3" class="lightbox-link"><img alt="2021-11-24_15-40-01.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-15-40-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4669d1efea0c96e3a10ec45543765af3"><img alt="2021-11-24_15-40-01.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-15-40-01-png.png"></a></p>
+<h2 id="捕捉">捕捉<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>要录制挥杆，您需要进入捕捉模式。</p>
+<p>点击&quot;捕捉&quot;按钮后，您会自动从播放模式切换到捕捉模式。</p>
+<p>绿色的&quot;捕捉就绪&quot;图标表示系统已准备好捕捉。使用 Swing Catalyst Home 时，启动会话时会自动进入此模式！</p>
+<p><a href="#R-image-c12f8eb3225f18595b9590f12772870b" class="lightbox-link"><img alt="2021-11-24_15-41-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-15-41-54-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c12f8eb3225f18595b9590f12772870b"><img alt="2021-11-24_15-41-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-15-41-54-gif.png"></a></p>
+<p>&ldquo;捕捉就绪&quot;只是表示捕捉模式已启动，SwingCatalyst 正在主动流传输数据。仅在触发事件发生后（例如手动触发、弹道仪、麦克风）才会保存。</p>
+<h4 id="捕捉选项">捕捉选项<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>在不同的触发选项（如麦克风或弹道仪）之间选择，并更改捕捉模式。</p>
+<p><a href="#R-image-fd4e725aeb0cfc2a9b77575a86c7ce24" class="lightbox-link"><img alt="MotionCatalyst_2021-11-24_16-05-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-16-05-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd4e725aeb0cfc2a9b77575a86c7ce24"><img alt="MotionCatalyst_2021-11-24_16-05-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-16-05-48-png.png"></a></p>
+<h2 id="布局">布局<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>您可以使用&quot;布局&quot;下拉按钮在 SwingCatalyst 中选择不同的布局。</p>
+<p>SwingCatalyst 会分别记住在播放和捕捉模式下最后使用的布局。</p>
+<p><a href="#R-image-0670f424614d02a9715407182dae7f6f" class="lightbox-link"><img alt="MotionCatalyst_2021-11-24_12-09-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-12-09-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0670f424614d02a9715407182dae7f6f"><img alt="MotionCatalyst_2021-11-24_12-09-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-12-09-17-png.png"></a></p>
+<p>如图标所示，这些布局在显示内容和显示方式上存在一些差异。</p>
+<p>带有 2 个摄像头的&quot;单个录制&quot;布局示例。</p>
+<p><a href="#R-image-916c115fa330a54d9aba16b011afcb7d" class="lightbox-link"><img alt="twocam.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/twocam-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-916c115fa330a54d9aba16b011afcb7d"><img alt="twocam.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/twocam-png.png"></a></p>
+<p>带有一个摄像头的&quot;比较&quot;模式布局：</p>
+<p><a href="#R-image-ec856bd5442ba239509b2b50920af306" class="lightbox-link"><img alt="compare.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/compare-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec856bd5442ba239509b2b50920af306"><img alt="compare.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/compare-png.png"></a></p>
+<p>此处录制内容被分为两个独立的&quot;视口&quot;&ldquo;A&quot;和&quot;B&rdquo;。如果我们仔细查看屏幕底部，之前录制（或打开）的录制内容会显示在堆栈中。</p>
+<h4 id="堆栈">堆栈<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-fa1802146f513da585b5af7e9e1eaa14" class="lightbox-link"><img alt="MotionCatalyst_2021-11-25_13-41-24.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-25-13-41-24-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fa1802146f513da585b5af7e9e1eaa14"><img alt="MotionCatalyst_2021-11-25_13-41-24.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-25-13-41-24-png.png"></a></p>
+<p>堆栈显示最后的录制，最新的录制位于最左边。</p>
+<p>在此示例中，标记为橙色 A 的录制表示此录制在&quot;视口 A&quot;中打开。录制的橙色下划线表示它已被选中。</p>
+<p>您可以通过单击一次录制来快速查看其信息：</p>
+<p><a href="#R-image-ef37e87155653071e7c33e31f3c837d0" class="lightbox-link"><img alt="2021-11-24_16-31-49.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-16-31-49-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef37e87155653071e7c33e31f3c837d0"><img alt="2021-11-24_16-31-49.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-16-31-49-gif.png"></a></p>
+<p>也可以为录制评分（1-3 星）。例如，您可以在<a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html#explorer">资源管理器</a>中按评分滤波</p>
+<p>SwingCatalyst 会在捕捉模式下在屏幕右下方显示通知。</p>
+<p><a href="#R-image-f4cc3f6c901fa3e3bc7a5b171078d221" class="lightbox-link"><img alt="MotionCatalyst_2021-11-25_15-09-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-25-15-09-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4cc3f6c901fa3e3bc7a5b171078d221"><img alt="MotionCatalyst_2021-11-25_15-09-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-25-15-09-47-png.png"></a></p>
+<p><a href="#R-image-699d545880dd1efc80eac21dde8969ea" class="lightbox-link"><img alt="SnoopScreenshot_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-699d545880dd1efc80eac21dde8969ea"><img alt="SnoopScreenshot_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-150-png.png"></a></p>
+<p>录制进度和状态由堆栈所在位置的进度圆圈指示。&ldquo;放弃录制&quot;按钮允许您随时取消录制。</p>
+<p><a href="#R-image-c6c0241e739d2ccc4edfb8461023f1f4" class="lightbox-link"><img alt="SnoopScreenshot_Capturing1_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-capturing1-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6c0241e739d2ccc4edfb8461023f1f4"><img alt="SnoopScreenshot_Capturing1_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-capturing1-150-png.png"></a></p>
+<p>单击指示器可查看有关正在处理内容的更多详情。</p>
+<p><a href="#R-image-93a9eb25ee7ccd63f790c05a1dbc7617" class="lightbox-link"><img alt="SnoopScreenshot_Capturing1_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-capturing1-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-93a9eb25ee7ccd63f790c05a1dbc7617"><img alt="SnoopScreenshot_Capturing1_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-capturing1-150-png.png"></a></p>
+<h3 id="摄像头布局选择">摄像头布局选择<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>在同一下拉菜单&quot;布局&quot;中，您可以根据布局选择要显示的不同摄像头角度数量。在播放模式（观看录制的挥杆时），摄像头选择仅取决于创建录制时使用了多少摄像头。</p>
+<p>在捕捉模式下，可见摄像头的数量取决于系统上启用的摄像头数量，以及许可证是否支持您希望使用的摄像头数量。</p>
+<h3 id="切换摄像头角度">切换摄像头角度<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>如果您的录制中有多个摄像头，可以通过单击摄像头图标来更改观看的摄像头。</p>
+<p><a href="#R-image-20314e93095bfa1b34b71b25db1f421e" class="lightbox-link"><img alt="2021-11-24_14-15-45.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-15-45-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-20314e93095bfa1b34b71b25db1f421e"><img alt="2021-11-24_14-15-45.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-15-45-png.png"></a></p>
+<p><a href="#R-image-ca55a49c3353d5f6deed94874a593f85" class="lightbox-link"><img alt="2021-11-24_14-17-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-17-09-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ca55a49c3353d5f6deed94874a593f85"><img alt="2021-11-24_14-17-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-17-09-png.png"></a></p>
+<p>您也可以从这里进行一些小的摄像头调整，例如镜像和旋转摄像头角度。这些更改仅适用于录制视频，如果您想比较左手用户和右手用户等情况，会很有帮助。</p>
+<p><a href="#R-image-e554bba24e93866a2190ef0dbe09eb5e" class="lightbox-link"><img alt="2021-11-24_14-18-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-18-41-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e554bba24e93866a2190ef0dbe09eb5e"><img alt="2021-11-24_14-18-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-18-41-png.png"></a></p>
+<h2 id="绘图工具">绘图工具<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>如上面的截图所示，绘图工具位于软件的左侧。</p>
+<p><a href="#R-image-eb390b14c1b756eee09d83dbd19ac6b6" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb390b14c1b756eee09d83dbd19ac6b6"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/mceclip0-png.png"></a></p>
+<p>绘图工具允许您在视频图像上绘图，既可以在已录制的视频上绘图，也可以在实时视频&quot;源&quot;上绘图（捕捉模式下）。</p>
+<p>线条工具有多种不同的线条类型可供选择，标准的&quot;线条&quot;允许您在任何两点之间创建直线。</p>
+<p><a href="#R-image-a4b19bc3007f60103b12febe35156f68" class="lightbox-link"><img alt="2021-11-24_14-21-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-21-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a4b19bc3007f60103b12febe35156f68"><img alt="2021-11-24_14-21-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-21-59-png.png"></a></p>
+<p>有三种不同的线条粗细可供选择。</p>
+<p><a href="#R-image-0d0e2de2b1d6d6d3aa4bf63ac6ea75ce" class="lightbox-link"><img alt="2021-11-24_14-28-49.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-28-49-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d0e2de2b1d6d6d3aa4bf63ac6ea75ce"><img alt="2021-11-24_14-28-49.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-28-49-png.png"></a></p>
+<p>不同的颜色使您可以轻松区分不同的线条。</p>
+<p><a href="#R-image-7695ced89fcb305a09d524aee0f57c17" class="lightbox-link"><img alt="MotionCatalyst_2021-11-24_14-27-48.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-14-27-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7695ced89fcb305a09d524aee0f57c17"><img alt="MotionCatalyst_2021-11-24_14-27-48.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-14-27-48-png.png"></a></p>
+<p>缩放和平移工具</p>
+<p>在工具栏的最底部（绘图工具下方）是缩放和平移工具以及&quot;填充视频视图&quot;按钮。</p>
+<p>您也可以通过按住 Ctrl 键并同时滚动鼠标滚轮来缩放和操作视频图像。</p>
+<p><a href="#R-image-b80e3a31a76c3a037eac1d1c989bd16e" class="lightbox-link"><img alt="2021-11-24_14-33-19.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-33-19-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b80e3a31a76c3a037eac1d1c989bd16e"><img alt="2021-11-24_14-33-19.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/2021-11-24-14-33-19-gif.png"></a></p>
+<h2 id="资源管理器">资源管理器<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>您可以在这里轻松管理您的录制。资源管理器分为三个&quot;部分&rdquo;：</p>
+<p>左侧是系统中注册的用户，中间是该用户的所有录制，右侧是预览部分。</p>
+<p>录制会自动按会话分组并按日期排序。</p>
+<ul>
+<li>点击一个挥杆，它将自动在&quot;预览&quot;部分（右侧）预览。</li>
+</ul>
+<p>您也可以通过右键单击并选择要在哪个视口中打开录制来打开录制，或者将录制拖到底部的&quot;将录制放在此处&quot;区域。</p>
+<p><a href="#R-image-e3ed4d4cce8dd92cef655afa3b846795" class="lightbox-link"><img alt="MotionCatalyst_2021-11-24_15-33-38.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-15-33-38-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e3ed4d4cce8dd92cef655afa3b846795"><img alt="MotionCatalyst_2021-11-24_15-33-38.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-24-15-33-38-png.png"></a></p>
+<h4 id="资源管理器菜单的特写视图">资源管理器菜单的特写视图<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-a0fa1ef9bcb604d07ff14c79f346e48e" class="lightbox-link"><img alt="ExplorerMenu-SnoopScreenshot_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/explorermenu-snoopscreenshot-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0fa1ef9bcb604d07ff14c79f346e48e"><img alt="ExplorerMenu-SnoopScreenshot_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/explorermenu-snoopscreenshot-150-png.png"></a></p>
+<h3 id="滤波">滤波<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>可以根据不同的收集参数对录制进行滤波，例如：</p>
+<ul>
+<li>
+<p>运动（虽然 Swing Catalyst 仅用于高尔夫，但可以查看来自不同运动的录制）</p>
+</li>
+<li>
+<p>球杆类型</p>
+</li>
+<li>
+<p>弹道仪数据（飞行距离、旋转速度或击球效率）</p>
+</li>
+<li>
+<p>评分（1-3 星评分）</p>
+</li>
+</ul>
+<p>此屏幕截图显示了一些可用的滤波选项。</p>
+<p><a href="#R-image-3f77edea26adc5bd755f68fd5e594906" class="lightbox-link"><img alt="MotionCatalyst_2021-11-25_11-01-17.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-25-11-01-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f77edea26adc5bd755f68fd5e594906"><img alt="MotionCatalyst_2021-11-25_11-01-17.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-11-25-11-01-17-png.png"></a></p>
+<h2 id="资源和故障排除">资源和故障排除<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>您可以在此处找到资源和故障排除提示，以解决最常见的问题。</p>
+<h2 id="最常见的问题">最常见的问题<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>用户通常面临的最常见问题与外部连接的硬件有关，无论是摄像头、Launch Monitor 还是传感器板。简单的事情如坏电缆（例如，太长的电缆或不兼容的 USB 扩展器）都可能导致问题。因此，本指南的这一部分旨在帮助您解决问题或缩小问题原因的范围。</p>
+<h2 id="摄像头故障排除">摄像头故障排除<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>相关文章和故障排除步骤：</p>
+<ul>
+<li>
+<p><a href="/sc-support/zh/cameras-video/dragon-usb2-camera/index.html">网络摄像头故障排除</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/cameras-video/flir-blackfly-usb-setup/index.html">FLIR BlackFly S USB - 入门指南</a></p>
+</li>
+<li>
+<p><a href="/sc-support/zh/cameras-video/flir-blackfly-gige-setup/index.html">FLIR BlackFly S GigE - 入门指南</a></p>
+</li>
+</ul>
+<h3 id="摄像头未显示在摄像头设置列表中">摄像头未显示在摄像头设置列表中<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>如果摄像头未显示在摄像头列表中，说明摄像头未被检测到或连接不正常。</p>
+<ul>
+<li>
+<p>如果摄像头未显示在摄像头列表中，最有可能是未在Windows中被识别或被另一个应用程序占用。请尝试断开摄像头连接，然后重新连接。</p>
+</li>
+<li>
+<p>摄像头可能不被<a href="/sc-support/zh/cameras-video/supported-cameras/index.html">Swing Catalyst支持</a>。</p>
+</li>
+<li>
+<p>对于The Imaging Source摄像头：如果您已安装制造商驱动程序，可能需要卸载它才能正常工作。</p>
+</li>
+<li>
+<p>以太网（网络）/ GigE摄像头可能需要IP配置。</p>
+</li>
+</ul>
+<h3 id="未接收数据">未接收数据<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-0dbcd7b715db51f297d46c656ccf32a0" class="lightbox-link"><img alt="SnoopScreenshot_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0dbcd7b715db51f297d46c656ccf32a0"><img alt="SnoopScreenshot_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-150-png.png"></a></p>
+<p>这表示Swing Catalyst未接收任何视频图像或数据进行处理。</p>
+<p>此类错误的原因示例包括：</p>
+<ul>
+<li>
+<p>电缆/连接不良：尝试断开摄像头并将其连接到不同的USB端口。</p>
+</li>
+<li>
+<p>错误的设置：（特别是对于网络摄像头和DirectShow摄像头）。检查曝光设置，如果Auto未选中且曝光设置过高，帧率可能会明显下降。</p>
+</li>
+<li>
+<p>网络摄像头的一个解决方案可能是启用&quot;手动时间戳&rdquo;（见下图）</p>
+</li>
+</ul>
+<p><a href="#R-image-05f6deebda11fc3d2332e87ada690948" class="lightbox-link"><img alt="timestamp.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/timestamp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-05f6deebda11fc3d2332e87ada690948"><img alt="timestamp.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/timestamp-png.png"></a></p>
+<h3 id="出现错误">出现错误<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-b76ac51ea5ab8e98646ccc16ddfb0dee" class="lightbox-link"><img alt="MotionCatalyst_2021-12-13_12-54-23.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-12-13-12-54-23-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b76ac51ea5ab8e98646ccc16ddfb0dee"><img alt="MotionCatalyst_2021-12-13_12-54-23.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/motioncatalyst-2021-12-13-12-54-23-png.png"></a></p>
+<p>如果摄像头正被另一个应用程序使用，这类错误很常见。特别是网络摄像头很容易被第三方软件占用，请尝试关闭其他程序并重启Swing Catalyst。</p>
+<h3 id="丢帧--接收数据不足">丢帧 / 接收数据不足<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>丢帧意味着从摄像头传输到计算机的视频帧/数据在不同程度上丢失。特别是在使用多个摄像头时，这不是好现象，因为突然一个摄像头会丢失挥杆的部分内容。Swing Catalyst会对此发出警告，如果系统丢帧过多，将无法触发录制。</p>
+<p>造成此问题的原因可能包括：</p>
+<ul>
+<li>
+<p>USB3摄像头连接到USB 2.0端口。</p>
+</li>
+<li>
+<p>使用设计不良的电缆或延长线。</p>
+</li>
+<li>
+<p>超过推荐的电缆长度。</p>
+</li>
+<li>
+<p>USB3摄像头连接到USB集线器，与其他设备共享同一集线器，带宽不足。</p>
+</li>
+<li>
+<p>以太网摄像头连接到未正确配置或不支持巨帧的网络端口。</p>
+</li>
+<li>
+<p>摄像头使用的带宽超过了系统可用的带宽。</p>
+</li>
+</ul>
+<p>提示：</p>
+<p>对于USB摄像头，我们建议尝试降低帧率（和/或设备链接吞吐量 - 对于FLIR摄像头）以减少带宽消耗。</p>
+<ul>
+<li>
+<p>降低帧率（和/或设备链接吞吐量）。</p>
+</li>
+<li>
+<p>如果使用多个摄像头，尝试断开或禁用一些摄像头，系统是否仍报告丢帧？</p>
+</li>
+<li>
+<p>检查电缆，摄像头是否连接到USB集线器或延长器？尝试直接连接到计算机。</p>
+</li>
+<li>
+<p>尝试关闭其他CPU和图形密集型软件以释放资源。</p>
+</li>
+</ul>
+<h2 id="launch-monitor故障排除">Launch Monitor故障排除<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>Launch Monitor支持文章部分</li>
+</ul>
+<p>您可以在此找到Launch Monitor常见问题及其解决方案的列表。</p>
+<h4 id="场景设备未连接">场景：设备未连接<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><a href="#R-image-8e8fde4c9efe7f26b2f05364fb1a560b" class="lightbox-link"><img alt="SnoopScreenshot_150.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-150-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e8fde4c9efe7f26b2f05364fb1a560b"><img alt="SnoopScreenshot_150.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410620083090/snoopscreenshot-150-png.png"></a></p>
+<p>在上述示例场景中，Launch Monitor 在设置中已启用，但设备未连接/无法识别。</p>
+<p>建议的故障排除步骤：</p>
+<ul>
+<li>
+<p>检查设备是否仍处于开启状态。</p>
+</li>
+<li>
+<p>尝试重新启动设备。</p>
+</li>
+<li>
+<p>尽可能尝试通过 USB 或以太网而非 WiFi 连接。</p>
+</li>
+<li>
+<p>尝试使用制造商的软件进行连接，以确认是否可能建立连接。</p>
+</li>
+</ul>
+<h4 id="场景未触发录制">场景：未触发录制。<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Launch Monitor 已连接并被识别，但在捕捉模式下未触发。</p>
+<p>建议的故障排除步骤：</p>
+<ul>
+<li>
+<p>确保<a href="/sc-support/zh/hardware/launch-monitor-trigger/index.html">触发器选项已启用。</a></p>
+</li>
+<li>
+<p>设备上是否显示球和/或球杆数据？（您能验证它在 Swing Catalyst 外部是否正常工作吗？）</p>
+</li>
+<li>
+<p>是否有任何丢帧或数据不足的警告？如果摄像头丢帧，Swing Catalyst 将不会触发。</p>
+</li>
+</ul>
+<p><em>最后更新：2024-01-18</em> | <a href="/sc-support/zh/getting-started/swing-catalyst-home/index.html">在官方支持网站上查看</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/zh/index.html">
+          <span class="logo-title default-animation">Swing Catalyst 支持</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="搜索 (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-fw fa-times" title="清除搜索"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-id="/sc-support/zh/getting-started/index.html"><a class="padding default-animation" href="/sc-support/zh/getting-started/index.html">入门指南</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/zh/getting-started/user-guide/index.html"><a class="padding" href="/sc-support/zh/getting-started/user-guide/index.html">Swing Catalyst - 用户指南</a></li>
+            <li class="" data-nav-id="/sc-support/zh/getting-started/faq/index.html"><a class="padding" href="/sc-support/zh/getting-started/faq/index.html">常见问题解答</a></li>
+            <li class="" data-nav-id="/sc-support/zh/getting-started/install-uninstall/index.html"><a class="padding" href="/sc-support/zh/getting-started/install-uninstall/index.html">如何安装和卸载 Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/zh/getting-started/license-key/index.html"><a class="padding" href="/sc-support/zh/getting-started/license-key/index.html">如何安装或更改您的许可证密钥</a></li>
+            <li class="active " data-nav-id="/sc-support/zh/getting-started/swing-catalyst-home/index.html"><a class="padding" href="/sc-support/zh/getting-started/swing-catalyst-home/index.html">入门指南 - Swing Catalyst Home</a></li>
+            <li class="" data-nav-id="/sc-support/zh/getting-started/what-is-sc-home/index.html"><a class="padding" href="/sc-support/zh/getting-started/what-is-sc-home/index.html">什么是 Swing Catalyst Home？</a></li>
+            <li class="" data-nav-id="/sc-support/zh/getting-started/system-requirements/index.html"><a class="padding" href="/sc-support/zh/getting-started/system-requirements/index.html">推荐电脑配置</a></li>
+            <li class="" data-nav-id="/sc-support/zh/getting-started/check-version/index.html"><a class="padding" href="/sc-support/zh/getting-started/check-version/index.html">我正在使用哪个版本的软件？</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/zh/cameras-video/index.html">摄像头与视频</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/hardware/index.html"><a class="padding default-animation" href="/sc-support/zh/hardware/index.html">硬件</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/index.html"><a class="padding default-animation" href="/sc-support/zh/software-features/index.html">软件与功能</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/account-setup/index.html"><a class="padding default-animation" href="/sc-support/zh/account-setup/index.html">账户与准备姿势</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/reference/index.html"><a class="padding default-animation" href="/sc-support/zh/reference/index.html">参考</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">语言</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/getting-started/swing-catalyst-home/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/getting-started/swing-catalyst-home/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/getting-started/swing-catalyst-home/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/getting-started/swing-catalyst-home/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/getting-started/swing-catalyst-home/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/getting-started/swing-catalyst-home/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/getting-started/swing-catalyst-home/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/getting-started/swing-catalyst-home/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/getting-started/swing-catalyst-home/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/getting-started/swing-catalyst-home/index.html" lang="zh" selected data-selected>简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/getting-started/swing-catalyst-home/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/getting-started/swing-catalyst-home/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/getting-started/swing-catalyst-home/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/getting-started/swing-catalyst-home/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/getting-started/swing-catalyst-home/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/getting-started/swing-catalyst-home/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/getting-started/swing-catalyst-home/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/getting-started/swing-catalyst-home/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/getting-started/swing-catalyst-home/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/getting-started/swing-catalyst-home/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/getting-started/swing-catalyst-home/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/getting-started/swing-catalyst-home/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/getting-started/swing-catalyst-home/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/getting-started/swing-catalyst-home/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/getting-started/swing-catalyst-home/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/getting-started/swing-catalyst-home/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/getting-started/swing-catalyst-home/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/getting-started/swing-catalyst-home/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/getting-started/swing-catalyst-home/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/getting-started/swing-catalyst-home/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/getting-started/swing-catalyst-home/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/getting-started/swing-catalyst-home/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/getting-started/swing-catalyst-home/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/getting-started/swing-catalyst-home/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/getting-started/swing-catalyst-home/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/getting-started/swing-catalyst-home/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">主题</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520116" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

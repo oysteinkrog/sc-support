@@ -1,27 +1,464 @@
-<!doctype html><html id=R-html lang=el dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι σελιδοδείκτες στο Swing Catalyst και Motion Catalyst, και για ποιο σκοπό χρησιμοποιούνται. Υπάρχουν ορισμένες διαφορές..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Τι είναι οι σελιδοδείκτες; :: Υποστήριξη Swing Catalyst"><meta name=twitter:description content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι σελιδοδείκτες στο Swing Catalyst και Motion Catalyst, και για ποιο σκοπό χρησιμοποιούνται. Υπάρχουν ορισμένες διαφορές..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html"><meta property="og:site_name" content="Υποστήριξη Swing Catalyst"><meta property="og:title" content="Τι είναι οι σελιδοδείκτες; :: Υποστήριξη Swing Catalyst"><meta property="og:description" content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι σελιδοδείκτες στο Swing Catalyst και Motion Catalyst, και για ποιο σκοπό χρησιμοποιούνται. Υπάρχουν ορισμένες διαφορές..."><meta property="og:locale" content="el"><meta property="og:type" content="article"><meta property="article:section" content="Λογισμικό & Δυνατότητες"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Database"><meta itemprop=name content="Τι είναι οι σελιδοδείκτες; :: Υποστήριξη Swing Catalyst"><meta itemprop=description content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι σελιδοδείκτες στο Swing Catalyst και Motion Catalyst, και για ποιο σκοπό χρησιμοποιούνται. Υπάρχουν ορισμένες διαφορές..."><meta itemprop=wordCount content="606"><meta itemprop=keywords content="Force-Data,Database"><title>Τι είναι οι σελιδοδείκτες; :: Υποστήριξη Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/bookmarks/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/bookmarks/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/bookmarks/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/bookmarks/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/bookmarks/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/bookmarks/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/bookmarks/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/bookmarks/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/bookmarks/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/bookmarks/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/bookmarks/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/bookmarks/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/bookmarks/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/bookmarks/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/bookmarks/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/bookmarks/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/bookmarks/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/bookmarks/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/bookmarks/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/bookmarks/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/bookmarks/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/bookmarks/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/bookmarks/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/bookmarks/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/bookmarks/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/bookmarks/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/bookmarks/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/bookmarks/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/bookmarks/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/bookmarks/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/bookmarks/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/bookmarks/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763284 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763284 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763284 defer></script><script src=/sc-support/js/search.min.js?1771763284 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.el.js?1771763284"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763284 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763284 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763284 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763284 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763284 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763284 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763284 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763284 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/bookmarks/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/el/software-features/bookmarks/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#εισαγωγή>Εισαγωγή</a></li><li><a href=#what-are-bookmarks>What are bookmarks?</a></li><li><a href=#how-do-i-set-bookmarks>How do I set bookmarks?</a></li><li><a href=#why-should-i-set-bookmarks>Why should I set bookmarks?</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/el/index.html><span itemprop=name>Υποστήριξη Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/el/software-features/index.html><span itemprop=name>Λογισμικό & Δυνατότητες</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Τι είναι οι σελιδοδείκτες;</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/el/software-features/keyboard-shortcuts/index.html title="Συντομεύσεις πληκτρολογίου και Hotkeys (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/el/software-features/raw-data-export-guide/index.html title="Τι περιλαμβάνεται στην εξαγωγή ακατέργαστων δεδομένων (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/el/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/el/tags/force-data/index.html>Force-Data</a></li></ul></div></header><h1 id=τι-είναι-οι-σελιδοδείκτες>Τι είναι οι σελιδοδείκτες;</h1><h2 id=εισαγωγή>Εισαγωγή<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι σελιδοδείκτες στο Swing Catalyst και Motion Catalyst, και για τι χρησιμοποιούνται. Υπάρχουν ορισμένες διαφορές μεταξύ Motion Catalyst και Swing Catalyst, αλλά τα βασικά στοιχεία σχετικά με τον τρόπο λειτουργίας των σελιδοδεικτών και τις δυνατότητές τους είναι ίδια, πράγμα που σημαίνει ότι αυτό το άρθρο μπορεί να χρησιμοποιηθεί για και τα δύο λογισμικά.</p><p>Παράδειγμα στιγμιότυπου από Motion Catalyst καταγραφής άλματος αντίδρασης</p><p><a href=#R-image-22dc2a25f74c46956daa6998addf828b class=lightbox-link><img alt=MotionCatalyst_IigJ2pRrKQ.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-iigj2prrkq-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-22dc2a25f74c46956daa6998addf828b><img alt=MotionCatalyst_IigJ2pRrKQ.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-iigj2prrkq-png.png></a></p><h2 id=what-are-bookmarks>What are bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Bookmarks are used to identify key points in a recording. For certain sports & activities, the bookmarks correlate to specific phases in the activity, or simply indicate start and end of movement.</p><p>For counter movement jump (as pictured), these phases are: unweighting, braking, propulsion, takeoff, and landing.</p><p>If we look more closely the screenshots above, we see that there are a number of arrows above the playback timeline, each arrow, or bookmark, correlate to different phases of the recorded activity.</p><p><a href=#R-image-2da6014010406a1cb26b789c1dab1265 class=lightbox-link><img alt=MotionCatalyst_7R0EZLelgS.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-7r0ezlelgs-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2da6014010406a1cb26b789c1dab1265><img alt=MotionCatalyst_7R0EZLelgS.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-7r0ezlelgs-png.png></a></p><p>The number of bookmarks available depend on the activity. Certain activities have more bookmarks than others. Additionally, bookmarks are set automatically for certain activities where the phases are identified from force data. We are working to improve this, so the list below is subject to change.</p><p>Currently the sports and activities that have automatic bookmarks set by key metrics are:</p><p>Sport
-Activity</p><p>Fitness
-Counter Movement Jump</p><p>Fitness
-Squat Jump</p><p>Fitness
-Isometric mid-thigh pull</p><p>Fitness
-Dynamic & Static balance</p><p>Fitness
-Upper Body Plank</p><p>Ski jump</p><p>Baseball
-Batting</p><p>The bookmark positions are stored in the database for each recording and in any exported take (recording with data) file.</p><h2 id=how-do-i-set-bookmarks>How do I set bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To change or manually set the bookmark positions:</p><ul><li><p>&ldquo;Unlock&rdquo; the bookmarks by pressing the &ldquo;bookmarks&rdquo; button.</p></li><li><p>Once selected you can change the position of the bookmarks by dragging the arrow(s).</p></li><li><p>When finished, make sure to &ldquo;lock&rdquo; the bookmarks again by deselecting the &ldquo;bookmarks&rdquo; icon, exiting the &ldquo;edit bookmark&rdquo; mode.</p></li></ul><p><a href=#R-image-15d9700ec77d728c20ffee1d1cc02237 class=lightbox-link><img alt=hTxwCEhhvp.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/htxwcehhvp-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-15d9700ec77d728c20ffee1d1cc02237><img alt=hTxwCEhhvp.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/htxwcehhvp-png.png></a></p><p><a href=#R-image-27d1b1bdab51606e68cbdfa5023d7994 class=lightbox-link><img alt=MotionCatalyst_JWfhTldXeS.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-jwfhtldxes-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-27d1b1bdab51606e68cbdfa5023d7994><img alt=MotionCatalyst_JWfhTldXeS.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-jwfhtldxes-png.png></a></p><p>To reset the positions click the &ldquo;reset A&rdquo; (or B) button(s) (shown to the left of the bookmarks button).</p><p>Grey bookmarks indicate that they haven&rsquo;t been set, or changed.</p><p><a href=#R-image-b40e6c2af9c3bc157119870d0c17b962 class=lightbox-link><img alt=MotionCatalyst_ttrfziAOSo.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-ttrfziaoso-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b40e6c2af9c3bc157119870d0c17b962><img alt=MotionCatalyst_ttrfziAOSo.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-ttrfziaoso-png.png></a></p><p>The bookmarks are also represented in the data graphs as vertical lines, indicating <em>where</em> in the recording the different phases are in time (X axis of the graph):</p><p><a href=#R-image-9678cbe21b46274ca1fe4c932a6b2170 class=lightbox-link><img alt=image__2_.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/image-2-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9678cbe21b46274ca1fe4c932a6b2170><img alt=image__2_.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/image-2-png.png></a></p><p><strong>Tip</strong>: The position of the first and (or) last bookmark decide how much data is displayed in the databoxes. The duration before the first bookmark and after the last bookmark depends on the activity and sport, but changing this manually can be helpful to view certain parts of a recording. This is especially helpful for recordings done under the &ldquo;free movement&rdquo; activity, which can be up to 30 seconds in duration.</p><p><a href=#R-image-40b684ec3b4f97719c52cc77d2310d40 class=lightbox-link><img alt=MotionCatalyst_eUbaCWiclM.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-eubacwiclm-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-40b684ec3b4f97719c52cc77d2310d40><img alt=MotionCatalyst_eUbaCWiclM.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-eubacwiclm-gif.png></a></p><p>Note: We are only changing what we are looking at &ldquo;in time&rdquo;, none of the stored data is actually changed in any way.</p><p>For more details on how to view and manipulate the graphs please see <a href=/sc-support/el/software-features/graph-library/index.html>this article</a>.</p><h2 id=why-should-i-set-bookmarks>Why should I set bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To allow easy playback synchronization between recordings we recommend setting bookmarks.</p><p>For example, say you want to view two recordings side by side of of a counter movement jump performed by two different users where you wish to synchronize the playback around a specific phase.</p><ul><li><p>Click the &ldquo;Synchronize&rdquo; button.</p></li><li><p>Select the phase / bookmark you wish to synchronize on.</p></li><li><p>Press play.</p></li></ul><p><a href=#R-image-ad494305342d59fce4dc75619130ec8d class=lightbox-link><img alt=MotionCatalyst_vG2pjBkyKz.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-vg2pjbkykz-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-ad494305342d59fce4dc75619130ec8d><img alt=MotionCatalyst_vG2pjBkyKz.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-vg2pjbkykz-png.png></a></p><p>Note: The amount of available bookmarks, and name of the phases varies depending on the sport and activity.</p><p><a href=#R-image-4babcfcd1e30b0ff84f9b80a908dcd00 class=lightbox-link><img alt=MotionCatalyst_91cMd3GPuD.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-91cmd3gpud-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4babcfcd1e30b0ff84f9b80a908dcd00><img alt=MotionCatalyst_91cMd3GPuD.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-91cmd3gpud-gif.png></a></p><p>Example synchronizing bookmarks to impact for two golf swings:</p><p><a href=#R-image-56e007109ae79533febc9a4694348709 class=lightbox-link><img alt=MotionCatalyst_YKLskF87yC.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-yklskf87yc-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-56e007109ae79533febc9a4694348709><img alt=MotionCatalyst_YKLskF87yC.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-yklskf87yc-gif.png></a></p><p>This can be done for any sport or activity. For more details on &ldquo;compare mode&rdquo; please see the &ldquo;layouts&rdquo; section of our <a href=/sc-support/el/getting-started/user-guide/index.html>user guide</a>.</p><hr><p><em>Last updated: 2024-06-07</em> | <a href=/sc-support/el/software-features/bookmarks/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/el/index.html><span class="logo-title default-animation">Υποστήριξη Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/el/getting-started/index.html><a class="padding default-animation" href=/sc-support/el/getting-started/index.html>Ξεκινώντας</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/el/cameras-video/index.html><a class="padding default-animation" href=/sc-support/el/cameras-video/index.html>Κάμερες & Βίντεο</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/el/hardware/index.html><a class="padding default-animation" href=/sc-support/el/hardware/index.html>Υλικό</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/el/software-features/index.html><a class="padding default-animation" href=/sc-support/el/software-features/index.html>Λογισμικό & Δυνατότητες</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/el/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/el/software-features/motion-capture-guide/index.html>Swing Catalyst Οδηγός Χρήστη Ανίχνευσης Κίνησης</a></li><li data-nav-id=/sc-support/el/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/el/software-features/motion-capture-faq/index.html>Swing Catalyst Συχνές Ερωτήσεις Ανίχνευσης Κίνησης</a></li><li data-nav-id=/sc-support/el/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/el/software-features/frontal-plane-torque/index.html>Ανάλυση Ροπής Μετωπικού Επιπέδου - Οδηγός Χρήστη</a></li><li data-nav-id=/sc-support/el/software-features/key-metrics/index.html><a class=padding href=/sc-support/el/software-features/key-metrics/index.html>Βασικές Μετρήσεις</a></li><li data-nav-id=/sc-support/el/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/el/software-features/markerless-motion-capture/index.html>Βελτίωση της Σύλληψης Κίνησης χωρίς Δείκτες στο Golf και Baseball Swing χρησιμοποιώντας RTMPose και RTMDet: Μια Προσέγγιση Από Πάνω Προς Τα Κάτω</a></li><li data-nav-id=/sc-support/el/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/el/software-features/multiple-forces-graph/index.html>Γράφημα Πολλαπλών Δυνάμεων</a></li><li data-nav-id=/sc-support/el/software-features/export-recordings/index.html><a class=padding href=/sc-support/el/software-features/export-recordings/index.html>Εξαγωγή εγγραφών</a></li><li data-nav-id=/sc-support/el/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/el/software-features/ios-app-sharing/index.html>Κοινοποίηση εγγεγραμμένων βίντεο με την εφαρμογή Swing Catalyst για iOS</a></li><li data-nav-id=/sc-support/el/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/el/software-features/body-weight-measurement/index.html>Νέα λειτουργικότητα μέτρησης σωματικού βάρους</a></li><li data-nav-id=/sc-support/el/software-features/change-recording-user/index.html><a class=padding href=/sc-support/el/software-features/change-recording-user/index.html>Πώς να αλλάξετε το χρήστη σε μια υπάρχουσα εγγραφή</a></li><li data-nav-id=/sc-support/el/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/el/software-features/motion-capture-install/index.html>Πώς να εγκαταστήσετε τα στοιχεία Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/el/software-features/import-from-v1/index.html><a class=padding href=/sc-support/el/software-features/import-from-v1/index.html>Πώς να Εισάγετε βίντεο από V1</a></li><li data-nav-id=/sc-support/el/software-features/export-raw-data/index.html><a class=padding href=/sc-support/el/software-features/export-raw-data/index.html>Πώς να εξαγάγετε ακατέργαστα δεδομένα</a></li><li data-nav-id=/sc-support/el/software-features/export-contacts/index.html><a class=padding href=/sc-support/el/software-features/export-contacts/index.html>Πώς να εξάγετε πληροφορίες επικοινωνίας μαθητή</a></li><li data-nav-id=/sc-support/el/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/el/software-features/record-a-lesson/index.html>Πώς να καταγράψετε ένα μάθημα</a></li><li data-nav-id=/sc-support/el/software-features/multiple-displays/index.html><a class=padding href=/sc-support/el/software-features/multiple-displays/index.html>Πώς να ρυθμίσετε πολλαπλές οθόνες με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/software-features/email-sharing/index.html><a class=padding href=/sc-support/el/software-features/email-sharing/index.html>Πώς να ρυθμίσετε την κοινή χρήση μέσω email στο Swing Catalyst</a></li><li data-nav-id=/sc-support/el/software-features/feedback-screen/index.html><a class=padding href=/sc-support/el/software-features/feedback-screen/index.html>Πώς να ρυθμίσετε την οθόνη σχολίων</a></li><li data-nav-id=/sc-support/el/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/el/software-features/microphone-trigger/index.html>Πώς να χρησιμοποιήσετε ένα μικρόφωνο ως σκανδάλη σύλληψης</a></li><li data-nav-id=/sc-support/el/software-features/force-vectors/index.html><a class=padding href=/sc-support/el/software-features/force-vectors/index.html>Πώς να χρησιμοποιήσετε τα Διανύσματα Δύναμης</a></li><li data-nav-id=/sc-support/el/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/el/software-features/pressure-distribution-overlay/index.html>Πώς να χρησιμοποιήσετε τη λειτουργία επικάλυψης Κατανομής Πίεσης</a></li><li data-nav-id=/sc-support/el/software-features/remote-support/index.html><a class=padding href=/sc-support/el/software-features/remote-support/index.html>Πώς να Χρησιμοποιήσετε την Τηλεχειρισμένη Υποστήριξη</a></li><li data-nav-id=/sc-support/el/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/el/software-features/swing-catalyst-online/index.html>Πώς να χρησιμοποιήσετε το Swing Catalyst Online</a></li><li data-nav-id=/sc-support/el/software-features/explorer/index.html><a class=padding href=/sc-support/el/software-features/explorer/index.html>Πώς να χρησιμοποιήσετε τον Περιηγητή</a></li><li data-nav-id=/sc-support/el/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/el/software-features/motion-capture-settings/index.html>Ρυθμίσεις Ανίχνευσης Κίνησης Swing Catalyst</a></li><li data-nav-id=/sc-support/el/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/el/software-features/motion-capture-disclosures/index.html>Σημαντικές Γνωστοποιήσεις για Χρήστες του Εργαλείου Ανίχνευσης Κίνησης Swing Catalyst</a></li><li data-nav-id=/sc-support/el/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/el/software-features/keyboard-shortcuts/index.html>Συντομεύσεις πληκτρολογίου και Hotkeys</a></li><li class=active data-nav-id=/sc-support/el/software-features/bookmarks/index.html><a class=padding href=/sc-support/el/software-features/bookmarks/index.html>Τι είναι οι σελιδοδείκτες;</a></li><li data-nav-id=/sc-support/el/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/el/software-features/raw-data-export-guide/index.html>Τι περιλαμβάνεται στην εξαγωγή ακατέργαστων δεδομένων</a></li><li data-nav-id=/sc-support/el/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/el/software-features/force-graph-phases/index.html>Φάσεις γραφήματος δύναμης</a></li><li data-nav-id=/sc-support/el/software-features/graph-library/index.html><a class=padding href=/sc-support/el/software-features/graph-library/index.html>Χρήση της βιβλιοθήκης γραφημάτων</a></li><li data-nav-id=/sc-support/el/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/el/software-features/pressure-stance-settings/index.html>Χρήση των νέων ρυθμίσεων Πίεσης και Στάσης</a></li></ul></li><li data-nav-id=/sc-support/el/account-setup/index.html><a class="padding default-animation" href=/sc-support/el/account-setup/index.html>Λογαριασμός & Ρύθμιση</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/el/reference/index.html><a class="padding default-animation" href=/sc-support/el/reference/index.html>Αναφορά</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/bookmarks/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/bookmarks/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/bookmarks/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/bookmarks/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/bookmarks/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/bookmarks/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/bookmarks/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/bookmarks/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/bookmarks/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/bookmarks/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/bookmarks/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/bookmarks/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/bookmarks/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/bookmarks/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/bookmarks/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/bookmarks/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/bookmarks/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/bookmarks/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/bookmarks/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/bookmarks/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/bookmarks/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/bookmarks/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/bookmarks/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/bookmarks/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/bookmarks/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/bookmarks/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/bookmarks/index.html lang=el selected data-selected>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/bookmarks/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/bookmarks/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/bookmarks/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/bookmarks/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/bookmarks/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/bookmarks/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/bookmarks/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/bookmarks/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/bookmarks/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763284 defer></script><script src=/sc-support/js/theme.min.js?1771763284 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="el" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι Σελιδοδείκτες στο Swing Catalyst και στο Motion Catalyst, και ποια είναι η χρήση τους. Υπάρχουν ορισμένες διαφορές...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Τι είναι οι Σελιδοδείκτες; :: Υποστήριξη Swing Catalyst">
+    <meta name="twitter:description" content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι Σελιδοδείκτες στο Swing Catalyst και στο Motion Catalyst, και ποια είναι η χρήση τους. Υπάρχουν ορισμένες διαφορές...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html">
+    <meta property="og:site_name" content="Υποστήριξη Swing Catalyst">
+    <meta property="og:title" content="Τι είναι οι Σελιδοδείκτες; :: Υποστήριξη Swing Catalyst">
+    <meta property="og:description" content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι Σελιδοδείκτες στο Swing Catalyst και στο Motion Catalyst, και ποια είναι η χρήση τους. Υπάρχουν ορισμένες διαφορές...">
+    <meta property="og:locale" content="el">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Λογισμικό & Λειτουργίες">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Database">
+    <meta itemprop="name" content="Τι είναι οι Σελιδοδείκτες; :: Υποστήριξη Swing Catalyst">
+    <meta itemprop="description" content="Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι Σελιδοδείκτες στο Swing Catalyst και στο Motion Catalyst, και ποια είναι η χρήση τους. Υπάρχουν ορισμένες διαφορές...">
+    <meta itemprop="wordCount" content="620">
+    <meta itemprop="keywords" content="Force-Data,Database">
+    <title>Τι είναι οι Σελιδοδείκτες; :: Υποστήριξη Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/bookmarks/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/bookmarks/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/bookmarks/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/bookmarks/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/bookmarks/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/bookmarks/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/bookmarks/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/bookmarks/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/bookmarks/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/bookmarks/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/bookmarks/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/bookmarks/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/bookmarks/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/bookmarks/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/bookmarks/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/bookmarks/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/bookmarks/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/bookmarks/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/bookmarks/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/bookmarks/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/bookmarks/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/bookmarks/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/bookmarks/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/bookmarks/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/bookmarks/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/bookmarks/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/bookmarks/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/bookmarks/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/bookmarks/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/bookmarks/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/bookmarks/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/bookmarks/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520141" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520141" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772520141";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520141" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520141" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520141" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520141" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520141" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520141" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/bookmarks\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/el/software-features/bookmarks/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#εισαγωγή">Εισαγωγή</a></li>
+    <li><a href="#τι-είναι-οι-σελιδοδείκτες">Τι είναι οι Σελιδοδείκτες;</a></li>
+    <li><a href="#πώς-ορίζω-σελιδοδείκτες">Πώς ορίζω Σελιδοδείκτες;</a></li>
+    <li><a href="#γιατί-πρέπει-να-ορίζω-σελιδοδείκτες">Γιατί πρέπει να ορίζω Σελιδοδείκτες;</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/index.html"><span itemprop="name">Υποστήριξη Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/software-features/index.html"><span itemprop="name">Λογισμικό &amp; Λειτουργίες</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Τι είναι οι Σελιδοδείκτες;</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/el/software-features/keyboard-shortcuts/index.html" title="Συντομεύσεις πληκτρολογίου και Hotkeys (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/el/software-features/raw-data-export-guide/index.html" title="Τι περιλαμβάνεται στην εξαγωγή ακατέργαστων δεδομένων (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/el/tags/database/index.html">Database</a></li>
+    <li><a class="term-link" href="/sc-support/el/tags/force-data/index.html">Force-Data</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="τι-είναι-οι-σελιδοδείκτες">Τι είναι οι Σελιδοδείκτες;</h1>
+
+<h2 id="εισαγωγή">Εισαγωγή<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Αυτό το άρθρο υποστήριξης στοχεύει να περιγράψει τι είναι οι Σελιδοδείκτες στο Swing Catalyst και στο Motion Catalyst, και ποια είναι η χρήση τους. Υπάρχουν ορισμένες διαφορές μεταξύ του Motion Catalyst και του Swing Catalyst, αλλά τα βασικά στοιχεία σχετικά με τον τρόπο λειτουργίας των Σελιδοδεικτών και τα χαρακτηριστικά τους είναι τα ίδια, που σημαίνει ότι αυτό το άρθρο μπορεί να χρησιμοποιηθεί και για τα δύο λογισμικά.</p>
+<p>Παράδειγμα στιγμιότυπου οθόνης από το Motion Catalyst για μια Εγγραφή άλματος αντίθετης κίνησης</p>
+<p><a href="#R-image-80281b8983464962b8ffb433bdf2edc0" class="lightbox-link"><img alt="MotionCatalyst_IigJ2pRrKQ.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-iigj2prrkq-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80281b8983464962b8ffb433bdf2edc0"><img alt="MotionCatalyst_IigJ2pRrKQ.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-iigj2prrkq-png.png"></a></p>
+<h2 id="τι-είναι-οι-σελιδοδείκτες">Τι είναι οι Σελιδοδείκτες;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Οι Σελιδοδείκτες χρησιμοποιούνται για τον εντοπισμό βασικών σημείων σε μια Εγγραφή. Για ορισμένα αθλήματα και Δραστηριότητες, οι Σελιδοδείκτες συσχετίζονται με συγκεκριμένες Φάσεις της Δραστηριότητας, ή απλώς υποδεικνύουν την έναρξη και το τέλος της κίνησης.</p>
+<p>Για το άλμα αντίθετης κίνησης (όπως απεικονίζεται), αυτές οι Φάσεις είναι: Απελευθέρωση Βάρους, πέδηση, ώθηση, απογείωση και προσγείωση.</p>
+<p>Αν εξετάσουμε πιο προσεκτικά τα παραπάνω στιγμιότυπα οθόνης, βλέπουμε ότι υπάρχουν αρκετά βέλη πάνω από τη γραμμή χρόνου Αναπαραγωγής· κάθε βέλος, ή Σελιδοδείκτης, αντιστοιχεί σε διαφορετικές Φάσεις της καταγεγραμμένης Δραστηριότητας.</p>
+<p><a href="#R-image-16453c631a36a99509cf353f78e8ae5d" class="lightbox-link"><img alt="MotionCatalyst_7R0EZLelgS.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-7r0ezlelgs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-16453c631a36a99509cf353f78e8ae5d"><img alt="MotionCatalyst_7R0EZLelgS.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-7r0ezlelgs-png.png"></a></p>
+<p>Ο αριθμός των διαθέσιμων Σελιδοδεικτών εξαρτάται από τη Δραστηριότητα. Ορισμένες Δραστηριότητες έχουν περισσότερους Σελιδοδείκτες από άλλες. Επιπλέον, οι Σελιδοδείκτες ορίζονται αυτόματα για ορισμένες Δραστηριότητες όπου οι Φάσεις εντοπίζονται από τα Δεδομένα Δύναμης. Εργαζόμαστε για τη βελτίωση αυτού, οπότε η παρακάτω λίστα υπόκειται σε αλλαγές.</p>
+<p>Επί του παρόντος, τα αθλήματα και οι Δραστηριότητες που διαθέτουν αυτόματους Σελιδοδείκτες που ορίζονται από Βασικά Μετρικά Δεδομένα είναι:</p>
+<p>Άθλημα
+Δραστηριότητα</p>
+<p>Φυσική Κατάσταση
+Άλμα Αντίθετης Κίνησης</p>
+<p>Φυσική Κατάσταση
+Άλμα Καθίσματος</p>
+<p>Φυσική Κατάσταση
+Ισομετρική έλξη μέσου Μηρού</p>
+<p>Φυσική Κατάσταση
+Δυναμική &amp; Στατική Ισορροπία</p>
+<p>Φυσική Κατάσταση
+Σανίδα Άνω Σώματος</p>
+<p>Άλμα σκι</p>
+<p>Μπέιζμπολ
+Χτύπημα</p>
+<p>Οι θέσεις των Σελιδοδεικτών αποθηκεύονται στη βάση δεδομένων για κάθε Εγγραφή και σε οποιοδήποτε εξαγόμενο αρχείο Λήψης (Εγγραφή με δεδομένα).</p>
+<h2 id="πώς-ορίζω-σελιδοδείκτες">Πώς ορίζω Σελιδοδείκτες;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Για να αλλάξετε ή να ορίσετε χειροκίνητα τις θέσεις των Σελιδοδεικτών:</p>
+<ul>
+<li>
+<p>«Ξεκλειδώστε» τους Σελιδοδείκτες πατώντας το κουμπί «bookmarks».</p>
+</li>
+<li>
+<p>Μόλις επιλεγεί, μπορείτε να αλλάξετε τη θέση των Σελιδοδεικτών σύροντας το/τα βέλος(-α).</p>
+</li>
+<li>
+<p>Όταν τελειώσετε, φροντίστε να «κλειδώσετε» ξανά τους Σελιδοδείκτες αποεπιλέγοντας το εικονίδιο «bookmarks», εξερχόμενοι από τη λειτουργία «επεξεργασίας Σελιδοδεικτών».</p>
+</li>
+</ul>
+<p><a href="#R-image-80c598740d343efefcc5d08070013668" class="lightbox-link"><img alt="hTxwCEhhvp.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/htxwcehhvp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80c598740d343efefcc5d08070013668"><img alt="hTxwCEhhvp.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/htxwcehhvp-png.png"></a></p>
+<p><a href="#R-image-505993edce23a5039c8ec71475ae5a51" class="lightbox-link"><img alt="MotionCatalyst_JWfhTldXeS.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-jwfhtldxes-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-505993edce23a5039c8ec71475ae5a51"><img alt="MotionCatalyst_JWfhTldXeS.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-jwfhtldxes-png.png"></a></p>
+<p>Για επαναφορά των θέσεων, κάντε κλικ στο κουμπί «reset A» (ή B) (εμφανίζεται αριστερά του κουμπιού bookmarks).</p>
+<p>Οι γκρι Σελιδοδείκτες υποδεικνύουν ότι δεν έχουν οριστεί ή τροποποιηθεί.</p>
+<p><a href="#R-image-0eeb3a6d3f630ced17bc10b5b7cee505" class="lightbox-link"><img alt="MotionCatalyst_ttrfziAOSo.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-ttrfziaoso-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0eeb3a6d3f630ced17bc10b5b7cee505"><img alt="MotionCatalyst_ttrfziAOSo.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-ttrfziaoso-png.png"></a></p>
+<p>Οι Σελιδοδείκτες αναπαρίστανται επίσης στα γραφήματα δεδομένων ως κατακόρυφες γραμμές, υποδεικνύοντας <em>πού</em> στη χρονική ροή της Εγγραφής βρίσκονται οι διάφορες Φάσεις (άξονας Χ του γραφήματος):</p>
+<p><a href="#R-image-6dcbc8eb10b7f31bd429b924afa168de" class="lightbox-link"><img alt="image__2_.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/image-2-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6dcbc8eb10b7f31bd429b924afa168de"><img alt="image__2_.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/image-2-png.png"></a></p>
+<p><strong>Συμβουλή</strong>: Η θέση του πρώτου και/ή του τελευταίου Σελιδοδείκτη καθορίζει πόσα δεδομένα εμφανίζονται στα πλαίσια δεδομένων. Η διάρκεια πριν από τον πρώτο Σελιδοδείκτη και μετά τον τελευταίο εξαρτάται από τη Δραστηριότητα και το Άθλημα, αλλά η χειροκίνητη αλλαγή αυτής μπορεί να είναι χρήσιμη για την προβολή συγκεκριμένων τμημάτων μιας Εγγραφής. Αυτό είναι ιδιαίτερα χρήσιμο για Εγγραφές που γίνονται στη Δραστηριότητα «ελεύθερης κίνησης», η οποία μπορεί να διαρκεί έως 30 δευτερόλεπτα.</p>
+<p><a href="#R-image-a9853cf007fa7e928417c68190bf87ad" class="lightbox-link"><img alt="MotionCatalyst_eUbaCWiclM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-eubacwiclm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9853cf007fa7e928417c68190bf87ad"><img alt="MotionCatalyst_eUbaCWiclM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-eubacwiclm-gif.png"></a></p>
+<p>Note: Αλλάζουμε μόνο αυτό που βλέπουμε «στο χρόνο», κανένα από τα αποθηκευμένα δεδομένα δεν τροποποιείται στην πραγματικότητα με κανέναν τρόπο.</p>
+<p>Για περισσότερες λεπτομέρειες σχετικά με την προβολή και τον χειρισμό των γραφημάτων, ανατρέξτε σε <a href="/sc-support/el/software-features/graph-library/index.html">αυτό το άρθρο</a>.</p>
+<h2 id="γιατί-πρέπει-να-ορίζω-σελιδοδείκτες">Γιατί πρέπει να ορίζω Σελιδοδείκτες;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Για να επιτρέπεται ο εύκολος Συγχρονισμός Αναπαραγωγής μεταξύ Εγγραφών, συνιστούμε να ορίζετε Σελιδοδείκτες.</p>
+<p>Για παράδειγμα, ας πούμε ότι θέλετε να δείτε δύο Εγγραφές άλματος αντίθετης κίνησης δίπλα-δίπλα, που εκτελέστηκαν από δύο διαφορετικούς Χρήστες, και επιθυμείτε να συγχρονίσετε την Αναπαραγωγή γύρω από μια συγκεκριμένη Φάση.</p>
+<ul>
+<li>
+<p>Κάντε κλικ στο κουμπί «Synchronize».</p>
+</li>
+<li>
+<p>Επιλέξτε τη Φάση / Σελιδοδείκτη στον οποίο επιθυμείτε να συγχρονίσετε.</p>
+</li>
+<li>
+<p>Πατήστε αναπαραγωγή.</p>
+</li>
+</ul>
+<p><a href="#R-image-5d8a0b4c1b342042f5fb2df4e0d11d9f" class="lightbox-link"><img alt="MotionCatalyst_vG2pjBkyKz.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-vg2pjbkykz-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5d8a0b4c1b342042f5fb2df4e0d11d9f"><img alt="MotionCatalyst_vG2pjBkyKz.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-vg2pjbkykz-png.png"></a></p>
+<p>Note: Ο αριθμός των διαθέσιμων Σελιδοδεικτών και η ονομασία των Φάσεων διαφέρουν ανάλογα με το Άθλημα και τη Δραστηριότητα.</p>
+<p><a href="#R-image-2b918ce6dab5d7e19304e88d78b1f6af" class="lightbox-link"><img alt="MotionCatalyst_91cMd3GPuD.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-91cmd3gpud-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2b918ce6dab5d7e19304e88d78b1f6af"><img alt="MotionCatalyst_91cMd3GPuD.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-91cmd3gpud-gif.png"></a></p>
+<p>Παράδειγμα συγχρονισμού Σελιδοδεικτών στην Κρούση για δύο Αιωρήσεις γκολφ:</p>
+<p><a href="#R-image-a94111768a56e685a282cc82cc484687" class="lightbox-link"><img alt="MotionCatalyst_YKLskF87yC.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-yklskf87yc-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a94111768a56e685a282cc82cc484687"><img alt="MotionCatalyst_YKLskF87yC.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-yklskf87yc-gif.png"></a></p>
+<p>Αυτό μπορεί να γίνει για οποιοδήποτε Άθλημα ή Δραστηριότητα. Για περισσότερες λεπτομέρειες σχετικά με τη «λειτουργία σύγκρισης», ανατρέξτε στην ενότητα «διατάξεις» του <a href="/sc-support/el/getting-started/user-guide/index.html">οδηγού χρήστη</a> μας.</p>
+<hr>
+<p><em>Τελευταία ενημέρωση: 2024-06-07</em> | <a href="/sc-support/el/software-features/bookmarks/index.html">Προβολή στον επίσημο ιστότοπο υποστήριξης</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/el/index.html">
+          <span class="logo-title default-animation">Υποστήριξη Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/el/getting-started/index.html"><a class="padding default-animation" href="/sc-support/el/getting-started/index.html">Ξεκινώντας</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/el/cameras-video/index.html">Κάμερες &amp; Βίντεο</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/el/hardware/index.html"><a class="padding default-animation" href="/sc-support/el/hardware/index.html">Υλικό (Hardware)</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/el/software-features/index.html"><a class="padding default-animation" href="/sc-support/el/software-features/index.html">Λογισμικό &amp; Λειτουργίες</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/el/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/el/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/el/software-features/frontal-plane-torque/index.html">Ανάλυση Ροπής Στρέψης Μετωπικού Επιπέδου - Οδηγός Χρήστη</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/el/software-features/key-metrics/index.html">Βασικά Μετρικά Δεδομένα</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/el/software-features/markerless-motion-capture/index.html">Βελτίωση της Ανίχνευσης Κίνησης χωρίς Δείκτες στην Αιώρηση Γκολφ και Μπέιζμπολ Χρησιμοποιώντας RTMPose και RTMDet: Μια Προσέγγιση Από Πάνω Προς Τα Κάτω</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/el/software-features/multiple-forces-graph/index.html">Γράφημα Πολλαπλών Δυνάμεων</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/el/software-features/export-recordings/index.html">Εξαγωγή εγγραφών</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/el/software-features/ios-app-sharing/index.html">Κοινοποίηση εγγεγραμμένων βίντεο με την εφαρμογή Swing Catalyst για iOS</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/el/software-features/body-weight-measurement/index.html">Νέα λειτουργικότητα μέτρησης βάρους σώματος</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/el/software-features/motion-capture-guide/index.html">Οδηγός Χρήστη Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/el/software-features/change-recording-user/index.html">Πώς να αλλάξετε τον χρήστη σε μια υπάρχουσα εγγραφή</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/el/software-features/motion-capture-install/index.html">Πώς να εγκαταστήσετε τα στοιχεία Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/el/software-features/import-from-v1/index.html">Πώς να εισάγετε βίντεο από το V1</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/el/software-features/export-contacts/index.html">Πώς να εξαγάγετε στοιχεία επικοινωνίας μαθητών</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/el/software-features/export-raw-data/index.html">Πώς να εξάγετε ακατέργαστα δεδομένα</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/el/software-features/record-a-lesson/index.html">Πώς να ηχογραφήσετε ένα Μάθημα</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/el/software-features/multiple-displays/index.html">Πώς να ρυθμίσετε πολλαπλές οθόνες με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/el/software-features/email-sharing/index.html">Πώς να ρυθμίσετε την κοινοποίηση μέσω email στο Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/el/software-features/feedback-screen/index.html">Πώς να ρυθμίσετε την Οθόνη Σχολίων</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/el/software-features/force-vectors/index.html">Πώς να χρησιμοποιείτε τα Διανύσματα Δύναμης</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/explorer/index.html"><a class="padding" href="/sc-support/el/software-features/explorer/index.html">Πώς να χρησιμοποιείτε τον Περιηγητή</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/el/software-features/microphone-trigger/index.html">Πώς να χρησιμοποιήσετε ένα μικρόφωνο ως Σκανδάλη Σύλληψης</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/el/software-features/pressure-distribution-overlay/index.html">Πώς να χρησιμοποιήσετε τη λειτουργία Επικάλυψης Κατανομής Πίεσης</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/remote-support/index.html"><a class="padding" href="/sc-support/el/software-features/remote-support/index.html">Πώς να Χρησιμοποιήσετε την Απομακρυσμένη Υποστήριξη</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/el/software-features/swing-catalyst-online/index.html">Πώς να χρησιμοποιήσετε το Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/el/software-features/motion-capture-settings/index.html">Ρυθμίσεις Ανίχνευσης Κίνησης στο Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/el/software-features/motion-capture-disclosures/index.html">Σημαντικές Γνωστοποιήσεις για τους Χρήστες του Εργαλείου Ανίχνευσης Κίνησης SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/el/software-features/keyboard-shortcuts/index.html">Συντομεύσεις πληκτρολογίου και Hotkeys</a></li>
+            <li class="active " data-nav-id="/sc-support/el/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/el/software-features/bookmarks/index.html">Τι είναι οι Σελιδοδείκτες;</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/el/software-features/raw-data-export-guide/index.html">Τι περιλαμβάνεται στην εξαγωγή ακατέργαστων δεδομένων</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/el/software-features/force-graph-phases/index.html">Φάσεις γραφήματος δύναμης</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/graph-library/index.html"><a class="padding" href="/sc-support/el/software-features/graph-library/index.html">Χρήση της βιβλιοθήκης γραφημάτων</a></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/el/software-features/pressure-stance-settings/index.html">Χρήση των νέων ρυθμίσεων Πίεσης και Στάσης</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/el/account-setup/index.html"><a class="padding default-animation" href="/sc-support/el/account-setup/index.html">Λογαριασμός &amp; Προετοιμασία</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/el/reference/index.html"><a class="padding default-animation" href="/sc-support/el/reference/index.html">Αναφορά</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/bookmarks/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/bookmarks/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/bookmarks/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/bookmarks/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/bookmarks/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/bookmarks/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/bookmarks/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/bookmarks/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/bookmarks/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/bookmarks/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/bookmarks/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/bookmarks/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/bookmarks/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/bookmarks/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/bookmarks/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/bookmarks/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/bookmarks/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/bookmarks/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/bookmarks/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/bookmarks/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/bookmarks/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/bookmarks/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/bookmarks/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/bookmarks/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/bookmarks/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/bookmarks/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/bookmarks/index.html" lang="el" selected data-selected>Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/bookmarks/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/bookmarks/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/bookmarks/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/bookmarks/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/bookmarks/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/bookmarks/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/bookmarks/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/bookmarks/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/bookmarks/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520141" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

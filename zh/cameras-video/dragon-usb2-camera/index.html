@@ -1,23 +1,473 @@
-<!doctype html><html id=R-html lang=zh dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像机。"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机 :: Swing Catalyst 支持"><meta name=twitter:description content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像机。"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh/cameras-video/dragon-usb2-camera/index.html"><meta property="og:site_name" content="Swing Catalyst 支持"><meta property="og:title" content="如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机 :: Swing Catalyst 支持"><meta property="og:description" content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像机。"><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="摄像机和视频"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Usb-Camera"><meta itemprop=name content="如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机 :: Swing Catalyst 支持"><meta itemprop=description content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像机。"><meta itemprop=wordCount content="499"><meta itemprop=keywords content="Troubleshooting,Usb-Camera"><title>如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机 :: Swing Catalyst 支持</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/dragon-usb2-camera/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763270 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763270 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763270 defer></script><script src=/sc-support/js/search.min.js?1771763270 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.zh.js?1771763270"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763270 defer></script><script src=/sc-support/js/lunr/lunr.zh.min.js?1771763270 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["zh"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763270 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763270 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763270 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763270 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763270 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/dragon-usb2-camera/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`复制文本到剪贴板`,window.T_Copied_to_clipboard=`文本已复制到剪贴板！`,window.T_Link_copied_to_clipboard=`链接已复制到剪贴板！`,window.T_Reset_view=`重置视图`,window.T_View_reset=`查看重置！`,window.T_No_results_found=`找不到"{0}"的结果`,window.T_N_results_found=`为"{0}"找到 {1} 个结果`,window.T_Browser_unsupported_feature=`此浏览器不支持此功能`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/zh/cameras-video/dragon-usb2-camera/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="导航 (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="目录 (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#如何使用-dragon-usb-20-摄像机与-swing-catalyst>如何使用 Dragon USB 2.0 摄像机与 Swing Catalyst</a></li><li><a href=#连接摄像机>连接摄像机</a><ul><li><a href=#camera-settings>Camera Settings</a></li></ul></li><li><a href=#troubleshooting>Troubleshooting</a><ul><li><a href=#low-frame-rate>Low Frame Rate:</a></li><li><a href=#dropped-frames>Dropped frames:</a></li><li><a href=#selecting-a-different-media-type>Selecting a different Media Type</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh/index.html><span itemprop=name>Swing Catalyst 支持</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/zh/cameras-video/index.html><span itemprop=name>摄像机和视频</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh/cameras-video/lynx-static-ip/index.html title="如何在 Lynx GigE 摄像机上设置静态 IP (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/zh/cameras-video/ids-ueye-usb/index.html title="如何在 Swing Catalyst 中使用 IDS uEye USB 摄像机 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=更多><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=标签 style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/zh/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/zh/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=如何在-swing-catalyst-中使用-dragon-120-fps-usb-20-摄像机>如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机</h1><h2 id=如何使用-dragon-usb-20-摄像机与-swing-catalyst>如何使用 Dragon USB 2.0 摄像机与 Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>本文介绍如何使用 Dragon USB 2.0 摄像机设置和使用 Swing Catalyst。</p><p>此摄像机不需要安装任何外部驱动程序。</p><p>有关故障排除：请参阅本文底部的故障排除部分。</p><h2 id=连接摄像机>连接摄像机<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>将摄像机连接到您的计算机并启动 Swing Catalyst。</p><p>从主菜单中，单击设置按钮（位于屏幕左下角，由齿轮图标指示），然后单击摄像机。</p><p><a href=#R-image-aec557de980a461e21a4a54634030b38 class=lightbox-link><img alt=MotionCatalyst_2021-11-25_13-53-17.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/motioncatalyst-2021-11-25-13-53-17-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-aec557de980a461e21a4a54634030b38><img alt=MotionCatalyst_2021-11-25_13-53-17.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/motioncatalyst-2021-11-25-13-53-17-png.png></a></p><p>Settings</p><p><a href=#R-image-58f23cb9fb9b06df9095cdc579905d97 class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-00-58.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/motioncatalyst-2021-11-23-18-00-58-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-58f23cb9fb9b06df9095cdc579905d97><img alt=MotionCatalyst_2021-11-23_18-00-58.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/motioncatalyst-2021-11-23-18-00-58-png.png></a></p><p>A successfully detected camera will automatically show up in the camera list</p><p><a href=#R-image-669882c0aee35c7e3849c0d58c019624 class=lightbox-link><img alt=2019-11-15_12-22-47.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-22-47-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-669882c0aee35c7e3849c0d58c019624><img alt=2019-11-15_12-22-47.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-22-47-png.png></a></p><p>In order to use the camera we first need to assign a camera angle.</p><p><a href=#R-image-e6887948b879974009fb80a5faf3b32a class=lightbox-link><img alt=2021-11-25_13-57-27.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2021-11-25-13-57-27-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-e6887948b879974009fb80a5faf3b32a><img alt=2021-11-25_13-57-27.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2021-11-25-13-57-27-png.png></a></p><p><a href=#R-image-430f80fb52bcd92517daf75e33b358be class=lightbox-link><img alt=2021-11-23_18-12-09.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2021-11-23-18-12-09-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-430f80fb52bcd92517daf75e33b358be><img alt=2021-11-23_18-12-09.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2021-11-23-18-12-09-gif.png></a></p><p>The camera is now enabled and has a camera angled assigned to it.<a href=#R-image-3be86956f7e186a02aef8144f523a499 class=lightbox-link><img alt=2019-11-15_12-18-49.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-18-49-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-3be86956f7e186a02aef8144f523a499><img alt=2019-11-15_12-18-49.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-18-49-png.png></a></p><h3 id=camera-settings>Camera Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Changing your cameras settings.</p><p>Note: This is generally not needed unless you wish to change the white balance or gamma. Exposure is by default set to auto and should be sufficient in most use cases.</p><p>It may be necessary to change the exposure settings depending on your lighting environment.</p><p><a href=#R-image-d2066276b23ed54e188215166f371c7f class=lightbox-link><img alt=2019-11-15_12-57-25.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-57-25-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d2066276b23ed54e188215166f371c7f><img alt=2019-11-15_12-57-25.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-57-25-png.png></a></p><p>Click &ldquo;Advanced&rdquo;</p><p><a href=#R-image-8b62bf7bd87a484f16a5494fae05a7be class=lightbox-link><img alt=2019-11-15_12-18-49.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-18-49-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8b62bf7bd87a484f16a5494fae05a7be><img alt=2019-11-15_12-18-49.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-18-49-png.png></a></p><p>Note: Auto is only available for certain properties, such as white balance, exposure, and focus).</p><p><a href=#R-image-1761659a6c2eb3ad3b3f95bbe7790acc class=lightbox-link><img alt=2019-11-15_12-58-36.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-58-36-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1761659a6c2eb3ad3b3f95bbe7790acc><img alt=2019-11-15_12-58-36.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-58-36-png.png></a></p><p><a href=#R-image-a55de73e70f0c0109222ad5f2cb7abeb class=lightbox-link><img alt=2019-11-15_13-00-02.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-13-00-02-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a55de73e70f0c0109222ad5f2cb7abeb><img alt=2019-11-15_13-00-02.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-13-00-02-png.png></a></p><p>If you any erroneous changes, you can revert to default) by clicking &ldquo;Restore defaults&rdquo;.</p><h2 id=troubleshooting>Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=low-frame-rate>Low Frame Rate:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frame rate may be lowered due to the exposure set on the camera.</p><p>By default the Dragon camera is set to auto exposure, if you don&rsquo;t have enough light, the exposure time per frame will be high, and the camera will be unable to provide a stable 120 frames per second.</p><p>If the exposure is too high, the frame rate will be reduced, and the recording will be blurrier.</p><p>The same happens when you try to take a photo on your phone when it&rsquo;s dark, the image can become streaky, this is due to the long exposure time (to compensate for lack of optimal lighting conditions).</p><p>You should be able to get ~120 FPS with adequate indoor lighting or outdoors.</p><h3 id=dropped-frames>Dropped frames:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If the camera is dropping frames (in this case it is not giving the FPS it should be), it can introduce visual artifacts.<a href=#R-image-c5f30dd0ef535879da2762467d352b5e class=lightbox-link><img alt=2019-11-15_12-44-34.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-44-34-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c5f30dd0ef535879da2762467d352b5e><img alt=2019-11-15_12-44-34.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/2019-11-15-12-44-34-png.png></a></p><ul><li><p>Make sure that the camera is connected directly to the computer, and ideally to one of the USB ports in the back of the computer.</p></li><li><p>You may have to try different USB ports to find one that works best for you, generally we want to avoid USB ports situated in the front of a desktop PC as the performance is poor (will often give a lower frame rate).</p></li></ul><h3 id=selecting-a-different-media-type>Selecting a different Media Type<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title=复制链接到剪贴板><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Normally DirectShow and Swing Catalyst will automatically select the best media type and changing it shouldn&rsquo;t be necessary, however some cases / scenarios do warrant this:</p><ul><li><p>If you have a web camera that is 60 FPS at 1920x1280 resolution and you&rsquo;re only getting 30 FPS</p></li><li><p>The video resolution appears smaller / worse compared to other appliations.</p></li></ul><p>To override the automatically chosen media type you check the &ldquo;Override Media Type&rdquo; checkbox and select a format from the drop down list.</p><p><a href=#R-image-38342b0489870f72f2fe6eee7b0b3f14 class=lightbox-link><img alt=MotionCatalyst_QwVb5cqSLs.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/motioncatalyst-qwvb5cqsls-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-38342b0489870f72f2fe6eee7b0b3f14><img alt=MotionCatalyst_QwVb5cqSLs.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/motioncatalyst-qwvb5cqsls-png.png></a></p><p>Note that the selection is often quite large and not easy to understand. Look for the frame rate and resolution values and select what you think is the best combination for you. If you&rsquo;re having problems with dropped frames, lowering the resolution might be worth tryign.</p><p><a href=#R-image-e2d1342ed930b05d186a14619cea6c07 class=lightbox-link><img alt=6EixAfSY8a.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360010424960/6eixafsy8a-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-e2d1342ed930b05d186a14619cea6c07><img alt=6EixAfSY8a.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360010424960/6eixafsy8a-png.png></a></p><hr><p><em>Last updated: 2023-12-19</em> | <a href=/sc-support/zh/cameras-video/dragon-usb2-camera/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/zh/index.html><span class="logo-title default-animation">Swing Catalyst 支持</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="搜索 (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>搜索</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=搜索...>
-<button class=search-clear type=button data-search-clear title=清除搜索><i class="fas fa-fw fa-times" title=清除搜索></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/zh/getting-started/index.html><a class="padding default-animation" href=/sc-support/zh/getting-started/index.html>开始使用</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/zh/cameras-video/index.html><a class="padding default-animation" href=/sc-support/zh/cameras-video/index.html>摄像机和视频</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/zh/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-warranty-service/index.html>FLIR摄像机保修和服务信息</a></li><li data-nav-id=/sc-support/zh/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/zh/cameras-video/pci-express-slots/index.html>PCI / PCI Express 插槽之间的差异</a></li><li data-nav-id=/sc-support/zh/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/zh/cameras-video/lens-distortion-correction/index.html>Swing Catalyst中的自动镜头畸变校正：增强您的视觉体验</a></li><li data-nav-id=/sc-support/zh/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/zh/cameras-video/usb3-troubleshooting/index.html>USB3摄像机故障排除</a></li><li data-nav-id=/sc-support/zh/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/zh/cameras-video/improving-image-quality/index.html>改进摄像机图像质量</a></li><li data-nav-id=/sc-support/zh/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/zh/cameras-video/advanced-camera-settings/index.html>高级摄像机设置指南</a></li><li data-nav-id=/sc-support/zh/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-spinnaker-cameras/index.html>将 FLIR Blackfly S (Spinnaker) 摄像机与 Swing Catalyst 一起使用</a></li><li data-nav-id=/sc-support/zh/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/zh/cameras-video/halcon-bluescreen-fix/index.html>连接Halcon USB许可证加密狗时计算机蓝屏</a></li><li data-nav-id=/sc-support/zh/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/gige-network-setup/index.html>千兆以太网和 GigE Vision 摄像机网络建议</a></li><li data-nav-id=/sc-support/zh/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/zh/cameras-video/avt-manta-install/index.html>如何安装 AVT Manta/Prosilica GigE 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/zh/cameras-video/halcon-camera-standards/index.html>如何查找您的摄像机支持的用于Halcon的标准</a></li><li data-nav-id=/sc-support/zh/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/zh/cameras-video/led-light-flicker/index.html>如何缓解LED灯闪烁</a></li><li data-nav-id=/sc-support/zh/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/zh/cameras-video/avt-manta-configure/index.html>如何配置 AVT Manta/Prosilica GigE 高速摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/zh/cameras-video/ids-ueye-highspeed/index.html>如何设置 iDS uEye USB 高速摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/zh/cameras-video/cctv-cameras/index.html>如何设置闭路电视摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/zh/cameras-video/fox-lynx-firmware/index.html>如何升级或降级 Fox / Lynx 固件</a></li><li data-nav-id=/sc-support/zh/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/zh/cameras-video/ids-ueye-gige/index.html>如何使用 Swing Catalyst 配置 IDS uEye GigE 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/zh/cameras-video/point-grey-flir-gige/index.html>如何使用 Swing Catalyst 配置 Point Grey / FLIR GigE (Blackfly) 摄像头</a></li><li data-nav-id=/sc-support/zh/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/basler-gige-setup/index.html>如何使用 Swing Catalyst 设置 Basler GigE 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/zh/cameras-video/hardware-encoding/index.html>如何使用 SwingCatalyst 硬件编码</a></li><li data-nav-id=/sc-support/zh/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/halcon-setup/index.html>如何为 Swing Catalyst 设置 Halcon</a></li><li data-nav-id=/sc-support/zh/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/zh/cameras-video/fix-dropped-frames/index.html>如何修复USB 3.0或2.0摄像机的"丢帧"问题。</a></li><li data-nav-id=/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html>如何在 FLIR Blackfly GigE 摄像机上设置静态 IP</a></li><li data-nav-id=/sc-support/zh/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/zh/cameras-video/lynx-static-ip/index.html>如何在 Lynx GigE 摄像机上设置静态 IP</a></li><li class=active data-nav-id=/sc-support/zh/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/zh/cameras-video/dragon-usb2-camera/index.html>如何在 Swing Catalyst 中使用 Dragon (120 FPS) USB 2.0 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/zh/cameras-video/ids-ueye-usb/index.html>如何在 Swing Catalyst 中使用 IDS uEye USB 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/zh/cameras-video/web-camera-directshow/index.html>如何在 Swing Catalyst 中使用网络摄像头 (DirectShow 集成)</a></li><li data-nav-id=/sc-support/zh/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/zh/cameras-video/point-grey-flir-usb/index.html>如何在Swing Catalyst中使用Point Grey / FLIR USB摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/fox-camera-setup/index.html>设置 Swing Catalyst Fox USB 3.0 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/lynx-camera-setup/index.html>设置 Swing Catalyst Lynx GigE 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-firmware-upgrade/index.html>升级 FLIR Blackfly S 的固件</a></li><li data-nav-id=/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html>升级 Swing Catalyst 后 FLiR / Point Grey（Blackfly/Chameleon）摄像机无法工作</a></li><li data-nav-id=/sc-support/zh/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/ximea-usb3-setup/index.html>使用 Swing Catalyst 设置 Ximea USB3 Vision 摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/zh/cameras-video/recommended-usb3-components/index.html>推荐的 USB 3.0 组件</a></li><li data-nav-id=/sc-support/zh/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/zh/cameras-video/recommended-lighting/index.html>推荐用于工作室和车库安装的照明</a></li><li data-nav-id=/sc-support/zh/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-blackfly-gige-setup/index.html>在 Swing Catalyst 中设置 FLIR BlackFly S GigE</a></li><li data-nav-id=/sc-support/zh/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/zh/cameras-video/flir-blackfly-usb-setup/index.html>在 Swing Catalyst 中设置 FLIR BlackFly S USB</a></li><li data-nav-id=/sc-support/zh/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/zh/cameras-video/supported-cameras/index.html>支持的摄像机</a></li><li data-nav-id=/sc-support/zh/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/zh/cameras-video/minimum-distances/index.html>最小摄像机距离</a></li></ul></li><li data-nav-id=/sc-support/zh/hardware/index.html><a class="padding default-animation" href=/sc-support/zh/hardware/index.html>硬件</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/software-features/index.html><a class="padding default-animation" href=/sc-support/zh/software-features/index.html>软件与功能</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/account-setup/index.html><a class="padding default-animation" href=/sc-support/zh/account-setup/index.html>账户与设置</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/zh/reference/index.html><a class="padding default-animation" href=/sc-support/zh/reference/index.html>参考资料</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>语言</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/dragon-usb2-camera/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/dragon-usb2-camera/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/dragon-usb2-camera/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/dragon-usb2-camera/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/dragon-usb2-camera/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/dragon-usb2-camera/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/dragon-usb2-camera/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/dragon-usb2-camera/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/dragon-usb2-camera/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/dragon-usb2-camera/index.html lang=zh selected data-selected>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/dragon-usb2-camera/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/dragon-usb2-camera/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/dragon-usb2-camera/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/dragon-usb2-camera/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/dragon-usb2-camera/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/dragon-usb2-camera/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/dragon-usb2-camera/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/dragon-usb2-camera/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/dragon-usb2-camera/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/dragon-usb2-camera/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/dragon-usb2-camera/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/dragon-usb2-camera/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/dragon-usb2-camera/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/dragon-usb2-camera/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/dragon-usb2-camera/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/dragon-usb2-camera/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/dragon-usb2-camera/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/dragon-usb2-camera/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/dragon-usb2-camera/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/dragon-usb2-camera/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/dragon-usb2-camera/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/dragon-usb2-camera/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/dragon-usb2-camera/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/dragon-usb2-camera/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/dragon-usb2-camera/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/dragon-usb2-camera/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>主题</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763270 defer></script><script src=/sc-support/js/theme.min.js?1771763270 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="zh" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像头。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头 :: Swing Catalyst 支持">
+    <meta name="twitter:description" content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像头。">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/zh/cameras-video/dragon-usb2-camera/index.html">
+    <meta property="og:site_name" content="Swing Catalyst 支持">
+    <meta property="og:title" content="如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头 :: Swing Catalyst 支持">
+    <meta property="og:description" content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像头。">
+    <meta property="og:locale" content="zh">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="摄像头与视频">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta itemprop="name" content="如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头 :: Swing Catalyst 支持">
+    <meta itemprop="description" content="本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像头。">
+    <meta itemprop="wordCount" content="81">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
+    <title>如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头 :: Swing Catalyst 支持</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/dragon-usb2-camera/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520116" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520116" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.zh.js?1772520116";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/lunr/lunr.zh.min.js?1772520116" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['zh'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520116" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520116" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520116" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520116" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520116" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/dragon-usb2-camera\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `复制文本到剪贴板`;
+      window.T_Copied_to_clipboard = `文本已复制到剪贴板！`;
+      window.T_Link_copied_to_clipboard = `链接已复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+      window.T_Browser_unsupported_feature = `此浏览器不支持此功能`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/zh/cameras-video/dragon-usb2-camera/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#如何在-swing-catalyst-中使用-dragon-usb-20-摄像头">如何在 Swing Catalyst 中使用 Dragon USB 2.0 摄像头</a></li>
+    <li><a href="#连接摄像头">连接摄像头</a>
+      <ul>
+        <li><a href="#摄像头设置">摄像头设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#故障排除">故障排除</a>
+      <ul>
+        <li><a href="#帧率偏低">帧率偏低：</a></li>
+        <li><a href="#丢帧">丢帧：</a></li>
+        <li><a href="#选择其他媒体类型">选择其他媒体类型</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/index.html"><span itemprop="name">Swing Catalyst 支持</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/zh/cameras-video/index.html"><span itemprop="name">摄像头与视频</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh/cameras-video/basler-gige-setup/index.html" title="如何在 Swing Catalyst 中设置 Basler GigE 摄像头 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/zh/cameras-video/ids-ueye-usb/index.html" title="如何在 Swing Catalyst 中使用 IDS uEye USB 摄像头 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="标签" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/zh/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/zh/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="如何在-swing-catalyst-中使用-dragon120-fpsusb-20-摄像头">如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头</h1>
+
+<h2 id="如何在-swing-catalyst-中使用-dragon-usb-20-摄像头">如何在 Swing Catalyst 中使用 Dragon USB 2.0 摄像头<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>本文介绍如何在 Swing Catalyst 中设置和使用 Dragon USB 2.0 摄像头。</p>
+<p>该摄像头无需安装任何外部驱动程序。</p>
+<p>如需故障排除：请参阅文章底部的故障排除部分。</p>
+<h2 id="连接摄像头">连接摄像头<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>将摄像头连接到计算机并启动 Swing Catalyst。</p>
+<p>在主菜单中，点击设置按钮（位于屏幕左下角，以齿轮图标表示），然后点击摄像头。</p>
+<p><a href="#R-image-4b0d5776f853979e53fdff846cb043f7" class="lightbox-link"><img alt="MotionCatalyst_2021-11-25_13-53-17.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/motioncatalyst-2021-11-25-13-53-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4b0d5776f853979e53fdff846cb043f7"><img alt="MotionCatalyst_2021-11-25_13-53-17.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/motioncatalyst-2021-11-25-13-53-17-png.png"></a></p>
+<p>设置</p>
+<p><a href="#R-image-94b2be2a6da30fa9cbab2b32994b29cc" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-00-58.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/motioncatalyst-2021-11-23-18-00-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94b2be2a6da30fa9cbab2b32994b29cc"><img alt="MotionCatalyst_2021-11-23_18-00-58.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/motioncatalyst-2021-11-23-18-00-58-png.png"></a></p>
+<p>成功检测到的摄像头将自动显示在摄像头列表中</p>
+<p><a href="#R-image-fab680e3724839e98cafb54cc6d86948" class="lightbox-link"><img alt="2019-11-15_12-22-47.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-22-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fab680e3724839e98cafb54cc6d86948"><img alt="2019-11-15_12-22-47.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-22-47-png.png"></a></p>
+<p>要使用摄像头，我们首先需要指定一个摄像头角度。</p>
+<p><a href="#R-image-459d28327f0f8439cd03b02050649d4f" class="lightbox-link"><img alt="2021-11-25_13-57-27.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2021-11-25-13-57-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-459d28327f0f8439cd03b02050649d4f"><img alt="2021-11-25_13-57-27.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2021-11-25-13-57-27-png.png"></a></p>
+<p><a href="#R-image-a88702927202953c91935f6c9aac418f" class="lightbox-link"><img alt="2021-11-23_18-12-09.gif 的动画" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2021-11-23-18-12-09-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a88702927202953c91935f6c9aac418f"><img alt="2021-11-23_18-12-09.gif 的动画" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2021-11-23-18-12-09-gif.png"></a></p>
+<p>摄像头现已启用并已分配摄像头角度。<a href="#R-image-7d9d075a9fe34c68ad3c9467cfa56e82" class="lightbox-link"><img alt="2019-11-15_12-18-49.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-18-49-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d9d075a9fe34c68ad3c9467cfa56e82"><img alt="2019-11-15_12-18-49.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-18-49-png.png"></a></p>
+<h3 id="摄像头设置">摄像头设置<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>更改摄像头设置。</p>
+<blockquote>
+<p>note: 通常情况下无需更改，除非您希望调整白平衡或 Gamma。曝光默认设置为 Auto，在大多数使用场景下已足够。</p>
+<p>根据您的照明环境，可能需要更改曝光设置。</p></blockquote>
+<p><a href="#R-image-43d78c3a28fca703f3051593acb4f503" class="lightbox-link"><img alt="2019-11-15_12-57-25.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-57-25-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43d78c3a28fca703f3051593acb4f503"><img alt="2019-11-15_12-57-25.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-57-25-png.png"></a></p>
+<p>点击&quot;高级&quot;</p>
+<p><a href="#R-image-cb623266523af3ecb638e19a041b825a" class="lightbox-link"><img alt="2019-11-15_12-18-49.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-18-49-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb623266523af3ecb638e19a041b825a"><img alt="2019-11-15_12-18-49.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-18-49-png.png"></a></p>
+<blockquote>
+<p>note: Auto 仅适用于某些属性，例如白平衡、曝光和对焦）。</p></blockquote>
+<p><a href="#R-image-d65dbc7fc2dac0fe4e684153046e5f92" class="lightbox-link"><img alt="2019-11-15_12-58-36.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d65dbc7fc2dac0fe4e684153046e5f92"><img alt="2019-11-15_12-58-36.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-d2e3fbd3d9901df7a84ae100a24ceeb0" class="lightbox-link"><img alt="2019-11-15_13-00-02.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2e3fbd3d9901df7a84ae100a24ceeb0"><img alt="2019-11-15_13-00-02.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-13-00-02-png.png"></a></p>
+<p>如果您进行了任何错误的更改，可以点击&quot;恢复默认值&quot;还原到默认设置）。</p>
+<h2 id="故障排除">故障排除<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="帧率偏低">帧率偏低：<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>帧率降低可能是由于摄像头的曝光设置所导致的。</p>
+<p>默认情况下，Dragon 摄像头设置为自动曝光。如果光线不足，每帧的曝光时间会较长，摄像头将无法稳定提供每秒 120 帧。</p>
+<p>如果曝光时间过长，帧率将会降低，录制画面也会更加模糊。</p>
+<p>这与您在黑暗环境中用手机拍照时的情况相同——图像可能会出现拖影，这是由于曝光时间过长所致（以弥补光线不足的问题）。</p>
+<p>在充足的室内照明或户外环境下，您应该能够获得约 120 FPS。</p>
+<h3 id="丢帧">丢帧：<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>如果摄像头出现丢帧现象（即实际 FPS 低于应有值），可能会产生画面瑕疵。<a href="#R-image-3900218b7772b092a208755c8bf62e3f" class="lightbox-link"><img alt="2019-11-15_12-44-34.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3900218b7772b092a208755c8bf62e3f"><img alt="2019-11-15_12-44-34.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/2019-11-15-12-44-34-png.png"></a></p>
+<ul>
+<li>
+<p>请确保摄像头直接连接到计算机，最好连接到计算机背面的 USB 接口之一。</p>
+</li>
+<li>
+<p>您可能需要尝试不同的 USB 接口，以找到最适合的一个。通常应避免使用台式电脑前面板的 USB 接口，因为其表现较差（往往会导致帧率降低）。</p>
+</li>
+</ul>
+<h3 id="选择其他媒体类型">选择其他媒体类型<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>通常情况下，DirectShow 和 Swing Catalyst 会自动选择最佳媒体类型，无需手动更改。但在某些情况或场景下可能需要手动设置：</p>
+<ul>
+<li>
+<p>如果您的摄像头支持 60 FPS（分辨率为 1920x1280），但实际只获得了 30 FPS</p>
+</li>
+<li>
+<p>与其他应用程序相比，视频分辨率显示较小或较差。</p>
+</li>
+</ul>
+<p>要覆盖自动选择的媒体类型，请勾选&quot;覆盖媒体类型&quot;复选框，然后从下拉列表中选择一种格式。</p>
+<p><a href="#R-image-4d0c2195ed54e33849ef89be69de6aee" class="lightbox-link"><img alt="MotionCatalyst_QwVb5cqSLs.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/motioncatalyst-qwvb5cqsls-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4d0c2195ed54e33849ef89be69de6aee"><img alt="MotionCatalyst_QwVb5cqSLs.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/motioncatalyst-qwvb5cqsls-png.png"></a></p>
+<p>请注意，列表中的选项通常较多且不易理解。请查找帧率和分辨率数值，选择您认为最合适的组合。如果您遇到丢帧问题，可以尝试降低分辨率。</p>
+<p><a href="#R-image-8b174bd1e0828709f1403df19ee26a08" class="lightbox-link"><img alt="6EixAfSY8a.png 的截图" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/6eixafsy8a-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8b174bd1e0828709f1403df19ee26a08"><img alt="6EixAfSY8a.png 的截图" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360010424960/6eixafsy8a-png.png"></a></p>
+<hr>
+<p><em>最后更新：2023-12-19</em> | <a href="/sc-support/zh/cameras-video/dragon-usb2-camera/index.html">在官方支持网站上查看</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/zh/index.html">
+          <span class="logo-title default-animation">Swing Catalyst 支持</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="搜索 (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-fw fa-times" title="清除搜索"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/zh/getting-started/index.html"><a class="padding default-animation" href="/sc-support/zh/getting-started/index.html">入门指南</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/zh/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/zh/cameras-video/index.html">摄像头与视频</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-warranty-service/index.html">FLIR 相机保修与服务信息</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/zh/cameras-video/pci-express-slots/index.html">PCI / PCI Express 插槽之间的区别</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/zh/cameras-video/lens-distortion-correction/index.html">Swing Catalyst 中的自动镜头畸变校正：提升您的视觉体验</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/zh/cameras-video/usb3-troubleshooting/index.html">USB3 摄像头故障排除</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/zh/cameras-video/advanced-camera-settings/index.html">高级摄像机设置指南</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/zh/cameras-video/halcon-bluescreen-fix/index.html">连接 Halcon USB 许可加密狗时电脑蓝屏</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/gige-network-setup/index.html">千兆以太网与 GigE Vision 摄像机网络配置建议</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/zh/cameras-video/avt-manta-install/index.html">如何安装 AVT Manta/Prosilica GigE 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/zh/cameras-video/halcon-camera-standards/index.html">如何查找您的相机支持哪些标准以便与 Halcon 配合使用</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/zh/cameras-video/led-light-flicker/index.html">如何减轻LED灯光闪烁</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/zh/cameras-video/avt-manta-configure/index.html">如何配置 AVT Manta/Prosilica GigE 高速摄像机</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/zh/cameras-video/point-grey-flir-gige/index.html">如何配置 Point Grey / FLIR GigE（Blackfly）摄像头与 SwingCatalyst 配合使用</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/zh/cameras-video/ids-ueye-highspeed/index.html">如何设置 iDS uEye USB 高速摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/zh/cameras-video/cctv-cameras/index.html">如何设置闭路电视摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/zh/cameras-video/fox-lynx-firmware/index.html">如何升级或降级 Fox / Lynx 固件</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/zh/cameras-video/hardware-encoding/index.html">如何使用 SwingCatalyst 硬件编码</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html">如何为 FLIR Blackfly GigE 摄像头设置静态 IP</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/zh/cameras-video/lynx-static-ip/index.html">如何为 Lynx GigE 摄像头设置静态 IP</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/halcon-setup/index.html">如何为 Swing Catalyst 设置 Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/zh/cameras-video/fix-dropped-frames/index.html">如何修复 USB 3.0 或 2.0 摄像头的&#34;丢帧&#34;问题。</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/zh/cameras-video/ids-ueye-gige/index.html">如何在 Swing Catalyst 中配置 IDS uEye GigE 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/basler-gige-setup/index.html">如何在 Swing Catalyst 中设置 Basler GigE 摄像头</a></li>
+            <li class="active " data-nav-id="/sc-support/zh/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/zh/cameras-video/dragon-usb2-camera/index.html">如何在 Swing Catalyst 中使用 Dragon（120 FPS）USB 2.0 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/zh/cameras-video/ids-ueye-usb/index.html">如何在 Swing Catalyst 中使用 IDS uEye USB 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/zh/cameras-video/point-grey-flir-usb/index.html">如何在 Swing Catalyst 中使用 Point Grey / FLiR USB 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/zh/cameras-video/web-camera-directshow/index.html">如何在 Swing Catalyst 中使用网络摄像头（DirectShow 集成）</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/fox-camera-setup/index.html">设置 Swing Catalyst Fox USB 3.0 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/lynx-camera-setup/index.html">设置 Swing Catalyst Lynx GigE 摄像机</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/zh/cameras-video/minimum-distances/index.html">摄像机最小距离要求</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-firmware-upgrade/index.html">升级 FLIR Blackfly S 的固件</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html">升级后 FLiR / Point Grey（Blackfly/Chameleon）摄像头无法正常工作</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/ximea-usb3-setup/index.html">使用 SwingCatalyst 设置 Ximea USB3 Vision 摄像头</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/zh/cameras-video/recommended-lighting/index.html">适用于室内工作室及车库隔间安装的照明建议</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/zh/cameras-video/improving-image-quality/index.html">提升摄像头图像质量</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/zh/cameras-video/recommended-usb3-components/index.html">推荐的 USB 3.0 组件</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-blackfly-gige-setup/index.html">在 Swing Catalyst 中设置 FLIR BlackFly S GigE</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-blackfly-usb-setup/index.html">在 Swing Catalyst 中设置 FLIR BlackFly S USB</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/zh/cameras-video/flir-spinnaker-cameras/index.html">在 Swing Catalyst 中使用 FLIR Blackfly S（Spinnaker）摄像机</a></li>
+            <li class="" data-nav-id="/sc-support/zh/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/zh/cameras-video/supported-cameras/index.html">支持的摄像机</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/hardware/index.html"><a class="padding default-animation" href="/sc-support/zh/hardware/index.html">硬件</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/software-features/index.html"><a class="padding default-animation" href="/sc-support/zh/software-features/index.html">软件与功能</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/account-setup/index.html"><a class="padding default-animation" href="/sc-support/zh/account-setup/index.html">账户与准备姿势</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/zh/reference/index.html"><a class="padding default-animation" href="/sc-support/zh/reference/index.html">参考</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">语言</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/dragon-usb2-camera/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/dragon-usb2-camera/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/dragon-usb2-camera/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/dragon-usb2-camera/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/dragon-usb2-camera/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/dragon-usb2-camera/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/dragon-usb2-camera/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/dragon-usb2-camera/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/dragon-usb2-camera/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/dragon-usb2-camera/index.html" lang="zh" selected data-selected>简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/dragon-usb2-camera/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/dragon-usb2-camera/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/dragon-usb2-camera/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/dragon-usb2-camera/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/dragon-usb2-camera/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/dragon-usb2-camera/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/dragon-usb2-camera/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/dragon-usb2-camera/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/dragon-usb2-camera/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/dragon-usb2-camera/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/dragon-usb2-camera/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/dragon-usb2-camera/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/dragon-usb2-camera/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/dragon-usb2-camera/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/dragon-usb2-camera/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/dragon-usb2-camera/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/dragon-usb2-camera/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/dragon-usb2-camera/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/dragon-usb2-camera/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/dragon-usb2-camera/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/dragon-usb2-camera/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/dragon-usb2-camera/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/dragon-usb2-camera/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/dragon-usb2-camera/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/dragon-usb2-camera/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/dragon-usb2-camera/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">主题</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520116" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520116" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

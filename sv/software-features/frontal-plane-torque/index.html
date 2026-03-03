@@ -1,60 +1,713 @@
-<!doctype html><html id=R-html lang=sv dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Transversal planvridmoment (FPT) mäter den rotationskraft som din kropp genererar runt den transversella planaxeln under en golfsvinge. Tänk på det som att mäta hur..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Analys av transversal planvridmoment - Användarguide :: Swing Catalyst Support"><meta name=twitter:description content="Transversal planvridmoment (FPT) mäter den rotationskraft som din kropp genererar runt den transversella planaxeln under en golfsvinge. Tänk på det som att mäta hur..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html"><meta property="og:site_name" content="Swing Catalyst Support"><meta property="og:title" content="Analys av transversal planvridmoment - Användarguide :: Swing Catalyst Support"><meta property="og:description" content="Transversal planvridmoment (FPT) mäter den rotationskraft som din kropp genererar runt den transversella planaxeln under en golfsvinge. Tänk på det som att mäta hur..."><meta property="og:locale" content="sv"><meta property="og:type" content="article"><meta property="article:section" content="Programvara & Funktioner"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Pressure-Data"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="Analys av transversal planvridmoment - Användarguide :: Swing Catalyst Support"><meta itemprop=description content="Transversal planvridmoment (FPT) mäter den rotationskraft som din kropp genererar runt den transversella planaxeln under en golfsvinge. Tänk på det som att mäta hur..."><meta itemprop=wordCount content="891"><meta itemprop=keywords content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture"><title>Analys av transversal planvridmoment - Användarguide :: Swing Catalyst Support</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763274 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763274 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763274 defer></script><script src=/sc-support/js/search.min.js?1771763274 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.sv.js?1771763274"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763274 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763274 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763274 defer></script><script src=/sc-support/js/lunr/lunr.sv.min.js?1771763274 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["sv"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763274 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763274 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763274 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763274 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763274 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/frontal-plane-torque/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/sv/software-features/frontal-plane-torque/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#introduktion>Introduktion</a><ul><li><a href=#vad-är-frontalplan-vridmoment>Vad är Frontalplan Vridmoment?</a></li><li><a href=#funktionskomponenter>Funktionskomponenter</a></li><li><a href=#varför-är-det-viktigt>Varför är det viktigt?</a></li><li><a href=#förutsättningar>Förutsättningar</a></li></ul></li><li><a href=#komma-igång>Komma igång</a><ul><li><a href=#lägga-till-fpt-databox-i-din-layout>Lägga till FPT DataBox i din layout</a></li><li><a href=#aktivering-av-3d-visualisering>Aktivering av 3D-visualisering</a></li><li><a href=#nödvändig-data>Nödvändig data</a></li></ul></li><li><a href=#förståelse-av-displayen>Förståelse av displayen</a><ul><li><a href=#grafen>Grafen</a></li><li><a href=#nyckeltal>Nyckeltal</a></li><li><a href=#fasfärgning>Fasfärgning</a></li></ul></li><li><a href=#3d-visualisering>3D-visualisering</a><ul><li><a href=#momentarmvisualisering>Momentarmvisualisering</a></li><li><a href=#kraftvektoruppdelning>Kraftvektoruppdelning</a></li><li><a href=#3d-visualiseringsinställningar>3D-visualiseringsinställningar</a></li></ul></li><li><a href=#konfigurationsalternativ-diagram>Konfigurationsalternativ (Diagram)</a></li><li><a href=#felsökning>Felsökning</a><ul><li><a href=#meddelandet-ingen-person-på-plattan>Meddelandet &ldquo;Ingen person på plattan&rdquo;</a></li><li><a href=#tom-eller-saknad-diagramdata>Tom eller saknad diagramdata</a></li><li><a href=#tidsmätningar-visas-inte>Tidsmätningar visas inte</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/sv/index.html><span itemprop=name>Swing Catalyst Support</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/sv/software-features/index.html><span itemprop=name>Programvara & Funktioner</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Analys av transversal planvridmoment - Användarguide</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/sv/software-features/index.html title="Programvara & Funktioner (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/sv/software-features/pressure-stance-settings/index.html title="Använda de nya Pressure och Stance-inställningarna (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/sv/tags/force-data/index.html>Force-Data</a></li><li><a class=term-link href=/sc-support/sv/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/sv/tags/pressure-data/index.html>Pressure-Data</a></li><li><a class=term-link href=/sc-support/sv/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=analys-av-transversal-planvridmoment---användarguide>Analys av transversal planvridmoment - Användarguide</h1><h2 id=introduktion>Introduktion<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=vad-är-frontalplan-vridmoment>Vad är Frontalplan Vridmoment?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frontalplan Vridmoment (FPT) mäter den rotationskraft din kropp genererar omkring frontalplanets axel under en golfswing. Se det som ett mått på hur effektivt du använder markreaktionskrafterna för att skapa rotationskraft.</p><p>När du svintar en golfklubb, trycker dina fötter mot marken, och marken trycker tillbaka. Denna växelverkan mellan din kroppsmassas centrum och krafterna vid dina fötter skapar vridmoment - en rotationskraft som hjälper till att driva din swing.</p><h3 id=funktionskomponenter>Funktionskomponenter<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>FPT-funktionen innehåller två huvudkomponenter:</p><p><strong>FPT-graf (DataBox)</strong> - En tidsseriediagram som visar vridmomentvärdena under din swing med nyckeltal</p><p><strong>3D-visualisering</strong> - Realtidsöverlägg av momentarm och kraftuppdelning på motion capture-skelettets vy</p><h3 id=varför-är-det-viktigt>Varför är det viktigt?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Att förstå ditt frontalplan-vridmoment kan hjälpa dig att:</p><p><strong>Identifiera kraftgenereringmönster</strong> - Se hur effektivt du överför markraftningar till rotationsenergi</p><p><strong>Visualisera biomekanisk hävstång</strong> - Se momentarmförhållandet mellan ditt masscentrum och markkrafter i 3D</p><p><strong>Analysera tidpunkt</strong> - Förstå när maxvridmomentet inträffar i förhållande till bollslaget</p><p><strong>Dela upp kraftkomponenter</strong> - Se hur din markreaktionskraft fördelar sig över olika riktningar</p><p><strong>Jämför swings</strong> - Spåra förändringar i din kraftgenerering över tid</p><h3 id=förutsättningar>Förutsättningar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>För att använda Frontalplan Vridmoment-analys behöver du:</p><p><strong>Obligatoriskt</strong>: Kraftplattinspelning med markreaktionskraftdata</p><p><strong>Obligatoriskt</strong>: Motion capture-data för spårning av masscentrum</p><p><strong>Obligatoriskt</strong>: Kalibrerad kamerakonfiguration</p><p><strong>Obligatoriskt</strong>: Kroppsviktsmätning (för normaliserade värden)</p><hr><h2 id=komma-igång>Komma igång<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=lägga-till-fpt-databox-i-din-layout>Lägga till FPT DataBox i din layout<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Öppna en inspelad swing i analysvyn</p></li><li><p>Klicka på <strong>DataBox</strong>-menyn eller layouteditorn</p></li><li><p>Hitta <strong>Frontalplanets vridmoment</strong> i den tillgängliga DataBox-listan</p></li><li><p>Lägg till det i din analyslayout</p></li><li><p>DataBox fylls automatiskt med data från din inspelning</p></li></ul><h3 id=aktivering-av-3d-visualisering>Aktivering av 3D-visualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Momentarm- och kraftuppdelningsvisualiseringarna visas i 3D-videovisningsrutan tillsammans med skeletten. Så här aktiverar du dem:</p><ul><li><p>Öppna en inspelning med rörelseuppsamlings- och kraftplattdata</p></li><li><p>Leta upp panelen <strong>Kraftvektorinställningar</strong> i videovyn</p></li><li><p>Aktivera de visualiseringsalternativ du vill se</p></li></ul><h3 id=nödvändig-data>Nödvändig data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>För att FPT-analysen ska fungera korrekt måste din inspelning innehålla:</p><p>Datatyp
-Krävs
-Syfte</p><p>Kraftplattdata
-Ja
-Tillhandahåller markreaktionskrafter (Fx, Fz) och tryckcentrum</p><p>Rörelseuppsamling
-Ja
-Tillhandahåller masscentrumposition för vridmomentberäkning och 3D-visualisering</p><p>Kroppsvikt
-Ja
-Används för att normalisera vridmomentvärden för jämförelse</p><p>Kamerakalibrering
-Ja
-Krävs för korrekt 3D-justering</p><p>Slag-bokmärke
-Rekommenderas
-Möjliggör tidsmätningar relativt bollkontakt</p><hr><h2 id=förståelse-av-displayen>Förståelse av displayen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=grafen>Grafen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Huvudgrafen visar vridmomentvärden över tid:</p><p><strong>X-axel (horisontell)</strong>: Tid från början av din swing till slut</p><p><strong>Y-axel (vertikal)</strong>: Vridmomentvärden (kan visa procentsats och/eller absolut)</p><p><strong>Nolllinjen</strong>: Den horisontella linjen vid noll - värden över och under indikerar motsatta rotationsriktningar</p><h4 id=dual-axis-system>Dual-Axis-system<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Grafen kan visa två olika skalor samtidigt:</p><p><strong>Vänster axel (Procentsats)</strong>: Visar vridmoment normaliserat efter kroppsvikt (Nm/kg, visas som Force Factor)</p><p><strong>Höger axel (Absolut)</strong>: Visar faktiskt vridmoment i Newton-meter (Nm)</p><h3 id=nyckeltal>Nyckeltal<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Tre nyckeltal visas tillsammans med grafen:</p><h4 id=1-max-vridmoment-kraftfaktor>1. Max vridmoment (kraftfaktor)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Vad det visar</strong>: Toppvridmomentet, normaliserat enligt kroppsvikt</p><p><strong>Enheter</strong>: Nm/kg (visas som kraftfaktor)</p><p><strong>Exempel</strong>: Ett värde på <strong>0,85</strong> betyder att ditt toppvridmoment var 0,85 Newton-meter per kilogram kroppsvikt</p><h4 id=2-timing-för-max-vridmoment>2. Timing för max vridmoment<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Vad det visar</strong>: När toppvridmomentet inträffar i förhållande till bollslaget</p><p><strong>Enheter</strong>: Millisekunder (ms)</p><p><strong>Anmärkning</strong>: Visas endast när ett slag-bokmärke är inställt</p><p><strong>Exempel</strong>: <strong>-50ms</strong> betyder att toppvridmomentet inträffade 50ms <em>före</em> slag; <strong>+20ms</strong> betyder 20ms <em>efter</em> slag; <strong>0ms</strong> betyder vid slag</p><h4 id=3-kraftfaktor-råvärde>3. Kraftfaktor (råvärde)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Vad det visar</strong>: Det råa normaliserade vridmomentvärdet inkluderande riktning (positivt eller negativt)</p><p><strong>Enheter</strong>: Nm/kg</p><p><strong>Exempel</strong>: <strong>+0,85</strong> och <strong>-0,85</strong> har samma magnitud men motsatta rotationsriktningar</p><h3 id=fasfärgning>Fasfärgning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>När det är aktiverat, överlagrar färgade band grafen för att visa olika faser av din swing:</p><ul><li>Bakåtsvingen, Nedåtsvingen, Slag, Follow-through</li></ul><hr><h2 id=3d-visualisering>3D-visualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=momentarmvisualisering>Momentarmvisualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Momentarmvisualiseringen visar den biomekaniska hävarrelationen mellan ditt masscentrum (COM) och markreaktionskraften.</p><p>Element
-Utseende
-Vad det visar</p><p><strong>Momentarmlinje</strong>
-Orange solid linje
-Det vinkelräta avståndet från ditt COM till kraftens verkningslinje</p><p><strong>Kraftens verkningslinje</strong>
-Orange streckad linje
-Den förlängda linjen längs vilken kraften verkar</p><p><strong>Avståndsetikett</strong>
-Vit text på mörk bakgrund
-Momentarmens avstånd i centimeter (±X.X cm)</p><h3 id=kraftvektoruppdelning>Kraftvektoruppdelning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Kraftuppdelningsvisualiseringen bryter ned den totala markreaktionskraften i tre vinkelräta komponenter. Färgerna representerar alltid samma fysiska kraftriktning oavsett kameravy:</p><p>Komponent
-Färg
-Fysisk riktning
-Vad det visar</p><p><strong>X-komponent</strong>
-Rosa
-Sida till sida (mediollateral)
-Lateral kraftfördelning</p><p><strong>Y-komponent</strong>
-Blågrön
-Upp-ned (vertikal)
-Vertikal kraftfördelning</p><p><strong>Z-komponent</strong>
-Grön
-Fram-bak (anteroposterior)
-Framåt/bakåt kraftfördelning</p><p>Varje komponentpil visar också en <strong>procentuetikett</strong> som anger vilken del av den totala kraften som är i den riktningen.</p><h4 id=kameravybeteende>Kameravybeteende<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Kraftvektorerna visas relativt din kameravy. Komponenter som skulle visas som djup (in/ut från skärmen) är dolda för tydlighet:</p><p>Kameravy
-Synliga komponenter
-Dold komponent</p><p><strong>Framifrån</strong>
-X (Rosa, horisontell), Y (Blågrön, vertikal)
-Z (Grön, djup)</p><p><strong>Längs linjen</strong>
-Z (Grön, horisontell), Y (Blågrön, vertikal)
-X (Rosa, djup)</p><p><strong>Anmärkning</strong>: Färgerna representerar alltid samma fysiska riktning - Rosa är alltid mediollateral kraft, Blågrön är alltid vertikal kraft och Grön är alltid anteroposterior kraft. Endast skärmens position ändras baserat på kameravinkeln.</p><h3 id=3d-visualiseringsinställningar>3D-visualiseringsinställningar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h4 id=momentarminställningar>Momentarminställningar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Inställning
-Standard
-Beskrivning</p><p><strong>Visa momentarm</strong>
-Av
-Togglar den orange heldragen linjen från masscentrum till kraftlinjen</p><p><strong>Visa verkningslinje</strong>
-Av
-Togglar den orange streckade linjen som visar kraftriktningens förlängning</p><p><strong>Visa avståndsetikett</strong>
-Av
-Togglar avståndsvärdesetiketten (±X.X cm)</p><h4 id=kraftuppdelningsinställningar>Kraftuppdelningsinställningar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Inställning
-Standard
-Beskrivning</p><p><strong>Visa X/Y/Z-komponenter</strong>
-Av
-Togglar alla tre komponentpilarna och procentetiketter</p><hr><h2 id=konfigurationsalternativ-diagram>Konfigurationsalternativ (Diagram)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>Visa % (Procententaxel)</strong>: Standard På - Togglar normaliserat vridmoment (Nm/kg)</p><p><strong>Visa Newton (Absolut axel)</strong>: Standard av - Slår på/av absolutt vridmoment (Nm)</p><p><strong>Markera faser</strong>: Standard av - Visar färgade band som indikerar svingfaser</p><p><strong>Visa rutnätslinjer</strong>: Standard på - Visar horisontella rutnätslinjer</p><p><strong>Diagramtyp</strong>: Fjälldiagram (standard) eller Linjediagram</p><hr><h2 id=felsökning>Felsökning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=meddelandet-ingen-person-på-plattan>Meddelandet &ldquo;Ingen person på plattan&rdquo;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Se till att idrottaren stod på kraftplattan vid inspelningsstarten</p></li><li><p>Kontrollera att kroppsvikt har angetts i idrottarprofilen</p></li><li><p>Verifiera att kraftplattans kalibrering är slutförd</p></li></ul><h3 id=tom-eller-saknad-diagramdata>Tom eller saknad diagramdata<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Bekräfta att kraftplattan var aktiv under inspelningen</p></li><li><p>Verifiera att rörelseuppsamlingsdata spelades in (krävs för FPT-beräkningar)</p></li><li><p>Kontrollera att inspelningen innehåller hela svingvaraktigheten</p></li></ul><h3 id=tidsmätningar-visas-inte>Tidsmätningar visas inte<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>Ställ in slagbokmärket i inspelningen</li></ul><hr><p><em>Last updated: 2026-01-09</em> | <a href=/sc-support/sv/software-features/frontal-plane-torque/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/sv/index.html><span class="logo-title default-animation">Swing Catalyst Support</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/sv/getting-started/index.html><a class="padding default-animation" href=/sc-support/sv/getting-started/index.html>Komma igång</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sv/cameras-video/index.html><a class="padding default-animation" href=/sc-support/sv/cameras-video/index.html>Kameror & Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sv/hardware/index.html><a class="padding default-animation" href=/sc-support/sv/hardware/index.html>Hårdvara</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/sv/software-features/index.html><a class="padding default-animation" href=/sc-support/sv/software-features/index.html>Programvara & Funktioner</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li class=active data-nav-id=/sc-support/sv/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/sv/software-features/frontal-plane-torque/index.html>Analys av transversal planvridmoment - Användarguide</a></li><li data-nav-id=/sc-support/sv/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/sv/software-features/pressure-stance-settings/index.html>Använda de nya Pressure och Stance-inställningarna</a></li><li data-nav-id=/sc-support/sv/software-features/graph-library/index.html><a class=padding href=/sc-support/sv/software-features/graph-library/index.html>Använda grafikbiblioteket</a></li><li data-nav-id=/sc-support/sv/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/sv/software-features/ios-app-sharing/index.html>Dela inspelade videor med appen SwingCatalyst för iOS</a></li><li data-nav-id=/sc-support/sv/software-features/export-recordings/index.html><a class=padding href=/sc-support/sv/software-features/export-recordings/index.html>Exportera inspelningar</a></li><li data-nav-id=/sc-support/sv/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/sv/software-features/markerless-motion-capture/index.html>Förbättring av Golfswing och Baseballswing Markerlös Rörelseuppsamling med RTMPose och RTMDet: En Uppifrånmetod</a></li><li data-nav-id=/sc-support/sv/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/sv/software-features/multiple-forces-graph/index.html>Graf för flera krafter</a></li><li data-nav-id=/sc-support/sv/software-features/force-vectors/index.html><a class=padding href=/sc-support/sv/software-features/force-vectors/index.html>Hur du använder kraftvektorer</a></li><li data-nav-id=/sc-support/sv/software-features/change-recording-user/index.html><a class=padding href=/sc-support/sv/software-features/change-recording-user/index.html>Hur du byter användare på en befintlig inspelning</a></li><li data-nav-id=/sc-support/sv/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/sv/software-features/motion-capture-install/index.html>Hur du installerar SwingCatalyst Motion Capture-komponenter</a></li><li data-nav-id=/sc-support/sv/software-features/feedback-screen/index.html><a class=padding href=/sc-support/sv/software-features/feedback-screen/index.html>Hur du konfigurerar feedbackskärmen</a></li><li data-nav-id=/sc-support/sv/software-features/multiple-displays/index.html><a class=padding href=/sc-support/sv/software-features/multiple-displays/index.html>Hur du konfigurerar flera skärmar med Swing Catalyst</a></li><li data-nav-id=/sc-support/sv/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/sv/software-features/microphone-trigger/index.html>Hur man använder en mikrofon som inspelningstrigger</a></li><li data-nav-id=/sc-support/sv/software-features/explorer/index.html><a class=padding href=/sc-support/sv/software-features/explorer/index.html>Hur man använder Explorer</a></li><li data-nav-id=/sc-support/sv/software-features/remote-support/index.html><a class=padding href=/sc-support/sv/software-features/remote-support/index.html>Hur man använder fjärrunderstöd</a></li><li data-nav-id=/sc-support/sv/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/sv/software-features/swing-catalyst-online/index.html>Hur man använder Swing Catalyst Online</a></li><li data-nav-id=/sc-support/sv/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/sv/software-features/pressure-distribution-overlay/index.html>Hur man använder överlagringsfunktionen för tryckfördelning</a></li><li data-nav-id=/sc-support/sv/software-features/export-contacts/index.html><a class=padding href=/sc-support/sv/software-features/export-contacts/index.html>Hur man exporterar studentkontaktinformation</a></li><li data-nav-id=/sc-support/sv/software-features/import-from-v1/index.html><a class=padding href=/sc-support/sv/software-features/import-from-v1/index.html>Hur man importerar videor från V1</a></li><li data-nav-id=/sc-support/sv/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/sv/software-features/record-a-lesson/index.html>Hur man spelar in en lektion</a></li><li data-nav-id=/sc-support/sv/software-features/email-sharing/index.html><a class=padding href=/sc-support/sv/software-features/email-sharing/index.html>Hur man ställer in e-postdelning i Swing Catalyst</a></li><li data-nav-id=/sc-support/sv/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/sv/software-features/force-graph-phases/index.html>Kraftgrafens faser</a></li><li data-nav-id=/sc-support/sv/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/sv/software-features/body-weight-measurement/index.html>Ny funktionalitet för kropsvigtmätning</a></li><li data-nav-id=/sc-support/sv/software-features/key-metrics/index.html><a class=padding href=/sc-support/sv/software-features/key-metrics/index.html>Nyckeltal</a></li><li data-nav-id=/sc-support/sv/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/sv/software-features/motion-capture-guide/index.html>Swing Catalyst rörelseuppsamlings användarhandbok</a></li><li data-nav-id=/sc-support/sv/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/sv/software-features/motion-capture-faq/index.html>Swing Catalyst rörelseuppsamlings-FAQ</a></li><li data-nav-id=/sc-support/sv/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/sv/software-features/motion-capture-settings/index.html>Swing Catalyst rörelseuppsamlingsinställningar</a></li><li data-nav-id=/sc-support/sv/software-features/export-raw-data/index.html><a class=padding href=/sc-support/sv/software-features/export-raw-data/index.html>Så exporterar du rådata</a></li><li data-nav-id=/sc-support/sv/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/sv/software-features/keyboard-shortcuts/index.html>Tangentbordsgenvägar och snabbknappar</a></li><li data-nav-id=/sc-support/sv/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/sv/software-features/raw-data-export-guide/index.html>Vad som ingår i exporteringen av rådata</a></li><li data-nav-id=/sc-support/sv/software-features/bookmarks/index.html><a class=padding href=/sc-support/sv/software-features/bookmarks/index.html>Vad är bokmärken?</a></li><li data-nav-id=/sc-support/sv/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/sv/software-features/motion-capture-disclosures/index.html>Viktiga upplysningar för användare av Swing Catalyst rörelseuppsamlingsverktyg</a></li></ul></li><li data-nav-id=/sc-support/sv/account-setup/index.html><a class="padding default-animation" href=/sc-support/sv/account-setup/index.html>Konto & Inställning</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sv/reference/index.html><a class="padding default-animation" href=/sc-support/sv/reference/index.html>Referens</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/frontal-plane-torque/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/frontal-plane-torque/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/frontal-plane-torque/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/frontal-plane-torque/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/frontal-plane-torque/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/frontal-plane-torque/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/frontal-plane-torque/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/frontal-plane-torque/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/frontal-plane-torque/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/frontal-plane-torque/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/frontal-plane-torque/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/frontal-plane-torque/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/frontal-plane-torque/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/frontal-plane-torque/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/frontal-plane-torque/index.html lang=sv selected data-selected>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/frontal-plane-torque/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/frontal-plane-torque/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/frontal-plane-torque/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/frontal-plane-torque/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/frontal-plane-torque/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/frontal-plane-torque/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/frontal-plane-torque/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/frontal-plane-torque/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/frontal-plane-torque/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/frontal-plane-torque/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/frontal-plane-torque/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/frontal-plane-torque/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/frontal-plane-torque/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/frontal-plane-torque/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/frontal-plane-torque/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/frontal-plane-torque/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/frontal-plane-torque/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/frontal-plane-torque/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/frontal-plane-torque/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/frontal-plane-torque/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/frontal-plane-torque/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763274 defer></script><script src=/sc-support/js/theme.min.js?1771763274 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="sv" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Frontalplan Vridmoment (FPT) mäter den rotationskraft din kropp genererar runt frontalplanets axel under en golfsvång. Tänk på det som ett mått på hur effektivt du...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Frontalplan Vridmoment Analys - Användarguide :: Swing Catalyst Support">
+    <meta name="twitter:description" content="Frontalplan Vridmoment (FPT) mäter den rotationskraft din kropp genererar runt frontalplanets axel under en golfsvång. Tänk på det som ett mått på hur effektivt du...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Support">
+    <meta property="og:title" content="Frontalplan Vridmoment Analys - Användarguide :: Swing Catalyst Support">
+    <meta property="og:description" content="Frontalplan Vridmoment (FPT) mäter den rotationskraft din kropp genererar runt frontalplanets axel under en golfsvång. Tänk på det som ett mått på hur effektivt du...">
+    <meta property="og:locale" content="sv">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Programvara & funktioner">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Motion-Capture">
+    <meta itemprop="name" content="Frontalplan Vridmoment Analys - Användarguide :: Swing Catalyst Support">
+    <meta itemprop="description" content="Frontalplan Vridmoment (FPT) mäter den rotationskraft din kropp genererar runt frontalplanets axel under en golfsvång. Tänk på det som ett mått på hur effektivt du...">
+    <meta itemprop="wordCount" content="903">
+    <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
+    <title>Frontalplan Vridmoment Analys - Användarguide :: Swing Catalyst Support</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520122" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520122" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520122" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520122" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.sv.js?1772520122";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520122" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520122" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520122" defer></script>
+    <script src="/sc-support/js/lunr/lunr.sv.min.js?1772520122" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['sv'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520122" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520122" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520122" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520122" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520122" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/frontal-plane-torque\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/sv/software-features/frontal-plane-torque/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduktion">Introduktion</a>
+      <ul>
+        <li><a href="#vad-är-frontalplan-vridmoment">Vad är Frontalplan Vridmoment?</a></li>
+        <li><a href="#funktionens-komponenter">Funktionens komponenter</a></li>
+        <li><a href="#varför-är-detta-viktigt">Varför är detta viktigt?</a></li>
+        <li><a href="#förutsättningar">Förutsättningar</a></li>
+      </ul>
+    </li>
+    <li><a href="#kom-igång">Kom igång</a>
+      <ul>
+        <li><a href="#lägga-till-fpt-databox-i-din-layout">Lägga till FPT DataBox i din Layout</a></li>
+        <li><a href="#aktivera-3d-visualisering">Aktivera 3D-visualisering</a></li>
+        <li><a href="#nödvändig-data">Nödvändig data</a></li>
+      </ul>
+    </li>
+    <li><a href="#förstå-visningen">Förstå visningen</a>
+      <ul>
+        <li><a href="#grafen">Grafen</a></li>
+        <li><a href="#nyckeltal">Nyckeltal</a></li>
+        <li><a href="#fas-markering">Fas-markering</a></li>
+      </ul>
+    </li>
+    <li><a href="#3d-visualisering">3D-visualisering</a>
+      <ul>
+        <li><a href="#momentarm-visualisering">Momentarm Visualisering</a></li>
+        <li><a href="#kraftvektor-dekomposition">Kraftvektor Dekomposition</a></li>
+        <li><a href="#inställningar-för-3d-visualisering">Inställningar för 3D-visualisering</a></li>
+      </ul>
+    </li>
+    <li><a href="#konfigurationsalternativ-graf">Konfigurationsalternativ (Graf)</a></li>
+    <li><a href="#felsökning">Felsökning</a>
+      <ul>
+        <li><a href="#meddelandet-ingen-person-på-plattan">Meddelandet &ldquo;Ingen person på plattan&rdquo;</a></li>
+        <li><a href="#tom-eller-saknad-grafdata">Tom eller saknad grafdata</a></li>
+        <li><a href="#tidsmätetal-visas-inte">Tidsmätetal visas inte</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sv/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sv/software-features/index.html"><span itemprop="name">Programvara &amp; funktioner</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Frontalplan Vridmoment Analys - Användarguide</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/sv/software-features/export-recordings/index.html" title="Exportera inspelningar (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/sv/software-features/markerless-motion-capture/index.html" title="Förbättra markerlös rörelseuppsamling för golf- och baseballswing med RTMPose och RTMDet: En uppifrånmetod (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/sv/tags/force-data/index.html">Force-Data</a></li>
+    <li><a class="term-link" href="/sc-support/sv/tags/motion-capture/index.html">Motion-Capture</a></li>
+    <li><a class="term-link" href="/sc-support/sv/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/sv/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="frontalplan-vridmoment-analys---användarguide">Frontalplan Vridmoment Analys - Användarguide</h1>
+
+<h2 id="introduktion">Introduktion<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="vad-är-frontalplan-vridmoment">Vad är Frontalplan Vridmoment?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Frontalplan Vridmoment (FPT) mäter den rotationskraft din kropp genererar runt frontalplanets axel under en golfsvång. Tänk på det som ett mått på hur effektivt du använder markreaktionskrafter för att skapa rotationskraft.</p>
+<p>När du svingar en golfklubb trycker dina fötter mot marken, och marken trycker tillbaka. Samspelet mellan din kropps tyngdpunkt och krafterna vid dina fötter skapar ett vridmoment – en rotationskraft som bidrar till att driva din swing.</p>
+<h3 id="funktionens-komponenter">Funktionens komponenter<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>FPT-funktionen består av två huvudkomponenter:</p>
+<p><strong>FPT-graf (DataBox)</strong> – En tidsserie-graf som visar vridmomentvärden under hela din swing med nyckeltal</p>
+<p><strong>3D-visualisering</strong> – Realtidsöverlägring av momentarm och kraftdekomposition på MoCap-skeletvyn</p>
+<h3 id="varför-är-detta-viktigt">Varför är detta viktigt?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Att förstå ditt frontalplan vridmoment kan hjälpa dig att:</p>
+<p><strong>Identifiera kraftgenereringsmönster</strong> – Se hur effektivt du omvandlar markkrafter till rotationsenergi</p>
+<p><strong>Visualisera biomekanisk hävstång</strong> – Se momentarmens förhållande mellan din tyngdpunkt och markkrafterna i 3D</p>
+<p><strong>Analysera tidsinställning</strong> – Förstå när toppvridmomentet inträffar i förhållande till bollträffen</p>
+<p><strong>Bryta ned kraftkomponenter</strong> – Se hur din markreaktionskraft fördelas i olika riktningar</p>
+<p><strong>Jämföra swingar</strong> – Följ förändringar i din kraftgenerering över tid</p>
+<h3 id="förutsättningar">Förutsättningar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>För att använda Frontalplan Vridmoment-analys behöver du:</p>
+<p><strong>Krävs</strong>: Kraftplatteinspelning med markreaktionskraftdata</p>
+<p><strong>Krävs</strong>: MoCap-data för spårning av tyngdpunkt</p>
+<p><strong>Krävs</strong>: Kalibrerat kamerasetup</p>
+<p><strong>Krävs</strong>: Kroppsviktsmätning (för normaliserade värden)</p>
+<hr>
+<h2 id="kom-igång">Kom igång<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lägga-till-fpt-databox-i-din-layout">Lägga till FPT DataBox i din Layout<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Öppna en inspelad swing i analysvyn</p>
+</li>
+<li>
+<p>Klicka på menyn <strong>DataBox</strong> eller layoutredigeraren</p>
+</li>
+<li>
+<p>Hitta <strong>Frontalplan Vridmoment</strong> i listan över tillgängliga DataBoxar</p>
+</li>
+<li>
+<p>Lägg till den i din analyslayout</p>
+</li>
+<li>
+<p>DataBoxen fylls automatiskt med data från din inspelning</p>
+</li>
+</ul>
+<h3 id="aktivera-3d-visualisering">Aktivera 3D-visualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Visualiseringarna för momentarm och kraftdekomposition visas i 3D-visningsrutan tillsammans med skelettet. För att aktivera dem:</p>
+<ul>
+<li>
+<p>Öppna en inspelning med MoCap- och kraftplattedata</p>
+</li>
+<li>
+<p>Hitta panelen <strong>Kraftvektor Inställningar</strong> i videovyn</p>
+</li>
+<li>
+<p>Aktivera de visualiseringsalternativ du vill se</p>
+</li>
+</ul>
+<h3 id="nödvändig-data">Nödvändig data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>För att FPT-analysen ska fungera korrekt måste din inspelning innehålla:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Datatyp</th>
+          <th>Krävs</th>
+          <th>Syfte</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Kraftplattedata</td>
+          <td>Ja</td>
+          <td>Tillhandahåller markreaktionskrafter (Fx, Fz) och tryckcentrum</td>
+      </tr>
+      <tr>
+          <td>MoCap</td>
+          <td>Ja</td>
+          <td>Tillhandahåller tyngdpunktens position för vridmomentberäkning och 3D-visualisering</td>
+      </tr>
+      <tr>
+          <td>Kroppsvikt</td>
+          <td>Ja</td>
+          <td>Används för att normalisera vridmomentvärden för jämförelse</td>
+      </tr>
+      <tr>
+          <td>Kamerakalibrering</td>
+          <td>Ja</td>
+          <td>Krävs för korrekt 3D-inriktning</td>
+      </tr>
+      <tr>
+          <td>Slag-bokmärke</td>
+          <td>Rekommenderas</td>
+          <td>Möjliggör tidsmätetal i förhållande till bollkontakt</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="förstå-visningen">Förstå visningen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="grafen">Grafen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Huvudgrafen visar vridmomentvärden över tid:</p>
+<p><strong>X-axel (horisontell)</strong>: Tid från swingstart till avslutning</p>
+<p><strong>Y-axel (vertikal)</strong>: Vridmomentvärden (kan visa procent och/eller absoluta värden)</p>
+<p><strong>Nollinje</strong>: Den horisontella linjen vid noll – värden ovan och under indikerar motsatta rotationsriktningar</p>
+<h4 id="dubbel-axelsystem">Dubbel axelsystem<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Grafen kan visa två olika skalor samtidigt:</p>
+<p><strong>Vänster axel (Procent)</strong>: Visar vridmoment normaliserat med kroppsvikt (Nm/kg, visas som Kraftfaktor)</p>
+<p><strong>Höger axel (Absolut)</strong>: Visar faktiskt vridmoment i Newton-meter (Nm)</p>
+<h3 id="nyckeltal">Nyckeltal<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Tre nyckeltal visas bredvid grafen:</p>
+<h4 id="1-max-vridmoment-kraftfaktor">1. Max Vridmoment (Kraftfaktor)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Vad det visar</strong>: Den maximala vridmomentsmagnituden, normaliserad med kroppsvikt</p>
+<p><strong>Enheter</strong>: Nm/kg (visas som Kraftfaktor)</p>
+<p><strong>Exempel</strong>: Värdet <strong>0,85</strong> innebär att ditt toppvridmoment var 0,85 Newton-meter per kilogram kroppsvikt</p>
+<h4 id="2-tidsinställning-för-max-vridmoment">2. Tidsinställning för Max Vridmoment<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Vad det visar</strong>: När toppvridmomentet inträffar i förhållande till bollträffen</p>
+<p><strong>Enheter</strong>: Millisekunder (ms)</p>
+<p><strong>Obs</strong>: Visas endast när ett slag-bokmärke är inställt</p>
+<p><strong>Exempel</strong>: <strong>-50ms</strong> innebär att toppvridmomentet inträffade 50ms <em>före</em> slag; <strong>+20ms</strong> innebär 20ms <em>efter</em> slag; <strong>0ms</strong> innebär vid slag</p>
+<h4 id="3-kraftfaktor-råvärde">3. Kraftfaktor (Råvärde)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Vad det visar</strong>: Det råa normaliserade vridmomentvärdet inklusive riktning (positivt eller negativt)</p>
+<p><strong>Enheter</strong>: Nm/kg</p>
+<p><strong>Exempel</strong>: <strong>+0,85</strong> och <strong>-0,85</strong> har samma magnitud men motsatta rotationsriktningar</p>
+<h3 id="fas-markering">Fas-markering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>När aktiverat läggs färgade band över grafen för att visa olika faser av din swing:</p>
+<ul>
+<li>Bakåtsvång, Nedåtsvingen, Slag, Follow-through</li>
+</ul>
+<hr>
+<h2 id="3d-visualisering">3D-visualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="momentarm-visualisering">Momentarm Visualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Momentarm-visualiseringen visar den biomekaniska hävstångsrelationen mellan din tyngdpunkt (CoM) och markreaktionskraften.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>Utseende</th>
+          <th>Vad det visar</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Momentarmlinje</strong></td>
+          <td>Orange heldragen linje</td>
+          <td>Det vinkelräta avståndet från din CoM till kraftlinjen</td>
+      </tr>
+      <tr>
+          <td><strong>Kraftlinje</strong></td>
+          <td>Orange streckad linje</td>
+          <td>Den förlängda linjen längs vilken kraften verkar</td>
+      </tr>
+      <tr>
+          <td><strong>Avståndsetikett</strong></td>
+          <td>Vit text på mörk bakgrund</td>
+          <td>Momentarmens avstånd i centimeter (±X,X cm)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="kraftvektor-dekomposition">Kraftvektor Dekomposition<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Kraftdekompositions-visualiseringen delar upp den totala markreaktionskraften i tre vinkelräta komponenter. Färgerna representerar alltid samma fysiska kraftriktning oavsett kameravy:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Komponent</th>
+          <th>Färg</th>
+          <th>Fysisk riktning</th>
+          <th>Vad det visar</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>X-komponent</strong></td>
+          <td>Rosa</td>
+          <td>Sida till sida (mediolateral)</td>
+          <td>Lateral kraftfördelning</td>
+      </tr>
+      <tr>
+          <td><strong>Y-komponent</strong></td>
+          <td>Turkos</td>
+          <td>Upp-ned (vertikal)</td>
+          <td>Vertikal kraftfördelning</td>
+      </tr>
+      <tr>
+          <td><strong>Z-komponent</strong></td>
+          <td>Grön</td>
+          <td>Fram-bak (anteroposterior)</td>
+          <td>Framåt/bakåt kraftfördelning</td>
+      </tr>
+  </tbody>
+</table>
+<p>Varje komponentpil visar också en <strong>procentetikett</strong> som anger hur stor andel av den totala kraften som är i den riktningen.</p>
+<h4 id="kameravybeteende">Kameravybeteende<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Kraftvektorerna visas i förhållande till din kameravy. Komponenter som skulle visas som djup (in i/ut ur skärmen) döljs för tydlighetens skull:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Kameravy</th>
+          <th>Synliga komponenter</th>
+          <th>Dold komponent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Framifrån</strong></td>
+          <td>X (Rosa, horisontell), Y (Turkos, vertikal)</td>
+          <td>Z (Grön, djup)</td>
+      </tr>
+      <tr>
+          <td><strong>Längs Linjen</strong></td>
+          <td>Z (Grön, horisontell), Y (Turkos, vertikal)</td>
+          <td>X (Rosa, djup)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Obs</strong>: Färgerna representerar alltid samma fysiska riktning – Rosa är alltid mediolateral kraft, Turkos är alltid vertikal kraft och Grön är alltid anteroposterior kraft. Endast skärmpositionen förändras beroende på kameravinkel.</p>
+<h3 id="inställningar-för-3d-visualisering">Inställningar för 3D-visualisering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="inställningar-för-momentarm">Inställningar för Momentarm<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Inställning</th>
+          <th>Standard</th>
+          <th>Beskrivning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Visa Momentarm</strong></td>
+          <td>Av</td>
+          <td>Växlar den orange heldragna linjen från CoM till kraftlinjen</td>
+      </tr>
+      <tr>
+          <td><strong>Visa Kraftlinje</strong></td>
+          <td>Av</td>
+          <td>Växlar den orange streckade linjen som visar kraftriktningens förlängning</td>
+      </tr>
+      <tr>
+          <td><strong>Visa Avståndsetikett</strong></td>
+          <td>Av</td>
+          <td>Växlar etiketten för avståndsvärdet (±X,X cm)</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="inställningar-för-kraftdekomposition">Inställningar för Kraftdekomposition<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Inställning</th>
+          <th>Standard</th>
+          <th>Beskrivning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Visa X/Y/Z-komponenter</strong></td>
+          <td>Av</td>
+          <td>Växlar alla tre komponentpilar och procentetiketter</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="konfigurationsalternativ-graf">Konfigurationsalternativ (Graf)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>Visa % (Procentaxel)</strong>: Standard På – Växlar normaliserat vridmoment (Nm/kg)</p>
+<p><strong>Visa Newton (Absolut axel)</strong>: Standard Av – Växlar absolut vridmoment (Nm)</p>
+<p><strong>Markera Faser</strong>: Standard Av – Visar färgade band som indikerar swing-faser</p>
+<p><strong>Visa Rutnät</strong>: Standard På – Visar horisontella rutnätslinjer</p>
+<p><strong>Diagramtyp</strong>: Bergsdiagram (standard) eller Linjediagram</p>
+<hr>
+<h2 id="felsökning">Felsökning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="meddelandet-ingen-person-på-plattan">Meddelandet &ldquo;Ingen person på plattan&rdquo;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Kontrollera att idrottaren stod på kraftplattan vid inspelningens start</p>
+</li>
+<li>
+<p>Kontrollera att kroppsvikt har angetts i idrottarens profil</p>
+</li>
+<li>
+<p>Verifiera att kraftplattans kalibrering är slutförd</p>
+</li>
+</ul>
+<h3 id="tom-eller-saknad-grafdata">Tom eller saknad grafdata<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Bekräfta att kraftplattan var aktiv under inspelningen</p>
+</li>
+<li>
+<p>Verifiera att MoCap-data spelades in (krävs för FPT-beräkningar)</p>
+</li>
+<li>
+<p>Kontrollera att inspelningen inkluderar hela swingdurationen</p>
+</li>
+</ul>
+<h3 id="tidsmätetal-visas-inte">Tidsmätetal visas inte<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Ange slag-bokmärket i din inspelning</li>
+</ul>
+<hr>
+<p><em>Senast uppdaterad: 2026-01-09</em> | <a href="/sc-support/sv/software-features/frontal-plane-torque/index.html">Visa på officiell supportsida</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/sv/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Support</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/sv/getting-started/index.html"><a class="padding default-animation" href="/sc-support/sv/getting-started/index.html">Komma igång</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sv/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/sv/cameras-video/index.html">Kameror &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sv/hardware/index.html"><a class="padding default-animation" href="/sc-support/sv/hardware/index.html">Hårdvara</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/sv/software-features/index.html"><a class="padding default-animation" href="/sc-support/sv/software-features/index.html">Programvara &amp; funktioner</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/sv/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/sv/software-features/pressure-stance-settings/index.html">Använda de nya inställningarna för Tryck och Ställning</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/graph-library/index.html"><a class="padding" href="/sc-support/sv/software-features/graph-library/index.html">Använda grafbiblioteket</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/sv/software-features/ios-app-sharing/index.html">Dela inspelade videor med Swing Catalyst-appen för iOS</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/sv/software-features/export-recordings/index.html">Exportera inspelningar</a></li>
+            <li class="active " data-nav-id="/sc-support/sv/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/sv/software-features/frontal-plane-torque/index.html">Frontalplan Vridmoment Analys - Användarguide</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/sv/software-features/markerless-motion-capture/index.html">Förbättra markerlös rörelseuppsamling för golf- och baseballswing med RTMPose och RTMDet: En uppifrånmetod</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/sv/software-features/microphone-trigger/index.html">Hur man använder en mikrofon som en fångst-utlösare</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/remote-support/index.html"><a class="padding" href="/sc-support/sv/software-features/remote-support/index.html">Hur man använder fjärrsupport</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/sv/software-features/pressure-distribution-overlay/index.html">Hur man använder funktionen för Tryckfördelningsöverlagring</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/sv/software-features/force-vectors/index.html">Hur man använder kraftvektorer</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/sv/software-features/swing-catalyst-online/index.html">Hur man använder Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/explorer/index.html"><a class="padding" href="/sc-support/sv/software-features/explorer/index.html">Hur man använder Utforskaren</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/sv/software-features/export-raw-data/index.html">Hur man exporterar rådata</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/sv/software-features/export-contacts/index.html">Hur man exporterar studenters kontaktinformation</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/sv/software-features/import-from-v1/index.html">Hur man importerar videor från V1</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/sv/software-features/motion-capture-install/index.html">Hur man installerar Swing Catalyst Motion Capture-komponenter</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/sv/software-features/multiple-displays/index.html">Hur man konfigurerar flera skärmar med Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/sv/software-features/record-a-lesson/index.html">Hur man spelar in en lektion</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/sv/software-features/email-sharing/index.html">Hur man ställer in e-postdelning i Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/sv/software-features/feedback-screen/index.html">Hur man ställer in Feedbackskärmen</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/sv/software-features/change-recording-user/index.html">Hur man ändrar användaren på en befintlig inspelning</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/sv/software-features/force-graph-phases/index.html">Kraftgraf-faser</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/sv/software-features/multiple-forces-graph/index.html">Multiple Forces Graph</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/sv/software-features/body-weight-measurement/index.html">Ny funktionalitet för mätning av kroppsvikt</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/sv/software-features/key-metrics/index.html">Nyckeltal</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/sv/software-features/motion-capture-settings/index.html">Swing Catalyst Inställningar för Rörelseuppsamling</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/sv/software-features/motion-capture-guide/index.html">Swing Catalyst Motion Capture Användarguide</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/sv/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/sv/software-features/keyboard-shortcuts/index.html">Tangentbordsgenvägar och snabbtangenter</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/sv/software-features/raw-data-export-guide/index.html">Vad ingår i rådata-exporten</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/sv/software-features/bookmarks/index.html">Vad är bokmärken?</a></li>
+            <li class="" data-nav-id="/sc-support/sv/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/sv/software-features/motion-capture-disclosures/index.html">Viktiga upplysningar för användare av Swing Catalyst Motion Capture-verktyget</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/sv/account-setup/index.html"><a class="padding default-animation" href="/sc-support/sv/account-setup/index.html">Konto &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sv/reference/index.html"><a class="padding default-animation" href="/sc-support/sv/reference/index.html">Referens</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/frontal-plane-torque/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/frontal-plane-torque/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/frontal-plane-torque/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/frontal-plane-torque/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/frontal-plane-torque/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/frontal-plane-torque/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/frontal-plane-torque/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/frontal-plane-torque/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/frontal-plane-torque/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/frontal-plane-torque/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/frontal-plane-torque/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/frontal-plane-torque/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/frontal-plane-torque/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/frontal-plane-torque/index.html" lang="sv" selected data-selected>Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/frontal-plane-torque/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/frontal-plane-torque/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/frontal-plane-torque/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/frontal-plane-torque/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/frontal-plane-torque/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/frontal-plane-torque/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/frontal-plane-torque/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/frontal-plane-torque/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/frontal-plane-torque/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/frontal-plane-torque/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/frontal-plane-torque/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/frontal-plane-torque/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/frontal-plane-torque/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/frontal-plane-torque/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/frontal-plane-torque/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/frontal-plane-torque/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/frontal-plane-torque/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/frontal-plane-torque/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/frontal-plane-torque/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/frontal-plane-torque/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/frontal-plane-torque/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520122" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520122" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

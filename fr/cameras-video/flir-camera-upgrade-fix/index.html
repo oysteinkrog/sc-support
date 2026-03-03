@@ -1,15 +1,426 @@
-<!doctype html><html id=R-html lang=fr dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau :: Support Swing Catalyst"><meta name=twitter:description content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html"><meta property="og:site_name" content="Support Swing Catalyst"><meta property="og:title" content="La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau :: Support Swing Catalyst"><meta property="og:description" content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst"><meta property="og:locale" content="fr"><meta property="og:type" content="article"><meta property="article:section" content="Caméras et Vidéo"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Flir"><meta property="article:tag" content="Fox-Camera"><meta itemprop=name content="La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau :: Support Swing Catalyst"><meta itemprop=description content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst"><meta itemprop=wordCount content="235"><meta itemprop=keywords content="Troubleshooting,Flir,Fox-Camera"><title>La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau :: Support Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763265 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763265 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763265 defer></script><script src=/sc-support/js/search.min.js?1771763265 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.fr.js?1771763265"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763265 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763265 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763265 defer></script><script src=/sc-support/js/lunr/lunr.fr.min.js?1771763265 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["fr"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763265 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763265 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763265 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763265 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763265 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/flir-camera-upgrade-fix/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copier le texte dans le presse-papiers`,window.T_Copied_to_clipboard=`Texte copié dans le presse-papiers!`,window.T_Link_copied_to_clipboard=`Lien copié dans le presse-papiers!`,window.T_Reset_view=`Réinitialiser la vue`,window.T_View_reset=`Vue réinitialisée!`,window.T_No_results_found=`Aucun résultat trouvé pour "{0}"`,window.T_N_results_found=`{1} résultats trouvés pour "{0}"`,window.T_Browser_unsupported_feature=`Ce navigateur ne prend pas en charge cette fonctionnalité`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table des matières (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><ul><li><a href=#troubleshooting-steps>Troubleshooting steps:</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/fr/index.html><span itemprop=name>Support Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/fr/cameras-video/index.html><span itemprop=name>Caméras et Vidéo</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/fr/cameras-video/halcon-bluescreen-fix/index.html title="L'ordinateur affiche un écran bleu lors de la connexion de la clé de licence USB Halcon (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/fr/cameras-video/flir-firmware-upgrade/index.html title="Mise à niveau du firmware sur le FLIR Blackfly S (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Aller plus loin"><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Mots-clés style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/fr/tags/flir/index.html>Flir</a></li><li><a class=term-link href=/sc-support/fr/tags/fox-camera/index.html>Fox-Camera</a></li><li><a class=term-link href=/sc-support/fr/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=la-caméra-flir--point-grey-blackflychameleon-ne-fonctionne-plus-après-la-mise-à-niveau>La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau</h1><p>Cet article couvre un problème rencontré par certains clients avec des caméras FliR / Point Grey qui ont été mises à jour de la version 9.1.1 (ou antérieure) vers la version 9.1.2 de Swing Catalyst.</p><p>Lors de la mise à jour vers 9.1.2, votre caméra peut cesser de fonctionner. C&rsquo;est parce que nous respectons maintenant le paramètre de taille de paquet enregistré sur la ou les caméra(s), au lieu d&rsquo;obtenir les paramètres recommandés du SDK FlyCap.</p><p>C&rsquo;est une meilleure solution mais malheureusement peut causer quelques problèmes lors de la transition entre 8.0.5, 9.0.1, 9.1.1 et 9.1.2.</p><p>Remarque : Vous devrez appliquer cette modification à chaque caméra que vous avez installée.</p><h1 id=mes-caméras-ont-cessé-de-fonctionner-après-la-mise-à-jour-comment-les-réparer->Mes caméras ont cessé de fonctionner après la mise à jour, comment les réparer ?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copier le lien dans le presse-papiers"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1><ol><li>Ouvrez Flycap2</li></ol><p><a href=#R-image-8e16c582272f3e9a275f205b98f06c3a class=lightbox-link><img alt=firefox_2019-10-14_14-03-02.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360009990439/firefox-2019-10-14-14-03-02-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8e16c582272f3e9a275f205b98f06c3a><img alt=firefox_2019-10-14_14-03-02.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360009990439/firefox-2019-10-14-14-03-02-png.png></a></p><p><a href=#R-image-205e9b216d5f14034335dbe2a52b564f class=lightbox-link><img alt=Point_Grey_FlyCap2_2019-10-14_14-02-47.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-02-47-p.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-205e9b216d5f14034335dbe2a52b564f><img alt=Point_Grey_FlyCap2_2019-10-14_14-02-47.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-02-47-p.png></a></p><ol start=2><li><p>Select a camera and click Configure Selected.</p></li><li><p>Navigate to Custom Video Modes and under Packet Size, change the value by one.</p></li></ol><p><a href=#R-image-8d2b2784371e7e2042a041fd42150237 class=lightbox-link><img alt=Point_Grey_FlyCap2_2019-10-14_14-04-04.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8d2b2784371e7e2042a041fd42150237><img alt=Point_Grey_FlyCap2_2019-10-14_14-04-04.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png></a></p><ol start=4><li>Go to Advanced Camera settings under Channel 1 in Memory Channels and click Save.</li></ol><p><a href=#R-image-c6cfdd4791dda676f5aa683f6b5240f3 class=lightbox-link><img alt=Point_Grey_FlyCap2_2019-10-14_14-04-51.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-04-51-p.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c6cfdd4791dda676f5aa683f6b5240f3><img alt=Point_Grey_FlyCap2_2019-10-14_14-04-51.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-04-51-p.png></a></p><h3 id=troubleshooting-steps>Troubleshooting steps:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copier le lien dans le presse-papiers"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If that still doesn&rsquo;t work go to Custom Video Modes and try changing the packet size. If it&rsquo;s set to the maximum value, try lowering it.</p><p>For example if it&rsquo;s set to 9000 try to lower it to 4000 and go back to Advanced Camera Settings and click Save on Channel 1 (in some cases you need to click on save twice).</p><p><a href=#R-image-a9f18142930dee560c193f813735f365 class=lightbox-link><img alt=Point_Grey_FlyCap2_2019-10-14_14-04-04.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a9f18142930dee560c193f813735f365><img alt=Point_Grey_FlyCap2_2019-10-14_14-04-04.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png></a></p><hr><p><em>Last updated: 2021-06-16</em> | <a href=/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/fr/index.html><span class="logo-title default-animation">Support Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Rechercher (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Rechercher</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Rechercher...>
-<button class=search-clear type=button data-search-clear title="Recherche claire"><i class="fas fa-fw fa-times" title="Recherche claire"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/fr/getting-started/index.html><a class="padding default-animation" href=/sc-support/fr/getting-started/index.html>Premiers pas</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/fr/cameras-video/index.html><a class="padding default-animation" href=/sc-support/fr/cameras-video/index.html>Caméras et Vidéo</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/fr/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/fr/cameras-video/improving-image-quality/index.html>Amélioration de la qualité de l'image de la caméra</a></li><li data-nav-id=/sc-support/fr/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/fr/cameras-video/supported-cameras/index.html>Caméras Supportées</a></li><li data-nav-id=/sc-support/fr/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/fr/cameras-video/led-light-flicker/index.html>Comment atténuer le scintillement des lumières LED</a></li><li data-nav-id=/sc-support/fr/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/halcon-setup/index.html>Comment configurer Halcon pour Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/fr/cameras-video/ids-ueye-gige/index.html>Comment configurer la caméra IDS uEye GigE avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/basler-gige-setup/index.html>Comment configurer les caméras Basler GigE avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/fr/cameras-video/cctv-cameras/index.html>Comment configurer les caméras de surveillance</a></li><li data-nav-id=/sc-support/fr/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/fr/cameras-video/avt-manta-configure/index.html>Comment configurer les caméras haute vitesse AVT Manta/Prosilica GigE</a></li><li data-nav-id=/sc-support/fr/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/fr/cameras-video/point-grey-flir-gige/index.html>Comment configurer les caméras Point Grey / FLIR GigE (Blackfly) avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/fr/cameras-video/ids-ueye-highspeed/index.html>Comment configurer les caméras USB haute vitesse iDS uEye</a></li><li data-nav-id=/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html>Comment configurer une adresse IP statique sur les caméras FLIR Blackfly GigE</a></li><li data-nav-id=/sc-support/fr/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/fr/cameras-video/lynx-static-ip/index.html>Comment configurer une adresse IP statique sur les caméras Lynx GigE</a></li><li data-nav-id=/sc-support/fr/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/fr/cameras-video/fix-dropped-frames/index.html>Comment corriger les 'images perdues' avec les caméras USB 3.0 ou 2.0.</a></li><li data-nav-id=/sc-support/fr/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/fr/cameras-video/avt-manta-install/index.html>Comment installer les caméras AVT Manta/Prosilica GigE</a></li><li data-nav-id=/sc-support/fr/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/fr/cameras-video/fox-lynx-firmware/index.html>Comment mettre à niveau ou rétrograder le firmware Fox / Lynx</a></li><li data-nav-id=/sc-support/fr/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/fr/cameras-video/halcon-camera-standards/index.html>Comment trouver les normes que vos caméras supportent pour une utilisation avec Halcon</a></li><li data-nav-id=/sc-support/fr/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/fr/cameras-video/hardware-encoding/index.html>Comment utiliser l'encodage matériel de Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/fr/cameras-video/dragon-usb2-camera/index.html>Comment utiliser la caméra Dragon (120 FPS) USB 2.0 avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/fr/cameras-video/ids-ueye-usb/index.html>Comment utiliser les caméras USB IDS uEye avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/fr/cameras-video/point-grey-flir-usb/index.html>Comment utiliser les caméras USB Point Grey / FLIR avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/fr/cameras-video/web-camera-directshow/index.html>Comment utiliser une caméra web (intégration DirectShow) avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/fr/cameras-video/recommended-usb3-components/index.html>Composants USB 3.0 recommandés</a></li><li data-nav-id=/sc-support/fr/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-blackfly-usb-setup/index.html>Configuration d'une caméra FLIR BlackFly S USB dans Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html>Configuration de FLIR BlackFly S GigE dans Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/lynx-camera-setup/index.html>Configuration de la/les caméra(s) Swing Catalyst Lynx GigE</a></li><li data-nav-id=/sc-support/fr/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/fox-camera-setup/index.html>Configuration des caméra(s) Swing Catalyst Fox USB 3.0</a></li><li data-nav-id=/sc-support/fr/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/ximea-usb3-setup/index.html>Configuration des caméras Ximea USB3 Vision avec Swing Catalyst</a></li><li data-nav-id=/sc-support/fr/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/fr/cameras-video/lens-distortion-correction/index.html>Correction Automatique de la Distorsion d'Objectif dans Swing Catalyst : Améliorer Votre Expérience Visuelle</a></li><li data-nav-id=/sc-support/fr/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/fr/cameras-video/usb3-troubleshooting/index.html>Dépannage de caméra USB3</a></li><li data-nav-id=/sc-support/fr/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/fr/cameras-video/pci-express-slots/index.html>Différences entre les emplacements PCI / PCI Express</a></li><li data-nav-id=/sc-support/fr/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/fr/cameras-video/minimum-distances/index.html>Distances minimales de caméra</a></li><li data-nav-id=/sc-support/fr/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/fr/cameras-video/recommended-lighting/index.html>Éclairage recommandé pour les installations en studio et garage</a></li><li data-nav-id=/sc-support/fr/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/fr/cameras-video/advanced-camera-settings/index.html>Guide des paramètres de caméra avancés</a></li><li data-nav-id=/sc-support/fr/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-warranty-service/index.html>Informations de garantie et de service de la caméra FLIR</a></li><li data-nav-id=/sc-support/fr/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/fr/cameras-video/halcon-bluescreen-fix/index.html>L'ordinateur affiche un écran bleu lors de la connexion de la clé de licence USB Halcon</a></li><li class=active data-nav-id=/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html>La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après la mise à niveau</a></li><li data-nav-id=/sc-support/fr/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-firmware-upgrade/index.html>Mise à niveau du firmware sur le FLIR Blackfly S</a></li><li data-nav-id=/sc-support/fr/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/fr/cameras-video/gige-network-setup/index.html>Recommandations de réseau Ethernet Gigabit et caméra GigE Vision</a></li><li data-nav-id=/sc-support/fr/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/fr/cameras-video/flir-spinnaker-cameras/index.html>Utilisation de caméras FLIR Blackfly S (Spinnaker) avec Swing Catalyst</a></li></ul></li><li data-nav-id=/sc-support/fr/hardware/index.html><a class="padding default-animation" href=/sc-support/fr/hardware/index.html>Matériel</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fr/software-features/index.html><a class="padding default-animation" href=/sc-support/fr/software-features/index.html>Logiciels et Fonctionnalités</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fr/account-setup/index.html><a class="padding default-animation" href=/sc-support/fr/account-setup/index.html>Compte & Configuration</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fr/reference/index.html><a class="padding default-animation" href=/sc-support/fr/reference/index.html>Référence</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Langue</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/flir-camera-upgrade-fix/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/flir-camera-upgrade-fix/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html lang=fr selected data-selected>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/flir-camera-upgrade-fix/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/flir-camera-upgrade-fix/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/flir-camera-upgrade-fix/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/flir-camera-upgrade-fix/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/flir-camera-upgrade-fix/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/flir-camera-upgrade-fix/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/flir-camera-upgrade-fix/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/flir-camera-upgrade-fix/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/flir-camera-upgrade-fix/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/flir-camera-upgrade-fix/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/flir-camera-upgrade-fix/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/flir-camera-upgrade-fix/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/flir-camera-upgrade-fix/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/flir-camera-upgrade-fix/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/flir-camera-upgrade-fix/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/flir-camera-upgrade-fix/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/flir-camera-upgrade-fix/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/flir-camera-upgrade-fix/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/flir-camera-upgrade-fix/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/flir-camera-upgrade-fix/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/flir-camera-upgrade-fix/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/flir-camera-upgrade-fix/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/flir-camera-upgrade-fix/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/flir-camera-upgrade-fix/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/flir-camera-upgrade-fix/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/flir-camera-upgrade-fix/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Thème</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763265 defer></script><script src=/sc-support/js/theme.min.js?1771763265 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="fr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau :: Support Swing Catalyst">
+    <meta name="twitter:description" content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html">
+    <meta property="og:site_name" content="Support Swing Catalyst">
+    <meta property="og:title" content="La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau :: Support Swing Catalyst">
+    <meta property="og:description" content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst">
+    <meta property="og:locale" content="fr">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Cameras & Video">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Flir">
+    <meta property="article:tag" content="Fox-Camera">
+    <meta itemprop="name" content="La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau :: Support Swing Catalyst">
+    <meta itemprop="description" content="Guide de dépannage pour les caméras FLIR/Point Grey qui cessent de fonctionner après une mise à niveau de Swing Catalyst">
+    <meta itemprop="wordCount" content="263">
+    <meta itemprop="keywords" content="Troubleshooting,Flir,Fox-Camera">
+    <title>La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau :: Support Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520108" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520108" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520108" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520108" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.fr.js?1772520108";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520108" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520108" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520108" defer></script>
+    <script src="/sc-support/js/lunr/lunr.fr.min.js?1772520108" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520108" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520108" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520108" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520108" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520108" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/flir-camera-upgrade-fix\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copier le texte dans le presse-papiers`;
+      window.T_Copied_to_clipboard = `Texte copié dans le presse-papiers!`;
+      window.T_Link_copied_to_clipboard = `Lien copié dans le presse-papiers!`;
+      window.T_Reset_view = `Réinitialiser la vue`;
+      window.T_View_reset = `Vue réinitialisée!`;
+      window.T_No_results_found = `Aucun résultat trouvé pour "{0}"`;
+      window.T_N_results_found = `{1} résultats trouvés pour "{0}"`;
+      window.T_Browser_unsupported_feature = `Ce navigateur ne prend pas en charge cette fonctionnalité`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table des matières (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#étapes-de-dépannage-">Étapes de dépannage :</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fr/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fr/cameras-video/index.html"><span itemprop="name">Cameras &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/fr/cameras-video/halcon-bluescreen-fix/index.html" title="L'ordinateur affiche un écran bleu lors de la connexion du dongle USB de licence Halcon (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/fr/cameras-video/flir-firmware-upgrade/index.html" title="Mise à jour du firmware de la FLIR Blackfly S (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Aller plus loin"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Mots-clés" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/fr/tags/flir/index.html">Flir</a></li>
+    <li><a class="term-link" href="/sc-support/fr/tags/fox-camera/index.html">Fox-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/fr/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="la-caméra-flir--point-grey-blackflychameleon-ne-fonctionne-plus-après-une-mise-à-niveau">La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau</h1>
+
+<p>Cet article traite d&rsquo;un problème rencontré par certains clients possédant des caméras FliR / Point Grey ayant effectué une mise à niveau de la version 9.1.1 (ou antérieure) vers la version 9.1.2 de Swing Catalyst.</p>
+<p>Après la mise à niveau vers la version 9.1.2, il est possible que votre caméra cesse de fonctionner. Cela est dû au fait que nous respectons désormais le paramètre de taille de paquet enregistré sur la ou les caméras, au lieu d&rsquo;utiliser les paramètres recommandés par le SDK FlyCap.</p>
+<p>Il s&rsquo;agit d&rsquo;une meilleure solution, mais elle peut malheureusement entraîner certains problèmes lors de la Transition entre les versions 8.0.5, 9.0.1, 9.1.1 et 9.1.2.</p>
+<p>Note: Vous devrez appliquer cette modification à chaque caméra installée.</p>
+<h1 id="mes-caméras-ont-cessé-de-fonctionner-après-la-mise-à-niveau-comment-résoudre-ce-problème-">Mes caméras ont cessé de fonctionner après la mise à niveau, comment résoudre ce problème ?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copier le lien dans le presse-papiers"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<ol>
+<li>Ouvrez Flycap2</li>
+</ol>
+<p><a href="#R-image-fd51092b64ceb5920d814a63bd3078ed" class="lightbox-link"><img alt="firefox_2019-10-14_14-03-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/firefox-2019-10-14-14-03-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd51092b64ceb5920d814a63bd3078ed"><img alt="firefox_2019-10-14_14-03-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/firefox-2019-10-14-14-03-02-png.png"></a></p>
+<p><a href="#R-image-6316c3f7f95f0e8af2f9ed6f725431e9" class="lightbox-link"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-02-47-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6316c3f7f95f0e8af2f9ed6f725431e9"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-02-47-p.png"></a></p>
+<ol start="2">
+<li>
+<p>Sélectionnez une caméra et cliquez sur Configurer la sélection.</p>
+</li>
+<li>
+<p>Accédez aux Modes vidéo personnalisés et, sous Taille de paquet, modifiez la valeur d&rsquo;une unité.</p>
+</li>
+</ol>
+<p><a href="#R-image-2fb9716261aabcfcd8ab59ceaaca464f" class="lightbox-link"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2 - Modes vidéo personnalisés" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2fb9716261aabcfcd8ab59ceaaca464f"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2 - Modes vidéo personnalisés" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png"></a></p>
+<ol start="4">
+<li>Accédez aux Paramètres avancés de la caméra sous Canal 1 dans les Canaux mémoire et cliquez sur Enregistrer.</li>
+</ol>
+<p><a href="#R-image-6d00e8bc4368008dbc207c7b7f4887d1" class="lightbox-link"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2 - Paramètres avancés" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-04-51-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d00e8bc4368008dbc207c7b7f4887d1"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2 - Paramètres avancés" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-04-51-p.png"></a></p>
+<h3 id="étapes-de-dépannage-">Étapes de dépannage :<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copier le lien dans le presse-papiers"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Si le problème persiste, accédez aux Modes vidéo personnalisés et essayez de modifier la taille de paquet. Si elle est réglée sur la valeur maximale, essayez de la réduire.</p>
+<p>Par exemple, si elle est réglée sur 9000, essayez de la réduire à 4000, puis revenez aux Paramètres avancés de la caméra et cliquez sur Enregistrer sur Canal 1 (dans certains cas, vous devez cliquer sur Enregistrer deux fois).</p>
+<p><a href="#R-image-f644df8cc79a91002429b4d28dd1b29e" class="lightbox-link"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2 - Taille de paquet" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f644df8cc79a91002429b4d28dd1b29e"><img alt="Capture d&rsquo;écran de Point Grey FlyCap2 - Taille de paquet" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360009990439/point-grey-flycap2-2019-10-14-14-04-04-p.png"></a></p>
+<hr>
+<p><em>Dernière mise à jour : 2021-06-16</em> | <a href="/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html">Voir sur le site d&rsquo;assistance officiel</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/fr/index.html">
+          <span class="logo-title default-animation">Support Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Rechercher (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Rechercher</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Rechercher...">
+            <button class="search-clear" type="button" data-search-clear="" title="Recherche claire"><i class="fas fa-fw fa-times" title="Recherche claire"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/fr/getting-started/index.html"><a class="padding default-animation" href="/sc-support/fr/getting-started/index.html">Premiers pas</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/fr/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/fr/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/fr/cameras-video/improving-image-quality/index.html">Améliorer la qualité d&#39;image des caméras</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/fr/cameras-video/supported-cameras/index.html">Caméras Prises en Charge</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/fr/cameras-video/led-light-flicker/index.html">Comment atténuer le scintillement des lumières LED</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/fr/cameras-video/cctv-cameras/index.html">Comment configurer des caméras CCTV</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/halcon-setup/index.html">Comment configurer Halcon pour Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/basler-gige-setup/index.html">Comment configurer les caméras Basler GigE avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/fr/cameras-video/avt-manta-configure/index.html">Comment configurer les caméras Haute vitesse GigE AVT Manta/Prosilica</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/fr/cameras-video/point-grey-flir-gige/index.html">Comment configurer les caméras Point Grey / FLIR GigE (Blackfly) avec SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/fr/cameras-video/ids-ueye-highspeed/index.html">Comment configurer les caméras USB haute vitesse iDS uEye</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/fr/cameras-video/ids-ueye-gige/index.html">Comment configurer une caméra IDS uEye GigE avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html">Comment configurer une IP statique sur les caméras FLIR Blackfly GigE</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/fr/cameras-video/lynx-static-ip/index.html">Comment configurer une IP statique sur les caméras Lynx GigE</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/fr/cameras-video/avt-manta-install/index.html">Comment installer les caméras AVT Manta/Prosilica GigE</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/fr/cameras-video/fox-lynx-firmware/index.html">Comment mettre à niveau ou rétrograder le firmware Fox / Lynx</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/fr/cameras-video/fix-dropped-frames/index.html">Comment résoudre les « trames perdues » avec les caméras USB 3.0 ou 2.0.</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/fr/cameras-video/halcon-camera-standards/index.html">Comment savoir quels standards vos caméras prennent en charge pour une utilisation avec Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/fr/cameras-video/hardware-encoding/index.html">Comment utiliser l&#39;encodage matériel de Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/fr/cameras-video/dragon-usb2-camera/index.html">Comment utiliser la caméra Dragon (120 FPS) USB 2.0 avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/fr/cameras-video/ids-ueye-usb/index.html">Comment utiliser les caméras IDS uEye USB avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/fr/cameras-video/point-grey-flir-usb/index.html">Comment utiliser les caméras Point Grey / FLiR USB avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/fr/cameras-video/web-camera-directshow/index.html">Comment utiliser une caméra web (intégration DirectShow) avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/fr/cameras-video/recommended-usb3-components/index.html">Composants USB 3.0 Recommandés</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-blackfly-gige-setup/index.html">Configuration de la caméra FLIR BlackFly S GigE dans Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-blackfly-usb-setup/index.html">Configuration de la caméra FLIR BlackFly S USB dans Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/lynx-camera-setup/index.html">Configuration de la ou des caméras Swing Catalyst Lynx GigE</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/fox-camera-setup/index.html">Configuration des caméras Fox USB 3.0 de Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/ximea-usb3-setup/index.html">Configuration des caméras Ximea USB3 Vision avec Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/fr/cameras-video/lens-distortion-correction/index.html">Correction Automatique de la Distorsion d&#39;Objectif dans SwingCatalyst : Améliorer Votre Expérience Visuelle</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/fr/cameras-video/usb3-troubleshooting/index.html">Dépannage des caméras USB3</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/fr/cameras-video/pci-express-slots/index.html">Différences entre les slots PCI / PCI Express</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/fr/cameras-video/minimum-distances/index.html">Distances minimales pour les caméras</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/fr/cameras-video/recommended-lighting/index.html">Éclairage recommandé pour les studios et les installations en garage</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/fr/cameras-video/advanced-camera-settings/index.html">Guide des paramètres avancés de la caméra</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-warranty-service/index.html">Informations de garantie et de service pour les caméras FLIR</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/fr/cameras-video/halcon-bluescreen-fix/index.html">L&#39;ordinateur affiche un écran bleu lors de la connexion du dongle USB de licence Halcon</a></li>
+            <li class="active " data-nav-id="/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html">La caméra FLiR / Point Grey (Blackfly/Chameleon) ne fonctionne plus après une mise à niveau</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-firmware-upgrade/index.html">Mise à jour du firmware de la FLIR Blackfly S</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/fr/cameras-video/gige-network-setup/index.html">Recommandations pour le réseau Gigabit Ethernet et les caméras GigE Vision</a></li>
+            <li class="" data-nav-id="/sc-support/fr/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/fr/cameras-video/flir-spinnaker-cameras/index.html">Utilisation des caméras FLIR Blackfly S (Spinnaker) avec Swing Catalyst</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/fr/hardware/index.html"><a class="padding default-animation" href="/sc-support/fr/hardware/index.html">Matériel</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fr/software-features/index.html"><a class="padding default-animation" href="/sc-support/fr/software-features/index.html">Logiciels &amp; Fonctionnalités</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fr/account-setup/index.html"><a class="padding default-animation" href="/sc-support/fr/account-setup/index.html">Compte &amp; Prise de Position</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fr/reference/index.html"><a class="padding default-animation" href="/sc-support/fr/reference/index.html">Référence</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Langue</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-camera-upgrade-fix/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-camera-upgrade-fix/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-camera-upgrade-fix/index.html" lang="fr" selected data-selected>Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/flir-camera-upgrade-fix/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/flir-camera-upgrade-fix/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/flir-camera-upgrade-fix/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/flir-camera-upgrade-fix/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/flir-camera-upgrade-fix/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/flir-camera-upgrade-fix/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/flir-camera-upgrade-fix/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/flir-camera-upgrade-fix/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/flir-camera-upgrade-fix/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/flir-camera-upgrade-fix/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/flir-camera-upgrade-fix/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/flir-camera-upgrade-fix/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/flir-camera-upgrade-fix/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/flir-camera-upgrade-fix/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/flir-camera-upgrade-fix/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/flir-camera-upgrade-fix/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/flir-camera-upgrade-fix/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/flir-camera-upgrade-fix/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/flir-camera-upgrade-fix/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/flir-camera-upgrade-fix/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/flir-camera-upgrade-fix/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/flir-camera-upgrade-fix/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/flir-camera-upgrade-fix/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/flir-camera-upgrade-fix/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/flir-camera-upgrade-fix/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/flir-camera-upgrade-fix/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/flir-camera-upgrade-fix/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/flir-camera-upgrade-fix/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Thème</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520108" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520108" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

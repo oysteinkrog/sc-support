@@ -1,60 +1,632 @@
-<!doctype html><html id=R-html lang=th dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Frontal Plane Torque (FPT) วัดแรงบิดหมุนที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าระหว่างการสวิงกอล์ฟ ลองนึกถึงมันเป็นการวัดว่า..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst"><meta name=twitter:description content="Frontal Plane Torque (FPT) วัดแรงบิดหมุนที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าระหว่างการสวิงกอล์ฟ ลองนึกถึงมันเป็นการวัดว่า..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html"><meta property="og:site_name" content="การสนับสนุน Swing Catalyst"><meta property="og:title" content="การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst"><meta property="og:description" content="Frontal Plane Torque (FPT) วัดแรงบิดหมุนที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าระหว่างการสวิงกอล์ฟ ลองนึกถึงมันเป็นการวัดว่า..."><meta property="og:locale" content="th"><meta property="og:type" content="article"><meta property="article:section" content="ซอฟต์แวร์และคุณสมบัติ"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Pressure-Data"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst"><meta itemprop=description content="Frontal Plane Torque (FPT) วัดแรงบิดหมุนที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าระหว่างการสวิงกอล์ฟ ลองนึกถึงมันเป็นการวัดว่า..."><meta itemprop=wordCount content="390"><meta itemprop=keywords content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture"><title>การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763273 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763273 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763273 defer></script><script src=/sc-support/js/search.min.js?1771763273 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.th.js?1771763273"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763273 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763273 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763273 defer></script><script src=/sc-support/js/lunr/wordcut.js?1771763273 defer></script><script src=/sc-support/js/lunr/lunr.th.min.js?1771763273 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["th"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763273 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763273 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763273 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763273 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763273 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/frontal-plane-torque/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/th/software-features/frontal-plane-torque/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#บทนำ>บทนำ</a><ul><li><a href=#frontal-plane-torque-คออะไร>Frontal Plane Torque คืออะไร</a></li><li><a href=#สวนประกอบของฟเจอร>ส่วนประกอบของฟีเจอร์</a></li><li><a href=#ทำไมจงเปนเรองสำคญ>ทำไมจึงเป็นเรื่องสำคัญ</a></li><li><a href=#ขอกำหนดเบองตน>ข้อกำหนดเบื้องต้น</a></li></ul></li><li><a href=#เรมตนใชงาน>เริ่มต้นใช้งาน</a><ul><li><a href=#การเพม-fpt-databox-ลงในเลยเอาตของคณ>การเพิ่ม FPT DataBox ลงในเลย์เอาต์ของคุณ</a></li><li><a href=#การเปดใชการแสดงผล-3d>การเปิดใช้การแสดงผล 3D</a></li><li><a href=#ขอมลทจำเปน>ข้อมูลที่จำเป็น</a></li></ul></li><li><a href=#ความเขาใจในการแสดงผล>ความเข้าใจในการแสดงผล</a><ul><li><a href=#กราฟ>กราฟ</a></li><li><a href=#เมตรกหลก>เมตริกหลัก</a></li><li><a href=#การเนนระยะ>การเน้นระยะ</a></li></ul></li><li><a href=#การแสดงผล-3d>การแสดงผล 3D</a><ul><li><a href=#การแสดงผลแขนของโมเมนต>การแสดงผลแขนของโมเมนต์</a></li><li><a href=#การแยกตวเวกเตอรแรง>การแยกตัวเวกเตอร์แรง</a></li><li><a href=#การตงคาการแสดงผล-3d>การตั้งค่าการแสดงผล 3D</a></li></ul></li><li><a href=#ตวเลอกการตงคา-กราฟ>ตัวเลือกการตั้งค่า (กราฟ)</a></li><li><a href=#การแกไขปญหา>การแก้ไขปัญหา</a><ul><li><a href=#ขอความ-no-person-on-plate>ข้อความ &ldquo;No Person on Plate&rdquo;</a></li><li><a href=#ขอมลกราฟวางเปลาหรอหายไป>ข้อมูลกราฟว่างเปล่าหรือหายไป</a></li><li><a href=#เมตรกเวลาไมแสดงผล>เมตริกเวลาไม่แสดงผล</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/th/index.html><span itemprop=name>การสนับสนุน Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/th/software-features/index.html><span itemprop=name>ซอฟต์แวร์และคุณสมบัติ</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/th/software-features/motion-capture-disclosures/index.html title="การเปิดเผยข้อมูลที่สำคัญสำหรับผู้ใช้เครื่องมือการจับภาพการเคลื่อนไหวของ Swing Catalyst (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/th/software-features/motion-capture-guide/index.html title="คู่มือผู้ใช้ Swing Catalyst Motion Capture (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/th/tags/force-data/index.html>Force-Data</a></li><li><a class=term-link href=/sc-support/th/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/th/tags/pressure-data/index.html>Pressure-Data</a></li><li><a class=term-link href=/sc-support/th/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=การวเคราะหแรงบดระนาบหนา---คมอผใช>การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้</h1><h2 id=บทนำ>บทนำ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=frontal-plane-torque-คออะไร>Frontal Plane Torque คืออะไร<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frontal Plane Torque (FPT) วัดแรงบิดที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าระหว่างการสวิงกอล์ฟ ลองคิดว่ามันเป็นการวัดว่าคุณใช้แรงปฏิกิริยาจากพื้นดินเพื่อสร้างพลังแรงบิดได้อย่างมีประสิทธิภาพเพียงใด</p><p>เมื่อคุณสวิงไม้กอล์ฟ เท้าของคุณจะดันพื้น และพื้นจะดันกลับ ปฏิสัมพันธ์ระหว่างจุดศูนย์กลางมวลของร่างกายกับแรงที่เท้าของคุณสร้างแรงบิด ซึ่งเป็นแรงหมุนที่ช่วยขับเคลื่อนการเหวี่ยงของคุณ</p><h3 id=สวนประกอบของฟเจอร>ส่วนประกอบของฟีเจอร์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>ฟีเจอร์ FPT ประกอบด้วยส่วนประกอบหลักสองส่วน:</p><p><strong>FPT Graph (DataBox)</strong> - กราฟอนุกรมเวลาแสดงค่าแรงบิดตลอดการสวิงของคุณพร้อมเมตริกหลัก</p><p><strong>3D Visualization</strong> - การซ้อนทับแขนโมเมนต์แบบเรียลไทม์และการแยกแรงบนมุมมองโครงกระดูกการจับภาพเคลื่อนไหว</p><h3 id=ทำไมจงเปนเรองสำคญ>ทำไมจึงเป็นเรื่องสำคัญ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>การทำความเข้าใจแรงบิดของระนาบหน้าของคุณสามารถช่วยคุณได้ในการ:</p><p><strong>ระบุรูปแบบการสร้างพลัง</strong> - ดูว่าคุณถ่ายโอนแรงจากพื้นไปเป็นพลังงานแรงบิดได้อย่างมีประสิทธิภาพเพียงใด</p><p><strong>แสดงภาพคันโยก Biomechanical</strong> - ดูความสัมพันธ์ของแขนโมเมนต์ระหว่างจุดศูนย์กลางมวลของคุณและแรงจากพื้นในรูปแบบ 3D</p><p><strong>วิเคราะห์การจับเวลา</strong> - ทำความเข้าใจว่าแรงบิดสูงสุดเกิดขึ้นเมื่อใดเทียบกับการกระแทกลูก</p><p><strong>แยกส่วนประกอบของแรง</strong> - ดูว่าแรงปฏิกิริยาจากพื้นของคุณกระจายในทิศทางต่างๆ อย่างไร</p><p><strong>เปรียบเทียบการสวิง</strong> - ติดตามการเปลี่ยนแปลงในการสร้างแรงของคุณเมื่อเวลาผ่านไป</p><h3 id=ขอกำหนดเบองตน>ข้อกำหนดเบื้องต้น<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>ในการใช้การวิเคราะห์ Frontal Plane Torque คุณต้องมี:</p><p><strong>จำเป็น</strong>: การบันทึกแผ่นแรงพร้อมข้อมูลแรงปฏิกิริยาจากพื้น</p><p><strong>จำเป็น</strong>: ข้อมูลการจับภาพเคลื่อนไหวสำหรับการติดตามจุดศูนย์กลางมวล</p><p><strong>จำเป็น</strong>: การตั้งค่ากล้องที่ปรับเทียบแล้ว</p><p><strong>จำเป็น</strong>: การวัดน้ำหนักกาย (สำหรับค่าที่ทำให้เป็นมาตรฐาน)</p><hr><h2 id=เรมตนใชงาน>เริ่มต้นใช้งาน<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=การเพม-fpt-databox-ลงในเลยเอาตของคณ>การเพิ่ม FPT DataBox ลงในเลย์เอาต์ของคุณ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>เปิดการบันทึกการสวิงในมุมมองการวิเคราะห์</p></li><li><p>คลิกเมนู <strong>DataBox</strong> หรือตัวแก้ไขเลย์เอาต์</p></li><li><p>ค้นหา <strong>Frontal Plane Torque</strong> ในรายชื่อ DataBox ที่มีอยู่</p></li><li><p>เพิ่มเข้าในเลย์เอาต์การวิเคราะห์ของคุณ</p></li><li><p>DataBox จะเติมข้อมูลจากการบันทึกของคุณโดยอัตโนมัติ</p></li></ul><h3 id=การเปดใชการแสดงผล-3d>การเปิดใช้การแสดงผล 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>วิชวลแขนของโมเมนต์และการสลายตัวของแรงปรากฏในวิวพอร์ตวิดีโอ 3D พร้อมกับโครงกระดูก เพื่อเปิดใช้:</p><ul><li><p>เปิดการบันทึกที่มีข้อมูลการจับภาพเคลื่อนไหวและแผ่นวัดแรง</p></li><li><p>ตั้งค่าแผง <strong>Force Vector Settings</strong> ในมุมมองวิดีโอ</p></li><li><p>เปิดใช้ตัวเลือกการแสดงผลที่คุณต้องการดู</p></li></ul><h3 id=ขอมลทจำเปน>ข้อมูลที่จำเป็น<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>เพื่อให้การวิเคราะห์ FPT ทำงานได้อย่างถูกต้อง การบันทึกของคุณต้องรวมถึง:</p><p>ประเภทข้อมูล
+<!DOCTYPE html>
+<html id="R-html" lang="th" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="แรงบิดระนาบหน้า (FPT) วัดแรงบิดที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าในระหว่างการสวิงกอล์ฟ ลองนึกภาพว่าเป็นการวัดว่าคุณใช้แรงปฏิกิริยาจากพื้นเพื่อสร้างพลังการหมุนได้อย่างมีประสิทธิภาพเพียงใด...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst">
+    <meta name="twitter:description" content="แรงบิดระนาบหน้า (FPT) วัดแรงบิดที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าในระหว่างการสวิงกอล์ฟ ลองนึกภาพว่าเป็นการวัดว่าคุณใช้แรงปฏิกิริยาจากพื้นเพื่อสร้างพลังการหมุนได้อย่างมีประสิทธิภาพเพียงใด...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html">
+    <meta property="og:site_name" content="การสนับสนุน Swing Catalyst">
+    <meta property="og:title" content="การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst">
+    <meta property="og:description" content="แรงบิดระนาบหน้า (FPT) วัดแรงบิดที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าในระหว่างการสวิงกอล์ฟ ลองนึกภาพว่าเป็นการวัดว่าคุณใช้แรงปฏิกิริยาจากพื้นเพื่อสร้างพลังการหมุนได้อย่างมีประสิทธิภาพเพียงใด...">
+    <meta property="og:locale" content="th">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="ซอฟต์แวร์และฟีเจอร์">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Motion-Capture">
+    <meta itemprop="name" content="การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst">
+    <meta itemprop="description" content="แรงบิดระนาบหน้า (FPT) วัดแรงบิดที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าในระหว่างการสวิงกอล์ฟ ลองนึกภาพว่าเป็นการวัดว่าคุณใช้แรงปฏิกิริยาจากพื้นเพื่อสร้างพลังการหมุนได้อย่างมีประสิทธิภาพเพียงใด...">
+    <meta itemprop="wordCount" content="387">
+    <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
+    <title>การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้ :: การสนับสนุน Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520121" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520121" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520121" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520121" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.th.js?1772520121";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520121" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520121" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520121" defer></script>
+    <script src="/sc-support/js/lunr/wordcut.js?1772520121" defer></script>
+    <script src="/sc-support/js/lunr/lunr.th.min.js?1772520121" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['th'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520121" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520121" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520121" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520121" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520121" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/frontal-plane-torque\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/th/software-features/frontal-plane-torque/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#บทนำ">บทนำ</a>
+      <ul>
+        <li><a href="#แรงบดระนาบหนาคออะไร">แรงบิดระนาบหน้าคืออะไร?</a></li>
+        <li><a href="#องคประกอบของฟเจอร">องค์ประกอบของฟีเจอร์</a></li>
+        <li><a href="#เหตใดสงนจงสำคญ">เหตุใดสิ่งนี้จึงสำคัญ?</a></li>
+        <li><a href="#ขอกำหนดเบองตน">ข้อกำหนดเบื้องต้น</a></li>
+      </ul>
+    </li>
+    <li><a href="#การเรมตนใชงาน">การเริ่มต้นใช้งาน</a>
+      <ul>
+        <li><a href="#การเพม-fpt-databox-ลงในเลยเอาตของคณ">การเพิ่ม FPT DataBox ลงในเลย์เอาต์ของคุณ</a></li>
+        <li><a href="#การเปดใชงานการแสดงผล-3d">การเปิดใช้งานการแสดงผล 3D</a></li>
+        <li><a href="#ขอมลทจำเปน">ข้อมูลที่จำเป็น</a></li>
+      </ul>
+    </li>
+    <li><a href="#การทำความเขาใจการแสดงผล">การทำความเข้าใจการแสดงผล</a>
+      <ul>
+        <li><a href="#กราฟ">กราฟ</a></li>
+        <li><a href="#เมตรกหลก">เมตริกหลัก</a></li>
+        <li><a href="#การเนนระยะตางๆ-ของสวง">การเน้นระยะต่างๆ ของสวิง</a></li>
+      </ul>
+    </li>
+    <li><a href="#การแสดงผล-3d">การแสดงผล 3D</a>
+      <ul>
+        <li><a href="#การแสดงผลแขนของโมเมนต">การแสดงผลแขนของโมเมนต์</a></li>
+        <li><a href="#การแยกองคประกอบของเวกเตอรแรง">การแยกองค์ประกอบของเวกเตอร์แรง</a></li>
+        <li><a href="#การตงคาการแสดงผล-3d">การตั้งค่าการแสดงผล 3D</a></li>
+      </ul>
+    </li>
+    <li><a href="#ตวเลอกการกำหนดคา-กราฟ">ตัวเลือกการกำหนดค่า (กราฟ)</a></li>
+    <li><a href="#การแกไขปญหา">การแก้ไขปัญหา</a>
+      <ul>
+        <li><a href="#ขอความ-no-person-on-plate">ข้อความ &ldquo;No Person on Plate&rdquo;</a></li>
+        <li><a href="#ขอมลกราฟวางเปลาหรอหายไป">ข้อมูลกราฟว่างเปล่าหรือหายไป</a></li>
+        <li><a href="#เมตรกสการจบเวลาไมแสดง">เมตริกส์การจับเวลาไม่แสดง</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/th/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/th/software-features/index.html"><span itemprop="name">ซอฟต์แวร์และฟีเจอร์</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/th/software-features/markerless-motion-capture/index.html" title="การเพิ่มประสิทธิภาพการจับภาพเคลื่อนไหวแบบไม่มีมาร์กเกอร์สำหรับสวิงกอล์ฟและเบสบอลโดยใช้ RTMPose และ RTMDet: วิธีการจากบนลงล่าง (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/th/software-features/motion-capture-disclosures/index.html" title="ข้อมูลเปิดเผยที่สำคัญสำหรับผู้ใช้เครื่องมือ Swing Catalyst Motion Capture (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/th/tags/force-data/index.html">Force-Data</a></li>
+    <li><a class="term-link" href="/sc-support/th/tags/motion-capture/index.html">Motion-Capture</a></li>
+    <li><a class="term-link" href="/sc-support/th/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/th/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="การวเคราะหแรงบดระนาบหนา---คมอผใช">การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้</h1>
+
+<h2 id="บทนำ">บทนำ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="แรงบดระนาบหนาคออะไร">แรงบิดระนาบหน้าคืออะไร?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>แรงบิดระนาบหน้า (FPT) วัดแรงบิดที่ร่างกายของคุณสร้างขึ้นรอบแกนระนาบหน้าในระหว่างการสวิงกอล์ฟ ลองนึกภาพว่าเป็นการวัดว่าคุณใช้แรงปฏิกิริยาจากพื้นเพื่อสร้างพลังการหมุนได้อย่างมีประสิทธิภาพเพียงใด</p>
+<p>เมื่อคุณสวิงไม้กอล์ฟ เท้าของคุณจะผลักพื้น และพื้นจะผลักกลับ ปฏิกิริยาระหว่างจุดศูนย์กลางมวลของร่างกายกับแรงที่เท้าของคุณนี้จะสร้างแรงบิด ซึ่งเป็นแรงหมุนที่ช่วยขับเคลื่อนการสวิงของคุณ</p>
+<h3 id="องคประกอบของฟเจอร">องค์ประกอบของฟีเจอร์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>ฟีเจอร์ FPT ประกอบด้วยองค์ประกอบหลักสองส่วน:</p>
+<p><strong>กราฟ FPT (DataBox)</strong> - กราฟอนุกรมเวลาที่แสดงค่าแรงบิดตลอดช่วงการสวิงพร้อมเมตริกหลัก</p>
+<p><strong>การแสดงผล 3D</strong> - การซ้อนทับแขนของโมเมนต์และการแยกองค์ประกอบของแรงแบบเรียลไทม์บนมุมมองโครงกระดูกจากการจับภาพเคลื่อนไหว</p>
+<h3 id="เหตใดสงนจงสำคญ">เหตุใดสิ่งนี้จึงสำคัญ?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>การทำความเข้าใจแรงบิดระนาบหน้าของคุณช่วยให้คุณสามารถ:</p>
+<p><strong>ระบุรูปแบบการสร้างพลัง</strong> - ดูว่าคุณถ่ายแรงจากพื้นไปสู่พลังงานการหมุนได้อย่างมีประสิทธิภาพเพียงใด</p>
+<p><strong>แสดงภาพเลเวอเรจเชิงชีวกลศาสตร์</strong> - ดูความสัมพันธ์ของแขนของโมเมนต์ระหว่างจุดศูนย์กลางมวลกับแรงจากพื้นใน 3D</p>
+<p><strong>วิเคราะห์การจับเวลา</strong> - ทำความเข้าใจว่าแรงบิดสูงสุดเกิดขึ้นเมื่อใดเทียบกับจุดกระทบลูกบอล</p>
+<p><strong>แยกองค์ประกอบของแรง</strong> - ดูว่าแรงปฏิกิริยาจากพื้นของคุณกระจายตัวในทิศทางต่างๆ อย่างไร</p>
+<p><strong>เปรียบเทียบการสวิง</strong> - ติดตามการเปลี่ยนแปลงในการสร้างแรงของคุณเมื่อเวลาผ่านไป</p>
+<h3 id="ขอกำหนดเบองตน">ข้อกำหนดเบื้องต้น<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>ในการใช้การวิเคราะห์แรงบิดระนาบหน้า คุณต้องมี:</p>
+<p><strong>จำเป็น</strong>: การบันทึกด้วยแผ่นวัดแรงที่มีข้อมูลแรงปฏิกิริยาจากพื้น</p>
+<p><strong>จำเป็น</strong>: ข้อมูล MoCap สำหรับการติดตามจุดศูนย์กลางมวล</p>
+<p><strong>จำเป็น</strong>: การเตรียมตัวกล้องที่ผ่านการสอบเทียมแล้ว</p>
+<p><strong>จำเป็น</strong>: การวัดน้ำหนักกาย (สำหรับค่าที่ผ่านการทำให้เป็นมาตรฐาน)</p>
+<hr>
+<h2 id="การเรมตนใชงาน">การเริ่มต้นใช้งาน<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="การเพม-fpt-databox-ลงในเลยเอาตของคณ">การเพิ่ม FPT DataBox ลงในเลย์เอาต์ของคุณ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>เปิดการสวิงที่บันทึกไว้ในมุมมองการวิเคราะห์</p>
+</li>
+<li>
+<p>คลิกเมนู <strong>DataBox</strong> หรือตัวแก้ไขเลย์เอาต์</p>
+</li>
+<li>
+<p>ค้นหา <strong>Frontal Plane Torque</strong> ในรายการ DataBox ที่มีให้ใช้งาน</p>
+</li>
+<li>
+<p>เพิ่มลงในเลย์เอาต์การวิเคราะห์ของคุณ</p>
+</li>
+<li>
+<p>DataBox จะดึงข้อมูลจากการบันทึกของคุณโดยอัตโนมัติ</p>
+</li>
+</ul>
+<h3 id="การเปดใชงานการแสดงผล-3d">การเปิดใช้งานการแสดงผล 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>ภาพแสดงแขนของโมเมนต์และการแยกองค์ประกอบของแรงจะปรากฏในวิวพอร์ตวิดีโอ 3D พร้อมกับโครงกระดูก หากต้องการเปิดใช้งาน:</p>
+<ul>
+<li>
+<p>เปิดการบันทึกที่มีข้อมูล MoCap และข้อมูลแผ่นวัดแรง</p>
+</li>
+<li>
+<p>ค้นหาแผง <strong>Force Vector Settings</strong> ในมุมมองวิดีโอ</p>
+</li>
+<li>
+<p>เปิดใช้งานตัวเลือกการแสดงผลที่คุณต้องการดู</p>
+</li>
+</ul>
+<h3 id="ขอมลทจำเปน">ข้อมูลที่จำเป็น<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>เพื่อให้การวิเคราะห์ FPT ทำงานได้อย่างถูกต้อง การบันทึกของคุณต้องประกอบด้วย:</p>
+<p>ประเภทข้อมูล
 จำเป็น
-วัตถุประสงค์</p><p>ข้อมูลแผ่นวัดแรง
+วัตถุประสงค์</p>
+<p>ข้อมูลแผ่นวัดแรง
 ใช่
-ให้แรงปฏิกิริยาจากพื้น (Fx, Fz) และจุดศูนย์กลางความดัน</p><p>การจับภาพเคลื่อนไหว
+ให้แรงปฏิกิริยาจากพื้น (Fx, Fz) และจุดศูนย์กลางความกดดัน</p>
+<p>MoCap
 ใช่
-ให้ตำแหน่งจุดศูนย์กลางมวลสำหรับการคำนวณแรงบิดและการแสดงผล 3D</p><p>น้ำหนักกาย
+ให้ตำแหน่งจุดศูนย์กลางมวลสำหรับการคำนวณแรงบิดและการแสดงผล 3D</p>
+<p>น้ำหนักกาย
 ใช่
-ใช้เพื่อทำให้ค่าแรงบิดเป็นมาตรฐานเพื่อการเปรียบเทียบ</p><p>การปรับเทียบกล้อง
+ใช้ในการทำให้ค่าแรงบิดเป็นมาตรฐานสำหรับการเปรียบเทียบ</p>
+<p>การสอบเทียมกล้อง
 ใช่
-จำเป็นสำหรับการจัดตำแหน่ง 3D ที่เหมาะสม</p><p>บุคมาร์กการกระทบ
+จำเป็นสำหรับการจัดตำแหน่ง 3D ที่ถูกต้อง</p>
+<p>ที่คั่นหนังสือจุดกระทบ
 แนะนำ
-เปิดใช้เมตริกการจับเวลาเทียบกับการสัมผัสลูกบอล</p><hr><h2 id=ความเขาใจในการแสดงผล>ความเข้าใจในการแสดงผล<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=กราฟ>กราฟ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>กราฟหลักแสดงค่าแรงบิดตามช่วงเวลา:</p><p><strong>แกน X (แนวนอน)</strong>: เวลาตั้งแต่เริ่มต้นการสวิงถึงสิ้นสุด</p><p><strong>แกน Y (แนวตั้ง)</strong>: ค่าแรงบิด (สามารถแสดงเปอร์เซ็นต์และ/หรือค่าสัมบูรณ์)</p><p><strong>เส้นศูนย์</strong>: เส้นแนวนอนที่ศูนย์ - ค่าด้านบนและด้านล่างแสดงทิศทางการหมุนตรงข้าม</p><h4 id=ระบบแกนค>ระบบแกนคู่<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>กราฟสามารถแสดงสเกลที่แตกต่างกันสองแบบพร้อมกัน:</p><p><strong>แกนด้านซ้าย (เปอร์เซ็นต์)</strong>: แสดงแรงบิดที่ทำให้เป็นมาตรฐานตามน้ำหนักกาย (Nm/kg แสดงเป็น Force Factor)</p><p><strong>แกนด้านขวา (แบบสัมบูรณ์)</strong>: แสดงแรงบิดจริงในหน่วยนิวตัน-เมตร (Nm)</p><h3 id=เมตรกหลก>เมตริกหลัก<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>เมตริกหลักสามตัวแสดงอยู่ข้างกราฟ:</p><h4 id=1-แรงบดสงสด-ตวประกอบแรง>1. แรงบิดสูงสุด (ตัวประกอบแรง)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>สิ่งที่แสดง</strong>: ขนาดแรงบิดสูงสุด ที่ทำให้เป็นมาตรฐานตามน้ำหนักกาย</p><p><strong>หน่วย</strong>: Nm/kg (แสดงเป็น Force Factor)</p><p><strong>ตัวอย่าง</strong>: ค่า <strong>0.85</strong> หมายถึงแรงบิดสูงสุดของคุณคือ 0.85 นิวตัน-เมตรต่อกิโลกรัมของน้ำหนักกาย</p><h4 id=2-เวลาแรงบดสงสด>2. เวลาแรงบิดสูงสุด<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>สิ่งที่แสดง</strong>: เวลาที่แรงบิดสูงสุดเกิดขึ้นเทียบกับการกระทบลูก</p><p><strong>หน่วย</strong>: มิลลิวินาที (ms)</p><p><strong>หมายเหตุ</strong>: แสดงเฉพาะเมื่อมีการตั้งค่า impact bookmark</p><p><strong>ตัวอย่าง</strong>: <strong>-50ms</strong> หมายถึงแรงบิดสูงสุดเกิดขึ้น 50ms <em>ก่อน</em> การกระทบ; <strong>+20ms</strong> หมายถึง 20ms <em>หลัง</em> การกระทบ; <strong>0ms</strong> หมายถึงที่จุดกระทบ</p><h4 id=3-ตวประกอบแรง-raw>3. ตัวประกอบแรง (Raw)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>สิ่งที่แสดง</strong>: ค่าแรงบิดที่ทำให้เป็นมาตรฐานแบบดิบ รวมทั้งทิศทาง (บวกหรือลบ)</p><p><strong>หน่วย</strong>: Nm/kg</p><p><strong>ตัวอย่าง</strong>: <strong>+0.85</strong> และ <strong>-0.85</strong> มีขนาดเท่ากัน แต่มีทิศทางการหมุนตรงข้ามกัน</p><h3 id=การเนนระยะ>การเน้นระยะ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>เมื่อเปิดใช้งาน แถบสีต่างๆ จะซ้อนทับบนกราฟเพื่อแสดงระยะต่างๆ ของการสวิง:</p><ul><li>สวิงย้อนหลัง การเหวี่ยงลง การกระทบ การติดตามไม้</li></ul><hr><h2 id=การแสดงผล-3d>การแสดงผล 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=การแสดงผลแขนของโมเมนต>การแสดงผลแขนของโมเมนต์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>การแสดงผลแขนของโมเมนต์แสดงความสัมพันธ์ของแรงดึงชีววิทยากลศาสตร์ระหว่างจุดศูนย์กลางมวล (COM) และแรงปฏิกิริยาจากพื้นของคุณ</p><p>องค์ประกอบ
+เปิดใช้งานเมตริกส์การจับเวลาเทียบกับการสัมผัสลูกบอล</p>
+<hr>
+<h2 id="การทำความเขาใจการแสดงผล">การทำความเข้าใจการแสดงผล<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="กราฟ">กราฟ<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>กราฟหลักแสดงค่าแรงบิดตามเวลา:</p>
+<p><strong>แกน X (แนวนอน)</strong>: เวลาตั้งแต่เริ่มต้นการสวิงจนถึงสิ้นสุด</p>
+<p><strong>แกน Y (แนวตั้ง)</strong>: ค่าแรงบิด (สามารถแสดงเป็นเปอร์เซ็นต์และ/หรือค่าสัมบูรณ์)</p>
+<p><strong>เส้นศูนย์</strong>: เส้นแนวนอนที่ศูนย์ - ค่าที่อยู่เหนือและใต้บ่งชี้ทิศทางการหมุนที่ตรงกันข้าม</p>
+<h4 id="ระบบแกนค">ระบบแกนคู่<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>กราฟสามารถแสดงสองสเกลที่แตกต่างกันพร้อมกัน:</p>
+<p><strong>แกนซ้าย (เปอร์เซ็นต์)</strong>: แสดงแรงบิดที่ทำให้เป็นมาตรฐานตามน้ำหนักกาย (Nm/kg แสดงเป็น Force Factor)</p>
+<p><strong>แกนขวา (ค่าสัมบูรณ์)</strong>: แสดงแรงบิดจริงในหน่วย Newton-meter (Nm)</p>
+<h3 id="เมตรกหลก">เมตริกหลัก<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>เมตริกหลักสามรายการแสดงควบคู่กับกราฟ:</p>
+<h4 id="1-แรงบดสงสด-force-factor">1. แรงบิดสูงสุด (Force Factor)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>สิ่งที่แสดง</strong>: ขนาดแรงบิดสูงสุดที่ทำให้เป็นมาตรฐานตามน้ำหนักกาย</p>
+<p><strong>หน่วย</strong>: Nm/kg (แสดงเป็น Force Factor)</p>
+<p><strong>ตัวอย่าง</strong>: ค่า <strong>0.85</strong> หมายความว่าแรงบิดสูงสุดของคุณอยู่ที่ 0.85 Newton-meter ต่อกิโลกรัมของน้ำหนักกาย</p>
+<h4 id="2-การจบเวลาแรงบดสงสด">2. การจับเวลาแรงบิดสูงสุด<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>สิ่งที่แสดง</strong>: เวลาที่แรงบิดสูงสุดเกิดขึ้นเทียบกับจุดกระทบลูกบอล</p>
+<p><strong>หน่วย</strong>: มิลลิวินาที (ms)</p>
+<p><strong>หมายเหตุ</strong>: แสดงเฉพาะเมื่อมีการตั้งที่คั่นหนังสือจุดกระทบเท่านั้น</p>
+<p><strong>ตัวอย่าง</strong>: <strong>-50ms</strong> หมายความว่าแรงบิดสูงสุดเกิดขึ้น 50ms <em>ก่อน</em>จุดกระทบ; <strong>+20ms</strong> หมายความว่า 20ms <em>หลัง</em>จุดกระทบ; <strong>0ms</strong> หมายความว่าที่จุดกระทบ</p>
+<h4 id="3-force-factor-คาดบ">3. Force Factor (ค่าดิบ)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>สิ่งที่แสดง</strong>: ค่าแรงบิดที่ทำให้เป็นมาตรฐานดิบรวมทิศทาง (บวกหรือลบ)</p>
+<p><strong>หน่วย</strong>: Nm/kg</p>
+<p><strong>ตัวอย่าง</strong>: <strong>+0.85</strong> และ <strong>-0.85</strong> มีขนาดเท่ากันแต่มีทิศทางการหมุนตรงกันข้าม</p>
+<h3 id="การเนนระยะตางๆ-ของสวง">การเน้นระยะต่างๆ ของสวิง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>เมื่อเปิดใช้งาน แถบสีจะซ้อนทับบนกราฟเพื่อแสดงระยะต่างๆ ของการสวิงของคุณ:</p>
+<ul>
+<li>สวิงย้อนหลัง, การเหวี่ยงลง, จุดกระทบ, การติดตามไม้</li>
+</ul>
+<hr>
+<h2 id="การแสดงผล-3d">การแสดงผล 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="การแสดงผลแขนของโมเมนต">การแสดงผลแขนของโมเมนต์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>การแสดงผลแขนของโมเมนต์แสดงความสัมพันธ์เชิงเลเวอเรจทางชีวกลศาสตร์ระหว่างจุดศูนย์กลางมวล (COM) ของคุณกับแรงปฏิกิริยาจากพื้น</p>
+<p>องค์ประกอบ
 ลักษณะที่ปรากฏ
-สิ่งที่แสดง</p><p><strong>เส้นแขนของโมเมนต์</strong>
-เส้นสีส้มเต็ม
-ระยะทางตั้งฉากจาก COM ของคุณถึงเส้นการกระทำ</p><p><strong>เส้นการกระทำ</strong>
+สิ่งที่แสดง</p>
+<p><strong>เส้นแขนของโมเมนต์</strong>
+เส้นทึบสีส้ม
+ระยะตั้งฉากจาก COM ของคุณไปยังเส้นทางการกระทำ</p>
+<p><strong>เส้นทางการกระทำ</strong>
 เส้นประสีส้ม
-เส้นขยายไปตามที่แรงกระทำ</p><p><strong>ป้ายชื่อระยะห่าง</strong>
+เส้นที่ขยายไปตามทิศทางที่แรงกระทำ</p>
+<p><strong>ป้ายระยะทาง</strong>
 ข้อความสีขาวบนพื้นหลังสีเข้ม
-ระยะห่างแขนของโมเมนต์เป็นเซนติเมตร (±X.X ซม.)</p><h3 id=การแยกตวเวกเตอรแรง>การแยกตัวเวกเตอร์แรง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>การแสดงภาพการแยกตัวของแรงแบ่งแรงปฏิกิริยาจากพื้นทั้งหมดออกเป็นสามส่วนตั้งฉากกัน สีต่างๆ มักแสดงถึงทิศทางแรงทางกายภาพเดียวกันโดยไม่คำนึงถึงมุมมองของกล้อง:</p><p>ส่วนประกอบ
+ระยะแขนของโมเมนต์เป็นเซนติเมตร (±X.X cm)</p>
+<h3 id="การแยกองคประกอบของเวกเตอรแรง">การแยกองค์ประกอบของเวกเตอร์แรง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>การแสดงผลการแยกองค์ประกอบของแรงจะแบ่งแรงปฏิกิริยาจากพื้นรวมออกเป็นสามองค์ประกอบที่ตั้งฉากกัน สีต่างๆ แสดงทิศทางแรงทางกายภาพเดิมเสมอโดยไม่ขึ้นอยู่กับมุมมองของกล้อง:</p>
+<p>องค์ประกอบ
 สี
 ทิศทางทางกายภาพ
-สิ่งที่แสดง</p><p><strong>ส่วนประกอบ X</strong>
+สิ่งที่แสดง</p>
+<p><strong>องค์ประกอบ X</strong>
 ชมพู
-จากด้านข้างไปด้านข้าง (ด้านข้าง)
-การกระจายแรงด้านข้าง</p><p><strong>ส่วนประกอบ Y</strong>
-สีเขียวฟ้า
-ขึ้น-ลง (แนวตั้ง)
-การกระจายแรงแนวตั้ง</p><p><strong>ส่วนประกอบ Z</strong>
+ด้านข้าง (mediolateral)
+การกระจายแรงด้านข้าง</p>
+<p><strong>องค์ประกอบ Y</strong>
+น้ำเงินอมเขียว
+บน-ล่าง (แนวตั้ง)
+การกระจายแรงแนวตั้ง</p>
+<p><strong>องค์ประกอบ Z</strong>
 เขียว
-ด้านหน้า-ด้านหลัง (ด้านหน้า-ด้านหลัง)
-การกระจายแรงไปข้างหน้า/ข้างหลัง</p><p>ลูกศรส่วนประกอบแต่ละส่วนยังแสดง<strong>ป้ายชื่อเปอร์เซ็นต์</strong>ที่แสดงว่าส่วนใดของแรงรวมอยู่ในทิศทางนั้น</p><h4 id=พฤตกรรมมมมองของกลอง>พฤติกรรมมุมมองของกล้อง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>เวกเตอร์แรงจะแสดงสัมพัทธ์กับมุมมองของกล้องของคุณ ส่วนประกอบที่ปรากฏเป็นความลึก (เข้าหรือออกจากหน้าจอ) จะซ่อนไว้เพื่อความชัดเจน:</p><p>มุมมองของกล้อง
-ส่วนประกอบที่มองเห็น
-ส่วนประกอบที่ซ่อนไว้</p><p><strong>หน้าถังลูก</strong>
-X (สีชมพู แนวนอน), Y (สีเขียวฟ้า แนวตั้ง)
-Z (สีเขียว ความลึก)</p><p><strong>มุมมองตามเส้นเป้าหมาย</strong>
-Z (สีเขียว แนวนอน), Y (สีเขียวฟ้า แนวตั้ง)
-X (สีชมพู ความลึก)</p><p><strong>หมายเหตุ</strong>: สีต่างๆ มักแสดงถึงทิศทางทางกายภาพเดียวกัน - สีชมพูแสดงแรงด้านข้างเสมอ สีเขียวฟ้าแสดงแรงแนวตั้งเสมอ และสีเขียวแสดงแรงด้านหน้า-ด้านหลังเสมอ มีเพียงตำแหน่งบนหน้าจอเท่านั้นที่เปลี่ยนแปลงตามมุมของกล้อง</p><h3 id=การตงคาการแสดงผล-3d>การตั้งค่าการแสดงผล 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h4 id=การตงคาแขนของโมเมนต>การตั้งค่าแขนของโมเมนต์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>การตั้งค่า
+หน้า-หลัง (anteroposterior)
+การกระจายแรงไปข้างหน้า/ข้างหลัง</p>
+<p>แต่ละลูกศรองค์ประกอบยังแสดง <strong>ป้ายเปอร์เซ็นต์</strong> ที่บ่งบอกว่าแรงรวมทั้งหมดมีสัดส่วนอยู่ในทิศทางนั้นเท่าใด</p>
+<h4 id="พฤตกรรมตามมมมองของกลอง">พฤติกรรมตามมุมมองของกล้อง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>เวกเตอร์แรงแสดงผลโดยสัมพันธ์กับมุมมองของกล้อง องค์ประกอบที่จะปรากฏเป็นความลึก (เข้าหรือออกจากหน้าจอ) จะถูกซ่อนไว้เพื่อความชัดเจน:</p>
+<p>มุมมองของกล้อง
+องค์ประกอบที่มองเห็น
+องค์ประกอบที่ซ่อน</p>
+<p><strong>มุมมองหน้า</strong>
+X (ชมพู, แนวนอน), Y (น้ำเงินอมเขียว, แนวตั้ง)
+Z (เขียว, ความลึก)</p>
+<p><strong>มุมมองตามเส้นเป้าหมาย</strong>
+Z (เขียว, แนวนอน), Y (น้ำเงินอมเขียว, แนวตั้ง)
+X (ชมพู, ความลึก)</p>
+<p><strong>หมายเหตุ</strong>: สีต่างๆ แสดงทิศทางทางกายภาพเดิมเสมอ - สีชมพูแสดงแรง mediolateral เสมอ สีน้ำเงินอมเขียวแสดงแรงแนวตั้งเสมอ และสีเขียวแสดงแรง anteroposterior เสมอ เพียงแต่ตำแหน่งบนหน้าจอเปลี่ยนแปลงตามมุมของกล้อง</p>
+<h3 id="การตงคาการแสดงผล-3d">การตั้งค่าการแสดงผล 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="การตงคาแขนของโมเมนต">การตั้งค่าแขนของโมเมนต์<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>การตั้งค่า
 ค่าเริ่มต้น
-คำอธิบาย</p><p><strong>แสดงแขนของโมเมนต์</strong>
+คำอธิบาย</p>
+<p><strong>แสดงแขนของโมเมนต์</strong>
 ปิด
-สลับเส้นสีส้มทึบจาก COM ไปยังเส้นแรง</p><p><strong>แสดงเส้นของการกระทำ</strong>
+สลับการแสดงเส้นทึบสีส้มจาก COM ไปยังเส้นแรง</p>
+<p><strong>แสดงเส้นทางการกระทำ</strong>
 ปิด
-สลับเส้นประสีส้มที่แสดงส่วนขยายทิศทางของแรง</p><p><strong>แสดงป้ายชื่อระยะห่าง</strong>
+สลับการแสดงเส้นประสีส้มที่แสดงการขยายทิศทางแรง</p>
+<p><strong>แสดงป้ายระยะทาง</strong>
 ปิด
-สลับป้ายชื่อค่าระยะห่าง (±X.X ซม.)</p><h4 id=การตงคาการแยกตวของแรง>การตั้งค่าการแยกตัวของแรง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>การตั้งค่า
+สลับการแสดงป้ายค่าระยะทาง (±X.X cm)</p>
+<h4 id="การตงคาการแยกองคประกอบของแรง">การตั้งค่าการแยกองค์ประกอบของแรง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>การตั้งค่า
 ค่าเริ่มต้น
-คำอธิบาย</p><p><strong>แสดงส่วนประกอบ X/Y/Z</strong>
+คำอธิบาย</p>
+<p><strong>แสดงองค์ประกอบ X/Y/Z</strong>
 ปิด
-สลับลูกศรและป้ายชื่อเปอร์เซ็นต์ทั้งสามแกน</p><hr><h2 id=ตวเลอกการตงคา-กราฟ>ตัวเลือกการตั้งค่า (กราฟ)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>แสดง % (แกนเปอร์เซ็นต์)</strong>: เปิดตามค่าเริ่มต้น - สลับแรงบิดที่ทำให้เป็นมาตรฐาน (นิวตัน-เมตร/กิโลกรัม)</p><p><strong>แสดง Newton (แกนสัมบูรณ์)</strong>: ปิดตามค่าเริ่มต้น - สลับแรงบิดสัมบูรณ์ (Nm)</p><p><strong>ไฮไลต์เฟส</strong>: ปิดตามค่าเริ่มต้น - แสดงแถบสีที่ระบุเฟสของการแกว่ง</p><p><strong>แสดงเส้นตาข่าย</strong>: เปิดตามค่าเริ่มต้น - แสดงเส้นตาข่ายแนวนอน</p><p><strong>ประเภทแผนภูมิ</strong>: Mountain Chart (ค่าเริ่มต้น) หรือ Line Chart</p><hr><h2 id=การแกไขปญหา>การแก้ไขปัญหา<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=ขอความ-no-person-on-plate>ข้อความ &ldquo;No Person on Plate&rdquo;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>ตรวจสอบว่านักกีฬาเคยยืนอยู่บนแผ่นวัดแรงตั้งแต่เริ่มบันทึก</p></li><li><p>ตรวจสอบว่าบันทึกน้ำหนักตัวไว้ในโปรไฟล์นักกีฬาแล้ว</p></li><li><p>ตรวจสอบว่าการปรับเทียบแผ่นวัดแรงเสร็จสิ้นแล้ว</p></li></ul><h3 id=ขอมลกราฟวางเปลาหรอหายไป>ข้อมูลกราฟว่างเปล่าหรือหายไป<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>ยืนยันว่าแผ่นวัดแรงทำงานระหว่างการบันทึก</p></li><li><p>ตรวจสอบว่าบันทึกข้อมูลการจับภาพเคลื่อนไหวแล้ว (จำเป็นสำหรับการคำนวณ FPT)</p></li><li><p>ตรวจสอบว่าการบันทึกรวมระยะเวลาเต็มของการแกว่ง</p></li></ul><h3 id=เมตรกเวลาไมแสดงผล>เมตริกเวลาไม่แสดงผล<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>ตั้งที่คั่นหนังสือการกระทบในการบันทึกของคุณ</li></ul><hr><p><em>Last updated: 2026-01-09</em> | <a href=/sc-support/th/software-features/frontal-plane-torque/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/th/index.html><span class="logo-title default-animation">การสนับสนุน Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/th/getting-started/index.html><a class="padding default-animation" href=/sc-support/th/getting-started/index.html>เริ่มต้นใช้งาน</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/th/cameras-video/index.html><a class="padding default-animation" href=/sc-support/th/cameras-video/index.html>กล้องและวิดีโอ</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/th/hardware/index.html><a class="padding default-animation" href=/sc-support/th/hardware/index.html>ฮาร์ดแวร์</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/th/software-features/index.html><a class="padding default-animation" href=/sc-support/th/software-features/index.html>ซอฟต์แวร์และคุณสมบัติ</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/th/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/th/software-features/motion-capture-faq/index.html>Swing Catalyst Motion Capture FAQ</a></li><li data-nav-id=/sc-support/th/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/th/software-features/multiple-forces-graph/index.html>กราฟแรงหลายแรง</a></li><li data-nav-id=/sc-support/th/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/th/software-features/ios-app-sharing/index.html>การแชร์วิดีโอที่บันทึกไว้กับแอป Swing Catalyst สำหรับ iOS</a></li><li data-nav-id=/sc-support/th/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/th/software-features/pressure-stance-settings/index.html>การใช้การตั้งค่า Pressure และ Stance ใหม่</a></li><li data-nav-id=/sc-support/th/software-features/graph-library/index.html><a class=padding href=/sc-support/th/software-features/graph-library/index.html>การใช้ไลบรารี graph</a></li><li data-nav-id=/sc-support/th/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/th/software-features/motion-capture-settings/index.html>การตั้งค่าการจับภาพเคลื่อนไหว Swing Catalyst</a></li><li data-nav-id=/sc-support/th/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/th/software-features/markerless-motion-capture/index.html>การปรับปรุงการจับภาพเคลื่อนไหวแบบไม่มีมาร์กเกอร์สำหรับสวิงกอล์ฟและเบสบอลโดยใช้ RTMPose และ RTMDet: วิธีการจากบนลงล่าง</a></li><li data-nav-id=/sc-support/th/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/th/software-features/motion-capture-disclosures/index.html>การเปิดเผยข้อมูลที่สำคัญสำหรับผู้ใช้เครื่องมือการจับภาพการเคลื่อนไหวของ Swing Catalyst</a></li><li class=active data-nav-id=/sc-support/th/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/th/software-features/frontal-plane-torque/index.html>การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้</a></li><li data-nav-id=/sc-support/th/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/th/software-features/motion-capture-guide/index.html>คู่มือผู้ใช้ Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/th/software-features/bookmarks/index.html><a class=padding href=/sc-support/th/software-features/bookmarks/index.html>ที่คั่นหนังสือคืออะไร?</a></li><li data-nav-id=/sc-support/th/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/th/software-features/keyboard-shortcuts/index.html>แป้นพิมพ์ลัดและปุ่มทำงานด่วน</a></li><li data-nav-id=/sc-support/th/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/th/software-features/body-weight-measurement/index.html>ฟังก์ชันการวัดน้ำหนักตัวแบบใหม่</a></li><li data-nav-id=/sc-support/th/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/th/software-features/force-graph-phases/index.html>เฟสกราฟแรง</a></li><li data-nav-id=/sc-support/th/software-features/key-metrics/index.html><a class=padding href=/sc-support/th/software-features/key-metrics/index.html>เมตริกหลัก</a></li><li data-nav-id=/sc-support/th/software-features/explorer/index.html><a class=padding href=/sc-support/th/software-features/explorer/index.html>วิธีการใช้ Explorer</a></li><li data-nav-id=/sc-support/th/software-features/remote-support/index.html><a class=padding href=/sc-support/th/software-features/remote-support/index.html>วิธีการใช้ Remote Support</a></li><li data-nav-id=/sc-support/th/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/th/software-features/swing-catalyst-online/index.html>วิธีการใช้ Swing Catalyst Online</a></li><li data-nav-id=/sc-support/th/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/th/software-features/pressure-distribution-overlay/index.html>วิธีการใช้ฟังก์ชันการแสดงผลการกระจายความดัน</a></li><li data-nav-id=/sc-support/th/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/th/software-features/microphone-trigger/index.html>วิธีการใช้ไมโครโฟนเป็นตัวกระตุ้นการจับภาพ</a></li><li data-nav-id=/sc-support/th/software-features/force-vectors/index.html><a class=padding href=/sc-support/th/software-features/force-vectors/index.html>วิธีการใช้เวกเตอร์แรง</a></li><li data-nav-id=/sc-support/th/software-features/email-sharing/index.html><a class=padding href=/sc-support/th/software-features/email-sharing/index.html>วิธีการตั้งค่าการแชร์อีเมลใน Swing Catalyst</a></li><li data-nav-id=/sc-support/th/software-features/multiple-displays/index.html><a class=padding href=/sc-support/th/software-features/multiple-displays/index.html>วิธีการตั้งค่าการแสดงผลหลายจอ Swing Catalyst</a></li><li data-nav-id=/sc-support/th/software-features/feedback-screen/index.html><a class=padding href=/sc-support/th/software-features/feedback-screen/index.html>วิธีการตั้งค่าหน้าจอป้อนกลับ</a></li><li data-nav-id=/sc-support/th/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/th/software-features/motion-capture-install/index.html>วิธีการติดตั้งส่วนประกอบ Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/th/software-features/import-from-v1/index.html><a class=padding href=/sc-support/th/software-features/import-from-v1/index.html>วิธีการนำเข้าวิดีโอจาก V1</a></li><li data-nav-id=/sc-support/th/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/th/software-features/record-a-lesson/index.html>วิธีการบันทึกบทเรียน</a></li><li data-nav-id=/sc-support/th/software-features/change-recording-user/index.html><a class=padding href=/sc-support/th/software-features/change-recording-user/index.html>วิธีการเปลี่ยนผู้ใช้ในการบันทึกที่มีอยู่แล้ว</a></li><li data-nav-id=/sc-support/th/software-features/export-raw-data/index.html><a class=padding href=/sc-support/th/software-features/export-raw-data/index.html>วิธีการส่งออกข้อมูลดิบ</a></li><li data-nav-id=/sc-support/th/software-features/export-contacts/index.html><a class=padding href=/sc-support/th/software-features/export-contacts/index.html>วิธีการส่งออกข้อมูลติดต่อของนักเรียน</a></li><li data-nav-id=/sc-support/th/software-features/export-recordings/index.html><a class=padding href=/sc-support/th/software-features/export-recordings/index.html>ส่งออกการบันทึก</a></li><li data-nav-id=/sc-support/th/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/th/software-features/raw-data-export-guide/index.html>สิ่งที่รวมอยู่ในการส่งออกข้อมูลดิบ</a></li></ul></li><li data-nav-id=/sc-support/th/account-setup/index.html><a class="padding default-animation" href=/sc-support/th/account-setup/index.html>บัญชีและการตั้งค่า</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/th/reference/index.html><a class="padding default-animation" href=/sc-support/th/reference/index.html>อ้างอิง</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/frontal-plane-torque/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/frontal-plane-torque/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/frontal-plane-torque/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/frontal-plane-torque/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/frontal-plane-torque/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/frontal-plane-torque/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/frontal-plane-torque/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/frontal-plane-torque/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/frontal-plane-torque/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/frontal-plane-torque/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/frontal-plane-torque/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/frontal-plane-torque/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/frontal-plane-torque/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/frontal-plane-torque/index.html lang=th selected data-selected>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/frontal-plane-torque/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/frontal-plane-torque/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/frontal-plane-torque/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/frontal-plane-torque/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/frontal-plane-torque/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/frontal-plane-torque/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/frontal-plane-torque/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/frontal-plane-torque/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/frontal-plane-torque/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/frontal-plane-torque/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/frontal-plane-torque/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/frontal-plane-torque/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/frontal-plane-torque/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/frontal-plane-torque/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/frontal-plane-torque/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/frontal-plane-torque/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/frontal-plane-torque/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/frontal-plane-torque/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/frontal-plane-torque/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/frontal-plane-torque/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/frontal-plane-torque/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/frontal-plane-torque/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763273 defer></script><script src=/sc-support/js/theme.min.js?1771763273 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+สลับการแสดงลูกศรองค์ประกอบทั้งสามและป้ายเปอร์เซ็นต์</p>
+<hr>
+<h2 id="ตวเลอกการกำหนดคา-กราฟ">ตัวเลือกการกำหนดค่า (กราฟ)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>แสดง % (แกนเปอร์เซ็นต์)</strong>: ค่าเริ่มต้นเปิด - สลับแรงบิดที่ทำให้เป็นมาตรฐาน (Nm/kg)</p>
+<p><strong>แสดง Newton (แกนค่าสัมบูรณ์)</strong>: ค่าเริ่มต้นปิด - สลับแรงบิดสัมบูรณ์ (Nm)</p>
+<p><strong>เน้นระยะต่างๆ ของสวิง</strong>: ค่าเริ่มต้นปิด - แสดงแถบสีที่บ่งชี้ระยะต่างๆ ของสวิง</p>
+<p><strong>แสดงเส้นกริด</strong>: ค่าเริ่มต้นเปิด - แสดงเส้นกริดแนวนอน</p>
+<p><strong>ประเภทแผนภูมิ</strong>: Mountain Chart (ค่าเริ่มต้น) หรือ Line Chart</p>
+<hr>
+<h2 id="การแกไขปญหา">การแก้ไขปัญหา<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="ขอความ-no-person-on-plate">ข้อความ &ldquo;No Person on Plate&rdquo;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>ตรวจสอบให้แน่ใจว่านักกีฬายืนอยู่บนแผ่นวัดแรงตั้งแต่เริ่มต้นการบันทึก</p>
+</li>
+<li>
+<p>ตรวจสอบว่าได้กรอกน้ำหนักกายในโปรไฟล์นักกีฬาแล้ว</p>
+</li>
+<li>
+<p>ยืนยันว่าการปรับเทียบเพลทเสร็จสมบูรณ์แล้ว</p>
+</li>
+</ul>
+<h3 id="ขอมลกราฟวางเปลาหรอหายไป">ข้อมูลกราฟว่างเปล่าหรือหายไป<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>ยืนยันว่าแผ่นวัดแรงทำงานอยู่ในระหว่างการบันทึก</p>
+</li>
+<li>
+<p>ยืนยันว่าได้บันทึกข้อมูล MoCap แล้ว (จำเป็นสำหรับการคำนวณ FPT)</p>
+</li>
+<li>
+<p>ตรวจสอบว่าการบันทึกครอบคลุมระยะเวลาสวิงทั้งหมด</p>
+</li>
+</ul>
+<h3 id="เมตรกสการจบเวลาไมแสดง">เมตริกส์การจับเวลาไม่แสดง<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>ตั้งที่คั่นหนังสือจุดกระทบในการบันทึกของคุณ</li>
+</ul>
+<hr>
+<p><em>อัปเดตล่าสุด: 2026-01-09</em> | <a href="/sc-support/th/software-features/frontal-plane-torque/index.html">ดูบนเว็บไซต์สนับสนุนอย่างเป็นทางการ</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/th/index.html">
+          <span class="logo-title default-animation">การสนับสนุน Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/th/getting-started/index.html"><a class="padding default-animation" href="/sc-support/th/getting-started/index.html">เริ่มต้นใช้งาน</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/th/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/th/cameras-video/index.html">กล้องและวิดีโอ</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/th/hardware/index.html"><a class="padding default-animation" href="/sc-support/th/hardware/index.html">ฮาร์ดแวร์</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/th/software-features/index.html"><a class="padding default-animation" href="/sc-support/th/software-features/index.html">ซอฟต์แวร์และฟีเจอร์</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/th/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/th/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/th/software-features/multiple-forces-graph/index.html">กราฟแรงหลายรายการ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/th/software-features/ios-app-sharing/index.html">การแชร์วิดีโอที่บันทึกไว้ด้วยแอป Swing Catalyst สำหรับ iOS</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/th/software-features/pressure-stance-settings/index.html">การใช้การตั้งค่าความดันและท่ายืนใหม่</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/graph-library/index.html"><a class="padding" href="/sc-support/th/software-features/graph-library/index.html">การใช้งานไลบรารีกราฟ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/th/software-features/motion-capture-settings/index.html">การตั้งค่า Motion Capture ของ Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/th/software-features/markerless-motion-capture/index.html">การเพิ่มประสิทธิภาพการจับภาพเคลื่อนไหวแบบไม่มีมาร์กเกอร์สำหรับสวิงกอล์ฟและเบสบอลโดยใช้ RTMPose และ RTMDet: วิธีการจากบนลงล่าง</a></li>
+            <li class="active " data-nav-id="/sc-support/th/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/th/software-features/frontal-plane-torque/index.html">การวิเคราะห์แรงบิดระนาบหน้า - คู่มือผู้ใช้</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/th/software-features/motion-capture-disclosures/index.html">ข้อมูลเปิดเผยที่สำคัญสำหรับผู้ใช้เครื่องมือ Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/th/software-features/motion-capture-guide/index.html">คู่มือการใช้งาน Swing Catalyst Motion Capture สำหรับผู้ใช้</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/th/software-features/bookmarks/index.html">ที่คั่นหนังสือคืออะไร?</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/th/software-features/keyboard-shortcuts/index.html">แป้นพิมพ์ลัดและฮอตคีย์</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/th/software-features/body-weight-measurement/index.html">ฟังก์ชันการวัดน้ำหนักกายแบบใหม่</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/th/software-features/force-graph-phases/index.html">เฟสของกราฟแรง</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/th/software-features/key-metrics/index.html">เมตริกหลัก</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/th/software-features/multiple-displays/index.html">วิธีการตั้งค่าจอแสดงผลหลายจอกับ Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/th/software-features/feedback-screen/index.html">วิธีการตั้งค่าหน้าจอป้อนกลับ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/th/software-features/export-raw-data/index.html">วิธีการส่งออกข้อมูลดิบ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/th/software-features/export-contacts/index.html">วิธีการส่งออกข้อมูลติดต่อของนักเรียน</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/th/software-features/swing-catalyst-online/index.html">วิธีใช้งาน Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/remote-support/index.html"><a class="padding" href="/sc-support/th/software-features/remote-support/index.html">วิธีใช้งานการสนับสนุนระยะไกล</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/explorer/index.html"><a class="padding" href="/sc-support/th/software-features/explorer/index.html">วิธีใช้งานตัวสำรวจ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/th/software-features/pressure-distribution-overlay/index.html">วิธีใช้งานฟังก์ชันการซ้อนทับการกระจายความดัน</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/th/software-features/force-vectors/index.html">วิธีใช้งานเวกเตอร์แรง</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/th/software-features/microphone-trigger/index.html">วิธีใช้ไมโครโฟนเป็นตัวกระตุ้นการจับภาพ</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/th/software-features/email-sharing/index.html">วิธีตั้งค่าการแชร์ทางอีเมลใน Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/th/software-features/motion-capture-install/index.html">วิธีติดตั้งคอมโพเนนต์ Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/th/software-features/import-from-v1/index.html">วิธีนำเข้าวิดีโอจาก V1</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/th/software-features/record-a-lesson/index.html">วิธีบันทึกบทเรียน</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/th/software-features/change-recording-user/index.html">วิธีเปลี่ยนผู้ใช้ในการบันทึกที่มีอยู่แล้ว</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/th/software-features/export-recordings/index.html">ส่งออกการบันทึก</a></li>
+            <li class="" data-nav-id="/sc-support/th/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/th/software-features/raw-data-export-guide/index.html">สิ่งที่รวมอยู่ในการส่งออกข้อมูลดิบ</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/th/account-setup/index.html"><a class="padding default-animation" href="/sc-support/th/account-setup/index.html">บัญชีผู้ใช้และการเตรียมตัว</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/th/reference/index.html"><a class="padding default-animation" href="/sc-support/th/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/frontal-plane-torque/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/frontal-plane-torque/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/frontal-plane-torque/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/frontal-plane-torque/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/frontal-plane-torque/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/frontal-plane-torque/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/frontal-plane-torque/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/frontal-plane-torque/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/frontal-plane-torque/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/frontal-plane-torque/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/frontal-plane-torque/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/frontal-plane-torque/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/frontal-plane-torque/index.html" lang="th" selected data-selected>ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/frontal-plane-torque/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/frontal-plane-torque/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/frontal-plane-torque/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/frontal-plane-torque/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/frontal-plane-torque/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/frontal-plane-torque/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/frontal-plane-torque/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/frontal-plane-torque/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/frontal-plane-torque/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/frontal-plane-torque/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/frontal-plane-torque/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/frontal-plane-torque/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/frontal-plane-torque/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/frontal-plane-torque/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/frontal-plane-torque/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/frontal-plane-torque/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/frontal-plane-torque/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/frontal-plane-torque/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/frontal-plane-torque/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/frontal-plane-torque/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/frontal-plane-torque/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/frontal-plane-torque/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520121" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520121" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,19 +1,401 @@
-<!doctype html><html id=R-html lang=vi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu và bản ghi Swing Catalyst của bạn"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn :: Hỗ trợ Swing Catalyst"><meta name=twitter:description content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu và bản ghi Swing Catalyst của bạn"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/vi/account-setup/automatic-backups/index.html"><meta property="og:site_name" content="Hỗ trợ Swing Catalyst"><meta property="og:title" content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn :: Hỗ trợ Swing Catalyst"><meta property="og:description" content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu và bản ghi Swing Catalyst của bạn"><meta property="og:locale" content="vi"><meta property="og:type" content="article"><meta property="article:section" content="Tài Khoản & Thiết Lập"><meta property="article:tag" content="Backup"><meta property="article:tag" content="Database"><meta itemprop=name content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn :: Hỗ trợ Swing Catalyst"><meta itemprop=description content="Cách thiết lập sao lưu tự động cho cơ sở dữ liệu và bản ghi Swing Catalyst của bạn"><meta itemprop=wordCount content="283"><meta itemprop=keywords content="Backup,Database"><title>Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn :: Hỗ trợ Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/account-setup/automatic-backups/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/account-setup/automatic-backups/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/account-setup/automatic-backups/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/account-setup/automatic-backups/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/account-setup/automatic-backups/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/account-setup/automatic-backups/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/account-setup/automatic-backups/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/account-setup/automatic-backups/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/account-setup/automatic-backups/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/account-setup/automatic-backups/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/account-setup/automatic-backups/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/account-setup/automatic-backups/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/account-setup/automatic-backups/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/account-setup/automatic-backups/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/account-setup/automatic-backups/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/account-setup/automatic-backups/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/account-setup/automatic-backups/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/account-setup/automatic-backups/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/account-setup/automatic-backups/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/account-setup/automatic-backups/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/account-setup/automatic-backups/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/account-setup/automatic-backups/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/account-setup/automatic-backups/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/account-setup/automatic-backups/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/account-setup/automatic-backups/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/account-setup/automatic-backups/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/account-setup/automatic-backups/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/account-setup/automatic-backups/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/account-setup/automatic-backups/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/account-setup/automatic-backups/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/account-setup/automatic-backups/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/account-setup/automatic-backups/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/account-setup/automatic-backups/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/account-setup/automatic-backups/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/account-setup/automatic-backups/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/account-setup/automatic-backups/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/account-setup/automatic-backups/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763278 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763278 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763278 defer></script><script src=/sc-support/js/search.min.js?1771763278 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.vi.js?1771763278"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.vi.min.js?1771763278 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["vi"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763278 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763278 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763278 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763278 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763278 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/account-setup/automatic-backups/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Sao chép văn bản vào bảng tạm`,window.T_Copied_to_clipboard=`Văn bản đã sao chép vào bảng tạm!`,window.T_Link_copied_to_clipboard=`Liên kết đã sao chép vào bảng tạm!`,window.T_Reset_view=`Đặt lại dạng xem`,window.T_View_reset=`Xem đặt lại!`,window.T_No_results_found=`Không tìm thấy kết quả nào cho "{0}"`,window.T_N_results_found=`{1} kết quả được tìm thấy cho "{0}"`,window.T_Browser_unsupported_feature=`Trình duyệt này không hỗ trợ tính năng này`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/vi/account-setup/automatic-backups/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Mục lục (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/vi/index.html><span itemprop=name>Hỗ Trợ Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/vi/account-setup/index.html><span itemprop=name>Tài Khoản & Thiết Lập</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/vi/account-setup/change-subscription-type/index.html title="Cách thay đổi loại đăng ký (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/vi/account-setup/collect-logs/index.html title="Cách thu thập nhật ký để hỗ trợ (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable account-setup" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Thẻ style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/vi/tags/backup/index.html>Backup</a></li><li><a class=term-link href=/sc-support/vi/tags/database/index.html>Database</a></li></ul></div></header><h1 id=cách-thiết-lập-sao-lưu-tự-động-cho-cơ-sở-dữ-liệu-swing-catalyst-của-bạn>Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn</h1><p>Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn</p><p>Bài viết hỗ trợ này bao gồm thiết lập Backblaze để sao lưu cơ sở dữ liệu Swing Catalyst của bạn</p><p>If you want to make a backup / copy of your database & swings please see this article: <a href=/sc-support/vi/account-setup/backup-database/index.html>backup-database.md</a></p><p>You can also use Crashplan, <a href=https://www.crashplan.com/en-us/ rel=external>https://www.crashplan.com/en-us/</a></p><p>The setup process is similar, and you can use this guide as a reference for most of the steps if you wish to use a different backup provider.</p><p>We recommend that a backup system is setup before you start capturing video, as uploading a large database to the cloud takes a long time; uploading a little bit from the get go is easier.</p><p>Creating a Backblaze account</p><p>Related material:</p><p>Backblaze&rsquo;s Computer Backup Guide: <a href=https://www.backblaze.com/backup-your-computer.html rel=external>https://www.backblaze.com/backup-your-computer.html</a></p><p>Go to <a href=https://www.backblaze.com/ rel=external>Backblaze.com</a>, sign up and follow the payment instructions.</p><p><a href=#R-image-c0a4d94b7a20433d790b636ca19c414b class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/chrome_2016-07-06_10-27-39.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c0a4d94b7a20433d790b636ca19c414b><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/chrome_2016-07-06_10-27-39.png></a></p><p><a href=#R-image-885afc933aa7809faca4648c2297cb81 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/chrome_2016-07-06_10-28-13.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-885afc933aa7809faca4648c2297cb81><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/chrome_2016-07-06_10-28-13.png></a></p><p>Click Download for Windows.</p><p><a href=#R-image-5fa4c076eeabc0f301f6bc86aa51a760 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/chrome_2016-07-06_10-30-11.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5fa4c076eeabc0f301f6bc86aa51a760><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/chrome_2016-07-06_10-30-11.png></a></p><p>Once the client has downloaded start the program.</p><p><a href=#R-image-7297c73fa8f06eb6286e389773c36970 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/2016-07-06_13-16-21.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7297c73fa8f06eb6286e389773c36970><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/2016-07-06_13-16-21.png></a></p><p>If it doesn&rsquo;t show the control panel after installation, it might be due to your Windows version, try the newest installer here (you don&rsquo;t need to uninstall the previous version): <a href=http://files.backblaze.com/install_backblaze.exe rel=external>http://files.backblaze.com/install_backblaze.exe</a></p><p><a href=#R-image-efa632d0a35546605f3c5c1e5ad15b4e class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/bzdoinstall_2016-07-06_10-33-51.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-efa632d0a35546605f3c5c1e5ad15b4e><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/bzdoinstall_2016-07-06_10-33-51.png></a></p><p><a href=#R-image-1e847b0053ab0ac8f998e9cb28257a6a class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/bzdoinstall_2016-07-06_10-34-28.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1e847b0053ab0ac8f998e9cb28257a6a><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/bzdoinstall_2016-07-06_10-34-28.png></a></p><p><a href=#R-image-fd533b895e979e3011aab47df6570835 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/bzdoinstall_2016-07-06_10-38-38.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-fd533b895e979e3011aab47df6570835><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/bzdoinstall_2016-07-06_10-38-38.png></a></p><p><a href=#R-image-b08b8a0449d0b1222d52d5d84a9794ca class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/bzbui_2016-07-06_13-33-34.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b08b8a0449d0b1222d52d5d84a9794ca><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/bzbui_2016-07-06_13-33-34.png></a></p><p>If you have your Swing Catalyst database saved to a different partition or hard drive click Settings.</p><p>E.g make sure that D:\ is selected.</p><p><a href=#R-image-31cda790bae07150c1b8b35cf817a8d0 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/bzbui_2016-07-06_13-44-42.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-31cda790bae07150c1b8b35cf817a8d0><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/bzbui_2016-07-06_13-44-42.png></a></p><p>Backblaze will backup all of your data including your Swing Catalyst Settings folder, all of your lesson files and students.</p><p>Restoring swings in the even of a data loss</p><p>If you have backed up your data (with Backblaze) to an external hard drive and it&rsquo;s as recent as the online backup, restoring from an external medium is much quicker and recommended.</p><hr><p><em>Last updated: 2021-06-16</em> | <a href=/sc-support/vi/account-setup/automatic-backups/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/vi/index.html><span class="logo-title default-animation">Hỗ trợ Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Tìm kiếm (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Tìm kiếm</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder="Tìm kiếm...">
-<button class=search-clear type=button data-search-clear title="Xóa tìm kiếm"><i class="fas fa-fw fa-times" title="Xóa tìm kiếm"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/vi/getting-started/index.html><a class="padding default-animation" href=/sc-support/vi/getting-started/index.html>Bắt Đầu</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/cameras-video/index.html><a class="padding default-animation" href=/sc-support/vi/cameras-video/index.html>Máy Ảnh & Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/hardware/index.html><a class="padding default-animation" href=/sc-support/vi/hardware/index.html>Phần Cứng</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/software-features/index.html><a class="padding default-animation" href=/sc-support/vi/software-features/index.html>Phần Mềm & Tính Năng</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/vi/account-setup/index.html><a class="padding default-animation" href=/sc-support/vi/account-setup/index.html>Tài Khoản & Thiết Lập</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu><li data-nav-id=/sc-support/vi/account-setup/beta-versions/index.html><a class=padding href=/sc-support/vi/account-setup/beta-versions/index.html>Cách bật hoặc tắt các phiên bản beta</a></li><li data-nav-id=/sc-support/vi/account-setup/install-previous-version/index.html><a class=padding href=/sc-support/vi/account-setup/install-previous-version/index.html>Cách cài đặt phiên bản trước đó của Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/account-setup/run-on-mac/index.html><a class=padding href=/sc-support/vi/account-setup/run-on-mac/index.html>Cách chạy Swing Catalyst trên Apple Mac</a></li><li data-nav-id=/sc-support/vi/account-setup/move-database/index.html><a class=padding href=/sc-support/vi/account-setup/move-database/index.html>Cách di chuyển cơ sở dữ liệu sang phân vùng hoặc ổ cứng mới</a></li><li data-nav-id=/sc-support/vi/account-setup/send-logs/index.html><a class=padding href=/sc-support/vi/account-setup/send-logs/index.html>Cách gửi nhật ký đến bộ phận hỗ trợ</a></li><li data-nav-id=/sc-support/vi/account-setup/cancel-subscription/index.html><a class=padding href=/sc-support/vi/account-setup/cancel-subscription/index.html>Cách hủy đăng ký Swing Catalyst của bạn</a></li><li data-nav-id=/sc-support/vi/account-setup/manage-subscriptions/index.html><a class=padding href=/sc-support/vi/account-setup/manage-subscriptions/index.html>Cách quản lý các gói đăng ký và đơn hàng của bạn</a></li><li data-nav-id=/sc-support/vi/account-setup/copy-settings/index.html><a class=padding href=/sc-support/vi/account-setup/copy-settings/index.html>Cách sao chép cài đặt Swing Catalyst sang máy tính hoặc ổ cứng mới</a></li><li data-nav-id=/sc-support/vi/account-setup/copy-database-legacy/index.html><a class=padding href=/sc-support/vi/account-setup/copy-database-legacy/index.html>Cách sao chép cơ sở dữ liệu cho Swing Catalyst 6.1 và các phiên bản cũ hơn</a></li><li data-nav-id=/sc-support/vi/account-setup/copy-database/index.html><a class=padding href=/sc-support/vi/account-setup/copy-database/index.html>Cách sao chép cơ sở dữ liệu Swing Catalyst của bạn từ máy tính này sang máy tính khác.</a></li><li data-nav-id=/sc-support/vi/account-setup/backup-database/index.html><a class=padding href=/sc-support/vi/account-setup/backup-database/index.html>Cách sao lưu cơ sở dữ liệu Swing Catalyst và các cú gôn của bạn</a></li><li data-nav-id=/sc-support/vi/account-setup/backup-full-copy/index.html><a class=padding href=/sc-support/vi/account-setup/backup-full-copy/index.html>Cách tạo bản sao Swing Catalyst trên máy tính mới hoặc ổ cứng mới</a></li><li data-nav-id=/sc-support/vi/account-setup/create-shortcut/index.html><a class=padding href=/sc-support/vi/account-setup/create-shortcut/index.html>Cách tạo phím tắt Motion Catalyst</a></li><li data-nav-id=/sc-support/vi/account-setup/change-subscription-type/index.html><a class=padding href=/sc-support/vi/account-setup/change-subscription-type/index.html>Cách thay đổi loại đăng ký</a></li><li class=active data-nav-id=/sc-support/vi/account-setup/automatic-backups/index.html><a class=padding href=/sc-support/vi/account-setup/automatic-backups/index.html>Cách thiết lập sao lưu tự động cho cơ sở dữ liệu Swing Catalyst của bạn</a></li><li data-nav-id=/sc-support/vi/account-setup/collect-logs/index.html><a class=padding href=/sc-support/vi/account-setup/collect-logs/index.html>Cách thu thập nhật ký để hỗ trợ</a></li><li data-nav-id=/sc-support/vi/account-setup/find-computer-specs/index.html><a class=padding href=/sc-support/vi/account-setup/find-computer-specs/index.html>Cách tìm thông số kỹ thuật của máy tính của bạn</a></li><li data-nav-id=/sc-support/vi/account-setup/optimize-laptop/index.html><a class=padding href=/sc-support/vi/account-setup/optimize-laptop/index.html>Cách tối ưu hóa hiệu suất máy tính xách tay</a></li><li data-nav-id=/sc-support/vi/account-setup/cancel-subscription-paypal/index.html><a class=padding href=/sc-support/vi/account-setup/cancel-subscription-paypal/index.html>Hủy Đăng Ký Phần Mềm (PayPal)</a></li><li data-nav-id=/sc-support/vi/account-setup/install-error-fix/index.html><a class=padding href=/sc-support/vi/account-setup/install-error-fix/index.html>Lỗi khi cài đặt Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/account-setup/check-graphics-card/index.html><a class=padding href=/sc-support/vi/account-setup/check-graphics-card/index.html>Tôi có card đồ họa nào?</a></li></ul></li><li data-nav-id=/sc-support/vi/reference/index.html><a class="padding default-animation" href=/sc-support/vi/reference/index.html>Tham Chiếu</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Ngôn ngữ</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/account-setup/automatic-backups/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/account-setup/automatic-backups/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/account-setup/automatic-backups/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/account-setup/automatic-backups/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/account-setup/automatic-backups/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/account-setup/automatic-backups/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/account-setup/automatic-backups/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/account-setup/automatic-backups/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/account-setup/automatic-backups/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/account-setup/automatic-backups/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/account-setup/automatic-backups/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/account-setup/automatic-backups/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/account-setup/automatic-backups/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/account-setup/automatic-backups/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/account-setup/automatic-backups/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/account-setup/automatic-backups/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/account-setup/automatic-backups/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/account-setup/automatic-backups/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/account-setup/automatic-backups/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/account-setup/automatic-backups/index.html lang=vi selected data-selected>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/account-setup/automatic-backups/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/account-setup/automatic-backups/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/account-setup/automatic-backups/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/account-setup/automatic-backups/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/account-setup/automatic-backups/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/account-setup/automatic-backups/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/account-setup/automatic-backups/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/account-setup/automatic-backups/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/account-setup/automatic-backups/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/account-setup/automatic-backups/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/account-setup/automatic-backups/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/account-setup/automatic-backups/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/account-setup/automatic-backups/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/account-setup/automatic-backups/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/account-setup/automatic-backups/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/account-setup/automatic-backups/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Đề tài</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763278 defer></script><script src=/sc-support/js/theme.min.js?1771763278 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu và các Bản Ghi SwingCatalyst của bạn">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn :: Hỗ trợ Swing Catalyst">
+    <meta name="twitter:description" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu và các Bản Ghi SwingCatalyst của bạn">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/vi/account-setup/automatic-backups/index.html">
+    <meta property="og:site_name" content="Hỗ trợ Swing Catalyst">
+    <meta property="og:title" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn :: Hỗ trợ Swing Catalyst">
+    <meta property="og:description" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu và các Bản Ghi SwingCatalyst của bạn">
+    <meta property="og:locale" content="vi">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Tài khoản & Chuẩn bị">
+    <meta property="article:tag" content="Backup">
+    <meta property="article:tag" content="Database">
+    <meta itemprop="name" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn :: Hỗ trợ Swing Catalyst">
+    <meta itemprop="description" content="Cách cài đặt sao lưu tự động cho cơ sở dữ liệu và các Bản Ghi SwingCatalyst của bạn">
+    <meta itemprop="wordCount" content="365">
+    <meta itemprop="keywords" content="Backup,Database">
+    <title>Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn :: Hỗ trợ Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/account-setup/automatic-backups/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/account-setup/automatic-backups/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/account-setup/automatic-backups/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/account-setup/automatic-backups/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/account-setup/automatic-backups/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/account-setup/automatic-backups/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/account-setup/automatic-backups/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/account-setup/automatic-backups/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/account-setup/automatic-backups/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/account-setup/automatic-backups/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/account-setup/automatic-backups/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/account-setup/automatic-backups/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/account-setup/automatic-backups/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/account-setup/automatic-backups/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/account-setup/automatic-backups/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/account-setup/automatic-backups/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/account-setup/automatic-backups/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/account-setup/automatic-backups/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/account-setup/automatic-backups/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/account-setup/automatic-backups/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/account-setup/automatic-backups/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/account-setup/automatic-backups/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/account-setup/automatic-backups/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/account-setup/automatic-backups/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/account-setup/automatic-backups/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/account-setup/automatic-backups/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/account-setup/automatic-backups/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/account-setup/automatic-backups/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/account-setup/automatic-backups/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/account-setup/automatic-backups/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/account-setup/automatic-backups/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/account-setup/automatic-backups/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/account-setup/automatic-backups/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/account-setup/automatic-backups/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/account-setup/automatic-backups/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/account-setup/automatic-backups/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/account-setup/automatic-backups/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520128" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520128" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772520128";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772520128" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['vi'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520128" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520128" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520128" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520128" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520128" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/account-setup\/automatic-backups\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Sao chép văn bản vào bảng tạm`;
+      window.T_Copied_to_clipboard = `Văn bản đã sao chép vào bảng tạm!`;
+      window.T_Link_copied_to_clipboard = `Liên kết đã sao chép vào bảng tạm!`;
+      window.T_Reset_view = `Đặt lại dạng xem`;
+      window.T_View_reset = `Xem đặt lại!`;
+      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
+      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
+      window.T_Browser_unsupported_feature = `Trình duyệt này không hỗ trợ tính năng này`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/vi/account-setup/automatic-backups/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/index.html"><span itemprop="name">Hỗ Trợ Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/account-setup/index.html"><span itemprop="name">Tài khoản &amp; Chuẩn bị</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/vi/account-setup/install-previous-version/index.html" title="Cách cài đặt phiên bản cũ hơn của Swing Catalyst (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/vi/account-setup/run-on-mac/index.html" title="Cách chạy Swing Catalyst trên máy Mac của Apple (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable account-setup" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Thẻ" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/vi/tags/backup/index.html">Backup</a></li>
+    <li><a class="term-link" href="/sc-support/vi/tags/database/index.html">Database</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="cách-cài-đặt-sao-lưu-tự-động-cho-cơ-sở-dữ-liệu-swingcatalyst-của-bạn">Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn</h1>
+
+<p>Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst</p>
+<p>Bài hỗ trợ này hướng dẫn cách cài đặt Backblaze để sao lưu cơ sở dữ liệu SwingCatalyst của bạn</p>
+<p>Nếu bạn muốn tạo bản sao lưu / bản sao của cơ sở dữ liệu &amp; các Cú Gôn, vui lòng xem bài viết này: <a href="/sc-support/vi/account-setup/backup-database/index.html">backup-database.md</a></p>
+<p>Bạn cũng có thể sử dụng Crashplan, <a href="https://www.crashplan.com/en-us/" rel="external">https://www.crashplan.com/en-us/</a></p>
+<p>Quy trình cài đặt tương tự nhau, và bạn có thể dùng hướng dẫn này làm tài liệu tham khảo cho hầu hết các bước nếu muốn sử dụng nhà cung cấp dịch vụ sao lưu khác.</p>
+<p>Chúng tôi khuyến nghị bạn nên cài đặt hệ thống sao lưu trước khi bắt đầu ghi video, vì việc tải lên một cơ sở dữ liệu lớn lên đám mây sẽ mất rất nhiều thời gian; tải lên dần dần ngay từ đầu sẽ dễ dàng hơn nhiều.</p>
+<p>Tạo tài khoản Backblaze</p>
+<p>Tài liệu liên quan:</p>
+<p>Hướng dẫn Sao lưu Máy tính của Backblaze: <a href="https://www.backblaze.com/backup-your-computer.html" rel="external">https://www.backblaze.com/backup-your-computer.html</a></p>
+<p>Truy cập <a href="https://www.backblaze.com/" rel="external">Backblaze.com</a>, đăng ký và làm theo hướng dẫn thanh toán.</p>
+<p><a href="#R-image-3c489506d92e43ab0c17eeece3b7a0db" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/chrome_2016-07-06_10-27-39.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c489506d92e43ab0c17eeece3b7a0db"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/chrome_2016-07-06_10-27-39.png"></a></p>
+<p><a href="#R-image-9509d24417bf218e3855c27d28f2c160" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/chrome_2016-07-06_10-28-13.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9509d24417bf218e3855c27d28f2c160"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/chrome_2016-07-06_10-28-13.png"></a></p>
+<p>Nhấp vào Tải xuống cho Windows.</p>
+<p><a href="#R-image-8cf7b957e4aca1923b24eb37a948b22c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/chrome_2016-07-06_10-30-11.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8cf7b957e4aca1923b24eb37a948b22c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/chrome_2016-07-06_10-30-11.png"></a></p>
+<p>Sau khi trình cài đặt đã tải xuống, hãy khởi động chương trình.</p>
+<p><a href="#R-image-a623621be9c17112750eff330ede9649" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2016-07-06_13-16-21.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a623621be9c17112750eff330ede9649"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/2016-07-06_13-16-21.png"></a></p>
+<p>Nếu bảng điều khiển không hiển thị sau khi cài đặt, có thể là do phiên bản Windows của bạn, hãy thử trình cài đặt mới nhất tại đây (bạn không cần gỡ cài đặt phiên bản trước): <a href="http://files.backblaze.com/install_backblaze.exe" rel="external">http://files.backblaze.com/install_backblaze.exe</a></p>
+<p><a href="#R-image-cc5902f1a200db8b79fec69cd3f1d78e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzdoinstall_2016-07-06_10-33-51.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc5902f1a200db8b79fec69cd3f1d78e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzdoinstall_2016-07-06_10-33-51.png"></a></p>
+<p><a href="#R-image-daf810656ab95223f7344e384ab25a57" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzdoinstall_2016-07-06_10-34-28.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-daf810656ab95223f7344e384ab25a57"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzdoinstall_2016-07-06_10-34-28.png"></a></p>
+<p><a href="#R-image-0792c12bf7852f3b12de4e25f96f3e3b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzdoinstall_2016-07-06_10-38-38.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0792c12bf7852f3b12de4e25f96f3e3b"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzdoinstall_2016-07-06_10-38-38.png"></a></p>
+<p><a href="#R-image-c9ad4687c5737344d6b6baf5b9927fda" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzbui_2016-07-06_13-33-34.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9ad4687c5737344d6b6baf5b9927fda"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzbui_2016-07-06_13-33-34.png"></a></p>
+<p>Nếu bạn đã lưu cơ sở dữ liệu SwingCatalyst vào một phân vùng hoặc ổ cứng khác, hãy nhấp vào Cài đặt.</p>
+<p>Ví dụ: đảm bảo rằng D:\ đã được chọn.</p>
+<p><a href="#R-image-b00241a9d2b59d15b070b560d93f308f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzbui_2016-07-06_13-44-42.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b00241a9d2b59d15b070b560d93f308f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/bzbui_2016-07-06_13-44-42.png"></a></p>
+<p>Backblaze sẽ sao lưu toàn bộ dữ liệu của bạn bao gồm thư mục Cài đặt SwingCatalyst, tất cả các tệp Bài Học và Học Viên.</p>
+<p>Khôi phục các Cú Gôn trong trường hợp mất dữ liệu</p>
+<p>Nếu bạn đã sao lưu dữ liệu (bằng Backblaze) ra ổ cứng ngoài và bản sao lưu đó cũng mới như bản sao lưu trực tuyến, thì việc khôi phục từ thiết bị lưu trữ ngoài sẽ nhanh hơn nhiều và được khuyến nghị.</p>
+<hr>
+<p><em>Cập nhật lần cuối: 2021-06-16</em> | <a href="/sc-support/vi/account-setup/automatic-backups/index.html">Xem trên trang hỗ trợ chính thức</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/vi/index.html">
+          <span class="logo-title default-animation">Hỗ trợ Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Tìm kiếm (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
+            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-fw fa-times" title="Xóa tìm kiếm"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/vi/getting-started/index.html"><a class="padding default-animation" href="/sc-support/vi/getting-started/index.html">Bắt Đầu Sử Dụng</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/vi/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/hardware/index.html"><a class="padding default-animation" href="/sc-support/vi/hardware/index.html">Phần cứng</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/index.html"><a class="padding default-animation" href="/sc-support/vi/software-features/index.html">Phần mềm &amp; Tính năng</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/vi/account-setup/index.html"><a class="padding default-animation" href="/sc-support/vi/account-setup/index.html">Tài khoản &amp; Chuẩn bị</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/vi/account-setup/beta-versions/index.html"><a class="padding" href="/sc-support/vi/account-setup/beta-versions/index.html">Cách bật hoặc tắt phiên bản beta</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/install-previous-version/index.html"><a class="padding" href="/sc-support/vi/account-setup/install-previous-version/index.html">Cách cài đặt phiên bản cũ hơn của Swing Catalyst</a></li>
+            <li class="active " data-nav-id="/sc-support/vi/account-setup/automatic-backups/index.html"><a class="padding" href="/sc-support/vi/account-setup/automatic-backups/index.html">Cách cài đặt sao lưu tự động cho cơ sở dữ liệu SwingCatalyst của bạn</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/run-on-mac/index.html"><a class="padding" href="/sc-support/vi/account-setup/run-on-mac/index.html">Cách chạy Swing Catalyst trên máy Mac của Apple</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/move-database/index.html"><a class="padding" href="/sc-support/vi/account-setup/move-database/index.html">Cách di chuyển cơ sở dữ liệu sang phân vùng hoặc ổ cứng mới</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/send-logs/index.html"><a class="padding" href="/sc-support/vi/account-setup/send-logs/index.html">Cách gửi nhật ký đến bộ phận hỗ trợ</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/cancel-subscription/index.html"><a class="padding" href="/sc-support/vi/account-setup/cancel-subscription/index.html">Cách hủy đăng ký Swing Catalyst của bạn</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/manage-subscriptions/index.html"><a class="padding" href="/sc-support/vi/account-setup/manage-subscriptions/index.html">Cách quản lý đăng ký &amp; đơn hàng của bạn</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/copy-settings/index.html"><a class="padding" href="/sc-support/vi/account-setup/copy-settings/index.html">Cách sao chép cài đặt Swing Catalyst sang máy tính hoặc ổ cứng mới</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/copy-database-legacy/index.html"><a class="padding" href="/sc-support/vi/account-setup/copy-database-legacy/index.html">Cách sao chép cơ sở dữ liệu cho Swing Catalyst 6.1 &amp; phiên bản cũ hơn</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/copy-database/index.html"><a class="padding" href="/sc-support/vi/account-setup/copy-database/index.html">Cách sao chép cơ sở dữ liệu SwingCatalyst từ máy tính này sang máy tính khác.</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/backup-database/index.html"><a class="padding" href="/sc-support/vi/account-setup/backup-database/index.html">Cách sao lưu cơ sở dữ liệu &amp; các Cú Gôn trong Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/backup-full-copy/index.html"><a class="padding" href="/sc-support/vi/account-setup/backup-full-copy/index.html">Cách tạo bản sao của SwingCatalyst trên máy tính mới hoặc ổ cứng mới</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/create-shortcut/index.html"><a class="padding" href="/sc-support/vi/account-setup/create-shortcut/index.html">Cách tạo shortcut cho Motion Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/change-subscription-type/index.html"><a class="padding" href="/sc-support/vi/account-setup/change-subscription-type/index.html">Cách thay đổi loại gói đăng ký</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/collect-logs/index.html"><a class="padding" href="/sc-support/vi/account-setup/collect-logs/index.html">Cách thu thập nhật ký để hỗ trợ</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/find-computer-specs/index.html"><a class="padding" href="/sc-support/vi/account-setup/find-computer-specs/index.html">Cách tìm thông số kỹ thuật máy tính của bạn</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/optimize-laptop/index.html"><a class="padding" href="/sc-support/vi/account-setup/optimize-laptop/index.html">Cách tối ưu hóa hiệu suất laptop</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/cancel-subscription-paypal/index.html"><a class="padding" href="/sc-support/vi/account-setup/cancel-subscription-paypal/index.html">Hủy Đăng Ký Phần Mềm (PayPal)</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/install-error-fix/index.html"><a class="padding" href="/sc-support/vi/account-setup/install-error-fix/index.html">Lỗi khi cài đặt Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/check-graphics-card/index.html"><a class="padding" href="/sc-support/vi/account-setup/check-graphics-card/index.html">Tôi đang dùng card đồ họa nào?</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/reference/index.html"><a class="padding default-animation" href="/sc-support/vi/reference/index.html">Tham khảo</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/account-setup/automatic-backups/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/account-setup/automatic-backups/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/account-setup/automatic-backups/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/account-setup/automatic-backups/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/account-setup/automatic-backups/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/account-setup/automatic-backups/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/account-setup/automatic-backups/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/account-setup/automatic-backups/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/account-setup/automatic-backups/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/account-setup/automatic-backups/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/account-setup/automatic-backups/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/account-setup/automatic-backups/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/account-setup/automatic-backups/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/account-setup/automatic-backups/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/account-setup/automatic-backups/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/account-setup/automatic-backups/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/account-setup/automatic-backups/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/account-setup/automatic-backups/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/account-setup/automatic-backups/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/account-setup/automatic-backups/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/account-setup/automatic-backups/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/account-setup/automatic-backups/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/account-setup/automatic-backups/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/account-setup/automatic-backups/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/account-setup/automatic-backups/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/account-setup/automatic-backups/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/account-setup/automatic-backups/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/account-setup/automatic-backups/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/account-setup/automatic-backups/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/account-setup/automatic-backups/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/account-setup/automatic-backups/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/account-setup/automatic-backups/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/account-setup/automatic-backups/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/account-setup/automatic-backups/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/account-setup/automatic-backups/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/account-setup/automatic-backups/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Đề tài</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520128" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

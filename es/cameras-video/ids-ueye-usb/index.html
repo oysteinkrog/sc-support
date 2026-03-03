@@ -1,12 +1,513 @@
-<!doctype html><html id=R-html lang=es dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara USB IDS uEye."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Cómo usar cámaras USB IDS uEye con Swing Catalyst :: Soporte de Swing Catalyst"><meta name=twitter:description content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara USB IDS uEye."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-usb/index.html"><meta property="og:site_name" content="Soporte de Swing Catalyst"><meta property="og:title" content="Cómo usar cámaras USB IDS uEye con Swing Catalyst :: Soporte de Swing Catalyst"><meta property="og:description" content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara USB IDS uEye."><meta property="og:locale" content="es"><meta property="og:type" content="article"><meta property="article:section" content="Cámaras y Video"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Gige-Camera"><meta property="article:tag" content="Usb-Camera"><meta itemprop=name content="Cómo usar cámaras USB IDS uEye con Swing Catalyst :: Soporte de Swing Catalyst"><meta itemprop=description content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara USB IDS uEye."><meta itemprop=wordCount content="816"><meta itemprop=keywords content="Troubleshooting,Gige-Camera,Usb-Camera"><title>Cómo usar cámaras USB IDS uEye con Swing Catalyst :: Soporte de Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/ids-ueye-usb/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763264 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763264 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763264 defer></script><script src=/sc-support/js/search.min.js?1771763264 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.es.js?1771763264"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763264 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763264 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763264 defer></script><script src=/sc-support/js/lunr/lunr.es.min.js?1771763264 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["es"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763264 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763264 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763264 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763264 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763264 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/ids-ueye-usb/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copiar texto al portapapeles`,window.T_Copied_to_clipboard=`¡Texto copiado al portapapeles!`,window.T_Link_copied_to_clipboard=`¡Enlace copiado al portapapeles!`,window.T_Reset_view=`Restablecer vista`,window.T_View_reset=`¡Ver reajuste!`,window.T_No_results_found=`No se han encontrado resultados para "{0}"`,window.T_N_results_found=`{1} resultados encontrados para "{0}"`,window.T_Browser_unsupported_feature=`Este navegador no admite esta función`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/es/cameras-video/ids-ueye-usb/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menú (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Tabla de contenido (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#introducción>Introducción</a></li><li><a href=#applies-to>Applies To</a></li><li><a href=#description-of-the-camera>Description of the Camera</a><ul><li><a href=#camera>Camera</a></li><li><a href=#lens>Lens</a></li></ul></li><li><a href=#the-software-settings>The Software Settings</a><ul><li><a href=#pixel-clock>Pixel Clock</a></li><li><a href=#frame-rate>Frame Rate</a></li><li><a href=#exposure-shutter>Exposure Shutter</a></li><li><a href=#gain>Gain</a></li><li><a href=#white-balance>White Balance</a></li></ul></li><li><a href=#maximize-frames-per-second-fps>Maximize Frames Per Second (FPS)</a></li><li><a href=#troubleshooting>Troubleshooting</a><ul><li><a href=#dropped-framesjittery-image-on-playback>Dropped frames/&ldquo;Jittery&rdquo; image on playback</a></li><li><a href=#unable-to-focus-at-all-very-blurry-image>Unable to focus at all (very blurry image)</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/es/index.html><span itemprop=name>Soporte de Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/es/cameras-video/index.html><span itemprop=name>Cámaras y Video</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Cómo usar cámaras USB IDS uEye con Swing Catalyst</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/es/cameras-video/fix-dropped-frames/index.html title="Cómo solucionar 'fotogramas perdidos' con cámaras USB 3.0 o 2.0. (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/es/cameras-video/point-grey-flir-usb/index.html title="Cómo usar cámaras USB Point Grey / FLiR con Swing Catalyst (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Más><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Etiquetas style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/es/tags/gige-camera/index.html>Gige-Camera</a></li><li><a class=term-link href=/sc-support/es/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/es/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=cómo-usar-cámaras-usb-ids-ueye-con-swing-catalyst>Cómo usar cámaras USB IDS uEye con Swing Catalyst</h1><h2 id=introducción>Introducción<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara IDS uEye USB.</p><p><a href=/sc-support/es/cameras-video/ids-ueye-highspeed/index.html>Click here</a> for installation details</p><p>For GigE (network IDS cameras) see this article: <a href=/sc-support/es/cameras-video/ids-ueye-gige/index.html>ids-ueye-gige.md</a></p><h2 id=applies-to>Applies To<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>Getting started with a IDS uEye USB camera and Swing Catalyst.</li></ul><h2 id=description-of-the-camera>Description of the Camera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>The uEye USB camera  consists of three separate components:</p><ul><li><p>The camera itself</p></li><li><p>The lens</p></li><li><p>The USB cable</p></li></ul><p><a href=#R-image-875f3e1101a5c7a93ddad5a2ad672427 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/uEyeCamera.jpg style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-875f3e1101a5c7a93ddad5a2ad672427><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/uEyeCamera.jpg></a></p><h3 id=camera>Camera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>The camera itself has no physical adjustments, all settings are controlled by the software.</p><h3 id=lens>Lens<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>The provided lens has 3 adjustment rings, in order from the camera and out these are:</p><ul><li><p>Zoom</p></li><li><p>Iris</p></li><li><p>Focus</p></li></ul><h4 id=zoomfocus>Zoom/Focus<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>On a varifocal (zoom) lens the Zoom and Focus rings work together, so it may help to tweak both adjustment rings for good focus/zoom.</p><h4 id=iris>Iris<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>The Iris adjustment ring determines the amount of light (the &ldquo;opening&rdquo;).</p><p>Closing the iris will result in a darker image but will help give better focus by increasing the focus depth (the area that is &ldquo;in focus&rdquo;).</p><p>If the image is over-exposed (e.g. on a very sunny day) closing the Iris is recommended.</p><h2 id=the-software-settings>The Software Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>In Swing Catalyst all camera settings are available through the &ldquo;Advanced&rdquo; button in &ldquo;Camera Settings&rdquo;, which can be found in the main menu under Settings - Cameras.</p><p>By clicking the &ldquo;Advanced&rdquo; button the Advanced Camera Settings dialog becomes visible.</p><p>For uEye cameras there are some important settings which determine several key characteristics of the camera:</p><h3 id=pixel-clock>Pixel Clock<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>The Pixel Clock is essentially a &ldquo;speed&rdquo; setting, increasing this will increase the maximum framerate that is available, but increasing it too much may lead to dropped frames.</p><h3 id=frame-rate>Frame Rate<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>The frame rate setting allows both automatic and manual configuration of the frame rate.</p><p>It is recommended that a manual setting is used, since the automatic mode disables other automatic features such as auto gain.</p><h3 id=exposure-shutter>Exposure Shutter<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>A low shutter speed is essential for capturing fast movement and reducing motion blur.</p><p>For a golf swing it is recommended to use a maximum of 2ms (milliseconds) exposure to get a decent image.</p><p>For a very sharp image an exposure setting of 0.5ms is good, but will require a lot of light and is only recommended for outdoor use.</p><p>It is possible to set the Exposure Shutter in automatic mode, with an upper limit through the &ldquo;Max&rdquo; auto parameter, this is a good option to enable the camera to adjust to various light conditions while maintaining good image quality.</p><h3 id=gain>Gain<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Gain increase image brightness, but also introduces more noise in the image.</p><p>In most cases it is recommended to use Auto gain to allow the camera to self-adjust.</p><h3 id=white-balance>White Balance<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>It is recommended that white balance is set to Auto to enable the camera to adjust the color balance in the image.</p><p>If the colors in the image appear wrong use the Manual setting to tweak the Red, Green and Blue parameters.</p><h2 id=maximize-frames-per-second-fps>Maximize Frames Per Second (FPS)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Your maximum FPS will vary depending on your computer specs. When dropped frames occur it means the system can&rsquo;t keep up with all the data and that you need to decrease the speed.</p><p>Here is a step by step procedure to help you maximize your camera performance.</p><ul><li><p>Go to Main Menu -> Settings -> Cameras.</p></li><li><p>Click the &ldquo;Advanced&rdquo; button on your uEye camera.</p></li><li><p>In the advanced settings dialog, navigate to the Camera tab.</p></li><li><p>Click the &ldquo;Play&rdquo; button in the video preview panel to start streaming live video.</p></li><li><p>Drag the &ldquo;Speed (pixel clock)&rdquo; slider to the right until you see the dropped frames counter starting to increase (bottom right).</p></li><li><p>Drag the slider slightly to the left until it is no longer dropping frames, and then some. As an example, if you find it stops dropping frames at 38, then set it at 35.</p></li></ul><p>Once you find the speed where the frame rate is as high as possible without losing frames, you are all set.</p><p><a href=#R-image-c912d7f3db843d32f5d6ef6dbb882cc2 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/uEye_1220_LE_Camera_Settings.PNG style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c912d7f3db843d32f5d6ef6dbb882cc2><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/uEye_1220_LE_Camera_Settings.PNG></a></p><h2 id=troubleshooting>Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=dropped-framesjittery-image-on-playback>Dropped frames/&ldquo;Jittery&rdquo; image on playback<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If the camera is dropping frames the USB bus on the computer may not handle the bandwidth requirements of the camera.</p><p>Try to decrease the Speed (pixel clock) until the camera is not dropping frames.</p><h3 id=unable-to-focus-at-all-very-blurry-image>Unable to focus at all (very blurry image)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If you are unable to focus the camera at all (using the focus adjustment ring) check that there is no metal ring mounted between the camera and a lens.</p><p>The metal ring is a CS-to-C-mount adapter ring and is not needed when both the camera and the lens are CS-mount.</p><p>Upgrading to Windows 10</p><p>Please note there is a known issue when using Windows updates to upgrade to Windows 10. If you encounter an error or &ldquo;blue screen&rdquo; when trying to upgrade to Windows 10, you will need to first uninstall the IDS software via &ldquo;programs and features&rdquo;. Then reinstall the driver from our downloads page after upgrading.</p><p>Resources:</p><hr><p><em>Last updated: 2023-12-19</em> | <a href=/sc-support/es/cameras-video/ids-ueye-usb/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/es/index.html><span class="logo-title default-animation">Soporte de Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Buscar (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Buscar</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Buscar...>
-<button class=search-clear type=button data-search-clear title="Borrar búsqueda"><i class="fas fa-fw fa-times" title="Borrar búsqueda"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/es/getting-started/index.html><a class="padding default-animation" href=/sc-support/es/getting-started/index.html>Primeros Pasos</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/es/cameras-video/index.html><a class="padding default-animation" href=/sc-support/es/cameras-video/index.html>Cámaras y Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/es/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/es/cameras-video/flir-firmware-upgrade/index.html>Actualización del firmware en FLIR Blackfly S</a></li><li data-nav-id=/sc-support/es/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/es/cameras-video/supported-cameras/index.html>Cámaras Compatibles</a></li><li data-nav-id=/sc-support/es/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/es/cameras-video/fox-lynx-firmware/index.html>Cómo actualizar o desactualizar el firmware de Fox / Lynx</a></li><li data-nav-id=/sc-support/es/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/es/cameras-video/cctv-cameras/index.html>Cómo configurar cámaras CCTV</a></li><li data-nav-id=/sc-support/es/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/es/cameras-video/avt-manta-configure/index.html>Cómo configurar cámaras de alta velocidad GigE AVT Manta/Prosilica</a></li><li data-nav-id=/sc-support/es/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/es/cameras-video/ids-ueye-highspeed/index.html>Cómo configurar cámaras USB de alta velocidad iDS uEye</a></li><li data-nav-id=/sc-support/es/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/es/cameras-video/halcon-setup/index.html>Cómo configurar Halcon para Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/es/cameras-video/lynx-static-ip/index.html>Cómo configurar IP estática en cámaras Lynx GigE</a></li><li data-nav-id=/sc-support/es/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/es/cameras-video/ids-ueye-gige/index.html>Cómo configurar la cámara IDS uEye GigE con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/es/cameras-video/basler-gige-setup/index.html>Cómo configurar las cámaras Basler GigE con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/es/cameras-video/point-grey-flir-gige/index.html>Cómo configurar las cámaras Point Grey / FLIR GigE (Blackfly) con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/es/cameras-video/halcon-camera-standards/index.html>Cómo encontrar qué estándares soportan tus cámaras para usar con Halcon</a></li><li data-nav-id=/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html>Cómo establecer una IP estática en cámaras FLIR Blackfly GigE</a></li><li data-nav-id=/sc-support/es/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/es/cameras-video/avt-manta-install/index.html>Cómo instalar cámaras AVT Manta/Prosilica GigE</a></li><li data-nav-id=/sc-support/es/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/es/cameras-video/led-light-flicker/index.html>Cómo mitigar el parpadeo de luz LED</a></li><li data-nav-id=/sc-support/es/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/es/cameras-video/fix-dropped-frames/index.html>Cómo solucionar 'fotogramas perdidos' con cámaras USB 3.0 o 2.0.</a></li><li class=active data-nav-id=/sc-support/es/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/es/cameras-video/ids-ueye-usb/index.html>Cómo usar cámaras USB IDS uEye con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/es/cameras-video/point-grey-flir-usb/index.html>Cómo usar cámaras USB Point Grey / FLiR con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/es/cameras-video/dragon-usb2-camera/index.html>Cómo usar la cámara USB 2.0 Dragon (120 FPS) con SwingCatalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/es/cameras-video/hardware-encoding/index.html>Cómo usar la codificación de hardware de Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/es/cameras-video/web-camera-directshow/index.html>Cómo usar una cámara web (integración DirectShow) con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/es/cameras-video/recommended-usb3-components/index.html>Componentes USB 3.0 Recomendados</a></li><li data-nav-id=/sc-support/es/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/es/cameras-video/ximea-usb3-setup/index.html>Configuración de cámaras Ximea USB3 Vision con Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html>Configuración de FLIR BlackFly S GigE en Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/es/cameras-video/flir-blackfly-usb-setup/index.html>Configuración de FLIR BlackFly S USB en Swing Catalyst</a></li><li data-nav-id=/sc-support/es/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/es/cameras-video/lynx-camera-setup/index.html>Configuración de la(s) cámara(s) Swing Catalyst Lynx GigE</a></li><li data-nav-id=/sc-support/es/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/es/cameras-video/fox-camera-setup/index.html>Configuración de las cámara(s) Swing Catalyst Fox USB 3.0</a></li><li data-nav-id=/sc-support/es/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/es/cameras-video/lens-distortion-correction/index.html>Corrección Automática de Distorsión de Lentes en Swing Catalyst: Mejorando Tu Experiencia Visual</a></li><li data-nav-id=/sc-support/es/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/es/cameras-video/pci-express-slots/index.html>Diferencias entre ranuras PCI / PCI Express</a></li><li data-nav-id=/sc-support/es/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/es/cameras-video/minimum-distances/index.html>Distancias mínimas de cámara</a></li><li data-nav-id=/sc-support/es/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/es/cameras-video/recommended-lighting/index.html>Iluminación recomendada para instalaciones de estudios y garajes</a></li><li data-nav-id=/sc-support/es/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/es/cameras-video/flir-warranty-service/index.html>Información de garantía y servicio de cámara FLIR</a></li><li data-nav-id=/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html>La cámara FLiR / Point Grey (Blackfly/Chameleon) ya no funciona después de actualizar</a></li><li data-nav-id=/sc-support/es/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/es/cameras-video/halcon-bluescreen-fix/index.html>La computadora se congela cuando se conecta el dongle de licencia USB de Halcon</a></li><li data-nav-id=/sc-support/es/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/es/cameras-video/improving-image-quality/index.html>Mejora de la calidad de imagen de la cámara</a></li><li data-nav-id=/sc-support/es/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/es/cameras-video/gige-network-setup/index.html>Recomendaciones de red Gigabit Ethernet y cámara GigE Vision</a></li><li data-nav-id=/sc-support/es/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/es/cameras-video/usb3-troubleshooting/index.html>Solución de problemas de cámara USB3</a></li><li data-nav-id=/sc-support/es/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/es/cameras-video/advanced-camera-settings/index.html>Una guía de la Configuración Avanzada de Cámara</a></li><li data-nav-id=/sc-support/es/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/es/cameras-video/flir-spinnaker-cameras/index.html>Uso de cámaras FLIR Blackfly S (Spinnaker) con Swing Catalyst</a></li></ul></li><li data-nav-id=/sc-support/es/hardware/index.html><a class="padding default-animation" href=/sc-support/es/hardware/index.html>Hardware</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/es/software-features/index.html><a class="padding default-animation" href=/sc-support/es/software-features/index.html>Software y Características</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/es/account-setup/index.html><a class="padding default-animation" href=/sc-support/es/account-setup/index.html>Cuenta y Configuración</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/es/reference/index.html><a class="padding default-animation" href=/sc-support/es/reference/index.html>Referencia</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Idioma</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/ids-ueye-usb/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/ids-ueye-usb/index.html lang=es selected data-selected>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/ids-ueye-usb/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/ids-ueye-usb/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/ids-ueye-usb/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/ids-ueye-usb/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/ids-ueye-usb/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/ids-ueye-usb/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/ids-ueye-usb/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/ids-ueye-usb/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/ids-ueye-usb/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/ids-ueye-usb/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/ids-ueye-usb/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/ids-ueye-usb/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/ids-ueye-usb/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/ids-ueye-usb/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/ids-ueye-usb/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/ids-ueye-usb/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/ids-ueye-usb/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/ids-ueye-usb/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/ids-ueye-usb/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/ids-ueye-usb/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/ids-ueye-usb/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/ids-ueye-usb/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/ids-ueye-usb/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/ids-ueye-usb/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/ids-ueye-usb/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/ids-ueye-usb/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/ids-ueye-usb/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/ids-ueye-usb/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/ids-ueye-usb/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/ids-ueye-usb/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/ids-ueye-usb/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/ids-ueye-usb/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/ids-ueye-usb/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/ids-ueye-usb/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Tema</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763264 defer></script><script src=/sc-support/js/theme.min.js?1771763264 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="es" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara IDS uEye USB.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cómo usar cámaras IDS uEye USB con Swing Catalyst :: Soporte de Swing Catalyst">
+    <meta name="twitter:description" content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara IDS uEye USB.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-usb/index.html">
+    <meta property="og:site_name" content="Soporte de Swing Catalyst">
+    <meta property="og:title" content="Cómo usar cámaras IDS uEye USB con Swing Catalyst :: Soporte de Swing Catalyst">
+    <meta property="og:description" content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara IDS uEye USB.">
+    <meta property="og:locale" content="es">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Cámaras y Video">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Gige-Camera">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta itemprop="name" content="Cómo usar cámaras IDS uEye USB con Swing Catalyst :: Soporte de Swing Catalyst">
+    <meta itemprop="description" content="Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara IDS uEye USB.">
+    <meta itemprop="wordCount" content="907">
+    <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera">
+    <title>Cómo usar cámaras IDS uEye USB con Swing Catalyst :: Soporte de Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/ids-ueye-usb/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520106" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520106" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520106" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520106" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.es.js?1772520106";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520106" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520106" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520106" defer></script>
+    <script src="/sc-support/js/lunr/lunr.es.min.js?1772520106" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['es'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520106" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520106" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520106" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520106" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520106" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/ids-ueye-usb\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copiar texto al portapapeles`;
+      window.T_Copied_to_clipboard = `¡Texto copiado al portapapeles!`;
+      window.T_Link_copied_to_clipboard = `¡Enlace copiado al portapapeles!`;
+      window.T_Reset_view = `Restablecer vista`;
+      window.T_View_reset = `¡Ver reajuste!`;
+      window.T_No_results_found = `No se han encontrado resultados para "{0}"`;
+      window.T_N_results_found = `{1} resultados encontrados para "{0}"`;
+      window.T_Browser_unsupported_feature = `Este navegador no admite esta función`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/es/cameras-video/ids-ueye-usb/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#aplicable-a">Aplicable a</a></li>
+    <li><a href="#descripción-de-la-cámara">Descripción de la Cámara</a>
+      <ul>
+        <li><a href="#cámara">Cámara</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+      </ul>
+    </li>
+    <li><a href="#la-configuración-del-software">La Configuración del Software</a>
+      <ul>
+        <li><a href="#reloj-de-píxeles">Reloj de Píxeles</a></li>
+        <li><a href="#velocidad-de-fotogramas">Velocidad de Fotogramas</a></li>
+        <li><a href="#obturador-de-exposición">Obturador de Exposición</a></li>
+        <li><a href="#gain">Gain</a></li>
+        <li><a href="#balance-de-blancos">Balance de Blancos</a></li>
+      </ul>
+    </li>
+    <li><a href="#maximizar-los-fotogramas-por-segundo-fps">Maximizar los Fotogramas por Segundo (FPS)</a></li>
+    <li><a href="#solución-de-problemas">Solución de Problemas</a>
+      <ul>
+        <li><a href="#pérdida-de-fotogramasimagen-entrecortada-durante-la-reproducción">Pérdida de fotogramas/imagen &ldquo;entrecortada&rdquo; durante la Reproducción</a></li>
+        <li><a href="#imposibilidad-de-enfocar-en-absoluto-imagen-muy-borrosa">Imposibilidad de enfocar en absoluto (imagen muy borrosa)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/es/cameras-video/index.html"><span itemprop="name">Cámaras y Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Cómo usar cámaras IDS uEye USB con Swing Catalyst</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/es/cameras-video/fix-dropped-frames/index.html" title="Cómo solucionar los \"fotogramas perdidos\" con cámaras USB 3.0 o 2.0. (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/es/cameras-video/point-grey-flir-usb/index.html" title="Cómo usar cámaras USB Point Grey / FLiR con Swing Catalyst (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Más"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Etiquetas" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/es/tags/gige-camera/index.html">Gige-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/es/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/es/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="cómo-usar-cámaras-ids-ueye-usb-con-swing-catalyst">Cómo usar cámaras IDS uEye USB con Swing Catalyst</h1>
+
+<h2 id="introducción">Introducción<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Este artículo de soporte describe los detalles prácticos de cómo configurar y usar una cámara IDS uEye USB.</p>
+<p><a href="/sc-support/es/cameras-video/ids-ueye-highspeed/index.html">Haz clic aquí</a> para ver los detalles de instalación</p>
+<p>Para cámaras GigE (cámaras IDS de red), consulta este artículo: <a href="/sc-support/es/cameras-video/ids-ueye-gige/index.html">ids-ueye-gige.md</a></p>
+<h2 id="aplicable-a">Aplicable a<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>Primeros pasos con una cámara IDS uEye USB y Swing Catalyst.</li>
+</ul>
+<h2 id="descripción-de-la-cámara">Descripción de la Cámara<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>La cámara uEye USB consta de tres componentes separados:</p>
+<ul>
+<li>
+<p>La propia cámara</p>
+</li>
+<li>
+<p>El objetivo</p>
+</li>
+<li>
+<p>El cable USB</p>
+</li>
+</ul>
+<p><a href="#R-image-1cb96b67cb6756ebc16b830badc5b64f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/uEyeCamera.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cb96b67cb6756ebc16b830badc5b64f"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/uEyeCamera.jpg"></a></p>
+<h3 id="cámara">Cámara<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>La cámara en sí no tiene ajustes físicos; todas las configuraciones se controlan mediante el software.</p>
+<h3 id="objetivo">Objetivo<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>El objetivo suministrado tiene 3 anillos de ajuste; en orden desde la cámara hacia el exterior, estos son:</p>
+<ul>
+<li>
+<p>Zoom</p>
+</li>
+<li>
+<p>Iris</p>
+</li>
+<li>
+<p>Enfoque</p>
+</li>
+</ul>
+<h4 id="zoomenfoque">Zoom/Enfoque<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>En un objetivo varifocal (zoom), los anillos de Zoom y Enfoque funcionan de manera conjunta, por lo que puede ser útil ajustar ambos anillos para obtener un buen enfoque/zoom.</p>
+<h4 id="iris">Iris<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>El anillo de ajuste del Iris determina la cantidad de luz (la &ldquo;apertura&rdquo;).</p>
+<p>Cerrar el iris producirá una imagen más oscura, pero ayudará a conseguir un mejor enfoque al aumentar la profundidad de campo (el área que está &ldquo;en foco&rdquo;).</p>
+<p>Si la imagen está sobreexpuesta (por ejemplo, en un día muy soleado), se recomienda cerrar el Iris.</p>
+<h2 id="la-configuración-del-software">La Configuración del Software<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>En Swing Catalyst, todas las configuraciones de la cámara están disponibles a través del botón &ldquo;Avanzado&rdquo; en &ldquo;Configuración de Cámara&rdquo;, que se encuentra en el menú principal en Configuración - Cámaras.</p>
+<p>Al hacer clic en el botón &ldquo;Avanzado&rdquo;, se abre el cuadro de diálogo de Configuración Avanzada de Cámara.</p>
+<p>Para las cámaras uEye, hay algunas configuraciones importantes que determinan varias características clave de la cámara:</p>
+<h3 id="reloj-de-píxeles">Reloj de Píxeles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>El Reloj de Píxeles es esencialmente una configuración de &ldquo;velocidad&rdquo;; aumentarlo incrementará la velocidad de fotogramas máxima disponible, pero aumentarlo demasiado puede provocar la pérdida de fotogramas.</p>
+<h3 id="velocidad-de-fotogramas">Velocidad de Fotogramas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>La configuración de Velocidad de Fotogramas permite tanto la configuración automática como la manual de la velocidad de fotogramas.</p>
+<p>Se recomienda usar una configuración manual, ya que el modo automático desactiva otras funciones automáticas, como el Gain automático.</p>
+<h3 id="obturador-de-exposición">Obturador de Exposición<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Una velocidad de obturación baja es esencial para capturar movimientos rápidos y reducir el desenfoque de movimiento.</p>
+<p>Para un Swing de golf, se recomienda usar un máximo de 2 ms (milisegundos) de exposición para obtener una imagen decente.</p>
+<p>Para una imagen muy nítida, una configuración de exposición de 0,5 ms es adecuada, pero requiere mucha luz y solo se recomienda para uso en exteriores.</p>
+<p>Es posible configurar el Obturador de Exposición en modo automático, con un límite superior a través del parámetro automático &ldquo;Máx.&rdquo;; esta es una buena opción para permitir que la cámara se ajuste a diversas condiciones de iluminación manteniendo una buena calidad de imagen.</p>
+<h3 id="gain">Gain<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>El Gain aumenta el brillo de la imagen, pero también introduce más ruido en ella.</p>
+<p>En la mayoría de los casos, se recomienda usar el Gain automático para permitir que la cámara se ajuste sola.</p>
+<h3 id="balance-de-blancos">Balance de Blancos<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Se recomienda configurar el balance de blancos en Auto para que la cámara pueda ajustar el balance de color en la imagen.</p>
+<p>Si los colores de la imagen parecen incorrectos, usa la configuración Manual para ajustar los parámetros de Rojo, Verde y Azul.</p>
+<h2 id="maximizar-los-fotogramas-por-segundo-fps">Maximizar los Fotogramas por Segundo (FPS)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Los FPS máximos variarán según las especificaciones de tu ordenador. Cuando se pierden fotogramas, significa que el sistema no puede gestionar todos los datos y que necesitas reducir la velocidad.</p>
+<p>Aquí tienes un procedimiento paso a paso para ayudarte a maximizar el Rendimiento de tu cámara.</p>
+<ul>
+<li>
+<p>Ve a Menú Principal -&gt; Configuración -&gt; Cámaras.</p>
+</li>
+<li>
+<p>Haz clic en el botón &ldquo;Avanzado&rdquo; en tu cámara uEye.</p>
+</li>
+<li>
+<p>En el cuadro de diálogo de configuración avanzada, navega a la pestaña Cámara.</p>
+</li>
+<li>
+<p>Haz clic en el botón &ldquo;Reproducir&rdquo; en el panel de vista previa de vídeo para comenzar la transmisión de vídeo en directo.</p>
+</li>
+<li>
+<p>Arrastra el control deslizante &ldquo;Velocidad (reloj de píxeles)&rdquo; hacia la derecha hasta que veas que el contador de fotogramas perdidos comienza a aumentar (esquina inferior derecha).</p>
+</li>
+<li>
+<p>Arrastra el control deslizante ligeramente hacia la izquierda hasta que deje de perder fotogramas, y un poco más. Por ejemplo, si descubres que deja de perder fotogramas en 38, configúralo en 35.</p>
+</li>
+</ul>
+<p>Una vez que encuentres la velocidad a la que la velocidad de fotogramas es lo más alta posible sin perder fotogramas, ya está todo listo.</p>
+<p><a href="#R-image-9eee970175a50edba7765221b4649159" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/uEye_1220_LE_Camera_Settings.PNG" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9eee970175a50edba7765221b4649159"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/uEye_1220_LE_Camera_Settings.PNG"></a></p>
+<h2 id="solución-de-problemas">Solución de Problemas<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="pérdida-de-fotogramasimagen-entrecortada-durante-la-reproducción">Pérdida de fotogramas/imagen &ldquo;entrecortada&rdquo; durante la Reproducción<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Si la cámara está perdiendo fotogramas, es posible que el bus USB del ordenador no pueda gestionar los requisitos de ancho de banda de la cámara.</p>
+<p>Intenta reducir la Velocidad (reloj de píxeles) hasta que la cámara deje de perder fotogramas.</p>
+<h3 id="imposibilidad-de-enfocar-en-absoluto-imagen-muy-borrosa">Imposibilidad de enfocar en absoluto (imagen muy borrosa)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copiar enlace al portapapeles"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Si no puedes enfocar la cámara en absoluto (usando el anillo de ajuste de enfoque), comprueba que no haya ningún anillo metálico montado entre la cámara y el objetivo.</p>
+<p>El anillo metálico es un adaptador de montura CS a C y no es necesario cuando tanto la cámara como el objetivo son de montura CS.</p>
+<p>Actualización a Windows 10</p>
+<p>Ten en cuenta que existe un problema conocido al usar las actualizaciones de Windows para actualizar a Windows 10. Si encuentras un error o una &ldquo;pantalla azul&rdquo; al intentar actualizar a Windows 10, primero deberás desinstalar el software IDS a través de &ldquo;programas y características&rdquo;. Luego, reinstala el Driver desde nuestra página de descargas después de actualizar.</p>
+<p>Recursos:</p>
+<hr>
+<p><em>Última actualización: 2023-12-19</em> | <a href="/sc-support/es/cameras-video/ids-ueye-usb/index.html">Ver en el sitio de soporte oficial</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/es/index.html">
+          <span class="logo-title default-animation">Soporte de Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Buscar (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Buscar</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Buscar...">
+            <button class="search-clear" type="button" data-search-clear="" title="Borrar búsqueda"><i class="fas fa-fw fa-times" title="Borrar búsqueda"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/es/getting-started/index.html"><a class="padding default-animation" href="/sc-support/es/getting-started/index.html">Primeros pasos</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/es/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/es/cameras-video/index.html">Cámaras y Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-firmware-upgrade/index.html">Actualización del firmware de la FLIR Blackfly S</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/es/cameras-video/supported-cameras/index.html">Cámaras Compatibles</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/es/cameras-video/fox-lynx-firmware/index.html">Cómo actualizar o revertir el firmware de las cámaras Fox / Lynx</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/es/cameras-video/halcon-camera-standards/index.html">Cómo averiguar qué estándares admiten tus cámaras para usarlas con Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/basler-gige-setup/index.html">Cómo configurar cámaras Basler GigE con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/es/cameras-video/cctv-cameras/index.html">Cómo configurar cámaras CCTV</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/es/cameras-video/avt-manta-configure/index.html">Cómo configurar cámaras GigE de Alta Velocidad AVT Manta/Prosilica</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/es/cameras-video/point-grey-flir-gige/index.html">Cómo configurar cámaras Point Grey / FLIR GigE (Blackfly) con SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/es/cameras-video/ids-ueye-highspeed/index.html">Cómo configurar cámaras USB de alta velocidad iDS uEye</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/halcon-setup/index.html">Cómo configurar Halcon para Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/es/cameras-video/ids-ueye-gige/index.html">Cómo configurar la cámara IDS uEye GigE con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html">Cómo configurar una IP estática en cámaras FLIR Blackfly GigE</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/es/cameras-video/lynx-static-ip/index.html">Cómo configurar una IP estática en cámaras Lynx GigE</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/es/cameras-video/avt-manta-install/index.html">Cómo instalar cámaras AVT Manta/Prosilica GigE</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/es/cameras-video/led-light-flicker/index.html">Cómo mitigar el parpadeo de la luz LED</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/es/cameras-video/fix-dropped-frames/index.html">Cómo solucionar los &#34;fotogramas perdidos&#34; con cámaras USB 3.0 o 2.0.</a></li>
+            <li class="active " data-nav-id="/sc-support/es/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/es/cameras-video/ids-ueye-usb/index.html">Cómo usar cámaras IDS uEye USB con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/es/cameras-video/point-grey-flir-usb/index.html">Cómo usar cámaras USB Point Grey / FLiR con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/es/cameras-video/dragon-usb2-camera/index.html">Cómo usar la cámara Dragon (120 FPS) USB 2.0 con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/es/cameras-video/hardware-encoding/index.html">Cómo usar la codificación de hardware de Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/es/cameras-video/web-camera-directshow/index.html">Cómo usar una cámara web (integración DirectShow) con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/es/cameras-video/recommended-usb3-components/index.html">Componentes USB 3.0 Recomendados</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/ximea-usb3-setup/index.html">Configuración de cámaras Ximea USB3 Vision con Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-blackfly-gige-setup/index.html">Configuración de la cámara FLIR BlackFly S GigE en SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-blackfly-usb-setup/index.html">Configuración de la cámara FLIR BlackFly S USB en Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/lynx-camera-setup/index.html">Configuración de la(s) cámara(s) Swing Catalyst Lynx GigE</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/fox-camera-setup/index.html">Configuración de las cámaras Fox USB 3.0 de Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/es/cameras-video/lens-distortion-correction/index.html">Corrección Automática de Distorsión de Lente en SwingCatalyst: Mejora Tu Experiencia Visual</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/es/cameras-video/pci-express-slots/index.html">Diferencias entre ranuras PCI / PCI Express</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/es/cameras-video/minimum-distances/index.html">Distancias mínimas de la cámara</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/es/cameras-video/halcon-bluescreen-fix/index.html">El ordenador muestra pantalla azul al conectar el dongle USB de licencia Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/es/cameras-video/advanced-camera-settings/index.html">Guía de la Configuración Avanzada de Cámara</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/es/cameras-video/recommended-lighting/index.html">Iluminación recomendada para estudios e instalaciones en garajes</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-warranty-service/index.html">Información de garantía y servicio para cámaras FLIR</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-camera-upgrade-fix/index.html">La cámara FLiR / Point Grey (Blackfly/Chameleon) deja de funcionar después de actualizar</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/es/cameras-video/improving-image-quality/index.html">Mejora de la calidad de imagen de la cámara</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/es/cameras-video/gige-network-setup/index.html">Recomendaciones de red Gigabit Ethernet y cámaras GigE Vision</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/es/cameras-video/usb3-troubleshooting/index.html">Solución de problemas con cámara USB3</a></li>
+            <li class="" data-nav-id="/sc-support/es/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/es/cameras-video/flir-spinnaker-cameras/index.html">Uso de cámaras FLIR Blackfly S (Spinnaker) con Swing Catalyst</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/es/hardware/index.html"><a class="padding default-animation" href="/sc-support/es/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/es/software-features/index.html"><a class="padding default-animation" href="/sc-support/es/software-features/index.html">Software y funciones</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/es/account-setup/index.html"><a class="padding default-animation" href="/sc-support/es/account-setup/index.html">Cuenta &amp; Configuración</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/es/reference/index.html"><a class="padding default-animation" href="/sc-support/es/reference/index.html">Referencia</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Idioma</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/ids-ueye-usb/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/ids-ueye-usb/index.html" lang="es" selected data-selected>Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/ids-ueye-usb/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/ids-ueye-usb/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/ids-ueye-usb/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/ids-ueye-usb/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/ids-ueye-usb/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/ids-ueye-usb/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/ids-ueye-usb/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/ids-ueye-usb/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/ids-ueye-usb/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/ids-ueye-usb/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/ids-ueye-usb/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/ids-ueye-usb/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/ids-ueye-usb/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/ids-ueye-usb/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/ids-ueye-usb/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/ids-ueye-usb/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/ids-ueye-usb/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/ids-ueye-usb/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/ids-ueye-usb/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/ids-ueye-usb/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/ids-ueye-usb/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/ids-ueye-usb/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/ids-ueye-usb/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/ids-ueye-usb/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/ids-ueye-usb/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/ids-ueye-usb/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/ids-ueye-usb/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/ids-ueye-usb/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/ids-ueye-usb/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/ids-ueye-usb/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/ids-ueye-usb/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/ids-ueye-usb/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/ids-ueye-usb/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/ids-ueye-usb/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Tema</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520106" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520106" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

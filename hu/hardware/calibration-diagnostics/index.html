@@ -1,30 +1,565 @@
-<!doctype html><html id=R-html lang=hu dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Az Egyensúlyozó platform használatához szükség van egy kalibrációs fájlra. Minden Egyensúlyozó platformhoz egy kalibrációs fájl készül, így nincs két azonos fájl. Ha nem..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás"><meta name=twitter:description content="Az Egyensúlyozó platform használatához szükség van egy kalibrációs fájlra. Minden Egyensúlyozó platformhoz egy kalibrációs fájl készül, így nincs két azonos fájl. Ha nem..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/hu/hardware/calibration-diagnostics/index.html"><meta property="og:site_name" content="Swing Catalyst Támogatás"><meta property="og:title" content="Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás"><meta property="og:description" content="Az Egyensúlyozó platform használatához szükség van egy kalibrációs fájlra. Minden Egyensúlyozó platformhoz egy kalibrációs fájl készül, így nincs két azonos fájl. Ha nem..."><meta property="og:locale" content="hu"><meta property="og:type" content="article"><meta property="article:section" content="Hardver"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Usb-Camera"><meta property="article:tag" content="Balance-Plate"><meta property="article:tag" content="Pressure-Data"><meta itemprop=name content="Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás"><meta itemprop=description content="Az Egyensúlyozó platform használatához szükség van egy kalibrációs fájlra. Minden Egyensúlyozó platformhoz egy kalibrációs fájl készül, így nincs két azonos fájl. Ha nem..."><meta itemprop=wordCount content="1140"><meta itemprop=keywords content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data"><title>Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/hardware/calibration-diagnostics/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/hardware/calibration-diagnostics/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/hardware/calibration-diagnostics/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/hardware/calibration-diagnostics/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/hardware/calibration-diagnostics/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/hardware/calibration-diagnostics/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/hardware/calibration-diagnostics/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/hardware/calibration-diagnostics/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/hardware/calibration-diagnostics/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/hardware/calibration-diagnostics/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/hardware/calibration-diagnostics/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/hardware/calibration-diagnostics/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/hardware/calibration-diagnostics/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/hardware/calibration-diagnostics/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/hardware/calibration-diagnostics/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/hardware/calibration-diagnostics/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/hardware/calibration-diagnostics/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/hardware/calibration-diagnostics/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/hardware/calibration-diagnostics/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/hardware/calibration-diagnostics/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/hardware/calibration-diagnostics/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/hardware/calibration-diagnostics/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/hardware/calibration-diagnostics/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/hardware/calibration-diagnostics/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/hardware/calibration-diagnostics/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/hardware/calibration-diagnostics/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/hardware/calibration-diagnostics/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/hardware/calibration-diagnostics/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/hardware/calibration-diagnostics/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/hardware/calibration-diagnostics/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/hardware/calibration-diagnostics/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/hardware/calibration-diagnostics/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/hardware/calibration-diagnostics/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/hardware/calibration-diagnostics/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763285 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763285 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763285 defer></script><script src=/sc-support/js/search.min.js?1771763285 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.hu.js?1771763285"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763285 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763285 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763285 defer></script><script src=/sc-support/js/lunr/lunr.hu.min.js?1771763285 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["hu"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763285 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763285 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763285 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763285 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763285 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/hardware/calibration-diagnostics/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Szöveg vágólapra másolása`,window.T_Copied_to_clipboard=`Szöveg vágólapra másolva!`,window.T_Link_copied_to_clipboard=`Link vágólapra másolva!`,window.T_Reset_view=`Nézet visszaállítása`,window.T_View_reset=`Visszaállítás megtekintése!`,window.T_No_results_found=`Nincs találat a(z) "{0}" kifejezésre`,window.T_N_results_found=`{1} találat a(z) "{0}" kifejezésre`,window.T_Browser_unsupported_feature=`Ez a böngésző nem támogatja ezt a funkciót`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/hu/hardware/calibration-diagnostics/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menü (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Tartalomjegyzék (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#1-rész-a-se-segédprogram-segítségével-szerzett-kalibrációs-fájl-beszerzése>1. rész: A SE segédprogram segítségével szerzett kalibrációs fájl beszerzése.</a></li><li><a href=#registering-your-balance-plate>Registering your Balance Plate</a></li><li><a href=#make-sure-to-remove-the-carpet-and-any-other-objects-from-the-balance-plate-this-is-to-ensure-that-the-readings-are-not-impacted-by-any-external-factors>Make sure to remove the carpet and any other objects from the Balance Plate, this is to ensure that the readings are not impacted by any external factors.</a></li><li><a href=#seu_><img src=../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png alt=SEU_2021-08-11_13-05-17.png></a></li><li><a href=#executing-the-calibration-process>Executing the calibration process</a></li><li><a href=#positioning>Positioning</a><ul><li><a href=#completed-recording>Completed recording</a></li></ul></li><li><a href=#part-2-installing-the-calibration-file>Part 2: Installing the calibration file</a><ul><li><a href=#continue-with-these-steps>Continue with these steps</a></li><li><a href=#sensor-plate-settings>Sensor Plate Settings</a></li></ul></li><li><a href=#troubleshooting>Troubleshooting</a><ul><li><a href=#the-balance-plate-is-not-recognized-or-not-showing-as-connected>The Balance Plate is not recognized or not showing as connected:</a></li><li><a href=#calibration-is-not-installed-successfully>Calibration is not installed successfully</a></li><li><a href=#there-is-noise-on-the-plate-even-though-ive-run-the-utility>There is noise on the plate even though I&rsquo;ve run the utility</a></li><li><a href=#hardware-incompatibilities>Hardware incompatibilities</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/hu/index.html><span itemprop=name>Swing Catalyst Támogatás</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/hu/hardware/index.html><span itemprop=name>Hardver</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Egyensúlyozó platform kalibrálása és diagnosztikája</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/hu/hardware/balance-plate-warranty/index.html title="Egyensúlyozó platform garancia és ESA (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/hu/hardware/force-plate-troubleshooting/index.html title="Erőlemez technikai hibaelhárítási útmutató (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Egyebek><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable hardware" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Címkék style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/hu/tags/balance-plate/index.html>Balance-Plate</a></li><li><a class=term-link href=/sc-support/hu/tags/pressure-data/index.html>Pressure-Data</a></li><li><a class=term-link href=/sc-support/hu/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/hu/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=egyensúlyozó-platform-kalibrálása-és-diagnosztikája>Egyensúlyozó platform kalibrálása és diagnosztikája</h1><h1 id=a-kalibrálási-segédprogram-futtatása>A kalibrálási segédprogram futtatása<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1><p>Az Egyensúlyozó platform használatához szükséges egy kalibrációs fájl. Minden Egyensúlyozó platformhoz egyedi kalibrációs fájl tartozik, ezért nincs két azonos fájl. Ha nincs telepített kalibrációs fájlja, valószínű, hogy a platform nem regisztrált garanciához. Ez a cikk a kalibrációs fájl beszerzésének és a platform regisztrálásának folyamatát ismerteti.</p><p>Ez a cikk a nemkívánatos zajok eltávolításáról és az Egyensúlyozó platform 3-as és újabb verzióinak nyomáseloszlásának javításáról szól.</p><p>Az Egyensúlyozó platform 2048 nagy pontosságú nyomásérzékelőből áll, és a Sensor Edge segédprogram segítségével történő platform nullázása szükséges lehet a legjobb pontosság biztosítása érdekében. Ez a cikk lépésről lépésre ismerteti az Egyensúlyozó platform nullázásának módját.</p><p><strong>FONTOS!</strong></p><p>Ennek a folyamatnak két része van</p><ol><li><p>rész. A Sensor Edge segédprogram segítségével szerezze meg a platformjához szükséges legújabb kalibrációs fájlt.</p></li><li><p>rész. Telepítse ezt a kalibrációs fájlt a Swing Catalyst alkalmazásba. Kérjük, olvassa el ezt a teljes támogatási cikket.</p></li></ol><h2 id=1-rész-a-se-segédprogram-segítségével-szerzett-kalibrációs-fájl-beszerzése>1. rész: A SE segédprogram segítségével szerzett kalibrációs fájl beszerzése.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li><p><a href=https://cloudfront.swingcatalyst.com/drivers/SensorEdgeUtilitySetup.exe rel=external>Download the calibration utility</a></p></li><li><p>If asked to install drivers, click yes.</p></li></ul><p>Connect the plate to the computer.</p><ul><li><p>Make sure Swing Catalyst software is closed, SE Utility will not be able to detect your plate if Swing Catalyst is running.</p></li><li><p>Open the newly installed SE Utility</p></li><li><p>Follow the instructions below.</p></li><li><p>Make sure you have a monitor or TV connected to your computer so you can see the screen when standing on the Balance Plate.</p></li></ul><p>If you have an older version installed please uninstall it first via <a href=https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs rel=external>Add or Remove Programs</a>.</p><p>Click Start:</p><p><a href=#R-image-7e90ceee29139c08ccd901d341a79404 class=lightbox-link><img alt=SEU_2021-08-11_12-32-46.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-12-32-46-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7e90ceee29139c08ccd901d341a79404><img alt=SEU_2021-08-11_12-32-46.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-12-32-46-png.png></a></p><p>After clicking start it will automatically attempt to scan for devices, if it does not find your plate, click the drop down menu and select your Balance Plate.</p><p><a href=#R-image-cdc5638f389b0955fbae6d6f7ace201b class=lightbox-link><img alt=SnoopScreenshot_300.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/snoopscreenshot-300-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-cdc5638f389b0955fbae6d6f7ace201b><img alt=SnoopScreenshot_300.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/snoopscreenshot-300-png.png></a></p><p>Click Scan<a href=#R-image-a88badd99bddc27a6246049f680e2f5c class=lightbox-link><img alt=SEU_2021-08-11_13-10-42.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-10-42-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a88badd99bddc27a6246049f680e2f5c><img alt=SEU_2021-08-11_13-10-42.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-10-42-png.png></a></p><p>Select the device that matches your plate&rsquo;s serial number and click Next.</p><h2 id=registering-your-balance-plate>Registering your Balance Plate<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><a href=#R-image-160d432251bb3bb6fbef6add05960089 class=lightbox-link><img alt=2021-08-11_12-59-01.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/2021-08-11-12-59-01-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-160d432251bb3bb6fbef6add05960089><img alt=2021-08-11_12-59-01.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/2021-08-11-12-59-01-png.png></a></p><p>Example of filled out registration information<a href=#R-image-876cc1aca108ae16ec63146a3e6c40f3 class=lightbox-link><img alt=2021-08-11_13-02-17.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/2021-08-11-13-02-17-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-876cc1aca108ae16ec63146a3e6c40f3><img alt=2021-08-11_13-02-17.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/2021-08-11-13-02-17-png.png></a></p><p>Once you&rsquo;ve filled out the required information for warranty and service purposes click Continue.</p><p>If possible select a camera and point it to show the Balance Plate, and click Next.</p><p>A camera is not required though, you can still proceed if no camera is detected.</p><p><a href=#R-image-1c630c060c80e0e8b83b1fd02c561c35 class=lightbox-link><img alt=SEU_2021-08-11_13-04-31.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-04-31-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1c630c060c80e0e8b83b1fd02c561c35><img alt=SEU_2021-08-11_13-04-31.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-04-31-png.png></a></p><h2 id=make-sure-to-remove-the-carpet-and-any-other-objects-from-the-balance-plate-this-is-to-ensure-that-the-readings-are-not-impacted-by-any-external-factors>Make sure to remove the carpet and any other objects from the Balance Plate, this is to ensure that the readings are not impacted by any external factors.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h2 id=seu_><a href=#R-image-913575638349a60cbb19a878e459091b class=lightbox-link><img alt=SEU_2021-08-11_13-05-17.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-913575638349a60cbb19a878e459091b><img alt=SEU_2021-08-11_13-05-17.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h2 id=executing-the-calibration-process>Executing the calibration process<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Before stepping on the plate the utility collects data in order to have a baseline to compare to.</p><p>Please make sure you don&rsquo;t accidentally stand on the plate until the utility instructs you to do so.</p><p><a href=#R-image-8caa3415b3abe988b02ec8d22cc89d72 class=lightbox-link><img alt=SEU_2021-08-11_13-12-19.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-12-19-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8caa3415b3abe988b02ec8d22cc89d72><img alt=SEU_2021-08-11_13-12-19.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-12-19-png.png></a></p><h2 id=positioning>Positioning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>It&rsquo;s important that you stand on the plate as indicated by the utility.</p><p>The dark feet show where you should be standing, and the grey feet show where you should stand next.</p><p><a href=#R-image-5eba3d7d6499e2b0215a458779bc9f15 class=lightbox-link><img alt=SEU_2021-08-11_13-12-27.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-12-27-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5eba3d7d6499e2b0215a458779bc9f15><img alt=SEU_2021-08-11_13-12-27.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-12-27-png.png></a></p><p>Please follow each step as it is important to activate all of the regions of the plate.</p><h3 id=completed-recording>Completed recording<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If you are not happy with the recording, perhaps you made a mistake? You can easily restart the process by clicking restart.</p><p>Click Continue if you wish to proceed.</p><p><a href=#R-image-98606b062c1097fd1465f07f220ce84c class=lightbox-link><img alt=SEU_2021-08-11_13-13-59.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-13-59-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-98606b062c1097fd1465f07f220ce84c><img alt=SEU_2021-08-11_13-13-59.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-13-59-png.png></a></p><p>Click the Save button then click the Send button</p><p><a href=#R-image-2d0e71a100bb190dfcaae7a993a7bfd9 class=lightbox-link><img alt=SEU_2021-08-11_13-19-15.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-19-15-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2d0e71a100bb190dfcaae7a993a7bfd9><img alt=SEU_2021-08-11_13-19-15.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-19-15-png.png></a></p><p>Before the data is sent to the manufacturer for review enter the approximate weight and usage.</p><p>In notes you can specify issues that you have with the plate, for example weak left foot, or other concerns.</p><p>The reason the manufacturer wishes to collect this data is to further improve the recalibration algorithms to provide more accurate sensor readings.</p><p>Enter the information and click send:</p><p><a href=#R-image-6efdf95338bbcf12c869054d9f8c6ce5 class=lightbox-link><img alt=2018-12-05_14-49-34.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/2018-12-05-14-49-34-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6efdf95338bbcf12c869054d9f8c6ce5><img alt=2018-12-05_14-49-34.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/2018-12-05-14-49-34-png.png></a></p><p>Once finished the calibration file is saved to your Documents folder, press &ldquo;No&rdquo; and then close the utility.</p><p><a href=#R-image-c0e3e61a19c96f8a16a4eb43bb059113 class=lightbox-link><img alt=SEU_2021-08-11_13-40-30.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-40-30-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c0e3e61a19c96f8a16a4eb43bb059113><img alt=SEU_2021-08-11_13-40-30.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/seu-2021-08-11-13-40-30-png.png></a></p><h2 id=part-2-installing-the-calibration-file>Part 2: Installing the calibration file<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=continue-with-these-steps>Continue with these steps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>Start Swing Catalyst and go to Settings &ndash;> Hardware in the main menu.</li></ul><p>The plate should be detected automatically, if not please see the troubleshooting section.</p><p><a href=#R-image-82287332bb873db04d919ca1c73a86df class=lightbox-link><img alt=MotionCatalyst_2021-08-11_13-51-04.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-82287332bb873db04d919ca1c73a86df><img alt=MotionCatalyst_2021-08-11_13-51-04.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png></a></p><p>Click the &ldquo;Configure&mldr;&rdquo; button to open the configuration dialog.</p><h3 id=sensor-plate-settings>Sensor Plate Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Go to the Stance Sensor tab, and click Browse and Install.<a href=#R-image-d17da16ed85c2cd91f6acb280d67a28e class=lightbox-link><img alt=MotionCatalyst_2021-08-11_13-52-28.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d17da16ed85c2cd91f6acb280d67a28e><img alt=MotionCatalyst_2021-08-11_13-52-28.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png></a></p><p>Go to the directory you saved the calibration file, e.g: C:\User\YourUsername\Documents and select the mxd file you just saved from the utility and click Open.<a href=#R-image-0f41b0b031df7e5a50a4318a7914c116 class=lightbox-link><img alt=MotionCatalyst_2021-08-11_13-54-48.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-0f41b0b031df7e5a50a4318a7914c116><img alt=MotionCatalyst_2021-08-11_13-54-48.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png></a></p><p>When installation is completed it will let you know and you can click OK to close the windows.</p><p>Your Balance Plate should now be ready to use.
-Start a new session in Swing Analysis and verify you get pressure readings in the Pressure and stance databox when capturing swings.</p><p><a href=#R-image-689b41a5f264769c1ab50f63371722cc class=lightbox-link><img alt=2017-03-03_14-30-55.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/2017-03-03-14-30-55-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-689b41a5f264769c1ab50f63371722cc><img alt=2017-03-03_14-30-55.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/2017-03-03-14-30-55-png.png></a></p><p>Note: It may be necessary to run a re-calibration of your Balance Plate with heavy usage, this can be done by clicking the diagnostics button in Swing Catalyst Settings, which will launch the SE Utility.</p><h2 id=troubleshooting>Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=the-balance-plate-is-not-recognized-or-not-showing-as-connected>The Balance Plate is not recognized or not showing as connected:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>Make sure the device is recognized by Windows.</li></ul><p>Open Windows device manager. <a href=http://kb.laplink.com/index.php/article/359 rel=external>How?</a></p><ul><li><p>Verify the **Sensor Edge **device is present under <strong>Ports (COM & LPT)</strong></p></li><li><p>If it is not, or has a warning symbol, then try reinstalling the drivers and reconnecting the device to a different USB port.</p></li><li><p>Connect the device to a different USB port on the computer.</p></li><li><p>If using a USB extender, try connecting the device to the PC without an extender.</p></li><li><p>Restart Swing Catalyst.</p></li><li><p>Restart the computer.</p></li><li><p>If you tried all these steps and it still shows as not connected in Swing Catalyst, please contact our support team.</p></li></ul><h3 id=calibration-is-not-installed-successfully>Calibration is not installed successfully<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>The calibration file you received from the Sensor Edge Utility may be bad or the file may have become corrupted, try to run the utility again and install the <em>new</em> calibration file. If this doesn&rsquo;t work, contact our support team.</li></ul><h3 id=there-is-noise-on-the-plate-even-though-ive-run-the-utility>There is noise on the plate even though I&rsquo;ve run the utility<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p><a href=#R-image-783fd7665cee993eba4869d82734c440 class=lightbox-link><img alt=TeamViewer_2019-05-03_09-53-27.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-783fd7665cee993eba4869d82734c440><img alt=TeamViewer_2019-05-03_09-53-27.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png></a></p><p>Noise can be present due several factors:</p><ul><li><p>Wrong or no calibration file installed in Swing Catalyst.</p></li><li><p>Heavy usage:
-The calibration utility should be run often, even once a month for heavily used plates.</p></li><li><p>Direct exposure to sunlight.</p></li><li><p>Wear and tear on the sensors themselves.</p></li></ul><p>The utility may not be able to filter out the noise if the signal to noise ratio is not good enough, the plate will in this case need to be recalibrated through an RMA. The manufacturer will then manually inspect the session that is generated by the utility to see if they can improve upon it.</p><p>If the manufacturer is unable to fix the issue and the plate is under warranty or <a href=/sc-support/hu/hardware/balance-plate-warranty/index.html>ESA (extended service agreement)</a>, the plate can be shipped back to the manufacturer as long as an RMA is present.</p><h3 id=hardware-incompatibilities>Hardware incompatibilities<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Some issues have been seen with <strong>AMD 300-Series</strong> chipsets (AMD Ryzen 1700 / 2700 series ) with USB 1.1 devices. Specifically with the Balance Plate, where you only get 75 samples per second instead of ~145 samples per second. We recommend using a USB 2.0 hub which will allow the Balance Plate to stream at full sample rate.</p><p>There are no known issues as far as using the AMD 300 series chipsets with USB 3.0 devices.</p><hr><p><em>Last updated: 2025-11-13</em> | <a href=/sc-support/hu/hardware/calibration-diagnostics/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/hu/index.html><span class="logo-title default-animation">Swing Catalyst Támogatás</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Keresés (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Keresés</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Keresés...>
-<button class=search-clear type=button data-search-clear title="Keresések törlése"><i class="fas fa-fw fa-times" title="Keresések törlése"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/hu/getting-started/index.html><a class="padding default-animation" href=/sc-support/hu/getting-started/index.html>Első lépések</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/hu/cameras-video/index.html><a class="padding default-animation" href=/sc-support/hu/cameras-video/index.html>Kamerák és videó</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/hu/hardware/index.html><a class="padding default-animation" href=/sc-support/hu/hardware/index.html>Hardver</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu><li data-nav-id=/sc-support/hu/hardware/3d-motion-plate-data/index.html><a class=padding href=/sc-support/hu/hardware/3d-motion-plate-data/index.html>3D mozgási platform adatok útmutatója</a></li><li data-nav-id=/sc-support/hu/hardware/setup-3d-motion-plate/index.html><a class=padding href=/sc-support/hu/hardware/setup-3d-motion-plate/index.html>A 3D Motion Plate telepítése és beállítása</a></li><li data-nav-id=/sc-support/hu/hardware/boditrak-sensors/index.html><a class=padding href=/sc-support/hu/hardware/boditrak-sensors/index.html>A BodiTrak szenzorok használata a Swing Catalyst alkalmazással</a></li><li data-nav-id=/sc-support/hu/hardware/flightscope-setup/index.html><a class=padding href=/sc-support/hu/hardware/flightscope-setup/index.html>A FlightScope használata a Swing Catalyst segítségével</a></li><li data-nav-id=/sc-support/hu/hardware/flightscope-mevo/index.html><a class=padding href=/sc-support/hu/hardware/flightscope-mevo/index.html>A FlightScope Mevo+ használata a Swing Catalyst alkalmazással</a></li><li data-nav-id=/sc-support/hu/hardware/foresight-gc2-hmt/index.html><a class=padding href=/sc-support/hu/hardware/foresight-gc2-hmt/index.html>A Foresight GC2 & HMT használata a Swing Catalyst segítségével</a></li><li data-nav-id=/sc-support/hu/hardware/foresight-gc3-launch-pro/index.html><a class=padding href=/sc-support/hu/hardware/foresight-gc3-launch-pro/index.html>A Foresight GC3 / Bushnell Launch Pro használata Swing Catalyst segítségével</a></li><li data-nav-id=/sc-support/hu/hardware/foresight-gcquad/index.html><a class=padding href=/sc-support/hu/hardware/foresight-gcquad/index.html>A Foresight GCQuad használata Swing Catalyst szoftverrel</a></li><li data-nav-id=/sc-support/hu/hardware/full-swing-golf/index.html><a class=padding href=/sc-support/hu/hardware/full-swing-golf/index.html>A Full Swing Golf használata Swing Catalyst-tal</a></li><li data-nav-id=/sc-support/hu/hardware/setup-dual-motion-plate/index.html><a class=padding href=/sc-support/hu/hardware/setup-dual-motion-plate/index.html>A Kettős Motion Plate telepítése és beállítása</a></li><li data-nav-id=/sc-support/hu/hardware/launch-monitor-trigger/index.html><a class=padding href=/sc-support/hu/hardware/launch-monitor-trigger/index.html>A Launch Monitor beállítása rögzítési trigggerként</a></li><li data-nav-id=/sc-support/hu/hardware/find-serial-number/index.html><a class=padding href=/sc-support/hu/hardware/find-serial-number/index.html>A Swing Catalyst Balance Plate sorozatszámának megkeresése</a></li><li data-nav-id=/sc-support/hu/hardware/trackman-troubleshooting/index.html><a class=padding href=/sc-support/hu/hardware/trackman-troubleshooting/index.html>A TrackMan nem indítja el a Swing Catalyst technikai hibaelhárítást</a></li><li data-nav-id=/sc-support/hu/hardware/nvidia-gpu-encoder/index.html><a class=padding href=/sc-support/hu/hardware/nvidia-gpu-encoder/index.html>Az NVIDIA GPU kódoló beállítása</a></li><li data-nav-id=/sc-support/hu/hardware/install-balance-plate-3s/index.html><a class=padding href=/sc-support/hu/hardware/install-balance-plate-3s/index.html>Balance Plate 3S telepítése</a></li><li data-nav-id=/sc-support/hu/hardware/install-balance-plate-3/index.html><a class=padding href=/sc-support/hu/hardware/install-balance-plate-3/index.html>Egyensúlyozó platform 3 telepítése</a></li><li data-nav-id=/sc-support/hu/hardware/balance-plate-data/index.html><a class=padding href=/sc-support/hu/hardware/balance-plate-data/index.html>Egyensúlyozó platform Adatok Kézikönyv</a></li><li data-nav-id=/sc-support/hu/hardware/balance-plate-warranty/index.html><a class=padding href=/sc-support/hu/hardware/balance-plate-warranty/index.html>Egyensúlyozó platform garancia és ESA</a></li><li class=active data-nav-id=/sc-support/hu/hardware/calibration-diagnostics/index.html><a class=padding href=/sc-support/hu/hardware/calibration-diagnostics/index.html>Egyensúlyozó platform kalibrálása és diagnosztikája</a></li><li data-nav-id=/sc-support/hu/hardware/force-plate-troubleshooting/index.html><a class=padding href=/sc-support/hu/hardware/force-plate-troubleshooting/index.html>Erőlemez technikai hibaelhárítási útmutató</a></li><li data-nav-id=/sc-support/hu/hardware/install-dual-pressure-plate/index.html><a class=padding href=/sc-support/hu/hardware/install-dual-pressure-plate/index.html>Kettős Nyomáslemez telepítése</a></li><li data-nav-id=/sc-support/hu/hardware/supported-launch-monitors/index.html><a class=padding href=/sc-support/hu/hardware/supported-launch-monitors/index.html>Támogatott launch monitorok</a></li><li data-nav-id=/sc-support/hu/hardware/trackman-setup/index.html><a class=padding href=/sc-support/hu/hardware/trackman-setup/index.html>TrackMan használata Swing Catalyst-tal</a></li></ul></li><li data-nav-id=/sc-support/hu/software-features/index.html><a class="padding default-animation" href=/sc-support/hu/software-features/index.html>Szoftver és Funkciók</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/hu/account-setup/index.html><a class="padding default-animation" href=/sc-support/hu/account-setup/index.html>Fiók és beállítás</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/hu/reference/index.html><a class="padding default-animation" href=/sc-support/hu/reference/index.html>Referencia</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Nyelv</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/hardware/calibration-diagnostics/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/hardware/calibration-diagnostics/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/hardware/calibration-diagnostics/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/hardware/calibration-diagnostics/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/hardware/calibration-diagnostics/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/hardware/calibration-diagnostics/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/hardware/calibration-diagnostics/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/hardware/calibration-diagnostics/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/hardware/calibration-diagnostics/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/hardware/calibration-diagnostics/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/hardware/calibration-diagnostics/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/hardware/calibration-diagnostics/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/hardware/calibration-diagnostics/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/hardware/calibration-diagnostics/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/hardware/calibration-diagnostics/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/hardware/calibration-diagnostics/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/hardware/calibration-diagnostics/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/hardware/calibration-diagnostics/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/hardware/calibration-diagnostics/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/hardware/calibration-diagnostics/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/hardware/calibration-diagnostics/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/hardware/calibration-diagnostics/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/hardware/calibration-diagnostics/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/hardware/calibration-diagnostics/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/hardware/calibration-diagnostics/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/hardware/calibration-diagnostics/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/hardware/calibration-diagnostics/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/hardware/calibration-diagnostics/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/hardware/calibration-diagnostics/index.html lang=hu selected data-selected>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/hardware/calibration-diagnostics/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/hardware/calibration-diagnostics/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/hardware/calibration-diagnostics/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/hardware/calibration-diagnostics/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/hardware/calibration-diagnostics/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/hardware/calibration-diagnostics/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/hardware/calibration-diagnostics/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Téma</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763285 defer></script><script src=/sc-support/js/theme.min.js?1771763285 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="hu" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Az Egyensúlyozó platform használatához kalibrálási fájlra van szükség. Minden egyes Egyensúlyozó platformhoz egyedi kalibrálási fájl készül, így nincs két egyforma fájl. Ha nincs telepítve kalibrálási fájl, valószínűleg a platform garanciális regisztrációja sem történt meg. Ez a cikk a kalibrálási fájl megszerzésének és a platform regisztrációjának folyamatát ismerteti.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás">
+    <meta name="twitter:description" content="Az Egyensúlyozó platform használatához kalibrálási fájlra van szükség. Minden egyes Egyensúlyozó platformhoz egyedi kalibrálási fájl készül, így nincs két egyforma fájl. Ha nincs telepítve kalibrálási fájl, valószínűleg a platform garanciális regisztrációja sem történt meg. Ez a cikk a kalibrálási fájl megszerzésének és a platform regisztrációjának folyamatát ismerteti.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/hu/hardware/calibration-diagnostics/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Támogatás">
+    <meta property="og:title" content="Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás">
+    <meta property="og:description" content="Az Egyensúlyozó platform használatához kalibrálási fájlra van szükség. Minden egyes Egyensúlyozó platformhoz egyedi kalibrálási fájl készül, így nincs két egyforma fájl. Ha nincs telepítve kalibrálási fájl, valószínűleg a platform garanciális regisztrációja sem történt meg. Ez a cikk a kalibrálási fájl megszerzésének és a platform regisztrációjának folyamatát ismerteti.">
+    <meta property="og:locale" content="hu">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Hardver">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Balance-Plate">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta itemprop="name" content="Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás">
+    <meta itemprop="description" content="Az Egyensúlyozó platform használatához kalibrálási fájlra van szükség. Minden egyes Egyensúlyozó platformhoz egyedi kalibrálási fájl készül, így nincs két egyforma fájl. Ha nincs telepítve kalibrálási fájl, valószínűleg a platform garanciális regisztrációja sem történt meg. Ez a cikk a kalibrálási fájl megszerzésének és a platform regisztrációjának folyamatát ismerteti.">
+    <meta itemprop="wordCount" content="1054">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Pressure-Data">
+    <title>Egyensúlyozó platform kalibrálása és diagnosztikája :: Swing Catalyst Támogatás</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/hardware/calibration-diagnostics/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520144" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520144" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520144" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520144" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.hu.js?1772520144";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520144" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520144" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520144" defer></script>
+    <script src="/sc-support/js/lunr/lunr.hu.min.js?1772520144" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['hu'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520144" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520144" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520144" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520144" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520144" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/hardware\/calibration-diagnostics\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Szöveg vágólapra másolása`;
+      window.T_Copied_to_clipboard = `Szöveg vágólapra másolva!`;
+      window.T_Link_copied_to_clipboard = `Link vágólapra másolva!`;
+      window.T_Reset_view = `Nézet visszaállítása`;
+      window.T_View_reset = `Visszaállítás megtekintése!`;
+      window.T_No_results_found = `Nincs találat a(z) "{0}" kifejezésre`;
+      window.T_N_results_found = `{1} találat a(z) "{0}" kifejezésre`;
+      window.T_Browser_unsupported_feature = `Ez a böngésző nem támogatja ezt a funkciót`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/hu/hardware/calibration-diagnostics/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menü (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Tartalomjegyzék (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#1-rész-a-se-segédprogram-használata-a-kalibrálási-fájl-megszerzéséhez">1. rész: A SE segédprogram használata a kalibrálási fájl megszerzéséhez</a></li>
+    <li><a href="#az-egyensúlyozó-platform-regisztrálása">Az Egyensúlyozó platform regisztrálása</a></li>
+    <li><a href="#győződjön-meg-arról-hogy-a-szőnyeg-és-minden-egyéb-tárgy-el-van-távolítva-az-egyensúlyozó-platformról-hogy-a-leolvasásokat-ne-befolyásolják-külső-tényezők">Győződjön meg arról, hogy a szőnyeg és minden egyéb tárgy el van távolítva az Egyensúlyozó platformról, hogy a leolvasásokat ne befolyásolják külső tényezők.</a></li>
+    <li><a href="#egyensúlyozó-platform-előkészítési-képernyő"><img src="../../assets/images/360008826133/seu-2021-08-11-13-05-17-png.png" alt="Egyensúlyozó platform előkészítési képernyő"></a></li>
+    <li><a href="#a-kalibrálási-folyamat-végrehajtása">A kalibrálási folyamat végrehajtása</a></li>
+    <li><a href="#pozicionálás">Pozicionálás</a>
+      <ul>
+        <li><a href="#befejezett-felvétel">Befejezett Felvétel</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-rész-a-kalibrálási-fájl-telepítése">2. rész: A kalibrálási fájl telepítése</a>
+      <ul>
+        <li><a href="#folytassa-az-alábbi-lépésekkel">Folytassa az alábbi lépésekkel</a></li>
+        <li><a href="#szenzor-lap-beállításai">Szenzor lap beállításai</a></li>
+      </ul>
+    </li>
+    <li><a href="#hibaelhárítás">Hibaelhárítás</a>
+      <ul>
+        <li><a href="#az-egyensúlyozó-platform-nem-ismerhető-fel-vagy-nem-jelenik-meg-csatlakoztatottként">Az Egyensúlyozó platform nem ismerhető fel, vagy nem jelenik meg csatlakoztatottként:</a></li>
+        <li><a href="#a-kalibrálás-nem-telepíthető-sikeresen">A Kalibrálás nem telepíthető sikeresen</a></li>
+        <li><a href="#zaj-van-a-platformon-annak-ellenére-hogy-futtattam-a-segédprogramot">Zaj van a platformon, annak ellenére, hogy futtattam a segédprogramot</a></li>
+        <li><a href="#hardverkompatibilitási-problémák">Hardverkompatibilitási problémák</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hu/index.html"><span itemprop="name">Swing Catalyst Támogatás</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/hu/hardware/index.html"><span itemprop="name">Hardver</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Egyensúlyozó platform kalibrálása és diagnosztikája</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/hu/hardware/balance-plate-warranty/index.html" title="Egyensúlyozó platform Garancia és ESA (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/hu/hardware/force-plate-troubleshooting/index.html" title="Erőlemez technikai hibaelhárítási útmutató (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Egyebek"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable hardware" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Címkék" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/hu/tags/balance-plate/index.html">Balance-Plate</a></li>
+    <li><a class="term-link" href="/sc-support/hu/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/hu/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/hu/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="egyensúlyozó-platform-kalibrálása-és-diagnosztikája">Egyensúlyozó platform kalibrálása és diagnosztikája</h1>
+
+<h1 id="a-kalibrálási-segédprogram-futtatása">A kalibrálási segédprogram futtatása<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>Az Egyensúlyozó platform használatához kalibrálási fájlra van szükség. Minden egyes Egyensúlyozó platformhoz egyedi kalibrálási fájl készül, így nincs két egyforma fájl. Ha nincs telepítve kalibrálási fájl, valószínűleg a platform garanciális regisztrációja sem történt meg. Ez a cikk a kalibrálási fájl megszerzésének és a platform regisztrációjának folyamatát ismerteti.</p>
+<p>Ez a cikk a nemkívánatos zaj eltávolításáról és a nyomáseloszlás javításáról szól a Balance Plate 3-as és újabb verzióihoz.</p>
+<p>Az Egyensúlyozó platform 2048 nagy pontosságú Nyomásérzékelőből áll, és a Sensor Edge segédprogram segítségével szükséges lehet a platform nullázása a legjobb pontosság biztosítása érdekében. Ez a cikk lépésről lépésre bemutatja, hogyan kell nullázni az Egyensúlyozó platformot.</p>
+<p><strong>FONTOS!</strong>** **</p>
+<p>A folyamat két részből áll:</p>
+<ol>
+<li>
+<p>rész: A Sensor Edge segédprogram használata a platform legújabb kalibrálási fájljának megszerzéséhez.</p>
+</li>
+<li>
+<p>rész: A kalibrálási fájl telepítése a Swing Catalystbe. Kérjük, olvassa el ezt a teljes támogatási cikket.</p>
+</li>
+</ol>
+<h2 id="1-rész-a-se-segédprogram-használata-a-kalibrálási-fájl-megszerzéséhez">1. rész: A SE segédprogram használata a kalibrálási fájl megszerzéséhez<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p><a href="https://cloudfront.swingcatalyst.com/drivers/SensorEdgeUtilitySetup.exe" rel="external">Töltse le a kalibrálási segédprogramot</a></p>
+</li>
+<li>
+<p>Ha illesztőprogramok telepítésére kérik, kattintson az Igen gombra.</p>
+</li>
+</ul>
+<p>Csatlakoztassa a platformot a számítógéphez.</p>
+<ul>
+<li>
+<p>Győződjön meg arról, hogy a Swing Catalyst szoftver be van zárva – a SE segédprogram nem fogja tudni észlelni a platformot, ha a Swing Catalyst fut.</p>
+</li>
+<li>
+<p>Nyissa meg az újonnan telepített SE segédprogramot.</p>
+</li>
+<li>
+<p>Kövesse az alábbi utasításokat.</p>
+</li>
+<li>
+<p>Győződjön meg arról, hogy monitor vagy televízió van csatlakoztatva a számítógépéhez, hogy az Egyensúlyozó platformon állva is láthassa a képernyőt.</p>
+</li>
+</ul>
+<p>Ha régebbi verzió van telepítve, először távolítsa el a <a href="https://support.microsoft.com/en-us/help/4028054/windows-10-repair-or-remove-programs" rel="external">Programok hozzáadása vagy eltávolítása</a> funkción keresztül.</p>
+<p>Kattintson a Start gombra:</p>
+<p><a href="#R-image-1d599db8a4837095e7237931484d3b51" class="lightbox-link"><img alt="A SE segédprogram Start képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1d599db8a4837095e7237931484d3b51"><img alt="A SE segédprogram Start képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-12-32-46-png.png"></a></p>
+<p>A Start gombra kattintás után a program automatikusan megkísérli beolvasni az eszközöket; ha nem találja a platformot, kattintson a legördülő menüre, és válassza ki az Egyensúlyozó platformot.</p>
+<p><a href="#R-image-a5021b00adec7b32f62c062641dfa0fb" class="lightbox-link"><img alt="Eszközkeresés képernyőképe" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5021b00adec7b32f62c062641dfa0fb"><img alt="Eszközkeresés képernyőképe" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/snoopscreenshot-300-png.png"></a></p>
+<p>Kattintson a Scan gombra<a href="#R-image-d5caa798bf4d76b935158e9c803984fd" class="lightbox-link"><img alt="A SE segédprogram Scan képernyője" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5caa798bf4d76b935158e9c803984fd"><img alt="A SE segédprogram Scan képernyője" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-10-42-png.png"></a></p>
+<p>Válassza ki a platform sorozatszámának megfelelő eszközt, majd kattintson a Next gombra.</p>
+<h2 id="az-egyensúlyozó-platform-regisztrálása">Az Egyensúlyozó platform regisztrálása<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-7f0c77d80dc4b07eb868d8fd90a7c970" class="lightbox-link"><img alt="Regisztrációs képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f0c77d80dc4b07eb868d8fd90a7c970"><img alt="Regisztrációs képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-12-59-01-png.png"></a></p>
+<p>Példa a kitöltött regisztrációs adatokra<a href="#R-image-361e274f5a78dccb008cc1f475e430a2" class="lightbox-link"><img alt="Kitöltött regisztrációs adatok példája" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-361e274f5a78dccb008cc1f475e430a2"><img alt="Kitöltött regisztrációs adatok példája" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2021-08-11-13-02-17-png.png"></a></p>
+<p>Miután kitöltötte a garanciához és a szervizhez szükséges adatokat, kattintson a Continue gombra.</p>
+<p>Ha lehetséges, válasszon ki egy kamerát, és irányítsa az Egyensúlyozó platformra, majd kattintson a Next gombra.</p>
+<p>A kamera nem kötelező – kamera hiányában is folytathatja a folyamatot.</p>
+<p><a href="#R-image-c737d13b3364e09b6f37b59ea5661b41" class="lightbox-link"><img alt="Kamera kiválasztási képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c737d13b3364e09b6f37b59ea5661b41"><img alt="Kamera kiválasztási képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-04-31-png.png"></a></p>
+<h2 id="győződjön-meg-arról-hogy-a-szőnyeg-és-minden-egyéb-tárgy-el-van-távolítva-az-egyensúlyozó-platformról-hogy-a-leolvasásokat-ne-befolyásolják-külső-tényezők">Győződjön meg arról, hogy a szőnyeg és minden egyéb tárgy el van távolítva az Egyensúlyozó platformról, hogy a leolvasásokat ne befolyásolják külső tényezők.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="egyensúlyozó-platform-előkészítési-képernyő"><a href="#R-image-08644e7e26e20d868023fd90f7d82a88" class="lightbox-link"><img alt="Egyensúlyozó platform előkészítési képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08644e7e26e20d868023fd90f7d82a88"><img alt="Egyensúlyozó platform előkészítési képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-05-17-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="a-kalibrálási-folyamat-végrehajtása">A kalibrálási folyamat végrehajtása<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Mielőtt a platformra lépne, a segédprogram adatokat gyűjt, hogy legyen egy Alapvonal, amellyel összehasonlíthatja az értékeket.</p>
+<p>Kérjük, ügyeljen arra, hogy véletlenül se lépjen a platformra, amíg a segédprogram erre nem utasítja.</p>
+<p><a href="#R-image-8d076f19582ee455167b073346319c35" class="lightbox-link"><img alt="Alapvonal gyűjtési képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d076f19582ee455167b073346319c35"><img alt="Alapvonal gyűjtési képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-19-png.png"></a></p>
+<h2 id="pozicionálás">Pozicionálás<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Fontos, hogy a segédprogram által jelzett módon álljon a platformon.</p>
+<p>A sötét lábak mutatják, hol kell állnia, a szürke lábak pedig azt, hová kell majd lépnie.</p>
+<p><a href="#R-image-b0191dbaca4c7d8f67ab22156d93a1ad" class="lightbox-link"><img alt="Pozicionálási képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0191dbaca4c7d8f67ab22156d93a1ad"><img alt="Pozicionálási képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-12-27-png.png"></a></p>
+<p>Kérjük, kövesse minden egyes lépést, mivel fontos, hogy a platform összes területe aktiválódjon.</p>
+<h3 id="befejezett-felvétel">Befejezett Felvétel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Ha nem elégedett a Felvétellel – például hibát vétett –, könnyen újraindíthatja a folyamatot a Restart gombra kattintással.</p>
+<p>Kattintson a Continue gombra, ha folytatni kívánja.</p>
+<p><a href="#R-image-95d9ed28ef7b5dedcfe3c9cea4144d0a" class="lightbox-link"><img alt="Befejezett felvétel képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95d9ed28ef7b5dedcfe3c9cea4144d0a"><img alt="Befejezett felvétel képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-13-59-png.png"></a></p>
+<p>Kattintson a Save gombra, majd a Send gombra.</p>
+<p><a href="#R-image-3583a97fe4df31f7f448261e0d17d822" class="lightbox-link"><img alt="Mentés és küldés képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3583a97fe4df31f7f448261e0d17d822"><img alt="Mentés és küldés képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-19-15-png.png"></a></p>
+<p>Mielőtt az adatokat elküldik a gyártónak felülvizsgálatra, adja meg a hozzávetőleges súlyt és a használati adatokat.</p>
+<p>A megjegyzések mezőben jelezheti a platformmal kapcsolatos problémáit, például a gyenge bal lábat vagy egyéb aggályokat.</p>
+<p>A gyártó azért kívánja összegyűjteni ezeket az adatokat, hogy tovább fejlessze az újrakalibrálási algoritmusokat és pontosabb szenzor leolvasásokat biztosítson.</p>
+<p>Adja meg az adatokat, majd kattintson a Send gombra:</p>
+<p><a href="#R-image-b55c16abb4267d47d803abb59ac7cf96" class="lightbox-link"><img alt="Adatküldési képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b55c16abb4267d47d803abb59ac7cf96"><img alt="Adatküldési képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2018-12-05-14-49-34-png.png"></a></p>
+<p>A folyamat befejezése után a kalibrálási fájl a Dokumentumok mappába kerül mentésre. Nyomja meg a „No&quot; gombot, majd zárja be a segédprogramot.</p>
+<p><a href="#R-image-ea60eefb8a230985446d158ceb77e387" class="lightbox-link"><img alt="Befejezési képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ea60eefb8a230985446d158ceb77e387"><img alt="Befejezési képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/seu-2021-08-11-13-40-30-png.png"></a></p>
+<h2 id="2-rész-a-kalibrálási-fájl-telepítése">2. rész: A kalibrálási fájl telepítése<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="folytassa-az-alábbi-lépésekkel">Folytassa az alábbi lépésekkel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Indítsa el a Swing Catalystet, és a főmenüben lépjen a Settings &ndash;&gt; Hardware menüpontba.</li>
+</ul>
+<p>A platform automatikusan felismerhető; ha ez nem történik meg, tekintse meg a hibaelhárítási részt.</p>
+<p><a href="#R-image-a2b3d5cff7407c23099942b208927203" class="lightbox-link"><img alt="Hardware beállítások képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2b3d5cff7407c23099942b208927203"><img alt="Hardware beállítások képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-51-04-png.png"></a></p>
+<p>Kattintson a „Configure&hellip;&quot; gombra a konfigurációs párbeszédablak megnyitásához.</p>
+<h3 id="szenzor-lap-beállításai">Szenzor lap beállításai<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Lépjen a Stance Sensor fülre, majd kattintson a Browse and Install gombra.<a href="#R-image-9937ca23816efefa9cdd791d483f7c6f" class="lightbox-link"><img alt="Szenzor lap beállítások képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9937ca23816efefa9cdd791d483f7c6f"><img alt="Szenzor lap beállítások képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-52-28-png.png"></a></p>
+<p>Lépjen abba a könyvtárba, ahová a kalibrálási fájlt mentette, pl.: C:\User\YourUsername\Documents, majd válassza ki a segédprogramból most mentett mxd fájlt, és kattintson az Open gombra.<a href="#R-image-d0ce014ce8f2a2257ec49631ecc917ec" class="lightbox-link"><img alt="Fájl kiválasztási képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0ce014ce8f2a2257ec49631ecc917ec"><img alt="Fájl kiválasztási képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/motioncatalyst-2021-08-11-13-54-48-png.png"></a></p>
+<p>A telepítés befejezésekor értesítést kap, és az OK gombra kattintva bezárhatja az ablakokat.</p>
+<p>Az Egyensúlyozó platform most már készen áll a használatra.
+Indítson új Munkamenetet a Swing Analysissban, és ellenőrizze, hogy lendületek rögzítésekor megjelennek-e a nyomásleolvasások a Nyomás és Állás adatok mezőben.</p>
+<p><a href="#R-image-4e0b02fbcb8fc360b9cd3a1f4a28e046" class="lightbox-link"><img alt="Nyomásleolvasás ellenőrzési képernyő" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e0b02fbcb8fc360b9cd3a1f4a28e046"><img alt="Nyomásleolvasás ellenőrzési képernyő" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/2017-03-03-14-30-55-png.png"></a></p>
+<p>Megjegyzés: Intenzív használat esetén szükséges lehet az Egyensúlyozó platform újrakalibrálása. Ezt a Swing Catalyst Settings menüben található diagnosztika gombra kattintva teheti meg, amely elindítja a SE segédprogramot.</p>
+<h2 id="hibaelhárítás">Hibaelhárítás<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="az-egyensúlyozó-platform-nem-ismerhető-fel-vagy-nem-jelenik-meg-csatlakoztatottként">Az Egyensúlyozó platform nem ismerhető fel, vagy nem jelenik meg csatlakoztatottként:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Győződjön meg arról, hogy az eszközt a Windows felismeri.</li>
+</ul>
+<p>Nyissa meg a Windows Eszközkezelőt. <a href="http://kb.laplink.com/index.php/article/359" rel="external">Hogyan?</a></p>
+<ul>
+<li>
+<p>Ellenőrizze, hogy a <strong>Sensor Edge</strong> eszköz megjelenik-e a <strong>Portok (COM és LPT)</strong> alatt.</p>
+</li>
+<li>
+<p>Ha nem jelenik meg, vagy figyelmeztető szimbólum látható mellette, próbálja meg újratelepíteni az illesztőprogramokat, és csatlakoztassa az eszközt egy másik USB porthoz.</p>
+</li>
+<li>
+<p>Csatlakoztassa az eszközt a számítógép egy másik USB portjához.</p>
+</li>
+<li>
+<p>Ha USB hosszabbítót használ, próbálja meg az eszközt közvetlenül, hosszabbító nélkül csatlakoztatni a számítógéphez.</p>
+</li>
+<li>
+<p>Indítsa újra a Swing Catalystet.</p>
+</li>
+<li>
+<p>Indítsa újra a számítógépet.</p>
+</li>
+<li>
+<p>Ha minden lépést elvégzett, és az eszköz még mindig nem csatlakoztatottként jelenik meg a Swing Catalystben, kérjük, vegye fel a kapcsolatot ügyfélszolgálatunkkal.</p>
+</li>
+</ul>
+<h3 id="a-kalibrálás-nem-telepíthető-sikeresen">A Kalibrálás nem telepíthető sikeresen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>A Sensor Edge segédprogramtól kapott kalibrálási fájl hibás lehet, vagy a fájl megsérülhetett. Próbálja meg újra futtatni a segédprogramot, és telepítse az <em>új</em> kalibrálási fájlt. Ha ez sem működik, vegye fel a kapcsolatot ügyfélszolgálatunkkal.</li>
+</ul>
+<h3 id="zaj-van-a-platformon-annak-ellenére-hogy-futtattam-a-segédprogramot">Zaj van a platformon, annak ellenére, hogy futtattam a segédprogramot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-ce8e990ea5a0ee92ae9ed8eed5221e4b" class="lightbox-link"><img alt="Zaj a platformon" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce8e990ea5a0ee92ae9ed8eed5221e4b"><img alt="Zaj a platformon" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008826133/teamviewer-2019-05-03-09-53-27-png.png"></a></p>
+<p>A zaj több tényező miatt is előfordulhat:</p>
+<ul>
+<li>
+<p>Helytelen vagy hiányzó kalibrálási fájl van telepítve a Swing Catalystben.</p>
+</li>
+<li>
+<p>Intenzív használat:
+A kalibrálási segédprogramot gyakran kell futtatni – intenzíven használt platformok esetén akár havonta egyszer is.</p>
+</li>
+<li>
+<p>Közvetlen napfény hatása.</p>
+</li>
+<li>
+<p>Az érzékelők elhasználódása.</p>
+</li>
+</ul>
+<p>Ha a jel-zaj arány nem megfelelő, a segédprogram nem feltétlenül tudja kiszűrni a zajt; ebben az esetben a platformot RMA keretében kell újrakalibrálni. A gyártó ekkor manuálisan megvizsgálja a segédprogram által generált munkamenetet, hogy megállapítsa, lehetséges-e javítás.</p>
+<p>Ha a gyártó nem tudja megoldani a problémát, és a platform garancia vagy <a href="/sc-support/hu/hardware/balance-plate-warranty/index.html">ESA (kiterjesztett szervizszerződés)</a> hatálya alatt áll, a platform visszaküldhető a gyártónak, amennyiben RMA rendelkezésre áll.</p>
+<h3 id="hardverkompatibilitási-problémák">Hardverkompatibilitási problémák<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link vágólapra másolása"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Bizonyos problémák tapasztalhatók az <strong>AMD 300-as sorozatú</strong> chipsetekkel (AMD Ryzen 1700 / 2700 sorozat) USB 1.1 eszközök esetén. Az Egyensúlyozó platformmal kapcsolatban különösen az a jelenség figyelhető meg, hogy másodpercenként csak 75 mintát kap ~145 helyett. Javasoljuk egy USB 2.0 hub használatát, amely lehetővé teszi, hogy az Egyensúlyozó platform teljes mintavételi sebességgel működjön.</p>
+<p>Az AMD 300-as sorozatú chipsetekkel USB 3.0 eszközök esetén nem ismert kompatibilitási probléma.</p>
+<hr>
+<p><em>Utoljára frissítve: 2025-11-13</em> | <a href="/sc-support/hu/hardware/calibration-diagnostics/index.html">Megtekintés a hivatalos támogatási oldalon</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/hu/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Támogatás</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Keresés (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Keresés</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Keresés...">
+            <button class="search-clear" type="button" data-search-clear="" title="Keresések törlése"><i class="fas fa-fw fa-times" title="Keresések törlése"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/hu/getting-started/index.html"><a class="padding default-animation" href="/sc-support/hu/getting-started/index.html">Első lépések</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/hu/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/hu/cameras-video/index.html">Kamerák és videó</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/hu/hardware/index.html"><a class="padding default-animation" href="/sc-support/hu/hardware/index.html">Hardver</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/hu/hardware/3d-motion-plate-data/index.html"><a class="padding" href="/sc-support/hu/hardware/3d-motion-plate-data/index.html">3D Mozgási Platform Adatok Útmutatója</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/setup-3d-motion-plate/index.html"><a class="padding" href="/sc-support/hu/hardware/setup-3d-motion-plate/index.html">A 3D mozgási platform telepítése és beállítása</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/boditrak-sensors/index.html"><a class="padding" href="/sc-support/hu/hardware/boditrak-sensors/index.html">A BodiTrak szenzorok használata Swing Catalysttel</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/setup-dual-motion-plate/index.html"><a class="padding" href="/sc-support/hu/hardware/setup-dual-motion-plate/index.html">A Dual Motion Plate telepítése és beállítása</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/flightscope-setup/index.html"><a class="padding" href="/sc-support/hu/hardware/flightscope-setup/index.html">A FlightScope használata a Swing Catalyst programmal</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/flightscope-mevo/index.html"><a class="padding" href="/sc-support/hu/hardware/flightscope-mevo/index.html">A FlightScope Mevo&#43; használata a Swing Catalyst programmal</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/foresight-gc2-hmt/index.html"><a class="padding" href="/sc-support/hu/hardware/foresight-gc2-hmt/index.html">A Foresight GC2 &amp; HMT használata Swing Catalyst programmal</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/foresight-gc3-launch-pro/index.html"><a class="padding" href="/sc-support/hu/hardware/foresight-gc3-launch-pro/index.html">A Foresight GC3 / Bushnell Launch Pro használata SwingCatalyst-tal</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/foresight-gcquad/index.html"><a class="padding" href="/sc-support/hu/hardware/foresight-gcquad/index.html">A Foresight GCQuad használata Swing Catalysttel</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/full-swing-golf/index.html"><a class="padding" href="/sc-support/hu/hardware/full-swing-golf/index.html">A Full Swing Golf használata Swing Catalysttel</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/install-dual-pressure-plate/index.html"><a class="padding" href="/sc-support/hu/hardware/install-dual-pressure-plate/index.html">A Kettős Nyomáslemez telepítése</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/launch-monitor-trigger/index.html"><a class="padding" href="/sc-support/hu/hardware/launch-monitor-trigger/index.html">A Launch Monitor beállítása rögzítési Triggerként</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/trackman-setup/index.html"><a class="padding" href="/sc-support/hu/hardware/trackman-setup/index.html">A TrackMan használata a Swing Catalysttel</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/trackman-troubleshooting/index.html"><a class="padding" href="/sc-support/hu/hardware/trackman-troubleshooting/index.html">A TrackMan nem aktiválja a Swing Catalyst-et – műszaki hibaelhárítás</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/install-balance-plate-3/index.html"><a class="padding" href="/sc-support/hu/hardware/install-balance-plate-3/index.html">Az Egyensúlyozó platform 3 telepítése</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/install-balance-plate-3s/index.html"><a class="padding" href="/sc-support/hu/hardware/install-balance-plate-3s/index.html">Az Egyensúlyozó platform 3S telepítése</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/nvidia-gpu-encoder/index.html"><a class="padding" href="/sc-support/hu/hardware/nvidia-gpu-encoder/index.html">Az NVIDIA GPU Kódoló beállítása</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/balance-plate-data/index.html"><a class="padding" href="/sc-support/hu/hardware/balance-plate-data/index.html">Egyensúlyozó Platform Adatok Kézikönyve</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/balance-plate-warranty/index.html"><a class="padding" href="/sc-support/hu/hardware/balance-plate-warranty/index.html">Egyensúlyozó platform Garancia és ESA</a></li>
+            <li class="active " data-nav-id="/sc-support/hu/hardware/calibration-diagnostics/index.html"><a class="padding" href="/sc-support/hu/hardware/calibration-diagnostics/index.html">Egyensúlyozó platform kalibrálása és diagnosztikája</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/force-plate-troubleshooting/index.html"><a class="padding" href="/sc-support/hu/hardware/force-plate-troubleshooting/index.html">Erőlemez technikai hibaelhárítási útmutató</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/find-serial-number/index.html"><a class="padding" href="/sc-support/hu/hardware/find-serial-number/index.html">Hogyan találja meg a Swing Catalyst Egyensúlyozó platform sorozatszámát</a></li>
+            <li class="" data-nav-id="/sc-support/hu/hardware/supported-launch-monitors/index.html"><a class="padding" href="/sc-support/hu/hardware/supported-launch-monitors/index.html">Támogatott Launch Monitorok</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/hu/software-features/index.html"><a class="padding default-animation" href="/sc-support/hu/software-features/index.html">Szoftver és funkciók</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/hu/account-setup/index.html"><a class="padding default-animation" href="/sc-support/hu/account-setup/index.html">Fiók &amp; Felállás</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/hu/reference/index.html"><a class="padding default-animation" href="/sc-support/hu/reference/index.html">Referencia</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Nyelv</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/calibration-diagnostics/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/calibration-diagnostics/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/calibration-diagnostics/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/calibration-diagnostics/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/hardware/calibration-diagnostics/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/hardware/calibration-diagnostics/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/hardware/calibration-diagnostics/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/hardware/calibration-diagnostics/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/hardware/calibration-diagnostics/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/hardware/calibration-diagnostics/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/hardware/calibration-diagnostics/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/hardware/calibration-diagnostics/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/hardware/calibration-diagnostics/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/hardware/calibration-diagnostics/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/hardware/calibration-diagnostics/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/hardware/calibration-diagnostics/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/hardware/calibration-diagnostics/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/hardware/calibration-diagnostics/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/hardware/calibration-diagnostics/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/hardware/calibration-diagnostics/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/hardware/calibration-diagnostics/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/hardware/calibration-diagnostics/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/hardware/calibration-diagnostics/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/hardware/calibration-diagnostics/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/hardware/calibration-diagnostics/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/hardware/calibration-diagnostics/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/hardware/calibration-diagnostics/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/hardware/calibration-diagnostics/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/hardware/calibration-diagnostics/index.html" lang="hu" selected data-selected>Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/hardware/calibration-diagnostics/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/hardware/calibration-diagnostics/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/hardware/calibration-diagnostics/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/hardware/calibration-diagnostics/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/hardware/calibration-diagnostics/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/hardware/calibration-diagnostics/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/hardware/calibration-diagnostics/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Téma</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520144" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520144" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

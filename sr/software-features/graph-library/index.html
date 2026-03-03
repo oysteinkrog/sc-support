@@ -1,18 +1,471 @@
-<!doctype html><html id=R-html lang=sr dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Овај чланак има за циљ да представи нове функције укључене у нову графичку библиотеку присутну у Swing Catalyst-у (верзије 9.7 и новије)"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Коришћење графичке библиотеке :: Подршка Swing Catalyst"><meta name=twitter:description content="Овај чланак има за циљ да представи нове функције укључене у нову графичку библиотеку присутну у Swing Catalyst-у (верзије 9.7 и новије)"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/sr/software-features/graph-library/index.html"><meta property="og:site_name" content="Подршка Swing Catalyst"><meta property="og:title" content="Коришћење графичке библиотеке :: Подршка Swing Catalyst"><meta property="og:description" content="Овај чланак има за циљ да представи нове функције укључене у нову графичку библиотеку присутну у Swing Catalyst-у (верзије 9.7 и новије)"><meta property="og:locale" content="sr"><meta property="og:type" content="article"><meta property="article:section" content="Софтвер и функције"><meta property="article:tag" content="Motion-Plate"><meta property="article:tag" content="Force-Data"><meta itemprop=name content="Коришћење графичке библиотеке :: Подршка Swing Catalyst"><meta itemprop=description content="Овај чланак има за циљ да представи нове функције укључене у нову графичку библиотеку присутну у Swing Catalyst-у (верзије 9.7 и новије)"><meta itemprop=wordCount content="320"><meta itemprop=keywords content="Motion-Plate,Force-Data"><title>Коришћење графичке библиотеке :: Подршка Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/graph-library/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/graph-library/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/graph-library/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/graph-library/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/graph-library/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/graph-library/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/graph-library/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/graph-library/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/graph-library/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/graph-library/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/graph-library/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/graph-library/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/graph-library/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/graph-library/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/graph-library/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/graph-library/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/graph-library/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/graph-library/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/graph-library/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/graph-library/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/graph-library/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/graph-library/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/graph-library/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/graph-library/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/graph-library/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/graph-library/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/graph-library/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/graph-library/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/graph-library/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/graph-library/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/graph-library/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/graph-library/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/graph-library/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/graph-library/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763288 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763288 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763288 defer></script><script src=/sc-support/js/search.min.js?1771763288 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.sr.js?1771763288"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763288 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763288 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763288 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763288 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763288 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763288 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763288 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763288 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/graph-library/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/sr/software-features/graph-library/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#увод>Увод</a><ul><li><a href=#карактеристике-укључују>Карактеристике укључују:</a></li></ul></li><li><a href=#функционалност-увећања>Функционалност увећања</a><ul><li><a href=#клик-и-повлачење>Клик и Повлачење</a></li><li><a href=#ctrl-scroll-zoom>Ctrl Scroll zoom</a></li></ul></li><li><a href=#panning>Panning</a></li><li><a href=#viewing-individual-plate-data>Viewing individual plate data</a></li><li><a href=#graph-viewing-options>Graph viewing options</a></li><li><a href=#improved-performance>Improved performance</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/sr/index.html><span itemprop=name>Поддршка Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/sr/software-features/index.html><span itemprop=name>Софтвер и функције</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Коришћење графичке библиотеке</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/sr/software-features/record-a-lesson/index.html title="Како снимити лекцију (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/sr/software-features/body-weight-measurement/index.html title="Нова функционалност мерења телесне тежине (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/sr/tags/force-data/index.html>Force-Data</a></li><li><a class=term-link href=/sc-support/sr/tags/motion-plate/index.html>Motion-Plate</a></li></ul></div></header><h1 id=коришћење-графичке-библиотеке>Коришћење графичке библиотеке</h1><h2 id=увод>Увод<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Овај чланак има за циљ да демонстрира нове функције укључене у нову библиотеку графикона присутну у Swing Catalyst (<em>верзије 9.7 и новије</em>)</p><h3 id=карактеристике-укључују>Карактеристике укључују:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Увећање и панирање графикона користећи миш / тастатуру.</p></li><li><p>Подршка за приказивање појединачних података по ploči u Dual Motion Plate / Dual Force Plate постављањима.</p></li><li><p>Значајно побољшане перформансе рендеровања.</p></li></ul><p>У детаљима:</p><ul><li><p>CTRL + скролирање миша ће увећати / смањити где се показивач миша налазе на графикону.</p></li><li><p>CTRL SHIFT + скролирање миша за панирање.</p></li><li><p>Двоструки клик да би се вратили на подразумевани ниво увећања.</p></li><li><p>Клик и повлачење да би се увећало.</p></li></ul><p>Хајде да видимо функционалност!</p><h2 id=функционалност-увећања>Функционалност увећања<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=клик-и-повлачење>Клик и Повлачење<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>Кликните и повуците да одаберете одсек који желите да видите детаљније.</li></ul><p>Савет: Двоструко кликните на миш да бисте вратили ниво увећања.</p><p><a href=#R-image-07970b1b3d4b7621d54eacc23a620418 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/12567046239132.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-07970b1b3d4b7621d54eacc23a620418><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/12567046239132.png></a></p><h3 id=ctrl-scroll-zoom>Ctrl Scroll zoom<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Hold CTRL while scrolling the mouse to zoom in / out on the data.</p></li><li><p>Hold Shift while scrolling the mouse to zoom about the X-axis.</p></li></ul><p>Tip: To reset, double click the mouse.</p><p><a href=#R-image-83dd44c2de2652f5d0d48ab73326bebf class=lightbox-link><img alt=2021-11-16_16-28-14.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-28-14-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-83dd44c2de2652f5d0d48ab73326bebf><img alt=2021-11-16_16-28-14.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-28-14-gif.png></a></p><p>Zooming about the X-axis (Ctrl Shift Scroll):</p><p><a href=#R-image-9adc5b0461668117855d60dbbc36d8e7 class=lightbox-link><img alt=2021-11-16_16-32-53.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-32-53-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9adc5b0461668117855d60dbbc36d8e7><img alt=2021-11-16_16-32-53.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-32-53-gif.png></a></p><h2 id=panning>Panning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>Ctrl Shift Scroll to pan</li></ul><p><a href=#R-image-51d26eb37fc0a6ddafc996fc19134aac class=lightbox-link><img alt=2021-11-16_16-35-02.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-35-02-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-51d26eb37fc0a6ddafc996fc19134aac><img alt=2021-11-16_16-35-02.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-35-02-gif.png></a></p><h2 id=viewing-individual-plate-data>Viewing individual plate data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li>Note: This is Dual Motion Plate / Dual Force plate specific functionality</li></ul><p>With dual force plates it&rsquo;s possible to view data from each plate individually by clicking the plate indicator button to the left of the gear icon. The highlighted plate indicates which plate is being displayed.</p><p>In this example we&rsquo;re viewing combined data (topmost graph), but also data from each plate individually (left & right foot):</p><p><a href=#R-image-b279287e271a7cf217a20acac0e80b6a class=lightbox-link><img alt=MotionCatalyst_2021-11-16_16-10-15.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b279287e271a7cf217a20acac0e80b6a><img alt=MotionCatalyst_2021-11-16_16-10-15.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png></a></p><h2 id=graph-viewing-options>Graph viewing options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Clicking the gear icon gives you options on how to view the data. For example to show data in percentage or Newtons (or Pound foot: lbf⋅ft, if Imperial is selected in General Settings).</p><p><a href=#R-image-a11069a960661be33c4be47506b25599 class=lightbox-link><img alt=MotionCatalyst_2021-11-16_16-16-56.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a11069a960661be33c4be47506b25599><img alt=MotionCatalyst_2021-11-16_16-16-56.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png></a></p><h2 id=improved-performance>Improved performance<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>The new graph library can utilize graphics cards for hardware acceleration, this means a significantly more responsive user experience without any significant costs (in terms of CPU and memory usage).</p><p><a href=#R-image-0ce36980fe51738717863f47587445fe class=lightbox-link><img alt=2021-11-16_15-49-54.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-15-49-54-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-0ce36980fe51738717863f47587445fe><img alt=2021-11-16_15-49-54.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-15-49-54-gif.png></a></p><p><a href=#R-image-028cf335a2fc1d0ece4a7542bc58458b class=lightbox-link><img alt=2021-11-16_16-37-37.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-37-37-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-028cf335a2fc1d0ece4a7542bc58458b><img alt=2021-11-16_16-37-37.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4410108712338/2021-11-16-16-37-37-gif.png></a></p><hr><p><em>Last updated: 2024-02-16</em> | <a href=/sc-support/sr/software-features/graph-library/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/sr/index.html><span class="logo-title default-animation">Подршка Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/sr/getting-started/index.html><a class="padding default-animation" href=/sc-support/sr/getting-started/index.html>Почетак</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sr/cameras-video/index.html><a class="padding default-animation" href=/sc-support/sr/cameras-video/index.html>Камере и видео</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sr/hardware/index.html><a class="padding default-animation" href=/sc-support/sr/hardware/index.html>Хардвер</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/sr/software-features/index.html><a class="padding default-animation" href=/sc-support/sr/software-features/index.html>Софтвер и функције</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/sr/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/sr/software-features/frontal-plane-torque/index.html>Analiza Фронталног Момента - Водич за кориснике</a></li><li data-nav-id=/sc-support/sr/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/sr/software-features/multiple-forces-graph/index.html>Grafikon Više Sila</a></li><li data-nav-id=/sc-support/sr/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/sr/software-features/pressure-distribution-overlay/index.html>Kako koristiti funkcionalnost preklapanja Distribucije pritiska</a></li><li data-nav-id=/sc-support/sr/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/sr/software-features/microphone-trigger/index.html>Kako koristiti mikrofon kao okidač za snimanje</a></li><li data-nav-id=/sc-support/sr/software-features/force-vectors/index.html><a class=padding href=/sc-support/sr/software-features/force-vectors/index.html>Kako koristiti vektore sile</a></li><li data-nav-id=/sc-support/sr/software-features/key-metrics/index.html><a class=padding href=/sc-support/sr/software-features/key-metrics/index.html>Ključne metrike</a></li><li data-nav-id=/sc-support/sr/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/sr/software-features/pressure-stance-settings/index.html>Korišćenje novih postavki Pritiska i Stava</a></li><li data-nav-id=/sc-support/sr/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/sr/software-features/markerless-motion-capture/index.html>Poboljšanje hvatanja pokreta bez markera u golf i bejzbol zamahu korišćenjem RTMPose i RTMDet: Pristup odozgo nadole</a></li><li data-nav-id=/sc-support/sr/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/sr/software-features/motion-capture-settings/index.html>Swing Catalyst Подешавања Снимања Кретања</a></li><li data-nav-id=/sc-support/sr/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/sr/software-features/motion-capture-faq/index.html>Swing Catalyst Често Постављана Питања о Хватању Покрета</a></li><li data-nav-id=/sc-support/sr/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/sr/software-features/motion-capture-disclosures/index.html>Важна обавештења за кориснике алата Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/sr/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/sr/software-features/motion-capture-guide/index.html>Водич корисника за Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/sr/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/sr/software-features/ios-app-sharing/index.html>Дељење снимљених видеа са Swing Catalyst апликацијом за iOS</a></li><li data-nav-id=/sc-support/sr/software-features/export-recordings/index.html><a class=padding href=/sc-support/sr/software-features/export-recordings/index.html>Извоз снимака</a></li><li data-nav-id=/sc-support/sr/software-features/export-contacts/index.html><a class=padding href=/sc-support/sr/software-features/export-contacts/index.html>Како извезти контактне информације ученика</a></li><li data-nav-id=/sc-support/sr/software-features/export-raw-data/index.html><a class=padding href=/sc-support/sr/software-features/export-raw-data/index.html>Како извезти необрађене податке</a></li><li data-nav-id=/sc-support/sr/software-features/import-from-v1/index.html><a class=padding href=/sc-support/sr/software-features/import-from-v1/index.html>Како импортовати видеа из В1</a></li><li data-nav-id=/sc-support/sr/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/sr/software-features/motion-capture-install/index.html>Како инсталирати SwingCatalyst компоненте за хватање покрета</a></li><li data-nav-id=/sc-support/sr/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/sr/software-features/swing-catalyst-online/index.html>Како користити Swing Catalyst Online</a></li><li data-nav-id=/sc-support/sr/software-features/remote-support/index.html><a class=padding href=/sc-support/sr/software-features/remote-support/index.html>Како користити даљинску подршку</a></li><li data-nav-id=/sc-support/sr/software-features/explorer/index.html><a class=padding href=/sc-support/sr/software-features/explorer/index.html>Како користити Преглед</a></li><li data-nav-id=/sc-support/sr/software-features/email-sharing/index.html><a class=padding href=/sc-support/sr/software-features/email-sharing/index.html>Како подесити дељење преко електронске поште у Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/software-features/feedback-screen/index.html><a class=padding href=/sc-support/sr/software-features/feedback-screen/index.html>Како подесити екран повратне информације</a></li><li data-nav-id=/sc-support/sr/software-features/multiple-displays/index.html><a class=padding href=/sc-support/sr/software-features/multiple-displays/index.html>Како поставити више екрана са Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/software-features/change-recording-user/index.html><a class=padding href=/sc-support/sr/software-features/change-recording-user/index.html>Како променити корисника на постојећем снимку</a></li><li data-nav-id=/sc-support/sr/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/sr/software-features/record-a-lesson/index.html>Како снимити лекцију</a></li><li class=active data-nav-id=/sc-support/sr/software-features/graph-library/index.html><a class=padding href=/sc-support/sr/software-features/graph-library/index.html>Коришћење графичке библиотеке</a></li><li data-nav-id=/sc-support/sr/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/sr/software-features/body-weight-measurement/index.html>Нова функционалност мерења телесне тежине</a></li><li data-nav-id=/sc-support/sr/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/sr/software-features/keyboard-shortcuts/index.html>Пречице на тастатури и Хоткејс</a></li><li data-nav-id=/sc-support/sr/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/sr/software-features/force-graph-phases/index.html>Фазе графикона силе</a></li><li data-nav-id=/sc-support/sr/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/sr/software-features/raw-data-export-guide/index.html>Шта је укључено у извоз сирових података</a></li><li data-nav-id=/sc-support/sr/software-features/bookmarks/index.html><a class=padding href=/sc-support/sr/software-features/bookmarks/index.html>Шта су znamenke?</a></li></ul></li><li data-nav-id=/sc-support/sr/account-setup/index.html><a class="padding default-animation" href=/sc-support/sr/account-setup/index.html>Налог и подешавање</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sr/reference/index.html><a class="padding default-animation" href=/sc-support/sr/reference/index.html>Референца</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/graph-library/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/graph-library/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/graph-library/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/graph-library/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/graph-library/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/graph-library/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/graph-library/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/graph-library/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/graph-library/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/graph-library/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/graph-library/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/graph-library/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/graph-library/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/graph-library/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/graph-library/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/graph-library/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/graph-library/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/graph-library/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/graph-library/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/graph-library/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/graph-library/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/graph-library/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/graph-library/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/graph-library/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/graph-library/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/graph-library/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/graph-library/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/graph-library/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/graph-library/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/graph-library/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/graph-library/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/graph-library/index.html lang=sr selected data-selected>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/graph-library/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/graph-library/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/graph-library/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/graph-library/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763288 defer></script><script src=/sc-support/js/theme.min.js?1771763288 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="sr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Ovaj članak ima za cilj da prikaže nove funkcije uključene u novu biblioteku grafikona prisutnu u Swing Catalyst (*verzije 9.7 i novije*)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Korišćenje biblioteke grafikona :: Подршка Swing Catalyst">
+    <meta name="twitter:description" content="Ovaj članak ima za cilj da prikaže nove funkcije uključene u novu biblioteku grafikona prisutnu u Swing Catalyst (*verzije 9.7 i novije*)">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/sr/software-features/graph-library/index.html">
+    <meta property="og:site_name" content="Подршка Swing Catalyst">
+    <meta property="og:title" content="Korišćenje biblioteke grafikona :: Подршка Swing Catalyst">
+    <meta property="og:description" content="Ovaj članak ima za cilj da prikaže nove funkcije uključene u novu biblioteku grafikona prisutnu u Swing Catalyst (*verzije 9.7 i novije*)">
+    <meta property="og:locale" content="sr">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Softver i funkcije">
+    <meta property="article:tag" content="Motion-Plate">
+    <meta property="article:tag" content="Force-Data">
+    <meta itemprop="name" content="Korišćenje biblioteke grafikona :: Подршка Swing Catalyst">
+    <meta itemprop="description" content="Ovaj članak ima za cilj da prikaže nove funkcije uključene u novu biblioteku grafikona prisutnu u Swing Catalyst (*verzije 9.7 i novije*)">
+    <meta itemprop="wordCount" content="309">
+    <meta itemprop="keywords" content="Motion-Plate,Force-Data">
+    <title>Korišćenje biblioteke grafikona :: Подршка Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/graph-library/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/graph-library/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/graph-library/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/graph-library/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/graph-library/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/graph-library/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/graph-library/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/graph-library/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/graph-library/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/graph-library/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/graph-library/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/graph-library/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/graph-library/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/graph-library/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/graph-library/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/graph-library/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/graph-library/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/graph-library/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/graph-library/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/graph-library/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/graph-library/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/graph-library/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/graph-library/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/graph-library/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/graph-library/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/graph-library/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/graph-library/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/graph-library/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/graph-library/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/graph-library/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/graph-library/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/graph-library/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/graph-library/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/graph-library/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/graph-library/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/graph-library/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520158" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520158" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.sr.js?1772520158";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520158" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520158" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520158" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520158" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520158" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520158" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/graph-library\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/sr/software-features/graph-library/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#uvod">Uvod</a>
+      <ul>
+        <li><a href="#funkcije-uključuju">Funkcije uključuju:</a></li>
+      </ul>
+    </li>
+    <li><a href="#funkcionalnost-zumiranja">Funkcionalnost zumiranja</a>
+      <ul>
+        <li><a href="#klik-i-prevlačenje">Klik i prevlačenje</a></li>
+        <li><a href="#zumiranje-skrolovanjem-uz-ctrl">Zumiranje skrolovanjem uz Ctrl</a></li>
+      </ul>
+    </li>
+    <li><a href="#pomicanje">Pomicanje</a></li>
+    <li><a href="#pregled-pojedinačnih-podataka-po-ploči">Pregled pojedinačnih podataka po ploči</a></li>
+    <li><a href="#opcije-prikaza-grafikona">Opcije prikaza grafikona</a></li>
+    <li><a href="#poboljšane-performanse">Poboljšane performanse</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sr/index.html"><span itemprop="name">Swing Catalyst Podrška</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sr/software-features/index.html"><span itemprop="name">Softver i funkcije</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Korišćenje biblioteke grafikona</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/sr/software-features/key-metrics/index.html" title="Ključna metrika (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/sr/software-features/pressure-stance-settings/index.html" title="Korišćenje novih podešavanja za Pritisak i Stav (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/sr/tags/force-data/index.html">Force-Data</a></li>
+    <li><a class="term-link" href="/sc-support/sr/tags/motion-plate/index.html">Motion-Plate</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="korišćenje-biblioteke-grafikona">Korišćenje biblioteke grafikona</h1>
+
+<h2 id="uvod">Uvod<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Ovaj članak ima za cilj da prikaže nove funkcije uključene u novu biblioteku grafikona prisutnu u Swing Catalyst (<em>verzije 9.7 i novije</em>)</p>
+<h3 id="funkcije-uključuju">Funkcije uključuju:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Zumiranje i pomicanje grafikona pomoću miša / tastature.</p>
+</li>
+<li>
+<p>Podrška za prikazivanje pojedinačnih podataka po ploči u postavkama Dual Motion Plate / Dvostruke Ploče za Mjerenje Sile.</p>
+</li>
+<li>
+<p>Značajno poboljšane performanse iscrtavanja.</p>
+</li>
+</ul>
+<p>U detalje:</p>
+<ul>
+<li>
+<p>CTRL + skrolovanje mišem će zumirati unutra / van na mjestu gdje se nalazi pokazivač miša na grafikonu.</p>
+</li>
+<li>
+<p>CTRL SHIFT + skrolovanje mišem za pomicanje.</p>
+</li>
+<li>
+<p>Dvostruki klik za resetovanje nivoa zuma.</p>
+</li>
+<li>
+<p>Klik i prevlačenje za zumiranje.</p>
+</li>
+</ul>
+<p>Hajde da pogledamo funkcionalnosti!</p>
+<h2 id="funkcionalnost-zumiranja">Funkcionalnost zumiranja<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="klik-i-prevlačenje">Klik i prevlačenje<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Kliknite i prevucite da biste odabrali dio koji želite pobliže pogledati.</li>
+</ul>
+<p>Tip: Dvaput kliknite mišem da biste resetovali nivo zuma.</p>
+<p><a href="#R-image-cc27f72ca3cbab290cee3a8236c9f99c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc27f72ca3cbab290cee3a8236c9f99c"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/12567046239132.png"></a></p>
+<h3 id="zumiranje-skrolovanjem-uz-ctrl">Zumiranje skrolovanjem uz Ctrl<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Držite CTRL dok skrolujete mišem da biste zumirali unutra / van na podacima.</p>
+</li>
+<li>
+<p>Držite Shift dok skrolujete mišem da biste zumirali duž X-ose.</p>
+</li>
+</ul>
+<p>Tip: Za resetovanje, dvaput kliknite mišem.</p>
+<p><a href="#R-image-857b84936658c5a5ee36221318539cde" class="lightbox-link"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-857b84936658c5a5ee36221318539cde"><img alt="2021-11-16_16-28-14.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-28-14-gif.png"></a></p>
+<p>Zumiranje duž X-ose (Ctrl Shift Skrolovanje):</p>
+<p><a href="#R-image-885784178cd0c765f0d70169cb1d4aca" class="lightbox-link"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-885784178cd0c765f0d70169cb1d4aca"><img alt="2021-11-16_16-32-53.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-32-53-gif.png"></a></p>
+<h2 id="pomicanje">Pomicanje<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>Ctrl Shift Skrolovanje za pomicanje</li>
+</ul>
+<p><a href="#R-image-734eca4d6b7fc90272a15443530a6b7a" class="lightbox-link"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-734eca4d6b7fc90272a15443530a6b7a"><img alt="2021-11-16_16-35-02.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-35-02-gif.png"></a></p>
+<h2 id="pregled-pojedinačnih-podataka-po-ploči">Pregled pojedinačnih podataka po ploči<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>Napomena: Ovo je funkcionalnost specifična za Dual Motion Plate / Dvostruku Ploču za Mjerenje Sile</li>
+</ul>
+<p>Sa dvostrukim pločama za mjerenje sile moguće je pregledati podatke sa svake ploče pojedinačno klikom na dugme indikatora ploče s lijeve strane ikone zupčanika. Istaknuta ploča označava koja ploča se trenutno prikazuje.</p>
+<p>U ovom primjeru pregledamo kombinovane podatke (gornji grafikon), ali i podatke sa svake ploče pojedinačno (lijevo i desno Stopalo):</p>
+<p><a href="#R-image-ffc01f0767da49680129b997570a510b" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ffc01f0767da49680129b997570a510b"><img alt="MotionCatalyst_2021-11-16_16-10-15.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-10-15-png.png"></a></p>
+<h2 id="opcije-prikaza-grafikona">Opcije prikaza grafikona<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Klikom na ikonu zupčanika dobijate opcije za prikaz podataka. Na primjer, za prikaz podataka u procentima ili Newtonima (ili u funtama po stopi: lbf⋅ft, ako je imperijski sistem odabran u Opštim Postavkama).</p>
+<p><a href="#R-image-d0fab54c32cabb76e1e793456b8cab2a" class="lightbox-link"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0fab54c32cabb76e1e793456b8cab2a"><img alt="MotionCatalyst_2021-11-16_16-16-56.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/motioncatalyst-2021-11-16-16-16-56-png.png"></a></p>
+<h2 id="poboljšane-performanse">Poboljšane performanse<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Nova biblioteka grafikona može koristiti grafičke kartice za hardversko ubrzanje, što znači znatno responzivnije korisničko iskustvo bez značajnih troškova (u smislu CPU i memorijske upotrebe).</p>
+<p><a href="#R-image-a1d75586a1724db70d938f6c27447de9" class="lightbox-link"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a1d75586a1724db70d938f6c27447de9"><img alt="2021-11-16_15-49-54.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-15-49-54-gif.png"></a></p>
+<p><a href="#R-image-5573d2a9b06d1b5ffbc80c63612b3533" class="lightbox-link"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5573d2a9b06d1b5ffbc80c63612b3533"><img alt="2021-11-16_16-37-37.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4410108712338/2021-11-16-16-37-37-gif.png"></a></p>
+<hr>
+<p><em>Posljednje ažuriranje: 2024-02-16</em> | <a href="/sc-support/sr/software-features/graph-library/index.html">Pogledajte na zvaničnom sajtu podrške</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/sr/index.html">
+          <span class="logo-title default-animation">Подршка Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/sr/getting-started/index.html"><a class="padding default-animation" href="/sc-support/sr/getting-started/index.html">Početak rada</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/sr/cameras-video/index.html">Kamere i video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/hardware/index.html"><a class="padding default-animation" href="/sc-support/sr/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/sr/software-features/index.html"><a class="padding default-animation" href="/sc-support/sr/software-features/index.html">Softver i funkcije</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/sr/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/sr/software-features/frontal-plane-torque/index.html">Analiza Обртног момента у Фронталној равни - Korisnički Vodič</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/sr/software-features/ios-app-sharing/index.html">Deljenje snimljenih video zapisa putem Swing Catalyst aplikacije za iOS</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/sr/software-features/force-graph-phases/index.html">Faze grafikona sile</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/sr/software-features/multiple-forces-graph/index.html">Grafikon Višestrukih Sila</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/sr/software-features/export-recordings/index.html">Izvoz snimaka</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/sr/software-features/motion-capture-install/index.html">Kako instalirati komponente za Swing Catalyst Motion Capture (Hvatanje pokreta)</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/sr/software-features/export-contacts/index.html">Kako izvesti kontakt informacije učenika</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/sr/software-features/export-raw-data/index.html">Kako izvoziti sirove podatke</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/sr/software-features/pressure-distribution-overlay/index.html">Kako koristiti funkcionalnost Preklapanja Distribucije pritiska</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/sr/software-features/microphone-trigger/index.html">Kako koristiti mikrofon kao okidač za snimanje</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/remote-support/index.html"><a class="padding" href="/sc-support/sr/software-features/remote-support/index.html">Kako koristiti podršku na daljinu</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/explorer/index.html"><a class="padding" href="/sc-support/sr/software-features/explorer/index.html">Kako koristiti Preglednik</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/sr/software-features/swing-catalyst-online/index.html">Kako koristiti Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/sr/software-features/force-vectors/index.html">Kako koristiti Vektore sile</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/sr/software-features/email-sharing/index.html">Kako podesiti deljenje putem e-pošte u Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/sr/software-features/feedback-screen/index.html">Kako podesiti Ekran povratne informacije</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/sr/software-features/multiple-displays/index.html">Kako podesiti više ekrana uz Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/sr/software-features/change-recording-user/index.html">Kako promeniti korisnika na postojećem snimku</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/sr/software-features/record-a-lesson/index.html">Kako snimiti lekciju</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/sr/software-features/import-from-v1/index.html">Kako uvesti video zapise iz V1</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/sr/software-features/key-metrics/index.html">Ključna metrika</a></li>
+            <li class="active " data-nav-id="/sc-support/sr/software-features/graph-library/index.html"><a class="padding" href="/sc-support/sr/software-features/graph-library/index.html">Korišćenje biblioteke grafikona</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/sr/software-features/pressure-stance-settings/index.html">Korišćenje novih podešavanja za Pritisak i Stav</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/sr/software-features/body-weight-measurement/index.html">Nova funkcionalnost merenja telesne težine</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/sr/software-features/markerless-motion-capture/index.html">Poboljšanje Hvatanja pokreta bez markera u Golfu i Bejzbolu Koristeći RTMPose i RTMDet: Pristup Odozgo Nadole</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/sr/software-features/motion-capture-settings/index.html">Podešavanja Hvatanja pokreta u SwingCatalystu</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/sr/software-features/keyboard-shortcuts/index.html">Prečice na tastaturi i brze tipke</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/sr/software-features/raw-data-export-guide/index.html">Šta je uključeno u izvoz sirovih podataka</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/sr/software-features/bookmarks/index.html">Šta su Znamenke?</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/sr/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/sr/software-features/motion-capture-disclosures/index.html">Važna Obaveštenja za Korisnike SwingCatalyst Alata za Hvatanje pokreta</a></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/sr/software-features/motion-capture-guide/index.html">Vodič za korisnike Swing Catalyst Motion Capture</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/account-setup/index.html"><a class="padding default-animation" href="/sc-support/sr/account-setup/index.html">Nalog i Priprema</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/reference/index.html"><a class="padding default-animation" href="/sc-support/sr/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/graph-library/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/graph-library/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/graph-library/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/graph-library/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/graph-library/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/graph-library/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/graph-library/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/graph-library/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/graph-library/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/graph-library/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/graph-library/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/graph-library/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/graph-library/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/graph-library/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/graph-library/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/graph-library/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/graph-library/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/graph-library/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/graph-library/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/graph-library/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/graph-library/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/graph-library/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/graph-library/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/graph-library/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/graph-library/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/graph-library/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/graph-library/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/graph-library/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/graph-library/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/graph-library/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/graph-library/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/graph-library/index.html" lang="sr" selected data-selected>Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/graph-library/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/graph-library/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/graph-library/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/graph-library/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520158" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,105 +1,612 @@
-<!doctype html><html id=R-html lang=lv dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="RTMPose un RTMDet tehniskais pārskats markerless motion capture izmantošanai golfa un beisbola svinga analīzē"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja :: Swing Catalyst Atbalsts"><meta name=twitter:description content="RTMPose un RTMDet tehniskais pārskats markerless motion capture izmantošanai golfa un beisbola svinga analīzē"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html"><meta property="og:site_name" content="Swing Catalyst Atbalsts"><meta property="og:title" content="Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja :: Swing Catalyst Atbalsts"><meta property="og:description" content="RTMPose un RTMDet tehniskais pārskats markerless motion capture izmantošanai golfa un beisbola svinga analīzē"><meta property="og:locale" content="lv"><meta property="og:type" content="article"><meta property="article:section" content="Programmatūra un funkcijas"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Database"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja :: Swing Catalyst Atbalsts"><meta itemprop=description content="RTMPose un RTMDet tehniskais pārskats markerless motion capture izmantošanai golfa un beisbola svinga analīzē"><meta itemprop=wordCount content="2293"><meta itemprop=keywords content="Troubleshooting,Database,Motion-Capture"><title>Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja :: Swing Catalyst Atbalsts</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/markerless-motion-capture/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/markerless-motion-capture/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763290 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763290 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763290 defer></script><script src=/sc-support/js/search.min.js?1771763290 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.lv.js?1771763290"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763290 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763290 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763290 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763290 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763290 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763290 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763290 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763290 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/markerless-motion-capture/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/lv/software-features/markerless-motion-capture/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/lv/index.html><span itemprop=name>Swing Catalyst atbalsts</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/lv/software-features/index.html><span itemprop=name>Programmatūra un funkcijas</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/lv/software-features/key-metrics/index.html title="Galvenie rādītāji (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/lv/software-features/graph-library/index.html title="Grafu bibliotēkas izmantošana (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/lv/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/lv/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/lv/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=golfa-un-beisbola-svinga-markerless-motion-capture-uzlabošana-izmantojot-rtmpose-un-rtmdet-augšup-uz-leju-pieeja>Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja</h1><p><strong>Golfa un beisbola sitiena markerles Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: Pieeja no augšas uz leju</strong></p><p><strong>Kopsavilkums</strong></p><p>Šis baltais dokuments dokumentē RTMPose un RTMDet pielietojumu precīzai un efektīvai pozes novērtēšanai golfa un beisbola sitienos. Izmantojot jaunākās metodes, kas optimizētas reāllaika veiktspējai, šie modeļi ļauj detalizēti sekot ķermeņa kustībām golfa un beisbola sitienu laikā — kritiska funkcija sporta analitikā veiktspējas uzlabošanai. Mēs izceļam pieej no augšas uz leju priekšrocības, kur off-the-shelf RTMDet detektors identificē golfistu un beisbola spēlētāju katrā kadrā, un RTMPose novērtē galveno ķermeņa locītavu pozīcijas.</p><p><strong>1. Ievads</strong></p><p>Pozes novērtēšana ir kļuvusi svarīga sporta veiktspējas analīzē, ļaujot precīzi sekot sportista kustībām. Golfā un beisbolā spēlētāja sitiena biomehānisko datu uztveršana sniedz vērtīgu ieskatu sitiena dinamikā, palīdzējot profesionāļiem un amatieriem viņu tehniku pilnveidot. Tradicionālās 2D pozes novērtēšanas metodes bieži saskaras ar latentuma un precizitātes problēmām, īpaši reāllaika scenārijumos. Šis dokuments piedāvā risinājumu, izmantojot RTMPose un RTMDet MMPose sistēmā detalizētai pozes novērtēšanai golfa un beisbola sitienu laikā.</p><p><strong>2. Pamatinformācija</strong></p><p>Golfa un beisbola sitienu sarežģītība prasa precīzu ķermeņa kustību mērīšanu. Esošās pozes novērtēšanas metodes var nepietiekami nodrošināt nepieciešamo precizitāti reāllaika veiktspējai. Padziļinātās mācīšanās un datora redzējuma attīstība ir ieviesuši modeļus, piemēram, RTMPose un RTMDet, kas piedāvā uzlabotu precizitāti un efektivitāti.</p><p><strong>3. Pieeja no augšas uz leju, izmantojot RTMdet un RTMpose</strong></p><p>&ndash;ievietot attēlu&ndash;</p><p><strong>3. RTMPose: Augstas veiktspējas pozes novērtēšanas modelis</strong></p><p>RTMPose [1] ir izstrādāts augstai veiktspējai un reāllaika pozes novērtēšanai, optimizēts efektīvai darbībai ierobežotiem aparatūras resursiem.</p><p><strong>Galvenās iezīmes:</strong></p><p><strong>Modeļa arhitektūra un efektivitāte</strong>: RTMpose izmanto CSPNeXt kā pamatni [1, 2], līdzsvarojot ātrumu un precizitāti. CSPNeXt ir optimizēts blīvajām prognozēšanas uzdevumiem, piemēram, pozes novērtēšanai un objektu detektēšanai, nodrošinājot augstu izšķirtspēju un precizitāti, vienlaikus saglabājot skaitļošanas efektivitāti.</p><p><strong>Atslēgpunkta prognozēšana</strong>: Izmanto SimCC balstītu algoritmu [1, 3], uztverot atslēgpunktu horizontālās un vertikālās pozīcijas kā atsevišķus klasifikācijas uzdevumus. Šis kompaktais attēlojums samazina skaitļošanas slodzi un ir piemērots diegšanai dažādās ierīcēs.</p><p><strong>4. RTMDet: Detektēšanas pamatne</strong></p><p>RTMDet [4] darbojas kā detektors, kas atrodas pirms RTMPose pieejā no augšas uz leju, identificējot golfistu vai beisbola spēlētāju atrašanās vietu katrā kadrā.</p><p><strong>Galvenās iezīmes:</strong></p><p><strong>Modeļa arhitektūra un efektivitāte</strong>: RTMDet izmanto modificētu CSPDarkNet versiju [5], kas ir trenējamāka un precīzāka nekā daudzi YOLO modeļi. Modificētā versija izmanto lielu kodola dziļos konvolūcijas, lai līdzsvarotu sarežģītību un ātrumu, un ir efektīva gan GPU, gan CPU. Tas ir ideāls reāllaika lietojumiem, piemēram, sporta veiktspējas izsekošanai.</p><p><strong>Daudzpusīgums</strong>: Apstrādā dažādus objektu detektēšanas uzdevumus, ieskaitant instanču segmentāciju un rotētu objektu detektēšanu. Nodrošina spēlētāja precīzu lokalizāciju pat dinamiskas ainas gadījumā.</p><p><strong>5. RTMDet un RTMPose lietošanas priekšrocības golfa un beisbola sitiena analīzē</strong></p><p><strong>5.1 Augstāka precizitāte mazpildītās ainas gadījumā</strong></p><p>Tipiskos golfa/beisbola scenārijos ar dažiem indivīdiem kadrā RTMDet izolē golfistu/beisbola spēlētāju, ļaujot RTMPose apstrādāt katru detektēto personu ar augstu precizitāti. Tas novērš bottom-up metožu sarežģītību, kas vienlaikus apstrādā visus atslēgpunktus visām personām kadrā. Pieeja no augšas uz leju var ietvert arī RTMdet pēcapstrādes algoritmu, identificējot pareizu personu (t.i., golfistu vai beisbola spēlētāju) pirms pozes novērtēšanas. Turklāt RTMPose ir iepriekš trenēts paplašinātā attēlu materiālā, kurā ir</p><p><strong>5.2 Efektīva skaitļošana un reāllaika veiktspēja</strong></p><p>Izmantojot vieglus modeļus, piemēram, RTMdet un RTMpose, tiek saglabāts zems latentums, kas ļauj reāllaika sitiena analīzi patērētāju klases aparatūrā. Tas ir īpaši noderīgi, lai sniegtu tūlītēju tiešraides atgriezenisko saiti treniņa vai treniņa sesiju laikā. Swing Catalyst markerles motion capture sistēma ir viena no dažām studijas sistēmām, kas nodrošina tiešraides motion capture atgriezenisko saiti golfistu un beisbola spēlētājiem.</p><p><strong>5.3 Detalizēta atslēgpunkta analīze</strong></p><p>RTMPose nosaka 26 ķermeņa atskaites punktu konfigurāciju [6], kas parādīta 1. attēlā zemāk un ir būtiska golfa un beisbola sitiena kinemātikas analīzei. Halpe ir paplašināta konfigurācija, kas ietver papildu marķierus pēdās un galvā salīdzinājumā ar standarta Coco konfigurāciju ar 17 marķieriem.</p><p>&ndash;Ievietot attēlu&ndash;</p><p><strong>6. Metodika golfa un beisbola sitiena markerles Motion Capture</strong></p><p><strong>6.1 Detektēšanas fāze: RTMDet</strong></p><p>Piemērojot video kadriem ar golfistu vai beisbola spēlētāju, RTMDet ģenerē robežlodziņus ap spēlētāju, kas tiek padoti RTMPose. Tas fokusē pozes novērtēšanu uz attiecīgajiem attēla reģioniem, samazinot skaitļošanas slodzi.</p><p>&ndash;Ievietot attēlu&ndash;</p><p><strong>6.2 Pozas novērtēšanas fāze: RTMPose</strong></p><p>RTMPose novērtē atskaites punktu pozīcijas robežlodziņa ietvaros. Kritiskas locītavas golfa un beisbola sitiena analīzei ietver plaukstu locītavas, elkonis, plecu, gūžu un ceļgalus. Šie atskaites punkti novērtē ķermeņa leņķus un pozīcijas sitiena fāzēs: atpakaļsvings, lejup svings un turpinājums.</p><p>&ndash;Ievietot attēlu&ndash;</p><p><strong>6.3 Veiktspējas metrikas</strong></p><p>RTMPose vispārējā veiktspēja tiek mērīta, izmantojot metrikas, piemēram, vidējo precizitāti (AP) pozes novērtēšanas etalonos, piemēram, MS COCO. Zemāk ir vislabāk rangoto modeļu veiktspēja parasti izmantotajos Coco etalonos. MS COCO val datu kopā RTMPose-X ir labāk veiktspējīgais modelis, kas spēj sniegt reāllaika atsauksmes un sasniedz līdz 75,8% AP ar kadru frekvencēm, kas pārsniedz ?? FPS patērētāju klases GPU, padarot to piemērotu ātrgaitas sporta analīzei.</p><p>Vieta
+<!DOCTYPE html>
+<html id="R-html" lang="lv" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Tehnisks RTMPose un RTMDet pārskats markerless motion capture izmantošanai golfa un beisbola šūpoles analīzē">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju :: Swing Catalyst Atbalsts">
+    <meta name="twitter:description" content="Tehnisks RTMPose un RTMDet pārskats markerless motion capture izmantošanai golfa un beisbola šūpoles analīzē">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Atbalsts">
+    <meta property="og:title" content="Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju :: Swing Catalyst Atbalsts">
+    <meta property="og:description" content="Tehnisks RTMPose un RTMDet pārskats markerless motion capture izmantošanai golfa un beisbola šūpoles analīzē">
+    <meta property="og:locale" content="lv">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Programmatūra un funkcijas">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Database">
+    <meta property="article:tag" content="Motion-Capture">
+    <meta itemprop="name" content="Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju :: Swing Catalyst Atbalsts">
+    <meta itemprop="description" content="Tehnisks RTMPose un RTMDet pārskats markerless motion capture izmantošanai golfa un beisbola šūpoles analīzē">
+    <meta itemprop="wordCount" content="2293">
+    <meta itemprop="keywords" content="Troubleshooting,Database,Motion-Capture">
+    <title>Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju :: Swing Catalyst Atbalsts</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/markerless-motion-capture/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520165" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520165" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.lv.js?1772520165";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520165" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520165" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520165" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520165" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520165" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520165" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/markerless-motion-capture\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/lv/software-features/markerless-motion-capture/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lv/index.html"><span itemprop="name">Swing Catalyst Atbalsts</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/lv/software-features/index.html"><span itemprop="name">Programmatūra un funkcijas</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/lv/software-features/key-metrics/index.html" title="Galvenie rādītāji (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/lv/software-features/graph-library/index.html" title="Grafiku bibliotēkas izmantošana (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/lv/tags/database/index.html">Database</a></li>
+    <li><a class="term-link" href="/sc-support/lv/tags/motion-capture/index.html">Motion-Capture</a></li>
+    <li><a class="term-link" href="/sc-support/lv/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="golfa-un-beisbola-šūpoles-markerless-motion-capture-uzlabošana-izmantojot-rtmpose-un-rtmdet-pieeja-no-augšas-uz-leju">Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju</h1>
+
+<p><strong>Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju</strong></p>
+<p><strong>Kopsavilkums</strong></p>
+<p>Šis tehniskais pārskats dokumentē RTMPose un RTMDet izmantošanu precīzai un efektīvai pozas novērtēšanai golfa un beisbola šūpolēs. Izmantojot avangardiskās metodes, kas optimizētas reālā laika veiktspējai, šie modeļi nodrošina detalizētu ķermeņa kustību izsekošanu golfa un beisbola šūpolēs — būtisku funkciju sporta analītikā veiktspējas uzlabošanai. Mēs izcēlam pieeja no augšas uz leju priekšrocības, kur standarta RTMDet detektors identificē golfisti un beisbola spēlētāju katrā kadrā, un RTMPose novērtē galveno ķermeņa locītavu pozīcijas.</p>
+<p><strong>1. Ievads</strong></p>
+<p>Pozas novērtēšana ir kļuvusi izšķiroša sporta veiktspējas analīzē, ļaujot precīzi izsekot sportista kustības. Golfā un beisbolā sportista šūpoles biomehānisko datu uztveršana sniedz vērtīgu ieskatu par šūpoles dinamiku, palīdzot profesionāļiem un amatieriem vienlīdz pilnveidot viņu paņēmienus. Tradicionālās 2D pozas novērtēšanas metodes bieži saskaras ar latentuma un precizitātes problēmām, īpaši reālā laika scenārijos. Šis raksts piedāvā risinājumu, izmantojot RTMPose un RTMDet mmpose Framework ietvaros detalizētai pozas novērtēšanai golfa un beisbola šūpolēs.</p>
+<p><strong>2. Pamatinformācija</strong></p>
+<p>Golfa un beisbola šūpoles sarežģītība prasa precīzu ķermeņa kustību mērīšanu. Esošās pozas novērtēšanas metodes var nesniegt nepieciešamo precizitāti reālā laika veiktspējai. Progres padziļinātajā mācībā un datora redzējumā ir ieviesis modeļus, piemēram, RTMPose un RTMDet, kas nodrošina uzlabotu precizitāti un efektivitāti.</p>
+<p><strong>3. Pieeja no augšas uz leju ar RTMdet un RTMpose</strong></p>
+<p>&ndash;insert figure&ndash;</p>
+<p><strong>3. RTMPose: augstas veiktspējas pozas novērtēšanas modelis</strong></p>
+<p>RTMPose [1] ir paredzēts augstas veiktspējas, reālā laika pozas novērtēšanai, optimizēts efektīvai darbībai ar ierobežotu aparatūru.</p>
+<p><strong>Galvenās funkcijas:</strong></p>
+<p><strong>Modeļa arhitektūra un efektivitāte</strong>: RTMpose izmanto CSPNeXt kā tā mugurkaulu [1, 2], līdzsvarojot ātrumu un precizitāti. CSPNeXt ir optimizēts blīvas prognozēšanas uzdevumiem, piemēram, pozas novērtēšanai un objektu detektēšanai, nodrošinot augstu izšķirtspēju un precizitāti, vienlaikus saglabājot skaitļošanas efektivitāti.</p>
+<p><strong>Atslēgpunktu prognozēšana</strong>: izmanto SimCC balstītu algoritmu [1, 3], uzskatot atslēgpunktu horizontālās un vertikālās pozīcijas par atsevišķiem klasifikācijas uzdevumiem. Šis kompaktais attēlojums samazina skaitļošanas slodzi un ir piemērots dažādu ierīču izvietošanai.</p>
+<p><strong>4. RTMDet: detektēšanas mugurkauls</strong></p>
+<p>RTMDet [4] darbojas kā detektors, kas atrodas pirms RTMPose pieejā no augšas uz leju, identificējot golfista vai beisbola spēlētāja atrašanās vietu katrā kadrā.</p>
+<p><strong>Galvenās funkcijas:</strong></p>
+<p><strong>Modeļa arhitektūra un efektivitāte</strong>: RTMDet izmanto modificētu CSPDarkNet versiju [5], kas ir trenējamāka un precīzāka nekā daudzi YOLO modeļi. Modificētā versija izmanto liela kodola dziļumvirzienus tilpnes konvolūcijas, lai līdzsvarotu sarežģītību un ātrumu, un ir efektīva gan GPU, gan CPU. Tas ir ideāls reālā laika lietojumprogrammām, piemēram, sporta veiktspējas izsekošanai.</p>
+<p><strong>Daudzpusība</strong>: apstrādā dažādus objektu detektēšanas uzdevumus, ieskaitant instance segmentāciju un pagrieztās objektu detektēšanu. Nodrošina precīzu spēlētāja lokalizēšanu pat dinamiskas ainas gadījumā.</p>
+<p><strong>5. RTMDet un RTMPose izmantošanas priekšrocības golfa un beisbola šūpoles analīzē</strong></p>
+<p><strong>5.1 Augstāka precizitāte neslodzes ainas</strong></p>
+<p>Tipiskos golfa/beisbola apstākļos ar maz cilvēkiem kadrā, RTMDet izolē golfisti/beisbola spēlētāju, ļaujot RTMPose apstrādāt katru detektēto personu ar augstu precizitāti. Tas izvairās no apakšas uz augšu metožu sarežģītības, kas apstrādā visus atslēgpunktus visām personām kadrā vienlaikus. Pieeja no augšas uz leju var arī ietvert RTMdet pēcapstrādes algoritmu, identificējot pareizo personu (t.i., golfisti vai beisbola spēlētāju) pirms pozas novērtēšanas. Turklāt RTMPose ir iepriekš apmācīts paplašinātu attēlu materiālu komplektā, kas satur</p>
+<p><strong>5.2 Efektīva skaitļošana un reālā laika veiktspēja</strong></p>
+<p>Izmantojot vieglus modeļus, piemēram, RTMdet un RTMpose, tiek saglabāts zems latentums, nodrošinot reālā laika šūpoles analīzi patērētāju klases aparatūrā. Tas ir īpaši noderīgi, lai sniegtu tūlītēju tiešraides atsauksmes treniņu vai trenēšanas sesiju laikā. Swing Catalyst markerless motion capture sistēma ir viena no retajām studiju sistēmām, kas nodrošina tiešraides motion capture atsauksmes golfistiem un beisbola spēlētājiem.</p>
+<p><strong>5.3 Detalizēta atslēgpunktu analīze</strong></p>
+<p>RTMPose detektē 26 ķermeņa atslēgpunktu komplektu [6], kas parādīts zemāk esošajā 1. attēlā, kas ir būtisks golfa un beisbola šūpoles kinemātikas analīzei. Halpe26 ir paplašināts komplekts, kas ietver papildu marķierus uz pēdām un galvas salīdzinājumā ar standarta Coco komplektu, kurā ir 17 marķieri.</p>
+<p>&ndash;Insert Figure&ndash;</p>
+<p><strong>6. Metodika golfa un beisbola šūpoles markerless Motion Capture</strong></p>
+<p><strong>6.1 Detektēšanas fāze: RTMDet</strong></p>
+<p>Piemērojot golfista vai beisbola spēlētāja videokadriem, RTMDet ģenerē robežframūra lodziņus ap spēlētāju, kas tiek nodoti RTMPose. Tas fokusē pozas novērtēšanu uz attiecīgiem attēla reģioniem, samazinot skaitļošanas slodzi.</p>
+<p>&ndash;Insert Image&ndash;</p>
+<p><strong>6.2 Pozas novērtēšanas fāze: RTMPose</strong></p>
+<p>RTMPose novērtē atslēgpunktu pozīcijas robežframūra lodziņā. Kritiskas locītavas golfa un beisbola šūpoles analīzei ietver plauksta locītavas, elkoni, plecos, gurņus un ceļgali. Šie atslēgpunkti novērtē ķermeņa leņķus un pozīcijas šūpoles fāzēs: atpakaļsvings, lejup svings un turpinājums.</p>
+<p>&ndash;Insert Image&ndash;</p>
+<p><strong>6.3 Veiktspējas metrikas</strong></p>
+<p>RTMPose vispārīgo veiktspēju mēra metrikas, piemēram, vidējā precizitāte (AP), izmantojot pozas novērtēšanas etalons, piemēram, MS COCO. Zemāk ir labāk rangu modeļu veiktspēja parasti izmantotajā Coco etalons. MS COCO val datu kopā RTMPose-X ir labākais darbības modelis, kas spēj sniegt reālā laika atsauksmes un sasniedz līdz 75,8% AP ar kadru ātrumiem, kas pārsniedz ?? FPS patērētāju klases GPU, padarot to piemērotu augstā ātruma sporta analīzei.</p>
+<p>Vieta
 Modelis
 Izšķirtspēja
-Izmērs/parametri (Mill)
+Lielums/parametri (miljoni)
 AP
-Reāllaika secinājums</p><p>1
+Reālā laika secinājumi</p>
+<p>1
 Sapiens-2B
 1024x768
 2000
-82,2
-Nē</p><p>2
+82.2
+Nē</p>
+<p>2
 Sapiens-1B
 1024x768
 1000
-82,1
-Nē</p><p>3
+82.1
+Nē</p>
+<p>3
 Sapiens-0.6B
 1024x768
 600
-81,2
-Nē</p><p>4
+81.2
+Nē</p>
+<p>4
 Sapiens-0.3B
 1024x768
 300
-79,6
-Nē</p><p>5
+79.6
+Nē</p>
+<p>5
 VitPose-H
 256x192
 632
-79,4
-Nē</p><p><strong>6</strong>
+79.4
+Nē</p>
+<p><strong>6</strong>
 <strong>RTMPose-X</strong>
 <strong>384x288</strong>
 <strong>49</strong>
-<strong>78,8</strong>
-<strong>Jā</strong></p><p>7
+<strong>78.8</strong>
+<strong>Jā</strong></p>
+<p>7
 VitPose-L
 256x192
 307
-78,6
-Nē</p><p>8
+78.6
+Nē</p>
+<p>8
 RTMPose-L
 384x288
 28
-78,3
-Jā</p><p>9
+78.3
+Jā</p>
+<p>9
 HRFormer
 256x192
 43
-77,2
-Nē</p><p>10
+77.2
+Nē</p>
+<p>10
 HRNet-UDP
 384x288
 64
-77,2
-Jā</p><p>11
+77.2
+Jā</p>
+<p>11
 VitPose-B
 256x192
 86
-77,0
-Jā</p><p>12
+77.0
+Jā</p>
+<p>12
 RTMPose-L
 256x198
 28
-76,7
-Jā</p><p>13
+76.7
+Jā</p>
+<p>13
 RTMPose-M
 384x288
 14
-76,6
-Jā</p><p>14
+76.6
+Jā</p>
+<p>14
 HRNet
 384x288
 64
 76.3
-Jā</p><p>15
+Jā</p>
+<p>15
 VitPose-S
 256x192
 43
 75.8
-Jā</p><p>16
+Jā</p>
+<p>16
 RTMPose-M
 256x192
 14
 74.9
-Jā</p><p>17
+Jā</p>
+<p>17
 SimpleBaseline
 256x192
 60
 73.5
-Jā</p><p>18
+Jā</p>
+<p>18
 FastPose
 256x192
 79
 73.3
-Jā</p><p><strong>7. Pielietojums golfa svinga analīzē</strong></p><p>Piemērojot RTMPose-X un RTMDet-M sistēmu:</p><p><strong>Izsekot locītavu kustības kadru pēc kadram</strong>: Sniedz visaptverošus datus katras svinga fāzes analīzei.</p><p><strong>Sniegt reālā laika atsauksmes</strong>: Iespējo tūlītējus ieskatnus svinga uzkrējumā un formā apmācības laikā.</p><p><strong>Salīdzināt ar ideālo mehāniku</strong>: Ļauj salīdzināt ar ideālu svinga kinemātiku, lai identificētu uzlabošanas jomas.</p><p><strong>8. Secinājums</strong></p><p>RTMPose-X un RTMDet-M integrācija piedāvā spēcīgu risinājumu reālā laika golfa svinga analīzei. Ar augstu precizitāti, zemu kavēšanos un savietojamību dažādām aparatūras platformām, šī no augšas uz leju pieeja sniedz detalizētas atspoguļojumi par svinga mehāniku. Tam ir nozīmīgs potenciāls palīdzēt gan amatieru, gan profesionāļu golfistu snieguma uzlabošanā.</p><p><strong>9. Turpmākie darbi</strong></p><p>Turpmākajā attīstībā varētu būt iesaistīti:</p><p><strong>Mašīnmācīšanās algoritmu integrēšana</strong>: Lai sniegtu prediktīvās analīzes un ieteikumus svinga efektivitātes uzlabošanai.</p><p><strong>Paplašināšana uz daudzu personu scenārijiem</strong>: Paaugstinājot pielietojamību komandu sportos vai grupas apmācības vidē.</p><p><strong>Lietotājam draudzīga saskarnes izstrāde</strong>: Izveido programmas vai rīkus, kas padara šo tehnoloģiju pieejamu treneriem un sportistiem bez tehniskas izglītības.</p><p><strong>Pielikums</strong></p><p><strong>Detalizēta metodika: no augšas uz leju pieeja golfa svinga pozes novērtējumam, izmantojot RTMPose-X un RTMDet-M</strong></p><p><strong>Apskats</strong></p><p>Šeit aprakstītā metodika izklāsta detalizētus soļus, kas iesaistīti golf un beisbola svinga reālā laika pozes novērtējumā, izmantojot RTMPose priekšrocības atslēgpunktu lokalizācijai un RTMDet objektu detektēšanai. Process ir sadalīts vairākos posmos: detektēšana, atslēgpunktu lokalizācija un pēcapstrāde, no kuriem katrs veicina ķermeņa locītavu precīzu un efektīvu novērtējumu golfa svingā biomehāniskai analīzei.</p><p>&ndash;Ievietot attēlu&ndash;</p><p><strong>1. Detektēšanas fāze: reālā laika lokalizācija ar RTMDet-M</strong></p><p>Pirmais top-down pieejamības posms ir golfeista detektēšana video katru kadru. Sporta scenārijiem, īpaši golfam, parasti sastāv no viena spēlētāja, vienkāršojot detektēšanas uzdevumu, salīdzinājumā ar pūļa scenārijiem.</p><p><strong>1.1 Modeļa arhitektūra</strong></p><p>RTMDet-M tiek izmantots kā objektu detektors pipeline&rsquo;ā. Tas izmanto konvolūciju neirālo tīklu (CNN) mugurkaulu, īpaši CSPNeXt mugurkaulu, kas paredzēts, lai optimizētu reālā laika objektu detektēšanas veiktspēju, saglabājot līdzsvaru starp ātrumu un precizitāti. Galvenie arhitektūras aspekti ietver:</p><p><strong>Lielie kodola dziļuma konvolūcijas</strong>: Tās tiek izmantotas mugurkaula un kaklastes slāņos, palielinot receptīvo lauku, vienlaikus saglabājot zemas skaitļošanas izmaksas.</p><p><strong>Pazīmju piramīdas tīkls (FPN)</strong>: Daudz-mēroga pazīmju iegūšanas tehnika, kas ļauj detektēt objektus dažādos mērogos, nodrošinot, ka golferis var tikt detektēts neatkarīgi no viņa attāluma no kameras.</p><p><strong>1.2 Dinamiska etiķetes piešķiršana</strong></p><p>RTMDet-M izmanto dinamisku etiķetes piešķiršanas stratēģiju, kas uzlabo detektēšanas precizitāti, piešķirot mīkstās etiķetes objektiem, pamatojoties uz klasifikācijas un lokalizācijas zaudējuma kombināciju. Etiķetes piešķiršanu regulē SimOTA algoritms, kas dinamiski atlasa pozitīvus paraugus, pamatojoties uz to varbūtību atbilst zemes patiesības objektam. Šī metode nodrošina stabilu detektēšanu dažādos apgaismojuma un vides apstākļos, kas bieži ir встречаються āra golfa ainas.</p><p><strong>1.3 Robežframūra lodziņa prognozēšana</strong></p><p>Detektors izvada robežframūra lodziņus, kas ietver golferistu katrā kadrā. Šie robežframūra lodziņi nodrošina telpiskus ierobežojumus, kuros darbosies pozes novērtēšanas modelis, samazinot skaitļošanas slodzi pēc tam esošajā pozes novērtēšanas fāzē, fokusējot uzmanību tikai uz atbilstošiem kadra apgabaliem. Šajā kontekstā RTMDet-M ģenerē robežframūra lodziņus reālā laikā vairāk nekā 300 FPS augstveiktspējas aparatūrā, nodrošinot, ka tas var sekot līdzi golfa svinga straujām dinamikām.</p><p><strong>1.4 Personas ne-maksimāla slāpēšana (NMS)</strong></p><p>Daudzpersonu iestatījumos (lai gan golfista svinga analīzē reti), RTMDet-M ietver pozes Ne-maksimālo slāpēšanu (NMS) algoritmu, kas novērš liekas atslēgpunkta detektēšanas, nodrošinot, ka tikai ticamākās detektēšanas tiek saglabātas ikvienam. Tas ir kritisks gadījumos, kad pārklāti robežframūra lodziņi varētu tikt detektēti pūļotās ainas vai video sekvencēs.</p><p><strong>1.5 Treniņa datu kopa un veiktspēja</strong></p><p>RTMDet-M tiek trenēts binārās klasifikācijas uzdevumā uz personu instancēm Object356 datu kopā.</p><p><strong>2. Pozes novērtēšanas fāze: RTMPose-X atslēgpunkta lokalizācija</strong></p><p>Kad golferita robežframūra lodziņš ir noteikts, nākamajā fāzē ietilpst galvenās ķermeņa locītavas precīzās atrašanās vietas novērtēšana šajā apgabalā. RTMPose-X, augstveiktspējas pozes novērtēšanas modelis, tiek izmantots šim nolūkam.</p><p><strong>2.1 uz SimCC balstīta atslēgpunkta lokalizācija</strong></p><p>RTMPose-X izmanto SimCC (Simple Coordinate Classification) algoritmu, kas uzskata atslēgpunkta lokalizāciju par klasifikācijas problēmu. Atšķirībā no tradicionālajām siltumkartes metodēm, SimCC sadala katra atslēgpunkta x un y koordinātas atkritumu tvertnēs un klasificē precīzu tvertni, kurā katrs atslēgpunkts atrodas. Šī pieeja ievērojami samazina skaitļošanas sarežģītību un uzlabo secinājuma ātrumu, vienlaikus saglabājot augstu precizitāti cilvēka pozes novērtēšanas uzdevumos.</p><p><strong>2.2 CSPNeXt mugurkauls</strong></p><p>Līdzīgi RTMDet-M, RTMPose-X arī izmanto CSPNeXt mugurkaulu, kas ir pielāgots blīvi prognozēšanas uzdevumiem, piemēram, pozes novērtēšanai. CSPNeXt mugurkauls ir izdevīgs šajā scenārijā šādu iemeslu dēļ:</p><p><strong>Viegla arhitektūra</strong>: Modeļa arhitektūra ir paredzēta, lai minimizētu parametru skaitu, maksimalizējot caurlaidspēju, padarot to ideāli piemērotu reālā laika lietojumiem.</p><p><strong>Efektīva pazīmju iegūšana</strong>: CSPNeXt pazīmju iegūšanas slāņi ir optimizēti augstizšķirtnes attēlu apstrādei, kas ir kritisks, lai detektētu sīkus detaļas ātri pārvietojošos ķermeņa daļās golfa svinga laikā, piemēram, plaukstas locītavas, elkņi un ceļgali.</p><p><strong>2.3 Atslēgpunkta attēlojums</strong></p><p>RTMPose-X izejas atslēgpunktu atrašanās vietas visiem atbilstošajiem ķermeņa daļām, ietverot:</p><p><strong>Augšējā ķermeņa locītavas</strong>: pleci, elkņi, plaukstas locītavas un kakls</p><p><strong>Apakšējā ķermeņa locītavas</strong>: gurņi, ceļgali un potītes</p><p><strong>Papildu locītavas</strong>: galva, mugurkauls un citi galvenie punkti, kas ir atbilstošu svinga analīzei</p><p>384x288 izejas attēlu izšķirtne nodrošina, ka pat sīki kustības locītavās var tikt uztvertas precīzi, vienlaikus saglabājot sistēmas spēju darboties reālā laikā.</p><p><strong>2.4 RTMPose priekšapstrāde: neobjektīva datu apstrāde (UDP)</strong></p><p>Pirms apgrieztā attēla ievadīšanas RTMpose modelī tiek veikta neobjektīvas datu apstrādes (UDP) pakāpe. UDP risina būtiskas novirzes RTMpose datu apstrādē apmācības un testēšanas laikā, īpaši koordinātu sistēmas un atslēgpunktu formāta transformācijās. Parastajās cilvēka pozes novērtējuma pīpelīnēs standarta operācijas, piemēram, apvēršana un izmēra maiņa, bieži vien nepareizi saskaņo rezultātus, jo īpaši pikseļu transformāciju dēļ, kas noved pie precizitātes zuduma un apvērstu attēlu nepareizas saskaņošanas. UDP to novērš, izveidojot neobjektīvu koordinātu sistēmas transformāciju, saglabājot semantisko saskaņošanu dažādās koordinātu telpās būtisku operāciju laikā (apgriezšana, izmēra maiņa, rotācija, apvēršana). UDP arī ievieš neobjektīvu atslēgpunktu formāta transformāciju, kodējot atslēgpunktus siltumkartēs bez pozicionālās novirzes ieviešanas, ko tālāk pilnveido Gausa sadalījuma informācijas dekodēšanas process. Šī datu apstrādes pieeja sistemātiski uzlabo modeļa veiktspēju, kā parādīts plašos testos uz COCO un CrowdPose datu kopām, kur tā sasniedza uzlabotu precizitāti un samazinātu secinājuma latenci visos augšupejošos un lejupejošos modeļos [Atsauce].</p><p><strong>3. Pēcapstrāde un pozes precizēšana</strong></p><p>Kad tiek prognozēti atslēgpunkti, tiek piemērotas vairākas pēcapstrādes pakāpes, lai precizētu pozes novērtējumu un nodrošinātu stabilitāti starp kadriem.</p><p><strong>3.1 Pozes gludo izlīdzināšana</strong></p><p>Golfa sitieni ietver strauju kustību, kas var ieviests traucējumus vai svārstības novērtēto atslēgpunktu pozīcijās pāri kadriem. Lai to mazinātu, tiek piemērots <strong>One-Euro filtrs</strong>, lai izlīdzinātu atslēgpunktu trajektorijas laikā, nodrošinot, ka nelielas, nefiziskas svārstības atslēgpunktu prognozēs tiek novērstas. One-Euro filtrs darbojas, dinamiski pielāgojot filtra joslas platumu, pamatojoties uz kustības ātrumu, kas ir ideāli piemērots scenārijiem, piemēram, golfa sitieniem, kur kustības ātrums būtiski atšķiras dažādās fāzēs (atpakaļsvings, lejupsvings un turpinājums).</p><p><strong>3.2 kadru izlaišanas mehānisms</strong></p><p>Turpmākai optimizācijai tiek ieviests <strong>kadru izlaišanas mehānisms</strong>, kur detektēšana tiek veikta tikai svarīgajos kadros, un pozes novērtējums tiek interpolēts starpposma kadriem. Tas drastiski samazina skaitļošanas slodzi, neupurējot precizitāti scenārijiem ar ierobežotu kustību starp kadriem, piemēram, golfa sitiena lēnā kustības analīze.</p><p><strong>4. Laika izsekošana un secības konsekvence</strong></p><p>Tā kā golfa sitieni pēc būtības ir secīgi, laika konsekvences saglabāšana pozes novērtējumā ir būtiska. RTMPose-X to risina, izmantojot laika izsekošanas paņēmienus, kas nodrošina, ka atslēgpunktu prognozes ir konsekventes pāri secīgiem kadriem. Tas ietver atslēgpunktu pozīciju izsekošanu laika gaitā un nodrošina, ka to trajektorijas seko reālistiem kustības modeļiem, pamatojoties uz biomehāniskiem ierobežojumiem.</p><p><strong>4.1 atslēgpunktu ātruma un paātrinājuma analīze</strong></p><p>Papildus atslēgpunktu pozīciju izsekošanai RTMPose-X arī novērtē katra atslēgpunkta ātrumu un paātrinājumu. Šī informācija ir svarīga golfa sitiena dinamikas analīzei, sniedzot ieskatu galvenajos veiktspējas rādītājos, piemēram:</p><p><strong>Svinga ātrums</strong>: Aprēķināts, pamatojoties uz plaukstas locītavas ātrumu lejupsvinga laikā.</p><p><strong>Gūžu rotācija</strong>: Analizēta, pamatojoties uz gūžu locītavu rotācijas ātrumu.</p><p><strong>Nūjas trajektorija un nūjas galvas ātrums</strong>: Izsecināts netieši no plaukstas locītavas un elkoņa trajektorijām.</p><p>Šos rādītājus var salīdzināt ar profesionāliem etalona rādītājiem, lai sniegtu atsauksmes par spēlētāja svinga mehāniku.</p><p><strong>5. Secinājumi un reālā laika veiktspēja</strong></p><p>Viss augšupejošais pīpelīns ir optimizēts reālā laika veiktspējai, ļaujot pozes novērtējumu ar ātrumu virs 90 FPS mūsdienu GPU. Augsti efektīvo modeļu arhitektūru (CSPNeXt) un ātro secinājumu paņēmienu (SimCC) izmantošana nodrošina, ka sistēma var apstrādāt augsta kadru biežuma video ievadi, padarot to piemērotu reālā laika atgriezeniskajai saitei apmācības sesiju laikā.</p><p><strong>6. Novērtējums un validācija</strong></p><p>RTMPose-X un RTMDet-M modeļi tiek novērtēti standarta datu kopās, piemēram, COCO un MPII, parādot spēcīgu veiktspēju ar vidējā precizitātes (AP) 75,8% uz COCO datu kopas ķermeņa atslēgpunktiem. Šie rezultāti tiek validēti attiecībā pret pamata patiesības anotācijām golfa svinga datu kopās, nodrošinot modeļa robustumu dinamisko sporta kustību uztvērē.</p><p><strong>6.1 Veiktspējas metrikas</strong></p><p><strong>Vidējā kvadrātiskā kļūda (MSE)</strong>: Izmanto atslēgpunktu prognožu precizitātes kvantificēšanai pret pamata patiesības anotācijām.</p><p><strong>Vidējā precizitāte (AP)</strong>: Novērtē pozes novērtējuma modeļa kopējo veiktspēju.</p><p><strong>Kadra apstrādes laiks</strong>: Salīdzināts, lai nodrošinātu, ka sistēma atbilst reālā laika prasībām (&lt;10 ms uz kadru).</p><p><strong>7. Secinājumi</strong></p><p>Augšup-leju pieeja, izmantojot RTMPose-X un RTMDet-M, nodrošina efektīvu un precīzu metodi reāllaika pozes novērtēšanai sporta analītikā, īpaši golfa svinga analīzei. Ar stabilu atskaites punktu detektēšanu, laika sekošanu un reāllaika secinājumiem, šī metodika piedāvā detalizētas biomehāniskās ieskats golfa svinga dinamikā, palīdzot uzlabot sniegumu un novērst traumas.</p><p>Atsauces</p><p>[1] RTMpose <a href=https://arxiv.org/pdf/2303.07399 rel=external>https://arxiv.org/pdf/2303.07399</a></p><p>[2] CSPNeXt <a href=https://www.sciencedirect.com/science/article/pii/S0952197624000447 rel=external>https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p><p>[3] SIMCC <a href=https://arxiv.org/abs/2107.03332 rel=external>https://arxiv.org/abs/2107.03332</a></p><p>[4] RTMdet <a href=https://arxiv.org/pdf/2212.07784 rel=external>https://arxiv.org/pdf/2212.07784</a></p><p>[5] CSPDarkNet</p><p>[6] Halpe26</p><p>[] AI challenge dataset:</p><p>[] MS Coco dataset:</p><p>[7] Crowdpose dataset: <a href=https://arxiv.org/pdf/1812.00324 rel=external>https://arxiv.org/pdf/1812.00324</a></p><p>[] MPII dataset:</p><p>[] sub-JHMBD dataset:</p><p>[] Halpe dataset:</p><p>[] PoseTrack18 dataset:</p><p>Object365 database: <a href=https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf rel=external>https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p><hr><p><em>Last updated: 2025-03-05</em> | <a href=/sc-support/lv/software-features/markerless-motion-capture/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/lv/index.html><span class="logo-title default-animation">Swing Catalyst Atbalsts</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/lv/getting-started/index.html><a class="padding default-animation" href=/sc-support/lv/getting-started/index.html>Sākuma Pamācība</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/lv/cameras-video/index.html><a class="padding default-animation" href=/sc-support/lv/cameras-video/index.html>Kameras un video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/lv/hardware/index.html><a class="padding default-animation" href=/sc-support/lv/hardware/index.html>Aparatūra</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/lv/software-features/index.html><a class="padding default-animation" href=/sc-support/lv/software-features/index.html>Programmatūra un funkcijas</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/lv/software-features/export-recordings/index.html><a class=padding href=/sc-support/lv/software-features/export-recordings/index.html>Eksportēt ierakstus</a></li><li data-nav-id=/sc-support/lv/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/lv/software-features/frontal-plane-torque/index.html>Frontālās plaknes griezes momenta analīze - lietotāja ceļvedis</a></li><li data-nav-id=/sc-support/lv/software-features/key-metrics/index.html><a class=padding href=/sc-support/lv/software-features/key-metrics/index.html>Galvenie rādītāji</a></li><li class=active data-nav-id=/sc-support/lv/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/lv/software-features/markerless-motion-capture/index.html>Golfa un beisbola svinga markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: augšup-uz-leju pieeja</a></li><li data-nav-id=/sc-support/lv/software-features/graph-library/index.html><a class=padding href=/sc-support/lv/software-features/graph-library/index.html>Grafu bibliotēkas izmantošana</a></li><li data-nav-id=/sc-support/lv/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/lv/software-features/ios-app-sharing/index.html>Ierakstītu video koplietošana ar Swing Catalyst lietotni iOS</a></li><li data-nav-id=/sc-support/lv/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/lv/software-features/body-weight-measurement/index.html>Jaunas ķermeņa svara mērīšanas funkcionalitāte</a></li><li data-nav-id=/sc-support/lv/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/lv/software-features/pressure-stance-settings/index.html>Jauno spiediena un stājas iestatījumu izmantošana</a></li><li data-nav-id=/sc-support/lv/software-features/export-raw-data/index.html><a class=padding href=/sc-support/lv/software-features/export-raw-data/index.html>Kā eksportēt neapstrādātus datus</a></li><li data-nav-id=/sc-support/lv/software-features/export-contacts/index.html><a class=padding href=/sc-support/lv/software-features/export-contacts/index.html>Kā eksportēt studentu kontaktinformāciju</a></li><li data-nav-id=/sc-support/lv/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/lv/software-features/record-a-lesson/index.html>Kā ierakstīt nodarbību</a></li><li data-nav-id=/sc-support/lv/software-features/feedback-screen/index.html><a class=padding href=/sc-support/lv/software-features/feedback-screen/index.html>Kā iestatīt atsauksmes ekrānu</a></li><li data-nav-id=/sc-support/lv/software-features/email-sharing/index.html><a class=padding href=/sc-support/lv/software-features/email-sharing/index.html>Kā iestatīt e-pasta koplietošanu Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/software-features/multiple-displays/index.html><a class=padding href=/sc-support/lv/software-features/multiple-displays/index.html>Kā iestatīt vairākus ekrānus ar Swing Catalyst</a></li><li data-nav-id=/sc-support/lv/software-features/import-from-v1/index.html><a class=padding href=/sc-support/lv/software-features/import-from-v1/index.html>Kā importēt videoklipus no V1</a></li><li data-nav-id=/sc-support/lv/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/lv/software-features/motion-capture-install/index.html>Kā instalēt Swing Catalyst Motion Capture komponentus</a></li><li data-nav-id=/sc-support/lv/software-features/remote-support/index.html><a class=padding href=/sc-support/lv/software-features/remote-support/index.html>Kā izmantot attālināto atbalstu</a></li><li data-nav-id=/sc-support/lv/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/lv/software-features/microphone-trigger/index.html>Kā izmantot mikrofonu kā fiksēšanas aktivizatoru</a></li><li data-nav-id=/sc-support/lv/software-features/explorer/index.html><a class=padding href=/sc-support/lv/software-features/explorer/index.html>Kā izmantot Pārlūku</a></li><li data-nav-id=/sc-support/lv/software-features/force-vectors/index.html><a class=padding href=/sc-support/lv/software-features/force-vectors/index.html>Kā izmantot spēka vektorus</a></li><li data-nav-id=/sc-support/lv/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/lv/software-features/pressure-distribution-overlay/index.html>Kā lietot spiediena sadalījuma pārklājuma funkcionalitāti</a></li><li data-nav-id=/sc-support/lv/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/lv/software-features/swing-catalyst-online/index.html>Kā lietot Swing Catalyst Online</a></li><li data-nav-id=/sc-support/lv/software-features/change-recording-user/index.html><a class=padding href=/sc-support/lv/software-features/change-recording-user/index.html>Kā mainīt lietotāju esošajā ierakstā</a></li><li data-nav-id=/sc-support/lv/software-features/bookmarks/index.html><a class=padding href=/sc-support/lv/software-features/bookmarks/index.html>Kas ir grāmatzīmes?</a></li><li data-nav-id=/sc-support/lv/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/lv/software-features/raw-data-export-guide/index.html>Kas ir iekļauts neapstrādāto datu eksportā</a></li><li data-nav-id=/sc-support/lv/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/lv/software-features/force-graph-phases/index.html>Spēka grafika fāzes</a></li><li data-nav-id=/sc-support/lv/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/lv/software-features/motion-capture-disclosures/index.html>Svarīgi paziņojumi Swing Catalyst Motion Capture rīka lietotājiem</a></li><li data-nav-id=/sc-support/lv/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/lv/software-features/motion-capture-faq/index.html>Swing Catalyst Motion Capture BUJ</a></li><li data-nav-id=/sc-support/lv/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/lv/software-features/motion-capture-settings/index.html>Swing Catalyst Motion Capture iestatījumi</a></li><li data-nav-id=/sc-support/lv/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/lv/software-features/motion-capture-guide/index.html>Swing Catalyst Motion Capture lietotāja vadlīnijas</a></li><li data-nav-id=/sc-support/lv/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/lv/software-features/keyboard-shortcuts/index.html>Tastatūras saīsnes un taustiņu kombinācijas</a></li><li data-nav-id=/sc-support/lv/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/lv/software-features/multiple-forces-graph/index.html>Vairāku spēku grafiks</a></li></ul></li><li data-nav-id=/sc-support/lv/account-setup/index.html><a class="padding default-animation" href=/sc-support/lv/account-setup/index.html>Konts un konfigurācija</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/lv/reference/index.html><a class="padding default-animation" href=/sc-support/lv/reference/index.html>Atsauce</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/markerless-motion-capture/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/markerless-motion-capture/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/markerless-motion-capture/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/markerless-motion-capture/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/markerless-motion-capture/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/markerless-motion-capture/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/markerless-motion-capture/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/markerless-motion-capture/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/markerless-motion-capture/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/markerless-motion-capture/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/markerless-motion-capture/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/markerless-motion-capture/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/markerless-motion-capture/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/markerless-motion-capture/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/markerless-motion-capture/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/markerless-motion-capture/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/markerless-motion-capture/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/markerless-motion-capture/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/markerless-motion-capture/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/markerless-motion-capture/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/markerless-motion-capture/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/markerless-motion-capture/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/markerless-motion-capture/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/markerless-motion-capture/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/markerless-motion-capture/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/markerless-motion-capture/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/markerless-motion-capture/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/markerless-motion-capture/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/markerless-motion-capture/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/markerless-motion-capture/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/markerless-motion-capture/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/markerless-motion-capture/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/markerless-motion-capture/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/markerless-motion-capture/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/markerless-motion-capture/index.html lang=lv selected data-selected>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/markerless-motion-capture/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763290 defer></script><script src=/sc-support/js/theme.min.js?1771763290 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+Jā</p>
+<p><strong>7. Pielietojums golfa svinga analīzē</strong></p>
+<p>Piemērojot RTMPose-X un RTMDet-M ietvaru:</p>
+<p><strong>Izsekot locītavu kustības kadrs pēc kadra</strong>: Sniedz visaptverošus datus katra svinga fāzes analīzei.</p>
+<p><strong>Sniegt reāllaika atsauksmes</strong>: Ļauj iegūt tūlītējus ieskatus svinga stājas un formas par apmācības seansiem.</p>
+<p><strong>Salīdzināt ar ideālo mehāniku</strong>: Ļauj salīdzināt ar ideālo svinga kinemātiku, lai identificētu uzlabojuma jomas.</p>
+<p><strong>8. Secinājumi</strong></p>
+<p>RTMPose-X un RTMDet-M integrācija piedāvā spēcīgu risinājumu reāllaika golfa svinga analīzei. Ar augstu precizitāti, zemu latenci un saderību dažādās aparatūras platformās, šī pieeja no augšas uz leju sniedz detalizētus ieskatus svinga mehānikā. Tai ir nozīmīgs potenciāls palīdzēt gan amatieru, gan profesionāļu golfistu veiktspējas uzlabošanai.</p>
+<p><strong>9. Nākotnes darbi</strong></p>
+<p>Nākotnes attīstības varētu ietvert:</p>
+<p><strong>Mašīnmācīšanās algoritmu integrāciju</strong>: Lai sniegtu prognostiskas analītikas un ieteikumus svinga efektivitātes uzlabošanai.</p>
+<p><strong>Paplašināšanu uz multi-personu scenārijiem</strong>: Uzlabojot pielietojamību komandu sportos vai grupas apmācības vidē.</p>
+<p><strong>Lietotāju-draudzīga saskarnes izstrāde</strong>: Izveidojot lietotnēs vai rīkus, kas padara šo tehnoloģiju pieejamu treneriem un sportistiem bez tehniskām zināšanām.</p>
+<p><strong>Pielikums</strong></p>
+<p><strong>Detalizēta metodika: pieeja no augšas uz leju golfa svinga pozas novērtēšanai, izmantojot RTMPose-X un RTMDet-M</strong></p>
+<p><strong>Pārskats</strong></p>
+<p>Šeit aprakstītā metodika izklāsta detalizētās darbības, kas saistītas ar pieeja no augšas uz leju reāllaika pozas novērtēšanai golfa un beisbola svingam, izmantojot RTMPose stiprās puses atslēgpunktu lokalizācijai un RTMDet objektu detektēšanai.Process ir sadalīts vairākos posmos: detektēšana, atslēgpunktu lokalizācija un pēcapstrāde, no kuriem katrs iegulst ķermeņa locītavu precīzā un efektīvā novērtēšanā golfa svingā biomehāniskai analīzei.</p>
+<p>&ndash;Ievietot attēlu&ndash;</p>
+<p><strong>1. Detektēšanas fāze: reāllaika lokalizācija ar RTMDet-M</strong></p>
+<p>Pieeja no augšas uz leju pirmais posms ietver golfista detektēšanu katrā video kadrā. Sporta scenārijumos, īpaši golfā, ainā parasti ir viens spēlētājs, kas vienkāršo detektēšanas uzdevumu salīdzinājumā ar pūļa scenārijiem.</p>
+<p><strong>1.1 Modeļa arhitektūra</strong></p>
+<p>RTMDet-M tiek izmantots kā objektu detektors cauruļvadā. Tas izmanto konvolūcijas neirālo tīklu (CNN) mugurkaulu, īpaši CSPNeXt mugurkauli, kas paredzēts reāllaika objektu detektēšanas veiktspējas optimizācijai, vienlaikus uzturot līdzsvaru starp ātrumu un precizitāti. Galvenie arhitektūras aspekti ietver:</p>
+<p><strong>Lielas kodola dziļuma-virzienā konvolūcijas</strong>: Tās tiek izmantotas mugurkaula un kakla slāņos, palielinot receptīvo lauku, vienlaikus saglabājot zemas skaitļošanas izmaksas.</p>
+<p><strong>Iezīmju piramīdas tīkls (FPN)</strong>: Multi-skales iezīmju ekstrakcijas paņēmiens, kas ļauj detektēt objektus dažādos skalos, nodrošinot, ka golfists var tikt detektēts neatkarīgi no viņa attāluma no kameras.</p>
+<p><strong>1.2 Dinamisks etiķešu piešķiršana</strong></p>
+<p>RTMDet-M izmanto dinamiskas etiķešu piešķiršanas stratēģiju, kas uzlabo detektēšanas precizitāti, piešķirot mīkstas etiķetes objektiem, pamatojoties uz klasifikācijas un lokalizācijas zaudējuma kombināciju. Etiķešu piešķiršanu vadīja SimOTA algoritms, kas dinamiski atlasa pozitīvus paraugus, pamatojoties uz viņu varbūtību atbilst patiesajam objektam. Šis paņēmiens nodrošina robusta detektēšanu mainīgos gaismas un vides apstākļos, kuri bieži tiek konstatēti ārējās golfa ainavās.</p>
+<p><strong>1.3 Robežframūra lodziņa prognozēšana</strong></p>
+<p>Detektors izvada Robežframūra lodziņus, kas ieskauj golfisti katrā kadrā. Šie Robežframūra lodziņi nodrošina telpiskos ierobežojumus, kuros darbosies pozas novērtēšanas modelis, samazinot skaitļošanas slodzi uz nākamās pozas novērtēšanas fāzes, fokusējoties tikai uz attiecīgajiem kadra apgabaliem. Šajā kontekstā RTMDet-M ģenerē Robežframūra lodziņus reāllaikā ar ātrumu virs 300 FPS uz augstperfomances aparatūras, nodrošinot, ka tas var sekot golfa svinga ātrajām dinamikām.</p>
+<p><strong>1.4 Personas ne-maksimālā supresija (NMS)</strong></p>
+<p>Vairāku personu scenārijiem (lai arī reti golfa svinga analīzē) RTMDet-M iekļauj Pozas Ne-maksimālo supresiju (NMS) algoritmu, kas novērš redundantus atslēgpunktu atklājumus, nodrošinot, ka tiek saglabāti tikai pārliecinošākie atklājumi visiem. Tas ir kritisks gadījumos, kad pārklājoši Robežframūra lodziņi varētu tikt atklāti pārpildītās ainas vai video sekvencēs.</p>
+<p><strong>1.5 Apmācības Dataset un Veiktspēja</strong></p>
+<p>RTMDet-M ir apmācīts binārajā klasifikācijas uzdevumā uz personu instancēm Object356 dataset.</p>
+<p><strong>2. Pozas novērtēšanas fāze: RTMPose-X Atslēgpunkta lokalizācija</strong></p>
+<p>Tiklīdz golfista Robežframūra lodziņš ir izveidots, nākamā fāze ietver precīzas galveno ķermeņa locītavu atrašanās vietas noteikšanu šajā reģionā. Šim nolūkam tiek izmantots RTMPose-X, augstperfomances pozas novērtēšanas modelis.</p>
+<p><strong>2.1 SimCC balstīta atslēgpunkta lokalizācija</strong></p>
+<p>RTMPose-X izmanto SimCC (Simple Coordinate Classification) algoritmu, kas atslēgpunkta lokalizāciju uztver kā klasifikācijas problēmu. Atšķirībā no tradicionālajām siltumkartes metodēm, SimCC sadala katra atslēgpunkta x un y koordinātes kastēs un klasificē tieši to kasti, kurā atrodas katrs atslēgpunkts. Šī pieeja ievērojami samazina skaitļošanas sarežģītību un uzlabo secinājuma ātrumu, vienlaikus saglabājot augstu precizitāti cilvēka pozas novērtēšanas uzdevumiem.</p>
+<p><strong>2.2 CSPNeXt Backbone</strong></p>
+<p>Līdzīgi RTMDet-M, RTMPose-X arī izmanto CSPNeXt backbone, kas ir pielāgots blīvai prognozēšanai, piemēram, pozas novērtēšanai. CSPNeXt backbone ir priekšrocīgs šajā scenārijā šādu iemeslu dēļ:</p>
+<p><strong>Viegla arhitektūra</strong>: Modeļa arhitektūra ir izstrādāta, lai samazinātu parametru skaitu un maksimālu produktivitāti, padarot to ideālu reāllaika lietojumprogrammām.</p>
+<p><strong>Efektīva pazīmju ieguve</strong>: CSPNeXt pazīmju ieguve slāņi ir optimizēti augstizšķirtspējas attēlu apstrādei, kas ir svarīgi, lai noteiktu sīkus detaļus ātri kustīgajās ķermeņa daļās golfa svinga laikā, piemēram, plaukstas locītavās, elkos un ceļgaļos.</p>
+<p><strong>2.3 Atslēgpunkta pārstāvniecība</strong></p>
+<p>RTMPose-X izvada atslēgpunktu atrašanās vietas visiem attiecīgajiem ķermeņa daļām, ieskaitant:</p>
+<p><strong>Augšķermeņa locītavas</strong>: pleci, elkoni, plaukstas locītavas un kakls</p>
+<p><strong>Apakšējā ķermeņa locītavas</strong>: gurņi, ceļgali un potītes</p>
+<p><strong>Papildu locītavas</strong>: galva, mugurkauls un citi galvenie punkti, kas ir atbilstoši svinga analīzei</p>
+<p>384x288 ievades attēlu izšķirtspēja nodrošina, ka pat smalki locītavu kustības tiek uztvertas precīzi, vienlaikus saglabājot sistēmas spēju darbināties reāllaikā.</p>
+<p><strong>2.4 RTMPose priekšapstrāde: Objektīva datu apstrāde (UDP)</strong></p>
+<p>Pirms apgrieztā attēla ievadīšanas RTMPose modelī tiek veikts Objektīvas datu apstrādes (UDP) solis. UDP risina kritiskas novirzes RTMPose datu apstrādē apmācības un testēšanas laikā, it īpaši koordinātu sistēmas un atslēgpunkta formāta transformācijās. Parastajās cilvēka pozas novērtēšanas cauruļvados standarta operācijas, piemēram, apgriešana un izmēra maiņa, bieži vien nepareizi izlīdzina rezultātus, jo īpaši pikseļu transformāciju dēļ, kas izraisa precizitātes zudumu un apgriestu attēlu neatbilstību. UDP to laboja, izveidojot objektīvu koordinātu sistēmas transformāciju, saglabājot semantisko izlīdzinājumu dažādās koordinātu telpās būtiskas operācijas (apgriešana, izmēra maiņa, rotācija, apgriešana) laikā. UDP arī ievieš objektīvu atslēgpunkta formāta transformāciju, kodējot atslēgpunktus siltumkartēs bez pozīcijas novirzes, tālāk refinētu ar Gausa sadalījuma apzinātu dekodēšanas procesu. Šī datu apstrādes pieeja sistēmiski uzlabo modeļa veiktspēju, kā parādīts plašos COCO un CrowdPose dataset testos, kur tas sasniedza uzlabotu precizitāti un samazinātu secinājuma latenci visā top-down un bottom-up modeļos [Ref].</p>
+<p><strong>3. Pēcapstrāde un pozas refinēšana</strong></p>
+<p>Tiklīdz atslēgpunkti ir prognozēti, tiek veikti vairāki pēcapstrādes soļi, lai refinētu pozas novērtēšanu un nodrošinātu stabilitāti starp kadriem.</p>
+<p><strong>3.1 Pozas izlīdzināšana</strong></p>
+<p>Golfa svingi ietver straujos kustības, kas var ieviest troksni vai svārstības novērtētajās atslēgpunkta pozīcijās starp kadriem. To mazināšanai tiek lietots <strong>Viena-Eiro filtrs</strong>, lai izlīdzinātu atslēgpunkta trajektorijas laika gaitā, nodrošinot, ka mazie, nefizikāli atslēgpunkta prognozēšanas svārstību svārstības tiek novērstas. Viena-Eiro filtrs darbojas, dinamiski pielāgojot filtra joslas platumu atkarībā no kustības ātruma, kas ir ideāli scenārijiem, piemēram, golfa svingi, kur kustības ātrums krasi atšķiras dažādās fāzēs (atpakaļsvings, lejup svings un turpinājums).</p>
+<p><strong>3.2 Kadru palaišanas mehānisma</strong></p>
+<p>Tālākai optimizācijai tiek ieviests <strong>kadru palaišanas mehānisms</strong>, kurā detektēšana tiek veikta tikai galvenajos kadros, un pozas novērtēšana tiek interpolēta starpposma kadriem. Tas strauji samazina skaitļošanas slodzi bez precizitātes zaudēšanas scenārijiem ar ierobežotu kustības starp kadriem, piemēram, golfa svinga lēnās analīzes gadījumā.</p>
+<p><strong>4. Temporālā izsekošana un sekvences konsekvence</strong></p>
+<p>Ņemot vērā, ka golfa svingi pēc būtības ir secīgi, temporālās konsekvences uzturēšana pozas novērtēšanā ir būtiska. RTMPose-X to risina, izmantojot temporālas izsekošanas paņēmienus, kas nodrošina, ka atslēgpunktu prognozes ir konsekventes secīgos kadros. Tas ietver atslēgpunktu pozīciju izsekošanu laika gaitā un nodrošināšanu, ka to trajektorijas seko reālistiskām kustības modeļiem, pamatojoties uz biomehāniskiem ierobežojumiem.</p>
+<p><strong>4.1 Atslēgpunkta ātruma un paātrinājuma analīze</strong></p>
+<p>Papildus atslēgpunktu pozīciju izsekošanai, RTMPose-X arī novērtē katra atslēgpunkta ātrumu un paātrinājumu. Šī informācija ir kritiski svarīga golfa svinga dinamikas analīzei, sniedzot ieskatu galvenajos veiktspējas mērogos, piemēram:</p>
+<p><strong>Svinga ātrums</strong>: Aprēķināts pamatojoties uz plaukstas locītavas ātrumu lejup svinga laikā.</p>
+<p><strong>Gurņa rotācija</strong>: Analizēta caur gurņa locītavu rotācijas leņķisko ātrumu.</p>
+<p><strong>Nūjas trajektorija un galvas ātrums</strong>: Secinami netieši no plaukstas locītavas un elkoņa trajektorijām.</p>
+<p>Šos mērogus var salīdzināt ar profesionāļu etalondatiem, lai sniegtu atsauksmes par spēlētāja svinga mehāniku.</p>
+<p><strong>5. Secinājumi un reāllaika veiktspēja</strong></p>
+<p>Visa top-down pipeline ir optimizēta reāllaika veiktspējai, ļaujot pozas novērtēšanu ar ātrumu virs 90 FPS uz mūsdienu GPU. Ļoti efektīvu modeļa arhitektūru (CSPNeXt) un ātru secinājumu paņēmienu (SimCC) lietošana nodrošina, ka sistēma var apstrādāt augsta kadru ātruma video ievadi, padarot to piemērotu reāllaika atsauksmei apmācības sesiju laikā.</p>
+<p><strong>6. Novērtēšana un validācija</strong></p>
+<p>RTMPose-X un RTMDet-M modeļi tiek novērtēti standarta dataset, piemēram, COCO un MPII, parādot spēcīgu veiktspēju ar vidējo precizitāti (AP) 75,8% uz COCO dataset ķermeņa atslēgpunktiem. Šie rezultāti tiek validēti salīdzinājumā ar ground-truth anotācijām golfa svinga datasetos, nodrošinot modeļa robustumu dinamisko sporta kustību uztveršanā.</p>
+<p><strong>6.1 Veiktspējas metrikas</strong></p>
+<p><strong>Mean Squared Error (MSE)</strong>: Tiek izmantots, lai kvantitatīvi novērtētu atslēgpunktu prognožu precizitāti salīdzinājumā ar zemes patiesības anotācijām.</p>
+<p><strong>Average Precision (AP)</strong>: Novērtē pozas novērtēšanas modeļa kopējo veiktspēju.</p>
+<p><strong>Kadra apstrādes laiks</strong>: Etalons, lai nodrošinātu, ka sistēma atbilst reālā laika prasībām (&lt;10 ms par kadru).</p>
+<p><strong>7. Secinājums</strong></p>
+<p>Pieeja no augšas uz leju, izmantojot RTMPose-X un RTMDet-M, nodrošina efektīvu un precīzu metodi reālā laika pozas novērtēšanai sporta analitikā, īpaši golfa šūpoles analīzei. Ar noturīgu atslēgpunktu detektēšanu, laika sekošanu un reālā laika secinājumiem, šī metodika sniedz detalizētas biomehāniskas ieskatas golfa šūpoles dinamikā, palīdzot uzlabot veiktspēju un novērst traumas.</p>
+<p>Atsauces</p>
+<p>[1] RTMpose <a href="https://arxiv.org/pdf/2303.07399" rel="external">https://arxiv.org/pdf/2303.07399</a></p>
+<p>[2] CSPNeXt <a href="https://www.sciencedirect.com/science/article/pii/S0952197624000447" rel="external">https://www.sciencedirect.com/science/article/pii/S0952197624000447</a></p>
+<p>[3] SIMCC <a href="https://arxiv.org/abs/2107.03332" rel="external">https://arxiv.org/abs/2107.03332</a></p>
+<p>[4] RTMdet <a href="https://arxiv.org/pdf/2212.07784" rel="external">https://arxiv.org/pdf/2212.07784</a></p>
+<p>[5] CSPDarkNet</p>
+<p>[6] Halpe26</p>
+<p>[] AI izaicinājuma dataset:</p>
+<p>[] MS Coco dataset:</p>
+<p>[7] Crowdpose dataset: <a href="https://arxiv.org/pdf/1812.00324" rel="external">https://arxiv.org/pdf/1812.00324</a></p>
+<p>[] MPII dataset:</p>
+<p>[] sub-JHMBD dataset:</p>
+<p>[] Halpe dataset:</p>
+<p>[] PoseTrack18 dataset:</p>
+<p>Object365 datu bāze: <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf" rel="external">https://openaccess.thecvf.com/content_ICCV_2019/papers/Shao_Objects365_A_Large-Scale_High-Quality_Dataset_for_Object_Detection_ICCV_2019_paper.pdf</a></p>
+<p><em>Pēdējoreiz atjaunināts: 2025-03-05</em> | <a href="/sc-support/lv/software-features/markerless-motion-capture/index.html">Skatīt oficiālajā atbalsta vietnē</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/lv/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Atbalsts</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/lv/getting-started/index.html"><a class="padding default-animation" href="/sc-support/lv/getting-started/index.html">Darba sākšana</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/lv/cameras-video/index.html">Kameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/hardware/index.html"><a class="padding default-animation" href="/sc-support/lv/hardware/index.html">Aparatūra</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/lv/software-features/index.html"><a class="padding default-animation" href="/sc-support/lv/software-features/index.html">Programmatūra un funkcijas</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/lv/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/lv/software-features/frontal-plane-torque/index.html">Frontalā Plakne Griezes Momenta Analīze - Lietotāja Rokasgrāmata</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/lv/software-features/key-metrics/index.html">Galvenie rādītāji</a></li>
+            <li class="active " data-nav-id="/sc-support/lv/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/lv/software-features/markerless-motion-capture/index.html">Golfa un beisbola šūpoles markerless Motion Capture uzlabošana, izmantojot RTMPose un RTMDet: pieeja no augšas uz leju</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/graph-library/index.html"><a class="padding" href="/sc-support/lv/software-features/graph-library/index.html">Grafiku bibliotēkas izmantošana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/lv/software-features/ios-app-sharing/index.html">Ierakstīto video kopīgošana, izmantojot Swing Catalyst lietotni iOS ierīcēm</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/lv/software-features/export-recordings/index.html">Ierakstu eksportēšana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/lv/software-features/body-weight-measurement/index.html">Jauna ķermeņa svara mērīšanas funkcionalitāte</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/lv/software-features/pressure-stance-settings/index.html">Jauno Spiediens un Stāvpoze iestatījumu izmantošana</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/lv/software-features/export-raw-data/index.html">Kā eksportēt neapstrādātus datus</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/lv/software-features/export-contacts/index.html">Kā eksportēt studentu kontaktinformāciju</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/lv/software-features/record-a-lesson/index.html">Kā ierakstīt nodarbību</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/lv/software-features/email-sharing/index.html">Kā iestatīt e-pasta koplietošanu Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/lv/software-features/import-from-v1/index.html">Kā importēt videoierakstus no V1</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/lv/software-features/motion-capture-install/index.html">Kā instalēt Swing Catalyst Motion Capture komponentus</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/lv/software-features/microphone-trigger/index.html">Kā izmantot mikrofonu kā ierakstīšanas aktivizatoru</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/lv/software-features/force-vectors/index.html">Kā izmantot Spēka vektorus</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/remote-support/index.html"><a class="padding" href="/sc-support/lv/software-features/remote-support/index.html">Kā lietot attālo atbalstu</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/explorer/index.html"><a class="padding" href="/sc-support/lv/software-features/explorer/index.html">Kā lietot Pārlūku</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/lv/software-features/pressure-distribution-overlay/index.html">Kā lietot Spiediena sadalījuma pārklājuma funkcionalitāti</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/lv/software-features/swing-catalyst-online/index.html">Kā lietot Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/lv/software-features/change-recording-user/index.html">Kā mainīt lietotāju esošam ierakstam</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/lv/software-features/feedback-screen/index.html">Kā uzstādīt Atsauksmes ekrānu</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/lv/software-features/multiple-displays/index.html">Kā uzstādīt vairākus displejus ar Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/lv/software-features/bookmarks/index.html">Kas ir grāmatzīmes?</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/lv/software-features/raw-data-export-guide/index.html">Kas ir iekļauts neapstrādāto datu eksportā</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/lv/software-features/multiple-forces-graph/index.html">Multiple Forces Graph</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/lv/software-features/force-graph-phases/index.html">Spēka grafika fāzes</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/lv/software-features/motion-capture-disclosures/index.html">Svarīgi paziņojumi SwingCatalyst Motion Capture rīka lietotājiem</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/lv/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture BUJ</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/lv/software-features/motion-capture-settings/index.html">Swing Catalyst Motion Capture Iestatījumi</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/lv/software-features/motion-capture-guide/index.html">Swing Catalyst Motion Capture Lietotāja Rokasgrāmata</a></li>
+            <li class="" data-nav-id="/sc-support/lv/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/lv/software-features/keyboard-shortcuts/index.html">Tastatūras īsceļi un karstiņi</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/account-setup/index.html"><a class="padding default-animation" href="/sc-support/lv/account-setup/index.html">Konts &amp; Uzstādīšana</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/lv/reference/index.html"><a class="padding default-animation" href="/sc-support/lv/reference/index.html">Atsauce</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/markerless-motion-capture/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/markerless-motion-capture/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/markerless-motion-capture/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/markerless-motion-capture/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/markerless-motion-capture/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/markerless-motion-capture/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/markerless-motion-capture/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/markerless-motion-capture/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/markerless-motion-capture/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/markerless-motion-capture/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/markerless-motion-capture/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/markerless-motion-capture/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/markerless-motion-capture/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/markerless-motion-capture/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/markerless-motion-capture/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/markerless-motion-capture/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/markerless-motion-capture/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/markerless-motion-capture/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/markerless-motion-capture/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/markerless-motion-capture/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/markerless-motion-capture/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/markerless-motion-capture/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/markerless-motion-capture/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/markerless-motion-capture/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/markerless-motion-capture/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/markerless-motion-capture/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/markerless-motion-capture/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/markerless-motion-capture/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/markerless-motion-capture/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/markerless-motion-capture/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/markerless-motion-capture/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/markerless-motion-capture/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/markerless-motion-capture/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/markerless-motion-capture/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/markerless-motion-capture/index.html" lang="lv" selected data-selected>Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/markerless-motion-capture/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520165" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520165" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,27 +1,464 @@
-<!doctype html><html id=R-html lang=bg dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Тази статия за поддържка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst, и за какво се използват. Има някои разлики..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Какво са отметките? :: Поддръжка на Swing Catalyst"><meta name=twitter:description content="Тази статия за поддържка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst, и за какво се използват. Има някои разлики..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html"><meta property="og:site_name" content="Поддръжка на Swing Catalyst"><meta property="og:title" content="Какво са отметките? :: Поддръжка на Swing Catalyst"><meta property="og:description" content="Тази статия за поддържка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst, и за какво се използват. Има някои разлики..."><meta property="og:locale" content="bg"><meta property="og:type" content="article"><meta property="article:section" content="Софтуер и функции"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Database"><meta itemprop=name content="Какво са отметките? :: Поддръжка на Swing Catalyst"><meta itemprop=description content="Тази статия за поддържка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst, и за какво се използват. Има някои разлики..."><meta itemprop=wordCount content="604"><meta itemprop=keywords content="Force-Data,Database"><title>Какво са отметките? :: Поддръжка на Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/bookmarks/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/bookmarks/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/bookmarks/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/bookmarks/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/bookmarks/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/bookmarks/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/bookmarks/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/bookmarks/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/bookmarks/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/bookmarks/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/bookmarks/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/bookmarks/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/bookmarks/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/bookmarks/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/bookmarks/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/bookmarks/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/bookmarks/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/bookmarks/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/bookmarks/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/bookmarks/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/bookmarks/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/bookmarks/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/bookmarks/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/bookmarks/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/bookmarks/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/bookmarks/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/bookmarks/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/bookmarks/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/bookmarks/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/bookmarks/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/bookmarks/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/bookmarks/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763286 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763286 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763286 defer></script><script src=/sc-support/js/search.min.js?1771763286 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.bg.js?1771763286"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763286 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763286 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763286 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763286 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763286 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763286 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763286 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763286 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/bookmarks/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/bg/software-features/bookmarks/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#въведение>Въведение</a></li><li><a href=#what-are-bookmarks>What are bookmarks?</a></li><li><a href=#how-do-i-set-bookmarks>How do I set bookmarks?</a></li><li><a href=#why-should-i-set-bookmarks>Why should I set bookmarks?</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/bg/index.html><span itemprop=name>Поддръжка на Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/bg/software-features/index.html><span itemprop=name>Софтуер и функции</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Какво са отметките?</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/bg/software-features/raw-data-export-guide/index.html title="Какво е включено в експорта на сурови данни (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/bg/software-features/keyboard-shortcuts/index.html title="Клавишни комбинации и горещи клавиши (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/bg/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/bg/tags/force-data/index.html>Force-Data</a></li></ul></div></header><h1 id=какво-са-отметките>Какво са отметките?</h1><h2 id=въведение>Въведение<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Тази статия за поддръжка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst, както и за какво се използват. Има някои разлики между Motion Catalyst и Swing Catalyst, но основните принципи на функциониране на отметките и техните характеристики са еднакви, което означава, че тази статия може да се използва за двата софтуера.</p><p>Примерна снимка от Motion Catalyst на запис на скок с противодвижение</p><p><a href=#R-image-52b1595b85d741e1b54d9968e5f3eb15 class=lightbox-link><img alt=MotionCatalyst_IigJ2pRrKQ.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-iigj2prrkq-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-52b1595b85d741e1b54d9968e5f3eb15><img alt=MotionCatalyst_IigJ2pRrKQ.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-iigj2prrkq-png.png></a></p><h2 id=what-are-bookmarks>What are bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Bookmarks are used to identify key points in a recording. For certain sports & activities, the bookmarks correlate to specific phases in the activity, or simply indicate start and end of movement.</p><p>For counter movement jump (as pictured), these phases are: unweighting, braking, propulsion, takeoff, and landing.</p><p>If we look more closely the screenshots above, we see that there are a number of arrows above the playback timeline, each arrow, or bookmark, correlate to different phases of the recorded activity.</p><p><a href=#R-image-d3c94acd3221b6be81038f2e283bcad4 class=lightbox-link><img alt=MotionCatalyst_7R0EZLelgS.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-7r0ezlelgs-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d3c94acd3221b6be81038f2e283bcad4><img alt=MotionCatalyst_7R0EZLelgS.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-7r0ezlelgs-png.png></a></p><p>The number of bookmarks available depend on the activity. Certain activities have more bookmarks than others. Additionally, bookmarks are set automatically for certain activities where the phases are identified from force data. We are working to improve this, so the list below is subject to change.</p><p>Currently the sports and activities that have automatic bookmarks set by key metrics are:</p><p>Sport
-Activity</p><p>Fitness
-Counter Movement Jump</p><p>Fitness
-Squat Jump</p><p>Fitness
-Isometric mid-thigh pull</p><p>Fitness
-Dynamic & Static balance</p><p>Fitness
-Upper Body Plank</p><p>Ski jump</p><p>Baseball
-Batting</p><p>The bookmark positions are stored in the database for each recording and in any exported take (recording with data) file.</p><h2 id=how-do-i-set-bookmarks>How do I set bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To change or manually set the bookmark positions:</p><ul><li><p>&ldquo;Unlock&rdquo; the bookmarks by pressing the &ldquo;bookmarks&rdquo; button.</p></li><li><p>Once selected you can change the position of the bookmarks by dragging the arrow(s).</p></li><li><p>When finished, make sure to &ldquo;lock&rdquo; the bookmarks again by deselecting the &ldquo;bookmarks&rdquo; icon, exiting the &ldquo;edit bookmark&rdquo; mode.</p></li></ul><p><a href=#R-image-82fed0e5d2626f8e4bf664b3345c8c58 class=lightbox-link><img alt=hTxwCEhhvp.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/htxwcehhvp-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-82fed0e5d2626f8e4bf664b3345c8c58><img alt=hTxwCEhhvp.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/htxwcehhvp-png.png></a></p><p><a href=#R-image-ce908999f95aa4ad0603b461d71c4dda class=lightbox-link><img alt=MotionCatalyst_JWfhTldXeS.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-jwfhtldxes-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-ce908999f95aa4ad0603b461d71c4dda><img alt=MotionCatalyst_JWfhTldXeS.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-jwfhtldxes-png.png></a></p><p>To reset the positions click the &ldquo;reset A&rdquo; (or B) button(s) (shown to the left of the bookmarks button).</p><p>Grey bookmarks indicate that they haven&rsquo;t been set, or changed.</p><p><a href=#R-image-95123e5e89a96600fdb82c92109ab4b9 class=lightbox-link><img alt=MotionCatalyst_ttrfziAOSo.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-ttrfziaoso-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-95123e5e89a96600fdb82c92109ab4b9><img alt=MotionCatalyst_ttrfziAOSo.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-ttrfziaoso-png.png></a></p><p>The bookmarks are also represented in the data graphs as vertical lines, indicating <em>where</em> in the recording the different phases are in time (X axis of the graph):</p><p><a href=#R-image-d5ebdba8d0be2b4edfbfc7db73b2ebb9 class=lightbox-link><img alt=image__2_.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/image-2-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d5ebdba8d0be2b4edfbfc7db73b2ebb9><img alt=image__2_.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/image-2-png.png></a></p><p><strong>Tip</strong>: The position of the first and (or) last bookmark decide how much data is displayed in the databoxes. The duration before the first bookmark and after the last bookmark depends on the activity and sport, but changing this manually can be helpful to view certain parts of a recording. This is especially helpful for recordings done under the &ldquo;free movement&rdquo; activity, which can be up to 30 seconds in duration.</p><p><a href=#R-image-74c5c86d57e32029ee1f823118e4f598 class=lightbox-link><img alt=MotionCatalyst_eUbaCWiclM.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-eubacwiclm-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-74c5c86d57e32029ee1f823118e4f598><img alt=MotionCatalyst_eUbaCWiclM.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-eubacwiclm-gif.png></a></p><p>Note: We are only changing what we are looking at &ldquo;in time&rdquo;, none of the stored data is actually changed in any way.</p><p>For more details on how to view and manipulate the graphs please see <a href=/sc-support/bg/software-features/graph-library/index.html>this article</a>.</p><h2 id=why-should-i-set-bookmarks>Why should I set bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To allow easy playback synchronization between recordings we recommend setting bookmarks.</p><p>For example, say you want to view two recordings side by side of of a counter movement jump performed by two different users where you wish to synchronize the playback around a specific phase.</p><ul><li><p>Click the &ldquo;Synchronize&rdquo; button.</p></li><li><p>Select the phase / bookmark you wish to synchronize on.</p></li><li><p>Press play.</p></li></ul><p><a href=#R-image-c718b9bc9e738461d5a9584952e6c4d6 class=lightbox-link><img alt=MotionCatalyst_vG2pjBkyKz.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-vg2pjbkykz-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c718b9bc9e738461d5a9584952e6c4d6><img alt=MotionCatalyst_vG2pjBkyKz.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-vg2pjbkykz-png.png></a></p><p>Note: The amount of available bookmarks, and name of the phases varies depending on the sport and activity.</p><p><a href=#R-image-5a6f36e738b778f46b846178c1833318 class=lightbox-link><img alt=MotionCatalyst_91cMd3GPuD.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-91cmd3gpud-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5a6f36e738b778f46b846178c1833318><img alt=MotionCatalyst_91cMd3GPuD.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-91cmd3gpud-gif.png></a></p><p>Example synchronizing bookmarks to impact for two golf swings:</p><p><a href=#R-image-c3e8da77a25556e58fd991e082b11eaf class=lightbox-link><img alt=MotionCatalyst_YKLskF87yC.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-yklskf87yc-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c3e8da77a25556e58fd991e082b11eaf><img alt=MotionCatalyst_YKLskF87yC.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-yklskf87yc-gif.png></a></p><p>This can be done for any sport or activity. For more details on &ldquo;compare mode&rdquo; please see the &ldquo;layouts&rdquo; section of our <a href=/sc-support/bg/getting-started/user-guide/index.html>user guide</a>.</p><hr><p><em>Last updated: 2024-06-07</em> | <a href=/sc-support/bg/software-features/bookmarks/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/bg/index.html><span class="logo-title default-animation">Поддръжка на Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/bg/getting-started/index.html><a class="padding default-animation" href=/sc-support/bg/getting-started/index.html>Начало</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/bg/cameras-video/index.html><a class="padding default-animation" href=/sc-support/bg/cameras-video/index.html>Камери и видео</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/bg/hardware/index.html><a class="padding default-animation" href=/sc-support/bg/hardware/index.html>Хардуер</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/bg/software-features/index.html><a class="padding default-animation" href=/sc-support/bg/software-features/index.html>Софтуер и функции</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/bg/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/bg/software-features/motion-capture-faq/index.html>Swing Catalyst Често задавани въпроси за фиксиране на движение</a></li><li data-nav-id=/sc-support/bg/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/bg/software-features/frontal-plane-torque/index.html>Анализ на въртящия момент на челната равнина - Ръководство на потребителя</a></li><li data-nav-id=/sc-support/bg/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/bg/software-features/motion-capture-disclosures/index.html>Важни разкрития за потребителите на инструмента за заснемане на движение Swing Catalyst</a></li><li data-nav-id=/sc-support/bg/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/bg/software-features/multiple-forces-graph/index.html>График на множество сили</a></li><li data-nav-id=/sc-support/bg/software-features/export-recordings/index.html><a class=padding href=/sc-support/bg/software-features/export-recordings/index.html>Експортиране на записи</a></li><li data-nav-id=/sc-support/bg/software-features/graph-library/index.html><a class=padding href=/sc-support/bg/software-features/graph-library/index.html>Използване на библиотеката за графи</a></li><li data-nav-id=/sc-support/bg/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/bg/software-features/pressure-stance-settings/index.html>Използване на новите настройки за налягане и стойка</a></li><li data-nav-id=/sc-support/bg/software-features/export-contacts/index.html><a class=padding href=/sc-support/bg/software-features/export-contacts/index.html>Как да експортирате контактна информация на ученик</a></li><li data-nav-id=/sc-support/bg/software-features/export-raw-data/index.html><a class=padding href=/sc-support/bg/software-features/export-raw-data/index.html>Как да експортирате суровите данни</a></li><li data-nav-id=/sc-support/bg/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/bg/software-features/record-a-lesson/index.html>Как да запишете урок</a></li><li data-nav-id=/sc-support/bg/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/bg/software-features/swing-catalyst-online/index.html>Как да използвате Swing Catalyst Online</a></li><li data-nav-id=/sc-support/bg/software-features/remote-support/index.html><a class=padding href=/sc-support/bg/software-features/remote-support/index.html>Как да използвате дистанционна поддръжка</a></li><li data-nav-id=/sc-support/bg/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/bg/software-features/microphone-trigger/index.html>Как да използвате микрофон като тригер за запис</a></li><li data-nav-id=/sc-support/bg/software-features/explorer/index.html><a class=padding href=/sc-support/bg/software-features/explorer/index.html>Как да използвате Навигатора</a></li><li data-nav-id=/sc-support/bg/software-features/force-vectors/index.html><a class=padding href=/sc-support/bg/software-features/force-vectors/index.html>Как да използвате силови вектори</a></li><li data-nav-id=/sc-support/bg/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/bg/software-features/pressure-distribution-overlay/index.html>Как да използвате функционалността на наслагването на разпределение на налягането</a></li><li data-nav-id=/sc-support/bg/software-features/import-from-v1/index.html><a class=padding href=/sc-support/bg/software-features/import-from-v1/index.html>Как да импортирате видеа от V1</a></li><li data-nav-id=/sc-support/bg/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/bg/software-features/motion-capture-install/index.html>Как да инсталирате компонентите за фиксиране на движение на Swing Catalyst</a></li><li data-nav-id=/sc-support/bg/software-features/email-sharing/index.html><a class=padding href=/sc-support/bg/software-features/email-sharing/index.html>Как да конфигурирате споделяне по имейл в Swing Catalyst</a></li><li data-nav-id=/sc-support/bg/software-features/feedback-screen/index.html><a class=padding href=/sc-support/bg/software-features/feedback-screen/index.html>Как да настроите екран за обратна връзка</a></li><li data-nav-id=/sc-support/bg/software-features/multiple-displays/index.html><a class=padding href=/sc-support/bg/software-features/multiple-displays/index.html>Как да настроите няколко дисплея със Swing Catalyst</a></li><li data-nav-id=/sc-support/bg/software-features/change-recording-user/index.html><a class=padding href=/sc-support/bg/software-features/change-recording-user/index.html>Как да промените потребителя на съществуващ запис</a></li><li data-nav-id=/sc-support/bg/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/bg/software-features/raw-data-export-guide/index.html>Какво е включено в експорта на сурови данни</a></li><li class=active data-nav-id=/sc-support/bg/software-features/bookmarks/index.html><a class=padding href=/sc-support/bg/software-features/bookmarks/index.html>Какво са отметките?</a></li><li data-nav-id=/sc-support/bg/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/bg/software-features/keyboard-shortcuts/index.html>Клавишни комбинации и горещи клавиши</a></li><li data-nav-id=/sc-support/bg/software-features/key-metrics/index.html><a class=padding href=/sc-support/bg/software-features/key-metrics/index.html>Ключови показатели</a></li><li data-nav-id=/sc-support/bg/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/bg/software-features/motion-capture-settings/index.html>Настройки на Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/bg/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/bg/software-features/body-weight-measurement/index.html>Нова функционалност за измерване на телесното тегло</a></li><li data-nav-id=/sc-support/bg/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/bg/software-features/markerless-motion-capture/index.html>Подобряване на безмаркерния системата за фиксиране на движение при голф и бейзбол замах с помощта на RTMPose и RTMDet: подход От горе надолу</a></li><li data-nav-id=/sc-support/bg/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/bg/software-features/motion-capture-guide/index.html>Ръководство на потребителя на Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/bg/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/bg/software-features/ios-app-sharing/index.html>Споделяне на записани видеа със Swing Catalyst приложението за iOS</a></li><li data-nav-id=/sc-support/bg/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/bg/software-features/force-graph-phases/index.html>Фази на граф на силата</a></li></ul></li><li data-nav-id=/sc-support/bg/account-setup/index.html><a class="padding default-animation" href=/sc-support/bg/account-setup/index.html>Акаунт и Конфигурация</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/bg/reference/index.html><a class="padding default-animation" href=/sc-support/bg/reference/index.html>Справка</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/bookmarks/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/bookmarks/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/bookmarks/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/bookmarks/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/bookmarks/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/bookmarks/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/bookmarks/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/bookmarks/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/bookmarks/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/bookmarks/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/bookmarks/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/bookmarks/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/bookmarks/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/bookmarks/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/bookmarks/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/bookmarks/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/bookmarks/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/bookmarks/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/bookmarks/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/bookmarks/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/bookmarks/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/bookmarks/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/bookmarks/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/bookmarks/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/bookmarks/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/bookmarks/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/bookmarks/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/bookmarks/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/bookmarks/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/bookmarks/index.html lang=bg selected data-selected>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/bookmarks/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/bookmarks/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/bookmarks/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/bookmarks/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/bookmarks/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/bookmarks/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763286 defer></script><script src=/sc-support/js/theme.min.js?1771763286 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="bg" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Тази статия за поддръжка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst и за какво се използват. Съществуват някои разлики...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Какво представляват отметките? :: Поддръжка на Swing Catalyst">
+    <meta name="twitter:description" content="Тази статия за поддръжка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst и за какво се използват. Съществуват някои разлики...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html">
+    <meta property="og:site_name" content="Поддръжка на Swing Catalyst">
+    <meta property="og:title" content="Какво представляват отметките? :: Поддръжка на Swing Catalyst">
+    <meta property="og:description" content="Тази статия за поддръжка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst и за какво се използват. Съществуват някои разлики...">
+    <meta property="og:locale" content="bg">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Софтуер и функции">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Database">
+    <meta itemprop="name" content="Какво представляват отметките? :: Поддръжка на Swing Catalyst">
+    <meta itemprop="description" content="Тази статия за поддръжка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst и за какво се използват. Съществуват някои разлики...">
+    <meta itemprop="wordCount" content="591">
+    <meta itemprop="keywords" content="Force-Data,Database">
+    <title>Какво представляват отметките? :: Поддръжка на Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/bookmarks/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/bookmarks/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/bookmarks/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/bookmarks/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/bookmarks/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/bookmarks/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/bookmarks/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/bookmarks/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/bookmarks/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/bookmarks/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/bookmarks/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/bookmarks/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/bookmarks/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/bookmarks/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/bookmarks/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/bookmarks/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/bookmarks/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/bookmarks/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/bookmarks/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/bookmarks/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/bookmarks/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/bookmarks/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/bookmarks/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/bookmarks/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/bookmarks/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/bookmarks/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/bookmarks/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/bookmarks/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/bookmarks/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/bookmarks/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/bookmarks/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/bookmarks/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520146" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520146" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520146" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520146" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.bg.js?1772520146";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520146" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520146" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520146" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520146" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520146" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520146" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520146" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520146" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/bookmarks\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/bg/software-features/bookmarks/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#въведение">Въведение</a></li>
+    <li><a href="#какво-представляват-отметките">Какво представляват отметките?</a></li>
+    <li><a href="#как-да-задам-отметки">Как да задам отметки?</a></li>
+    <li><a href="#защо-трябва-да-задавам-отметки">Защо трябва да задавам отметки?</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/bg/index.html"><span itemprop="name">Поддръжка на Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/bg/software-features/index.html"><span itemprop="name">Софтуер и функции</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Какво представляват отметките?</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/bg/software-features/raw-data-export-guide/index.html" title="Какво е включено в експорта на необработени данни (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/bg/software-features/keyboard-shortcuts/index.html" title="Клавишни комбинации и бързи клавиши (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/bg/tags/database/index.html">Database</a></li>
+    <li><a class="term-link" href="/sc-support/bg/tags/force-data/index.html">Force-Data</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="какво-представляват-отметките">Какво представляват отметките?</h1>
+
+<h2 id="въведение">Въведение<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Тази статия за поддръжка има за цел да опише какво представляват отметките в Swing Catalyst и Motion Catalyst и за какво се използват. Съществуват някои разлики между Motion Catalyst и Swing Catalyst, но основните принципи относно начина на функциониране на отметките и техните функции са едни и същи, което означава, че тази статия може да се използва и за двата софтуера.</p>
+<p>Примерна снимка от Motion Catalyst на запис на скок с противодвижение</p>
+<p><a href="#R-image-90861d1f0c85bd2180a15ff31e42098f" class="lightbox-link"><img alt="MotionCatalyst_IigJ2pRrKQ.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-iigj2prrkq-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-90861d1f0c85bd2180a15ff31e42098f"><img alt="MotionCatalyst_IigJ2pRrKQ.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-iigj2prrkq-png.png"></a></p>
+<h2 id="какво-представляват-отметките">Какво представляват отметките?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Отметките се използват за идентифициране на ключови моменти в един Запис. За определени спортове и активности отметките съответстват на конкретни фази в активността или просто указват началото и края на движението.</p>
+<p>При скок с противодвижение (показан на снимката) тези фази са: Намаляване на натиска, спиране, задвижване, излитане и кацане.</p>
+<p>Ако разгледаме по-внимателно снимките по-горе, ще видим, че над времевата линия за Възпроизвеждане има редица стрелки — всяка стрелка, или отметка, съответства на различна фаза от записаната Активност.</p>
+<p><a href="#R-image-ebc62098520f972e977bb67483c6e4d6" class="lightbox-link"><img alt="MotionCatalyst_7R0EZLelgS.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-7r0ezlelgs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ebc62098520f972e977bb67483c6e4d6"><img alt="MotionCatalyst_7R0EZLelgS.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-7r0ezlelgs-png.png"></a></p>
+<p>Броят на наличните отметки зависи от Активността. Някои активности имат повече отметки от други. Освен това, за определени активности отметките се задават автоматично, когато фазите се разпознават от Данни за силата. Работим за подобряване на това, така че списъкът по-долу може да се промени.</p>
+<p>Към момента Спортовете и активностите, при които автоматичните отметки се задават от Ключеви показатели, са:</p>
+<p>Спорт
+Активност</p>
+<p>Фитнес
+Скок с противодвижение</p>
+<p>Фитнес
+Приседание с изскок</p>
+<p>Фитнес
+Изометрично издърпване в средата на Бедрото</p>
+<p>Фитнес
+Динамичен и Статично равновесие</p>
+<p>Фитнес
+Планк за Горна част на тялото</p>
+<p>Ски скок</p>
+<p>Бейзбол
+Удар с бухалка</p>
+<p>Позициите на отметките се съхраняват в базата данни за всеки Запис и във всеки експортиран файл на Опит (запис с данни).</p>
+<h2 id="как-да-задам-отметки">Как да задам отметки?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>За да промените или зададете ръчно позициите на отметките:</p>
+<ul>
+<li>
+<p>„Отключете&quot; отметките, като натиснете бутона „bookmarks&quot;.</p>
+</li>
+<li>
+<p>След като бъде избрано, можете да промените позицията на отметките, като плъзнете стрелката(ите).</p>
+</li>
+<li>
+<p>Когато приключите, не забравяйте да „заключите&quot; отметките отново, като премахнете избора на иконата „bookmarks&quot; и излезете от режима „edit bookmark&quot;.</p>
+</li>
+</ul>
+<p><a href="#R-image-f1a0860f638354c5c53fdd915f15135b" class="lightbox-link"><img alt="hTxwCEhhvp.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/htxwcehhvp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1a0860f638354c5c53fdd915f15135b"><img alt="hTxwCEhhvp.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/htxwcehhvp-png.png"></a></p>
+<p><a href="#R-image-ec8643dc1f59e1792225ea4d01cdfc55" class="lightbox-link"><img alt="MotionCatalyst_JWfhTldXeS.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-jwfhtldxes-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec8643dc1f59e1792225ea4d01cdfc55"><img alt="MotionCatalyst_JWfhTldXeS.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-jwfhtldxes-png.png"></a></p>
+<p>За да нулирате позициите, щракнете върху бутона(ите) „reset A&quot; (или B) (показани вляво от бутона за отметки).</p>
+<p>Сивите отметки показват, че не са зададени или променяни.</p>
+<p><a href="#R-image-358d39a724033450c4d462badb61f630" class="lightbox-link"><img alt="MotionCatalyst_ttrfziAOSo.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-ttrfziaoso-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-358d39a724033450c4d462badb61f630"><img alt="MotionCatalyst_ttrfziAOSo.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-ttrfziaoso-png.png"></a></p>
+<p>Отметките са представени и в графиките с данни като вертикални линии, указващи <em>къде</em> във времето на Записа се намират различните фази (оста X на графиката):</p>
+<p><a href="#R-image-15ba3eb36b1dbf4ce6d1fa7d29aa9d25" class="lightbox-link"><img alt="image__2_.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/image-2-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-15ba3eb36b1dbf4ce6d1fa7d29aa9d25"><img alt="image__2_.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/image-2-png.png"></a></p>
+<p><strong>Съвет</strong>: Позицията на първата и/или последната отметка определя колко данни се показват в информационните полета. Продължителността преди първата отметка и след последната отметка зависи от Активността и Спорта, но ръчното им промяне може да бъде полезно за преглед на определени части от Записа. Това е особено полезно за записи, направени в рамките на Активността „свободно движение&quot;, която може да продължи до 30 секунди.</p>
+<p><a href="#R-image-4cc4de8bbb672829a4615bfaf4de33f9" class="lightbox-link"><img alt="MotionCatalyst_eUbaCWiclM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-eubacwiclm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4cc4de8bbb672829a4615bfaf4de33f9"><img alt="MotionCatalyst_eUbaCWiclM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-eubacwiclm-gif.png"></a></p>
+<p>Забележка: Променяме само това, което разглеждаме „във времето&quot; — никакви от съхранените данни не се променят по никакъв начин.</p>
+<p>За повече подробности относно начина на преглед и управление на графиките, моля, вижте <a href="/sc-support/bg/software-features/graph-library/index.html">тази статия</a>.</p>
+<h2 id="защо-трябва-да-задавам-отметки">Защо трябва да задавам отметки?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>За да позволим лесна Синхронизация при Възпроизвеждане между записи, препоръчваме да задавате отметки.</p>
+<p>Например, да кажем, че искате да видите едновременно два записа на скок с противодвижение, извършени от двама различни Потребители, като желаете да синхронизирате Възпроизвеждането около конкретна фаза.</p>
+<ul>
+<li>
+<p>Щракнете върху бутона „Synchronize&quot;.</p>
+</li>
+<li>
+<p>Изберете Фазата / отметката, по която желаете да синхронизирате.</p>
+</li>
+<li>
+<p>Натиснете „play&quot;.</p>
+</li>
+</ul>
+<p><a href="#R-image-54a707d3cc05f4e4e104fd67b5f6e8e8" class="lightbox-link"><img alt="MotionCatalyst_vG2pjBkyKz.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-vg2pjbkykz-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-54a707d3cc05f4e4e104fd67b5f6e8e8"><img alt="MotionCatalyst_vG2pjBkyKz.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-vg2pjbkykz-png.png"></a></p>
+<p>Забележка: Броят на наличните отметки и наименованието на фазите варират в зависимост от Спорта и Активността.</p>
+<p><a href="#R-image-5c11cc3a88f0bde73d5ccec4ad4ba459" class="lightbox-link"><img alt="MotionCatalyst_91cMd3GPuD.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-91cmd3gpud-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5c11cc3a88f0bde73d5ccec4ad4ba459"><img alt="MotionCatalyst_91cMd3GPuD.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-91cmd3gpud-gif.png"></a></p>
+<p>Пример за синхронизиране на отметки към Удар при два голф Замаха:</p>
+<p><a href="#R-image-32a33c6d1bc03a18ea1798a930a129fa" class="lightbox-link"><img alt="MotionCatalyst_YKLskF87yC.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-yklskf87yc-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-32a33c6d1bc03a18ea1798a930a129fa"><img alt="MotionCatalyst_YKLskF87yC.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-yklskf87yc-gif.png"></a></p>
+<p>Това може да бъде направено за всеки Спорт или Активност. За повече подробности относно „режима на сравнение&quot; моля, вижте раздела „Оформления&quot; в нашето <a href="/sc-support/bg/getting-started/user-guide/index.html">ръководство за потребителя</a>.</p>
+<hr>
+<p><em>Последна актуализация: 2024-06-07</em> | <a href="/sc-support/bg/software-features/bookmarks/index.html">Вижте на официалния сайт за поддръжка</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/bg/index.html">
+          <span class="logo-title default-animation">Поддръжка на Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/bg/getting-started/index.html"><a class="padding default-animation" href="/sc-support/bg/getting-started/index.html">Първи стъпки</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/bg/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/bg/cameras-video/index.html">Камери и видео</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/bg/hardware/index.html"><a class="padding default-animation" href="/sc-support/bg/hardware/index.html">Хардуер</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/bg/software-features/index.html"><a class="padding default-animation" href="/sc-support/bg/software-features/index.html">Софтуер и функции</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/bg/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/bg/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/bg/software-features/frontal-plane-torque/index.html">Анализ на Въртящ Момент в Челна Равнина - Ръководство на Потребителя</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/bg/software-features/motion-capture-disclosures/index.html">Важни оповестявания за потребителите на инструмента за Motion Capture на SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/bg/software-features/multiple-forces-graph/index.html">Графика за множество сили</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/bg/software-features/export-recordings/index.html">Експортиране на записи</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/graph-library/index.html"><a class="padding" href="/sc-support/bg/software-features/graph-library/index.html">Използване на библиотеката с графики</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/bg/software-features/pressure-stance-settings/index.html">Използване на новите настройки за Налягане и Стойка</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/bg/software-features/export-contacts/index.html">Как да експортирате данни за контакт на ученици</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/bg/software-features/export-raw-data/index.html">Как да експортирате необработени данни</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/bg/software-features/record-a-lesson/index.html">Как да запишете урок</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/bg/software-features/swing-catalyst-online/index.html">Как да използвате Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/bg/software-features/force-vectors/index.html">Как да използвате Векторна сила</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/remote-support/index.html"><a class="padding" href="/sc-support/bg/software-features/remote-support/index.html">Как да използвате Дистанционната поддръжка</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/bg/software-features/microphone-trigger/index.html">Как да използвате микрофон като тригер за запис</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/explorer/index.html"><a class="padding" href="/sc-support/bg/software-features/explorer/index.html">Как да използвате Навигатора</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/bg/software-features/pressure-distribution-overlay/index.html">Как да използвате функционалността за Наслояване на Разпределение на налягането</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/bg/software-features/import-from-v1/index.html">Как да импортирате видеа от V1</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/bg/software-features/motion-capture-install/index.html">Как да инсталирате компонентите за Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/bg/software-features/feedback-screen/index.html">Как да настроите Екрана за обратна връзка</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/bg/software-features/multiple-displays/index.html">Как да настроите няколко дисплея със Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/bg/software-features/email-sharing/index.html">Как да настроите споделяне по имейл в Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/bg/software-features/change-recording-user/index.html">Как да промените потребителя на съществуващ запис</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/bg/software-features/raw-data-export-guide/index.html">Какво е включено в експорта на необработени данни</a></li>
+            <li class="active " data-nav-id="/sc-support/bg/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/bg/software-features/bookmarks/index.html">Какво представляват отметките?</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/bg/software-features/keyboard-shortcuts/index.html">Клавишни комбинации и бързи клавиши</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/bg/software-features/key-metrics/index.html">Ключеви показатели</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/bg/software-features/motion-capture-settings/index.html">Настройки за Фиксиране на движение в Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/bg/software-features/body-weight-measurement/index.html">Нова функционалност за измерване на телесното тегло</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/bg/software-features/markerless-motion-capture/index.html">Подобряване на Безмаркерна система за фиксиране на движение при размах в голф и бейзбол с RTMPose и RTMDet: Подход От Горе Надолу</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/bg/software-features/motion-capture-guide/index.html">Ръководство за потребителя на Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/bg/software-features/ios-app-sharing/index.html">Споделяне на записани видеа с приложението Swing Catalyst за iOS</a></li>
+            <li class="" data-nav-id="/sc-support/bg/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/bg/software-features/force-graph-phases/index.html">Фази на графиката на силата</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/bg/account-setup/index.html"><a class="padding default-animation" href="/sc-support/bg/account-setup/index.html">Акаунт &amp; Подготовка</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/bg/reference/index.html"><a class="padding default-animation" href="/sc-support/bg/reference/index.html">Справочник</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/bookmarks/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/bookmarks/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/bookmarks/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/bookmarks/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/bookmarks/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/bookmarks/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/bookmarks/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/bookmarks/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/bookmarks/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/bookmarks/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/bookmarks/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/bookmarks/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/bookmarks/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/bookmarks/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/bookmarks/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/bookmarks/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/bookmarks/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/bookmarks/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/bookmarks/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/bookmarks/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/bookmarks/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/bookmarks/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/bookmarks/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/bookmarks/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/bookmarks/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/bookmarks/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/bookmarks/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/bookmarks/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/bookmarks/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/bookmarks/index.html" lang="bg" selected data-selected>Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/bookmarks/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/bookmarks/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/bookmarks/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/bookmarks/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/bookmarks/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/bookmarks/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520146" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520146" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

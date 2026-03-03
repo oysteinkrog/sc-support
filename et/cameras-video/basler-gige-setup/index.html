@@ -1,32 +1,477 @@
-<!doctype html><html id=R-html lang=et dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Iga kaamera ja Ethernet kaart (NIC / võrguliidese kontrollerit) tuleks seadistada staatiiliste IP-aadressidega erinevates alamvõrkudes (ja alamvõrgu maskides)"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Basler GigE kaameraid Swing Catalystiga seadistamine :: Swing Catalyst Tugi"><meta name=twitter:description content="Iga kaamera ja Ethernet kaart (NIC / võrguliidese kontrollerit) tuleks seadistada staatiiliste IP-aadressidega erinevates alamvõrkudes (ja alamvõrgu maskides)"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html"><meta property="og:site_name" content="Swing Catalyst Tugi"><meta property="og:title" content="Basler GigE kaameraid Swing Catalystiga seadistamine :: Swing Catalyst Tugi"><meta property="og:description" content="Iga kaamera ja Ethernet kaart (NIC / võrguliidese kontrollerit) tuleks seadistada staatiiliste IP-aadressidega erinevates alamvõrkudes (ja alamvõrgu maskides)"><meta property="og:locale" content="et"><meta property="og:type" content="article"><meta property="article:section" content="Kaamerad ja video"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Gige-Camera"><meta property="article:tag" content="Usb-Camera"><meta property="article:tag" content="Licensing"><meta itemprop=name content="Basler GigE kaameraid Swing Catalystiga seadistamine :: Swing Catalyst Tugi"><meta itemprop=description content="Iga kaamera ja Ethernet kaart (NIC / võrguliidese kontrollerit) tuleks seadistada staatiiliste IP-aadressidega erinevates alamvõrkudes (ja alamvõrgu maskides)"><meta itemprop=wordCount content="805"><meta itemprop=keywords content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing"><title>Basler GigE kaameraid Swing Catalystiga seadistamine :: Swing Catalyst Tugi</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763291 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763291 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763291 defer></script><script src=/sc-support/js/search.min.js?1771763291 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.et.js?1771763291"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763291 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763291 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763291 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763291 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763291 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763291 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763291 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763291 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/basler-gige-setup/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/et/cameras-video/basler-gige-setup/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#setting-the-ip-of-the-cameras>Setting the IP of the cameras</a></li><li><a href=#ipconfigurator_><img src=../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png alt=IpConfigurator_2018-12-03_12-38-59.png></a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/et/index.html><span itemprop=name>Swing Catalyst tugisüsteem</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/et/cameras-video/index.html><span itemprop=name>Kaamerad ja video</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Basler GigE kaameraid Swing Catalystiga seadistamine</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/et/cameras-video/avt-manta-configure/index.html title="AVT Manta/Prosilica GigE kiirkiiruskaamera konfigureerimine (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/et/cameras-video/pci-express-slots/index.html title="Erinevused PCI / PCI Express pesade vahel (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/et/tags/gige-camera/index.html>Gige-Camera</a></li><li><a class=term-link href=/sc-support/et/tags/licensing/index.html>Licensing</a></li><li><a class=term-link href=/sc-support/et/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/et/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=basler-gige-kaameraid-swing-catalystiga-seadistamine>Basler GigE kaameraid Swing Catalystiga seadistamine</h1><p>See tugiartikkel käsitleb Basler kaamerate seadistamist ja konfiguratsiooni Swing Catalystiga.</p><p>Note: In order to use Basler camera&rsquo;s with Swing Catalyst you will need a Halcon USB dongle and a license. Please contact <a href=mailto:contact@swingcatalyst.com rel=external>contact@swingcatalyst.com</a> to purchase a license.</p><p>Halcon installation & configuration instructions here:</p><p><a href=/sc-support/et/cameras-video/halcon-setup/index.html>halcon-setup.md</a></p><p>Important:</p><p>Make sure you have the MVTec Halcon driver filter installed, the camera&rsquo;s will not function properly without. Also make sure to uncheck any other filter drivers installed, e.g Basler filter driver.</p><p>Make sure Swing Catalyst is allowed both on private & public networks in the Windows Defender firewall</p><p>Example:</p><p><a href=#R-image-9f31fea5b3c108e72993e2ed1e38134d class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/dllhost_2016-06-28_10-39-09.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9f31fea5b3c108e72993e2ed1e38134d><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/dllhost_2016-06-28_10-39-09.png></a></p><h2 id=setting-the-ip-of-the-cameras>Setting the IP of the cameras<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>IP Setup</p><p>Each camera and Ethernet card (NIC / Network interface controller) should be configured with static IP&rsquo;s on different subnets (and subnet mask)</p><p>Note: NIC IP is the IP address of the network adapter on your computer and the cam ip is the IP address of the camera. The &mldr; indicates a range, as this is an example you can set the IP to.</p><p>Examples for single or multi camera setups (with one or more network card / adapters):</p><p>Cameras on network adapter 1:
+<!DOCTYPE html>
+<html id="R-html" lang="et" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Iga kaamera ja Etherneti kaart (NIC / võrguliidese kontroller) tuleks konfigureerida staatiliste IP-dega eri alamvõrkudes (ja alamvõrgumaskiga)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kuidas seadistada Basler GigE kaameraid Swing Catalystiga :: Swing Catalyst Tugi">
+    <meta name="twitter:description" content="Iga kaamera ja Etherneti kaart (NIC / võrguliidese kontroller) tuleks konfigureerida staatiliste IP-dega eri alamvõrkudes (ja alamvõrgumaskiga)">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Tugi">
+    <meta property="og:title" content="Kuidas seadistada Basler GigE kaameraid Swing Catalystiga :: Swing Catalyst Tugi">
+    <meta property="og:description" content="Iga kaamera ja Etherneti kaart (NIC / võrguliidese kontroller) tuleks konfigureerida staatiliste IP-dega eri alamvõrkudes (ja alamvõrgumaskiga)">
+    <meta property="og:locale" content="et">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Kaamerad ja video">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Gige-Camera">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Licensing">
+    <meta itemprop="name" content="Kuidas seadistada Basler GigE kaameraid Swing Catalystiga :: Swing Catalyst Tugi">
+    <meta itemprop="description" content="Iga kaamera ja Etherneti kaart (NIC / võrguliidese kontroller) tuleks konfigureerida staatiliste IP-dega eri alamvõrkudes (ja alamvõrgumaskiga)">
+    <meta itemprop="wordCount" content="604">
+    <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Usb-Camera,Licensing">
+    <title>Kuidas seadistada Basler GigE kaameraid Swing Catalystiga :: Swing Catalyst Tugi</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/basler-gige-setup/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520166" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520166" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520166" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520166" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.et.js?1772520166";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520166" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520166" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520166" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520166" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520166" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520166" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520166" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520166" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/basler-gige-setup\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/et/cameras-video/basler-gige-setup/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#kaamerale-ip-seadistamine">Kaamerale IP seadistamine</a></li>
+    <li><a href="#ipconfigurator_"><img src="../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" alt="IpConfigurator_2018-12-03_12-38-59.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/et/index.html"><span itemprop="name">Swing Catalyst tugi</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/et/cameras-video/index.html"><span itemprop="name">Kaamerad ja video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kuidas seadistada Basler GigE kaameraid Swing Catalystiga</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/et/cameras-video/avt-manta-configure/index.html" title="Kuidas seadistada AVT Manta/Prosilica GigE kiirkiirus kaameraid (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/et/cameras-video/cctv-cameras/index.html" title="Kuidas seadistada CCTV kaameraid (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/et/tags/gige-camera/index.html">Gige-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/et/tags/licensing/index.html">Licensing</a></li>
+    <li><a class="term-link" href="/sc-support/et/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/et/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="kuidas-seadistada-basler-gige-kaameraid-swing-catalystiga">Kuidas seadistada Basler GigE kaameraid Swing Catalystiga</h1>
+
+<p>See tugiartikkel käsitleb Basler kaameraid Swing Catalystiga seadistamist ja konfigureerimist.</p>
+<blockquote>
+<p>note: Basler kaameraid Swing Catalystiga kasutamiseks on vaja Halcon USB dongle&rsquo;it ja litsentsi. Litsentsi ostmiseks võtke ühendust aadressil <a href="mailto:contact@swingcatalyst.com" rel="external">contact@swingcatalyst.com</a>.</p></blockquote>
+<p>Halconi installimis- ja konfigureerimisõpetus siin:</p>
+<p><a href="/sc-support/et/cameras-video/halcon-setup/index.html">halcon-setup.md</a></p>
+<p>Tähtis:</p>
+<p>Veenduge, et teil on installitud MVTec Halconi draiveri Filter — ilma selleta ei tööta kaamerad korralikult. Samuti veenduge, et kõik muud installitud filtri driverid on märkimata, nt Basleri filtri draiver.</p>
+<p>Veenduge, et Swing Catalyst on lubatud nii era- kui ka avalikes võrkudes Windowsi tulemüüris (Windows Defender).</p>
+<p>Näide:</p>
+<p><a href="#R-image-2e0dbbb816c526ab58b81290a03b9820" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e0dbbb816c526ab58b81290a03b9820"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/dllhost_2016-06-28_10-39-09.png"></a></p>
+<h2 id="kaamerale-ip-seadistamine">Kaamerale IP seadistamine<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>IP Seis</p>
+<p>Iga kaamera ja Etherneti kaart (NIC / võrguliidese kontroller) tuleks konfigureerida staatiliste IP-dega eri alamvõrkudes (ja alamvõrgumaskiga)</p>
+<blockquote>
+<p>note: NIC IP on teie arvuti võrguadapteri IP-aadress ja kaamera IP on kaamera IP-aadress. „&hellip;&quot; tähistab vahemikku, kuna see on näide, milleks IP-d seadistada.</p></blockquote>
+<p>Näited ühe või mitme kaameraga seadistuste jaoks (ühe või mitme võrgukaardi/adapteriga):</p>
+<p>Kaamerad võrguadapteril 1:
 nic ip: 10.0.1.1
-cam ip: 10.0.1.10 &mldr; 10.0.1.20
-subnet mask:255.255.255.0</p><p>Cameras on network adapter 2:
+cam ip: 10.0.1.10 &hellip; 10.0.1.20
+subnet mask:255.255.255.0</p>
+<p>Kaamerad võrguadapteril 2:
 nic ip: 10.0.2.1
-cam ip: 10.0.2.10 &mldr; 10.0.2.20
-subnet mask: 255.255.255.0</p><p>Cameras on network adapter 3:
+cam ip: 10.0.2.10 &hellip; 10.0.2.20
+subnet mask: 255.255.255.0</p>
+<p>Kaamerad võrguadapteril 3:
 nic ip: 10.0.3.1
-cam ip: 10.0.3.10 &mldr; 10.0.3.20
-subnet mask: 255.255.255.0</p><p>Cameras on network adapter 4:
+cam ip: 10.0.3.10 &hellip; 10.0.3.20
+subnet mask: 255.255.255.0</p>
+<p>Kaamerad võrguadapteril 4:
 nic ip: 10.0.4.1
-cam ip: 10.0.4.10 &mldr; 10.0.4.20
-subnet mask: 255.255.255.0</p><p>First we need to setup the IP of the camera, this is done through the Pylon IP Configurator.</p><p>Press the start menu button on your keyboard and type pylon ip and the IP Configurator should show up. If it doesn&rsquo;t, it&rsquo;s likely you do not have the software installed.</p><p>To install the Pylon software see: <a href=https://www.baslerweb.com/en/sales-support/downloads/software-downloads/ rel=external></a><a href=https://www.baslerweb.com/en/sales-support/downloads/software-downloads/ rel=external>https://www.baslerweb.com/en/sales-support/downloads/software-downloads/</a> and look for: pylon 5.1.0 Camera Software Suite Windows.</p><p><a href=#R-image-73b2a45d81882df1c6ad528cb63f66d8 class=lightbox-link><img alt=ShareX_2018-12-03_12-38-41.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221632728/sharex-2018-12-03-12-38-41-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-73b2a45d81882df1c6ad528cb63f66d8><img alt=ShareX_2018-12-03_12-38-41.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221632728/sharex-2018-12-03-12-38-41-png.png></a></p><p>Click on the camera then select Static IP</p><h2 id=ipconfigurator_><a href=#R-image-32f7709589f6514d9b214be7e2794568 class=lightbox-link><img alt=IpConfigurator_2018-12-03_12-38-59.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-32f7709589f6514d9b214be7e2794568><img alt=IpConfigurator_2018-12-03_12-38-59.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Set the IP address of the camera, subnet mask according to the example above.</p><p>Note if you&rsquo;re using multiple cameras you need to</p><p><a href=#R-image-8fa6c4c8487dfa5728f38f608de20137 class=lightbox-link><img alt=IpConfigurator_2018-12-03_12-39-42.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8fa6c4c8487dfa5728f38f608de20137><img alt=IpConfigurator_2018-12-03_12-39-42.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png></a></p><p>Configuring Basler GigE camera&rsquo;s through Halcon</p><p>In Swing Catalyst, navigate to the Settings tab and to Cameras.</p><p><a href=#R-image-07f390a278e9abb26eaa583099829220 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-07f390a278e9abb26eaa583099829220><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png></a></p><p>Click on Advanced.</p><ul><li><p>Navigate to the Configuration tab.</p></li><li><p>Enable the GtlNumBuffers checkbox and enter 200 as the value.</p></li></ul><p><a href=#R-image-8876b039b9a5a7e5cf4fd3f220771c17 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8876b039b9a5a7e5cf4fd3f220771c17><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png></a></p><p>Setting up Basler GigE camera&rsquo;s:</p><p>Lets have a look at how to set the exposure, shutter speed and frame rate.</p><p>NOTE: If you are unable to get view the settings & get an error in Swing Catalyst, please check the Windows Firewall settings. Try to turn the firewall off to check if it&rsquo;s the firewall blocking Swing Catalyst&rsquo;s access to the cameras.</p><p>If the settings work & you can stream fine, make sure Swing Catalyst is allowed on both public & private networks in the Windows Defender firewall.</p><p>Expand the AcquisitionTrigger tab and enter the maximum (or lower) frame rate, then click Enable Acquisition Frame Rate. This will allow you you to define the frame rate. Note: Frame rate can be limited by exposure values.</p><p><a href=#R-image-5fe118663d62b070c77483347fbf5f25 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5fe118663d62b070c77483347fbf5f25><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png></a></p><p>Setting exposure values</p><p>It&rsquo;s usually best to use a manual exposure for static environments, such as indoor studios. A fully auto exposure can cause the frame rate to be changed and lead to an inconsistent image. In this case we&rsquo;re not using auto exposure as we want to be able to control this ourselves. Generally an exposure time less than 2000 (2ms) is recommended.</p><p>Setting gain values</p><p>Similar to exposure, setting the gain to manual for static / indoor lighting conditions is best. The higher the exposure the more grainy the image will be and the longer the video encoding will take vs low gain.</p><p>To set manual gain, change Gain Auto from Continuous to Off, then pause and play the playback to reload the settings. Set the gain values by changing the number values in Gain (Raw).</p><p><a href=#R-image-4e0898aa66bc26f95e622367efb18400 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4e0898aa66bc26f95e622367efb18400><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png></a></p><p>Changing the image size, area of interest, region of interest & more</p><p>In some cases you want to reduce the image size to focus in on a specific area of the video image, for example to view the club and ball on impact in detail.</p><p>This can be done with area of interest, also known as AOI, and ROI, region of interest. Reducing the overall image size with this function also can give you a frame rate increase.</p><p><a href=#R-image-ea5141c3c7ee521b2590c2e96e679975 class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-ea5141c3c7ee521b2590c2e96e679975><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png></a></p><p>Saving settings to the camera</p><p>It&rsquo;s important to save the settings to the camera. If this isn&rsquo;t done all of what you&rsquo;ve configured will be lost.</p><p>Make sure you set the Default Set Selector & Default Startup Set. There are different user sets to choose from and in theory you can have different settings saved on each set. I.e you can select &ldquo;User Set 1&rdquo; as your default, then hit User Set Save to save your current settings to that profile.</p><p><a href=#R-image-7c458ada7732bc3bb0c377f32304aeca class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7c458ada7732bc3bb0c377f32304aeca><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png></a></p><hr><p><em>Last updated: 2022-10-10</em> | <a href=/sc-support/et/cameras-video/basler-gige-setup/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/et/index.html><span class="logo-title default-animation">Swing Catalyst Tugi</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/et/getting-started/index.html><a class="padding default-animation" href=/sc-support/et/getting-started/index.html>Alustamine</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/et/cameras-video/index.html><a class="padding default-animation" href=/sc-support/et/cameras-video/index.html>Kaamerad ja video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/et/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/et/cameras-video/halcon-bluescreen-fix/index.html>Arvuti sinieks muutub Halconi USB litsentsi dongli ühendamisel</a></li><li data-nav-id=/sc-support/et/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/et/cameras-video/lens-distortion-correction/index.html>Automaatne objektiivi moonutuste korrigeerimine Swing Catalystis: teie visuaalse kogemuse parandamine</a></li><li data-nav-id=/sc-support/et/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/et/cameras-video/avt-manta-install/index.html>AVT Manta/Prosilica GigE kaamerate paigaldamine</a></li><li data-nav-id=/sc-support/et/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/et/cameras-video/avt-manta-configure/index.html>AVT Manta/Prosilica GigE kiirkiiruskaamera konfigureerimine</a></li><li class=active data-nav-id=/sc-support/et/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/et/cameras-video/basler-gige-setup/index.html>Basler GigE kaameraid Swing Catalystiga seadistamine</a></li><li data-nav-id=/sc-support/et/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/et/cameras-video/pci-express-slots/index.html>Erinevused PCI / PCI Express pesade vahel</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html>FLiR / Point Grey (Blackfly/Chameleon) kaamera ei tööta enam pärast Swing Catalyst'i uuendamist</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/et/cameras-video/flir-spinnaker-cameras/index.html>FLIR Blackfly S (Spinnaker) kaamerate kasutamine SwingCatalyst'iga</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html>FLIR BlackFly S GigE seadistamine Swing Catalystis</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/et/cameras-video/flir-firmware-upgrade/index.html>FLIR Blackfly S kaamera püsivara versioonile uuendamine</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/et/cameras-video/flir-blackfly-usb-setup/index.html>FLIR BlackFly S USB seadistamine SwingCatalystis</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/et/cameras-video/flir-warranty-service/index.html>FLIR kaamera garantii ja teeninduse teave</a></li><li data-nav-id=/sc-support/et/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/et/cameras-video/fox-lynx-firmware/index.html>Fox / Lynx kaamera püsivara versioonist tõstmine või alandamine</a></li><li data-nav-id=/sc-support/et/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/et/cameras-video/gige-network-setup/index.html>Gigabitine Ethernet ja GigE Vision kaamera võrgu soovitused</a></li><li data-nav-id=/sc-support/et/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/et/cameras-video/advanced-camera-settings/index.html>Juhend täpsematest kaamerasetete kohta</a></li><li data-nav-id=/sc-support/et/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/et/cameras-video/minimum-distances/index.html>Kaamera minimaalne kaugus</a></li><li data-nav-id=/sc-support/et/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/et/cameras-video/improving-image-quality/index.html>Kaamera pildi kvaliteedi parandamine</a></li><li data-nav-id=/sc-support/et/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/et/cameras-video/ids-ueye-highspeed/index.html>Kuidas häälestada iDS uEye USB kiirkiirusega kaameraid</a></li><li data-nav-id=/sc-support/et/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/et/cameras-video/dragon-usb2-camera/index.html>Kuidas kasutada Dragon (120 FPS) USB 2.0 kaamerat SwingCatalyst'iga</a></li><li data-nav-id=/sc-support/et/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/et/cameras-video/ids-ueye-usb/index.html>Kuidas kasutada IDS uEye USB-kaameraid Swing Catalystiga</a></li><li data-nav-id=/sc-support/et/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/et/cameras-video/point-grey-flir-usb/index.html>Kuidas kasutada Point Grey / FLiR USB-kaameraid Swing Catalystiga</a></li><li data-nav-id=/sc-support/et/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/et/cameras-video/hardware-encoding/index.html>Kuidas kasutada Swing Catalyst riistvaralise kodeerimist</a></li><li data-nav-id=/sc-support/et/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/et/cameras-video/web-camera-directshow/index.html>Kuidas kasutada veebikaamerat (DirectShow integratsioon) Swing Catalyst'iga</a></li><li data-nav-id=/sc-support/et/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/et/cameras-video/ids-ueye-gige/index.html>Kuidas konfigureerida IDS uEye GigE kaamerat Swing Catalystiga</a></li><li data-nav-id=/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html>Kuidas määrata staatiline IP FLIR Blackfly GigE kaamerate puhul</a></li><li data-nav-id=/sc-support/et/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/et/cameras-video/lynx-static-ip/index.html>Kuidas määrata staatilist IP-d Lynx GigE kaamertele</a></li><li data-nav-id=/sc-support/et/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/et/cameras-video/fix-dropped-frames/index.html>Kuidas parandada 'kaotatud kaadrite' probleemi USB 3.0 või 2.0 kaamerate puhul.</a></li><li data-nav-id=/sc-support/et/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/et/cameras-video/cctv-cameras/index.html>Kuidas seadistada CCTV-kaameraid</a></li><li data-nav-id=/sc-support/et/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/et/cameras-video/halcon-setup/index.html>Kuidas seadistada Halcon'i Swing Catalyst'i jaoks</a></li><li data-nav-id=/sc-support/et/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/et/cameras-video/halcon-camera-standards/index.html>Kuidas teada saada, milliseid standardeid teie kaamerad Halconi kasutamiseks toetavad</a></li><li data-nav-id=/sc-support/et/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/et/cameras-video/led-light-flicker/index.html>Kuidas vähendada LED-valguse sädemeid</a></li><li data-nav-id=/sc-support/et/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/et/cameras-video/point-grey-flir-gige/index.html>Point Grey / FLIR GigE (Blackfly) kaamerate konfigureerimine Swing Catalystiga</a></li><li data-nav-id=/sc-support/et/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/et/cameras-video/recommended-lighting/index.html>Soovitatav valgustus studiote ja garaaži paigaldiste jaoks</a></li><li data-nav-id=/sc-support/et/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/et/cameras-video/recommended-usb3-components/index.html>Soovitatud USB 3.0 komponendid</a></li><li data-nav-id=/sc-support/et/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/et/cameras-video/fox-camera-setup/index.html>Swing Catalyst Fox USB 3.0 kaamera(te) seadistamine</a></li><li data-nav-id=/sc-support/et/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/et/cameras-video/lynx-camera-setup/index.html>Swing Catalyst Lynx GigE kaamera(te) seadistamine</a></li><li data-nav-id=/sc-support/et/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/et/cameras-video/supported-cameras/index.html>Toetatud kaamerad</a></li><li data-nav-id=/sc-support/et/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/et/cameras-video/usb3-troubleshooting/index.html>USB3 kaamera tõrkeotsing</a></li><li data-nav-id=/sc-support/et/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/et/cameras-video/ximea-usb3-setup/index.html>Ximea USB3 Vision kaamerate seadistamine Swing Catalyst'iga</a></li></ul></li><li data-nav-id=/sc-support/et/hardware/index.html><a class="padding default-animation" href=/sc-support/et/hardware/index.html>Riistvara</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/et/software-features/index.html><a class="padding default-animation" href=/sc-support/et/software-features/index.html>Tarkvara ja funktsioonid</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/et/account-setup/index.html><a class="padding default-animation" href=/sc-support/et/account-setup/index.html>Konto ja seadistus</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/et/reference/index.html><a class="padding default-animation" href=/sc-support/et/reference/index.html>Viide</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/basler-gige-setup/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/basler-gige-setup/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/basler-gige-setup/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/basler-gige-setup/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/basler-gige-setup/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/basler-gige-setup/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/basler-gige-setup/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/basler-gige-setup/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/basler-gige-setup/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/basler-gige-setup/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/basler-gige-setup/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/basler-gige-setup/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/basler-gige-setup/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/basler-gige-setup/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/basler-gige-setup/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/basler-gige-setup/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/basler-gige-setup/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/basler-gige-setup/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/basler-gige-setup/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/basler-gige-setup/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/basler-gige-setup/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/basler-gige-setup/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/basler-gige-setup/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/basler-gige-setup/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/basler-gige-setup/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/basler-gige-setup/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/basler-gige-setup/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/basler-gige-setup/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/basler-gige-setup/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/basler-gige-setup/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/basler-gige-setup/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/basler-gige-setup/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/basler-gige-setup/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/basler-gige-setup/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/basler-gige-setup/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/basler-gige-setup/index.html lang=et selected data-selected>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763291 defer></script><script src=/sc-support/js/theme.min.js?1771763291 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+cam ip: 10.0.4.10 &hellip; 10.0.4.20
+subnet mask: 255.255.255.0</p>
+<p>Esmalt peame seadistama kaamera IP, mida tehakse Pylon IP Configuratori kaudu.</p>
+<p>Vajutage klaviatuuril Start-menüü nuppu ja tippige pylon ip — IP Configurator peaks ilmuma. Kui seda ei juhtu, ei ole tõenäoliselt tarkvara installitud.</p>
+<p>Pyloni tarkvara installimiseks vaadake: <a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external"></a><a href="https://www.baslerweb.com/en/sales-support/downloads/software-downloads/" rel="external">https://www.baslerweb.com/en/sales-support/downloads/software-downloads/</a> ja otsige: pylon 5.1.0 Camera Software Suite Windows.</p>
+<p><a href="#R-image-2757cb2de2a3db86e2cb35ae93bdb6f8" class="lightbox-link"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2757cb2de2a3db86e2cb35ae93bdb6f8"><img alt="ShareX_2018-12-03_12-38-41.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/sharex-2018-12-03-12-38-41-png.png"></a></p>
+<p>Klõpsake kaameral ja valige Static IP</p>
+<h2 id="ipconfigurator_"><a href="#R-image-d644703269b994a87297f05ff734499f" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d644703269b994a87297f05ff734499f"><img alt="IpConfigurator_2018-12-03_12-38-59.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-38-59-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Seadistage kaamera IP-aadress ja alamvõrgumask vastavalt ülaltoodud näitele.</p>
+<blockquote>
+<p>note: Mitme kaamera kasutamisel peate</p></blockquote>
+<p><a href="#R-image-4b51a8f432ac16c74af5d20c8336ec2e" class="lightbox-link"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4b51a8f432ac16c74af5d20c8336ec2e"><img alt="IpConfigurator_2018-12-03_12-39-42.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221632728/ipconfigurator-2018-12-03-12-39-42-png.png"></a></p>
+<p>Basler GigE kaameraid konfigureerimine Halconi kaudu</p>
+<p>Swing Catalystis navigeerige vahekaardile Seaded ja sealt Kaamerad.</p>
+<p><a href="#R-image-569a33bb937618b387535f5d0a8d51fe" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-569a33bb937618b387535f5d0a8d51fe"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-47-56.png"></a></p>
+<p>Klõpsake nupul Advanced.</p>
+<ul>
+<li>
+<p>Navigeerige vahekaardile Configuration.</p>
+</li>
+<li>
+<p>Lubage GtlNumBuffers märkeruut ja sisestage väärtuseks 200.</p>
+</li>
+</ul>
+<p><a href="#R-image-4299de5615a3e915365a156009798d50" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4299de5615a3e915365a156009798d50"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-28_10-53-10.png"></a></p>
+<p>Basler GigE kaameraid seadistamine:</p>
+<p>Vaatame, kuidas seadistada säritust, katiku kiirust ja kaadrite kiirust.</p>
+<p>MÄRKUS: Kui te ei suuda seadeid vaadata ja saate Swing Catalystis vea, kontrollige Windowsi tulemüüri seadeid. Proovige tulemüür välja lülitada, et kontrollida, kas tulemüür blokeerib Swing Catalysti juurdepääsu kaameratele.</p>
+<p>Kui seaded toimivad ja saate vabalt voogedastada, veenduge, et Swing Catalyst on lubatud nii avalikes kui ka eravõrkudes Windowsi Defenderi tulemüüris.</p>
+<p>Laiendage vahekaart AcquisitionTrigger ja sisestage maksimaalne (või väiksem) kaadrite kiirus, seejärel klõpsake Enable Acquisition Frame Rate. See võimaldab teil määrata kaadrite kiiruse. Märkus: kaadrite kiirust võib piirata särituse väärtused.</p>
+<p><a href="#R-image-8e7b20cb4d5f42f714607c9a412590d9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8e7b20cb4d5f42f714607c9a412590d9"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-29_09-14-36.png"></a></p>
+<p>Särituse väärtuste seadistamine</p>
+<p>Staatiliste keskkondade, näiteks siseruumide stuudiote jaoks on tavaliselt parim kasutada käsitsi säritust. Täielikult Auto saritis võib põhjustada kaadrite kiiruse muutumist ja ebaühtlase pildi. Antud juhul ei kasuta me Auto säritust, kuna soovime seda ise juhtida. Üldiselt soovitatakse säritusaega alla 2000 (2ms).</p>
+<p>Gain väärtuste seadistamine</p>
+<p>Sarnaselt säritusele on staatiliste/siseruumide valgustingimuste jaoks parim seada Gain käsitsi. Mida kõrgem on säritis, seda teralisem on pilt ja seda kauem võtab video kodeerimine vs madal Gain.</p>
+<p>Käsitsi Gain seadistamiseks muutke Gain Auto väärtusest Continuous väärtuseks Off, seejärel peatage ja käivitage Taasesitus uuesti, et seaded uuesti laadida. Seadistage Gain väärtused, muutes arvväärtusi Gain (Raw) all.</p>
+<p><a href="#R-image-ebf6410eaef4563526248ecf796f4992" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ebf6410eaef4563526248ecf796f4992"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-55-28.png"></a></p>
+<p>Pildi suuruse, huvi ala, Region of Interest ja muu muutmine</p>
+<p>Mõnel juhul soovite pildi suurust vähendada, et fokusseerida videokujutise konkreetsele alale, näiteks et vaadata klubi ja palli Löögil üksikasjalikult.</p>
+<p>Seda saab teha huvi alaga, tuntud ka kui AOI, ja ROI, Region of Interest. Selle funktsiooni abil üldise pildi suuruse vähendamine võib samuti anda kaadrite kiiruse tõusu.</p>
+<p><a href="#R-image-dc11922542b34ab6e576019dd41692d6" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc11922542b34ab6e576019dd41692d6"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_08-53-43.png"></a></p>
+<p>Seadete salvestamine kaamerasse</p>
+<p>Oluline on seaded kaamerasse salvestada. Kui seda ei tehta, lähevad kõik teie konfigureeritud seaded kaotsi.</p>
+<p>Veenduge, et seadistate Default Set Selector ja Default Startup Set. Valida on erinevate kasutajakomplektide vahel ja teoreetiliselt saate igale komplektile erinevad seaded salvestada. Ehk saate valida „User Set 1&quot; oma vaikeväärtuseks, seejärel vajutada User Set Save, et salvestada praegused seaded sellesse profiili.</p>
+<p><a href="#R-image-1f088742fc0172ae4b3dca2cb5efd82e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f088742fc0172ae4b3dca2cb5efd82e"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/zendesk/MotionCatalyst_2016-06-30_09-20-43.png"></a></p>
+<hr>
+<p><em>Viimati uuendatud: 2022-10-10</em> | <a href="/sc-support/et/cameras-video/basler-gige-setup/index.html">Vaata ametlikul tugiplatvormil</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/et/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Tugi</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/et/getting-started/index.html"><a class="padding default-animation" href="/sc-support/et/getting-started/index.html">Alustamine</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/et/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/et/cameras-video/index.html">Kaamerad ja video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/et/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/et/cameras-video/halcon-bluescreen-fix/index.html">Arvuti läheb sinisele ekraanile Halcon USB litsentsidonglit ühendades</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/et/cameras-video/lens-distortion-correction/index.html">Automaatne läätse moonutuse korrektsioon SwingCatalyst&#39;is: visuaalse kogemuse täiustamine</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/et/cameras-video/pci-express-slots/index.html">Erinevused PCI / PCI Express pesade vahel</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-camera-upgrade-fix/index.html">FLiR / Point Grey (Blackfly/Chameleon) kaamera ei tööta enam pärast uuendamist</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-spinnaker-cameras/index.html">FLIR Blackfly S (Spinnaker) kaameerate kasutamine koos Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-blackfly-gige-setup/index.html">FLIR BlackFly S GigE seadistamine SwingCatalyst&#39;is</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-firmware-upgrade/index.html">FLIR Blackfly S püsivara uuendamine</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-blackfly-usb-setup/index.html">FLIR BlackFly S USB seadistamine Swing Catalystis</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-warranty-service/index.html">FLIR kaamera garantii ja teeninduse teave</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/gige-network-setup/index.html">Gigabit Etherneti ja GigE Vision kaamera võrgusoovitused</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/et/cameras-video/advanced-camera-settings/index.html">Juhend täpsema kaameraSeadistuse kohta</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/et/cameras-video/improving-image-quality/index.html">Kaamera pildikvaliteedi parandamine</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/et/cameras-video/avt-manta-install/index.html">Kuidas installida AVT Manta/Prosilica GigE kaameraid</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/et/cameras-video/dragon-usb2-camera/index.html">Kuidas kasutada Dragon (120 FPS) USB 2.0 kaamerat koos Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/et/cameras-video/ids-ueye-usb/index.html">Kuidas kasutada IDS uEye USB kaameraid koos Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/et/cameras-video/point-grey-flir-usb/index.html">Kuidas kasutada Point Grey / FLiR USB kaameraid koos Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/et/cameras-video/hardware-encoding/index.html">Kuidas kasutada SwingCatalyst riistvara kodeerimist</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/et/cameras-video/web-camera-directshow/index.html">Kuidas kasutada veebikaamerat (DirectShow integratsioon) koos Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/et/cameras-video/fix-dropped-frames/index.html">Kuidas lahendada „kaadrite kaotamise&#34; probleem USB 3.0 või 2.0 kaameratega.</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/et/cameras-video/led-light-flicker/index.html">Kuidas leevendada LED-valguse virvendust</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/et/cameras-video/avt-manta-configure/index.html">Kuidas seadistada AVT Manta/Prosilica GigE kiirkiirus kaameraid</a></li>
+            <li class="active " data-nav-id="/sc-support/et/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/basler-gige-setup/index.html">Kuidas seadistada Basler GigE kaameraid Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/et/cameras-video/cctv-cameras/index.html">Kuidas seadistada CCTV kaameraid</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/halcon-setup/index.html">Kuidas seadistada Halcon rakendusega Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/et/cameras-video/ids-ueye-gige/index.html">Kuidas seadistada IDS uEye GigE kaamera Swing Catalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/et/cameras-video/ids-ueye-highspeed/index.html">Kuidas seadistada iDS uEye USB kiirkaameraid</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/et/cameras-video/point-grey-flir-gige/index.html">Kuidas seadistada Point Grey / FLIR GigE (Blackfly) kaamerad SwingCatalystiga</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html">Kuidas seadistada staatiline IP FLIR Blackfly GigE kaameratele</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/et/cameras-video/lynx-static-ip/index.html">Kuidas seadistada staatiline IP Lynx GigE kaameratele</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/et/cameras-video/halcon-camera-standards/index.html">Kuidas teada saada, milliseid standardeid teie kaamerad Halconiga kasutamiseks toetavad</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/et/cameras-video/fox-lynx-firmware/index.html">Kuidas uuendada või alandada Fox / Lynx püsivara versiooni</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/et/cameras-video/minimum-distances/index.html">Minimaalsed kaamerakaugused</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/et/cameras-video/recommended-lighting/index.html">Soovitatav valgustus stuudiote ja garaaži-bokside paigalduste jaoks</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/et/cameras-video/recommended-usb3-components/index.html">Soovituslikud USB 3.0 komponendid</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/fox-camera-setup/index.html">Swing Catalyst Foxi USB 3.0 kaamera(te) seadistamine</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/lynx-camera-setup/index.html">Swing Catalyst Lynx GigE kaamera(te) seadistamine</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/et/cameras-video/supported-cameras/index.html">Toetatud kaamerad</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/et/cameras-video/usb3-troubleshooting/index.html">USB3 kaamera tõrkeotsing</a></li>
+            <li class="" data-nav-id="/sc-support/et/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/et/cameras-video/ximea-usb3-setup/index.html">Ximea USB3 Vision kaamerate seadistamine Swing Catalystiga</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/et/hardware/index.html"><a class="padding default-animation" href="/sc-support/et/hardware/index.html">Riistvara</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/et/software-features/index.html"><a class="padding default-animation" href="/sc-support/et/software-features/index.html">Tarkvara ja funktsioonid</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/et/account-setup/index.html"><a class="padding default-animation" href="/sc-support/et/account-setup/index.html">Konto ja Seis</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/et/reference/index.html"><a class="padding default-animation" href="/sc-support/et/reference/index.html">Viide</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/basler-gige-setup/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/basler-gige-setup/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/basler-gige-setup/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/basler-gige-setup/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/basler-gige-setup/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/basler-gige-setup/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/basler-gige-setup/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/basler-gige-setup/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/basler-gige-setup/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/basler-gige-setup/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/basler-gige-setup/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/basler-gige-setup/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/basler-gige-setup/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/basler-gige-setup/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/basler-gige-setup/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/basler-gige-setup/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/basler-gige-setup/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/basler-gige-setup/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/basler-gige-setup/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/basler-gige-setup/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/basler-gige-setup/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/basler-gige-setup/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/basler-gige-setup/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/basler-gige-setup/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/basler-gige-setup/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/basler-gige-setup/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/basler-gige-setup/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/basler-gige-setup/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/basler-gige-setup/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/basler-gige-setup/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/basler-gige-setup/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/basler-gige-setup/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/basler-gige-setup/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/basler-gige-setup/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/basler-gige-setup/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/basler-gige-setup/index.html" lang="et" selected data-selected>Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520166" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520166" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

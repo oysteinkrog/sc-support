@@ -1,25 +1,578 @@
-<!doctype html><html id=R-html lang=nl dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content='Zowel de "Lynx" als "Fox" camera&#39;s worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.'><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="De Swing Catalyst Lynx GigE camera('s) instellen :: Swing Catalyst Ondersteuning"><meta name=twitter:description content='Zowel de "Lynx" als "Fox" camera&#39;s worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.'><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/nl/cameras-video/lynx-camera-setup/index.html"><meta property="og:site_name" content="Swing Catalyst Ondersteuning"><meta property="og:title" content="De Swing Catalyst Lynx GigE camera('s) instellen :: Swing Catalyst Ondersteuning"><meta property="og:description" content='Zowel de "Lynx" als "Fox" camera&#39;s worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.'><meta property="og:locale" content="nl"><meta property="og:type" content="article"><meta property="article:section" content="Camera's en Video"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Gige-Camera"><meta property="article:tag" content="Lynx-Camera"><meta property="article:tag" content="Fox-Camera"><meta itemprop=name content="De Swing Catalyst Lynx GigE camera('s) instellen :: Swing Catalyst Ondersteuning"><meta itemprop=description content='Zowel de "Lynx" als "Fox" camera&#39;s worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.'><meta itemprop=wordCount content="982"><meta itemprop=keywords content="Troubleshooting,Gige-Camera,Lynx-Camera,Fox-Camera"><title>De Swing Catalyst Lynx GigE camera('s) instellen :: Swing Catalyst Ondersteuning</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/lynx-camera-setup/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763279 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763279 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763279 defer></script><script src=/sc-support/js/search.min.js?1771763279 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.nl.js?1771763279"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763279 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763279 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763279 defer></script><script src=/sc-support/js/lunr/lunr.nl.min.js?1771763279 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["nl"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763279 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763279 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763279 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763279 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763279 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/lynx-camera-setup/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Tekst naar klembord kopiëren`,window.T_Copied_to_clipboard=`Tekst gekopieerd naar klembord!`,window.T_Link_copied_to_clipboard=`Link gekopieerd naar klembord!`,window.T_Reset_view=`Weergave opnieuw instellen`,window.T_View_reset=`Opnieuw instellen weergeven!`,window.T_No_results_found=`Geen resultaten gevonden voor "{0}"`,window.T_N_results_found=`{1} resultaten gevonden voor "{0}"`,window.T_Browser_unsupported_feature=`Deze browser ondersteunt deze functie niet`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/nl/cameras-video/lynx-camera-setup/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Inhoudsopgave (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#dit-artikel-behandelt-basisinformatie-over-de-camera-en-hoe-u-de-lynx-gige-camera-van-swing-catalyst-instelt-en-configureert>Dit artikel behandelt basisinformatie over de camera en hoe u de Lynx GigE camera van Swing Catalyst instelt en configureert.</a><ul><li><a href=#for-a-brief-step-by-step-guide-please-see--httpsswingcatalystcomcamera-guide>For a brief step by step guide please see <strong>:</strong> <a href=https://swingcatalyst.com/camera-guide/>https://swingcatalyst.com/camera-guide</a></a></li></ul></li><li><a href=#this-article-is-split-into-different-sections>This article is split into different sections</a><ul><li><a href=#getting-started-hardware-setup>Getting started: Hardware setup</a></li><li><a href=#installing-the-dual-port-network-card>Installing the dual port network card</a></li><li><a href=#driver-installation-and-enabling-the-cameras>Driver installation and enabling the camera(s)</a></li><li><a href=#troubleshooting-tips>Troubleshooting tips</a></li></ul></li><li><a href=#camera-information>Camera information:</a></li><li><a href=#getting-started-camera-assembly>Getting started: Camera Assembly</a></li><li><a href=#20230110_><a href=#section1><img src=../../assets/images/6219356936722/20230110-095547-jpg.png alt=20230110_095547.jpg></a></a></li><li><a href=#installing-the-dual-port-network-card-1>Installing the dual port network card:</a></li><li><a href=#how-to-configure-your-network-card>How to configure your network card</a><ul><li><a href=#enabling-jumbo-frames>Enabling Jumbo Frames</a></li></ul></li><li><a href=#driver-installation-and-enabling-the-cameras-1>Driver installation and enabling the camera(s):</a></li><li><a href=#configuring-the-camera-settings>Configuring the camera settings:</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/nl/index.html><span itemprop=name>Swing Catalyst Ondersteuning</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/nl/cameras-video/index.html><span itemprop=name>Camera's en Video</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>De Swing Catalyst Lynx GigE camera('s) instellen</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/nl/cameras-video/fox-camera-setup/index.html title="De Swing Catalyst Fox USB 3.0-camera('s) instellen (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/nl/cameras-video/advanced-camera-settings/index.html title="Een gids voor de Geavanceerde Camera-instellingen (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Snelkoppelingen><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/nl/tags/fox-camera/index.html>Fox-Camera</a></li><li><a class=term-link href=/sc-support/nl/tags/gige-camera/index.html>Gige-Camera</a></li><li><a class=term-link href=/sc-support/nl/tags/lynx-camera/index.html>Lynx-Camera</a></li><li><a class=term-link href=/sc-support/nl/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=de-swing-catalyst-lynx-gige-cameras-instellen>De Swing Catalyst Lynx GigE camera('s) instellen</h1><h1 id=de-swing-catalyst-lynx-camera-instellen>De Swing Catalyst Lynx camera instellen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1><h2 id=dit-artikel-behandelt-basisinformatie-over-de-camera-en-hoe-u-de-lynx-gige-camera-van-swing-catalyst-instelt-en-configureert>Dit artikel behandelt basisinformatie over de camera en hoe u de Lynx GigE camera van Swing Catalyst instelt en configureert.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=for-a-brief-step-by-step-guide-please-see--httpsswingcatalystcomcamera-guide>For a brief step by step guide please see <strong>:</strong> <a href=https://swingcatalyst.com/camera-guide/ rel=external>https://swingcatalyst.com/camera-guide</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h2 id=this-article-is-split-into-different-sections>This article is split into different sections<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=getting-started-hardware-setup>Getting started: Hardware setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h3 id=installing-the-dual-port-network-card>Installing the dual port network card<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h3 id=driver-installation-and-enabling-the-cameras>Driver installation and enabling the camera(s)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h3 id=troubleshooting-tips>Troubleshooting tips<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h2 id=camera-information>Camera information:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Both the &ldquo;Lynx&rdquo; and &ldquo;Fox&rdquo; cameras are <strong>only supported in Swing Catalyst 9.8.2 or higher.</strong></p><p><a href=/sc-support/nl/getting-started/check-version/index.html><strong>Which version of the software am I running?</strong></a></p><ul><li><p>This is a GigE based camera that is capable of Power over Ethernet (PoE). Please make sure you&rsquo;re using the recommended PoE network card or have a auxiliary power supply (Available from our web-shop or by contacting your Swing Catalyst sales agent)</p></li><li><p>The maximum frame rate for this camera is 320 FPS.</p></li><li><p>This camera has a resolution of 720x540</p></li></ul><h2 id=getting-started-camera-assembly>Getting started: Camera Assembly<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Attach the tripod adapter to the camera body using the 4 black Phillips head screws included with the camera.</p><h2 id=20230110_><a href=/sc-support/nl/cameras-video/lynx-camera-setup/index.html#section1><a href=#R-image-cf5f485f39eb187ef858e5cec1312d4e class=lightbox-link><img alt=20230110_095547.jpg class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/20230110-095547-jpg.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-cf5f485f39eb187ef858e5cec1312d4e><img alt=20230110_095547.jpg class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/20230110-095547-jpg.png></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Unpack the lens and make sure to remove the plastic lens covers</p><p><a href=#R-image-b8a778fb7358bbe7999eb312eee56bf1 class=lightbox-link><img alt=20200812_150221.jpg class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/20200812-150221-jpg.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b8a778fb7358bbe7999eb312eee56bf1><img alt=20200812_150221.jpg class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/20200812-150221-jpg.png></a></p><p>Remove the sensor cover from the camera</p><p><a href=#R-image-c20c12f658b66a0b5d0f6b7fa3e1d85a class=lightbox-link><img alt=20230110_095616.jpg class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/20230110-095616-jpg.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c20c12f658b66a0b5d0f6b7fa3e1d85a><img alt=20230110_095616.jpg class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/20230110-095616-jpg.png></a><a href=#R-image-945e040fe0b95a715a413357f275a91a class=lightbox-link><img alt=20230110_095634.jpg class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/20230110-095634-jpg.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-945e040fe0b95a715a413357f275a91a><img alt=20230110_095634.jpg class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/20230110-095634-jpg.png></a></p><p>Attaching the lens to the camera</p><p><a href=#R-image-40b20f927b56b202a9c80101a9ca9dd2 class=lightbox-link><img alt=ApplicationFrameHost_tIbtGFRHGM.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-40b20f927b56b202a9c80101a9ca9dd2><img alt=ApplicationFrameHost_tIbtGFRHGM.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png></a></p><p>Adjusting the camera lens</p><p><a href=#R-image-041639382e3c8533791852d43a26a244 class=lightbox-link><img alt=20200814_132604.jpg class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/20200814-132604-jpg.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-041639382e3c8533791852d43a26a244><img alt=20200814_132604.jpg class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/20200814-132604-jpg.png></a></p><p>This lens has three adjustments, from top to bottom:</p><ul><li><p>Focus (adjusting towards the ∞ symbol will make objects further away in the background in focus)</p></li><li><p>Aperture (iris adjustment, will adjust how much light is able to pass through the lens, a more closed aperture will result in a sharper image).</p></li><li><p>Zoom (adjusts the zoom of the lens wide or telephoto).</p></li></ul><h2 id=installing-the-dual-port-network-card-1>Installing the dual port network card:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>Important: It&rsquo;s important the network card is configured per recommendations.</strong></p><p><a href=/sc-support/nl/cameras-video/gige-network-setup/index.html>**gige-network-setup.md</a></p><p>Please see this video if you have the 4-port variant:</p><h2 id=how-to-configure-your-network-card>How to configure your network card<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Please note that you have to repeat these steps for any network adapter that you intend to use with a camera.</p><h3 id=enabling-jumbo-frames>Enabling Jumbo Frames<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Click your start button and type in &ldquo;Network Connections&rdquo;</p></li><li><p>Right click the Ethernet ports your cameras are connected to and go to &ldquo;Properties&rdquo;.</p></li><li><p>Click the &ldquo;Configure&rdquo; button and go to &ldquo;Advanced&rdquo;.</p></li><li><p>Set &ldquo;Jumbo Packet&rdquo; value to 9014.</p></li></ul><p>Set &ldquo;Receive Buffers&rdquo; to 2048.</p><p><a href=#R-image-e096c1565e4b5573b06241fda9b3291e class=lightbox-link><img alt=explorer_t0FwTxHLrs.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/explorer-t0fwtxhlrs-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-e096c1565e4b5573b06241fda9b3291e><img alt=explorer_t0FwTxHLrs.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/explorer-t0fwtxhlrs-png.png></a><a href=#R-image-105bad5f5b3bad26e4d2f81553cb3060 class=lightbox-link><img alt=dllhost_69KArChZ12.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/dllhost-69karchz12-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-105bad5f5b3bad26e4d2f81553cb3060><img alt=dllhost_69KArChZ12.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/dllhost-69karchz12-png.png></a></p><p><a href=#R-image-bf9291b6e45832d1d0372c8408f7d46e class=lightbox-link><img alt=rundll32_Fo46JG8NDK.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/rundll32-fo46jg8ndk-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-bf9291b6e45832d1d0372c8408f7d46e><img alt=rundll32_Fo46JG8NDK.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/rundll32-fo46jg8ndk-png.png></a></p><p><a href=#R-image-4694cc93c586716ef17ba27b7ee3b98b class=lightbox-link><img alt=rundll32_j6bJcuer55.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/rundll32-j6bjcuer55-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4694cc93c586716ef17ba27b7ee3b98b><img alt=rundll32_j6bJcuer55.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/rundll32-j6bjcuer55-png.png></a></p><h2 id=driver-installation-and-enabling-the-cameras-1>Driver installation and enabling the camera(s):<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Step 1: Connect your camera(s) to the PoE network ports on your PC using a Cat5 or Cat6 Ethernet cable and make sure you have a solid blue light on the back of your camera.</p><p>Step 2: <a href=https://cloudfront.swingcatalyst.com/drivers/NA_SDK_V3_5_3_3_MVFG_V1_1_4_2_VC90_Runtime_NEU.exe rel=external>Click to Download</a> and install the drivers for your camera(s)</p><p>Step 3: Open Swing Catalyst and click on the gear icon in the bottom left corner of the main menu and go to your Cameras settings.</p><p>Step 4: Click the Play button to get a preview. Then click &ldquo;Disabled&rdquo; and assign the appropriate angle to each camera. Lastly switch the camera from &ldquo;Off&rdquo; to &ldquo;On&rdquo;.</p><p><a href=#R-image-3f43142bc92cd67390005d75da399550 class=lightbox-link><img alt=mceclip1.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/mceclip1-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-3f43142bc92cd67390005d75da399550><img alt=mceclip1.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/mceclip1-png.png></a></p><h2 id=configuring-the-camera-settings>Configuring the camera settings:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>IMPORTANT</strong></p><p>For clear club and shaft views, keep exposure below 600. Boost the image brightness by adjusting the gain. Optimal lighting: install three Thomann 100w lights—one each down the line, right, and left—mounted at least 1.5 meters from the ball, either on ceiling or wall.</p><ul><li><p>Click the &ldquo;Advanced&rdquo; button and go to the &ldquo;Camera&rdquo; tab.</p></li><li><p>Assign the same values as the pictures below.</p></li><li><p>Set all values that show &ldquo;continuous&rdquo; to &ldquo;off&rdquo;.</p></li><li><p>Repeat this for any other Lynx cameras you have connected.</p></li></ul><p><strong>Note</strong>: If you have 3 or 4 cameras we recommend setting GEV SCPD to 150.</p><p>You should now be able to close the settings and go into capture mode to start recording.</p><p><a href=#R-image-1b03ccea081f4956e02cf609467926ac class=lightbox-link><img alt=MotionCatalyst_eG3hDWHNzO.jpg class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1b03ccea081f4956e02cf609467926ac><img alt=MotionCatalyst_eG3hDWHNzO.jpg class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png></a></p><p><a href=#R-image-eb055d352a6d0c77c67fa853d3b7ed8b class=lightbox-link><img alt=mceclip5.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/mceclip5-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-eb055d352a6d0c77c67fa853d3b7ed8b><img alt=mceclip5.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/mceclip5-png.png></a></p><p><a href=/sc-support/nl/cameras-video/lynx-camera-setup/index.html#troubleshooting-tips>Troubleshooting tips:</a></p><p><strong>Cameras are not showing up in Swing Catalyst settings:</strong></p><p>Ensure you have the latest MVS/Runtime installed (4.6.1)</p><p><strong>Dropped frames:</strong></p><p>Reducing the frame rate on each camera may help avoid or reduce dropped frames.</p><p><a href=#R-image-0e2f3439d48a47af1c75de537b359f07 class=lightbox-link><img alt=MotionCatalyst_W1FKPdYpkX.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-0e2f3439d48a47af1c75de537b359f07><img alt=MotionCatalyst_W1FKPdYpkX.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png></a></p><p>Do you have one of the recommended network cards? If not it may be the network card itself that is causing problems. Please contact our sales team to ensure you have the proper network equipment.</p><ul><li><p>Improper network card configuration. Check that 9kB jumbo frames is enabled on each network adapter. <a href=/sc-support/nl/cameras-video/gige-network-setup/index.html>See our support article on recommended configuration</a></p></li><li><p>Set GEV SCPD to 150 if using more than 2 cameras (see the camera settings under the Device / Link section).</p></li><li><p>Confirm that the link speed is 1000 Mbps not 100 Mbps (see &ldquo;Device Link Speed&rdquo; under the Device / Link section in camera settings).</p></li></ul><p><strong>Link speed is 100 Mbps:</strong></p><ul><li><p>If the link speed is 100Mbps instead of 1000Mbps the cable you&rsquo;re using may be bad or damaged, or the network adapter might not support Gigabit speeds. Try replacing the cable.</p></li><li><p>Try to reset camera the camera settings to defaults, check link speed again under the &ldquo;Device/ Link&rdquo; section in camera settings.</p></li><li><p>Check the status of the network adapter from the Windows Control Panel</p></li></ul><p><a href=#R-image-da0f8f8d7c83229753e6dc17aa231148 class=lightbox-link><img alt=explorer_zOL1iapQMl.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/6219356936722/explorer-zol1iapqml-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-da0f8f8d7c83229753e6dc17aa231148><img alt=explorer_zOL1iapQMl.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/6219356936722/explorer-zol1iapqml-png.png></a></p><p>Note: Speed should be 1.0 Gbps (1000Mbps), not 100Mbps.</p><p><strong>Reducing dropped frames additionally by using Region Of Interest (ROI):</strong></p><p>Using a region of interest (or area of interest) will reduce the overall image size and boost the FPS, but  also it can help lower the bandwidth usage which in turns could reduce dropped frames (see above on how to utilize ROI).</p><p><strong>Connectivity problems (camera disconnects):</strong></p><ul><li><p>Inspect network cabling.</p></li><li><p>If using external power supplies to cameras, check power supply connection.</p></li></ul><p><strong>Camera doesn&rsquo;t turn on / no power received:</strong></p><ul><li>If using a PoE network card with more than 2 ports, verify that the network card has external power connected to it from the computer.</li></ul><p><strong>Other problems:</strong></p><p>Depending on your hardware it might not be the best to have the sharpening and denoise filters on, turning these off will reduce some CPU & GPU usage. You can find the camera filters in the Advanced Camera Settings Filters tab. More info on filters here: <a href=/sc-support/nl/cameras-video/improving-image-quality/index.html>improving-image-quality.md</a></p><p>How to set static IP</p><p>This article covers how to set a static IP address on the Lynx cameras and network cards respectively: <a href=/sc-support/nl/cameras-video/lynx-static-ip/index.html>lynx-static-ip.md</a></p><hr><p><em>Last updated: 2026-01-21</em> | <a href=/sc-support/nl/cameras-video/lynx-camera-setup/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/nl/index.html><span class="logo-title default-animation">Swing Catalyst Ondersteuning</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Zoeken (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Zoeken</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Zoeken...>
-<button class=search-clear type=button data-search-clear title="Zoekopdracht wissen"><i class="fas fa-fw fa-times" title="Zoekopdracht wissen"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/nl/getting-started/index.html><a class="padding default-animation" href=/sc-support/nl/getting-started/index.html>Aan de slag</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/nl/cameras-video/index.html><a class="padding default-animation" href=/sc-support/nl/cameras-video/index.html>Camera's en Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/nl/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/gige-network-setup/index.html>Aanbevelingen voor Gigabit Ethernet & GigE Vision camera-netwerk</a></li><li data-nav-id=/sc-support/nl/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/nl/cameras-video/recommended-usb3-components/index.html>Aanbevolen USB 3.0-componenten</a></li><li data-nav-id=/sc-support/nl/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/nl/cameras-video/recommended-lighting/index.html>Aanbevolen verlichting voor studio's en garage bay-installaties</a></li><li data-nav-id=/sc-support/nl/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/nl/cameras-video/lens-distortion-correction/index.html>Automatische Lensvervorming Correctie in Swing Catalyst: Uw Visuele Ervaring Verbeteren</a></li><li data-nav-id=/sc-support/nl/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/nl/cameras-video/avt-manta-configure/index.html>AVT Manta/Prosilica GigE highspeed camera's configureren</a></li><li data-nav-id=/sc-support/nl/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/nl/cameras-video/avt-manta-install/index.html>AVT Manta/Prosilica GigE-camera's installeren</a></li><li data-nav-id=/sc-support/nl/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/basler-gige-setup/index.html>Basler GigE camera's instellen met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/nl/cameras-video/cctv-cameras/index.html>CCTV-camera's instellen</a></li><li data-nav-id=/sc-support/nl/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/nl/cameras-video/halcon-bluescreen-fix/index.html>Computer krijgt Bluescreen bij verbinding van Halcon USB-licentiesleutel</a></li><li data-nav-id=/sc-support/nl/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/nl/cameras-video/dragon-usb2-camera/index.html>De Dragon (120 FPS) USB 2.0 camera gebruiken met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-firmware-upgrade/index.html>De firmware van de FLIR Blackfly S bijwerken</a></li><li data-nav-id=/sc-support/nl/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/fox-camera-setup/index.html>De Swing Catalyst Fox USB 3.0-camera('s) instellen</a></li><li class=active data-nav-id=/sc-support/nl/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/lynx-camera-setup/index.html>De Swing Catalyst Lynx GigE camera('s) instellen</a></li><li data-nav-id=/sc-support/nl/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/nl/cameras-video/advanced-camera-settings/index.html>Een gids voor de Geavanceerde Camera-instellingen</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html>Een statisch IP-adres instellen op FLIR Blackfly GigE-camera's</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html>FLiR / Point Grey (Blackfly/Chameleon) Camera werkt niet meer na upgrade</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-spinnaker-cameras/index.html>FLIR Blackfly S (Spinnaker) camera's gebruiken met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-blackfly-gige-setup/index.html>FLIR BlackFly S GigE instellen in Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-blackfly-usb-setup/index.html>FLIR BlackFly S USB instellen in Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/nl/cameras-video/flir-warranty-service/index.html>FLIR-cameragararantie- en serviceinformatie</a></li><li data-nav-id=/sc-support/nl/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/nl/cameras-video/fox-lynx-firmware/index.html>Fox / Lynx firmware upgraden of downgraden</a></li><li data-nav-id=/sc-support/nl/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/halcon-setup/index.html>Halcon instellen voor Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/nl/cameras-video/hardware-encoding/index.html>Het gebruik van de Swing Catalyst hardwareversleuteling</a></li><li data-nav-id=/sc-support/nl/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/nl/cameras-video/fix-dropped-frames/index.html>Hoe 'verloren frames' met USB 3.0 of 2.0 camera's oplossen.</a></li><li data-nav-id=/sc-support/nl/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/nl/cameras-video/web-camera-directshow/index.html>Hoe u een webcamera (DirectShow-integratie) met Swing Catalyst gebruikt</a></li><li data-nav-id=/sc-support/nl/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/nl/cameras-video/ids-ueye-highspeed/index.html>Hoe u iDS uEye USB-camera's met hoge snelheid instelt</a></li><li data-nav-id=/sc-support/nl/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/nl/cameras-video/halcon-camera-standards/index.html>Hoe u kunt vinden welke standaarden uw camera's ondersteunen voor gebruik met Halcon</a></li><li data-nav-id=/sc-support/nl/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/nl/cameras-video/ids-ueye-gige/index.html>IDS uEye GigE-camera configureren met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/nl/cameras-video/ids-ueye-usb/index.html>IDS uEye USB-camera's gebruiken met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/nl/cameras-video/led-light-flicker/index.html>LED-lichtflikkering voorkomen</a></li><li data-nav-id=/sc-support/nl/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/nl/cameras-video/minimum-distances/index.html>Minimale camerafstanden</a></li><li data-nav-id=/sc-support/nl/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/nl/cameras-video/supported-cameras/index.html>Ondersteunde camera's</a></li><li data-nav-id=/sc-support/nl/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/nl/cameras-video/point-grey-flir-gige/index.html>Point Grey / FLIR GigE (Blackfly) camera's configureren met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/nl/cameras-video/point-grey-flir-usb/index.html>Point Grey / FLiR USB-camera's gebruiken met Swing Catalyst</a></li><li data-nav-id=/sc-support/nl/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/nl/cameras-video/lynx-static-ip/index.html>Statisch IP-adres instellen op Lynx GigE-camera's</a></li><li data-nav-id=/sc-support/nl/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/nl/cameras-video/usb3-troubleshooting/index.html>USB3-camera probleemoplossing</a></li><li data-nav-id=/sc-support/nl/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/nl/cameras-video/pci-express-slots/index.html>Verschillen tussen PCI / PCI Express sleuven</a></li><li data-nav-id=/sc-support/nl/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/nl/cameras-video/improving-image-quality/index.html>Videokwaliteit van de camera verbeteren</a></li><li data-nav-id=/sc-support/nl/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/nl/cameras-video/ximea-usb3-setup/index.html>Ximea USB3 Vision camera's instellen met Swing Catalyst</a></li></ul></li><li data-nav-id=/sc-support/nl/hardware/index.html><a class="padding default-animation" href=/sc-support/nl/hardware/index.html>Hardware</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/nl/software-features/index.html><a class="padding default-animation" href=/sc-support/nl/software-features/index.html>Software en Functies</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/nl/account-setup/index.html><a class="padding default-animation" href=/sc-support/nl/account-setup/index.html>Account & Setup</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/nl/reference/index.html><a class="padding default-animation" href=/sc-support/nl/reference/index.html>Referentie</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Taal</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/lynx-camera-setup/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/lynx-camera-setup/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/lynx-camera-setup/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/lynx-camera-setup/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/lynx-camera-setup/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/lynx-camera-setup/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/lynx-camera-setup/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/lynx-camera-setup/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/lynx-camera-setup/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/lynx-camera-setup/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/lynx-camera-setup/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/lynx-camera-setup/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/lynx-camera-setup/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/lynx-camera-setup/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/lynx-camera-setup/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/lynx-camera-setup/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/lynx-camera-setup/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/lynx-camera-setup/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/lynx-camera-setup/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/lynx-camera-setup/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/lynx-camera-setup/index.html lang=nl selected data-selected>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/lynx-camera-setup/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/lynx-camera-setup/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/lynx-camera-setup/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/lynx-camera-setup/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/lynx-camera-setup/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/lynx-camera-setup/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/lynx-camera-setup/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/lynx-camera-setup/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/lynx-camera-setup/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/lynx-camera-setup/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/lynx-camera-setup/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/lynx-camera-setup/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/lynx-camera-setup/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/lynx-camera-setup/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/lynx-camera-setup/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Thema</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763279 defer></script><script src=/sc-support/js/theme.min.js?1771763279 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="nl" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Zowel de &#34;Lynx&#34;- als de &#34;Fox&#34;-camera worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="De Swing Catalyst Lynx GigE-camera(&#39;s) instellen :: Swing Catalyst Ondersteuning">
+    <meta name="twitter:description" content="Zowel de &#34;Lynx&#34;- als de &#34;Fox&#34;-camera worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/nl/cameras-video/lynx-camera-setup/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Ondersteuning">
+    <meta property="og:title" content="De Swing Catalyst Lynx GigE-camera(&#39;s) instellen :: Swing Catalyst Ondersteuning">
+    <meta property="og:description" content="Zowel de &#34;Lynx&#34;- als de &#34;Fox&#34;-camera worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.">
+    <meta property="og:locale" content="nl">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Camera&#39;s & Video">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Gige-Camera">
+    <meta property="article:tag" content="Lynx-Camera">
+    <meta property="article:tag" content="Fox-Camera">
+    <meta itemprop="name" content="De Swing Catalyst Lynx GigE-camera(&#39;s) instellen :: Swing Catalyst Ondersteuning">
+    <meta itemprop="description" content="Zowel de &#34;Lynx&#34;- als de &#34;Fox&#34;-camera worden alleen ondersteund in Swing Catalyst 9.8.2 of hoger.">
+    <meta itemprop="wordCount" content="949">
+    <meta itemprop="keywords" content="Troubleshooting,Gige-Camera,Lynx-Camera,Fox-Camera">
+    <title>De Swing Catalyst Lynx GigE-camera(&#39;s) instellen :: Swing Catalyst Ondersteuning</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/lynx-camera-setup/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520129" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520129" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520129" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520129" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.nl.js?1772520129";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520129" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520129" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520129" defer></script>
+    <script src="/sc-support/js/lunr/lunr.nl.min.js?1772520129" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['nl'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520129" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520129" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520129" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520129" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520129" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/lynx-camera-setup\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Tekst naar klembord kopiëren`;
+      window.T_Copied_to_clipboard = `Tekst gekopieerd naar klembord!`;
+      window.T_Link_copied_to_clipboard = `Link gekopieerd naar klembord!`;
+      window.T_Reset_view = `Weergave opnieuw instellen`;
+      window.T_View_reset = `Opnieuw instellen weergeven!`;
+      window.T_No_results_found = `Geen resultaten gevonden voor "{0}"`;
+      window.T_N_results_found = `{1} resultaten gevonden voor "{0}"`;
+      window.T_Browser_unsupported_feature = `Deze browser ondersteunt deze functie niet`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/nl/cameras-video/lynx-camera-setup/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Inhoudsopgave (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#dit-artikel-bevat-basisinformatie-over-de-camera-en-uitleg-over-het-instellen-en-configureren-van-de-lynx-gige-camera-van-swing-catalyst">Dit artikel bevat basisinformatie over de camera en uitleg over het instellen en configureren van de Lynx GigE-camera van Swing Catalyst.</a>
+      <ul>
+        <li><a href="#voor-een-beknopte-stapsgewijze-handleiding-zie--httpsswingcatalystcomcamera-guide">Voor een beknopte stapsgewijze handleiding, zie <strong>:</strong> <a href="https://swingcatalyst.com/camera-guide/">https://swingcatalyst.com/camera-guide</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#dit-artikel-is-opgedeeld-in-verschillende-secties">Dit artikel is opgedeeld in verschillende secties</a>
+      <ul>
+        <li><a href="#aan-de-slag-hardware-installatie">Aan de slag: Hardware-installatie</a></li>
+        <li><a href="#de-dual-port-netwerkkaart-installeren">De dual-port netwerkkaart installeren</a></li>
+        <li><a href="#drivers-installeren-en-de-cameras-inschakelen">Drivers installeren en de camera(&rsquo;s) inschakelen</a></li>
+        <li><a href="#tips-voor-probleemoplossing">Tips voor probleemoplossing</a></li>
+      </ul>
+    </li>
+    <li><a href="#camera-informatie">Camera-informatie:</a></li>
+    <li><a href="#aan-de-slag-camera-assemblage">Aan de slag: Camera-assemblage</a></li>
+    <li><a href="#20230110_"><a href="#section1"><img src="__PH0__" alt="20230110_095547.jpg"></a></a></li>
+    <li><a href="#de-dual-port-netwerkkaart-installeren-1">De dual-port netwerkkaart installeren:</a></li>
+    <li><a href="#de-netwerkkaart-configureren">De netwerkkaart configureren</a>
+      <ul>
+        <li><a href="#jumbo-frames-inschakelen">Jumbo Frames inschakelen</a></li>
+      </ul>
+    </li>
+    <li><a href="#drivers-installeren-en-de-cameras-inschakelen-1">Drivers installeren en de camera(&rsquo;s) inschakelen:</a></li>
+    <li><a href="#de-camera-instellingen-configureren">De camera-instellingen configureren:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/nl/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/nl/cameras-video/index.html"><span itemprop="name">Camera&#39;s &amp; Video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">De Swing Catalyst Lynx GigE-camera(&#39;s) instellen</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/nl/cameras-video/fox-camera-setup/index.html" title="De Swing Catalyst Fox USB 3.0 camera('s) instellen (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/nl/cameras-video/advanced-camera-settings/index.html" title="Een handleiding voor de geavanceerde camera-instellingen (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Snelkoppelingen"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/nl/tags/fox-camera/index.html">Fox-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/nl/tags/gige-camera/index.html">Gige-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/nl/tags/lynx-camera/index.html">Lynx-Camera</a></li>
+    <li><a class="term-link" href="/sc-support/nl/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="de-swing-catalyst-lynx-gige-cameras-instellen">De Swing Catalyst Lynx GigE-camera(&#39;s) instellen</h1>
+
+<h1 id="de-swing-catalyst-lynx-camera-instellen">De Swing Catalyst Lynx-camera instellen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h2 id="dit-artikel-bevat-basisinformatie-over-de-camera-en-uitleg-over-het-instellen-en-configureren-van-de-lynx-gige-camera-van-swing-catalyst">Dit artikel bevat basisinformatie over de camera en uitleg over het instellen en configureren van de Lynx GigE-camera van Swing Catalyst.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="voor-een-beknopte-stapsgewijze-handleiding-zie--httpsswingcatalystcomcamera-guide">Voor een beknopte stapsgewijze handleiding, zie <strong>:</strong> <a href="https://swingcatalyst.com/camera-guide/" rel="external">https://swingcatalyst.com/camera-guide</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="dit-artikel-is-opgedeeld-in-verschillende-secties">Dit artikel is opgedeeld in verschillende secties<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="aan-de-slag-hardware-installatie">Aan de slag: Hardware-installatie<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="de-dual-port-netwerkkaart-installeren">De dual-port netwerkkaart installeren<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="drivers-installeren-en-de-cameras-inschakelen">Drivers installeren en de camera(&rsquo;s) inschakelen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="tips-voor-probleemoplossing">Tips voor probleemoplossing<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h2 id="camera-informatie">Camera-informatie:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Zowel de &ldquo;Lynx&rdquo;- als de &ldquo;Fox&rdquo;-camera worden <strong>alleen ondersteund in Swing Catalyst 9.8.2 of hoger.</strong></p>
+<p><a href="/sc-support/nl/getting-started/check-version/index.html"><strong>Welke versie van de software gebruik ik?</strong></a></p>
+<ul>
+<li>
+<p>Dit is een GigE-camera die Power over Ethernet (PoE) ondersteunt. Zorg ervoor dat u de aanbevolen PoE-netwerkkaart gebruikt of een externe voeding hebt (verkrijgbaar in onze webshop of via uw Swing Catalyst-vertegenwoordiger)</p>
+</li>
+<li>
+<p>De maximale framesnelheid van deze camera is 320 FPS.</p>
+</li>
+<li>
+<p>Deze camera heeft een resolutie van 720x540</p>
+</li>
+</ul>
+<h2 id="aan-de-slag-camera-assemblage">Aan de slag: Camera-assemblage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Bevestig de statiefeiadapter aan het cameralichaam met de 4 meegeleverde zwarte kruiskopschroeven.</p>
+<h2 id="20230110_"><a href="/sc-support/nl/cameras-video/lynx-camera-setup/index.html#section1"><a href="#R-image-3fa3031e5d7ca5c75059c29cee710237" class="lightbox-link"><img alt="20230110_095547.jpg" class="lazy lightbox figure-image" loading="lazy" src="__PH0__" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fa3031e5d7ca5c75059c29cee710237"><img alt="20230110_095547.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="__PH0__"></a></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Pak de lens uit en verwijder de plastic lensdoppen</p>
+<p><a href="#R-image-be3dac83f5ee007fd9418b026352438a" class="lightbox-link"><img alt="20200812_150221.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-be3dac83f5ee007fd9418b026352438a"><img alt="20200812_150221.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200812-150221-jpg.png"></a></p>
+<p>Verwijder het sensorkapje van de camera</p>
+<p><a href="#R-image-2e28bfdb8ed3d88fa59d0d6c644bf84d" class="lightbox-link"><img alt="20230110_095616.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e28bfdb8ed3d88fa59d0d6c644bf84d"><img alt="20230110_095616.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095616-jpg.png"></a><a href="#R-image-844221c230777250feec44e80e74fe6a" class="lightbox-link"><img alt="20230110_095634.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-844221c230777250feec44e80e74fe6a"><img alt="20230110_095634.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20230110-095634-jpg.png"></a></p>
+<p>De lens op de camera bevestigen</p>
+<p><a href="#R-image-ae59d75ed09ba67a9fcecbcb6b4c5fe4" class="lightbox-link"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae59d75ed09ba67a9fcecbcb6b4c5fe4"><img alt="ApplicationFrameHost_tIbtGFRHGM.gif" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/applicationframehost-tibtgfrhgm-gif.png"></a></p>
+<p>De cameralens afstellen</p>
+<p><a href="#R-image-e0d80f0e1a34ece78fcb21432afd753c" class="lightbox-link"><img alt="20200814_132604.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e0d80f0e1a34ece78fcb21432afd753c"><img alt="20200814_132604.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/20200814-132604-jpg.png"></a></p>
+<p>Deze lens heeft drie afstellingen, van boven naar beneden:</p>
+<ul>
+<li>
+<p>Focus (afstellen richting het ∞-symbool zorgt ervoor dat objecten verder weg op de achtergrond scherp zijn)</p>
+</li>
+<li>
+<p>Diafragma (Iris-afstelling, bepaalt hohoeveel licht door de lens kan passeren; een kleiner diafragma levert een scherper beeld op).</p>
+</li>
+<li>
+<p>Zoom (stelt de zoom van de lens in op groothoek of tele).</p>
+</li>
+</ul>
+<h2 id="de-dual-port-netwerkkaart-installeren-1">De dual-port netwerkkaart installeren:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>Belangrijk: Het is essentieel dat de netwerkkaart wordt geconfigureerd volgens de aanbevelingen.</strong></p>
+<p><a href="/sc-support/nl/cameras-video/gige-network-setup/index.html">**gige-network-setup.md</a></p>
+<p>Bekijk deze video als u de 4-poorts variant heeft:</p>
+<h2 id="de-netwerkkaart-configureren">De netwerkkaart configureren<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Let op: u moet deze stappen herhalen voor elke netwerkadapter die u met een camera wilt gebruiken.</p>
+<h3 id="jumbo-frames-inschakelen">Jumbo Frames inschakelen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Klik op de startknop en typ &ldquo;Netwerkverbindingen&rdquo;</p>
+</li>
+<li>
+<p>Klik met de rechtermuisknop op de Ethernet-poorten waarop uw camera&rsquo;s zijn aangesloten en ga naar &ldquo;Eigenschappen&rdquo;.</p>
+</li>
+<li>
+<p>Klik op de knop &ldquo;Configureren&rdquo; en ga naar &ldquo;Geavanceerd&rdquo;.</p>
+</li>
+<li>
+<p>Stel de waarde &ldquo;Jumbo Packet&rdquo; in op 9014.</p>
+</li>
+</ul>
+<p>Stel &ldquo;Receive Buffers&rdquo; in op 2048.</p>
+<p><a href="#R-image-0661f98ba5fe86aa1878ceef012c30c3" class="lightbox-link"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0661f98ba5fe86aa1878ceef012c30c3"><img alt="explorer_t0FwTxHLrs.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-t0fwtxhlrs-png.png"></a><a href="#R-image-890b9e7b56875f8815566b30562d1f8e" class="lightbox-link"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-890b9e7b56875f8815566b30562d1f8e"><img alt="dllhost_69KArChZ12.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/dllhost-69karchz12-png.png"></a></p>
+<p><a href="#R-image-ee54641ee5ff8dd66a4e05c879698115" class="lightbox-link"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee54641ee5ff8dd66a4e05c879698115"><img alt="rundll32_Fo46JG8NDK.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-fo46jg8ndk-png.png"></a></p>
+<p><a href="#R-image-9267be6aa4a3cba13edfadc19494a472" class="lightbox-link"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9267be6aa4a3cba13edfadc19494a472"><img alt="rundll32_j6bJcuer55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/rundll32-j6bjcuer55-png.png"></a></p>
+<h2 id="drivers-installeren-en-de-cameras-inschakelen-1">Drivers installeren en de camera(&rsquo;s) inschakelen:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Stap 1: Sluit uw camera(&rsquo;s) aan op de PoE-netwerkpoorten van uw pc met een Cat5- of Cat6-ethernetkabel en zorg dat er een stabiel blauw lampje brandt aan de achterkant van de camera.</p>
+<p>Stap 2: <a href="https://cloudfront.swingcatalyst.com/drivers/NA_SDK_V3_5_3_3_MVFG_V1_1_4_2_VC90_Runtime_NEU.exe" rel="external">Klik om te downloaden</a> en installeer de Drivers voor uw camera(&rsquo;s)</p>
+<p>Stap 3: Open SwingCatalyst en klik op het tandwielpictogram linksonder in het hoofdmenu en ga naar uw Camera-instellingen.</p>
+<p>Stap 4: Klik op de afspeelknop voor een voorvertoning. Klik vervolgens op &ldquo;Uitgeschakeld&rdquo; en wijs de juiste Hoek toe aan elke camera. Schakel de camera ten slotte van &ldquo;Uit&rdquo; naar &ldquo;Aan&rdquo;.</p>
+<p><a href="#R-image-e52343e1ab0edceb884c8424f37476fb" class="lightbox-link"><img alt="mceclip1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e52343e1ab0edceb884c8424f37476fb"><img alt="mceclip1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip1-png.png"></a></p>
+<h2 id="de-camera-instellingen-configureren">De camera-instellingen configureren:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Link naar klembord kopiëren"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>BELANGRIJK</strong></p>
+<p>Voor een duidelijk zicht op de club en Shaft, houd de sluitertijd onder de 600. Vergroot de beeldhelderheid door de Gain aan te passen. Optimale verlichting: installeer drie Thomann 100W-lampen — één Langs de doellijn, één rechts en één links — op minimaal 1,5 meter van de bal, bevestigd aan het plafond of de muur.</p>
+<ul>
+<li>
+<p>Klik op de knop &ldquo;Geavanceerd&rdquo; en ga naar het tabblad &ldquo;Camera&rdquo;.</p>
+</li>
+<li>
+<p>Stel dezelfde waarden in als op de onderstaande afbeeldingen.</p>
+</li>
+<li>
+<p>Stel alle waarden die &ldquo;continuous&rdquo; tonen in op &ldquo;off&rdquo;.</p>
+</li>
+<li>
+<p>Herhaal dit voor eventuele andere Lynx-camera&rsquo;s die u heeft aangesloten.</p>
+</li>
+</ul>
+<p><strong>Opmerking</strong>: Als u 3 of 4 camera&rsquo;s heeft, raden we aan GEV SCPD in te stellen op 150.</p>
+<p>U kunt de instellingen nu sluiten en naar de Vastleggen-modus gaan om te beginnen met Opname.</p>
+<p><a href="#R-image-5a4f81cbdbc6de0afeb9012955e07e8c" class="lightbox-link"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5a4f81cbdbc6de0afeb9012955e07e8c"><img alt="MotionCatalyst_eG3hDWHNzO.jpg" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-eg3hdwhnzo-jpg.png"></a></p>
+<p><a href="#R-image-80204d3223d038e13b337bf69493eabb" class="lightbox-link"><img alt="mceclip5.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-80204d3223d038e13b337bf69493eabb"><img alt="mceclip5.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/mceclip5-png.png"></a></p>
+<p><a href="/sc-support/nl/cameras-video/lynx-camera-setup/index.html#troubleshooting-tips">Tips voor probleemoplossing:</a></p>
+<p><strong>Camera&rsquo;s verschijnen niet in de SwingCatalyst-instellingen:</strong></p>
+<p>Zorg dat u de nieuwste MVS/Runtime heeft geïnstalleerd (4.6.1)</p>
+<p><strong>Verloren Frames:</strong></p>
+<p>Het verlagen van de framesnelheid op elke camera kan helpen om verloren Frames te voorkomen of te verminderen.</p>
+<p><a href="#R-image-18794ee292537710e2eb7867ac57e639" class="lightbox-link"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-18794ee292537710e2eb7867ac57e639"><img alt="MotionCatalyst_W1FKPdYpkX.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/motioncatalyst-w1fkpdypkx-png.png"></a></p>
+<p>Heeft u een van de aanbevolen netwerkkaarten? Als dat niet het geval is, kan de netwerkkaart zelf de oorzaak van problemen zijn. Neem contact op met ons verkoopteam om te controleren of u over de juiste netwerkapparatuur beschikt.</p>
+<ul>
+<li>
+<p>Onjuiste netwerkkaartconfiguratie. Controleer of 9kB jumbo frames is ingeschakeld op elke netwerkadapter. <a href="/sc-support/nl/cameras-video/gige-network-setup/index.html">Zie ons ondersteuningsartikel over de aanbevolen configuratie</a></p>
+</li>
+<li>
+<p>Stel GEV SCPD in op 150 bij gebruik van meer dan 2 camera&rsquo;s (zie de camera-instellingen onder de sectie Device / Link).</p>
+</li>
+<li>
+<p>Bevestig dat de verbindingssnelheid 1000 Mbps is en niet 100 Mbps (zie &ldquo;Device Link Speed&rdquo; onder de sectie Device / Link in de camera-instellingen).</p>
+</li>
+</ul>
+<p><strong>Verbindingssnelheid is 100 Mbps:</strong></p>
+<ul>
+<li>
+<p>Als de verbindingssnelheid 100 Mbps is in plaats van 1000 Mbps, is de kabel die u gebruikt mogelijk defect of beschadigd, of ondersteunt de netwerkadapter mogelijk geen Gigabit-snelheden. Probeer de kabel te vervangen.</p>
+</li>
+<li>
+<p>Probeer de camera-instellingen terug te zetten naar de standaardinstellingen en controleer de verbindingssnelheid opnieuw onder de sectie &ldquo;Device / Link&rdquo; in de camera-instellingen.</p>
+</li>
+<li>
+<p>Controleer de status van de netwerkadapter via het Windows Configuratiescherm</p>
+</li>
+</ul>
+<p><a href="#R-image-d20b8cca5a900e4d1ca943148a3b8e9f" class="lightbox-link"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d20b8cca5a900e4d1ca943148a3b8e9f"><img alt="explorer_zOL1iapQMl.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/6219356936722/explorer-zol1iapqml-png.png"></a></p>
+<p>Opmerking: De snelheid moet 1,0 Gbps (1000 Mbps) zijn, niet 100 Mbps.</p>
+<p><strong>Verloren Frames verder verminderen met behulp van Region of Interest (ROI):</strong></p>
+<p>Het gebruik van een Region of Interest (of interessegebied) verkleint de totale afbeeldingsgrootte en verhoogt de FPS, maar het kan ook de bandbreedtebelasting verlagen, wat op zijn beurt verloren Frames kan verminderen (zie hierboven voor het gebruik van ROI).</p>
+<p><strong>Verbindingsproblemen (camera verbreekt verbinding):</strong></p>
+<ul>
+<li>
+<p>Inspecteer de netwerkkabels.</p>
+</li>
+<li>
+<p>Als u externe voedingen voor camera&rsquo;s gebruikt, controleer dan de aansluiting van de voeding.</p>
+</li>
+</ul>
+<p><strong>Camera gaat niet aan / ontvangt geen stroom:</strong></p>
+<ul>
+<li>Als u een PoE-netwerkkaart gebruikt met meer dan 2 poorten, controleer dan of de netwerkkaart extern van stroom wordt voorzien vanuit de computer.</li>
+</ul>
+<p><strong>Andere problemen:</strong></p>
+<p>Afhankelijk van uw hardware is het mogelijk niet ideaal om de verscherpings- en ruisonderdrukkingsfilters ingeschakeld te hebben; het uitschakelen hiervan vermindert enig CPU- en GPU-gebruik. U vindt de camerafilters in het tabblad Filters van de geavanceerde camera-instellingen. Meer informatie over filters hier: <a href="/sc-support/nl/cameras-video/improving-image-quality/index.html">improving-image-quality.md</a></p>
+<p>Statisch IP instellen</p>
+<p>Dit artikel beschrijft hoe u een statisch IP-adres instelt op respectievelijk de Lynx-camera&rsquo;s en netwerkkaarten: <a href="/sc-support/nl/cameras-video/lynx-static-ip/index.html">lynx-static-ip.md</a></p>
+<hr>
+<p><em>Laatst bijgewerkt: 2026-01-21</em> | <a href="/sc-support/nl/cameras-video/lynx-camera-setup/index.html">Bekijk op de officiële ondersteuningssite</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/nl/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Ondersteuning</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Zoeken (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Zoeken</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Zoeken...">
+            <button class="search-clear" type="button" data-search-clear="" title="Zoekopdracht wissen"><i class="fas fa-fw fa-times" title="Zoekopdracht wissen"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/nl/getting-started/index.html"><a class="padding default-animation" href="/sc-support/nl/getting-started/index.html">Aan de slag</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/nl/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/nl/cameras-video/index.html">Camera&#39;s &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/nl/cameras-video/recommended-usb3-components/index.html">Aanbevolen USB 3.0-componenten</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/nl/cameras-video/recommended-lighting/index.html">Aanbevolen verlichting voor studio&#39;s en garage-installaties</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/nl/cameras-video/lens-distortion-correction/index.html">Automatische lensvertekening-correctie in SwingCatalyst: verbeter uw visuele ervaring</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/nl/cameras-video/avt-manta-install/index.html">AVT Manta/Prosilica GigE-camera&#39;s installeren</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/nl/cameras-video/cctv-cameras/index.html">CCTV-camera&#39;s instellen</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/nl/cameras-video/halcon-bluescreen-fix/index.html">Computer krijgt blauw scherm bij aansluiten van Halcon USB-licentiesleutel</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/nl/cameras-video/dragon-usb2-camera/index.html">De Dragon (120 FPS) USB 2.0-camera gebruiken met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/fox-camera-setup/index.html">De Swing Catalyst Fox USB 3.0 camera(&#39;s) instellen</a></li>
+            <li class="active " data-nav-id="/sc-support/nl/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/lynx-camera-setup/index.html">De Swing Catalyst Lynx GigE-camera(&#39;s) instellen</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/nl/cameras-video/advanced-camera-settings/index.html">Een handleiding voor de geavanceerde camera-instellingen</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/nl/cameras-video/web-camera-directshow/index.html">Een webcamera gebruiken (DirectShow-integratie) met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-firmware-upgrade/index.html">Firmware upgraden op de FLIR Blackfly S</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-camera-upgrade-fix/index.html">FLiR / Point Grey (Blackfly/Chameleon) camera werkt niet meer na een upgrade</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-spinnaker-cameras/index.html">FLIR Blackfly S (Spinnaker) camera&#39;s gebruiken met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-blackfly-gige-setup/index.html">FLIR BlackFly S GigE instellen in Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-blackfly-usb-setup/index.html">FLIR BlackFly S USB instellen in Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-warranty-service/index.html">FLIR Camera garantie- en service-informatie</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/gige-network-setup/index.html">Gigabit Ethernet &amp; GigE Vision camera netwerkaanbevelingen</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/halcon-setup/index.html">Halcon instellen voor Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/nl/cameras-video/avt-manta-configure/index.html">Hoe AVT Manta/Prosilica GigE hoge snelheidscamera&#39;s configureren</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/basler-gige-setup/index.html">Hoe Basler GigE-camera&#39;s instellen met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/nl/cameras-video/ids-ueye-gige/index.html">Hoe IDS uEye GigE camera configureren met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/nl/cameras-video/point-grey-flir-gige/index.html">Hoe Point Grey / FLIR GigE (Blackfly) camera&#39;s configureren met SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/nl/cameras-video/point-grey-flir-usb/index.html">Hoe Point Grey / FLiR USB-camera&#39;s gebruiken met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html">Hoe stel je een statisch IP in op FLIR Blackfly GigE-camera&#39;s</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/nl/cameras-video/fix-dropped-frames/index.html">Hoe u &#39;dropped frames&#39; kunt oplossen bij USB 3.0 of 2.0 camera&#39;s.</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/nl/cameras-video/hardware-encoding/index.html">Hoe u de Swing Catalyst hardware-encoding gebruikt</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/nl/cameras-video/fox-lynx-firmware/index.html">Hoe u Fox / Lynx firmware kunt upgraden of downgraden</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/nl/cameras-video/ids-ueye-highspeed/index.html">Hoe u iDS uEye USB-hogesnelheidscamera&#39;s instelt</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/nl/cameras-video/halcon-camera-standards/index.html">Hoe u kunt controleren welke standaarden uw camera&#39;s ondersteunen voor gebruik met Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/nl/cameras-video/led-light-flicker/index.html">Hoe u LED-lichtflikkering kunt verminderen</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/nl/cameras-video/ids-ueye-usb/index.html">IDS uEye USB-camera&#39;s gebruiken met Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/nl/cameras-video/minimum-distances/index.html">Minimale cameraafstanden</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/nl/cameras-video/supported-cameras/index.html">Ondersteunde Camera&#39;s</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/nl/cameras-video/usb3-troubleshooting/index.html">Probleemoplossing USB3-camera</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/nl/cameras-video/lynx-static-ip/index.html">Statisch IP instellen op Lynx GigE-camera&#39;s</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/nl/cameras-video/pci-express-slots/index.html">Verschillen tussen PCI / PCI Express-slots</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/nl/cameras-video/improving-image-quality/index.html">Videokwaliteit van camera&#39;s verbeteren</a></li>
+            <li class="" data-nav-id="/sc-support/nl/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/nl/cameras-video/ximea-usb3-setup/index.html">Ximea USB3 Vision-camera&#39;s instellen met Swing Catalyst</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/nl/hardware/index.html"><a class="padding default-animation" href="/sc-support/nl/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/nl/software-features/index.html"><a class="padding default-animation" href="/sc-support/nl/software-features/index.html">Software &amp; Functies</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/nl/account-setup/index.html"><a class="padding default-animation" href="/sc-support/nl/account-setup/index.html">Account &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/nl/reference/index.html"><a class="padding default-animation" href="/sc-support/nl/reference/index.html">Referentie</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Taal</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/lynx-camera-setup/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/lynx-camera-setup/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/lynx-camera-setup/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/lynx-camera-setup/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/lynx-camera-setup/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/lynx-camera-setup/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/lynx-camera-setup/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/lynx-camera-setup/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/lynx-camera-setup/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/lynx-camera-setup/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/lynx-camera-setup/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/lynx-camera-setup/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/lynx-camera-setup/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/lynx-camera-setup/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/lynx-camera-setup/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/lynx-camera-setup/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/lynx-camera-setup/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/lynx-camera-setup/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/lynx-camera-setup/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/lynx-camera-setup/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/lynx-camera-setup/index.html" lang="nl" selected data-selected>Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/lynx-camera-setup/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/lynx-camera-setup/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/lynx-camera-setup/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/lynx-camera-setup/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/lynx-camera-setup/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/lynx-camera-setup/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/lynx-camera-setup/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/lynx-camera-setup/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/lynx-camera-setup/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/lynx-camera-setup/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/lynx-camera-setup/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/lynx-camera-setup/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/lynx-camera-setup/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/lynx-camera-setup/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/lynx-camera-setup/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Thema</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520129" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520129" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

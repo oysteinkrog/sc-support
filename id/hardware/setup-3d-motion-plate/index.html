@@ -1,15 +1,455 @@
-<!doctype html><html id=R-html lang=id dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Perangkat lunak secara otomatis menginstal driver untuk plat gaya dan plat tekanan (kecuali file kalibrasi). Menginstalnya secara manual seharusnya tidak..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Instalasi dan Pengaturan Motion Plate 3D :: Dukungan Swing Catalyst"><meta name=twitter:description content="Perangkat lunak secara otomatis menginstal driver untuk plat gaya dan plat tekanan (kecuali file kalibrasi). Menginstalnya secara manual seharusnya tidak..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/id/hardware/setup-3d-motion-plate/index.html"><meta property="og:site_name" content="Dukungan Swing Catalyst"><meta property="og:title" content="Instalasi dan Pengaturan Motion Plate 3D :: Dukungan Swing Catalyst"><meta property="og:description" content="Perangkat lunak secara otomatis menginstal driver untuk plat gaya dan plat tekanan (kecuali file kalibrasi). Menginstalnya secara manual seharusnya tidak..."><meta property="og:locale" content="id"><meta property="og:type" content="article"><meta property="article:section" content="Perangkat Keras"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Usb-Camera"><meta property="article:tag" content="Balance-Plate"><meta property="article:tag" content="Motion-Plate"><meta itemprop=name content="Instalasi dan Pengaturan Motion Plate 3D :: Dukungan Swing Catalyst"><meta itemprop=description content="Perangkat lunak secara otomatis menginstal driver untuk plat gaya dan plat tekanan (kecuali file kalibrasi). Menginstalnya secara manual seharusnya tidak..."><meta itemprop=wordCount content="548"><meta itemprop=keywords content="Troubleshooting,Usb-Camera,Balance-Plate,Motion-Plate"><title>Instalasi dan Pengaturan Motion Plate 3D :: Dukungan Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/hardware/setup-3d-motion-plate/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763278 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763278 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763278 defer></script><script src=/sc-support/js/search.min.js?1771763278 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.id.js?1771763278"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763278 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763278 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763278 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763278 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763278 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763278 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/hardware/setup-3d-motion-plate/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Salin teks ke clipboard`,window.T_Copied_to_clipboard=`Teks disalin ke clipboard!`,window.T_Link_copied_to_clipboard=`Link disalin ke clipboard!`,window.T_Reset_view=`Setel ulang tampilan`,window.T_View_reset=`Lihat ulang!`,window.T_No_results_found=`Tidak ada hasil yang ditemukan untuk "{0}"`,window.T_N_results_found=`Ditemukan {1} hasil untuk "{0}"`,window.T_Browser_unsupported_feature=`Browser ini tidak mendukung fitur ini`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/id/hardware/setup-3d-motion-plate/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Daftar isi (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#installation>Installation</a></li><li><a href=#connecting-the-plate>Connecting the plate</a><ul><li><a href=#calibrating--zero-set>Calibrating / Zero Set</a></li></ul></li><li><a href=#calibration-test>Calibration Test</a></li><li><a href=#troubleshooting>Troubleshooting</a><ul><li><a href=#pressure-and-force-data-is-not-aligned-or-calibration-fails>Pressure and Force data is not aligned, or calibration fails</a></li><li><a href=#good-data-vs-bad-data>Good data vs bad data</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/id/index.html><span itemprop=name>Dukungan Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/id/hardware/index.html><span itemprop=name>Perangkat Keras</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Instalasi dan Pengaturan Motion Plate 3D</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/id/hardware/balance-plate-warranty/index.html title="Garansi Plat Keseimbangan dan ESA (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/id/hardware/calibration-diagnostics/index.html title="Kalibrasi dan diagnostik Plat Keseimbangan (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Lainnya><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable hardware" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tag style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/id/tags/balance-plate/index.html>Balance-Plate</a></li><li><a class=term-link href=/sc-support/id/tags/motion-plate/index.html>Motion-Plate</a></li><li><a class=term-link href=/sc-support/id/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/id/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=instalasi-dan-pengaturan-motion-plate-3d>Instalasi dan Pengaturan Motion Plate 3D</h1><p>For more in-depth installation material please see the attached <a href=/sc-support/id/hardware/setup-3d-motion-plate/index.html#attachments>pdf files.</a></p><h2 id=installation>Installation<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Requirements:</p><p>The software automatically installs the drivers for the force plate and pressure plate&rsquo;s (except the calibration file). Installing it manually shouldn&rsquo;t be necessary.</p><p><a href=https://cloudfront.swingcatalyst.com/drivers/CDM%20v2.08.30%20WHQL%20Certified.exe rel=external>Bertec CDM</a> driver installed.</p><p><a href=https://cloudfront.swingcatalyst.com/drivers/MeasureXDriver2018.zip rel=external>MeasureX</a> driver installed. <a href=/sc-support/id/hardware/install-balance-plate-3s/index.html>Click for install details</a></p><p>See <a href=../../assets/images/zendesk/InstallGuide-3DMotionPlate-2016_-_email.pdf>Install Guide</a> for preparing your room for the installation.
-See the Start Guide PDF for setting up the Motion Plate to use it.</p><p>In addition to the start guide, you should get familiar with the calibration test below.</p><h2 id=connecting-the-plate>Connecting the plate<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Connect the two USB cables to the computer and go to Swing Catalyst Settings -> Hardware.</p><p>The plate should automatically detect:</p><p><a href=#R-image-8a2f95c3a25e4382d82dc51980af8fed class=lightbox-link><img alt=MotionCatalyst_2021-08-13_12-31-58.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8a2f95c3a25e4382d82dc51980af8fed><img alt=MotionCatalyst_2021-08-13_12-31-58.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png></a></p><p>The plate is now auto detected but not calibrated, in order to calibrate the plate it needs to be installed properly and the plate level.</p><h3 id=calibrating--zero-set>Calibrating / Zero Set<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p><a href=#R-image-a6bedce65c29e3ae873523972be99df8 class=lightbox-link><img alt=MotionCatalyst_2021-08-13_12-32-36.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a6bedce65c29e3ae873523972be99df8><img alt=MotionCatalyst_2021-08-13_12-32-36.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png></a></p><p>Make sure nothing is touching the plate and click Calibrate.</p><p>This will zero the force plate. If calibration fails please see our <a href=/sc-support/id/hardware/setup-3d-motion-plate/index.html#troubleshooting>troubleshooting</a> section.</p><h2 id=calibration-test>Calibration Test<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>There are two types of calibration: 1. The zero level for the force plate. 2. The calibration file for the pressure / balance plate. This test is specifically for the force plate part of the Motion Plate.</p><p>It is important to ensure a good calibration for accurate data. We recommend calibrating and testing the calibration before every session of a series of recordings.</p><ul><li><p>Click &ldquo;Calibrate&rdquo; button in settings menu - Hardware - Sensor Plate</p></li><li><p>Click &ldquo;Configure&rdquo; button next to it, then click &ldquo;Play&rdquo; button to preview live force and pressure data</p></li><li><p>Use the club shaft or your heel to apply pressure to a small area on the plate, then verify the pressure data (colored heat map) aligns with the force data (total CoP circle)</p></li><li><p>Start a session, then capture a recording with no person on the plate. Open the recording and verify the force readings are within 10 Newtons to zero.</p></li></ul><p>Example of pressure dot aligning with the Center of Pressure dot:</p><p><a href=#R-image-1001fbc379d7cf6b3c551e6ee7095642 class=lightbox-link><img alt=explorer_2021-08-13_12-26-36.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221146788/explorer-2021-08-13-12-26-36-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-1001fbc379d7cf6b3c551e6ee7095642><img alt=explorer_2021-08-13_12-26-36.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221146788/explorer-2021-08-13-12-26-36-png.png></a></p><h2 id=troubleshooting>Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=pressure-and-force-data-is-not-aligned-or-calibration-fails>Pressure and Force data is not aligned, or calibration fails<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If the CoP dot does not match the pressure dot, plate is likely not level or something is pressing against it and obstructing free movement.</p><ul><li><p>Once more, click &ldquo;Calibrate&rdquo; button then repeat the calibration test</p></li><li><p>If it is still off, readjust the leveling foot of the force plate while pressing down on the opposite corner, first shorten it then extend it to the point where it touches the floor and you feel a little bit of resistance</p></li><li><p>Confirm all four feet are in solid contact with the floor by pressing down on the corners</p></li><li><p>Ensure there is no turf or similar pressing against the plate</p></li><li><p>Repeat the calibration test</p></li></ul><p>If still after two attempts of readjusting the foot and re-calibrating the data is not aligned and you are getting off-zero readings, please submit a new ticket: our support team</p><h3 id=good-data-vs-bad-data>Good data vs bad data<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>This is an example of good data, there is very little noise present in the data or any indication that something is obstructing the movement of the plate.</p><p><a href=#R-image-9bb75104a43c9b1d5fd3cd5b15882fb3 class=lightbox-link><img alt=2020-09-01_16-13-04.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/221146788/2020-09-01-16-13-04-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9bb75104a43c9b1d5fd3cd5b15882fb3><img alt=2020-09-01_16-13-04.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/221146788/2020-09-01-16-13-04-png.png></a></p><p>Example of bad zero set here:</p><p>Noise from power supplies or bad grounding can also result in noise similar to seen above, for more details please see: <a href=/sc-support/id/hardware/force-plate-troubleshooting/index.html>force-plate-troubleshooting.md</a></p><h4 id=attachments>Attachments<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><hr><p><em>Last updated: 2023-12-19</em> | <a href=/sc-support/id/hardware/setup-3d-motion-plate/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/id/index.html><span class="logo-title default-animation">Dukungan Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Telusuri (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Telusuri</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Telusuri...>
-<button class=search-clear type=button data-search-clear title="Hapus pencarian"><i class="fas fa-fw fa-times" title="Hapus pencarian"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/id/getting-started/index.html><a class="padding default-animation" href=/sc-support/id/getting-started/index.html>Memulai</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/id/cameras-video/index.html><a class="padding default-animation" href=/sc-support/id/cameras-video/index.html>Kamera & Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/id/hardware/index.html><a class="padding default-animation" href=/sc-support/id/hardware/index.html>Perangkat Keras</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu><li data-nav-id=/sc-support/id/hardware/install-balance-plate-3/index.html><a class=padding href=/sc-support/id/hardware/install-balance-plate-3/index.html>Cara memasang Plat Keseimbangan 3</a></li><li data-nav-id=/sc-support/id/hardware/install-balance-plate-3s/index.html><a class=padding href=/sc-support/id/hardware/install-balance-plate-3s/index.html>Cara memasang Plat Keseimbangan 3S</a></li><li data-nav-id=/sc-support/id/hardware/install-dual-pressure-plate/index.html><a class=padding href=/sc-support/id/hardware/install-dual-pressure-plate/index.html>Cara memasang Plat Tekanan Ganda</a></li><li data-nav-id=/sc-support/id/hardware/find-serial-number/index.html><a class=padding href=/sc-support/id/hardware/find-serial-number/index.html>Cara menemukan nomor seri Plat Keseimbangan Swing Catalyst Anda</a></li><li data-nav-id=/sc-support/id/hardware/nvidia-gpu-encoder/index.html><a class=padding href=/sc-support/id/hardware/nvidia-gpu-encoder/index.html>Cara Mengatur NVIDIA GPU Encoder</a></li><li data-nav-id=/sc-support/id/hardware/flightscope-setup/index.html><a class=padding href=/sc-support/id/hardware/flightscope-setup/index.html>Cara menggunakan FlightScope dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/flightscope-mevo/index.html><a class=padding href=/sc-support/id/hardware/flightscope-mevo/index.html>Cara menggunakan FlightScope Mevo+ dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/foresight-gc2-hmt/index.html><a class=padding href=/sc-support/id/hardware/foresight-gc2-hmt/index.html>Cara menggunakan Foresight GC2 & HMT dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/foresight-gc3-launch-pro/index.html><a class=padding href=/sc-support/id/hardware/foresight-gc3-launch-pro/index.html>Cara menggunakan Foresight GC3 / Bushnell Launch Pro dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/foresight-gcquad/index.html><a class=padding href=/sc-support/id/hardware/foresight-gcquad/index.html>Cara menggunakan Foresight GCQuad dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/full-swing-golf/index.html><a class=padding href=/sc-support/id/hardware/full-swing-golf/index.html>Cara menggunakan Full Swing Golf dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/boditrak-sensors/index.html><a class=padding href=/sc-support/id/hardware/boditrak-sensors/index.html>Cara menggunakan sensor BodiTrak dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/trackman-setup/index.html><a class=padding href=/sc-support/id/hardware/trackman-setup/index.html>Cara Menggunakan TrackMan dengan Swing Catalyst</a></li><li data-nav-id=/sc-support/id/hardware/launch-monitor-trigger/index.html><a class=padding href=/sc-support/id/hardware/launch-monitor-trigger/index.html>Cara menyiapkan launch monitor sebagai pemicu tangkapan</a></li><li data-nav-id=/sc-support/id/hardware/balance-plate-warranty/index.html><a class=padding href=/sc-support/id/hardware/balance-plate-warranty/index.html>Garansi Plat Keseimbangan dan ESA</a></li><li class=active data-nav-id=/sc-support/id/hardware/setup-3d-motion-plate/index.html><a class=padding href=/sc-support/id/hardware/setup-3d-motion-plate/index.html>Instalasi dan Pengaturan Motion Plate 3D</a></li><li data-nav-id=/sc-support/id/hardware/calibration-diagnostics/index.html><a class=padding href=/sc-support/id/hardware/calibration-diagnostics/index.html>Kalibrasi dan diagnostik Plat Keseimbangan</a></li><li data-nav-id=/sc-support/id/hardware/supported-launch-monitors/index.html><a class=padding href=/sc-support/id/hardware/supported-launch-monitors/index.html>Launch monitor yang didukung</a></li><li data-nav-id=/sc-support/id/hardware/balance-plate-data/index.html><a class=padding href=/sc-support/id/hardware/balance-plate-data/index.html>Manual Data Plat Keseimbangan</a></li><li data-nav-id=/sc-support/id/hardware/setup-dual-motion-plate/index.html><a class=padding href=/sc-support/id/hardware/setup-dual-motion-plate/index.html>Memasang dan Mengatur Dual Motion Plate</a></li><li data-nav-id=/sc-support/id/hardware/3d-motion-plate-data/index.html><a class=padding href=/sc-support/id/hardware/3d-motion-plate-data/index.html>Panduan Data Plat Gerak 3D</a></li><li data-nav-id=/sc-support/id/hardware/force-plate-troubleshooting/index.html><a class=padding href=/sc-support/id/hardware/force-plate-troubleshooting/index.html>Panduan pemecahan masalah teknis Force Plate</a></li><li data-nav-id=/sc-support/id/hardware/trackman-troubleshooting/index.html><a class=padding href=/sc-support/id/hardware/trackman-troubleshooting/index.html>Trackman tidak memicu Swing Catalyst pemecahan masalah teknis</a></li></ul></li><li data-nav-id=/sc-support/id/software-features/index.html><a class="padding default-animation" href=/sc-support/id/software-features/index.html>Perangkat Lunak & Fitur</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/id/account-setup/index.html><a class="padding default-animation" href=/sc-support/id/account-setup/index.html>Akun & Pengaturan</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/id/reference/index.html><a class="padding default-animation" href=/sc-support/id/reference/index.html>Referensi</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Bahasa</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/hardware/setup-3d-motion-plate/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/hardware/setup-3d-motion-plate/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/hardware/setup-3d-motion-plate/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/hardware/setup-3d-motion-plate/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/hardware/setup-3d-motion-plate/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/hardware/setup-3d-motion-plate/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/hardware/setup-3d-motion-plate/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/hardware/setup-3d-motion-plate/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/hardware/setup-3d-motion-plate/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/hardware/setup-3d-motion-plate/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/hardware/setup-3d-motion-plate/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/hardware/setup-3d-motion-plate/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/hardware/setup-3d-motion-plate/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/hardware/setup-3d-motion-plate/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/hardware/setup-3d-motion-plate/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/hardware/setup-3d-motion-plate/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/hardware/setup-3d-motion-plate/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/hardware/setup-3d-motion-plate/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/hardware/setup-3d-motion-plate/index.html lang=id selected data-selected>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/hardware/setup-3d-motion-plate/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/hardware/setup-3d-motion-plate/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/hardware/setup-3d-motion-plate/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/hardware/setup-3d-motion-plate/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/hardware/setup-3d-motion-plate/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/hardware/setup-3d-motion-plate/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/hardware/setup-3d-motion-plate/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/hardware/setup-3d-motion-plate/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/hardware/setup-3d-motion-plate/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/hardware/setup-3d-motion-plate/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/hardware/setup-3d-motion-plate/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/hardware/setup-3d-motion-plate/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/hardware/setup-3d-motion-plate/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/hardware/setup-3d-motion-plate/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/hardware/setup-3d-motion-plate/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/hardware/setup-3d-motion-plate/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/hardware/setup-3d-motion-plate/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Tema</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763278 defer></script><script src=/sc-support/js/theme.min.js?1771763278 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="id" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Perangkat lunak secara otomatis menginstal Driver untuk Plat Gaya dan Pressure Plate (kecuali file Kalibrasi). Menginstalnya secara manual seharusnya tidak diperlukan...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Menginstal dan Menyiapkan 3D Motion Plate :: Dukungan Swing Catalyst">
+    <meta name="twitter:description" content="Perangkat lunak secara otomatis menginstal Driver untuk Plat Gaya dan Pressure Plate (kecuali file Kalibrasi). Menginstalnya secara manual seharusnya tidak diperlukan...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/id/hardware/setup-3d-motion-plate/index.html">
+    <meta property="og:site_name" content="Dukungan Swing Catalyst">
+    <meta property="og:title" content="Menginstal dan Menyiapkan 3D Motion Plate :: Dukungan Swing Catalyst">
+    <meta property="og:description" content="Perangkat lunak secara otomatis menginstal Driver untuk Plat Gaya dan Pressure Plate (kecuali file Kalibrasi). Menginstalnya secara manual seharusnya tidak diperlukan...">
+    <meta property="og:locale" content="id">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Perangkat Keras">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Balance-Plate">
+    <meta property="article:tag" content="Motion-Plate">
+    <meta itemprop="name" content="Menginstal dan Menyiapkan 3D Motion Plate :: Dukungan Swing Catalyst">
+    <meta itemprop="description" content="Perangkat lunak secara otomatis menginstal Driver untuk Plat Gaya dan Pressure Plate (kecuali file Kalibrasi). Menginstalnya secara manual seharusnya tidak diperlukan...">
+    <meta itemprop="wordCount" content="488">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Balance-Plate,Motion-Plate">
+    <title>Menginstal dan Menyiapkan 3D Motion Plate :: Dukungan Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/hardware/setup-3d-motion-plate/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520127" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520127" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520127" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520127" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.id.js?1772520127";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520127" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520127" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520127" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520127" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520127" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520127" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520127" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520127" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/hardware\/setup-3d-motion-plate\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Salin teks ke clipboard`;
+      window.T_Copied_to_clipboard = `Teks disalin ke clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link disalin ke clipboard!`;
+      window.T_Reset_view = `Setel ulang tampilan`;
+      window.T_View_reset = `Lihat ulang!`;
+      window.T_No_results_found = `Tidak ada hasil yang ditemukan untuk "{0}"`;
+      window.T_N_results_found = `Ditemukan {1} hasil untuk "{0}"`;
+      window.T_Browser_unsupported_feature = `Browser ini tidak mendukung fitur ini`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/id/hardware/setup-3d-motion-plate/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Daftar isi (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#instalasi">Instalasi</a></li>
+    <li><a href="#menghubungkan-plat">Menghubungkan Plat</a>
+      <ul>
+        <li><a href="#kalibrasi--zero-set">Kalibrasi / Zero Set</a></li>
+      </ul>
+    </li>
+    <li><a href="#uji-kalibrasi">Uji Kalibrasi</a></li>
+    <li><a href="#pemecahan-masalah">Pemecahan Masalah</a>
+      <ul>
+        <li><a href="#data-tekanan-dan-data-gaya-tidak-selaras-atau-kalibrasi-gagal">Data Tekanan dan Data Gaya tidak selaras, atau Kalibrasi gagal</a></li>
+        <li><a href="#data-baik-vs-data-buruk">Data baik vs data buruk</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/id/index.html"><span itemprop="name">Dukungan Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/id/hardware/index.html"><span itemprop="name">Perangkat Keras</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Menginstal dan Menyiapkan 3D Motion Plate</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/id/hardware/setup-dual-motion-plate/index.html" title="Memasang dan Mengatur Dual Motion Plate (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/id/hardware/3d-motion-plate-data/index.html" title="Panduan Data 3D Motion Plate (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Lainnya"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable hardware" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tag" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/id/tags/balance-plate/index.html">Balance-Plate</a></li>
+    <li><a class="term-link" href="/sc-support/id/tags/motion-plate/index.html">Motion-Plate</a></li>
+    <li><a class="term-link" href="/sc-support/id/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/id/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="menginstal-dan-menyiapkan-3d-motion-plate">Menginstal dan Menyiapkan 3D Motion Plate</h1>
+
+<p>Untuk materi instalasi yang lebih mendalam, silakan lihat <a href="/sc-support/id/hardware/setup-3d-motion-plate/index.html#attachments">file PDF</a> terlampir.</p>
+<h2 id="instalasi">Instalasi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Persyaratan:</p>
+<p>Perangkat lunak secara otomatis menginstal Driver untuk Plat Gaya dan Pressure Plate (kecuali file Kalibrasi). Menginstalnya secara manual seharusnya tidak diperlukan.</p>
+<p>Driver <a href="https://cloudfront.swingcatalyst.com/drivers/CDM%20v2.08.30%20WHQL%20Certified.exe" rel="external">Bertec CDM</a> telah terinstal.</p>
+<p>Driver <a href="https://cloudfront.swingcatalyst.com/drivers/MeasureXDriver2018.zip" rel="external">MeasureX</a> telah terinstal. <a href="/sc-support/id/hardware/install-balance-plate-3s/index.html">Klik untuk detail instalasi</a></p>
+<p>Lihat <a href="../../assets/images/zendesk/InstallGuide-3DMotionPlate-2016_-_email.pdf">Panduan Instalasi</a> untuk mempersiapkan ruangan Anda sebelum instalasi.
+Lihat PDF Panduan Mulai untuk menyiapkan Motion Plate agar dapat digunakan.</p>
+<p>Selain panduan mulai, Anda juga perlu memahami uji Kalibrasi di bawah ini.</p>
+<h2 id="menghubungkan-plat">Menghubungkan Plat<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Hubungkan dua kabel USB ke komputer dan buka Swing Catalyst Settings -&gt; Hardware.</p>
+<p>Plat akan terdeteksi secara otomatis:</p>
+<p><a href="#R-image-574612a4a37619b44638c79604212dd8" class="lightbox-link"><img alt="Gambar deteksi otomatis MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-574612a4a37619b44638c79604212dd8"><img alt="Gambar deteksi otomatis MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-31-58-png.png"></a></p>
+<p>Plat kini terdeteksi secara otomatis namun belum dikalibrasi. Untuk mengkalibrasi plat, plat harus terpasang dengan benar dan dalam posisi rata.</p>
+<h3 id="kalibrasi--zero-set">Kalibrasi / Zero Set<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p><a href="#R-image-533503d85c4ddcbc0d8005eaef5c5c41" class="lightbox-link"><img alt="Gambar tampilan Kalibrasi MotionCatalyst" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-533503d85c4ddcbc0d8005eaef5c5c41"><img alt="Gambar tampilan Kalibrasi MotionCatalyst" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/motioncatalyst-2021-08-13-12-32-36-png.png"></a></p>
+<p>Pastikan tidak ada benda yang menyentuh plat, lalu klik Calibrate.</p>
+<p>Ini akan menol-kan Plat Gaya. Jika Kalibrasi gagal, silakan lihat bagian <a href="/sc-support/id/hardware/setup-3d-motion-plate/index.html#troubleshooting">pemecahan masalah</a> kami.</p>
+<h2 id="uji-kalibrasi">Uji Kalibrasi<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Ada dua jenis Kalibrasi: 1. Tingkat nol untuk Plat Gaya. 2. File Kalibrasi untuk Pressure Plate / Plat Keseimbangan. Uji ini khusus untuk bagian Plat Gaya dari Motion Plate.</p>
+<p>Penting untuk memastikan Kalibrasi yang baik demi data yang akurat. Kami menyarankan untuk melakukan Kalibrasi dan mengujinya sebelum setiap Sesi dari serangkaian Rekaman.</p>
+<ul>
+<li>
+<p>Klik tombol &ldquo;Calibrate&rdquo; di menu pengaturan - Hardware - Pelat Sensor</p>
+</li>
+<li>
+<p>Klik tombol &ldquo;Configure&rdquo; di sebelahnya, lalu klik tombol &ldquo;Play&rdquo; untuk melihat pratinjau data gaya dan tekanan secara langsung</p>
+</li>
+<li>
+<p>Gunakan Tangkai Klub atau Tumit Anda untuk memberikan tekanan pada area kecil di plat, lalu verifikasi bahwa Data Tekanan (peta panas berwarna) selaras dengan Data Gaya (lingkaran total CoM)</p>
+</li>
+<li>
+<p>Mulai sebuah Sesi, lalu Ambil sebuah Rekaman tanpa ada orang di atas plat. Buka Rekaman tersebut dan verifikasi bahwa pembacaan gaya berada dalam rentang 10 Newton dari nol.</p>
+</li>
+</ul>
+<p>Contoh titik tekanan yang selaras dengan titik Pusat Tekanan:</p>
+<p><a href="#R-image-4b456bcd9ea122fc871d709e8df751d3" class="lightbox-link"><img alt="Gambar titik tekanan selaras dengan titik COP di Penjelajah" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/explorer-2021-08-13-12-26-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4b456bcd9ea122fc871d709e8df751d3"><img alt="Gambar titik tekanan selaras dengan titik COP di Penjelajah" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/explorer-2021-08-13-12-26-36-png.png"></a></p>
+<h2 id="pemecahan-masalah">Pemecahan Masalah<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="data-tekanan-dan-data-gaya-tidak-selaras-atau-kalibrasi-gagal">Data Tekanan dan Data Gaya tidak selaras, atau Kalibrasi gagal<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Jika titik COP tidak cocok dengan titik tekanan, kemungkinan plat tidak rata atau ada sesuatu yang menekannya sehingga menghambat pergerakan bebas.</p>
+<ul>
+<li>
+<p>Sekali lagi, klik tombol &ldquo;Calibrate&rdquo; lalu ulangi uji Kalibrasi</p>
+</li>
+<li>
+<p>Jika masih tidak sesuai, sesuaikan kembali Kaki penyetel Plat Gaya sambil menekan sudut yang berlawanan — pertama perpendek, lalu panjangkan hingga menyentuh lantai dan Anda merasakan sedikit hambatan</p>
+</li>
+<li>
+<p>Pastikan keempat Kaki benar-benar menyentuh lantai dengan menekan pada Sudut Referensi</p>
+</li>
+<li>
+<p>Pastikan tidak ada rumput sintetis atau benda serupa yang menekan plat</p>
+</li>
+<li>
+<p>Ulangi uji Kalibrasi</p>
+</li>
+</ul>
+<p>Jika setelah dua kali percobaan penyesuaian Kaki dan Kalibrasi ulang data masih tidak selaras dan Anda mendapatkan pembacaan yang tidak nol, silakan ajukan tiket baru: tim dukungan kami</p>
+<h3 id="data-baik-vs-data-buruk">Data baik vs data buruk<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Ini adalah contoh data yang baik; terdapat sangat sedikit noise pada data atau indikasi bahwa ada sesuatu yang menghambat pergerakan plat.</p>
+<p><a href="#R-image-97c4a2c4c92ab2d5444ec7d385383400" class="lightbox-link"><img alt="Gambar contoh data baik" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/2020-09-01-16-13-04-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-97c4a2c4c92ab2d5444ec7d385383400"><img alt="Gambar contoh data baik" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/221146788/2020-09-01-16-13-04-png.png"></a></p>
+<p>Contoh zero set yang buruk ada di sini:</p>
+<p>Noise dari catu daya atau grounding yang buruk juga dapat menghasilkan noise serupa seperti yang terlihat di atas. Untuk detail lebih lanjut, silakan lihat: <a href="/sc-support/id/hardware/force-plate-troubleshooting/index.html">force-plate-troubleshooting.md</a></p>
+<h4 id="lampiran">Lampiran<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Salin link ke clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<hr>
+<p><em>Terakhir diperbarui: 2023-12-19</em> | <a href="/sc-support/id/hardware/setup-3d-motion-plate/index.html">Lihat di situs dukungan resmi</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/id/index.html">
+          <span class="logo-title default-animation">Dukungan Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Telusuri (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Telusuri</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Telusuri...">
+            <button class="search-clear" type="button" data-search-clear="" title="Hapus pencarian"><i class="fas fa-fw fa-times" title="Hapus pencarian"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/id/getting-started/index.html"><a class="padding default-animation" href="/sc-support/id/getting-started/index.html">Memulai</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/id/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/id/cameras-video/index.html">Kamera &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/id/hardware/index.html"><a class="padding default-animation" href="/sc-support/id/hardware/index.html">Perangkat Keras</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/id/hardware/nvidia-gpu-encoder/index.html"><a class="padding" href="/sc-support/id/hardware/nvidia-gpu-encoder/index.html">Cara melakukan Setup Enkoder GPU NVIDIA</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/find-serial-number/index.html"><a class="padding" href="/sc-support/id/hardware/find-serial-number/index.html">Cara menemukan nomor seri Plat Keseimbangan Swing Catalyst Anda</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/flightscope-setup/index.html"><a class="padding" href="/sc-support/id/hardware/flightscope-setup/index.html">Cara menggunakan FlightScope dengan Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/flightscope-mevo/index.html"><a class="padding" href="/sc-support/id/hardware/flightscope-mevo/index.html">Cara Menggunakan FlightScope Mevo&#43; dengan Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/foresight-gc2-hmt/index.html"><a class="padding" href="/sc-support/id/hardware/foresight-gc2-hmt/index.html">Cara menggunakan Foresight GC2 &amp; HMT dengan Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/foresight-gc3-launch-pro/index.html"><a class="padding" href="/sc-support/id/hardware/foresight-gc3-launch-pro/index.html">Cara menggunakan Foresight GC3 / Bushnell Launch Pro dengan SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/foresight-gcquad/index.html"><a class="padding" href="/sc-support/id/hardware/foresight-gcquad/index.html">Cara menggunakan Foresight GCQuad dengan SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/full-swing-golf/index.html"><a class="padding" href="/sc-support/id/hardware/full-swing-golf/index.html">Cara Menggunakan Full Swing Golf dengan Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/boditrak-sensors/index.html"><a class="padding" href="/sc-support/id/hardware/boditrak-sensors/index.html">Cara menggunakan sensor BodiTrak dengan Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/trackman-setup/index.html"><a class="padding" href="/sc-support/id/hardware/trackman-setup/index.html">Cara menggunakan TrackMan dengan Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/install-balance-plate-3s/index.html"><a class="padding" href="/sc-support/id/hardware/install-balance-plate-3s/index.html">Cara menginstal Balance Plate 3S</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/install-dual-pressure-plate/index.html"><a class="padding" href="/sc-support/id/hardware/install-dual-pressure-plate/index.html">Cara menginstal Dual Pressure Plate</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/install-balance-plate-3/index.html"><a class="padding" href="/sc-support/id/hardware/install-balance-plate-3/index.html">Cara menginstal Plat Keseimbangan 3</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/launch-monitor-trigger/index.html"><a class="padding" href="/sc-support/id/hardware/launch-monitor-trigger/index.html">Cara setup launch monitor sebagai pemicu pengambilan</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/balance-plate-warranty/index.html"><a class="padding" href="/sc-support/id/hardware/balance-plate-warranty/index.html">Garansi Plat Keseimbangan dan ESA</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/calibration-diagnostics/index.html"><a class="padding" href="/sc-support/id/hardware/calibration-diagnostics/index.html">Kalibrasi &amp; diagnostik Plat Keseimbangan</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/supported-launch-monitors/index.html"><a class="padding" href="/sc-support/id/hardware/supported-launch-monitors/index.html">Launch Monitor yang Didukung</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/balance-plate-data/index.html"><a class="padding" href="/sc-support/id/hardware/balance-plate-data/index.html">Manual Data Plat Keseimbangan</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/setup-dual-motion-plate/index.html"><a class="padding" href="/sc-support/id/hardware/setup-dual-motion-plate/index.html">Memasang dan Mengatur Dual Motion Plate</a></li>
+            <li class="active " data-nav-id="/sc-support/id/hardware/setup-3d-motion-plate/index.html"><a class="padding" href="/sc-support/id/hardware/setup-3d-motion-plate/index.html">Menginstal dan Menyiapkan 3D Motion Plate</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/3d-motion-plate-data/index.html"><a class="padding" href="/sc-support/id/hardware/3d-motion-plate-data/index.html">Panduan Data 3D Motion Plate</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/force-plate-troubleshooting/index.html"><a class="padding" href="/sc-support/id/hardware/force-plate-troubleshooting/index.html">Panduan pemecahan masalah teknis Plat Gaya</a></li>
+            <li class="" data-nav-id="/sc-support/id/hardware/trackman-troubleshooting/index.html"><a class="padding" href="/sc-support/id/hardware/trackman-troubleshooting/index.html">Panduan pemecahan masalah teknis TrackMan tidak memicu SwingCatalyst</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/id/software-features/index.html"><a class="padding default-animation" href="/sc-support/id/software-features/index.html">Perangkat Lunak &amp; Fitur</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/id/account-setup/index.html"><a class="padding default-animation" href="/sc-support/id/account-setup/index.html">Akun &amp; Setup</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/id/reference/index.html"><a class="padding default-animation" href="/sc-support/id/reference/index.html">Referensi</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Bahasa</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/setup-3d-motion-plate/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/setup-3d-motion-plate/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/setup-3d-motion-plate/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/setup-3d-motion-plate/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/hardware/setup-3d-motion-plate/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/hardware/setup-3d-motion-plate/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/hardware/setup-3d-motion-plate/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/hardware/setup-3d-motion-plate/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/hardware/setup-3d-motion-plate/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/hardware/setup-3d-motion-plate/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/hardware/setup-3d-motion-plate/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/hardware/setup-3d-motion-plate/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/hardware/setup-3d-motion-plate/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/hardware/setup-3d-motion-plate/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/hardware/setup-3d-motion-plate/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/hardware/setup-3d-motion-plate/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/hardware/setup-3d-motion-plate/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/hardware/setup-3d-motion-plate/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/hardware/setup-3d-motion-plate/index.html" lang="id" selected data-selected>Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/hardware/setup-3d-motion-plate/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/hardware/setup-3d-motion-plate/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/hardware/setup-3d-motion-plate/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/hardware/setup-3d-motion-plate/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/hardware/setup-3d-motion-plate/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/hardware/setup-3d-motion-plate/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/hardware/setup-3d-motion-plate/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/hardware/setup-3d-motion-plate/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/hardware/setup-3d-motion-plate/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/hardware/setup-3d-motion-plate/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/hardware/setup-3d-motion-plate/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/hardware/setup-3d-motion-plate/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/hardware/setup-3d-motion-plate/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/hardware/setup-3d-motion-plate/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/hardware/setup-3d-motion-plate/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/hardware/setup-3d-motion-plate/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/hardware/setup-3d-motion-plate/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Tema</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520127" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520127" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

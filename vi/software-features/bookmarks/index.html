@@ -1,27 +1,488 @@
-<!doctype html><html id=R-html lang=vi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Bài viết hỗ trợ này nhằm mô tả dấu trang là gì trong Swing Catalyst và Motion Catalyst, cũng như chúng được sử dụng như thế nào. Có một số khác biệt..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Dấu trang là gì? :: Hỗ trợ Swing Catalyst"><meta name=twitter:description content="Bài viết hỗ trợ này nhằm mô tả dấu trang là gì trong Swing Catalyst và Motion Catalyst, cũng như chúng được sử dụng như thế nào. Có một số khác biệt..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html"><meta property="og:site_name" content="Hỗ trợ Swing Catalyst"><meta property="og:title" content="Dấu trang là gì? :: Hỗ trợ Swing Catalyst"><meta property="og:description" content="Bài viết hỗ trợ này nhằm mô tả dấu trang là gì trong Swing Catalyst và Motion Catalyst, cũng như chúng được sử dụng như thế nào. Có một số khác biệt..."><meta property="og:locale" content="vi"><meta property="og:type" content="article"><meta property="article:section" content="Phần Mềm & Tính Năng"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Database"><meta itemprop=name content="Dấu trang là gì? :: Hỗ trợ Swing Catalyst"><meta itemprop=description content="Bài viết hỗ trợ này nhằm mô tả dấu trang là gì trong Swing Catalyst và Motion Catalyst, cũng như chúng được sử dụng như thế nào. Có một số khác biệt..."><meta itemprop=wordCount content="627"><meta itemprop=keywords content="Force-Data,Database"><title>Dấu trang là gì? :: Hỗ trợ Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/bookmarks/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/bookmarks/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/bookmarks/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/bookmarks/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/bookmarks/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/bookmarks/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/bookmarks/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/bookmarks/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/bookmarks/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/bookmarks/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/bookmarks/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/bookmarks/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/bookmarks/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/bookmarks/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/bookmarks/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/bookmarks/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/bookmarks/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/bookmarks/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/bookmarks/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/bookmarks/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/bookmarks/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/bookmarks/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/bookmarks/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/bookmarks/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/bookmarks/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/bookmarks/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/bookmarks/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/bookmarks/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/bookmarks/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/bookmarks/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/bookmarks/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/bookmarks/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763278 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763278 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763278 defer></script><script src=/sc-support/js/search.min.js?1771763278 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.vi.js?1771763278"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763278 defer></script><script src=/sc-support/js/lunr/lunr.vi.min.js?1771763278 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["vi"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763278 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763278 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763278 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763278 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763278 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/bookmarks/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Sao chép văn bản vào bảng tạm`,window.T_Copied_to_clipboard=`Văn bản đã sao chép vào bảng tạm!`,window.T_Link_copied_to_clipboard=`Liên kết đã sao chép vào bảng tạm!`,window.T_Reset_view=`Đặt lại dạng xem`,window.T_View_reset=`Xem đặt lại!`,window.T_No_results_found=`Không tìm thấy kết quả nào cho "{0}"`,window.T_N_results_found=`{1} kết quả được tìm thấy cho "{0}"`,window.T_Browser_unsupported_feature=`Trình duyệt này không hỗ trợ tính năng này`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/vi/software-features/bookmarks/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Mục lục (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#giới-thiệu>Giới Thiệu</a></li><li><a href=#what-are-bookmarks>What are bookmarks?</a></li><li><a href=#how-do-i-set-bookmarks>How do I set bookmarks?</a></li><li><a href=#why-should-i-set-bookmarks>Why should I set bookmarks?</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/vi/index.html><span itemprop=name>Hỗ Trợ Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/vi/software-features/index.html><span itemprop=name>Phần Mềm & Tính Năng</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Dấu trang là gì?</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/vi/software-features/body-weight-measurement/index.html title="Chức năng đo lường cân nặng cơ thể mới (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/vi/software-features/motion-capture-guide/index.html title="Hướng Dẫn Người Dùng Swing Catalyst Motion Capture (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Thẻ style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/vi/tags/database/index.html>Database</a></li><li><a class=term-link href=/sc-support/vi/tags/force-data/index.html>Force-Data</a></li></ul></div></header><h1 id=dấu-trang-là-gì>Dấu trang là gì?</h1><h2 id=giới-thiệu>Giới Thiệu<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Bài viết hỗ trợ này nhằm mô tả Dấu Trang là gì trong Swing Catalyst và Motion Catalyst, cũng như công dụng của chúng. Mặc dù có một số khác biệt giữa Motion Catalyst và Swing Catalyst, nhưng những kiến thức cơ bản về cách hoạt động của Dấu Trang và các tính năng của chúng là như nhau, có nghĩa là bài viết này có thể được sử dụng cho cả hai phần mềm.</p><p>Ảnh chụp màn hình ví dụ từ Motion Catalyst của bản ghi Nhảy Chống Lực</p><p><a href=#R-image-8778b2d5c40f7a48371a851c4f8a345a class=lightbox-link><img alt=MotionCatalyst_IigJ2pRrKQ.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-iigj2prrkq-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8778b2d5c40f7a48371a851c4f8a345a><img alt=MotionCatalyst_IigJ2pRrKQ.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-iigj2prrkq-png.png></a></p><h2 id=what-are-bookmarks>What are bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Bookmarks are used to identify key points in a recording. For certain sports & activities, the bookmarks correlate to specific phases in the activity, or simply indicate start and end of movement.</p><p>For counter movement jump (as pictured), these phases are: unweighting, braking, propulsion, takeoff, and landing.</p><p>If we look more closely the screenshots above, we see that there are a number of arrows above the playback timeline, each arrow, or bookmark, correlate to different phases of the recorded activity.</p><p><a href=#R-image-6915802c6ce541a6f52441838a227b38 class=lightbox-link><img alt=MotionCatalyst_7R0EZLelgS.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-7r0ezlelgs-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-6915802c6ce541a6f52441838a227b38><img alt=MotionCatalyst_7R0EZLelgS.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-7r0ezlelgs-png.png></a></p><p>The number of bookmarks available depend on the activity. Certain activities have more bookmarks than others. Additionally, bookmarks are set automatically for certain activities where the phases are identified from force data. We are working to improve this, so the list below is subject to change.</p><p>Currently the sports and activities that have automatic bookmarks set by key metrics are:</p><p>Sport
-Activity</p><p>Fitness
-Counter Movement Jump</p><p>Fitness
-Squat Jump</p><p>Fitness
-Isometric mid-thigh pull</p><p>Fitness
-Dynamic & Static balance</p><p>Fitness
-Upper Body Plank</p><p>Ski jump</p><p>Baseball
-Batting</p><p>The bookmark positions are stored in the database for each recording and in any exported take (recording with data) file.</p><h2 id=how-do-i-set-bookmarks>How do I set bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To change or manually set the bookmark positions:</p><ul><li><p>&ldquo;Unlock&rdquo; the bookmarks by pressing the &ldquo;bookmarks&rdquo; button.</p></li><li><p>Once selected you can change the position of the bookmarks by dragging the arrow(s).</p></li><li><p>When finished, make sure to &ldquo;lock&rdquo; the bookmarks again by deselecting the &ldquo;bookmarks&rdquo; icon, exiting the &ldquo;edit bookmark&rdquo; mode.</p></li></ul><p><a href=#R-image-4ca3ff5cd6b25e71b59e55a698c3a676 class=lightbox-link><img alt=hTxwCEhhvp.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/htxwcehhvp-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4ca3ff5cd6b25e71b59e55a698c3a676><img alt=hTxwCEhhvp.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/htxwcehhvp-png.png></a></p><p><a href=#R-image-5cf9944a13b666dca4cdb4127dcc0957 class=lightbox-link><img alt=MotionCatalyst_JWfhTldXeS.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-jwfhtldxes-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5cf9944a13b666dca4cdb4127dcc0957><img alt=MotionCatalyst_JWfhTldXeS.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-jwfhtldxes-png.png></a></p><p>To reset the positions click the &ldquo;reset A&rdquo; (or B) button(s) (shown to the left of the bookmarks button).</p><p>Grey bookmarks indicate that they haven&rsquo;t been set, or changed.</p><p><a href=#R-image-d19fb826bd37b308c8fd7e306f62b37f class=lightbox-link><img alt=MotionCatalyst_ttrfziAOSo.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-ttrfziaoso-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d19fb826bd37b308c8fd7e306f62b37f><img alt=MotionCatalyst_ttrfziAOSo.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-ttrfziaoso-png.png></a></p><p>The bookmarks are also represented in the data graphs as vertical lines, indicating <em>where</em> in the recording the different phases are in time (X axis of the graph):</p><p><a href=#R-image-f029e9e601ac786d795df735c7c00cc2 class=lightbox-link><img alt=image__2_.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/image-2-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-f029e9e601ac786d795df735c7c00cc2><img alt=image__2_.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/image-2-png.png></a></p><p><strong>Tip</strong>: The position of the first and (or) last bookmark decide how much data is displayed in the databoxes. The duration before the first bookmark and after the last bookmark depends on the activity and sport, but changing this manually can be helpful to view certain parts of a recording. This is especially helpful for recordings done under the &ldquo;free movement&rdquo; activity, which can be up to 30 seconds in duration.</p><p><a href=#R-image-511317b2e232325beec3d592eed6c8ea class=lightbox-link><img alt=MotionCatalyst_eUbaCWiclM.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-eubacwiclm-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-511317b2e232325beec3d592eed6c8ea><img alt=MotionCatalyst_eUbaCWiclM.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-eubacwiclm-gif.png></a></p><p>Note: We are only changing what we are looking at &ldquo;in time&rdquo;, none of the stored data is actually changed in any way.</p><p>For more details on how to view and manipulate the graphs please see <a href=/sc-support/vi/software-features/graph-library/index.html>this article</a>.</p><h2 id=why-should-i-set-bookmarks>Why should I set bookmarks?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>To allow easy playback synchronization between recordings we recommend setting bookmarks.</p><p>For example, say you want to view two recordings side by side of of a counter movement jump performed by two different users where you wish to synchronize the playback around a specific phase.</p><ul><li><p>Click the &ldquo;Synchronize&rdquo; button.</p></li><li><p>Select the phase / bookmark you wish to synchronize on.</p></li><li><p>Press play.</p></li></ul><p><a href=#R-image-64bf7ba0f28c4efdf33b384f5d9ebe82 class=lightbox-link><img alt=MotionCatalyst_vG2pjBkyKz.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-vg2pjbkykz-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-64bf7ba0f28c4efdf33b384f5d9ebe82><img alt=MotionCatalyst_vG2pjBkyKz.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-vg2pjbkykz-png.png></a></p><p>Note: The amount of available bookmarks, and name of the phases varies depending on the sport and activity.</p><p><a href=#R-image-87d2acbbb2be4885bbee530cb56d2f17 class=lightbox-link><img alt=MotionCatalyst_91cMd3GPuD.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-91cmd3gpud-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-87d2acbbb2be4885bbee530cb56d2f17><img alt=MotionCatalyst_91cMd3GPuD.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-91cmd3gpud-gif.png></a></p><p>Example synchronizing bookmarks to impact for two golf swings:</p><p><a href=#R-image-9411d1fbf80b4d6149e80e52906963d0 class=lightbox-link><img alt=MotionCatalyst_YKLskF87yC.gif class="lazy lightbox figure-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-yklskf87yc-gif.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9411d1fbf80b4d6149e80e52906963d0><img alt=MotionCatalyst_YKLskF87yC.gif class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/231425388/motioncatalyst-yklskf87yc-gif.png></a></p><p>This can be done for any sport or activity. For more details on &ldquo;compare mode&rdquo; please see the &ldquo;layouts&rdquo; section of our <a href=/sc-support/vi/getting-started/user-guide/index.html>user guide</a>.</p><hr><p><em>Last updated: 2024-06-07</em> | <a href=/sc-support/vi/software-features/bookmarks/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/vi/index.html><span class="logo-title default-animation">Hỗ trợ Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Tìm kiếm (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Tìm kiếm</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder="Tìm kiếm...">
-<button class=search-clear type=button data-search-clear title="Xóa tìm kiếm"><i class="fas fa-fw fa-times" title="Xóa tìm kiếm"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/vi/getting-started/index.html><a class="padding default-animation" href=/sc-support/vi/getting-started/index.html>Bắt Đầu</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/cameras-video/index.html><a class="padding default-animation" href=/sc-support/vi/cameras-video/index.html>Máy Ảnh & Video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/hardware/index.html><a class="padding default-animation" href=/sc-support/vi/hardware/index.html>Phần Cứng</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/vi/software-features/index.html><a class="padding default-animation" href=/sc-support/vi/software-features/index.html>Phần Mềm & Tính Năng</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/vi/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/vi/software-features/multiple-forces-graph/index.html>Biểu Đồ Nhiều Lực</a></li><li data-nav-id=/sc-support/vi/software-features/key-metrics/index.html><a class=padding href=/sc-support/vi/software-features/key-metrics/index.html>Các Chỉ Số Chính</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-disclosures/index.html>Các Công Khai Thông Tin Quan Trọng cho Người Dùng Công Cụ Chụp Chuyển Động Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/vi/software-features/force-graph-phases/index.html>Các pha biểu đồ lực</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-install/index.html>Cách cài đặt các thành phần Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/vi/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/vi/software-features/record-a-lesson/index.html>Cách Ghi Hình Một Bài Học</a></li><li data-nav-id=/sc-support/vi/software-features/import-from-v1/index.html><a class=padding href=/sc-support/vi/software-features/import-from-v1/index.html>Cách Nhập Video từ V1</a></li><li data-nav-id=/sc-support/vi/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/vi/software-features/pressure-distribution-overlay/index.html>Cách sử dụng chức năng phủ Phân phối Áp suất</a></li><li data-nav-id=/sc-support/vi/software-features/remote-support/index.html><a class=padding href=/sc-support/vi/software-features/remote-support/index.html>Cách Sử Dụng Hỗ Trợ Từ Xa</a></li><li data-nav-id=/sc-support/vi/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/vi/software-features/microphone-trigger/index.html>Cách sử dụng microphone làm bộ kích hoạt ghi hình</a></li><li data-nav-id=/sc-support/vi/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/vi/software-features/swing-catalyst-online/index.html>Cách sử dụng Swing Catalyst Online</a></li><li data-nav-id=/sc-support/vi/software-features/explorer/index.html><a class=padding href=/sc-support/vi/software-features/explorer/index.html>Cách sử dụng Trình Duyệt</a></li><li data-nav-id=/sc-support/vi/software-features/force-vectors/index.html><a class=padding href=/sc-support/vi/software-features/force-vectors/index.html>Cách sử dụng Véc tơ Lực</a></li><li data-nav-id=/sc-support/vi/software-features/change-recording-user/index.html><a class=padding href=/sc-support/vi/software-features/change-recording-user/index.html>Cách thay đổi người dùng trên một bản ghi hiện có</a></li><li data-nav-id=/sc-support/vi/software-features/email-sharing/index.html><a class=padding href=/sc-support/vi/software-features/email-sharing/index.html>Cách thiết lập chia sẻ qua email trong Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/feedback-screen/index.html><a class=padding href=/sc-support/vi/software-features/feedback-screen/index.html>Cách thiết lập màn hình phản hồi</a></li><li data-nav-id=/sc-support/vi/software-features/multiple-displays/index.html><a class=padding href=/sc-support/vi/software-features/multiple-displays/index.html>Cách thiết lập nhiều màn hình hiển thị với Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/export-raw-data/index.html><a class=padding href=/sc-support/vi/software-features/export-raw-data/index.html>Cách xuất dữ liệu thô</a></li><li data-nav-id=/sc-support/vi/software-features/export-contacts/index.html><a class=padding href=/sc-support/vi/software-features/export-contacts/index.html>Cách xuất thông tin liên hệ học viên</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-settings/index.html>Cài Đặt Chụp Chuyển Động Swing Catalyst</a></li><li data-nav-id=/sc-support/vi/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/vi/software-features/ios-app-sharing/index.html>Chia sẻ video ghi lại với ứng dụng Swing Catalyst cho iOS</a></li><li data-nav-id=/sc-support/vi/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/vi/software-features/body-weight-measurement/index.html>Chức năng đo lường cân nặng cơ thể mới</a></li><li class=active data-nav-id=/sc-support/vi/software-features/bookmarks/index.html><a class=padding href=/sc-support/vi/software-features/bookmarks/index.html>Dấu trang là gì?</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-guide/index.html>Hướng Dẫn Người Dùng Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/vi/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/vi/software-features/markerless-motion-capture/index.html>Nâng Cao Chụp Chuyển Động Không Đánh Dấu Trong Swing Golf Và Baseball Bằng RTMPose Và RTMDet: Phương Pháp Từ Trên Xuống</a></li><li data-nav-id=/sc-support/vi/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/vi/software-features/raw-data-export-guide/index.html>Những gì được bao gồm trong bản xuất dữ liệu thô</a></li><li data-nav-id=/sc-support/vi/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/vi/software-features/frontal-plane-torque/index.html>Phân Tích Mô-men Xoắn Mặt Phẳng Trán - Hướng Dẫn Người Dùng</a></li><li data-nav-id=/sc-support/vi/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/vi/software-features/keyboard-shortcuts/index.html>Phím tắt bàn phím và Phím nóng</a></li><li data-nav-id=/sc-support/vi/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/vi/software-features/pressure-stance-settings/index.html>Sử dụng các Cài đặt Áp lực và Tư Thế mới</a></li><li data-nav-id=/sc-support/vi/software-features/graph-library/index.html><a class=padding href=/sc-support/vi/software-features/graph-library/index.html>Sử dụng thư viện đồ thị</a></li><li data-nav-id=/sc-support/vi/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/vi/software-features/motion-capture-faq/index.html>Swing Catalyst Chụp Chuyển Động - Câu Hỏi Thường Gặp</a></li><li data-nav-id=/sc-support/vi/software-features/export-recordings/index.html><a class=padding href=/sc-support/vi/software-features/export-recordings/index.html>Xuất các bản ghi</a></li></ul></li><li data-nav-id=/sc-support/vi/account-setup/index.html><a class="padding default-animation" href=/sc-support/vi/account-setup/index.html>Tài Khoản & Thiết Lập</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/vi/reference/index.html><a class="padding default-animation" href=/sc-support/vi/reference/index.html>Tham Chiếu</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Ngôn ngữ</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/bookmarks/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/bookmarks/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/bookmarks/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/bookmarks/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/bookmarks/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/bookmarks/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/bookmarks/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/bookmarks/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/bookmarks/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/bookmarks/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/bookmarks/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/bookmarks/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/bookmarks/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/bookmarks/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/bookmarks/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/bookmarks/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/bookmarks/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/bookmarks/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/bookmarks/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/bookmarks/index.html lang=vi selected data-selected>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/bookmarks/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/bookmarks/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/bookmarks/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/bookmarks/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/bookmarks/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/bookmarks/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/bookmarks/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/bookmarks/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/bookmarks/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/bookmarks/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/bookmarks/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/bookmarks/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/bookmarks/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/bookmarks/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/bookmarks/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/bookmarks/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Đề tài</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763278 defer></script><script src=/sc-support/js/theme.min.js?1771763278 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="vi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Bài viết hỗ trợ này nhằm mô tả Dấu Trang là gì trong Swing Catalyst và Motion Catalyst, cũng như mục đích sử dụng của chúng. Có một số điểm khác biệt...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dấu Trang là gì? :: Hỗ trợ Swing Catalyst">
+    <meta name="twitter:description" content="Bài viết hỗ trợ này nhằm mô tả Dấu Trang là gì trong Swing Catalyst và Motion Catalyst, cũng như mục đích sử dụng của chúng. Có một số điểm khác biệt...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html">
+    <meta property="og:site_name" content="Hỗ trợ Swing Catalyst">
+    <meta property="og:title" content="Dấu Trang là gì? :: Hỗ trợ Swing Catalyst">
+    <meta property="og:description" content="Bài viết hỗ trợ này nhằm mô tả Dấu Trang là gì trong Swing Catalyst và Motion Catalyst, cũng như mục đích sử dụng của chúng. Có một số điểm khác biệt...">
+    <meta property="og:locale" content="vi">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Phần mềm & Tính năng">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Database">
+    <meta itemprop="name" content="Dấu Trang là gì? :: Hỗ trợ Swing Catalyst">
+    <meta itemprop="description" content="Bài viết hỗ trợ này nhằm mô tả Dấu Trang là gì trong Swing Catalyst và Motion Catalyst, cũng như mục đích sử dụng của chúng. Có một số điểm khác biệt...">
+    <meta itemprop="wordCount" content="870">
+    <meta itemprop="keywords" content="Force-Data,Database">
+    <title>Dấu Trang là gì? :: Hỗ trợ Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/bookmarks/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/bookmarks/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/bookmarks/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/bookmarks/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/bookmarks/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/bookmarks/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/bookmarks/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/bookmarks/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/bookmarks/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/bookmarks/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/bookmarks/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/bookmarks/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/bookmarks/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/bookmarks/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/bookmarks/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/bookmarks/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/bookmarks/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/bookmarks/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/bookmarks/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/bookmarks/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/bookmarks/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/bookmarks/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/bookmarks/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/bookmarks/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/bookmarks/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/bookmarks/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/bookmarks/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/bookmarks/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/bookmarks/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/bookmarks/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/bookmarks/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/bookmarks/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/bookmarks/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/bookmarks/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/bookmarks/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/bookmarks/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520128" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520128" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.vi.js?1772520128";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/lunr/lunr.vi.min.js?1772520128" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['vi'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520128" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520128" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520128" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520128" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520128" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/bookmarks\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Sao chép văn bản vào bảng tạm`;
+      window.T_Copied_to_clipboard = `Văn bản đã sao chép vào bảng tạm!`;
+      window.T_Link_copied_to_clipboard = `Liên kết đã sao chép vào bảng tạm!`;
+      window.T_Reset_view = `Đặt lại dạng xem`;
+      window.T_View_reset = `Xem đặt lại!`;
+      window.T_No_results_found = `Không tìm thấy kết quả nào cho "{0}"`;
+      window.T_N_results_found = `{1} kết quả được tìm thấy cho "{0}"`;
+      window.T_Browser_unsupported_feature = `Trình duyệt này không hỗ trợ tính năng này`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/vi/software-features/bookmarks/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Mục lục (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#giới-thiệu">Giới Thiệu</a></li>
+    <li><a href="#dấu-trang-là-gì">Dấu Trang là gì?</a></li>
+    <li><a href="#làm-thế-nào-để-đặt-dấu-trang">Làm thế nào để đặt Dấu Trang?</a></li>
+    <li><a href="#tại-sao-tôi-nên-đặt-dấu-trang">Tại sao tôi nên đặt Dấu Trang?</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/index.html"><span itemprop="name">Hỗ Trợ Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/vi/software-features/index.html"><span itemprop="name">Phần mềm &amp; Tính năng</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Dấu Trang là gì?</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/vi/software-features/body-weight-measurement/index.html" title="Chức năng đo Cân Nặng Cơ Thể mới (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/vi/software-features/motion-capture-guide/index.html" title="Hướng Dẫn Sử Dụng Swing Catalyst Motion Capture cho Người Dùng (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Nội dung khác"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Thẻ" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/vi/tags/database/index.html">Database</a></li>
+    <li><a class="term-link" href="/sc-support/vi/tags/force-data/index.html">Force-Data</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="dấu-trang-là-gì">Dấu Trang là gì?</h1>
+
+<h2 id="giới-thiệu">Giới Thiệu<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Bài viết hỗ trợ này nhằm mô tả Dấu Trang là gì trong Swing Catalyst và Motion Catalyst, cũng như mục đích sử dụng của chúng. Có một số điểm khác biệt giữa Motion Catalyst và Swing Catalyst, nhưng các nguyên tắc cơ bản về cách thức hoạt động và tính năng của Dấu Trang là giống nhau, có nghĩa là bài viết này có thể được sử dụng cho cả hai phần mềm.</p>
+<p>Ảnh chụp màn hình ví dụ từ Motion Catalyst của một Bản Ghi nhảy counter movement jump</p>
+<p><a href="#R-image-37e96cd345fd4aae5c15986afc307098" class="lightbox-link"><img alt="Ảnh chụp màn hình MotionCatalyst của bản ghi nhảy counter movement jump" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-iigj2prrkq-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-37e96cd345fd4aae5c15986afc307098"><img alt="Ảnh chụp màn hình MotionCatalyst của bản ghi nhảy counter movement jump" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-iigj2prrkq-png.png"></a></p>
+<h2 id="dấu-trang-là-gì">Dấu Trang là gì?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Dấu Trang được dùng để xác định các điểm quan trọng trong một Bản Ghi. Đối với một số môn Thể Thao và Hoạt Động nhất định, các Dấu Trang tương ứng với các Giai đoạn cụ thể trong Hoạt Động đó, hoặc đơn giản là chỉ ra điểm bắt đầu và kết thúc của chuyển động.</p>
+<p>Đối với nhảy counter movement jump (như trong hình), các Giai đoạn này bao gồm: Giảm Tải Trọng, hãm, đẩy, cất cánh và hạ cánh.</p>
+<p>Nếu nhìn kỹ hơn vào các ảnh chụp màn hình ở trên, chúng ta thấy có một số mũi tên phía trên thanh thời gian Phát Lại, mỗi mũi tên, hay Dấu Trang, tương ứng với các Giai đoạn khác nhau của Hoạt Động được ghi lại.</p>
+<p><a href="#R-image-e6837ff18a7b67578cf3b0bdd73eb099" class="lightbox-link"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị các mũi tên Dấu Trang trên thanh thời gian" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-7r0ezlelgs-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6837ff18a7b67578cf3b0bdd73eb099"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị các mũi tên Dấu Trang trên thanh thời gian" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-7r0ezlelgs-png.png"></a></p>
+<p>Số lượng Dấu Trang khả dụng phụ thuộc vào Hoạt Động. Một số Hoạt Động có nhiều Dấu Trang hơn những Hoạt Động khác. Ngoài ra, Dấu Trang được đặt tự động cho một số Hoạt Động nhất định, nơi các Giai đoạn được xác định từ Dữ liệu lực. Chúng tôi đang nỗ lực cải thiện điều này, vì vậy danh sách dưới đây có thể thay đổi.</p>
+<p>Hiện tại, các môn Thể Thao và Hoạt Động có Dấu Trang tự động được đặt bởi Các Chỉ Số Chính là:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Thể Thao</th>
+          <th>Hoạt Động</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Thể Dục</td>
+          <td>Counter Movement Jump</td>
+      </tr>
+      <tr>
+          <td>Thể Dục</td>
+          <td>Squat Jump</td>
+      </tr>
+      <tr>
+          <td>Thể Dục</td>
+          <td>Kéo giữa đùi đẳng cự</td>
+      </tr>
+      <tr>
+          <td>Thể Dục</td>
+          <td>Cân Bằng Động &amp; Cân Bằng Tĩnh Học</td>
+      </tr>
+      <tr>
+          <td>Thể Dục</td>
+          <td>Upper Body Plank</td>
+      </tr>
+      <tr>
+          <td>Nhảy Trượt Tuyết</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Bóng Chày</td>
+          <td>Đánh bóng</td>
+      </tr>
+  </tbody>
+</table>
+<p>Vị trí các Dấu Trang được lưu trữ trong cơ sở dữ liệu cho mỗi Bản Ghi và trong bất kỳ tệp Lần Quay đã xuất nào (Bản Ghi kèm dữ liệu).</p>
+<h2 id="làm-thế-nào-để-đặt-dấu-trang">Làm thế nào để đặt Dấu Trang?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Để thay đổi hoặc đặt vị trí Dấu Trang thủ công:</p>
+<ul>
+<li>
+<p>&ldquo;Mở khóa&rdquo; các Dấu Trang bằng cách nhấn nút &ldquo;bookmarks&rdquo;.</p>
+</li>
+<li>
+<p>Sau khi chọn, bạn có thể thay đổi vị trí của các Dấu Trang bằng cách kéo các mũi tên.</p>
+</li>
+<li>
+<p>Khi Hoàn Thành, hãy đảm bảo &ldquo;khóa&rdquo; lại các Dấu Trang bằng cách bỏ chọn biểu tượng &ldquo;bookmarks&rdquo;, thoát khỏi chế độ &ldquo;chỉnh sửa Dấu Trang&rdquo;.</p>
+</li>
+</ul>
+<p><a href="#R-image-39888578062307308dd2794c1e7d3cc2" class="lightbox-link"><img alt="Ảnh chụp màn hình hiển thị nút bookmarks" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/htxwcehhvp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-39888578062307308dd2794c1e7d3cc2"><img alt="Ảnh chụp màn hình hiển thị nút bookmarks" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/htxwcehhvp-png.png"></a></p>
+<p><a href="#R-image-061eb9d4f5847fc65ffd1ff7ca835dbd" class="lightbox-link"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị chế độ chỉnh sửa Dấu Trang" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-jwfhtldxes-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-061eb9d4f5847fc65ffd1ff7ca835dbd"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị chế độ chỉnh sửa Dấu Trang" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-jwfhtldxes-png.png"></a></p>
+<p>Để đặt lại vị trí, hãy nhấn nút &ldquo;reset A&rdquo; (hoặc B) (hiển thị ở bên trái nút bookmarks).</p>
+<p>Dấu Trang màu xám cho biết chúng chưa được đặt hoặc chưa được thay đổi.</p>
+<p><a href="#R-image-583101f4613a110251bc8862d1c72664" class="lightbox-link"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị các Dấu Trang màu xám" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-ttrfziaoso-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-583101f4613a110251bc8862d1c72664"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị các Dấu Trang màu xám" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-ttrfziaoso-png.png"></a></p>
+<p>Các Dấu Trang cũng được thể hiện trong các đồ thị dữ liệu dưới dạng các đường thẳng đứng, cho biết <em>vị trí</em> trong Bản Ghi mà các Giai đoạn khác nhau nằm theo thời gian (trục X của đồ thị):</p>
+<p><a href="#R-image-f27ee4db865243738da2ca9184e5e6af" class="lightbox-link"><img alt="Ảnh chụp màn hình đồ thị dữ liệu hiển thị các đường Dấu Trang thẳng đứng" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/image-2-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f27ee4db865243738da2ca9184e5e6af"><img alt="Ảnh chụp màn hình đồ thị dữ liệu hiển thị các đường Dấu Trang thẳng đứng" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/image-2-png.png"></a></p>
+<p><strong>Mẹo</strong>: Vị trí của Dấu Trang đầu tiên và/hoặc cuối cùng quyết định lượng dữ liệu được hiển thị trong các hộp dữ liệu. Khoảng thời gian trước Dấu Trang đầu tiên và sau Dấu Trang cuối cùng phụ thuộc vào Hoạt Động và môn Thể Thao, nhưng việc thay đổi thủ công có thể giúp ích khi xem một số phần nhất định của Bản Ghi. Điều này đặc biệt hữu ích cho các Bản Ghi được thực hiện trong Hoạt Động &ldquo;chuyển động tự do&rdquo;, có thể kéo dài đến 30 giây.</p>
+<p><a href="#R-image-b93d0dbedfda4f2dc3dbe63bc553c60d" class="lightbox-link"><img alt="Ảnh gif MotionCatalyst minh họa việc thay đổi vị trí Dấu Trang" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-eubacwiclm-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b93d0dbedfda4f2dc3dbe63bc553c60d"><img alt="Ảnh gif MotionCatalyst minh họa việc thay đổi vị trí Dấu Trang" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-eubacwiclm-gif.png"></a></p>
+<p>Lưu ý: Chúng ta chỉ thay đổi những gì chúng ta đang xem &ldquo;theo thời gian&rdquo;, không có dữ liệu nào được lưu trữ thực sự bị thay đổi theo bất kỳ cách nào.</p>
+<p>Để biết thêm chi tiết về cách xem và thao tác với các đồ thị, vui lòng xem <a href="/sc-support/vi/software-features/graph-library/index.html">bài viết này</a>.</p>
+<h2 id="tại-sao-tôi-nên-đặt-dấu-trang">Tại sao tôi nên đặt Dấu Trang?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Sao chép liên kết vào bảng tạm"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Để cho phép Đồng Bộ Hóa Phát Lại dễ dàng giữa các Bản Ghi, chúng tôi khuyến nghị đặt Dấu Trang.</p>
+<p>Ví dụ, giả sử bạn muốn xem hai Bản Ghi cạnh nhau của một counter movement jump được thực hiện bởi hai Người Dùng khác nhau, trong đó bạn muốn Đồng Bộ Hóa việc Phát Lại xung quanh một Giai đoạn cụ thể.</p>
+<ul>
+<li>
+<p>Nhấn nút &ldquo;Synchronize&rdquo;.</p>
+</li>
+<li>
+<p>Chọn Giai đoạn / Dấu Trang bạn muốn Đồng Bộ Hóa.</p>
+</li>
+<li>
+<p>Nhấn phát.</p>
+</li>
+</ul>
+<p><a href="#R-image-0091122e330cbeefd790279d6b16d0e5" class="lightbox-link"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị menu Đồng Bộ Hóa" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-vg2pjbkykz-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0091122e330cbeefd790279d6b16d0e5"><img alt="Ảnh chụp màn hình MotionCatalyst hiển thị menu Đồng Bộ Hóa" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-vg2pjbkykz-png.png"></a></p>
+<p>Lưu ý: Số lượng Dấu Trang khả dụng và tên của các Giai đoạn thay đổi tùy thuộc vào môn Thể Thao và Hoạt Động.</p>
+<p><a href="#R-image-6b5591036b872ddb0075b5d34374fa0e" class="lightbox-link"><img alt="Ảnh gif MotionCatalyst minh họa Đồng Bộ Hóa Dấu Trang" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-91cmd3gpud-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b5591036b872ddb0075b5d34374fa0e"><img alt="Ảnh gif MotionCatalyst minh họa Đồng Bộ Hóa Dấu Trang" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-91cmd3gpud-gif.png"></a></p>
+<p>Ví dụ Đồng Bộ Hóa Dấu Trang theo Tác Động cho hai Cú Gôn golf:</p>
+<p><a href="#R-image-560adee1a727a7f26365f9df4b5c5ffc" class="lightbox-link"><img alt="Ảnh gif MotionCatalyst minh họa Đồng Bộ Hóa Dấu Trang theo Tác Động cho Cú Gôn" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-yklskf87yc-gif.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-560adee1a727a7f26365f9df4b5c5ffc"><img alt="Ảnh gif MotionCatalyst minh họa Đồng Bộ Hóa Dấu Trang theo Tác Động cho Cú Gôn" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/231425388/motioncatalyst-yklskf87yc-gif.png"></a></p>
+<p>Điều này có thể được thực hiện cho bất kỳ môn Thể Thao hoặc Hoạt Động nào. Để biết thêm chi tiết về &ldquo;chế độ so sánh&rdquo;, vui lòng xem phần &ldquo;Bố Cục&rdquo; trong <a href="/sc-support/vi/getting-started/user-guide/index.html">hướng dẫn người dùng</a> của chúng tôi.</p>
+<hr>
+<p><em>Cập nhật lần cuối: 2024-06-07</em> | <a href="/sc-support/vi/software-features/bookmarks/index.html">Xem trên trang hỗ trợ chính thức</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/vi/index.html">
+          <span class="logo-title default-animation">Hỗ trợ Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Tìm kiếm (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Tìm kiếm</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Tìm kiếm...">
+            <button class="search-clear" type="button" data-search-clear="" title="Xóa tìm kiếm"><i class="fas fa-fw fa-times" title="Xóa tìm kiếm"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/vi/getting-started/index.html"><a class="padding default-animation" href="/sc-support/vi/getting-started/index.html">Bắt Đầu Sử Dụng</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/vi/cameras-video/index.html">Cameras &amp; Video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/hardware/index.html"><a class="padding default-animation" href="/sc-support/vi/hardware/index.html">Phần cứng</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/vi/software-features/index.html"><a class="padding default-animation" href="/sc-support/vi/software-features/index.html">Phần mềm &amp; Tính năng</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/vi/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/vi/software-features/multiple-forces-graph/index.html">Biểu Đồ Nhiều Lực</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/vi/software-features/key-metrics/index.html">Các Chỉ Số Chính</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/vi/software-features/force-graph-phases/index.html">Các Giai đoạn trong biểu đồ lực</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-disclosures/index.html">Các Thông Báo Quan Trọng Dành Cho Người Dùng Công Cụ Chụp Chuyển Động Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-install/index.html">Cách cài đặt các thành phần Chụp Chuyển Động của Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/vi/software-features/feedback-screen/index.html">Cách cài đặt Màn Hình Phản Hồi</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/vi/software-features/multiple-displays/index.html">Cách cài đặt nhiều màn hình với Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/vi/software-features/record-a-lesson/index.html">Cách ghi lại một Bài Học</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/vi/software-features/import-from-v1/index.html">Cách nhập video từ V1</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/vi/software-features/pressure-distribution-overlay/index.html">Cách sử dụng chức năng Phủ Xen Phân phối Áp suất</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/remote-support/index.html"><a class="padding" href="/sc-support/vi/software-features/remote-support/index.html">Cách Sử Dụng Hỗ Trợ Từ Xa</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/vi/software-features/microphone-trigger/index.html">Cách sử dụng micrô làm Kích Hoạt ghi lại</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/vi/software-features/swing-catalyst-online/index.html">Cách sử dụng Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/explorer/index.html"><a class="padding" href="/sc-support/vi/software-features/explorer/index.html">Cách sử dụng Trình Duyệt</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/vi/software-features/force-vectors/index.html">Cách sử dụng Véc tơ Lực</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/vi/software-features/change-recording-user/index.html">Cách thay đổi người dùng trên một bản ghi hiện có</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/vi/software-features/email-sharing/index.html">Cách thiết lập chia sẻ qua email trong Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/vi/software-features/export-raw-data/index.html">Cách xuất dữ liệu thô</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/vi/software-features/export-contacts/index.html">Cách xuất thông tin liên hệ của Học Viên</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-settings/index.html">Cài Đặt Chụp Chuyển Động trong Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/vi/software-features/ios-app-sharing/index.html">Chia sẻ video đã quay với ứng dụng Swing Catalyst cho iOS</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/vi/software-features/body-weight-measurement/index.html">Chức năng đo Cân Nặng Cơ Thể mới</a></li>
+            <li class="active " data-nav-id="/sc-support/vi/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/vi/software-features/bookmarks/index.html">Dấu Trang là gì?</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-guide/index.html">Hướng Dẫn Sử Dụng Swing Catalyst Motion Capture cho Người Dùng</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/vi/software-features/markerless-motion-capture/index.html">Nâng Cao Chụp Chuyển Động Không Đánh Dấu Cú Gôn Golf và Baseball Sử Dụng RTMPose và RTMDet: Phương Pháp Từ Trên Xuống</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/vi/software-features/raw-data-export-guide/index.html">Những gì được bao gồm trong xuất dữ liệu thô</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/vi/software-features/frontal-plane-torque/index.html">Phân Tích Mô-Men Xoắn Mặt Phẳng Trán - Hướng Dẫn Người Dùng</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/vi/software-features/keyboard-shortcuts/index.html">Phím tắt và Phím nóng</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/vi/software-features/pressure-stance-settings/index.html">Sử dụng các cài đặt Áp lực và Tư Thế Đứng mới</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/graph-library/index.html"><a class="padding" href="/sc-support/vi/software-features/graph-library/index.html">Sử dụng thư viện biểu đồ</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/vi/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="" data-nav-id="/sc-support/vi/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/vi/software-features/export-recordings/index.html">Xuất Bản Ghi</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/account-setup/index.html"><a class="padding default-animation" href="/sc-support/vi/account-setup/index.html">Tài khoản &amp; Chuẩn bị</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/vi/reference/index.html"><a class="padding default-animation" href="/sc-support/vi/reference/index.html">Tham khảo</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Ngôn ngữ</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/bookmarks/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/bookmarks/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/bookmarks/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/bookmarks/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/bookmarks/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/bookmarks/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/bookmarks/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/bookmarks/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/bookmarks/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/bookmarks/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/bookmarks/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/bookmarks/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/bookmarks/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/bookmarks/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/bookmarks/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/bookmarks/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/bookmarks/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/bookmarks/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/bookmarks/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/bookmarks/index.html" lang="vi" selected data-selected>Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/bookmarks/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/bookmarks/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/bookmarks/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/bookmarks/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/bookmarks/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/bookmarks/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/bookmarks/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/bookmarks/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/bookmarks/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/bookmarks/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/bookmarks/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/bookmarks/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/bookmarks/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/bookmarks/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/bookmarks/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/bookmarks/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Đề tài</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520128" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520128" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

@@ -1,18 +1,459 @@
-<!doctype html><html id=R-html lang=sr dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Напоменимо да је тип интеграције камере идентификован, нпр. DirectShow, Spinnaker:"><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Како користити веб камеру (DirectShow интеграција) са Swing Catalyst :: Подршка Swing Catalyst"><meta name=twitter:description content="Напоменимо да је тип интеграције камере идентификован, нпр. DirectShow, Spinnaker:"><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/sr/cameras-video/web-camera-directshow/index.html"><meta property="og:site_name" content="Подршка Swing Catalyst"><meta property="og:title" content="Како користити веб камеру (DirectShow интеграција) са Swing Catalyst :: Подршка Swing Catalyst"><meta property="og:description" content="Напоменимо да је тип интеграције камере идентификован, нпр. DirectShow, Spinnaker:"><meta property="og:locale" content="sr"><meta property="og:type" content="article"><meta property="article:section" content="Камере и видео"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Usb-Camera"><meta itemprop=name content="Како користити веб камеру (DirectShow интеграција) са Swing Catalyst :: Подршка Swing Catalyst"><meta itemprop=description content="Напоменимо да је тип интеграције камере идентификован, нпр. DirectShow, Spinnaker:"><meta itemprop=wordCount content="435"><meta itemprop=keywords content="Troubleshooting,Usb-Camera"><title>Како користити веб камеру (DirectShow интеграција) са Swing Catalyst :: Подршка Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763288 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763288 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763288 defer></script><script src=/sc-support/js/search.min.js?1771763288 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.sr.js?1771763288"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763288 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763288 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763288 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763288 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763288 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763288 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763288 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763288 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/web-camera-directshow/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/sr/cameras-video/web-camera-directshow/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#повезивање-камере>Повезивање камере</a><ul><li></li></ul></li><li><a href=#settings-menu>Settings menu</a></li><li><a href=#advanced-camera-settings>Advanced Camera Settings</a></li><li><a href=#troubleshooting><a href=web-camera-directshow.md>Troubleshooting</a></a><ul><li><a href=#low-frame-rate>Low Frame Rate:</a></li><li><a href=#dropped-frames>Dropped frames:</a></li><li><a href=#selecting-a-different-media-type>Selecting a different Media Type</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/sr/index.html><span itemprop=name>Поддршка Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/sr/cameras-video/index.html><span itemprop=name>Камере и видео</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Како користити веб камеру (DirectShow интеграција) са Swing Catalyst</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/sr/cameras-video/ids-ueye-usb/index.html title="Како користити IDS uEye USB камере са Swing Catalyst (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/sr/cameras-video/fox-lynx-firmware/index.html title="Како надоградити или суградити Fox / Lynx фирмвер (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/sr/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/sr/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=како-користити-веб-камеру-directshow-интеграција-са-swing-catalyst>Како користити веб камеру (DirectShow интеграција) са Swing Catalyst</h1><ul><li>Напомена: USB камере су тестиране у лабораторијском окружењу.</li></ul><h2 id=повезивање-камере>Повезивање камере<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h4 id=укључите-камеру-из-менија-подешавања>Укључите камеру из менија Подешавања.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Кликните на икону зупчаника.</p><p><a href=#R-image-229de4aa3e9837734a089baafd783a33 class=lightbox-link><img alt=slack_2021-09-16_16-10-55.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/slack-2021-09-16-16-10-55-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-229de4aa3e9837734a089baafd783a33><img alt=slack_2021-09-16_16-10-55.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/slack-2021-09-16-16-10-55-png.png></a></p><h2 id=settings-menu>Settings menu<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Note that the camera integration type is identified, e.g. DirectShow, Spinnaker:</p><p><a href=#R-image-7b66fd13384784078f1b191e7860114c class=lightbox-link><img alt=MotionCatalyst_2021-09-24_10-25-39.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-7b66fd13384784078f1b191e7860114c><img alt=MotionCatalyst_2021-09-24_10-25-39.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png></a></p><p>If properly detected the camera will automatically appear in the camera list.</p><p>In order to use the camera it needs to be assigned a camera angle, click the &ldquo;Disabled&rdquo; icon and select an angle, then flip the &ldquo;OFF&rdquo; switch to &ldquo;ON&rdquo; to enable the camera.</p><p><a href=#R-image-2bd54bc76c15dd1010141b5a7a407efb class=lightbox-link><img alt=MotionCatalyst_2021-11-23_18-04-32.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2bd54bc76c15dd1010141b5a7a407efb><img alt=MotionCatalyst_2021-11-23_18-04-32.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png></a></p><p>Dragon camera is enabled and designated as the face on right camera (meaning it is facing the user from the right).</p><p><a href=#R-image-36854590ae53bb9c549974516aa2f963 class=lightbox-link><img alt=MotionCatalyst_2021-09-24_09-56-47.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-36854590ae53bb9c549974516aa2f963><img alt=MotionCatalyst_2021-09-24_09-56-47.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png></a></p><h2 id=advanced-camera-settings>Advanced Camera Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>The advanced camera settings gives you the ability to change the name of the camera, mirror & rotate, crop, and adjust the video image and make settings changes.</p><p>Note: Auto is only available for certain properties, such as white balance, exposure, and focus).</p><p><a href=#R-image-03cf75a1feda10476ab476125fadcacb class=lightbox-link><img alt=2019-11-15_12-58-36.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/2019-11-15-12-58-36-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-03cf75a1feda10476ab476125fadcacb><img alt=2019-11-15_12-58-36.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/2019-11-15-12-58-36-png.png></a></p><p><a href=#R-image-0bb80d06bf57c8f960011a8713959b97 class=lightbox-link><img alt=2019-11-15_13-00-02.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/2019-11-15-13-00-02-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-0bb80d06bf57c8f960011a8713959b97><img alt=2019-11-15_13-00-02.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/2019-11-15-13-00-02-png.png></a></p><p>If you any erroneous changes, you can revert to default) by clicking &ldquo;Restore defaults&rdquo;.</p><h2 id=troubleshooting><a href=/sc-support/sr/cameras-video/web-camera-directshow/index.html>Troubleshooting</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=low-frame-rate>Low Frame Rate:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Frame rate may be lowered due to the exposure set on the camera.</p><p>By default most cameras are set to auto exposure, if you don&rsquo;t have enough light, the exposure time per frame will be high, and the camera will be unable to provide the maximum frame rate.</p><p>If the exposure is too high, the frame rate will be reduced, and the recording will be blurrier.</p><h3 id=dropped-frames>Dropped frames:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If the camera is dropping frames (in this case it is not giving the FPS it should be), it can introduce visual artifacts.<a href=#R-image-4e80bd563fd4403d559f88ca7b8b7ef9 class=lightbox-link><img alt=2019-11-15_12-44-34.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/2019-11-15-12-44-34-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-4e80bd563fd4403d559f88ca7b8b7ef9><img alt=2019-11-15_12-44-34.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/2019-11-15-12-44-34-png.png></a></p><ul><li><p>Make sure that the camera is connected directly to the computer, and ideally to one of the USB ports in the back of the computer.</p></li><li><p>You may have to try different USB ports to find one that works best for you, generally we want to avoid USB ports situated in the front of a desktop PC as the performance is poor (will often give a lower frame rate).</p></li></ul><h3 id=selecting-a-different-media-type>Selecting a different Media Type<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Normally DirectShow and Swing Catalyst will automatically select the best media type and changing it shouldn&rsquo;t be necessary, however some cases / scenarios do warrant this:</p><ul><li><p>If you have a web camera that is 60 FPS at 1920x1280 resolution and you&rsquo;re only getting 30 FPS</p></li><li><p>The video resolution appears smaller / worse compared to other applications</p></li><li><p>You&rsquo;re experiencing dropped frames and or insufficient data received.</p></li></ul><p>Certain formats use less bandwidth than others. If the camera supports RAW8, GREY8, or other 8-bit imaging formats, these are preferable to any RGB or MPEG type media types as they require drastically less bandwidth.</p><p><a href=#R-image-697468798040c4ac2f4b581938a3ac3a class=lightbox-link><img alt=mceclip0.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4407217034258/mceclip0-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-697468798040c4ac2f4b581938a3ac3a><img alt=mceclip0.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4407217034258/mceclip0-png.png></a></p><hr><p><em>Last updated: 2023-12-15</em> | <a href=/sc-support/sr/cameras-video/web-camera-directshow/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/sr/index.html><span class="logo-title default-animation">Подршка Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/sr/getting-started/index.html><a class="padding default-animation" href=/sc-support/sr/getting-started/index.html>Почетак</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/sr/cameras-video/index.html><a class="padding default-animation" href=/sc-support/sr/cameras-video/index.html>Камере и видео</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/sr/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/sr/cameras-video/lens-distortion-correction/index.html>Automatska korekcija distorzije sočiva u Swing Catalyst: Poboljšanje vašeg vizuelnog iskustva</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html>FLIR / Point Grey (Blackfly/Chameleon) камера више не ради после надградње</a></li><li data-nav-id=/sc-support/sr/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/sr/cameras-video/fix-dropped-frames/index.html>Kako ispraviti 'ispuštene frejme' sa USB 3.0 ili 2.0 kamerama.</a></li><li data-nav-id=/sc-support/sr/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/sr/cameras-video/ids-ueye-gige/index.html>Kako konfigurirati IDS uEye GigE kameru sa Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/sr/cameras-video/point-grey-flir-gige/index.html>Kako konfigurirati Point Grey / FLIR GigE (Blackfly) kamere sa Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/sr/cameras-video/avt-manta-configure/index.html>Kako konfigurisati AVT Manta/Prosilica GigE visokobrzinske kamere</a></li><li data-nav-id=/sc-support/sr/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/sr/cameras-video/hardware-encoding/index.html>Kako koristiti hardversko kodiranje Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/sr/cameras-video/point-grey-flir-usb/index.html>Kako koristiti Point Grey / FLiR USB kamere sa Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/sr/cameras-video/halcon-camera-standards/index.html>Kako pronaći koje standarde vaše kamere podržavaju za upotrebu sa Halcon</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-firmware-upgrade/index.html>Nadogradnja firmvera na FLIR Blackfly S</a></li><li data-nav-id=/sc-support/sr/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/sr/cameras-video/usb3-troubleshooting/index.html>Otklanjanje problema sa USB3 kamerom</a></li><li data-nav-id=/sc-support/sr/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/sr/cameras-video/improving-image-quality/index.html>Poboljšanje kvaliteta slike kamere</a></li><li data-nav-id=/sc-support/sr/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/sr/cameras-video/supported-cameras/index.html>Podržane kamere</a></li><li data-nav-id=/sc-support/sr/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/fox-camera-setup/index.html>Postavljanje Swing Catalyst Fox USB 3.0 kamere(a)</a></li><li data-nav-id=/sc-support/sr/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/lynx-camera-setup/index.html>Postavljanje Swing Catalyst Lynx GigE kamere(a)</a></li><li data-nav-id=/sc-support/sr/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/sr/cameras-video/recommended-usb3-components/index.html>Preporučene USB 3.0 komponente</a></li><li data-nav-id=/sc-support/sr/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/sr/cameras-video/advanced-camera-settings/index.html>Водич кроз напредне поставке камере</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-warranty-service/index.html>Информације о гарантији и сервису FLIR камере</a></li><li data-nav-id=/sc-support/sr/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/sr/cameras-video/avt-manta-install/index.html>Како инсталирати AVT Manta/Prosilica GigE камере</a></li><li data-nav-id=/sc-support/sr/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/sr/cameras-video/dragon-usb2-camera/index.html>Како користити Dragon (120 FPS) USB 2.0 камеру са Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/sr/cameras-video/ids-ueye-usb/index.html>Како користити IDS uEye USB камере са Swing Catalyst</a></li><li class=active data-nav-id=/sc-support/sr/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/sr/cameras-video/web-camera-directshow/index.html>Како користити веб камеру (DirectShow интеграција) са Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/sr/cameras-video/fox-lynx-firmware/index.html>Како надоградити или суградити Fox / Lynx фирмвер</a></li><li data-nav-id=/sc-support/sr/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/sr/cameras-video/cctv-cameras/index.html>Како подесити CCTV камере</a></li><li data-nav-id=/sc-support/sr/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/sr/cameras-video/ids-ueye-highspeed/index.html>Како подесити iDS uEye USB brze kamere</a></li><li data-nav-id=/sc-support/sr/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/basler-gige-setup/index.html>Како поставити Basler GigE камере са Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/halcon-setup/index.html>Како поставити Halcon за Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html>Како поставити статичку IP адресу на FLIR Blackfly GigE камерама</a></li><li data-nav-id=/sc-support/sr/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/sr/cameras-video/lynx-static-ip/index.html>Како поставити статичку IP адресу на Lynx GigE камерама</a></li><li data-nav-id=/sc-support/sr/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/sr/cameras-video/led-light-flicker/index.html>Како смањити мерцање LED светла</a></li><li data-nav-id=/sc-support/sr/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/sr/cameras-video/halcon-bluescreen-fix/index.html>Компјутер се плави екран када се повезује Halcon USB лиценцни донгл</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-spinnaker-cameras/index.html>Коришћење FLIR Blackfly S (Spinnaker) камера са Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/sr/cameras-video/minimum-distances/index.html>Минималне удаљености камере</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-blackfly-gige-setup/index.html>Постављање FLIR BlackFly S GigE у Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/flir-blackfly-usb-setup/index.html>Постављање FLIR BlackFly S USB-а у Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/ximea-usb3-setup/index.html>Постављање Ximea USB3 Vision камера са Swing Catalyst</a></li><li data-nav-id=/sc-support/sr/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/sr/cameras-video/gige-network-setup/index.html>Препоруке за Gigabit Ethernet и GigE Vision мрежу камера</a></li><li data-nav-id=/sc-support/sr/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/sr/cameras-video/recommended-lighting/index.html>Препоручено осветљење за студијске и гаражне инсталације</a></li><li data-nav-id=/sc-support/sr/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/sr/cameras-video/pci-express-slots/index.html>Разлике између PCI / PCI Express слотова</a></li></ul></li><li data-nav-id=/sc-support/sr/hardware/index.html><a class="padding default-animation" href=/sc-support/sr/hardware/index.html>Хардвер</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sr/software-features/index.html><a class="padding default-animation" href=/sc-support/sr/software-features/index.html>Софтвер и функције</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sr/account-setup/index.html><a class="padding default-animation" href=/sc-support/sr/account-setup/index.html>Налог и подешавање</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/sr/reference/index.html><a class="padding default-animation" href=/sc-support/sr/reference/index.html>Референца</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/web-camera-directshow/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/web-camera-directshow/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/web-camera-directshow/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/web-camera-directshow/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/web-camera-directshow/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/web-camera-directshow/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/web-camera-directshow/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/web-camera-directshow/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/web-camera-directshow/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/web-camera-directshow/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/web-camera-directshow/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/web-camera-directshow/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/web-camera-directshow/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/web-camera-directshow/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/web-camera-directshow/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/web-camera-directshow/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/web-camera-directshow/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/web-camera-directshow/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/web-camera-directshow/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/web-camera-directshow/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/web-camera-directshow/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/web-camera-directshow/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/web-camera-directshow/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/web-camera-directshow/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/web-camera-directshow/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/web-camera-directshow/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/web-camera-directshow/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/web-camera-directshow/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/web-camera-directshow/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/web-camera-directshow/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/web-camera-directshow/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/web-camera-directshow/index.html lang=sr selected data-selected>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/web-camera-directshow/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/web-camera-directshow/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/web-camera-directshow/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/web-camera-directshow/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763288 defer></script><script src=/sc-support/js/theme.min.js?1771763288 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="sr" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Napomena da je tip integracije kamere identifikovan, npr. DirectShow, Spinnaker:">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst :: Подршка Swing Catalyst">
+    <meta name="twitter:description" content="Napomena da je tip integracije kamere identifikovan, npr. DirectShow, Spinnaker:">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/sr/cameras-video/web-camera-directshow/index.html">
+    <meta property="og:site_name" content="Подршка Swing Catalyst">
+    <meta property="og:title" content="Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst :: Подршка Swing Catalyst">
+    <meta property="og:description" content="Napomena da je tip integracije kamere identifikovan, npr. DirectShow, Spinnaker:">
+    <meta property="og:locale" content="sr">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Kamere i video">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta itemprop="name" content="Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst :: Подршка Swing Catalyst">
+    <meta itemprop="description" content="Napomena da je tip integracije kamere identifikovan, npr. DirectShow, Spinnaker:">
+    <meta itemprop="wordCount" content="389">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera">
+    <title>Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst :: Подршка Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/web-camera-directshow/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520158" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520158" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.sr.js?1772520158";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520158" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520158" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520158" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520158" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520158" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520158" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/web-camera-directshow\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/sr/cameras-video/web-camera-directshow/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#povezivanje-kamere">Povezivanje kamere</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#meni-podešavanja">Meni Podešavanja</a></li>
+    <li><a href="#napredna-podešavanja-kamere">Napredna Podešavanja Kamere</a></li>
+    <li><a href="#rešavanje-problema"><a href="web-camera-directshow.md">Rešavanje Problema</a></a>
+      <ul>
+        <li><a href="#niska-brzina-frejma">Niska Brzina frejma:</a></li>
+        <li><a href="#ispušteni-frejmi">Ispušteni frejmi:</a></li>
+        <li><a href="#odabir-drugog-tipa-medija">Odabir drugog tipa medija</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sr/index.html"><span itemprop="name">Swing Catalyst Podrška</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/sr/cameras-video/index.html"><span itemprop="name">Kamere i video</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/sr/cameras-video/point-grey-flir-usb/index.html" title="Kako koristiti Point Grey / FLiR USB kamere sa SwingCatalyst (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/sr/cameras-video/fox-lynx-firmware/index.html" title="Kako nadograditi ili vratiti na stariju verziju firmvera Fox / Lynx kamera (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/sr/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/sr/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="kako-koristiti-web-kameru-directshow-integracija-sa-swingcatalyst">Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst</h1>
+
+<ul>
+<li>Napomena: USB kamere su testirane u laboratorijskom okruženju.</li>
+</ul>
+<h2 id="povezivanje-kamere">Povezivanje kamere<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h4 id="omogućite-kameru-iz-menija-podešavanja">Omogućite kameru iz menija Podešavanja.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Kliknite na ikonu zupčanika.</p>
+<p><a href="#R-image-796827fba7775b1e1f3f9e7745dad28e" class="lightbox-link"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-796827fba7775b1e1f3f9e7745dad28e"><img alt="slack_2021-09-16_16-10-55.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/slack-2021-09-16-16-10-55-png.png"></a></p>
+<h2 id="meni-podešavanja">Meni Podešavanja<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Napomena da je tip integracije kamere identifikovan, npr. DirectShow, Spinnaker:</p>
+<p><a href="#R-image-9c77f235e01ece4c399bdbe623dbeedf" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c77f235e01ece4c399bdbe623dbeedf"><img alt="MotionCatalyst_2021-09-24_10-25-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-10-25-39-png.png"></a></p>
+<p>Ako je pravilno detektovana, kamera će se automatski pojaviti na listi kamera.</p>
+<p>Da biste koristili kameru, potrebno je da joj dodelite ugao kamere, kliknite na ikonu „Disabled&quot; i izaberite ugao, zatim prebacite prekidač „OFF&quot; na „ON&quot; da biste omogućili kameru.</p>
+<p><a href="#R-image-393ddbc3446a80c38c22af2ab1217858" class="lightbox-link"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-393ddbc3446a80c38c22af2ab1217858"><img alt="MotionCatalyst_2021-11-23_18-04-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-11-23-18-04-32-png.png"></a></p>
+<p>Dragon kamera je omogućena i označena kao kamera sa desne strane Pogled Direktno Spred (što znači da je okrenuta prema korisniku s desne strane).</p>
+<p><a href="#R-image-c6ad0d1e65e84936781a53ac28884a04" class="lightbox-link"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6ad0d1e65e84936781a53ac28884a04"><img alt="MotionCatalyst_2021-09-24_09-56-47.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/motioncatalyst-2021-09-24-09-56-47-png.png"></a></p>
+<h2 id="napredna-podešavanja-kamere">Napredna Podešavanja Kamere<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Napredna podešavanja kamere vam daju mogućnost da promenite naziv kamere, ogledate i rotirate, isečete, prilagodite video sliku i izvršite izmene podešavanja.</p>
+<p>Note: Auto je dostupan samo za određena svojstva, kao što su balans bele, ekspozicija i fokus).</p>
+<p><a href="#R-image-53d0870bbc65ade86de2ac92328467d3" class="lightbox-link"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-53d0870bbc65ade86de2ac92328467d3"><img alt="2019-11-15_12-58-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-58-36-png.png"></a></p>
+<p><a href="#R-image-8fd10a83d573b2110fc26c77fbe61ebc" class="lightbox-link"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8fd10a83d573b2110fc26c77fbe61ebc"><img alt="2019-11-15_13-00-02.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-13-00-02-png.png"></a></p>
+<p>Ako imate bilo kakve pogrešne izmene, možete se vratiti na podrazumevane vrednosti klikom na „Restore defaults&quot;.</p>
+<h2 id="rešavanje-problema"><a href="/sc-support/sr/cameras-video/web-camera-directshow/index.html">Rešavanje Problema</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="niska-brzina-frejma">Niska Brzina frejma:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Brzina frejma može biti smanjena zbog ekspozicije postavljene na kameri.</p>
+<p>Podrazumevano, većina kamera je podešena na Auto ekspoziciju; ako nemate dovoljno svetla, vreme ekspozicije po Kadru će biti dugo, a kamera neće biti u mogućnosti da pruži maksimalnu brzinu frejma.</p>
+<p>Ako je ekspozicija previsoka, brzina frejma će biti smanjena, a Snimak će biti zamagljeniji.</p>
+<h3 id="ispušteni-frejmi">Ispušteni frejmi:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Ako kamera ispušta Frejme (u ovom slučaju ne daje FPS koji bi trebalo), to može uzrokovati vizuelne artefakte.<a href="#R-image-0078ff6babd4c66172c9a0e026f60f3e" class="lightbox-link"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0078ff6babd4c66172c9a0e026f60f3e"><img alt="2019-11-15_12-44-34.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/2019-11-15-12-44-34-png.png"></a></p>
+<ul>
+<li>
+<p>Uverite se da je kamera direktno povezana sa računarom, i idealno sa jednim od USB portova na zadnjoj strani računara.</p>
+</li>
+<li>
+<p>Možda ćete morati da isprobate različite USB portove da biste pronašli onaj koji vam najbolje odgovara; generalno, želimo da izbegnemo USB portove na prednjem delu stonog računara jer je Перформанса loša (često daje nižu brzinu frejma).</p>
+</li>
+</ul>
+<h3 id="odabir-drugog-tipa-medija">Odabir drugog tipa medija<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Normalno, DirectShow i SwingCatalyst će automatski odabrati najbolji tip medija i promena ne bi trebalo da bude neophodna, međutim, određeni slučajevi/scenariji to ipak opravdavaju:</p>
+<ul>
+<li>
+<p>Ako imate web kameru koja radi na 60 FPS pri rezoluciji 1920x1280, a dobijate samo 30 FPS</p>
+</li>
+<li>
+<p>Video rezolucija izgleda manja/lošija u poređenju sa drugim aplikacijama</p>
+</li>
+<li>
+<p>Imate ispuštene Frejme i/ili nedovoljno primljenih podataka.</p>
+</li>
+</ul>
+<p>Određeni formati koriste manju propusnost od drugih. Ako kamera podržava RAW8, GREY8 ili druge 8-bitne formate slike, oni su poželjniji od bilo kojih RGB ili MPEG tipova medija jer zahtevaju znatno manju propusnost.</p>
+<p><a href="#R-image-be9d430228ab665b43b77b0df2577cfc" class="lightbox-link"><img alt="mceclip0.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-be9d430228ab665b43b77b0df2577cfc"><img alt="mceclip0.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4407217034258/mceclip0-png.png"></a></p>
+<hr>
+<p><em>Poslednje ažuriranje: 2023-12-15</em> | <a href="/sc-support/sr/cameras-video/web-camera-directshow/index.html">Pogledajte na zvaničnom sajtu podrške</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/sr/index.html">
+          <span class="logo-title default-animation">Подршка Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/sr/getting-started/index.html"><a class="padding default-animation" href="/sc-support/sr/getting-started/index.html">Početak rada</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/sr/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/sr/cameras-video/index.html">Kamere i video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/sr/cameras-video/lens-distortion-correction/index.html">Automatska Korekcija Izobličenja Sočiva u SwingCatalyst: Unapređenje Vašeg Vizuelnog Iskustva</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-camera-upgrade-fix/index.html">FLiR / Point Grey (Blackfly/Chameleon) kamera prestala da radi nakon nadogradnje</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-warranty-service/index.html">Informacije o garanciji i servisiranju FLIR kamera</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/sr/cameras-video/avt-manta-install/index.html">Kako instalirati AVT Manta/Prosilica GigE kamere</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/sr/cameras-video/avt-manta-configure/index.html">Kako konfigurisati AVT Manta/Prosilica GigE kamere visoke brzine</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/sr/cameras-video/ids-ueye-gige/index.html">Kako konfigurisati IDS uEye GigE kameru sa SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/sr/cameras-video/point-grey-flir-gige/index.html">Kako konfigurisati Point Grey / FLIR GigE (Blackfly) kamere sa SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/sr/cameras-video/dragon-usb2-camera/index.html">Kako koristiti Dragon (120 FPS) USB 2.0 kameru sa SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/sr/cameras-video/hardware-encoding/index.html">Kako koristiti hardversko enkodovanje u SwingCatalyst-u</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/sr/cameras-video/ids-ueye-usb/index.html">Kako koristiti IDS uEye USB kamere sa Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/sr/cameras-video/point-grey-flir-usb/index.html">Kako koristiti Point Grey / FLiR USB kamere sa SwingCatalyst</a></li>
+            <li class="active " data-nav-id="/sc-support/sr/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/sr/cameras-video/web-camera-directshow/index.html">Kako koristiti web kameru (DirectShow integracija) sa SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/sr/cameras-video/fox-lynx-firmware/index.html">Kako nadograditi ili vratiti na stariju verziju firmvera Fox / Lynx kamera</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/basler-gige-setup/index.html">Kako podesiti Basler GigE kamere sa Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/sr/cameras-video/cctv-cameras/index.html">Kako podesiti CCTV kamere</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/halcon-setup/index.html">Kako podesiti Halcon za Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/sr/cameras-video/ids-ueye-highspeed/index.html">Kako podesiti iDS uEye USB kamere visoke brzine</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html">Kako podesiti statičku IP adresu na FLIR Blackfly GigE kamerama</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/sr/cameras-video/lynx-static-ip/index.html">Kako podesiti statičku IP adresu na Lynx GigE kamerama</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/sr/cameras-video/fix-dropped-frames/index.html">Kako popraviti &#39;ispuštene frejme&#39; sa USB 3.0 ili 2.0 kamerama.</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/sr/cameras-video/halcon-camera-standards/index.html">Kako pronaći koje standarde vaše kamere podržavaju za korišćenje sa Halconom</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/sr/cameras-video/led-light-flicker/index.html">Kako smanjiti treperenje LED svetla</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/sr/cameras-video/halcon-bluescreen-fix/index.html">Kompjuter dobija plavi ekran pri povezivanju Halcon USB licencnog dongla</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-spinnaker-cameras/index.html">Korišćenje FLIR Blackfly S (Spinnaker) kamera sa Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/sr/cameras-video/minimum-distances/index.html">Minimalne udaljenosti kamere</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-firmware-upgrade/index.html">Nadogradnja firmvera na FLIR Blackfly S</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/sr/cameras-video/improving-image-quality/index.html">Poboljšanje kvaliteta slike kamere</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-blackfly-gige-setup/index.html">Podešavanje FLIR BlackFly S GigE kamere u SwingCatalyst-u</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/flir-blackfly-usb-setup/index.html">Podešavanje FLIR BlackFly S USB u SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/ximea-usb3-setup/index.html">Podešavanje Ximea USB3 Vision kamera sa SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/sr/cameras-video/supported-cameras/index.html">Podržane kamere</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/fox-camera-setup/index.html">Postavljanje Swing Catalyst Fox USB 3.0 kamere/kamera</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/lynx-camera-setup/index.html">Postavljanje Swing Catalyst Lynx GigE kamere(a)</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/sr/cameras-video/recommended-lighting/index.html">Preporučena rasveta za studije i instalacije u garažnim boksovima</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/sr/cameras-video/recommended-usb3-components/index.html">Preporučene USB 3.0 komponente</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/sr/cameras-video/gige-network-setup/index.html">Preporuke za Gigabit Ethernet i GigE Vision mrežu kamera</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/sr/cameras-video/pci-express-slots/index.html">Razlike između PCI / PCI Express slotova</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/sr/cameras-video/usb3-troubleshooting/index.html">Rešavanje problema sa USB3 kamerom</a></li>
+            <li class="" data-nav-id="/sc-support/sr/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/sr/cameras-video/advanced-camera-settings/index.html">Vodič kroz napredna podešavanja kamere</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/hardware/index.html"><a class="padding default-animation" href="/sc-support/sr/hardware/index.html">Hardware</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/software-features/index.html"><a class="padding default-animation" href="/sc-support/sr/software-features/index.html">Softver i funkcije</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/account-setup/index.html"><a class="padding default-animation" href="/sc-support/sr/account-setup/index.html">Nalog i Priprema</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/sr/reference/index.html"><a class="padding default-animation" href="/sc-support/sr/reference/index.html">Reference</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/web-camera-directshow/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/web-camera-directshow/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/web-camera-directshow/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/web-camera-directshow/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/web-camera-directshow/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/web-camera-directshow/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/web-camera-directshow/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/web-camera-directshow/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/web-camera-directshow/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/web-camera-directshow/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/web-camera-directshow/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/web-camera-directshow/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/web-camera-directshow/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/web-camera-directshow/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/web-camera-directshow/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/web-camera-directshow/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/web-camera-directshow/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/web-camera-directshow/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/web-camera-directshow/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/web-camera-directshow/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/web-camera-directshow/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/web-camera-directshow/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/web-camera-directshow/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/web-camera-directshow/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/web-camera-directshow/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/web-camera-directshow/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/web-camera-directshow/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/web-camera-directshow/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/web-camera-directshow/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/web-camera-directshow/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/web-camera-directshow/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/web-camera-directshow/index.html" lang="sr" selected data-selected>Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/web-camera-directshow/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/web-camera-directshow/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/web-camera-directshow/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/web-camera-directshow/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520158" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520158" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

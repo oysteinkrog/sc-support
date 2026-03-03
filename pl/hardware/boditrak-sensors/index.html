@@ -1,34 +1,543 @@
-<!doctype html><html id=R-html lang=pl dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Ten artykuł wsparcia opisze, jak skonfigurować i ustawić płyty czujników BodiTrak2 Vector ze Swing Catalyst. Technicznie ten artykuł może być używany do..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Jak używać czujników BodiTrak ze Swing Catalyst :: Wsparcie Swing Catalyst"><meta name=twitter:description content="Ten artykuł wsparcia opisze, jak skonfigurować i ustawić płyty czujników BodiTrak2 Vector ze Swing Catalyst. Technicznie ten artykuł może być używany do..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/pl/hardware/boditrak-sensors/index.html"><meta property="og:site_name" content="Wsparcie Swing Catalyst"><meta property="og:title" content="Jak używać czujników BodiTrak ze Swing Catalyst :: Wsparcie Swing Catalyst"><meta property="og:description" content="Ten artykuł wsparcia opisze, jak skonfigurować i ustawić płyty czujników BodiTrak2 Vector ze Swing Catalyst. Technicznie ten artykuł może być używany do..."><meta property="og:locale" content="pl"><meta property="og:type" content="article"><meta property="article:section" content="Sprzęt"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Usb-Camera"><meta property="article:tag" content="Pressure-Data"><meta itemprop=name content="Jak używać czujników BodiTrak ze Swing Catalyst :: Wsparcie Swing Catalyst"><meta itemprop=description content="Ten artykuł wsparcia opisze, jak skonfigurować i ustawić płyty czujników BodiTrak2 Vector ze Swing Catalyst. Technicznie ten artykuł może być używany do..."><meta itemprop=wordCount content="931"><meta itemprop=keywords content="Troubleshooting,Usb-Camera,Pressure-Data"><title>Jak używać czujników BodiTrak ze Swing Catalyst :: Wsparcie Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/hardware/boditrak-sensors/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/hardware/boditrak-sensors/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/hardware/boditrak-sensors/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/hardware/boditrak-sensors/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/hardware/boditrak-sensors/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/hardware/boditrak-sensors/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/hardware/boditrak-sensors/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/hardware/boditrak-sensors/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/hardware/boditrak-sensors/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/hardware/boditrak-sensors/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/hardware/boditrak-sensors/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/hardware/boditrak-sensors/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/hardware/boditrak-sensors/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/hardware/boditrak-sensors/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/hardware/boditrak-sensors/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/hardware/boditrak-sensors/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/hardware/boditrak-sensors/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/hardware/boditrak-sensors/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/hardware/boditrak-sensors/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/hardware/boditrak-sensors/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/hardware/boditrak-sensors/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/hardware/boditrak-sensors/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/hardware/boditrak-sensors/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/hardware/boditrak-sensors/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/hardware/boditrak-sensors/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/hardware/boditrak-sensors/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/hardware/boditrak-sensors/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/hardware/boditrak-sensors/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/hardware/boditrak-sensors/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/hardware/boditrak-sensors/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/hardware/boditrak-sensors/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/hardware/boditrak-sensors/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/hardware/boditrak-sensors/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/hardware/boditrak-sensors/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/hardware/boditrak-sensors/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763281 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763281 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763281 defer></script><script src=/sc-support/js/search.min.js?1771763281 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.pl.js?1771763281"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763281 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763281 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763281 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763281 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763281 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763281 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763281 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763281 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/hardware/boditrak-sensors/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Kopiuj tekst do schowka`,window.T_Copied_to_clipboard=`Tekst skopiowano do schowka!`,window.T_Link_copied_to_clipboard=`Link skopiowano do schowka!`,window.T_Reset_view=`Resetowanie widoku`,window.T_View_reset=`Widok zresetowany!`,window.T_No_results_found=`Nie znaleziono wyników dla "{0}"`,window.T_N_results_found=`Znaleziono {1} wyników dla "{0}"`,window.T_Browser_unsupported_feature=`Ta przeglądarka nie obsługuje tej funkcji`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/pl/hardware/boditrak-sensors/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Spis terści (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#wprowadzenie>Wprowadzenie</a></li><li><a href=#wymagania>Wymagania</a></li><li><a href=#które-czujniki-są-obsługiwane>Które czujniki są obsługiwane?</a></li><li><a href=#driver-installation>Driver Installation</a></li><li><a href=#configuration>Configuration</a><ul><li></li><li><a href=#sensor-plate-settings>Sensor Plate Settings</a></li><li><a href=#rotation-how-to-rotate-mirror-or-flip-pressure-data>Rotation (How to rotate, mirror or flip pressure data)</a></li></ul></li><li><a href=#troubleshooting><a href=install-balance-plate-3s.md>Troubleshooting</a></a><ul><li><a href=#the-data-appears-to-be-flipped-even-though-the-mat-is-positioned-the-right-way>The data appears to be flipped even though the mat is positioned the right way</a></li><li><a href=#the-boditrak-sensor-is-not-recognized-or-not-showing-as-connected>The BodiTrak sensor is not recognized or not showing as connected:</a></li><li><a href=#noise-on-the-sensor-mat--calibration>Noise on the sensor mat / calibration</a></li><li><a href=#weak-foot-prints>Weak foot prints</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/pl/index.html><span itemprop=name>Swing Catalyst Wsparcie</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/pl/hardware/index.html><span itemprop=name>Sprzęt</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Jak używać czujników BodiTrak ze Swing Catalyst</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/pl/hardware/nvidia-gpu-encoder/index.html title="Jak skonfigurować NVIDIA GPU Encoder (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/pl/hardware/flightscope-mevo/index.html title="Jak używać FlightScope Mevo+ ze Swing Catalyst (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Więcej><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable hardware" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tagi style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/pl/tags/pressure-data/index.html>Pressure-Data</a></li><li><a class=term-link href=/sc-support/pl/tags/troubleshooting/index.html>Troubleshooting</a></li><li><a class=term-link href=/sc-support/pl/tags/usb-camera/index.html>Usb-Camera</a></li></ul></div></header><h1 id=jak-używać-czujników-boditrak-ze-swing-catalyst>Jak używać czujników BodiTrak ze Swing Catalyst</h1><h2 id=wprowadzenie>Wprowadzenie<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Ten artykuł pomocy opisuje, jak skonfigurować i ustawić czujniki płyt BodiTrak 2 Vector za pomocą Swing Catalyst. Technicznie artykuł ten może być również używany dla starszych modeli BodiTrak 16x25 i 16x27 (modele BT).</p><h2 id=wymagania>Wymagania<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li><p>Komputer z wolnym portem USB.</p></li><li><p>Swing Catalyst 9.7 lub nowszy z obsługą czujników płyt</p></li><li><p>Jeden z modeli wymienionych poniżej w macierzy obsługiwanych czujników.</p></li><li><p>Windows 10 lub 11 w wersji 64-bitowej (x64) (Uwaga: nie obsługujemy architektur ARM ani x86).</p></li></ul><h2 id=które-czujniki-są-obsługiwane>Które czujniki są obsługiwane?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Obsługujemy następujące modele, należy pamiętać, że niektóre z nich nie są już produkowane. Od 2024 roku nie obsługujemy wszystkich czujników BodiTrak.</p><p>Model / Numer modelu
-Rzędy x Kolumny
-Wymiary (Szerokość x Wysokość) cm</p><p>BT7150
+<!DOCTYPE html>
+<html id="R-html" lang="pl" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Ten artykuł pomocy technicznej opisuje, jak skonfigurować płyty czujnika BodiTrak 2 Vector z Swing Catalyst. Technicznie artykuł może być również używany w przypadku...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jak używać czujników BodiTrak z Swing Catalyst :: Wsparcie Swing Catalyst">
+    <meta name="twitter:description" content="Ten artykuł pomocy technicznej opisuje, jak skonfigurować płyty czujnika BodiTrak 2 Vector z Swing Catalyst. Technicznie artykuł może być również używany w przypadku...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/pl/hardware/boditrak-sensors/index.html">
+    <meta property="og:site_name" content="Wsparcie Swing Catalyst">
+    <meta property="og:title" content="Jak używać czujników BodiTrak z Swing Catalyst :: Wsparcie Swing Catalyst">
+    <meta property="og:description" content="Ten artykuł pomocy technicznej opisuje, jak skonfigurować płyty czujnika BodiTrak 2 Vector z Swing Catalyst. Technicznie artykuł może być również używany w przypadku...">
+    <meta property="og:locale" content="pl">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Sprzęt">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Usb-Camera">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta itemprop="name" content="Jak używać czujników BodiTrak z Swing Catalyst :: Wsparcie Swing Catalyst">
+    <meta itemprop="description" content="Ten artykuł pomocy technicznej opisuje, jak skonfigurować płyty czujnika BodiTrak 2 Vector z Swing Catalyst. Technicznie artykuł może być również używany w przypadku...">
+    <meta itemprop="wordCount" content="874">
+    <meta itemprop="keywords" content="Troubleshooting,Usb-Camera,Pressure-Data">
+    <title>Jak używać czujników BodiTrak z Swing Catalyst :: Wsparcie Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/hardware/boditrak-sensors/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520131" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520131" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520131" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520131" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.pl.js?1772520131";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520131" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520131" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520131" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520131" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520131" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520131" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520131" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520131" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/hardware\/boditrak-sensors\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Kopiuj tekst do schowka`;
+      window.T_Copied_to_clipboard = `Tekst skopiowano do schowka!`;
+      window.T_Link_copied_to_clipboard = `Link skopiowano do schowka!`;
+      window.T_Reset_view = `Resetowanie widoku`;
+      window.T_View_reset = `Widok zresetowany!`;
+      window.T_No_results_found = `Nie znaleziono wyników dla "{0}"`;
+      window.T_N_results_found = `Znaleziono {1} wyników dla "{0}"`;
+      window.T_Browser_unsupported_feature = `Ta przeglądarka nie obsługuje tej funkcji`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/pl/hardware/boditrak-sensors/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Spis terści (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#wprowadzenie">Wprowadzenie</a></li>
+    <li><a href="#wymagania">Wymagania</a></li>
+    <li><a href="#jakie-czujniki-są-obsługiwane">Jakie czujniki są obsługiwane?</a></li>
+    <li><a href="#instalacja-sterowników">Instalacja sterowników</a></li>
+    <li><a href="#konfiguracja">Konfiguracja</a>
+      <ul>
+        <li></li>
+        <li><a href="#ustawienia-płyty-czujnika">Ustawienia Płyty czujnika</a></li>
+        <li><a href="#rotacja-jak-obracać-odbijać-lustrzanie-lub-odwracać-dane-nacisku">Rotacja (Jak obracać, odbijać lustrzanie lub odwracać dane nacisku)</a></li>
+      </ul>
+    </li>
+    <li><a href="#rozwiązywanie-problemów"><a href="install-balance-plate-3s.md">Rozwiązywanie problemów</a></a>
+      <ul>
+        <li><a href="#dane-wyglądają-na-odwrócone-mimo-że-mata-jest-ustawiona-we-właściwy-sposób">Dane wyglądają na odwrócone, mimo że mata jest ustawiona we właściwy sposób</a></li>
+        <li><a href="#czujnik-boditrak-nie-jest-rozpoznawany-lub-nie-jest-wyświetlany-jako-podłączony">Czujnik BodiTrak nie jest rozpoznawany lub nie jest wyświetlany jako podłączony:</a></li>
+        <li><a href="#szumy-na-macie-czujnika--kalibracja">Szumy na macie czujnika / kalibracja</a></li>
+        <li><a href="#słabe-odciski-stóp">Słabe odciski stóp</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pl/index.html"><span itemprop="name">Swing Catalyst Support</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/pl/hardware/index.html"><span itemprop="name">Sprzęt</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Jak używać czujników BodiTrak z Swing Catalyst</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/pl/hardware/launch-monitor-trigger/index.html" title="Jak skonfigurować Launch Monitor jako Wyzwalacz przechwytywania (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/pl/hardware/flightscope-mevo/index.html" title="Jak używać FlightScope Mevo+ z Swing Catalyst (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Więcej"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable hardware" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tagi" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/pl/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/pl/tags/troubleshooting/index.html">Troubleshooting</a></li>
+    <li><a class="term-link" href="/sc-support/pl/tags/usb-camera/index.html">Usb-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="jak-używać-czujników-boditrak-z-swing-catalyst">Jak używać czujników BodiTrak z Swing Catalyst</h1>
+
+<h2 id="wprowadzenie">Wprowadzenie<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Ten artykuł pomocy technicznej opisuje, jak skonfigurować płyty czujnika BodiTrak 2 Vector z Swing Catalyst. Technicznie artykuł może być również używany w przypadku starszych modeli BodiTrak 16x25 i 16x27 (modele BT).</p>
+<h2 id="wymagania">Wymagania<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>Komputer z wolnym portem USB.</p>
+</li>
+<li>
+<p>Swing Catalyst 9.7 lub nowszy z obsługą Płyty czujnika</p>
+</li>
+<li>
+<p>Jeden z modeli wymienionych poniżej w macierzy obsługiwanych czujników.</p>
+</li>
+<li>
+<p>Windows 10 lub 11 64-bit (x64) (Uwaga: nie obsługujemy architektur ARM ani x86).</p>
+</li>
+</ul>
+<h2 id="jakie-czujniki-są-obsługiwane">Jakie czujniki są obsługiwane?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Obsługujemy następujące modele; należy pamiętać, że niektóre z nich nie są już produkowane. Nie obsługujemy wszystkich czujników BodiTrak według stanu na rok 2024.</p>
+<p>Model / Numer modelu
+Wiersze x Kolumny
+Wymiary (Szerokość x Wysokość) cm</p>
+<p>BT7150
 16x25
-71 x 45,5</p><p>BT (Prototype?)
+71 x 45.5</p>
+<p>BT(Prototyp?)
 16x27
-75,6 x 44,8</p><p>BT2-1632-500
+75.6 x 44.8</p>
+<p>BT2-1632-500
 16x32
-94 x 47</p><p>BT2-1625-500
+94 x 47</p>
+<p>BT2-1625-500
 16x25
-73 x 47</p><p>BT2-1625-500
+73 x 47</p>
+<p>BT2-1625-500
 16x25
-71 x 45,5</p><p>For plate calibration needs, please contact <a href=https://www.boditrak.com/contact-support.php rel=external>BodiTrak support</a>.</p><h2 id=driver-installation>Driver Installation<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Driver installation is done automatically by Windows.</p><p>If you have a new system without any BodiTrak software installed and the sensor is not showing as connected or recognized, please contact <a href=https://www.boditrak.com/contact-support.php rel=external>BodiTrak support.</a></p><p>Potential problem sources:</p><ul><li><p>USB cabling.</p></li><li><p>Connection to PC.</p></li></ul><p>Please see our <a href=/sc-support/pl/hardware/boditrak-sensors/index.html#troubleshooting>troubleshooting</a> section for more tips.</p><h2 id=configuration>Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>These steps are not strictly necessary but help verify that the sensor is detected and working properly in Swing Catalyst.</p><p>Start Swing Catalyst and go to Settings -> Hardware.</p><ul><li><p>The plate should be detected automatically (if not autodetected, try to select BodiTrak 2 Vector from the drop down menu).</p></li><li><p>Make sure it is turned ON (otherwise the integration will not work).</p></li></ul><p><a href=#R-image-496c5737f5815619ef5f9a8bcb5673ff class=lightbox-link><img alt=MotionCatalyst_2021-08-31_13-21-39.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-496c5737f5815619ef5f9a8bcb5673ff><img alt=MotionCatalyst_2021-08-31_13-21-39.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png></a></p><p>To open the sensor configuration dialog, click &ldquo;Configure&mldr;&rdquo;.</p><h4 id=note-if-you-cannot-connect-to-the-sensor-or-receive-an-error-doing-see-our-troubleshooting-section>Note: If you cannot connect to the sensor or receive an error doing, see our <a href=/sc-support/pl/hardware/boditrak-sensors/index.html#note-if-you-cannot-connect-to-the-sensor-or-receive-an-error-doing-see-our-troubleshooting-sectionh_01fa3bkc0v70z6g4752n1f4145>Troubleshooting section</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><h3 id=sensor-plate-settings>Sensor Plate Settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>You can view live data, and apply rotation view additional sensor information such as the serial number from the Sensor Plate Settings window.</p><p><a href=#R-image-2c63a7308e83dda59d5e0166653e38e4 class=lightbox-link><img alt=MotionCatalyst_2021-08-31_15-51-10.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2c63a7308e83dda59d5e0166653e38e4><img alt=MotionCatalyst_2021-08-31_15-51-10.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png></a></p><p>The large white dot in the middle indicates the Center Of Pressure (CoP),
-which is a measurement of the balance of your body.</p><p>If you are in balance the CoP will be centered between the feet, when leaning forward
-or backwards the CoP will shift forward or backward.
-Shifting your weight leftward or rightward will move the CoP to left or right.</p><p>The two smaller dots under each footprint is CoP per foot,
-it shows the center of pressure within the foot area for each foot.
-The connecting line between them shows the plane of which you are standing.</p><h3 id=rotation-how-to-rotate-mirror-or-flip-pressure-data>Rotation (How to rotate, mirror or flip pressure data)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>The rotation of the plate can be done by clicking the &ldquo;Rotate Stance Data&rdquo; button. Clicking this button allows rotation of the data 180 degrees, for more advanced settings see Advanced.</p><p>Advanced rotation settings can be accessed by clicking Advanced:</p><p><a href=#R-image-a5cbff3b70a1864c8792032a021a8e51 class=lightbox-link><img alt=MotionCatalyst_2021-08-31_14-34-36.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a5cbff3b70a1864c8792032a021a8e51><img alt=MotionCatalyst_2021-08-31_14-34-36.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png></a></p><p>To flip the data vertically you can click flip.</p><h2 id=troubleshooting><a href=/sc-support/pl/hardware/install-balance-plate-3s/index.html>Troubleshooting</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>Please note:</strong></p><p>For any support, repairs or return requests please contact <a href=https://www.boditrak.com/contact-support.php rel=external>BodiTrak.</a></p><p>This troubleshooting section is meant to be a guide to identify and fix problems you may run into when using the sensor with Swing Catalyst.</p><h3 id=the-data-appears-to-be-flipped-even-though-the-mat-is-positioned-the-right-way>The data appears to be flipped even though the mat is positioned the right way<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>You can flip the data vertically in the Sensor Plate Settings, please see <a href=/sc-support/pl/hardware/boditrak-sensors/index.html#rotation-how-to-rotate-mirror-or-flip-pressure-data>Rotation.</a></li></ul><h3 id=the-boditrak-sensor-is-not-recognized-or-not-showing-as-connected>The BodiTrak sensor is not recognized or not showing as connected:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>If the BodiTrak software is running it can block access to the sensor. Similarly, BodiTrak DataPort is a service that may be running on your system that prevents Swing Catalyst from connecting to the sensor.</p><ul><li><p>Make sure no BodiTrak software is running.</p></li><li><p>Stop the BodiTrak DataPort Serivce.</p></li></ul><p>Stop the service Click the Windows start menu button and type Services, click the Services app & look for BodiTrak Data Port, right click and select Stop</p><p>To stop the service press the Windows icon of the Windows start menu and then type Services.</p><p><a href=#R-image-12efbc0fc8acf5c3ea62b999a6a2fcfd class=lightbox-link><img alt=2021-09-02_14-11-50.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4405953685266/2021-09-02-14-11-50-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-12efbc0fc8acf5c3ea62b999a6a2fcfd><img alt=2021-09-02_14-11-50.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4405953685266/2021-09-02-14-11-50-png.png></a><a href=#R-image-334dd186210e2589edd20183a7152e66 class=lightbox-link><img alt=explorer_2021-09-02_14-10-31.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4405953685266/explorer-2021-09-02-14-10-31-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-334dd186210e2589edd20183a7152e66><img alt=explorer_2021-09-02_14-10-31.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4405953685266/explorer-2021-09-02-14-10-31-png.png></a></p><p>Open the services app and locate BodiTrak DataPort, right click and click Stop.</p><p><a href=#R-image-be9c1f8d13b828678d05ab558f86e8ec class=lightbox-link><img alt=mmc_2021-09-01_12-54-32.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/4405953685266/mmc-2021-09-01-12-54-32-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-be9c1f8d13b828678d05ab558f86e8ec><img alt=mmc_2021-09-01_12-54-32.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/4405953685266/mmc-2021-09-01-12-54-32-png.png></a></p><p>Stopping the service will potentially stop other applications that use BodiTrak from working, but will allow Swing Catalyst to connect to the sensor.</p><p>If BodiTrak DataPort is not installed please continue with the troubleshooting steps below.</p><ul><li>Open Windows device manager. <a href=http://kb.laplink.com/index.php/article/359 rel=external>How?</a></li></ul><p>Verify the** BodiTrak <strong>device is present under</strong> USB Serial Devices.
-**</p><ul><li><p>If it is not, or has a warning symbol, then try reconnecting the device to a different USB port.</p></li><li><p>Connect the device to a different USB port on the computer.</p></li><li><p>If using a USB extender, try connecting the device to the PC without an extender.</p></li><li><p>Restart Swing Catalyst.</p></li><li><p>Restart the computer.</p></li><li><p>If you tried all these steps and it does work with the BodiTrak software but not in Swing Catalyst you can contact our support team.</p></li></ul><h3 id=noise-on-the-sensor-mat--calibration>Noise on the sensor mat / calibration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>With heavy usage the sensor might need re-calibration, please contact <a href=https://www.boditrak.com/contact-support.php rel=external>BodiTrak support.</a></p></li><li><p>There might be debris underneath between the sensor and the top mat cover, ensure the sensor is free for debris.</p></li><li><p>Check underneath the sensor if there is debris pressing up against the bottom of the mat.</p></li></ul><h3 id=weak-foot-prints>Weak foot prints<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>In the case of weak foot prints this may have to do with the sensors calibration in how the low pressure values are handled. It could be the sensor is calibrated wrong or needs re-calibration.</p><p>Swing Catalyst does not do any additional filtering of the data we receive from the BodiTrak sensors, however if the foot prints are different in Swing Catalyst than they are in other programs with your BodiTrak mat, please feel free to create a support ticket through our help center and we will try to investigate.</p><hr><p><em>Last updated: 2024-06-07</em> | <a href=/sc-support/pl/hardware/boditrak-sensors/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/pl/index.html><span class="logo-title default-animation">Wsparcie Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Szukaj (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Szukaj</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Szukaj...>
-<button class=search-clear type=button data-search-clear title="Wyczyść wyszukiwanie"><i class="fas fa-fw fa-times" title="Wyczyść wyszukiwanie"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/pl/getting-started/index.html><a class="padding default-animation" href=/sc-support/pl/getting-started/index.html>Pierwsze Kroki</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/pl/cameras-video/index.html><a class="padding default-animation" href=/sc-support/pl/cameras-video/index.html>Kamery i wideo</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/pl/hardware/index.html><a class="padding default-animation" href=/sc-support/pl/hardware/index.html>Sprzęt</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu><li data-nav-id=/sc-support/pl/hardware/balance-plate-warranty/index.html><a class=padding href=/sc-support/pl/hardware/balance-plate-warranty/index.html>Gwarancja Płyty Równowagi i ESA</a></li><li data-nav-id=/sc-support/pl/hardware/setup-dual-motion-plate/index.html><a class=padding href=/sc-support/pl/hardware/setup-dual-motion-plate/index.html>Instalacja i Konfiguracja Dual Motion Plate</a></li><li data-nav-id=/sc-support/pl/hardware/setup-3d-motion-plate/index.html><a class=padding href=/sc-support/pl/hardware/setup-3d-motion-plate/index.html>Instalacja i konfiguracja Motion Plate 3D</a></li><li data-nav-id=/sc-support/pl/hardware/launch-monitor-trigger/index.html><a class=padding href=/sc-support/pl/hardware/launch-monitor-trigger/index.html>Jak skonfigurować Launch Monitor jako wyzwalacz przechwytywania</a></li><li data-nav-id=/sc-support/pl/hardware/nvidia-gpu-encoder/index.html><a class=padding href=/sc-support/pl/hardware/nvidia-gpu-encoder/index.html>Jak skonfigurować NVIDIA GPU Encoder</a></li><li class=active data-nav-id=/sc-support/pl/hardware/boditrak-sensors/index.html><a class=padding href=/sc-support/pl/hardware/boditrak-sensors/index.html>Jak używać czujników BodiTrak ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/flightscope-mevo/index.html><a class=padding href=/sc-support/pl/hardware/flightscope-mevo/index.html>Jak używać FlightScope Mevo+ ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/flightscope-setup/index.html><a class=padding href=/sc-support/pl/hardware/flightscope-setup/index.html>Jak używać FlightScope ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/foresight-gc2-hmt/index.html><a class=padding href=/sc-support/pl/hardware/foresight-gc2-hmt/index.html>Jak używać Foresight GC2 & HMT ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/foresight-gc3-launch-pro/index.html><a class=padding href=/sc-support/pl/hardware/foresight-gc3-launch-pro/index.html>Jak używać Foresight GC3 / Bushnell Launch Pro ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/foresight-gcquad/index.html><a class=padding href=/sc-support/pl/hardware/foresight-gcquad/index.html>Jak używać Foresight GCQuad ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/full-swing-golf/index.html><a class=padding href=/sc-support/pl/hardware/full-swing-golf/index.html>Jak używać Full Swing Golf ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/trackman-setup/index.html><a class=padding href=/sc-support/pl/hardware/trackman-setup/index.html>Jak używać TrackMan ze Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/install-balance-plate-3s/index.html><a class=padding href=/sc-support/pl/hardware/install-balance-plate-3s/index.html>Jak zainstalować Balance Plate 3S</a></li><li data-nav-id=/sc-support/pl/hardware/install-balance-plate-3/index.html><a class=padding href=/sc-support/pl/hardware/install-balance-plate-3/index.html>Jak zainstalować platforma równowagi 3</a></li><li data-nav-id=/sc-support/pl/hardware/install-dual-pressure-plate/index.html><a class=padding href=/sc-support/pl/hardware/install-dual-pressure-plate/index.html>Jak zainstalować Podwójną Platformę Ciśnienia</a></li><li data-nav-id=/sc-support/pl/hardware/find-serial-number/index.html><a class=padding href=/sc-support/pl/hardware/find-serial-number/index.html>Jak znaleźć numer seryjny swojej platformy równowagi Swing Catalyst</a></li><li data-nav-id=/sc-support/pl/hardware/calibration-diagnostics/index.html><a class=padding href=/sc-support/pl/hardware/calibration-diagnostics/index.html>Kalibracja i diagnostyka Płyty Równowagi</a></li><li data-nav-id=/sc-support/pl/hardware/supported-launch-monitors/index.html><a class=padding href=/sc-support/pl/hardware/supported-launch-monitors/index.html>Obsługiwane monitory startu</a></li><li data-nav-id=/sc-support/pl/hardware/balance-plate-data/index.html><a class=padding href=/sc-support/pl/hardware/balance-plate-data/index.html>Podręcznik Danych Platformy Równowagi</a></li><li data-nav-id=/sc-support/pl/hardware/3d-motion-plate-data/index.html><a class=padding href=/sc-support/pl/hardware/3d-motion-plate-data/index.html>Przewodnik danych 3D Motion Plate</a></li><li data-nav-id=/sc-support/pl/hardware/force-plate-troubleshooting/index.html><a class=padding href=/sc-support/pl/hardware/force-plate-troubleshooting/index.html>Przewodnik techniczny rozwiązywania problemów platformy siły</a></li><li data-nav-id=/sc-support/pl/hardware/trackman-troubleshooting/index.html><a class=padding href=/sc-support/pl/hardware/trackman-troubleshooting/index.html>TrackMan nie wyzwala Swing Catalyst - rozwiązywanie problemów technicznych</a></li></ul></li><li data-nav-id=/sc-support/pl/software-features/index.html><a class="padding default-animation" href=/sc-support/pl/software-features/index.html>Oprogramowanie i funkcje</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/pl/account-setup/index.html><a class="padding default-animation" href=/sc-support/pl/account-setup/index.html>Konto i Ustawienia</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/pl/reference/index.html><a class="padding default-animation" href=/sc-support/pl/reference/index.html>Referencja</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Język</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/hardware/boditrak-sensors/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/hardware/boditrak-sensors/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/hardware/boditrak-sensors/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/hardware/boditrak-sensors/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/hardware/boditrak-sensors/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/hardware/boditrak-sensors/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/hardware/boditrak-sensors/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/hardware/boditrak-sensors/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/hardware/boditrak-sensors/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/hardware/boditrak-sensors/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/hardware/boditrak-sensors/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/hardware/boditrak-sensors/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/hardware/boditrak-sensors/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/hardware/boditrak-sensors/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/hardware/boditrak-sensors/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/hardware/boditrak-sensors/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/hardware/boditrak-sensors/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/hardware/boditrak-sensors/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/hardware/boditrak-sensors/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/hardware/boditrak-sensors/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/hardware/boditrak-sensors/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/hardware/boditrak-sensors/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/hardware/boditrak-sensors/index.html lang=pl selected data-selected>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/hardware/boditrak-sensors/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/hardware/boditrak-sensors/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/hardware/boditrak-sensors/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/hardware/boditrak-sensors/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/hardware/boditrak-sensors/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/hardware/boditrak-sensors/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/hardware/boditrak-sensors/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/hardware/boditrak-sensors/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/hardware/boditrak-sensors/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/hardware/boditrak-sensors/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/hardware/boditrak-sensors/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/hardware/boditrak-sensors/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/hardware/boditrak-sensors/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Kompozycja</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763281 defer></script><script src=/sc-support/js/theme.min.js?1771763281 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+71 x 45.5</p>
+<p>W przypadku potrzeby Kalibracji platformy prosimy o kontakt z <a href="https://www.boditrak.com/contact-support.php" rel="external">pomocą techniczną BodiTrak</a>.</p>
+<h2 id="instalacja-sterowników">Instalacja sterowników<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Instalacja sterowników odbywa się automatycznie przez system Windows.</p>
+<p>Jeśli masz nowy system bez zainstalowanego oprogramowania BodiTrak, a czujnik nie jest wykrywany ani rozpoznawany, prosimy o kontakt z <a href="https://www.boditrak.com/contact-support.php" rel="external">pomocą techniczną BodiTrak.</a></p>
+<p>Potencjalne źródła problemów:</p>
+<ul>
+<li>
+<p>Okablowanie USB.</p>
+</li>
+<li>
+<p>Połączenie z komputerem.</p>
+</li>
+</ul>
+<p>Zapoznaj się z naszą sekcją <a href="/sc-support/pl/hardware/boditrak-sensors/index.html#troubleshooting">rozwiązywania problemów</a>, aby uzyskać więcej wskazówek.</p>
+<h2 id="konfiguracja">Konfiguracja<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Poniższe kroki nie są ściśle konieczne, ale pomagają sprawdzić, czy czujnik jest wykrywany i działa poprawnie w Swing Catalyst.</p>
+<p>Uruchom Swing Catalyst i przejdź do Ustawienia -&gt; Sprzęt.</p>
+<ul>
+<li>
+<p>Płyta powinna zostać wykryta automatycznie (jeśli nie zostanie wykryta automatycznie, spróbuj wybrać BodiTrak 2 Vector z menu rozwijanego).</p>
+</li>
+<li>
+<p>Upewnij się, że jest włączona (w przeciwnym razie integracja nie będzie działać).</p>
+</li>
+</ul>
+<p><a href="#R-image-481dbfda2fc28247094f81b5a185f298" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_13-21-39.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-481dbfda2fc28247094f81b5a185f298"><img alt="MotionCatalyst_2021-08-31_13-21-39.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-13-21-39-png.png"></a></p>
+<p>Aby otworzyć okno konfiguracji czujnika, kliknij „Konfiguruj&hellip;&quot;.</p>
+<h4 id="uwaga-jeśli-nie-możesz-połączyć-się-z-czujnikiem-lub-pojawia-się-błąd-zapoznaj-się-z-naszą-sekcją-rozwiązywania-problemów">Uwaga: Jeśli nie możesz połączyć się z czujnikiem lub pojawia się błąd, zapoznaj się z naszą <a href="/sc-support/pl/hardware/boditrak-sensors/index.html#note-if-you-cannot-connect-to-the-sensor-or-receive-an-error-doing-see-our-troubleshooting-sectionh_01fa3bkc0v70z6g4752n1f4145">sekcją rozwiązywania problemów</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h3 id="ustawienia-płyty-czujnika">Ustawienia Płyty czujnika<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>W oknie Ustawień Płyty czujnika możesz wyświetlić dane na żywo, zastosować Rotację oraz zobaczyć dodatkowe informacje o czujniku, takie jak numer seryjny.</p>
+<p><a href="#R-image-bad4fea483c2913b948cb18ed21a54a8" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_15-51-10.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bad4fea483c2913b948cb18ed21a54a8"><img alt="MotionCatalyst_2021-08-31_15-51-10.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-15-51-10-png.png"></a></p>
+<p>Duża biała kropka pośrodku wskazuje Środek nacisku (CoP),
+który jest miarą Równowagi ciała.</p>
+<p>Jeśli jesteś w równowadze, CoP będzie wyśrodkowany między stopami; gdy pochylasz się do przodu
+lub do tyłu, CoP przesuwa się odpowiednio do przodu lub do tyłu.
+Przesunięcie ciężaru w lewo lub w prawo spowoduje przesunięcie CoP w lewo lub w prawo.</p>
+<p>Dwie mniejsze kropki pod każdym odciskiem stopy to COP na Stopę,
+pokazują one Środek nacisku w obszarze Stopy dla każdej nogi.
+Linia łącząca je przedstawia płaszczyznę, na której stoisz.</p>
+<h3 id="rotacja-jak-obracać-odbijać-lustrzanie-lub-odwracać-dane-nacisku">Rotacja (Jak obracać, odbijać lustrzanie lub odwracać dane nacisku)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Rotację płyty można wykonać, klikając przycisk „Obróć Dane postawy&quot;. Kliknięcie tego przycisku umożliwia obrót danych o 180 stopni; w przypadku bardziej zaawansowanych ustawień zapoznaj się z sekcją Zaawansowane.</p>
+<p>Zaawansowane ustawienia Rotacji są dostępne po kliknięciu Zaawansowane:</p>
+<p><a href="#R-image-4c99a012d4ae5d79f29089c05e8a61f7" class="lightbox-link"><img alt="MotionCatalyst_2021-08-31_14-34-36.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4c99a012d4ae5d79f29089c05e8a61f7"><img alt="MotionCatalyst_2021-08-31_14-34-36.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/motioncatalyst-2021-08-31-14-34-36-png.png"></a></p>
+<p>Aby odwrócić dane w kierunku pionowym, kliknij Odwróć.</p>
+<h2 id="rozwiązywanie-problemów"><a href="/sc-support/pl/hardware/install-balance-plate-3s/index.html">Rozwiązywanie problemów</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>Ważna uwaga:</strong></p>
+<p>W przypadku jakiejkolwiek pomocy technicznej, napraw lub zwrotów prosimy o kontakt z <a href="https://www.boditrak.com/contact-support.php" rel="external">BodiTrak.</a></p>
+<p>Ta sekcja rozwiązywania problemów ma na celu pomoc w identyfikacji i rozwiązaniu problemów, które mogą wystąpić podczas używania czujnika z Swing Catalyst.</p>
+<h3 id="dane-wyglądają-na-odwrócone-mimo-że-mata-jest-ustawiona-we-właściwy-sposób">Dane wyglądają na odwrócone, mimo że mata jest ustawiona we właściwy sposób<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Możesz odwrócić dane w Kierunku Pionowym w Ustawieniach Płyty czujnika; zapoznaj się z sekcją <a href="/sc-support/pl/hardware/boditrak-sensors/index.html#rotation-how-to-rotate-mirror-or-flip-pressure-data">Rotacja.</a></li>
+</ul>
+<h3 id="czujnik-boditrak-nie-jest-rozpoznawany-lub-nie-jest-wyświetlany-jako-podłączony">Czujnik BodiTrak nie jest rozpoznawany lub nie jest wyświetlany jako podłączony:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Jeśli działa oprogramowanie BodiTrak, może ono blokować dostęp do czujnika. Podobnie, BodiTrak DataPort to usługa, która może działać na Twoim systemie i uniemożliwiać Swing Catalyst połączenie z czujnikiem.</p>
+<ul>
+<li>
+<p>Upewnij się, że żadne oprogramowanie BodiTrak nie jest uruchomione.</p>
+</li>
+<li>
+<p>Zatrzymaj usługę BodiTrak DataPort.</p>
+</li>
+</ul>
+<p>Aby zatrzymać usługę, kliknij przycisk menu Start systemu Windows i wpisz Usługi, kliknij aplikację Usługi, znajdź BodiTrak Data Port, kliknij prawym przyciskiem myszy i wybierz Stop</p>
+<p>Aby zatrzymać usługę, naciśnij ikonę Windows w menu Start systemu Windows, a następnie wpisz Usługi.</p>
+<p><a href="#R-image-dfa5ab8d62011481ac97d60875b635fa" class="lightbox-link"><img alt="2021-09-02_14-11-50.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dfa5ab8d62011481ac97d60875b635fa"><img alt="2021-09-02_14-11-50.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/2021-09-02-14-11-50-png.png"></a><a href="#R-image-ae62eb041993bd7d31166cb87725f69c" class="lightbox-link"><img alt="explorer_2021-09-02_14-10-31.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae62eb041993bd7d31166cb87725f69c"><img alt="explorer_2021-09-02_14-10-31.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/explorer-2021-09-02-14-10-31-png.png"></a></p>
+<p>Otwórz aplikację Usługi i znajdź BodiTrak DataPort, kliknij prawym przyciskiem myszy i kliknij Stop.</p>
+<p><a href="#R-image-e1f2514dbb23ac62412fab2f80bc5985" class="lightbox-link"><img alt="mmc_2021-09-01_12-54-32.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e1f2514dbb23ac62412fab2f80bc5985"><img alt="mmc_2021-09-01_12-54-32.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/4405953685266/mmc-2021-09-01-12-54-32-png.png"></a></p>
+<p>Zatrzymanie usługi może spowodować, że inne aplikacje korzystające z BodiTrak przestaną działać, ale umożliwi Swing Catalyst połączenie z czujnikiem.</p>
+<p>Jeśli BodiTrak DataPort nie jest zainstalowany, kontynuuj kroki rozwiązywania problemów poniżej.</p>
+<ul>
+<li>Otwórz Menedżera urządzeń systemu Windows. <a href="http://kb.laplink.com/index.php/article/359" rel="external">Jak to zrobić?</a></li>
+</ul>
+<p>Sprawdź, czy urządzenie <strong>BodiTrak</strong> jest widoczne w sekcji <strong>Urządzenia szeregowe USB.</strong>
+**</p>
+<ul>
+<li>
+<p>Jeśli go nie ma lub wyświetla symbol ostrzeżenia, spróbuj ponownie podłączyć urządzenie do innego portu USB.</p>
+</li>
+<li>
+<p>Podłącz urządzenie do innego portu USB w komputerze.</p>
+</li>
+<li>
+<p>Jeśli używasz przedłużacza USB, spróbuj podłączyć urządzenie bezpośrednio do komputera bez przedłużacza.</p>
+</li>
+<li>
+<p>Uruchom ponownie Swing Catalyst.</p>
+</li>
+<li>
+<p>Uruchom ponownie komputer.</p>
+</li>
+<li>
+<p>Jeśli wypróbowałeś wszystkie powyższe kroki i urządzenie działa z oprogramowaniem BodiTrak, ale nie w Swing Catalyst, możesz skontaktować się z naszym zespołem pomocy technicznej.</p>
+</li>
+</ul>
+<h3 id="szumy-na-macie-czujnika--kalibracja">Szumy na macie czujnika / kalibracja<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Przy intensywnym użytkowaniu czujnik może wymagać ponownej kalibracji; prosimy o kontakt z <a href="https://www.boditrak.com/contact-support.php" rel="external">pomocą techniczną BodiTrak.</a></p>
+</li>
+<li>
+<p>Pod czujnikiem, między czujnikiem a górną osłoną maty, mogą znajdować się zanieczyszczenia; upewnij się, że czujnik jest wolny od zanieczyszczeń.</p>
+</li>
+<li>
+<p>Sprawdź pod spodem czujnika, czy żadne zanieczyszczenia nie naciskają na dolną część maty.</p>
+</li>
+</ul>
+<h3 id="słabe-odciski-stóp">Słabe odciski stóp<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopiuj link do schowka"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>W przypadku słabych odcisków stóp może to być związane z Kalibracją czujnika pod kątem obsługi wartości niskiego nacisku. Może to oznaczać, że czujnik jest nieprawidłowo skalibrowany lub wymaga ponownej kalibracji.</p>
+<p>Swing Catalyst nie stosuje żadnego dodatkowego Filtrowania danych otrzymywanych z czujników BodiTrak; jeśli jednak odciski stóp różnią się w Swing Catalyst od tych wyświetlanych w innych programach obsługujących matę BodiTrak, prosimy o zgłoszenie biletu pomocniczego za pośrednictwem naszego centrum pomocy, a postaramy się to zbadać.</p>
+<hr>
+<p><em>Ostatnia aktualizacja: 2024-06-07</em> | <a href="/sc-support/pl/hardware/boditrak-sensors/index.html">Wyświetl na oficjalnej stronie pomocy technicznej</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/pl/index.html">
+          <span class="logo-title default-animation">Wsparcie Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Szukaj (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Szukaj</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Szukaj...">
+            <button class="search-clear" type="button" data-search-clear="" title="Wyczyść wyszukiwanie"><i class="fas fa-fw fa-times" title="Wyczyść wyszukiwanie"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/pl/getting-started/index.html"><a class="padding default-animation" href="/sc-support/pl/getting-started/index.html">Pierwsze kroki</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/pl/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/pl/cameras-video/index.html">Kamery i wideo</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/pl/hardware/index.html"><a class="padding default-animation" href="/sc-support/pl/hardware/index.html">Sprzęt</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/pl/hardware/balance-plate-warranty/index.html"><a class="padding" href="/sc-support/pl/hardware/balance-plate-warranty/index.html">Gwarancja Płyty Równowagi i ESA</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/setup-dual-motion-plate/index.html"><a class="padding" href="/sc-support/pl/hardware/setup-dual-motion-plate/index.html">Instalacja i konfiguracja Dual Motion Plate</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/setup-3d-motion-plate/index.html"><a class="padding" href="/sc-support/pl/hardware/setup-3d-motion-plate/index.html">Instalacja i konfiguracja Płyty Ruchu 3D</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/balance-plate-data/index.html"><a class="padding" href="/sc-support/pl/hardware/balance-plate-data/index.html">Instrukcja danych Płyty Równowagi</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/nvidia-gpu-encoder/index.html"><a class="padding" href="/sc-support/pl/hardware/nvidia-gpu-encoder/index.html">Jak skonfigurować koder GPU NVIDIA</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/launch-monitor-trigger/index.html"><a class="padding" href="/sc-support/pl/hardware/launch-monitor-trigger/index.html">Jak skonfigurować Launch Monitor jako Wyzwalacz przechwytywania</a></li>
+            <li class="active " data-nav-id="/sc-support/pl/hardware/boditrak-sensors/index.html"><a class="padding" href="/sc-support/pl/hardware/boditrak-sensors/index.html">Jak używać czujników BodiTrak z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/flightscope-mevo/index.html"><a class="padding" href="/sc-support/pl/hardware/flightscope-mevo/index.html">Jak używać FlightScope Mevo&#43; z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/flightscope-setup/index.html"><a class="padding" href="/sc-support/pl/hardware/flightscope-setup/index.html">Jak używać FlightScope z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/foresight-gc2-hmt/index.html"><a class="padding" href="/sc-support/pl/hardware/foresight-gc2-hmt/index.html">Jak używać Foresight GC2 i HMT z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/foresight-gc3-launch-pro/index.html"><a class="padding" href="/sc-support/pl/hardware/foresight-gc3-launch-pro/index.html">Jak używać Foresight GC3 / Bushnell Launch Pro z SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/foresight-gcquad/index.html"><a class="padding" href="/sc-support/pl/hardware/foresight-gcquad/index.html">Jak używać Foresight GCQuad z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/full-swing-golf/index.html"><a class="padding" href="/sc-support/pl/hardware/full-swing-golf/index.html">Jak używać Full Swing Golf z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/trackman-setup/index.html"><a class="padding" href="/sc-support/pl/hardware/trackman-setup/index.html">Jak używać TrackMan z Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/install-balance-plate-3s/index.html"><a class="padding" href="/sc-support/pl/hardware/install-balance-plate-3s/index.html">Jak zainstalować Balance Plate 3S</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/install-balance-plate-3/index.html"><a class="padding" href="/sc-support/pl/hardware/install-balance-plate-3/index.html">Jak zainstalować Płytę Równowagi 3</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/install-dual-pressure-plate/index.html"><a class="padding" href="/sc-support/pl/hardware/install-dual-pressure-plate/index.html">Jak zainstalować Podwójną platformę ciśnienia</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/find-serial-number/index.html"><a class="padding" href="/sc-support/pl/hardware/find-serial-number/index.html">Jak znaleźć numer seryjny Płyty Równowagi Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/calibration-diagnostics/index.html"><a class="padding" href="/sc-support/pl/hardware/calibration-diagnostics/index.html">Kalibracja i diagnostyka Płyty Równowagi</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/supported-launch-monitors/index.html"><a class="padding" href="/sc-support/pl/hardware/supported-launch-monitors/index.html">Obsługiwane Launch Monitory</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/3d-motion-plate-data/index.html"><a class="padding" href="/sc-support/pl/hardware/3d-motion-plate-data/index.html">Przewodnik po danych Płyty Ruchu 3D</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/force-plate-troubleshooting/index.html"><a class="padding" href="/sc-support/pl/hardware/force-plate-troubleshooting/index.html">Przewodnik techniczny rozwiązywania problemów z Platformą siły</a></li>
+            <li class="" data-nav-id="/sc-support/pl/hardware/trackman-troubleshooting/index.html"><a class="padding" href="/sc-support/pl/hardware/trackman-troubleshooting/index.html">TrackMan nie wyzwala SwingCatalyst – techniczny przewodnik rozwiązywania problemów</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/pl/software-features/index.html"><a class="padding default-animation" href="/sc-support/pl/software-features/index.html">Oprogramowanie i funkcje</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/pl/account-setup/index.html"><a class="padding default-animation" href="/sc-support/pl/account-setup/index.html">Konto i Ustawienie</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/pl/reference/index.html"><a class="padding default-animation" href="/sc-support/pl/reference/index.html">Dokumentacja</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Język</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/hardware/boditrak-sensors/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/hardware/boditrak-sensors/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/hardware/boditrak-sensors/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/hardware/boditrak-sensors/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/hardware/boditrak-sensors/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/hardware/boditrak-sensors/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/hardware/boditrak-sensors/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/hardware/boditrak-sensors/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/hardware/boditrak-sensors/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/hardware/boditrak-sensors/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/hardware/boditrak-sensors/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/hardware/boditrak-sensors/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/hardware/boditrak-sensors/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/hardware/boditrak-sensors/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/hardware/boditrak-sensors/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/hardware/boditrak-sensors/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/hardware/boditrak-sensors/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/hardware/boditrak-sensors/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/hardware/boditrak-sensors/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/hardware/boditrak-sensors/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/hardware/boditrak-sensors/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/hardware/boditrak-sensors/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/hardware/boditrak-sensors/index.html" lang="pl" selected data-selected>Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/hardware/boditrak-sensors/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/hardware/boditrak-sensors/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/hardware/boditrak-sensors/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/hardware/boditrak-sensors/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/hardware/boditrak-sensors/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/hardware/boditrak-sensors/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/hardware/boditrak-sensors/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/hardware/boditrak-sensors/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/hardware/boditrak-sensors/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/hardware/boditrak-sensors/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/hardware/boditrak-sensors/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/hardware/boditrak-sensors/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/hardware/boditrak-sensors/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Kompozycja</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520131" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520131" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

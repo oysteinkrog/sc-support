@@ -1,24 +1,627 @@
-<!doctype html><html id=R-html lang=el dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν ανατίθετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst"><meta name=twitter:description content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν ανατίθετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html"><meta property="og:site_name" content="Υποστήριξη Swing Catalyst"><meta property="og:title" content="Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst"><meta property="og:description" content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν ανατίθετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι..."><meta property="og:locale" content="el"><meta property="og:type" content="article"><meta property="article:section" content="Κάμερες & Βίντεο"><meta property="article:tag" content="Gige-Camera"><meta property="article:tag" content="Flir"><meta itemprop=name content="Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst"><meta itemprop=description content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν ανατίθετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι..."><meta itemprop=wordCount content="640"><meta itemprop=keywords content="Gige-Camera,Flir"><title>Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763284 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763284 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763284 defer></script><script src=/sc-support/js/search.min.js?1771763284 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.el.js?1771763284"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763284 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763284 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763284 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=[]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763284 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763284 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763284 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763284 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763284 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/cameras-video/flir-blackfly-static-ip/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Copy text to clipboard`,window.T_Copied_to_clipboard=`Text copied to clipboard!`,window.T_Link_copied_to_clipboard=`Link copied to clipboard!`,window.T_Reset_view=`Reset view`,window.T_View_reset=`View reset!`,window.T_No_results_found=`No results found for "{0}"`,window.T_N_results_found=`{1} results found for "{0}"`,window.T_Browser_unsupported_feature=`This browser doesn't support this feature`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Menu (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Table of Contents (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#εγκατάσταση-του-spinnaker>Εγκατάσταση του Spinnaker</a></li><li><a href=#setting-a-static-ip-on-the-ethernet-adapter>Setting a static IP on the Ethernet Adapter</a></li><li><a href=#recommended-static-ip-configuration>Recommended static IP configuration</a></li><li><a href=#setting-a-static-ip-on-the-camera>Setting a static IP on the camera</a><ul><li><a href=#spinview_><img src=../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png alt=SpinView_WPF_v140_76YBSasBIN.png></a></li><li><a href=#recommended-static-ip-configuration-for-cameras>Recommended static IP configuration for cameras</a></li></ul></li><li><a href=#using-spinview-to-enable-jumbo-frames--optimize-the-network-adapters-for-the-cameras>Using SpinView to enable jumbo frames & optimize the network adapters for the cameras</a></li><li><a href=#sharex_><img src=../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png alt=ShareX_ZAAgAqcrm3.png></a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/el/index.html><span itemprop=name>Υποστήριξη Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/el/cameras-video/index.html><span itemprop=name>Κάμερες & Βίντεο</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/el/cameras-video/led-light-flicker/index.html title="Πώς να μετριάσετε τον αναβοσβήνιμο του φωτός LED (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/el/cameras-video/lynx-static-ip/index.html title="Πώς να ορίσετε στατική διεύθυνση IP σε κάμερες Lynx GigE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=More><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable cameras-video" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tags style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/el/tags/flir/index.html>Flir</a></li><li><a class=term-link href=/sc-support/el/tags/gige-camera/index.html>Gige-Camera</a></li></ul></div></header><h1 id=πώς-να-ορίσετε-στατική-ip-σε-κάμερες-flir-blackfly-gige>Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE</h1><p>Εισαγωγή</p><p>Αυτό το άρθρο υποστήριξης περιγράφει πώς να διαμορφώσετε τις κάμερες Blackfly (ή Blackfly S) GigE με μια στατική διεύθυνση IP. Για κανονική χρήση δεν είναι απαραίτητο καθώς το Swing Catalyst χειρίζεται αυτόματα τη διαμόρφωση IP.</p><p>Απαιτήσεις</p><ul><li><p>Η εφαρμογή Spinview (μέρος του Spinnaker SDK).</p></li><li><p>Swing Catalyst.</p></li><li><p>Μία ή περισσότερες κάμερες FLIR Blackfly (ή Blackfly S) GigE.</p></li><li><p>Swing Catalyst.</p></li><li><p>Μία ή περισσότερες κάμερες FLIR Blackfly (ή Blackfly S) GigE.</p></li></ul><h2 id=εγκατάσταση-του-spinnaker>Εγκατάσταση του Spinnaker<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li><p>Download and run the <a href=https://cloudfront.swingcatalyst.com/drivers/SpinnakerSDK_FULL_3.0.0.118_x64.exe rel=external>Spinnaker installer.</a></p></li><li><p>Right click the Spinnaker installer & run as administrator.</p></li><li><p>Check &ldquo;Camera Evaluation&rdquo; and click Next</p></li><li><p>Follow the on-screen instructions to proceed with the installation.</p></li><li><p>Once finished, reboot the computer.</p></li></ul><p><a href=#R-image-2e72317750f45a0a230e04d95e5f94fe class=lightbox-link><img class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/12756096138524.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2e72317750f45a0a230e04d95e5f94fe><img class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/12756096138524.png></a></p><h2 id=setting-a-static-ip-on-the-ethernet-adapter>Setting a static IP on the Ethernet Adapter<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Each camera and network adapter must have its own unique static IP address. For example, if you assign a static IP addresses to a cameras, ensure that the network adapter is configured with a corresponding IP from the &ldquo;recommended static IP configuration&rdquo; matrix below.</p><p><strong>Warning</strong></p><p>Configure network adapters based on the associated camera, not the adapter number. Change settings only for identified cameras; leave others unchanged. If you connect a camera to a different adapter, reconfiguration is necessary for proper functionality.</p><p>From the Control Panel, go to &ldquo;Network and Internet&rdquo;, then to &ldquo;Network and Sharing Center&rdquo; then click &ldquo;Change adapter settings&rdquo;.</p><p><a href=#R-image-8ba0b9410cc581163d168c768799e864 class=lightbox-link><img alt=explorer_9cDDLLqweA.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/explorer-9cddllqwea-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-8ba0b9410cc581163d168c768799e864><img alt=explorer_9cDDLLqweA.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/explorer-9cddllqwea-png.png></a></p><p><a href=#R-image-5996a78b9d4b903139c88296f855d8d7 class=lightbox-link><img alt=explorer_BbUVKMwZW1.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/explorer-bbuvkmwzw1-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5996a78b9d4b903139c88296f855d8d7><img alt=explorer_BbUVKMwZW1.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/explorer-bbuvkmwzw1-png.png></a></p><p>Here we can see a list of network adapters present on the computer. In our case we wish to configure Ethernet 2, and Ethernet 3, with device name &ldquo;Intel Pro/1000&rdquo;. It&rsquo;s important we configure only the network adapters used for the cameras and not any others as it may impact internet connectivity.</p><p>Right click on the network adapter you wish to modify and click &ldquo;Properties&rdquo;, then scroll down to &ldquo;Internet Protocol Version 4 (TCP/IPv4) and click &ldquo;Properties&rdquo;.</p><p><a href=#R-image-f84074ed721bf715a12cb4b694c6dc60 class=lightbox-link><img alt=explorer_U4xmoNNoUu.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/explorer-u4xmonnouu-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-f84074ed721bf715a12cb4b694c6dc60><img alt=explorer_U4xmoNNoUu.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/explorer-u4xmonnouu-png.png></a></p><p><a href=#R-image-2ad3b1137c30ab33029c3b1538db438a class=lightbox-link><img alt=dllhost_I9TOmPJmF9.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/dllhost-i9tompjmf9-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2ad3b1137c30ab33029c3b1538db438a><img alt=dllhost_I9TOmPJmF9.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/dllhost-i9tompjmf9-png.png></a></p><p><a href=#R-image-501659362305874bdbfd5afa6766d4a5 class=lightbox-link><img alt=dllhost_WHyaKqtxzD.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/dllhost-whyakqtxzd-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-501659362305874bdbfd5afa6766d4a5><img alt=dllhost_WHyaKqtxzD.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/dllhost-whyakqtxzd-png.png></a></p><ul><li><p>Select &ldquo;Use the following IP address&rdquo;.</p></li><li><p>Enter a IP address from the recommended static IP configuration matrix below.</p></li><li><p>Enter subnet mask 255.255.255.0</p></li><li><p>Select &ldquo;Use the following DNS server addresses&rdquo;, you can leave these empty.</p></li><li><p>Click &ldquo;OK&rdquo;.</p></li></ul><h2 id=recommended-static-ip-configuration>Recommended static IP configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><table><thead><tr><th>Ethernet Adapter Number</th><th>Ethernet Adapter IP</th><th>Subnet Mask</th><th>Gateway</th><th>Connected to Camera</th><th>Camera IP</th></tr></thead><tbody><tr><td>1</td><td>10.0.1.1</td><td>255.255.255.0</td><td>10.0.1.1</td><td>1</td><td>10.0.1.10</td></tr><tr><td>2</td><td>10.0.2.1</td><td>255.255.255.0</td><td>10.0.2.1</td><td>2</td><td>10.0.2.10</td></tr><tr><td>3</td><td>10.0.3.1</td><td>255.255.255.0</td><td>10.0.3.1</td><td>3</td><td>10.0.3.10</td></tr><tr><td>4</td><td>10.0.4.1</td><td>255.255.255.0</td><td>10.0.4.1</td><td>4</td><td>10.0.4.10</td></tr></tbody></table><p>Gateway can be set on both the camera</p><h2 id=setting-a-static-ip-on-the-camera>Setting a static IP on the camera<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Repeat these steps for any other cameras you wish to set a static IP on. To access the camera IP configuration open the SpinView application and right click on the camera you wish to configure an IP for.</p><p><a href=#R-image-b0e809f087ed70f45540637d89c9b02b class=lightbox-link><img alt=SpinView_WPF_v140_7H4ganPjVu.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b0e809f087ed70f45540637d89c9b02b><img alt=SpinView_WPF_v140_7H4ganPjVu.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png></a></p><h3 id=spinview_><a href=#R-image-e3ac5bdf4cf0ccdad801a0efbac99ba6 class=lightbox-link><img alt=SpinView_WPF_v140_76YBSasBIN.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-e3ac5bdf4cf0ccdad801a0efbac99ba6><img alt=SpinView_WPF_v140_76YBSasBIN.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Right click on the camera in the Devices list and select &ldquo;GigE Configuration&rdquo;.</p></li><li><p>Click &ldquo;IP Configuration&rdquo;.</p></li></ul><p>Enter the IP & subnet mask according to the recommended IP configuration matrix below.</p><ul><li><p>Enter the IP address of the camera, use the IP address from the matrix, for example for camera 1</p></li><li><p>Enter the subnet mask, e.g: 255.255.255.0.</p></li><li><p>Default gateway can be empty, or use the IP address of the network adapter the camera is connected to.</p></li><li><p>Uncheck DHCP.</p></li><li><p>Click &ldquo;Set Current and Persistent IP Configuration&rdquo;.</p></li></ul><p><a href=#R-image-92018b51634279889a30da3c3f3cd106 class=lightbox-link><img alt=SpinView_WPF_v140_1R1Lku4KOR.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-92018b51634279889a30da3c3f3cd106><img alt=SpinView_WPF_v140_1R1Lku4KOR.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png></a></p><h3 id=recommended-static-ip-configuration-for-cameras>Recommended static IP configuration for cameras<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><table><thead><tr><th>Camera No</th><th>IP</th><th>Subnet Mask</th><th>Gateway</th></tr></thead><tbody><tr><td>1</td><td>10.0.1.10</td><td>255.255.255.0</td><td>10.0.1.1</td></tr><tr><td>2</td><td>10.0.2.10</td><td>255.255.255.0</td><td>10.0.2.1</td></tr><tr><td>3</td><td>10.0.3.10</td><td>255.255.255.0</td><td>10.0.3.1</td></tr><tr><td>4</td><td>10.0.4.10</td><td>255.255.255.0</td><td>10.0.4.1</td></tr></tbody></table><p>The gateway IP is the IP address of the network adapter the camera is connected to.</p><p>For example, Camera 1 is connected to network adapter 1.</p><h2 id=using-spinview-to-enable-jumbo-frames--optimize-the-network-adapters-for-the-cameras>Using SpinView to enable jumbo frames & optimize the network adapters for the cameras<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Please note these changes need to be done to all of the network adapters connected to your cameras.</p><ul><li><p>From SpinView, right click on the camera and select &ldquo;GigE Configuration&rdquo;.</p></li><li><p>Click &ldquo;Configure Adapter Properties&rdquo;.</p></li><li><p>Click Yes when prompted.</p></li><li><p>Click &ldquo;Next&rdquo;.</p></li><li><p>Click &ldquo;Auto Fill All&rdquo;.</p></li><li><p>Click &ldquo;Next&rdquo;.</p></li><li><p>Check &ldquo;Enable Media Optimization&rdquo;.</p></li><li><p>Click &ldquo;Next&rdquo;.</p></li><li><p>Click &ldquo;Configure&rdquo; to make the changes.</p></li></ul><h2 id=sharex_><a href=#R-image-65bff2e4eb0d64c294fc09d71638e86f class=lightbox-link><img alt=ShareX_ZAAgAqcrm3.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-65bff2e4eb0d64c294fc09d71638e86f><img alt=ShareX_ZAAgAqcrm3.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><a href=#R-image-2e8cbf6123c310ad1bdda75240d47d5e class=lightbox-link><img alt=AdapterConfigGUI_v140_xVxa91A72U.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2e8cbf6123c310ad1bdda75240d47d5e><img alt=AdapterConfigGUI_v140_xVxa91A72U.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png></a></p><p><a href=#R-image-544ee6d568be1d584108614114c152e7 class=lightbox-link><img alt=AdapterConfigGUI_v140_idoQPFZOXu.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-544ee6d568be1d584108614114c152e7><img alt=AdapterConfigGUI_v140_idoQPFZOXu.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png></a></p><p><a href=#R-image-c8d94defd7cd489166e44d74be521f0a class=lightbox-link><img alt=AdapterConfigGUI_v140_KyicaeLUQP.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c8d94defd7cd489166e44d74be521f0a><img alt=AdapterConfigGUI_v140_KyicaeLUQP.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png></a></p><p><a href=#R-image-b358ea8e2aba793df558c46f336a283e class=lightbox-link><img alt=AdapterConfigGUI_v140_S3jXxBjR9R.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-b358ea8e2aba793df558c46f336a283e><img alt=AdapterConfigGUI_v140_S3jXxBjR9R.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png></a></p><hr><p><em>Last updated: 2024-02-22</em> | <a href=/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/el/index.html><span class="logo-title default-animation">Υποστήριξη Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Search</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Search...>
-<button class=search-clear type=button data-search-clear title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/el/getting-started/index.html><a class="padding default-animation" href=/sc-support/el/getting-started/index.html>Ξεκινώντας</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/el/cameras-video/index.html><a class="padding default-animation" href=/sc-support/el/cameras-video/index.html>Κάμερες & Βίντεο</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu><li data-nav-id=/sc-support/el/cameras-video/flir-firmware-upgrade/index.html><a class=padding href=/sc-support/el/cameras-video/flir-firmware-upgrade/index.html>Αναβάθμιση του firmware στη FLIR Blackfly S</a></li><li data-nav-id=/sc-support/el/cameras-video/usb3-troubleshooting/index.html><a class=padding href=/sc-support/el/cameras-video/usb3-troubleshooting/index.html>Αντιμετώπιση προβλημάτων κάμερας USB3</a></li><li data-nav-id=/sc-support/el/cameras-video/lens-distortion-correction/index.html><a class=padding href=/sc-support/el/cameras-video/lens-distortion-correction/index.html>Αυτόματη Διόρθωση Παραμόρφωσης Φακού στο Swing Catalyst: Βελτίωση της Οπτικής σας Εμπειρίας</a></li><li data-nav-id=/sc-support/el/cameras-video/improving-image-quality/index.html><a class=padding href=/sc-support/el/cameras-video/improving-image-quality/index.html>Βελτίωση της ποιότητας της εικόνας της κάμερας</a></li><li data-nav-id=/sc-support/el/cameras-video/pci-express-slots/index.html><a class=padding href=/sc-support/el/cameras-video/pci-express-slots/index.html>Διαφορές μεταξύ υποδοχών PCI / PCI Express</a></li><li data-nav-id=/sc-support/el/cameras-video/minimum-distances/index.html><a class=padding href=/sc-support/el/cameras-video/minimum-distances/index.html>Ελάχιστες αποστάσεις κάμερας</a></li><li data-nav-id=/sc-support/el/cameras-video/advanced-camera-settings/index.html><a class=padding href=/sc-support/el/cameras-video/advanced-camera-settings/index.html>Ένας οδηγός για τις Προχωρημένες Ρυθμίσεις Κάμερας</a></li><li data-nav-id=/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html><a class=padding href=/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html>Η κάμερα FLiR / Point Grey (Blackfly/Chameleon) δεν λειτουργεί πλέον μετά την αναβάθμιση</a></li><li data-nav-id=/sc-support/el/cameras-video/halcon-bluescreen-fix/index.html><a class=padding href=/sc-support/el/cameras-video/halcon-bluescreen-fix/index.html>Ο Υπολογιστής Κάνει Bluescreen κατά τη Σύνδεση του Dongle Άδειας Halcon USB</a></li><li data-nav-id=/sc-support/el/cameras-video/flir-warranty-service/index.html><a class=padding href=/sc-support/el/cameras-video/flir-warranty-service/index.html>Πληροφορίες εγγύησης και υπηρεσίας κάμερας FLIR</a></li><li data-nav-id=/sc-support/el/cameras-video/fox-lynx-firmware/index.html><a class=padding href=/sc-support/el/cameras-video/fox-lynx-firmware/index.html>Πώς να αναβαθμίσετε ή να υποβαθμίσετε το firmware Fox / Lynx</a></li><li data-nav-id=/sc-support/el/cameras-video/halcon-camera-standards/index.html><a class=padding href=/sc-support/el/cameras-video/halcon-camera-standards/index.html>Πώς να βρείτε ποια πρότυπα υποστηρίζουν οι κάμερές σας για χρήση με Halcon</a></li><li data-nav-id=/sc-support/el/cameras-video/avt-manta-configure/index.html><a class=padding href=/sc-support/el/cameras-video/avt-manta-configure/index.html>Πώς να διαμορφώσετε κάμερες AVT Manta/Prosilica GigE υψηλής ταχύτητας</a></li><li data-nav-id=/sc-support/el/cameras-video/point-grey-flir-gige/index.html><a class=padding href=/sc-support/el/cameras-video/point-grey-flir-gige/index.html>Πώς να διαμορφώσετε κάμερες Point Grey / FLIR GigE (Blackfly) με Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/ids-ueye-gige/index.html><a class=padding href=/sc-support/el/cameras-video/ids-ueye-gige/index.html>Πώς να διαμορφώσετε την κάμερα IDS uEye GigE με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/avt-manta-install/index.html><a class=padding href=/sc-support/el/cameras-video/avt-manta-install/index.html>Πώς να εγκαταστήσετε κάμερες AVT Manta/Prosilica GigE</a></li><li data-nav-id=/sc-support/el/cameras-video/fix-dropped-frames/index.html><a class=padding href=/sc-support/el/cameras-video/fix-dropped-frames/index.html>Πώς να επιδιορθώσετε τα 'χαμένα πλαίσια' με κάμερες USB 3.0 ή 2.0.</a></li><li data-nav-id=/sc-support/el/cameras-video/led-light-flicker/index.html><a class=padding href=/sc-support/el/cameras-video/led-light-flicker/index.html>Πώς να μετριάσετε τον αναβοσβήνιμο του φωτός LED</a></li><li class=active data-nav-id=/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html><a class=padding href=/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html>Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE</a></li><li data-nav-id=/sc-support/el/cameras-video/lynx-static-ip/index.html><a class=padding href=/sc-support/el/cameras-video/lynx-static-ip/index.html>Πώς να ορίσετε στατική διεύθυνση IP σε κάμερες Lynx GigE</a></li><li data-nav-id=/sc-support/el/cameras-video/cctv-cameras/index.html><a class=padding href=/sc-support/el/cameras-video/cctv-cameras/index.html>Πώς να ρυθμίσετε κάμερες CCTV</a></li><li data-nav-id=/sc-support/el/cameras-video/ids-ueye-highspeed/index.html><a class=padding href=/sc-support/el/cameras-video/ids-ueye-highspeed/index.html>Πώς να ρυθμίσετε κάμερες iDS uEye USB highspeed</a></li><li data-nav-id=/sc-support/el/cameras-video/basler-gige-setup/index.html><a class=padding href=/sc-support/el/cameras-video/basler-gige-setup/index.html>Πώς να ρυθμίσετε τις κάμερες Basler GigE με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/halcon-setup/index.html><a class=padding href=/sc-support/el/cameras-video/halcon-setup/index.html>Πώς να ρυθμίσετε το Halcon για το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/ids-ueye-usb/index.html><a class=padding href=/sc-support/el/cameras-video/ids-ueye-usb/index.html>Πώς να χρησιμοποιήσετε κάμερες IDS uEye USB με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/point-grey-flir-usb/index.html><a class=padding href=/sc-support/el/cameras-video/point-grey-flir-usb/index.html>Πώς να χρησιμοποιήσετε κάμερες Point Grey / FLiR USB με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/web-camera-directshow/index.html><a class=padding href=/sc-support/el/cameras-video/web-camera-directshow/index.html>Πώς να χρησιμοποιήσετε μια κάμερα ιστού (ενσωμάτωση DirectShow) με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/dragon-usb2-camera/index.html><a class=padding href=/sc-support/el/cameras-video/dragon-usb2-camera/index.html>Πώς να χρησιμοποιήσετε την κάμερα Dragon (120 FPS) USB 2.0 με το Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/hardware-encoding/index.html><a class=padding href=/sc-support/el/cameras-video/hardware-encoding/index.html>Πώς να χρησιμοποιήσετε την κωδικοποίηση υλικού του Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/flir-blackfly-gige-setup/index.html><a class=padding href=/sc-support/el/cameras-video/flir-blackfly-gige-setup/index.html>Ρύθμιση FLIR BlackFly S GigE στο Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/flir-blackfly-usb-setup/index.html><a class=padding href=/sc-support/el/cameras-video/flir-blackfly-usb-setup/index.html>Ρύθμιση FLIR BlackFly S USB στο Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/ximea-usb3-setup/index.html><a class=padding href=/sc-support/el/cameras-video/ximea-usb3-setup/index.html>Ρύθμιση καμερών Ximea USB3 Vision με Swing Catalyst</a></li><li data-nav-id=/sc-support/el/cameras-video/fox-camera-setup/index.html><a class=padding href=/sc-support/el/cameras-video/fox-camera-setup/index.html>Ρύθμιση της κάμερας Swing Catalyst Fox USB 3.0</a></li><li data-nav-id=/sc-support/el/cameras-video/lynx-camera-setup/index.html><a class=padding href=/sc-support/el/cameras-video/lynx-camera-setup/index.html>Ρύθμιση της κάμερας Swing Catalyst Lynx GigE</a></li><li data-nav-id=/sc-support/el/cameras-video/recommended-usb3-components/index.html><a class=padding href=/sc-support/el/cameras-video/recommended-usb3-components/index.html>Συνιστώμενα Στοιχεία USB 3.0</a></li><li data-nav-id=/sc-support/el/cameras-video/recommended-lighting/index.html><a class=padding href=/sc-support/el/cameras-video/recommended-lighting/index.html>Συνιστώμενος φωτισμός για εγκαταστάσεις studio και γκαράζ</a></li><li data-nav-id=/sc-support/el/cameras-video/gige-network-setup/index.html><a class=padding href=/sc-support/el/cameras-video/gige-network-setup/index.html>Συστάσεις δικτύου Gigabit Ethernet & GigE Vision κάμερας</a></li><li data-nav-id=/sc-support/el/cameras-video/supported-cameras/index.html><a class=padding href=/sc-support/el/cameras-video/supported-cameras/index.html>Υποστηριζόμενες Κάμερες</a></li><li data-nav-id=/sc-support/el/cameras-video/flir-spinnaker-cameras/index.html><a class=padding href=/sc-support/el/cameras-video/flir-spinnaker-cameras/index.html>Χρήση καμερών FLIR Blackfly S (Spinnaker) με Swing Catalyst</a></li></ul></li><li data-nav-id=/sc-support/el/hardware/index.html><a class="padding default-animation" href=/sc-support/el/hardware/index.html>Υλικό</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/el/software-features/index.html><a class="padding default-animation" href=/sc-support/el/software-features/index.html>Λογισμικό & Δυνατότητες</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li data-nav-id=/sc-support/el/account-setup/index.html><a class="padding default-animation" href=/sc-support/el/account-setup/index.html>Λογαριασμός & Ρύθμιση</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/el/reference/index.html><a class="padding default-animation" href=/sc-support/el/reference/index.html>Αναφορά</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Language</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/cameras-video/flir-blackfly-static-ip/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/cameras-video/flir-blackfly-static-ip/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/cameras-video/flir-blackfly-static-ip/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/cameras-video/flir-blackfly-static-ip/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/cameras-video/flir-blackfly-static-ip/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/cameras-video/flir-blackfly-static-ip/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/cameras-video/flir-blackfly-static-ip/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/cameras-video/flir-blackfly-static-ip/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/cameras-video/flir-blackfly-static-ip/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/cameras-video/flir-blackfly-static-ip/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/cameras-video/flir-blackfly-static-ip/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/cameras-video/flir-blackfly-static-ip/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/cameras-video/flir-blackfly-static-ip/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/cameras-video/flir-blackfly-static-ip/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/cameras-video/flir-blackfly-static-ip/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/cameras-video/flir-blackfly-static-ip/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/cameras-video/flir-blackfly-static-ip/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/cameras-video/flir-blackfly-static-ip/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/cameras-video/flir-blackfly-static-ip/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/cameras-video/flir-blackfly-static-ip/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html lang=el selected data-selected>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/cameras-video/flir-blackfly-static-ip/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/cameras-video/flir-blackfly-static-ip/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/cameras-video/flir-blackfly-static-ip/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/cameras-video/flir-blackfly-static-ip/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/cameras-video/flir-blackfly-static-ip/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Theme</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763284 defer></script><script src=/sc-support/js/theme.min.js?1771763284 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="el" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν αναθέσετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι...">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst">
+    <meta name="twitter:description" content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν αναθέσετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι...">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html">
+    <meta property="og:site_name" content="Υποστήριξη Swing Catalyst">
+    <meta property="og:title" content="Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst">
+    <meta property="og:description" content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν αναθέσετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι...">
+    <meta property="og:locale" content="el">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Κάμερες & Βίντεο">
+    <meta property="article:tag" content="Gige-Camera">
+    <meta property="article:tag" content="Flir">
+    <meta itemprop="name" content="Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst">
+    <meta itemprop="description" content="Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν αναθέσετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι...">
+    <meta itemprop="wordCount" content="683">
+    <meta itemprop="keywords" content="Gige-Camera,Flir">
+    <title>Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE :: Υποστήριξη Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520141" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520141" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.el.js?1772520141";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520141" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520141" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520141" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520141" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520141" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520141" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/cameras-video\/flir-blackfly-static-ip\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#εγκατάσταση-του-spinnaker">Εγκατάσταση του Spinnaker</a></li>
+    <li><a href="#ορισμός-στατικής-ip-στον-προσαρμογέα-ethernet">Ορισμός στατικής IP στον προσαρμογέα Ethernet</a></li>
+    <li><a href="#προτεινόμενη-διαμόρφωση-στατικής-ip">Προτεινόμενη διαμόρφωση στατικής IP</a></li>
+    <li><a href="#ορισμός-στατικής-ip-στην-κάμερα">Ορισμός στατικής IP στην κάμερα</a>
+      <ul>
+        <li><a href="#spinview_"><img src="../../assets/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" alt="SpinView_WPF_v140_76YBSasBIN.png"></a></li>
+        <li><a href="#προτεινόμενη-διαμόρφωση-στατικής-ip-για-κάμερες">Προτεινόμενη διαμόρφωση στατικής IP για κάμερες</a></li>
+      </ul>
+    </li>
+    <li><a href="#χρήση-του-spinview-για-ενεργοποίηση-jumbo-frames-και-βελτιστοποίηση-των-προσαρμογέων-δικτύου-για-τις-κάμερες">Χρήση του SpinView για ενεργοποίηση jumbo frames και βελτιστοποίηση των προσαρμογέων δικτύου για τις κάμερες</a></li>
+    <li><a href="#sharex_"><img src="../../assets/images/12756089238300/sharex-zaagaqcrm3-png.png" alt="ShareX_ZAAgAqcrm3.png"></a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/index.html"><span itemprop="name">Υποστήριξη Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/el/cameras-video/index.html"><span itemprop="name">Κάμερες &amp; Βίντεο</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/el/cameras-video/led-light-flicker/index.html" title="Πώς να μετριάσετε το τρεμόπαιγμα φωτισμού LED (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/el/cameras-video/lynx-static-ip/index.html" title="Πώς να ορίσετε στατική IP σε κάμερες Lynx GigE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable cameras-video" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/el/tags/flir/index.html">Flir</a></li>
+    <li><a class="term-link" href="/sc-support/el/tags/gige-camera/index.html">Gige-Camera</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="πώς-να-ορίσετε-στατική-ip-σε-κάμερες-flir-blackfly-gige">Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE</h1>
+
+<p>Εισαγωγή</p>
+<p>Αυτό το άρθρο υποστήριξης περιγράφει πώς να διαμορφώσετε τις κάμερες Blackfly (ή Blackfly S) GigE με στατική διεύθυνση IP. Για κανονική χρήση αυτό δεν απαιτείται, καθώς το SwingCatalyst διαχειρίζεται αυτόματα τη διαμόρφωση IP.</p>
+<p>Απαιτήσεις</p>
+<ul>
+<li>
+<p>Η εφαρμογή Spinview (μέρος του Spinnaker SDK).</p>
+</li>
+<li>
+<p>SwingCatalyst.</p>
+</li>
+<li>
+<p>Μία ή περισσότερες κάμερες FLIR Blackfly (ή Blackfly S) GigE.</p>
+</li>
+</ul>
+<h2 id="εγκατάσταση-του-spinnaker">Εγκατάσταση του Spinnaker<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>Κατεβάστε και εκτελέστε το <a href="https://cloudfront.swingcatalyst.com/drivers/SpinnakerSDK_FULL_3.0.0.118_x64.exe" rel="external">πρόγραμμα εγκατάστασης Spinnaker.</a></p>
+</li>
+<li>
+<p>Κάντε δεξί κλικ στο πρόγραμμα εγκατάστασης Spinnaker και εκτελέστε το ως διαχειριστής.</p>
+</li>
+<li>
+<p>Επιλέξτε &ldquo;Camera Evaluation&rdquo; και κάντε κλικ στο Επόμενο.</p>
+</li>
+<li>
+<p>Ακολουθήστε τις οδηγίες που εμφανίζονται στην οθόνη για να συνεχίσετε με την εγκατάσταση.</p>
+</li>
+<li>
+<p>Μόλις ολοκληρωθεί, επανεκκινήστε τον υπολογιστή.</p>
+</li>
+</ul>
+<p><a href="#R-image-e17bd25a32bf731b03e692800e33fcd7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e17bd25a32bf731b03e692800e33fcd7"><img class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/12756096138524.png"></a></p>
+<h2 id="ορισμός-στατικής-ip-στον-προσαρμογέα-ethernet">Ορισμός στατικής IP στον προσαρμογέα Ethernet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Κάθε κάμερα και προσαρμογέας δικτύου πρέπει να έχει τη δική του μοναδική στατική διεύθυνση IP. Για παράδειγμα, εάν αναθέσετε στατικές διευθύνσεις IP σε κάμερες, βεβαιωθείτε ότι ο προσαρμογέας δικτύου είναι διαμορφωμένος με αντίστοιχη IP από τον πίνακα «προτεινόμενης διαμόρφωσης στατικής IP» παρακάτω.</p>
+<p><strong>Προειδοποίηση</strong></p>
+<p>Διαμορφώστε τους προσαρμογείς δικτύου με βάση την αντίστοιχη κάμερα και όχι τον αριθμό του προσαρμογέα. Αλλάζετε ρυθμίσεις μόνο για τους προσαρμογείς που έχουν εντοπιστεί ότι σχετίζονται με κάμερες· αφήστε τους υπόλοιπους αμετάβλητους. Εάν συνδέσετε μια κάμερα σε διαφορετικό προσαρμογέα, θα χρειαστεί επαναδιαμόρφωση για σωστή λειτουργία.</p>
+<p>Από τον Πίνακα Ελέγχου, μεταβείτε στο «Δίκτυο και Internet», έπειτα στο «Κέντρο δικτύου και κοινής χρήσης» και κάντε κλικ στο «Αλλαγή ρυθμίσεων προσαρμογέα».</p>
+<p><a href="#R-image-e29ac395e1c3c7c4e8fae28bfcb0bb9c" class="lightbox-link"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e29ac395e1c3c7c4e8fae28bfcb0bb9c"><img alt="explorer_9cDDLLqweA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-9cddllqwea-png.png"></a></p>
+<p><a href="#R-image-5f5e84820cd0309c63747e8f290ef504" class="lightbox-link"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f5e84820cd0309c63747e8f290ef504"><img alt="explorer_BbUVKMwZW1.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-bbuvkmwzw1-png.png"></a></p>
+<p>Εδώ μπορούμε να δούμε μια λίστα με τους προσαρμογείς δικτύου που υπάρχουν στον υπολογιστή. Στην περίπτωσή μας επιθυμούμε να διαμορφώσουμε το Ethernet 2 και το Ethernet 3, με όνομα συσκευής &ldquo;Intel Pro/1000&rdquo;. Είναι σημαντικό να διαμορφώσουμε μόνο τους προσαρμογείς δικτύου που χρησιμοποιούνται για τις κάμερες και όχι άλλους, καθώς ενδέχεται να επηρεαστεί η σύνδεση στο internet.</p>
+<p>Κάντε δεξί κλικ στον προσαρμογέα δικτύου που θέλετε να τροποποιήσετε και κάντε κλικ στο «Ιδιότητες», στη συνέχεια κυλήστε προς τα κάτω μέχρι το «Internet Protocol Version 4 (TCP/IPv4)» και κάντε κλικ στο «Ιδιότητες».</p>
+<p><a href="#R-image-69c6f1eff84d9b17294662c2b0367fea" class="lightbox-link"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-69c6f1eff84d9b17294662c2b0367fea"><img alt="explorer_U4xmoNNoUu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/explorer-u4xmonnouu-png.png"></a></p>
+<p><a href="#R-image-a1c16d31fbb718125cbcda3c9b67da02" class="lightbox-link"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a1c16d31fbb718125cbcda3c9b67da02"><img alt="dllhost_I9TOmPJmF9.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-i9tompjmf9-png.png"></a></p>
+<p><a href="#R-image-2a2b3aff585ab8bc0894e3a915e67ac1" class="lightbox-link"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2a2b3aff585ab8bc0894e3a915e67ac1"><img alt="dllhost_WHyaKqtxzD.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/dllhost-whyakqtxzd-png.png"></a></p>
+<ul>
+<li>
+<p>Επιλέξτε «Χρήση της παρακάτω διεύθυνσης IP».</p>
+</li>
+<li>
+<p>Εισαγάγετε μια διεύθυνση IP από τον πίνακα προτεινόμενης διαμόρφωσης στατικής IP παρακάτω.</p>
+</li>
+<li>
+<p>Εισαγάγετε μάσκα υποδικτύου 255.255.255.0.</p>
+</li>
+<li>
+<p>Επιλέξτε «Χρήση των παρακάτω διευθύνσεων διακομιστή DNS», μπορείτε να τις αφήσετε κενές.</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «OK».</p>
+</li>
+</ul>
+<h2 id="προτεινόμενη-διαμόρφωση-στατικής-ip">Προτεινόμενη διαμόρφωση στατικής IP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Αριθμός Προσαρμογέα Ethernet</th>
+          <th>IP Προσαρμογέα Ethernet</th>
+          <th>Μάσκα Υποδικτύου</th>
+          <th>Πύλη</th>
+          <th>Συνδεδεμένος σε Κάμερα</th>
+          <th>IP Κάμερας</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>10.0.1.1</td>
+          <td>255.255.255.0</td>
+          <td>10.0.1.1</td>
+          <td>1</td>
+          <td>10.0.1.10</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>10.0.2.1</td>
+          <td>255.255.255.0</td>
+          <td>10.0.2.1</td>
+          <td>2</td>
+          <td>10.0.2.10</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>10.0.3.1</td>
+          <td>255.255.255.0</td>
+          <td>10.0.3.1</td>
+          <td>3</td>
+          <td>10.0.3.10</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>10.0.4.1</td>
+          <td>255.255.255.0</td>
+          <td>10.0.4.1</td>
+          <td>4</td>
+          <td>10.0.4.10</td>
+      </tr>
+  </tbody>
+</table>
+<p>Η πύλη μπορεί να οριστεί και στην κάμερα.</p>
+<h2 id="ορισμός-στατικής-ip-στην-κάμερα">Ορισμός στατικής IP στην κάμερα<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Επαναλάβετε αυτά τα βήματα για οποιεσδήποτε άλλες κάμερες στις οποίες επιθυμείτε να ορίσετε στατική IP. Για πρόσβαση στη διαμόρφωση IP της κάμερας, ανοίξτε την εφαρμογή SpinView και κάντε δεξί κλικ στην κάμερα για την οποία θέλετε να διαμορφώσετε IP.</p>
+<p><a href="#R-image-c73a54675cf2362b7afc37c90c44bcf1" class="lightbox-link"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c73a54675cf2362b7afc37c90c44bcf1"><img alt="SpinView_WPF_v140_7H4ganPjVu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-7h4ganpjvu-png.png"></a></p>
+<h3 id="spinview_"><a href="#R-image-de512f2747e77f41dde77eb0b50696ee" class="lightbox-link"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-de512f2747e77f41dde77eb0b50696ee"><img alt="SpinView_WPF_v140_76YBSasBIN.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-76ybsasbin-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Κάντε δεξί κλικ στην κάμερα στη λίστα Συσκευών και επιλέξτε «GigE Configuration».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «IP Configuration».</p>
+</li>
+</ul>
+<p>Εισαγάγετε την IP και τη μάσκα υποδικτύου σύμφωνα με τον πίνακα προτεινόμενης διαμόρφωσης IP παρακάτω.</p>
+<ul>
+<li>
+<p>Εισαγάγετε τη διεύθυνση IP της κάμερας, χρησιμοποιήστε τη διεύθυνση IP από τον πίνακα, για παράδειγμα για την κάμερα 1.</p>
+</li>
+<li>
+<p>Εισαγάγετε τη μάσκα υποδικτύου, π.χ.: 255.255.255.0.</p>
+</li>
+<li>
+<p>Η προεπιλεγμένη πύλη μπορεί να είναι κενή, ή χρησιμοποιήστε τη διεύθυνση IP του προσαρμογέα δικτύου στον οποίο είναι συνδεδεμένη η κάμερα.</p>
+</li>
+<li>
+<p>Αποεπιλέξτε το DHCP.</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Set Current and Persistent IP Configuration».</p>
+</li>
+</ul>
+<p><a href="#R-image-bc5a430afe168d85b1b7debc2bc95d67" class="lightbox-link"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc5a430afe168d85b1b7debc2bc95d67"><img alt="SpinView_WPF_v140_1R1Lku4KOR.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/spinview-wpf-v140-1r1lku4kor-png.png"></a></p>
+<h3 id="προτεινόμενη-διαμόρφωση-στατικής-ip-για-κάμερες">Προτεινόμενη διαμόρφωση στατικής IP για κάμερες<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Αρ. Κάμερας</th>
+          <th>IP</th>
+          <th>Μάσκα Υποδικτύου</th>
+          <th>Πύλη</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>10.0.1.10</td>
+          <td>255.255.255.0</td>
+          <td>10.0.1.1</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>10.0.2.10</td>
+          <td>255.255.255.0</td>
+          <td>10.0.2.1</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>10.0.3.10</td>
+          <td>255.255.255.0</td>
+          <td>10.0.3.1</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>10.0.4.10</td>
+          <td>255.255.255.0</td>
+          <td>10.0.4.1</td>
+      </tr>
+  </tbody>
+</table>
+<p>Η IP πύλης είναι η διεύθυνση IP του προσαρμογέα δικτύου στον οποίο είναι συνδεδεμένη η κάμερα.</p>
+<p>Για παράδειγμα, η Κάμερα 1 είναι συνδεδεμένη στον προσαρμογέα δικτύου 1.</p>
+<h2 id="χρήση-του-spinview-για-ενεργοποίηση-jumbo-frames-και-βελτιστοποίηση-των-προσαρμογέων-δικτύου-για-τις-κάμερες">Χρήση του SpinView για ενεργοποίηση jumbo frames και βελτιστοποίηση των προσαρμογέων δικτύου για τις κάμερες<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Σημειώστε ότι αυτές οι αλλαγές πρέπει να εφαρμοστούν σε όλους τους προσαρμογείς δικτύου που είναι συνδεδεμένοι στις κάμερές σας.</p>
+<ul>
+<li>
+<p>Από το SpinView, κάντε δεξί κλικ στην κάμερα και επιλέξτε «GigE Configuration».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Configure Adapter Properties».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο Ναι όταν σας ζητηθεί.</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Next».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Auto Fill All».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Next».</p>
+</li>
+<li>
+<p>Επιλέξτε «Enable Media Optimization».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Next».</p>
+</li>
+<li>
+<p>Κάντε κλικ στο «Configure» για να εφαρμόσετε τις αλλαγές.</p>
+</li>
+</ul>
+<h2 id="sharex_"><a href="#R-image-23ddc575f3044d030471797273107727" class="lightbox-link"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-23ddc575f3044d030471797273107727"><img alt="ShareX_ZAAgAqcrm3.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/sharex-zaagaqcrm3-png.png"></a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-43698b3ca5ae723c91600dc283284b22" class="lightbox-link"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43698b3ca5ae723c91600dc283284b22"><img alt="AdapterConfigGUI_v140_xVxa91A72U.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-xvxa91a72u-png.png"></a></p>
+<p><a href="#R-image-7ff77ce6b7675bb0b170d14bd10174f1" class="lightbox-link"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7ff77ce6b7675bb0b170d14bd10174f1"><img alt="AdapterConfigGUI_v140_idoQPFZOXu.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-idoqpfzoxu-png.png"></a></p>
+<p><a href="#R-image-2c19c6619dca0b3d4120d3037947adc7" class="lightbox-link"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2c19c6619dca0b3d4120d3037947adc7"><img alt="AdapterConfigGUI_v140_KyicaeLUQP.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-kyicaeluqp-png.png"></a></p>
+<p><a href="#R-image-1ec76fa56b754da57ecd5294523f5ef2" class="lightbox-link"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ec76fa56b754da57ecd5294523f5ef2"><img alt="AdapterConfigGUI_v140_S3jXxBjR9R.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/12756089238300/adapterconfiggui-v140-s3jxxbjr9r-png.png"></a></p>
+<hr>
+<p><em>Τελευταία ενημέρωση: 2024-02-22</em> | <a href="/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html">Προβολή στον επίσημο ιστότοπο υποστήριξης</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/el/index.html">
+          <span class="logo-title default-animation">Υποστήριξη Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/el/getting-started/index.html"><a class="padding default-animation" href="/sc-support/el/getting-started/index.html">Ξεκινώντας</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/el/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/el/cameras-video/index.html">Κάμερες &amp; Βίντεο</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/el/cameras-video/flir-firmware-upgrade/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-firmware-upgrade/index.html">Αναβάθμιση του firmware της FLIR Blackfly S</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/usb3-troubleshooting/index.html"><a class="padding" href="/sc-support/el/cameras-video/usb3-troubleshooting/index.html">Αντιμετώπιση προβλημάτων κάμερας USB3</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/lens-distortion-correction/index.html"><a class="padding" href="/sc-support/el/cameras-video/lens-distortion-correction/index.html">Αυτόματη Διόρθωση Παραμόρφωσης Φακού στο Swing Catalyst: Βελτιώνοντας την Οπτική σας Εμπειρία</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/improving-image-quality/index.html"><a class="padding" href="/sc-support/el/cameras-video/improving-image-quality/index.html">Βελτίωση ποιότητας εικόνας κάμερας</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/pci-express-slots/index.html"><a class="padding" href="/sc-support/el/cameras-video/pci-express-slots/index.html">Διαφορές μεταξύ υποδοχών PCI / PCI Express</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/minimum-distances/index.html"><a class="padding" href="/sc-support/el/cameras-video/minimum-distances/index.html">Ελάχιστες αποστάσεις κάμερας</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-camera-upgrade-fix/index.html">Η κάμερα FLiR / Point Grey (Blackfly/Chameleon) δεν λειτουργεί πλέον μετά από αναβάθμιση</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/halcon-bluescreen-fix/index.html"><a class="padding" href="/sc-support/el/cameras-video/halcon-bluescreen-fix/index.html">Μπλε οθόνη υπολογιστή κατά τη σύνδεση του dongle άδειας χρήσης USB Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/advanced-camera-settings/index.html"><a class="padding" href="/sc-support/el/cameras-video/advanced-camera-settings/index.html">Οδηγός για τις Προηγμένες Ρυθμίσεις Κάμερας</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/flir-warranty-service/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-warranty-service/index.html">Πληροφορίες εγγύησης και σέρβις για κάμερες FLIR</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/recommended-usb3-components/index.html"><a class="padding" href="/sc-support/el/cameras-video/recommended-usb3-components/index.html">Προτεινόμενα Εξαρτήματα USB 3.0</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/recommended-lighting/index.html"><a class="padding" href="/sc-support/el/cameras-video/recommended-lighting/index.html">Προτεινόμενος φωτισμός για στούντιο και εγκαταστάσεις σε γκαράζ</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/fox-lynx-firmware/index.html"><a class="padding" href="/sc-support/el/cameras-video/fox-lynx-firmware/index.html">Πώς να αναβαθμίσετε ή να υποβαθμίσετε το firmware Fox / Lynx</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/fix-dropped-frames/index.html"><a class="padding" href="/sc-support/el/cameras-video/fix-dropped-frames/index.html">Πώς να διορθώσετε τα «χαμένα πλαίσια» με κάμερες USB 3.0 ή 2.0.</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/avt-manta-install/index.html"><a class="padding" href="/sc-support/el/cameras-video/avt-manta-install/index.html">Πώς να εγκαταστήσετε κάμερες AVT Manta/Prosilica GigE</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/halcon-camera-standards/index.html"><a class="padding" href="/sc-support/el/cameras-video/halcon-camera-standards/index.html">Πώς να μάθετε ποια πρότυπα υποστηρίζουν οι κάμερές σας για χρήση με το Halcon</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/led-light-flicker/index.html"><a class="padding" href="/sc-support/el/cameras-video/led-light-flicker/index.html">Πώς να μετριάσετε το τρεμόπαιγμα φωτισμού LED</a></li>
+            <li class="active " data-nav-id="/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html">Πώς να ορίσετε στατική IP σε κάμερες FLIR Blackfly GigE</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/lynx-static-ip/index.html"><a class="padding" href="/sc-support/el/cameras-video/lynx-static-ip/index.html">Πώς να ορίσετε στατική IP σε κάμερες Lynx GigE</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/basler-gige-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/basler-gige-setup/index.html">Πώς να ρυθμίσετε κάμερες Basler GigE με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/cctv-cameras/index.html"><a class="padding" href="/sc-support/el/cameras-video/cctv-cameras/index.html">Πώς να ρυθμίσετε κάμερες CCTV</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/point-grey-flir-gige/index.html"><a class="padding" href="/sc-support/el/cameras-video/point-grey-flir-gige/index.html">Πώς να ρυθμίσετε κάμερες Point Grey / FLIR GigE (Blackfly) με το SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/avt-manta-configure/index.html"><a class="padding" href="/sc-support/el/cameras-video/avt-manta-configure/index.html">Πώς να ρυθμίσετε κάμερες υψηλής ταχύτητας AVT Manta/Prosilica GigE</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/ids-ueye-highspeed/index.html"><a class="padding" href="/sc-support/el/cameras-video/ids-ueye-highspeed/index.html">Πώς να ρυθμίσετε κάμερες υψηλής ταχύτητας USB iDS uEye</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/ids-ueye-gige/index.html"><a class="padding" href="/sc-support/el/cameras-video/ids-ueye-gige/index.html">Πώς να ρυθμίσετε την κάμερα IDS uEye GigE με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/halcon-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/halcon-setup/index.html">Πώς να ρυθμίσετε το Halcon για το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/ids-ueye-usb/index.html"><a class="padding" href="/sc-support/el/cameras-video/ids-ueye-usb/index.html">Πώς να χρησιμοποιήσετε κάμερες IDS uEye USB με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/point-grey-flir-usb/index.html"><a class="padding" href="/sc-support/el/cameras-video/point-grey-flir-usb/index.html">Πώς να χρησιμοποιήσετε κάμερες Point Grey / FLiR USB με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/web-camera-directshow/index.html"><a class="padding" href="/sc-support/el/cameras-video/web-camera-directshow/index.html">Πώς να χρησιμοποιήσετε μια web κάμερα (ενσωμάτωση DirectShow) με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/dragon-usb2-camera/index.html"><a class="padding" href="/sc-support/el/cameras-video/dragon-usb2-camera/index.html">Πώς να χρησιμοποιήσετε την κάμερα Dragon (120 FPS) USB 2.0 με το Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/hardware-encoding/index.html"><a class="padding" href="/sc-support/el/cameras-video/hardware-encoding/index.html">Πώς να χρησιμοποιήσετε την κωδικοποίηση υλικού του SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/flir-blackfly-gige-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-blackfly-gige-setup/index.html">Ρύθμιση FLIR BlackFly S GigE στο Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/flir-blackfly-usb-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-blackfly-usb-setup/index.html">Ρύθμιση FLIR BlackFly S USB στο Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/ximea-usb3-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/ximea-usb3-setup/index.html">Ρύθμιση καμερών Ximea USB3 Vision με το SwingCatalyst</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/lynx-camera-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/lynx-camera-setup/index.html">Ρύθμιση της κάμερας Swing Catalyst Lynx GigE</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/fox-camera-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/fox-camera-setup/index.html">Ρύθμιση της κάμερας/καμερών Swing Catalyst Fox USB 3.0</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/gige-network-setup/index.html"><a class="padding" href="/sc-support/el/cameras-video/gige-network-setup/index.html">Συστάσεις δικτύου Gigabit Ethernet &amp; κάμερας GigE Vision</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/supported-cameras/index.html"><a class="padding" href="/sc-support/el/cameras-video/supported-cameras/index.html">Υποστηριζόμενες Κάμερες</a></li>
+            <li class="" data-nav-id="/sc-support/el/cameras-video/flir-spinnaker-cameras/index.html"><a class="padding" href="/sc-support/el/cameras-video/flir-spinnaker-cameras/index.html">Χρήση καμερών FLIR Blackfly S (Spinnaker) με το Swing Catalyst</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/el/hardware/index.html"><a class="padding default-animation" href="/sc-support/el/hardware/index.html">Υλικό (Hardware)</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/el/software-features/index.html"><a class="padding default-animation" href="/sc-support/el/software-features/index.html">Λογισμικό &amp; Λειτουργίες</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/el/account-setup/index.html"><a class="padding default-animation" href="/sc-support/el/account-setup/index.html">Λογαριασμός &amp; Προετοιμασία</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/el/reference/index.html"><a class="padding default-animation" href="/sc-support/el/reference/index.html">Αναφορά</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Language</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/cameras-video/flir-blackfly-static-ip/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/cameras-video/flir-blackfly-static-ip/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/cameras-video/flir-blackfly-static-ip/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/cameras-video/flir-blackfly-static-ip/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/cameras-video/flir-blackfly-static-ip/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/cameras-video/flir-blackfly-static-ip/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/cameras-video/flir-blackfly-static-ip/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/cameras-video/flir-blackfly-static-ip/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/cameras-video/flir-blackfly-static-ip/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/cameras-video/flir-blackfly-static-ip/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/cameras-video/flir-blackfly-static-ip/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/cameras-video/flir-blackfly-static-ip/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/cameras-video/flir-blackfly-static-ip/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/cameras-video/flir-blackfly-static-ip/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/cameras-video/flir-blackfly-static-ip/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/cameras-video/flir-blackfly-static-ip/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/cameras-video/flir-blackfly-static-ip/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/cameras-video/flir-blackfly-static-ip/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/cameras-video/flir-blackfly-static-ip/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/cameras-video/flir-blackfly-static-ip/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/cameras-video/flir-blackfly-static-ip/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/cameras-video/flir-blackfly-static-ip/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/cameras-video/flir-blackfly-static-ip/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/cameras-video/flir-blackfly-static-ip/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/cameras-video/flir-blackfly-static-ip/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/cameras-video/flir-blackfly-static-ip/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/cameras-video/flir-blackfly-static-ip/index.html" lang="el" selected data-selected>Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/cameras-video/flir-blackfly-static-ip/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/cameras-video/flir-blackfly-static-ip/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/cameras-video/flir-blackfly-static-ip/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/cameras-video/flir-blackfly-static-ip/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/cameras-video/flir-blackfly-static-ip/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/cameras-video/flir-blackfly-static-ip/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/cameras-video/flir-blackfly-static-ip/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/cameras-video/flir-blackfly-static-ip/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/cameras-video/flir-blackfly-static-ip/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520141" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520141" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

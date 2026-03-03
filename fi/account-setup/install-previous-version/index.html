@@ -1,22 +1,432 @@
-<!doctype html><html id=R-html lang=fi dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Tämä tukiartikkeli kuvaa, kuinka asennetaan Swing Catalystin aiempi versio."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Swing Catalystin aiemman version asentaminen :: Swing Catalyst Tuki"><meta name=twitter:description content="Tämä tukiartikkeli kuvaa, kuinka asennetaan Swing Catalystin aiempi versio."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/fi/account-setup/install-previous-version/index.html"><meta property="og:site_name" content="Swing Catalyst Tuki"><meta property="og:title" content="Swing Catalystin aiemman version asentaminen :: Swing Catalyst Tuki"><meta property="og:description" content="Tämä tukiartikkeli kuvaa, kuinka asennetaan Swing Catalystin aiempi versio."><meta property="og:locale" content="fi"><meta property="og:type" content="article"><meta property="article:section" content="Tili ja asetukset"><meta property="article:tag" content="Database"><meta itemprop=name content="Swing Catalystin aiemman version asentaminen :: Swing Catalyst Tuki"><meta itemprop=description content="Tämä tukiartikkeli kuvaa, kuinka asennetaan Swing Catalystin aiempi versio."><meta itemprop=wordCount content="259"><meta itemprop=keywords content="Database"><title>Swing Catalystin aiemman version asentaminen :: Swing Catalyst Tuki</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/account-setup/install-previous-version/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/account-setup/install-previous-version/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/account-setup/install-previous-version/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/account-setup/install-previous-version/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/account-setup/install-previous-version/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/account-setup/install-previous-version/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/account-setup/install-previous-version/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/account-setup/install-previous-version/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/account-setup/install-previous-version/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/account-setup/install-previous-version/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/account-setup/install-previous-version/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/account-setup/install-previous-version/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/account-setup/install-previous-version/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/account-setup/install-previous-version/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/account-setup/install-previous-version/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/account-setup/install-previous-version/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/account-setup/install-previous-version/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/account-setup/install-previous-version/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/account-setup/install-previous-version/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/account-setup/install-previous-version/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/account-setup/install-previous-version/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/account-setup/install-previous-version/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/account-setup/install-previous-version/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/account-setup/install-previous-version/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/account-setup/install-previous-version/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/account-setup/install-previous-version/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/account-setup/install-previous-version/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/account-setup/install-previous-version/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/account-setup/install-previous-version/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/account-setup/install-previous-version/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/account-setup/install-previous-version/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/account-setup/install-previous-version/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/account-setup/install-previous-version/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/account-setup/install-previous-version/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/account-setup/install-previous-version/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/account-setup/install-previous-version/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/account-setup/install-previous-version/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763282 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763282 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763282 defer></script><script src=/sc-support/js/search.min.js?1771763282 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.fi.js?1771763282"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763282 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763282 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763282 defer></script><script src=/sc-support/js/lunr/lunr.fi.min.js?1771763282 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["fi"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763282 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763282 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763282 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763282 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763282 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/account-setup/install-previous-version/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Kopioi teksti leikepöydälle`,window.T_Copied_to_clipboard=`Teksti kopioitu leikepöydälle!`,window.T_Link_copied_to_clipboard=`Linkki kopioitu leikepöydälle!`,window.T_Reset_view=`Palauta näkymä`,window.T_View_reset=`Näkymä nollattu!`,window.T_No_results_found=`Ei tuloksia haulle "{0}"`,window.T_N_results_found=`{1} tulosta löytyi haulle "{0}"`,window.T_Browser_unsupported_feature=`Tämä selain ei tue tätä ominaisuutta`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/fi/account-setup/install-previous-version/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Valikko (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Sisältö (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#how-to-uninstall-swing-catalyst>How to uninstall Swing Catalyst</a></li><li><a href=#installing-a-previous-version>Installing a previous version</a></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/fi/index.html><span itemprop=name>Swing Catalyst -tuki</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/fi/account-setup/index.html><span itemprop=name>Tili ja asetukset</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Swing Catalystin aiemman version asentaminen</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/fi/account-setup/copy-database/index.html title="Swing Catalyst -tietokannan kopiointi tietokoneelta toiselle. (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/fi/account-setup/copy-database-legacy/index.html title="Tietokannan kopioiminen Swing Catalyst 6.1:lle ja vanhemmille versioille (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Lisää><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable account-setup" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Tunnisteet style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/fi/tags/database/index.html>Database</a></li></ul></div></header><h1 id=swing-catalystin-aiemman-version-asentaminen>Swing Catalystin aiemman version asentaminen</h1><h1 id=kuinka-palata-vanhempaan-ohjelmistoversion>Kuinka palata vanhempaan ohjelmistoversion<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1><p>Tämä tukiartikkeli kuvaa, kuinka asennetaan Swing Catalystin aiempi versio.</p><p>Jos olet betatestikäyttäjä ja haluat asentaa aiemman vakaan version:</p><ul><li>Poista merkintä kohdasta &ldquo;salli beetaversiot&rdquo; <em>sen jälkeen</em>, kun olet asentanut aiemman version.</li></ul><p>When rolling back to an older software version, Swing Catalyst will automatically attempt to find and load a matching database version.  With every major release, e.g. 9.8 -> 10.0, 10.0 -> 10.1 there is a change in the database version. This means any recordings made with the newer version won&rsquo;t be available in the old version. If you have important recordings you wish to save or make a back up of we strongly recommend <a href=/sc-support/fi/software-features/export-recordings/index.html>exporting</a> these before rolling back the software.</p><p>Therefor it&rsquo;s important to take this into consideration when wanting to roll back the software version.</p><h2 id=how-to-uninstall-swing-catalyst>How to uninstall Swing Catalyst<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><ul><li><p>Go to Windows Settings. Right click on the Windows icon on the Task bar  <a href=#R-image-d798981f6d80f48fa3119506263787ba class=lightbox-link><img alt=Ulj1McRoGF.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/ulj1mcrogf-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d798981f6d80f48fa3119506263787ba><img alt=Ulj1McRoGF.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/ulj1mcrogf-png.png></a>  , and select Settings</p></li><li><p>In Settings, click on Apps, then scroll down to you see Swing Catalyst, or type Swing in the search bar.</p></li><li><p>Click on Swing Catalyst then click Uninstall.</p></li><li><p>Click Yes and follow the on screen instructions.</p></li></ul><p>1.<a href=#R-image-f6b46eac9d3c187db8116de4d7d35b0c class=lightbox-link><img alt=lpp53Aro3Q.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/lpp53aro3q-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-f6b46eac9d3c187db8116de4d7d35b0c><img alt=lpp53Aro3Q.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/lpp53aro3q-png.png></a></p><p>2.<a href=#R-image-f565b08bdd199615714cf9db8b9fb22a class=lightbox-link><img alt=ApplicationFrameHost_umBvJ8ReyA.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/applicationframehost-umbvj8reya-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-f565b08bdd199615714cf9db8b9fb22a><img alt=ApplicationFrameHost_umBvJ8ReyA.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/applicationframehost-umbvj8reya-png.png></a></p><ol start=3><li></li></ol><p><a href=#R-image-9cecb54972e413b3b882ed7940dbc44a class=lightbox-link><img alt=ApplicationFrameHost_P78vQQfYq2.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/applicationframehost-p78vqqfyq2-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-9cecb54972e413b3b882ed7940dbc44a><img alt=ApplicationFrameHost_P78vQQfYq2.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/applicationframehost-p78vqqfyq2-png.png></a></p><ol start=4><li></li></ol><p><a href=#R-image-c5261d1d831179eafc121084065d8d36 class=lightbox-link><img alt=ApplicationFrameHost_FmQajPKDql.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/applicationframehost-fmqajpkdql-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-c5261d1d831179eafc121084065d8d36><img alt=ApplicationFrameHost_FmQajPKDql.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/applicationframehost-fmqajpkdql-png.png></a></p><p><a href=#R-image-d4de96a3f535c4139a6ea3aab5f531f7 class=lightbox-link><img alt=SwingCatalyst_HmdeNMsEnO.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-hmdenmseno-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d4de96a3f535c4139a6ea3aab5f531f7><img alt=SwingCatalyst_HmdeNMsEnO.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-hmdenmseno-png.png></a></p><h2 id=installing-a-previous-version>Installing a previous version<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p>Older versions of Swing Catalyst can be found in our software archive.</p><p><a href=https://www.swingcatalyst.com/downloads/archives rel=external>https://www.swingcatalyst.com/downloads/archives</a> (scroll down from the download section):</p><p><a href=#R-image-a80fa9ef9109f35ddb07870e1c67b7f1 class=lightbox-link><img alt=chrome_2022-02-14_11-34-28.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/chrome-2022-02-14-11-34-28-png.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-a80fa9ef9109f35ddb07870e1c67b7f1><img alt=chrome_2022-02-14_11-34-28.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/chrome-2022-02-14-11-34-28-png.png></a></p><ul><li><p>Click on the version you wish to install to download the installer file.</p></li><li><p>Files you download are usually put in the Downloads folder</p></li><li><p>Double click the version you wish to install and follow the onscreen instructions.</p></li></ul><p><a href=#R-image-5c47d8ac1453300b8fb1fd7b16dffff3 class=lightbox-link><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-14.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-5c47d8ac1453300b8fb1fd7b16dffff3><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-14.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png></a><a href=#R-image-d04d1d91e848682d2d4ddb7bcda265a8 class=lightbox-link><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-09.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-d04d1d91e848682d2d4ddb7bcda265a8><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-09.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png></a><a href=#R-image-cabeff7fae7cc7efe3e00228a8281fb5 class=lightbox-link><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-04.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-cabeff7fae7cc7efe3e00228a8281fb5><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-04.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png></a><a href=#R-image-642b8b9d23aba7dc27f5bf6b3e2e7e92 class=lightbox-link><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-55-58.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-642b8b9d23aba7dc27f5bf6b3e2e7e92><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-55-58.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png></a></p><p><a href=#R-image-2378ae3a0e1f7cee07275f146377ce03 class=lightbox-link><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-51.png class="lazy lightbox figure-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png style=height:auto;width:auto></a>
-<a href=javascript:history.back(); class=lightbox-back id=R-image-2378ae3a0e1f7cee07275f146377ce03><img alt=SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-51.png class="lazy lightbox lightbox-image" loading=lazy src=../../assets/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png></a></p><hr><p><em>Last updated: 2023-12-15</em> | <a href=/sc-support/fi/account-setup/install-previous-version/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/fi/index.html><span class="logo-title default-animation">Swing Catalyst Tuki</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Etsi (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Etsi</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Etsi...>
-<button class=search-clear type=button data-search-clear title="Tyhjennä haku"><i class="fas fa-fw fa-times" title="Tyhjennä haku"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/fi/getting-started/index.html><a class="padding default-animation" href=/sc-support/fi/getting-started/index.html>Aloittaminen</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fi/cameras-video/index.html><a class="padding default-animation" href=/sc-support/fi/cameras-video/index.html>Kamerat ja video</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fi/hardware/index.html><a class="padding default-animation" href=/sc-support/fi/hardware/index.html>Laitteisto</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/fi/software-features/index.html><a class="padding default-animation" href=/sc-support/fi/software-features/index.html>Ohjelmisto ja ominaisuudet</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/fi/account-setup/index.html><a class="padding default-animation" href=/sc-support/fi/account-setup/index.html>Tili ja asetukset</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu><li data-nav-id=/sc-support/fi/account-setup/beta-versions/index.html><a class=padding href=/sc-support/fi/account-setup/beta-versions/index.html>Beetaversioiden ottaminen käyttöön tai poistaminen käytöstä</a></li><li data-nav-id=/sc-support/fi/account-setup/optimize-laptop/index.html><a class=padding href=/sc-support/fi/account-setup/optimize-laptop/index.html>Kannettavan tietokoneen suorituskyvyn optimointi</a></li><li data-nav-id=/sc-support/fi/account-setup/manage-subscriptions/index.html><a class=padding href=/sc-support/fi/account-setup/manage-subscriptions/index.html>Kuinka hallita tilauksiasi ja tilauksiasi</a></li><li data-nav-id=/sc-support/fi/account-setup/collect-logs/index.html><a class=padding href=/sc-support/fi/account-setup/collect-logs/index.html>Kuinka kerätä lokitiedostot tukea varten</a></li><li data-nav-id=/sc-support/fi/account-setup/cancel-subscription/index.html><a class=padding href=/sc-support/fi/account-setup/cancel-subscription/index.html>Kuinka peruuttaa Swing Catalyst -tilauksesi</a></li><li data-nav-id=/sc-support/fi/account-setup/move-database/index.html><a class=padding href=/sc-support/fi/account-setup/move-database/index.html>Kuinka siirtää tietokanta uudelle osiolle tai kovalle levylle</a></li><li data-nav-id=/sc-support/fi/account-setup/send-logs/index.html><a class=padding href=/sc-support/fi/account-setup/send-logs/index.html>Lokitiedostojen lähettäminen tukeen</a></li><li data-nav-id=/sc-support/fi/account-setup/check-graphics-card/index.html><a class=padding href=/sc-support/fi/account-setup/check-graphics-card/index.html>Mikä näytönohjain minulla on?</a></li><li data-nav-id=/sc-support/fi/account-setup/create-shortcut/index.html><a class=padding href=/sc-support/fi/account-setup/create-shortcut/index.html>Motion Catalyst -pikanäppäimen luominen</a></li><li data-nav-id=/sc-support/fi/account-setup/copy-settings/index.html><a class=padding href=/sc-support/fi/account-setup/copy-settings/index.html>Swing Catalyst -asetuksien kopiointi uudelle tietokoneelle tai kovalevy</a></li><li data-nav-id=/sc-support/fi/account-setup/backup-full-copy/index.html><a class=padding href=/sc-support/fi/account-setup/backup-full-copy/index.html>Swing Catalyst -kopion tekeminen uudelle tietokoneelle tai kiintolevylle</a></li><li data-nav-id=/sc-support/fi/account-setup/cancel-subscription-paypal/index.html><a class=padding href=/sc-support/fi/account-setup/cancel-subscription-paypal/index.html>Swing Catalyst -ohjelmistopakettitilauksen peruuttaminen (PayPal)</a></li><li data-nav-id=/sc-support/fi/account-setup/run-on-mac/index.html><a class=padding href=/sc-support/fi/account-setup/run-on-mac/index.html>Swing Catalyst -sovelluksen käyttäminen Apple Macissa</a></li><li data-nav-id=/sc-support/fi/account-setup/automatic-backups/index.html><a class=padding href=/sc-support/fi/account-setup/automatic-backups/index.html>Swing Catalyst -tietokannan automaattisten varmuuskopioiden määrittäminen</a></li><li data-nav-id=/sc-support/fi/account-setup/backup-database/index.html><a class=padding href=/sc-support/fi/account-setup/backup-database/index.html>Swing Catalyst -tietokannan ja heilautusten varmuuskopiointi</a></li><li data-nav-id=/sc-support/fi/account-setup/copy-database/index.html><a class=padding href=/sc-support/fi/account-setup/copy-database/index.html>Swing Catalyst -tietokannan kopiointi tietokoneelta toiselle.</a></li><li class=active data-nav-id=/sc-support/fi/account-setup/install-previous-version/index.html><a class=padding href=/sc-support/fi/account-setup/install-previous-version/index.html>Swing Catalystin aiemman version asentaminen</a></li><li data-nav-id=/sc-support/fi/account-setup/copy-database-legacy/index.html><a class=padding href=/sc-support/fi/account-setup/copy-database-legacy/index.html>Tietokannan kopioiminen Swing Catalyst 6.1:lle ja vanhemmille versioille</a></li><li data-nav-id=/sc-support/fi/account-setup/find-computer-specs/index.html><a class=padding href=/sc-support/fi/account-setup/find-computer-specs/index.html>Tietokoneen tekniset tiedot löytäminen</a></li><li data-nav-id=/sc-support/fi/account-setup/change-subscription-type/index.html><a class=padding href=/sc-support/fi/account-setup/change-subscription-type/index.html>Tilaustypin vaihtaminen</a></li><li data-nav-id=/sc-support/fi/account-setup/install-error-fix/index.html><a class=padding href=/sc-support/fi/account-setup/install-error-fix/index.html>Virhe Swing Catalyst -ohjelmiston asennuksessa</a></li></ul></li><li data-nav-id=/sc-support/fi/reference/index.html><a class="padding default-animation" href=/sc-support/fi/reference/index.html>Viittaus</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Kieli</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/account-setup/install-previous-version/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/account-setup/install-previous-version/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/account-setup/install-previous-version/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/account-setup/install-previous-version/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/account-setup/install-previous-version/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/account-setup/install-previous-version/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/account-setup/install-previous-version/index.html lang=ru>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/account-setup/install-previous-version/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/account-setup/install-previous-version/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/account-setup/install-previous-version/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/account-setup/install-previous-version/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/account-setup/install-previous-version/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/account-setup/install-previous-version/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/account-setup/install-previous-version/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/account-setup/install-previous-version/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/account-setup/install-previous-version/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/account-setup/install-previous-version/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/account-setup/install-previous-version/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/account-setup/install-previous-version/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/account-setup/install-previous-version/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/account-setup/install-previous-version/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/account-setup/install-previous-version/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/account-setup/install-previous-version/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/account-setup/install-previous-version/index.html lang=fi selected data-selected>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/account-setup/install-previous-version/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/account-setup/install-previous-version/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/account-setup/install-previous-version/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/account-setup/install-previous-version/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/account-setup/install-previous-version/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/account-setup/install-previous-version/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/account-setup/install-previous-version/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/account-setup/install-previous-version/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/account-setup/install-previous-version/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/account-setup/install-previous-version/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/account-setup/install-previous-version/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/account-setup/install-previous-version/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Teema</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763282 defer></script><script src=/sc-support/js/theme.min.js?1771763282 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="fi" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Tässä tukiartikkelissa kuvataan, kuinka SwingCatalystin aiempi versio asennetaan.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kuinka asentaa SwingCatalystin aiempi versio :: Swing Catalyst Tuki">
+    <meta name="twitter:description" content="Tässä tukiartikkelissa kuvataan, kuinka SwingCatalystin aiempi versio asennetaan.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/fi/account-setup/install-previous-version/index.html">
+    <meta property="og:site_name" content="Swing Catalyst Tuki">
+    <meta property="og:title" content="Kuinka asentaa SwingCatalystin aiempi versio :: Swing Catalyst Tuki">
+    <meta property="og:description" content="Tässä tukiartikkelissa kuvataan, kuinka SwingCatalystin aiempi versio asennetaan.">
+    <meta property="og:locale" content="fi">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Tili & Asento">
+    <meta property="article:tag" content="Database">
+    <meta itemprop="name" content="Kuinka asentaa SwingCatalystin aiempi versio :: Swing Catalyst Tuki">
+    <meta itemprop="description" content="Tässä tukiartikkelissa kuvataan, kuinka SwingCatalystin aiempi versio asennetaan.">
+    <meta itemprop="wordCount" content="178">
+    <meta itemprop="keywords" content="Database">
+    <title>Kuinka asentaa SwingCatalystin aiempi versio :: Swing Catalyst Tuki</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/account-setup/install-previous-version/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/account-setup/install-previous-version/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/account-setup/install-previous-version/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/account-setup/install-previous-version/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/account-setup/install-previous-version/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/account-setup/install-previous-version/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/account-setup/install-previous-version/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/account-setup/install-previous-version/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/account-setup/install-previous-version/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/account-setup/install-previous-version/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/account-setup/install-previous-version/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/account-setup/install-previous-version/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/account-setup/install-previous-version/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/account-setup/install-previous-version/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/account-setup/install-previous-version/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/account-setup/install-previous-version/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/account-setup/install-previous-version/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/account-setup/install-previous-version/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/account-setup/install-previous-version/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/account-setup/install-previous-version/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/account-setup/install-previous-version/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/account-setup/install-previous-version/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/account-setup/install-previous-version/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/account-setup/install-previous-version/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/account-setup/install-previous-version/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/account-setup/install-previous-version/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/account-setup/install-previous-version/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/account-setup/install-previous-version/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/account-setup/install-previous-version/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/account-setup/install-previous-version/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/account-setup/install-previous-version/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/account-setup/install-previous-version/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/account-setup/install-previous-version/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/account-setup/install-previous-version/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/account-setup/install-previous-version/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/account-setup/install-previous-version/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/account-setup/install-previous-version/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520133" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520133" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.fi.js?1772520133";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/lunr/lunr.fi.min.js?1772520133" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fi'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520133" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520133" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520133" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520133" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520133" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/account-setup\/install-previous-version\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Kopioi teksti leikepöydälle`;
+      window.T_Copied_to_clipboard = `Teksti kopioitu leikepöydälle!`;
+      window.T_Link_copied_to_clipboard = `Linkki kopioitu leikepöydälle!`;
+      window.T_Reset_view = `Palauta näkymä`;
+      window.T_View_reset = `Näkymä nollattu!`;
+      window.T_No_results_found = `Ei tuloksia haulle "{0}"`;
+      window.T_N_results_found = `{1} tulosta löytyi haulle "{0}"`;
+      window.T_Browser_unsupported_feature = `Tämä selain ei tue tätä ominaisuutta`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/fi/account-setup/install-previous-version/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Valikko (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Sisältö (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#kuinka-swingcatalyst-poistetaan">Kuinka SwingCatalyst poistetaan</a></li>
+    <li><a href="#aiemman-version-asentaminen">Aiemman version asentaminen</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fi/index.html"><span itemprop="name">Swing Catalyst -tuki</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/fi/account-setup/index.html"><span itemprop="name">Tili &amp; Asento</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kuinka asentaa SwingCatalystin aiempi versio</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/fi/account-setup/index.html" title="Tili & Asento (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/fi/account-setup/collect-logs/index.html" title="Kuinka kerätä lokitiedostoja tukea varten (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Lisää"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable account-setup" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tunnisteet" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/fi/tags/database/index.html">Database</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="kuinka-asentaa-swingcatalystin-aiempi-versio">Kuinka asentaa SwingCatalystin aiempi versio</h1>
+
+<h1 id="kuinka-palata-vanhempaan-ohjelmistoversioon">Kuinka palata vanhempaan ohjelmistoversioon<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>Tässä tukiartikkelissa kuvataan, kuinka SwingCatalystin aiempi versio asennetaan.</p>
+<p>Jos olet beta-käyttäjä ja haluat asentaa edellisen vakaan version:</p>
+<ul>
+<li>Poista valinta kohdasta &ldquo;allow beta versions&rdquo; <em>sen jälkeen</em>, kun olet asentanut edellisen version.</li>
+</ul>
+<p>Kun palaat vanhempaan ohjelmistoversioon, SwingCatalyst yrittää automaattisesti löytää ja ladata vastaavan tietokantaversion. Jokaisen suuren julkaisun yhteydessä, esim. 9.8 -&gt; 10.0, 10.0 -&gt; 10.1, tietokantaversio muuttuu. Tämä tarkoittaa, että uudemmalla versiolla tehdyt nauhoitukset eivät ole saatavilla vanhassa versiossa. Jos sinulla on tärkeitä nauhoituksia, jotka haluat tallentaa tai varmuuskopioida, suosittelemme vahvasti <a href="/sc-support/fi/software-features/export-recordings/index.html">viemään</a> ne ennen ohjelmiston palauttamista.</p>
+<p>Siksi on tärkeää ottaa tämä huomioon, kun harkitset ohjelmistoversion palauttamista.</p>
+<h2 id="kuinka-swingcatalyst-poistetaan">Kuinka SwingCatalyst poistetaan<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li>
+<p>Siirry Windowsin asetuksiin. Napsauta hiiren kakkospainikkeella tehtäväpalkin Windows-kuvaketta <a href="#R-image-e25ed4d95c256fbf0068185ea6f44cc9" class="lightbox-link"><img alt="Ulj1McRoGF.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/ulj1mcrogf-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e25ed4d95c256fbf0068185ea6f44cc9"><img alt="Ulj1McRoGF.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/ulj1mcrogf-png.png"></a> ja valitse Asetukset.</p>
+</li>
+<li>
+<p>Valitse Asetuksissa Sovellukset ja selaa alaspäin, kunnes näet SwingCatalystin, tai kirjoita hakupalkkiin Swing.</p>
+</li>
+<li>
+<p>Napsauta SwingCatalyst ja sitten Poista asennus.</p>
+</li>
+<li>
+<p>Napsauta Kyllä ja seuraa näyttöön tulevia ohjeita.</p>
+</li>
+</ul>
+<p>1.<a href="#R-image-3814482166f0306ea678189e851ca3af" class="lightbox-link"><img alt="lpp53Aro3Q.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/lpp53aro3q-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3814482166f0306ea678189e851ca3af"><img alt="lpp53Aro3Q.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/lpp53aro3q-png.png"></a></p>
+<p>2.<a href="#R-image-72a7f98e5d1bc7aee5f948dd01f3349f" class="lightbox-link"><img alt="ApplicationFrameHost_umBvJ8ReyA.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/applicationframehost-umbvj8reya-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-72a7f98e5d1bc7aee5f948dd01f3349f"><img alt="ApplicationFrameHost_umBvJ8ReyA.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/applicationframehost-umbvj8reya-png.png"></a></p>
+<ol start="3">
+<li></li>
+</ol>
+<p><a href="#R-image-43f7019c1034d64404c8a72788ae1c51" class="lightbox-link"><img alt="ApplicationFrameHost_P78vQQfYq2.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/applicationframehost-p78vqqfyq2-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43f7019c1034d64404c8a72788ae1c51"><img alt="ApplicationFrameHost_P78vQQfYq2.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/applicationframehost-p78vqqfyq2-png.png"></a></p>
+<ol start="4">
+<li></li>
+</ol>
+<p><a href="#R-image-da28081b994c0f8ddc5e16e08829302c" class="lightbox-link"><img alt="ApplicationFrameHost_FmQajPKDql.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/applicationframehost-fmqajpkdql-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-da28081b994c0f8ddc5e16e08829302c"><img alt="ApplicationFrameHost_FmQajPKDql.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/applicationframehost-fmqajpkdql-png.png"></a></p>
+<p><a href="#R-image-4d9abffb879826ef7862108b3f2a34dc" class="lightbox-link"><img alt="SwingCatalyst_HmdeNMsEnO.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-hmdenmseno-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4d9abffb879826ef7862108b3f2a34dc"><img alt="SwingCatalyst_HmdeNMsEnO.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-hmdenmseno-png.png"></a></p>
+<h2 id="aiemman-version-asentaminen">Aiemman version asentaminen<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Kopioi linkki leikepöydälle"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Vanhemmat SwingCatalyst-versiot löytyvät ohjelmistoarkistostamme.</p>
+<p><a href="https://www.swingcatalyst.com/downloads/archives" rel="external">https://www.swingcatalyst.com/downloads/archives</a> (selaa alaspäin latausosiosta):</p>
+<p><a href="#R-image-3cd862c12ca5a053057605e135c6c8c9" class="lightbox-link"><img alt="chrome_2022-02-14_11-34-28.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/chrome-2022-02-14-11-34-28-png.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3cd862c12ca5a053057605e135c6c8c9"><img alt="chrome_2022-02-14_11-34-28.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/chrome-2022-02-14-11-34-28-png.png"></a></p>
+<ul>
+<li>
+<p>Napsauta versiota, jonka haluat asentaa, ladataksesi asennustiedoston.</p>
+</li>
+<li>
+<p>Lataamasi tiedostot sijoitetaan yleensä Lataukset-kansioon.</p>
+</li>
+<li>
+<p>Kaksoisnapsauta asennettavaa versiota ja seuraa näyttöön tulevia ohjeita.</p>
+</li>
+</ul>
+<p><a href="#R-image-b4b9762cf96bcf2238ba7fc8bc05352e" class="lightbox-link"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-14.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4b9762cf96bcf2238ba7fc8bc05352e"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-14.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png"></a><a href="#R-image-f4fb8c33b5108809515100e0ce93cb97" class="lightbox-link"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-09.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4fb8c33b5108809515100e0ce93cb97"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-09.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png"></a><a href="#R-image-5008f54fcad86727a50e226e8878b449" class="lightbox-link"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-04.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5008f54fcad86727a50e226e8878b449"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-04.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png"></a><a href="#R-image-14314a43d104e71663cb33cec0564ff6" class="lightbox-link"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-55-58.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-14314a43d104e71663cb33cec0564ff6"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-55-58.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png"></a></p>
+<p><a href="#R-image-9b44ee06d399d77c1ce2132e01bb30e8" class="lightbox-link"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-51.png" class="lazy lightbox figure-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9b44ee06d399d77c1ce2132e01bb30e8"><img alt="SwingCatalyst-9.1.2.14109-stable-9.1_2019-09-03_15-56-51.png" class="lazy lightbox lightbox-image" loading="lazy" src="https://oysteinkrog.github.io/sc-support/images/360008970779/swingcatalyst-9-1-2-14109-stable-9-1-201.png"></a></p>
+<hr>
+<p><em>Viimeksi päivitetty: 2023-12-15</em> | <a href="/sc-support/fi/account-setup/install-previous-version/index.html">Näytä virallisella tukisivustolla</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/fi/index.html">
+          <span class="logo-title default-animation">Swing Catalyst Tuki</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Etsi (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Etsi</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Etsi...">
+            <button class="search-clear" type="button" data-search-clear="" title="Tyhjennä haku"><i class="fas fa-fw fa-times" title="Tyhjennä haku"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/fi/getting-started/index.html"><a class="padding default-animation" href="/sc-support/fi/getting-started/index.html">Aloitusopas</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/fi/cameras-video/index.html">Kamerat ja video</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/hardware/index.html"><a class="padding default-animation" href="/sc-support/fi/hardware/index.html">Laitteisto</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/software-features/index.html"><a class="padding default-animation" href="/sc-support/fi/software-features/index.html">Ohjelmisto &amp; Ominaisuudet</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/fi/account-setup/index.html"><a class="padding default-animation" href="/sc-support/fi/account-setup/index.html">Tili &amp; Asento</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu">
+            <li class="active " data-nav-id="/sc-support/fi/account-setup/install-previous-version/index.html"><a class="padding" href="/sc-support/fi/account-setup/install-previous-version/index.html">Kuinka asentaa SwingCatalystin aiempi versio</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/collect-logs/index.html"><a class="padding" href="/sc-support/fi/account-setup/collect-logs/index.html">Kuinka kerätä lokitiedostoja tukea varten</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/copy-database/index.html"><a class="padding" href="/sc-support/fi/account-setup/copy-database/index.html">Kuinka kopioida Swing Catalyst -tietokanta tietokoneelta toiselle.</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/copy-database-legacy/index.html"><a class="padding" href="/sc-support/fi/account-setup/copy-database-legacy/index.html">Kuinka kopioida tietokanta Swing Catalyst 6.1:lle ja vanhemmille versioille</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/automatic-backups/index.html"><a class="padding" href="/sc-support/fi/account-setup/automatic-backups/index.html">Kuinka määrittää automaattiset varmuuskopiot Swing Catalyst -tietokannastasi</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/optimize-laptop/index.html"><a class="padding" href="/sc-support/fi/account-setup/optimize-laptop/index.html">Kuinka optimoida kannettavan tietokoneen suorituskyky</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/beta-versions/index.html"><a class="padding" href="/sc-support/fi/account-setup/beta-versions/index.html">Kuinka ottaa käyttöön tai poistaa käytöstä beta-versiot</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/cancel-subscription/index.html"><a class="padding" href="/sc-support/fi/account-setup/cancel-subscription/index.html">Kuinka peruuttaa Swing Catalyst -tilauksesi</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/backup-full-copy/index.html"><a class="padding" href="/sc-support/fi/account-setup/backup-full-copy/index.html">Kuinka tehdä kopio Swing Catalystista uudelle tietokoneelle tai kiintolevylle</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/backup-database/index.html"><a class="padding" href="/sc-support/fi/account-setup/backup-database/index.html">Kuinka varmuuskopioida Swing Catalyst -tietokanta ja lyönnit</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/send-logs/index.html"><a class="padding" href="/sc-support/fi/account-setup/send-logs/index.html">Lokitiedostojen lähettäminen tukitiimille</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/check-graphics-card/index.html"><a class="padding" href="/sc-support/fi/account-setup/check-graphics-card/index.html">Mikä näytönohjain minulla on?</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/create-shortcut/index.html"><a class="padding" href="/sc-support/fi/account-setup/create-shortcut/index.html">Motion Catalyst -pikakuvakkeen luominen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/cancel-subscription-paypal/index.html"><a class="padding" href="/sc-support/fi/account-setup/cancel-subscription-paypal/index.html">Ohjelmistotilauksen peruuttaminen (PayPal)</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/copy-settings/index.html"><a class="padding" href="/sc-support/fi/account-setup/copy-settings/index.html">Swing Catalyst -asetusten kopioiminen uudelle tietokoneelle tai kiintolevylle</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/run-on-mac/index.html"><a class="padding" href="/sc-support/fi/account-setup/run-on-mac/index.html">Swing Catalystin käyttäminen Apple Macilla</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/move-database/index.html"><a class="padding" href="/sc-support/fi/account-setup/move-database/index.html">Tietokannan siirtäminen uudelle osiolla tai kiintolevylle</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/find-computer-specs/index.html"><a class="padding" href="/sc-support/fi/account-setup/find-computer-specs/index.html">Tietokoneen teknisten tietojen löytäminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/change-subscription-type/index.html"><a class="padding" href="/sc-support/fi/account-setup/change-subscription-type/index.html">Tilauksen tyypin vaihtaminen</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/manage-subscriptions/index.html"><a class="padding" href="/sc-support/fi/account-setup/manage-subscriptions/index.html">Tilausten ja tilaushistorian hallinta</a></li>
+            <li class="" data-nav-id="/sc-support/fi/account-setup/install-error-fix/index.html"><a class="padding" href="/sc-support/fi/account-setup/install-error-fix/index.html">Virhe Swing Catalystin asennuksessa</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/fi/reference/index.html"><a class="padding default-animation" href="/sc-support/fi/reference/index.html">Viite</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Kieli</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/account-setup/install-previous-version/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/account-setup/install-previous-version/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/account-setup/install-previous-version/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/account-setup/install-previous-version/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/account-setup/install-previous-version/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/account-setup/install-previous-version/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/account-setup/install-previous-version/index.html" lang="ru">Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/account-setup/install-previous-version/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/account-setup/install-previous-version/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/account-setup/install-previous-version/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/account-setup/install-previous-version/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/account-setup/install-previous-version/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/account-setup/install-previous-version/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/account-setup/install-previous-version/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/account-setup/install-previous-version/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/account-setup/install-previous-version/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/account-setup/install-previous-version/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/account-setup/install-previous-version/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/account-setup/install-previous-version/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/account-setup/install-previous-version/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/account-setup/install-previous-version/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/account-setup/install-previous-version/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/account-setup/install-previous-version/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/account-setup/install-previous-version/index.html" lang="fi" selected data-selected>Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/account-setup/install-previous-version/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/account-setup/install-previous-version/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/account-setup/install-previous-version/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/account-setup/install-previous-version/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/account-setup/install-previous-version/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/account-setup/install-previous-version/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/account-setup/install-previous-version/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/account-setup/install-previous-version/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/account-setup/install-previous-version/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/account-setup/install-previous-version/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/account-setup/install-previous-version/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/account-setup/install-previous-version/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Teema</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520133" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520133" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

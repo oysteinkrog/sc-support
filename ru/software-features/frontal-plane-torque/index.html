@@ -1,60 +1,713 @@
-<!doctype html><html id=R-html lang=ru dir=ltr itemscope itemtype=http://schema.org/Article data-r-output-format=html><head><meta charset=utf-8><meta name=viewport content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1"><meta name=generator content="Hugo 0.145.0"><meta name=generator content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e"><meta name=description content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело генерирует вокруг оси фронтальной плоскости во время размаха в гольфе. Думайте об этом как об измерении того, как..."><meta name=author content><meta name=twitter:card content="summary"><meta name=twitter:title content="Анализ крутящего момента во фронтальной плоскости - Руководство пользователя :: Поддержка Swing Catalyst"><meta name=twitter:description content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело генерирует вокруг оси фронтальной плоскости во время размаха в гольфе. Думайте об этом как об измерении того, как..."><meta property="og:url" content="https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html"><meta property="og:site_name" content="Поддержка Swing Catalyst"><meta property="og:title" content="Анализ крутящего момента во фронтальной плоскости - Руководство пользователя :: Поддержка Swing Catalyst"><meta property="og:description" content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело генерирует вокруг оси фронтальной плоскости во время размаха в гольфе. Думайте об этом как об измерении того, как..."><meta property="og:locale" content="ru"><meta property="og:type" content="article"><meta property="article:section" content="Программное обеспечение и функции"><meta property="article:tag" content="Troubleshooting"><meta property="article:tag" content="Pressure-Data"><meta property="article:tag" content="Force-Data"><meta property="article:tag" content="Motion-Capture"><meta itemprop=name content="Анализ крутящего момента во фронтальной плоскости - Руководство пользователя :: Поддержка Swing Catalyst"><meta itemprop=description content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело генерирует вокруг оси фронтальной плоскости во время размаха в гольфе. Думайте об этом как об измерении того, как..."><meta itemprop=wordCount content="1085"><meta itemprop=keywords content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture"><title>Анализ крутящего момента во фронтальной плоскости - Руководство пользователя :: Поддержка Swing Catalyst</title>
-<link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=x-default><link href=https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html rel=alternate hreflang=en><link href=https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html rel=alternate hreflang=es><link href=https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html rel=alternate hreflang=de><link href=https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fr><link href=https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html rel=alternate hreflang=it><link href=https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pt><link href=https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ru><link href=https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ja><link href=https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ko><link href=https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh><link href=https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hi><link href=https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ar><link href=https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html rel=alternate hreflang=zh-Hant><link href=https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html rel=alternate hreflang=th><link href=https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sv><link href=https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nb><link href=https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html rel=alternate hreflang=da><link href=https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html rel=alternate hreflang=is><link href=https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html rel=alternate hreflang=id><link href=https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=vi><link href=https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=nl><link href=https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=tr><link href=https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html rel=alternate hreflang=pl><link href=https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html rel=alternate hreflang=fi><link href=https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=uk><link href=https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html rel=alternate hreflang=ro><link href=https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html rel=alternate hreflang=el><link href=https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html rel=alternate hreflang=cs><link href=https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hu><link href=https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html rel=alternate hreflang=bg><link href=https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=hr><link href=https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sr><link href=https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html rel=alternate hreflang=sk><link href=https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lt><link href=https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html rel=alternate hreflang=lv><link href=https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html rel=alternate hreflang=et><link href=/sc-support/css/auto-complete/auto-complete.min.css?1771763268 rel=stylesheet><script src=/sc-support/js/auto-complete/auto-complete.min.js?1771763268 defer></script><script src=/sc-support/js/search-lunr.min.js?1771763268 defer></script><script src=/sc-support/js/search.min.js?1771763268 defer></script><script>window.relearn=window.relearn||{},window.relearn.index_js_url="/sc-support/searchindex.ru.js?1771763268"</script><script src=/sc-support/js/lunr/lunr.min.js?1771763268 defer></script><script src=/sc-support/js/lunr/lunr.stemmer.support.min.js?1771763268 defer></script><script src=/sc-support/js/lunr/lunr.multi.min.js?1771763268 defer></script><script src=/sc-support/js/lunr/lunr.ru.min.js?1771763268 defer></script><script>window.relearn=window.relearn||{},window.relearn.contentLangs=["ru"]</script><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763268 rel=stylesheet media=print onload='this.media="all",this.onload=null'><noscript><link href=/sc-support/fonts/fontawesome/css/all.min.css?1771763268 rel=stylesheet></noscript><link href=/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1771763268 rel=stylesheet><link href=/sc-support/css/theme.min.css?1771763268 rel=stylesheet><link href=/sc-support/css/format-html.min.css?1771763268 rel=stylesheet id=R-format-style><script>window.relearn=window.relearn||{},window.relearn.min=`.min`,window.relearn.path="/software-features/frontal-plane-torque/index.html",window.relearn.relBasePath="../../..",window.relearn.relBaseUri="../../../..",window.relearn.absBaseUri="https://oysteinkrog.github.io/sc-support",window.relearn.disableInlineCopyToClipboard=!1,window.relearn.enableBlockCodeWrap=!0,window.T_Copy_to_clipboard=`Копировать текст в буфер обмена`,window.T_Copied_to_clipboard=`Текст скопирован в буфер обмена!`,window.T_Link_copied_to_clipboard=`Ссылка скопирована в буфер обмена!`,window.T_Reset_view=`Вид на сброс`,window.T_View_reset=`Посмотреть сброс!`,window.T_No_results_found=`Ничего не найдено для "{0}"`,window.T_N_results_found=`{1} результатов найдено для "{0}"`,window.T_Browser_unsupported_feature=`Этот браузер не поддерживает эту функцию`,window.relearn.themevariants=["auto","relearn-dark","relearn-light"],window.relearn.customvariantprefix="my-custom-",window.relearn.changeVariant=function(e){var t=document.documentElement.dataset.rThemeVariant;window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e),document.documentElement.dataset.rThemeVariant=e,t!=e&&(document.dispatchEvent(new CustomEvent("themeVariantLoaded",{detail:{variant:e,oldVariant:t}})),window.relearn.markVariant())},window.relearn.markVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant");document.querySelectorAll(".R-variantswitcher select").forEach(t=>{t.value=e})},window.relearn.initVariant=function(){var e=window.localStorage.getItem(window.relearn.absBaseUri+"/variant")??"";(!e||!e.startsWith(window.relearn.customvariantprefix)&&!window.relearn.themevariants.includes(e)||e.startsWith(window.relearn.customvariantprefix)&&!window.localStorage.getItem(window.relearn.absBaseUri+"/variantstylesheet-"+e))&&(e=window.relearn.themevariants[0],window.localStorage.setItem(window.relearn.absBaseUri+"/variant",e)),document.documentElement.dataset.rThemeVariant=e},window.relearn.initVariant(),window.relearn.markVariant()</script><style>.sc-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg in oklch,oklch(.56 .22 44),oklch(.65 .22 44),oklch(.72 .19 44));z-index:9999;transition:width .1s linear;box-shadow:0 0 8px oklch(.65 .22 44/.6);pointer-events:none}</style><div class=sc-progress id=sc-progress></div></head><body class="mobile-support html" data-origin=/sc-support/ru/software-features/frontal-plane-torque/index.html><div id=R-body class=default-animation><div id=R-body-overlay></div><nav id=R-topbar class=default-animation><div class="topbar-wrapper default-animation"><div class="topbar-sidebar-divider default-animation"></div><div class="topbar-area topbar-area-start" data-area=start><div class="topbar-button topbar-button-sidebar default-animation" data-content-empty=disable data-width-s=show data-width-m=hide data-width-l=hide><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleNav() type=button title="Меню (CTRL+ALT+n)"><i class="fa-fw fas fa-bars"></i></button></span></div><div class="topbar-button topbar-button-toc default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title="Оглавление (CTRL+ALT+t)"><i class="fa-fw fas fa-table-list"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><nav class=TableOfContents><ul><li><a href=#введение>Введение</a><ul><li><a href=#что-такое-крутящий-момент-фронтальной-плоскости>Что такое крутящий момент фронтальной плоскости?</a></li><li><a href=#компоненты-функции>Компоненты функции</a></li><li><a href=#почему-это-важно>Почему это важно?</a></li><li><a href=#предварительные-требования>Предварительные требования</a></li></ul></li><li><a href=#начало-работы>Начало работы</a><ul><li><a href=#добавление-databox-fpt-в-ваш-макет>Добавление DataBox FPT в ваш макет</a></li><li><a href=#включение-3d-визуализации>Включение 3D визуализации</a></li><li><a href=#необходимые-данные>Необходимые данные</a></li></ul></li><li><a href=#понимание-отображения>Понимание отображения</a><ul><li><a href=#график>График</a></li><li><a href=#ключевые-метрики>Ключевые метрики</a></li><li><a href=#выделение-фаз>Выделение фаз</a></li></ul></li><li><a href=#3d-визуализация>3D Визуализация</a><ul><li><a href=#визуализация-плеча-момента>Визуализация плеча момента</a></li><li><a href=#разложение-вектора-силы>Разложение вектора силы</a></li><li><a href=#параметры-визуализации-3d>Параметры визуализации 3D</a></li></ul></li><li><a href=#параметры-конфигурации-график>Параметры конфигурации (График)</a></li><li><a href=#поиск-и-устранение-неисправностей>Поиск и устранение неисправностей</a><ul><li><a href=#сообщение-no-person-on-plate-человека-нет-на-платформе>Сообщение «No Person on Plate» (Человека нет на платформе)</a></li><li><a href=#пустые-или-отсутствующие-данные-графика>Пустые или отсутствующие данные графика</a></li><li><a href=#временные-метрики-не-отображаются>Временные метрики не отображаются</a></li></ul></li></ul></nav></div></div></div></div><ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype=http://schema.org/BreadcrumbList><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/ru/index.html><span itemprop=name>Поддержка Swing Catalyst</span></a><meta itemprop=position content="1">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><a itemprop=item href=/sc-support/ru/software-features/index.html><span itemprop=name>Программное обеспечение и функции</span></a><meta itemprop=position content="2">&nbsp;>&nbsp;</li><li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><span itemprop=name>Анализ крутящего момента во фронтальной плоскости - Руководство пользователя</span><meta itemprop=position content="3"></li></ol><div class="topbar-area topbar-area-end" data-area=end><div class="topbar-button topbar-button-prev default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/ru/software-features/motion-capture-faq/index.html title="Swing Catalyst Часто задаваемые вопросы о захвате движения (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span></div><div class="topbar-button topbar-button-next default-animation" data-content-empty=disable data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><a href=/sc-support/ru/software-features/motion-capture-disclosures/index.html title="Важные раскрытия информации для пользователей инструмента Swing Catalyst Motion Capture (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span></div><div class="topbar-button topbar-button-more default-animation" data-content-empty=hide data-width-s=show data-width-m=show data-width-l=show><span class="btn cstyle button link noborder notitle interactive"><button onclick=toggleTopbarFlyout(this) type=button title=Еще><i class="fa-fw fas fa-ellipsis-v"></i></button></span><div class=topbar-content><div class=topbar-content-wrapper><div class="topbar-area topbar-area-more" data-area=more></div></div></div></div></div></div></nav><div id=R-main-overlay></div><main id=R-body-inner class="highlightable software-features" tabindex=-1><div class=flex-block-wrapper><article class=default><header class=headline><div class="R-taxonomy taxonomy-tags cstyle tags" title=Теги style=--VARIABLE-TAGS-BG-color:var(--INTERNAL-TAG-BG-color)><i class="fa-fw fas fa-layer-group"></i><ul><li><a class=term-link href=/sc-support/ru/tags/force-data/index.html>Force-Data</a></li><li><a class=term-link href=/sc-support/ru/tags/motion-capture/index.html>Motion-Capture</a></li><li><a class=term-link href=/sc-support/ru/tags/pressure-data/index.html>Pressure-Data</a></li><li><a class=term-link href=/sc-support/ru/tags/troubleshooting/index.html>Troubleshooting</a></li></ul></div></header><h1 id=анализ-крутящего-момента-во-фронтальной-плоскости---руководство-пользователя>Анализ крутящего момента во фронтальной плоскости - Руководство пользователя</h1><h2 id=введение>Введение<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=что-такое-крутящий-момент-фронтальной-плоскости>Что такое крутящий момент фронтальной плоскости?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Крутящий момент фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело генерирует вокруг оси фронтальной плоскости во время размаха в гольфе. Думайте об этом как об измерении того, насколько эффективно вы используете силы реакции опоры для создания ротационной мощности.</p><p>Когда вы размахиваете клюшкой для гольфа, ваши ноги давят на землю, а земля давит в ответ. Это взаимодействие между центром масс вашего тела и силами у ваших ног создает крутящий момент — ротационную силу, которая помогает приводить в действие ваш размах.</p><h3 id=компоненты-функции>Компоненты функции<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Функция FPT включает два основных компонента:</p><p><strong>График FPT (DataBox)</strong> — временной график, показывающий значения крутящего момента на протяжении всего размаха с ключевыми метриками</p><p><strong>3D визуализация</strong> — наложения момента плеча и разложение силы в реальном времени на вид скелета захвата движения</p><h3 id=почему-это-важно>Почему это важно?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Понимание вашего крутящего момента фронтальной плоскости может помочь вам:</p><p><strong>Определить модели генерации мощности</strong> — Увидеть, насколько эффективно вы передаете силы земли в ротационную энергию</p><p><strong>Визуализировать биомеханический рычаг</strong> — Увидеть взаимосвязь плеча момента между вашим центром масс и силами земли в 3D</p><p><strong>Анализировать временную последовательность</strong> — Понять, когда достигается пиковый крутящий момент относительно контакта с мячом</p><p><strong>Разбить компоненты силы</strong> — Увидеть, как ваша сила реакции опоры распределяется по различным направлениям</p><p><strong>Сравнивать размахи</strong> — Отслеживать изменения в генерации силы с течением времени</p><h3 id=предварительные-требования>Предварительные требования<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Для использования анализа крутящего момента фронтальной плоскости вам требуется:</p><p><strong>Обязательно</strong>: запись силовой платформы с данными силы реакции опоры</p><p><strong>Обязательно</strong>: данные захвата движения для отслеживания центра масс</p><p><strong>Обязательно</strong>: откалиброванная установка камеры</p><p><strong>Обязательно</strong>: измерение массы тела (для нормализованных значений)</p><hr><h2 id=начало-работы>Начало работы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=добавление-databox-fpt-в-ваш-макет>Добавление DataBox FPT в ваш макет<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>Откройте записанный размах в представлении анализа</p></li><li><p>Щелкните меню <strong>DataBox</strong> или редактор макета</p></li><li><p>Найдите <strong>Крутящий момент фронтальной плоскости</strong> в доступном списке DataBox</p></li><li><p>Добавьте его в макет вашего анализа</p></li><li><p>DataBox автоматически заполнится данными из вашей записи</p></li></ul><h3 id=включение-3d-визуализации>Включение 3D визуализации<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Визуальные представления плеча момента и разложения силы отображаются в окне 3D видео рядом со скелетом. Чтобы включить их:</p><ul><li><p>Откройте запись с данными захвата движения и силовой платформы</p></li><li><p>Найдите панель <strong>Параметры вектора силы</strong> в представлении видео</p></li><li><p>Включите нужные вам параметры визуализации</p></li></ul><h3 id=необходимые-данные>Необходимые данные<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Для правильной работы анализа FPT ваша запись должна включать:</p><p>Тип данных
-Обязательно
-Цель</p><p>Данные силовой платформы
-Да
-Предоставляет силы реакции опоры (Fx, Fz) и центр давления</p><p>Захват движения
-Да
-Предоставляет положение центра масс для расчета крутящего момента и 3D визуализации</p><p>Вес тела
-Да
-Используется для нормализации значений крутящего момента для сравнения</p><p>Калибровка камеры
-Да
-Обязательна для надлежащего выравнивания 3D</p><p>Закладка контакта
-Рекомендуется
-Включает временные метрики относительно контакта мяча</p><hr><h2 id=понимание-отображения>Понимание отображения<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=график>График<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Основной график показывает значения крутящего момента во времени:</p><p><strong>Ось X (горизонтальная)</strong>: Время от начала вашего замаха до завершения</p><p><strong>Ось Y (вертикальная)</strong>: Значения крутящего момента (может отображать проценты и/или абсолютные значения)</p><p><strong>Нулевая линия</strong>: Горизонтальная линия на нуле — значения выше и ниже указывают на противоположные направления вращения</p><h4 id=система-двойной-оси>Система двойной оси<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>График может отображать две разные шкалы одновременно:</p><p><strong>Левая ось (Процент)</strong>: Показывает крутящий момент, нормализованный по массе тела (Nm/кг, отображается как коэффициент силы)</p><p><strong>Правая ось (Абсолютная)</strong>: Показывает фактический крутящий момент в Ньютон-метрах (Нм)</p><h3 id=ключевые-метрики>Ключевые метрики<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Три ключевые метрики отображаются рядом с графиком:</p><h4 id=1-максимальный-крутящий-момент-force-factor>1. Максимальный крутящий момент (Force Factor)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Что показывает</strong>: Величину пикового крутящего момента, нормализованную по массе тела</p><p><strong>Единицы измерения</strong>: Нм/кг (отображается как Force Factor)</p><p><strong>Пример</strong>: Значение <strong>0,85</strong> означает, что ваш пиковый крутящий момент составил 0,85 Ньютон-метра на килограмм массы тела</p><h4 id=2-время-максимального-крутящего-момента>2. Время максимального крутящего момента<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Что показывает</strong>: Когда пиковый крутящий момент наступает относительно контакта с мячом</p><p><strong>Единицы измерения</strong>: Миллисекунды (мс)</p><p><strong>Примечание</strong>: Отображается только при установленной закладке на момент контакта</p><p><strong>Пример</strong>: <strong>-50мс</strong> означает, что пиковый крутящий момент наступил за 50 мс <em>до</em> контакта; <strong>+20мс</strong> означает за 20 мс <em>после</em> контакта; <strong>0мс</strong> означает в момент контакта</p><h4 id=3-force-factor-raw>3. Force Factor (Raw)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p><strong>Что показывает</strong>: Нормализованное значение крутящего момента в сыром виде, включая направление (положительное или отрицательное)</p><p><strong>Единицы измерения</strong>: Нм/кг</p><p><strong>Пример</strong>: <strong>+0,85</strong> и <strong>-0,85</strong> имеют одинаковую величину, но противоположные направления вращения</p><h3 id=выделение-фаз>Выделение фаз<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>При включении цветные полосы перекрывают график, показывая различные фазы вашего свинга:</p><ul><li>Отмах, нисходящий взмах, контакт, проводка</li></ul><hr><h2 id=3d-визуализация>3D Визуализация<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=визуализация-плеча-момента>Визуализация плеча момента<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Визуализация плеча момента показывает биомеханическое соотношение рычага между вашим центром масс (COM) и силой реакции опоры.</p><p>Элемент
-Внешний вид
-Что показывает</p><p><strong>Линия плеча момента</strong>
-Оранжевая сплошная линия
-Перпендикулярное расстояние от вашего COM до линии действия силы</p><p><strong>Линия действия</strong>
-Оранжевая пунктирная линия
-Продолженная линия, вдоль которой действует сила</p><p><strong>Метка расстояния</strong>
-Белый текст на тёмном фоне
-Расстояние плеча момента в сантиметрах (±X.X см)</p><h3 id=разложение-вектора-силы>Разложение вектора силы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><p>Визуализация разложения силы раскладывает общую силу реакции опоры на три перпендикулярных компонента. Цвета всегда представляют одно и то же физическое направление силы независимо от ракурса камеры:</p><p>Компонент
-Цвет
-Физическое направление
-Что показывает</p><p><strong>Компонент X</strong>
-Розовый
-Влево-вправо (медиолатеральное)
-Распределение боковой силы</p><p><strong>Компонент Y</strong>
-Синий-зелёный
-Вверх-вниз (вертикальное)
-Распределение вертикальной силы</p><p><strong>Компонент Z</strong>
-Зелёный
-Впереди-сзади (переднезаднее)
-Распределение силы вперёд/назад</p><p>Каждая стрелка компонента также отображает <strong>процентную метку</strong>, показывающую, какая часть общей силы направлена в этом направлении.</p><h4 id=поведение-при-изменении-ракурса-камеры>Поведение при изменении ракурса камеры<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Векторы силы отображаются относительно ракурса вашей камеры. Компоненты, которые выглядели бы как глубина (уходящие в/из экрана), скрыты для ясности:</p><p>Ракурс камеры
-Видимые компоненты
-Скрытый компонент</p><p><strong>Вид спереди</strong>
-X (розовый, горизонтальный), Y (синий-зелёный, вертикальный)
-Z (зелёный, глубина)</p><p><strong>Вид по линии движения</strong>
-Z (зелёный, горизонтальный), Y (синий-зелёный, вертикальный)
-X (розовый, глубина)</p><p><strong>Примечание</strong>: Цвета всегда представляют одно и то же физическое направление — розовый всегда обозначает медиолатеральную силу, синий-зелёный всегда обозначает вертикальную силу, а зелёный всегда обозначает переднезаднюю силу. Только положение на экране меняется в зависимости от угла камеры.</p><h3 id=параметры-визуализации-3d>Параметры визуализации 3D<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><h4 id=параметры-плеча-момента>Параметры плеча момента<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Параметр
-По умолчанию
-Описание</p><p><strong>Показывать плечо момента</strong>
-Отключено
-Переключает оранжевую сплошную линию от COM к линии силы</p><p><strong>Показывать линию действия</strong>
-Отключено
-Переключает оранжевую пунктирную линию, показывающую направление продления силы</p><p><strong>Показывать метку расстояния</strong>
-Отключено
-Переключает метку значения расстояния (±X.X см)</p><h4 id=параметры-разложения-силы>Параметры разложения силы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4><p>Параметр
-По умолчанию
-Описание</p><p><strong>Показывать компоненты X/Y/Z</strong>
-Отключено
-Переключает все три стрелки компонентов и процентные метки</p><hr><h2 id=параметры-конфигурации-график>Параметры конфигурации (График)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><p><strong>Показывать % (ось процентов)</strong>: По умолчанию включено — переключает нормализованный момент (Нм/кг)</p><p><strong>Показать Ньютон (Абсолютная Ось)</strong>: По умолчанию выключено - переключает абсолютный крутящий момент (Nm)</p><p><strong>Выделить Фазы</strong>: По умолчанию выключено - показывает цветные полосы, обозначающие фазы свинга</p><p><strong>Показать Сетку</strong>: По умолчанию включено - отображает горизонтальные линии сетки</p><p><strong>Тип диаграммы</strong>: Mountain Chart (по умолчанию) или Line Chart</p><hr><h2 id=поиск-и-устранение-неисправностей>Поиск и устранение неисправностей<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2><h3 id=сообщение-no-person-on-plate-человека-нет-на-платформе>Сообщение «No Person on Plate» (Человека нет на платформе)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>убедитесь, что спортсмен стоял на силовой платформе в начале записи</p></li><li><p>проверьте, что вес тела введен в профиль спортсмена</p></li><li><p>убедитесь, что калибровка силовой платформы завершена</p></li></ul><h3 id=пустые-или-отсутствующие-данные-графика>Пустые или отсутствующие данные графика<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li><p>подтвердите, что силовая платформа была активна во время записи</p></li><li><p>убедитесь, что данные захвата движения были записаны (требуется для расчетов FPT)</p></li><li><p>проверьте, что запись включает всю продолжительность свинга</p></li></ul><h3 id=временные-метрики-не-отображаются>Временные метрики не отображаются<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type=button title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3><ul><li>установите закладку контакта в вашей записи</li></ul><hr><p><em>Last updated: 2026-01-09</em> | <a href=/sc-support/ru/software-features/frontal-plane-torque/index.html>View on official support site</a></p><footer class=footline></footer></article></div></main></div><aside id=R-sidebar class=default-animation><div id=R-header-topbar class=default-animation></div><div id=R-header-wrapper class=default-animation><a id=R-logo class="R-default direction-row" href=/sc-support/ru/index.html><span class="logo-title default-animation">Поддержка Swing Catalyst</span>
-</a><search><div class="searchbox default-animation"><i class="fas fa-fw fa-search" title="Поиск (CTRL+ALT+f)"></i>
-<label class=a11y-only for=R-search-by>Поиск</label>
-<input data-search-input id=R-search-by name=search-by class=search-by type=search placeholder=Поиск...>
-<button class=search-clear type=button data-search-clear title="Очистить поиск"><i class="fas fa-fw fa-times" title="Очистить поиск"></i></button></div></search></div><div id=R-homelinks class=default-animation><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation"><ul class="space collapsible-menu"></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation"><ul></ul></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div></div><div id=R-content-wrapper class=highlightable><div class="R-sidebarmenu R-shortcutmenu-main default-animation"><ul class="enlarge morespace collapsible-menu"><li data-nav-id=/sc-support/ru/getting-started/index.html><a class="padding default-animation" href=/sc-support/ru/getting-started/index.html>Начало работы</a><ul id=R-subsections-87c0363912f379e0725cbe1d504c985c class=collapsible-menu></ul></li><li data-nav-id=/sc-support/ru/cameras-video/index.html><a class="padding default-animation" href=/sc-support/ru/cameras-video/index.html>Камеры и видео</a><ul id=R-subsections-b0755dddefc0b312b478b3a1b56842af class=collapsible-menu></ul></li><li data-nav-id=/sc-support/ru/hardware/index.html><a class="padding default-animation" href=/sc-support/ru/hardware/index.html>Оборудование</a><ul id=R-subsections-fe9fc031ffaa253b59b13a6e5e459855 class=collapsible-menu></ul></li><li class=parent data-nav-id=/sc-support/ru/software-features/index.html><a class="padding default-animation" href=/sc-support/ru/software-features/index.html>Программное обеспечение и функции</a><ul id=R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f class=collapsible-menu><li data-nav-id=/sc-support/ru/software-features/motion-capture-faq/index.html><a class=padding href=/sc-support/ru/software-features/motion-capture-faq/index.html>Swing Catalyst Часто задаваемые вопросы о захвате движения</a></li><li class=active data-nav-id=/sc-support/ru/software-features/frontal-plane-torque/index.html><a class=padding href=/sc-support/ru/software-features/frontal-plane-torque/index.html>Анализ крутящего момента во фронтальной плоскости - Руководство пользователя</a></li><li data-nav-id=/sc-support/ru/software-features/motion-capture-disclosures/index.html><a class=padding href=/sc-support/ru/software-features/motion-capture-disclosures/index.html>Важные раскрытия информации для пользователей инструмента Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/ru/software-features/multiple-forces-graph/index.html><a class=padding href=/sc-support/ru/software-features/multiple-forces-graph/index.html>График множественных сил</a></li><li data-nav-id=/sc-support/ru/software-features/graph-library/index.html><a class=padding href=/sc-support/ru/software-features/graph-library/index.html>Использование библиотеки графиков</a></li><li data-nav-id=/sc-support/ru/software-features/pressure-stance-settings/index.html><a class=padding href=/sc-support/ru/software-features/pressure-stance-settings/index.html>Использование новых настроек давления и стойки</a></li><li data-nav-id=/sc-support/ru/software-features/record-a-lesson/index.html><a class=padding href=/sc-support/ru/software-features/record-a-lesson/index.html>Как записать урок</a></li><li data-nav-id=/sc-support/ru/software-features/change-recording-user/index.html><a class=padding href=/sc-support/ru/software-features/change-recording-user/index.html>Как изменить пользователя в существующей записи</a></li><li data-nav-id=/sc-support/ru/software-features/import-from-v1/index.html><a class=padding href=/sc-support/ru/software-features/import-from-v1/index.html>Как импортировать видео из V1</a></li><li data-nav-id=/sc-support/ru/software-features/swing-catalyst-online/index.html><a class=padding href=/sc-support/ru/software-features/swing-catalyst-online/index.html>Как использовать Swing Catalyst Online</a></li><li data-nav-id=/sc-support/ru/software-features/force-vectors/index.html><a class=padding href=/sc-support/ru/software-features/force-vectors/index.html>Как использовать векторы силы</a></li><li data-nav-id=/sc-support/ru/software-features/microphone-trigger/index.html><a class=padding href=/sc-support/ru/software-features/microphone-trigger/index.html>Как использовать микрофон в качестве триггера захвата</a></li><li data-nav-id=/sc-support/ru/software-features/explorer/index.html><a class=padding href=/sc-support/ru/software-features/explorer/index.html>Как использовать Обозреватель</a></li><li data-nav-id=/sc-support/ru/software-features/remote-support/index.html><a class=padding href=/sc-support/ru/software-features/remote-support/index.html>Как использовать удаленную поддержку</a></li><li data-nav-id=/sc-support/ru/software-features/pressure-distribution-overlay/index.html><a class=padding href=/sc-support/ru/software-features/pressure-distribution-overlay/index.html>Как использовать функциональность наложения распределения давления</a></li><li data-nav-id=/sc-support/ru/software-features/multiple-displays/index.html><a class=padding href=/sc-support/ru/software-features/multiple-displays/index.html>Как настроить несколько дисплеев с помощью Swing Catalyst</a></li><li data-nav-id=/sc-support/ru/software-features/email-sharing/index.html><a class=padding href=/sc-support/ru/software-features/email-sharing/index.html>Как настроить общий доступ к электронной почте в Swing Catalyst</a></li><li data-nav-id=/sc-support/ru/software-features/feedback-screen/index.html><a class=padding href=/sc-support/ru/software-features/feedback-screen/index.html>Как настроить экран обратной связи</a></li><li data-nav-id=/sc-support/ru/software-features/motion-capture-install/index.html><a class=padding href=/sc-support/ru/software-features/motion-capture-install/index.html>Как установить компоненты Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/ru/software-features/export-raw-data/index.html><a class=padding href=/sc-support/ru/software-features/export-raw-data/index.html>Как экспортировать исходные данные</a></li><li data-nav-id=/sc-support/ru/software-features/export-contacts/index.html><a class=padding href=/sc-support/ru/software-features/export-contacts/index.html>Как экспортировать контактную информацию студента</a></li><li data-nav-id=/sc-support/ru/software-features/key-metrics/index.html><a class=padding href=/sc-support/ru/software-features/key-metrics/index.html>Ключевые показатели</a></li><li data-nav-id=/sc-support/ru/software-features/body-weight-measurement/index.html><a class=padding href=/sc-support/ru/software-features/body-weight-measurement/index.html>Новая функция измерения массы тела</a></li><li data-nav-id=/sc-support/ru/software-features/ios-app-sharing/index.html><a class=padding href=/sc-support/ru/software-features/ios-app-sharing/index.html>Обмен записанными видео с приложением Swing Catalyst для iOS</a></li><li data-nav-id=/sc-support/ru/software-features/motion-capture-settings/index.html><a class=padding href=/sc-support/ru/software-features/motion-capture-settings/index.html>Параметры захвата движения Swing Catalyst</a></li><li data-nav-id=/sc-support/ru/software-features/motion-capture-guide/index.html><a class=padding href=/sc-support/ru/software-features/motion-capture-guide/index.html>Руководство пользователя Swing Catalyst Motion Capture</a></li><li data-nav-id=/sc-support/ru/software-features/keyboard-shortcuts/index.html><a class=padding href=/sc-support/ru/software-features/keyboard-shortcuts/index.html>Сочетания клавиш и горячие клавиши</a></li><li data-nav-id=/sc-support/ru/software-features/markerless-motion-capture/index.html><a class=padding href=/sc-support/ru/software-features/markerless-motion-capture/index.html>Улучшение захвата движения без маркеров для свингов в гольфе и бейсболе с использованием RTMPose и RTMDet: подход сверху вниз</a></li><li data-nav-id=/sc-support/ru/software-features/force-graph-phases/index.html><a class=padding href=/sc-support/ru/software-features/force-graph-phases/index.html>Фазы графика силы</a></li><li data-nav-id=/sc-support/ru/software-features/raw-data-export-guide/index.html><a class=padding href=/sc-support/ru/software-features/raw-data-export-guide/index.html>Что включено в экспорт исходных данных</a></li><li data-nav-id=/sc-support/ru/software-features/bookmarks/index.html><a class=padding href=/sc-support/ru/software-features/bookmarks/index.html>Что такое закладки?</a></li><li data-nav-id=/sc-support/ru/software-features/export-recordings/index.html><a class=padding href=/sc-support/ru/software-features/export-recordings/index.html>Экспорт записей</a></li></ul></li><li data-nav-id=/sc-support/ru/account-setup/index.html><a class="padding default-animation" href=/sc-support/ru/account-setup/index.html>Аккаунт и настройка</a><ul id=R-subsections-340f06c5dd689cadbcc9031c00d9aea7 class=collapsible-menu></ul></li><li data-nav-id=/sc-support/ru/reference/index.html><a class="padding default-animation" href=/sc-support/ru/reference/index.html>Справка</a><ul id=R-subsections-66002f201bef818664bb81aa67490c58 class=collapsible-menu></ul></li></ul></div><div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation"><ul class="space collapsible-menu"></ul></div><div id=R-footer-margin class=default-animation></div><div class="R-menu-divider default-animation"><hr class="padding default-animation"></div><div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation"><ul><li class=R-languageswitcher><div class="padding menu-control"><i class="fa-fw fas fa-language"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-language>Язык</label>
-<select id=R-select-language><option id=R-select-language-en value=en data-url=/sc-support/en/software-features/frontal-plane-torque/index.html lang=en>English</option><option id=R-select-language-es value=es data-url=/sc-support/es/software-features/frontal-plane-torque/index.html lang=es>Español</option><option id=R-select-language-de value=de data-url=/sc-support/de/software-features/frontal-plane-torque/index.html lang=de>Deutsch</option><option id=R-select-language-fr value=fr data-url=/sc-support/fr/software-features/frontal-plane-torque/index.html lang=fr>Français</option><option id=R-select-language-it value=it data-url=/sc-support/it/software-features/frontal-plane-torque/index.html lang=it>Italiano</option><option id=R-select-language-pt value=pt data-url=/sc-support/pt/software-features/frontal-plane-torque/index.html lang=pt>Português</option><option id=R-select-language-ru value=ru data-url=/sc-support/ru/software-features/frontal-plane-torque/index.html lang=ru selected data-selected>Русский</option><option id=R-select-language-ja value=ja data-url=/sc-support/ja/software-features/frontal-plane-torque/index.html lang=ja>日本語</option><option id=R-select-language-ko value=ko data-url=/sc-support/ko/software-features/frontal-plane-torque/index.html lang=ko>한국어</option><option id=R-select-language-zh value=zh data-url=/sc-support/zh/software-features/frontal-plane-torque/index.html lang=zh>简体中文</option><option id=R-select-language-hi value=hi data-url=/sc-support/hi/software-features/frontal-plane-torque/index.html lang=hi>हिन्दी</option><option id=R-select-language-ar value=ar data-url=/sc-support/ar/software-features/frontal-plane-torque/index.html lang=ar>العربية</option><option id=R-select-language-zh-hant value=zh-hant data-url=/sc-support/zh-hant/software-features/frontal-plane-torque/index.html lang=zh-Hant>繁體中文</option><option id=R-select-language-th value=th data-url=/sc-support/th/software-features/frontal-plane-torque/index.html lang=th>ไทย</option><option id=R-select-language-sv value=sv data-url=/sc-support/sv/software-features/frontal-plane-torque/index.html lang=sv>Svenska</option><option id=R-select-language-nb value=nb data-url=/sc-support/nb/software-features/frontal-plane-torque/index.html lang=nb>Norsk Bokmål</option><option id=R-select-language-da value=da data-url=/sc-support/da/software-features/frontal-plane-torque/index.html lang=da>Dansk</option><option id=R-select-language-is value=is data-url=/sc-support/is/software-features/frontal-plane-torque/index.html lang=is>Íslenska</option><option id=R-select-language-id value=id data-url=/sc-support/id/software-features/frontal-plane-torque/index.html lang=id>Bahasa Indonesia</option><option id=R-select-language-vi value=vi data-url=/sc-support/vi/software-features/frontal-plane-torque/index.html lang=vi>Tiếng Việt</option><option id=R-select-language-nl value=nl data-url=/sc-support/nl/software-features/frontal-plane-torque/index.html lang=nl>Nederlands</option><option id=R-select-language-tr value=tr data-url=/sc-support/tr/software-features/frontal-plane-torque/index.html lang=tr>Türkçe</option><option id=R-select-language-pl value=pl data-url=/sc-support/pl/software-features/frontal-plane-torque/index.html lang=pl>Polski</option><option id=R-select-language-fi value=fi data-url=/sc-support/fi/software-features/frontal-plane-torque/index.html lang=fi>Suomi</option><option id=R-select-language-uk value=uk data-url=/sc-support/uk/software-features/frontal-plane-torque/index.html lang=uk>Українська</option><option id=R-select-language-ro value=ro data-url=/sc-support/ro/software-features/frontal-plane-torque/index.html lang=ro>Română</option><option id=R-select-language-el value=el data-url=/sc-support/el/software-features/frontal-plane-torque/index.html lang=el>Ελληνικά</option><option id=R-select-language-cs value=cs data-url=/sc-support/cs/software-features/frontal-plane-torque/index.html lang=cs>Čeština</option><option id=R-select-language-hu value=hu data-url=/sc-support/hu/software-features/frontal-plane-torque/index.html lang=hu>Magyar</option><option id=R-select-language-bg value=bg data-url=/sc-support/bg/software-features/frontal-plane-torque/index.html lang=bg>Български</option><option id=R-select-language-hr value=hr data-url=/sc-support/hr/software-features/frontal-plane-torque/index.html lang=hr>Hrvatski</option><option id=R-select-language-sr value=sr data-url=/sc-support/sr/software-features/frontal-plane-torque/index.html lang=sr>Српски</option><option id=R-select-language-sk value=sk data-url=/sc-support/sk/software-features/frontal-plane-torque/index.html lang=sk>Slovenčina</option><option id=R-select-language-lt value=lt data-url=/sc-support/lt/software-features/frontal-plane-torque/index.html lang=lt>Lietuvių</option><option id=R-select-language-lv value=lv data-url=/sc-support/lv/software-features/frontal-plane-torque/index.html lang=lv>Latviešu</option><option id=R-select-language-et value=et data-url=/sc-support/et/software-features/frontal-plane-torque/index.html lang=et>Eesti</option></select></div><div class=clear></div></div></li><li class=R-variantswitcher><div class="padding menu-control"><i class="fa-fw fas fa-paint-brush"></i>
-<span>&nbsp;</span><div class=control-style><label class=a11y-only for=R-select-variant>Тема</label>
-<select id=R-select-variant><option id=R-select-variant-auto value=auto selected>Auto</option><option id=R-select-variant-relearn-dark value=relearn-dark>Relearn Dark</option><option id=R-select-variant-relearn-light value=relearn-light>Relearn Light</option></select></div><div class=clear></div></div><script>window.relearn.markVariant()</script></li></ul></div><div id=R-footer class=default-animation><p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn title=love><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p></div></div></aside><script src=/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1771763268 defer></script><script src=/sc-support/js/theme.min.js?1771763268 defer></script><link rel=stylesheet href=/sc-support/css/swingcatalyst-theme.css><script src=/sc-support/js/sc-extras.js></script><div id=toast-container role=status aria-live=polite aria-atomic=false></div></body></html>
+<!DOCTYPE html>
+<html id="R-html" lang="ru" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+5fff5bc8a066e83e5f67f0de49c7dfb57379219e">
+    <meta name="description" content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело создаёт вокруг оси фронтальной плоскости во время свинга в гольфе. Представьте это как измерение того, насколько эффективно вы используете силы реакции опоры для создания ротационной мощности.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Анализ крутящего момента во фронтальной плоскости — Руководство пользователя :: Поддержка Swing Catalyst">
+    <meta name="twitter:description" content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело создаёт вокруг оси фронтальной плоскости во время свинга в гольфе. Представьте это как измерение того, насколько эффективно вы используете силы реакции опоры для создания ротационной мощности.">
+    <meta property="og:url" content="https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html">
+    <meta property="og:site_name" content="Поддержка Swing Catalyst">
+    <meta property="og:title" content="Анализ крутящего момента во фронтальной плоскости — Руководство пользователя :: Поддержка Swing Catalyst">
+    <meta property="og:description" content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело создаёт вокруг оси фронтальной плоскости во время свинга в гольфе. Представьте это как измерение того, насколько эффективно вы используете силы реакции опоры для создания ротационной мощности.">
+    <meta property="og:locale" content="ru">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Программное обеспечение и функции">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Pressure-Data">
+    <meta property="article:tag" content="Force-Data">
+    <meta property="article:tag" content="Motion-Capture">
+    <meta itemprop="name" content="Анализ крутящего момента во фронтальной плоскости — Руководство пользователя :: Поддержка Swing Catalyst">
+    <meta itemprop="description" content="Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело создаёт вокруг оси фронтальной плоскости во время свинга в гольфе. Представьте это как измерение того, насколько эффективно вы используете силы реакции опоры для создания ротационной мощности.">
+    <meta itemprop="wordCount" content="1094">
+    <meta itemprop="keywords" content="Troubleshooting,Pressure-Data,Force-Data,Motion-Capture">
+    <title>Анализ крутящего момента во фронтальной плоскости — Руководство пользователя :: Поддержка Swing Catalyst</title>
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="x-default">
+    <link href="https://oysteinkrog.github.io/sc-support/en/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="en">
+    <link href="https://oysteinkrog.github.io/sc-support/es/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="es">
+    <link href="https://oysteinkrog.github.io/sc-support/de/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="de">
+    <link href="https://oysteinkrog.github.io/sc-support/fr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fr">
+    <link href="https://oysteinkrog.github.io/sc-support/it/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="it">
+    <link href="https://oysteinkrog.github.io/sc-support/pt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pt">
+    <link href="https://oysteinkrog.github.io/sc-support/ru/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ru">
+    <link href="https://oysteinkrog.github.io/sc-support/ja/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ja">
+    <link href="https://oysteinkrog.github.io/sc-support/ko/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ko">
+    <link href="https://oysteinkrog.github.io/sc-support/zh/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh">
+    <link href="https://oysteinkrog.github.io/sc-support/hi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hi">
+    <link href="https://oysteinkrog.github.io/sc-support/ar/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ar">
+    <link href="https://oysteinkrog.github.io/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="zh-Hant">
+    <link href="https://oysteinkrog.github.io/sc-support/th/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="th">
+    <link href="https://oysteinkrog.github.io/sc-support/sv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sv">
+    <link href="https://oysteinkrog.github.io/sc-support/nb/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nb">
+    <link href="https://oysteinkrog.github.io/sc-support/da/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="da">
+    <link href="https://oysteinkrog.github.io/sc-support/is/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="is">
+    <link href="https://oysteinkrog.github.io/sc-support/id/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="id">
+    <link href="https://oysteinkrog.github.io/sc-support/vi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="vi">
+    <link href="https://oysteinkrog.github.io/sc-support/nl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="nl">
+    <link href="https://oysteinkrog.github.io/sc-support/tr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="tr">
+    <link href="https://oysteinkrog.github.io/sc-support/pl/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="pl">
+    <link href="https://oysteinkrog.github.io/sc-support/fi/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="fi">
+    <link href="https://oysteinkrog.github.io/sc-support/uk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="uk">
+    <link href="https://oysteinkrog.github.io/sc-support/ro/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="ro">
+    <link href="https://oysteinkrog.github.io/sc-support/el/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="el">
+    <link href="https://oysteinkrog.github.io/sc-support/cs/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="cs">
+    <link href="https://oysteinkrog.github.io/sc-support/hu/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hu">
+    <link href="https://oysteinkrog.github.io/sc-support/bg/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="bg">
+    <link href="https://oysteinkrog.github.io/sc-support/hr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="hr">
+    <link href="https://oysteinkrog.github.io/sc-support/sr/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sr">
+    <link href="https://oysteinkrog.github.io/sc-support/sk/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="sk">
+    <link href="https://oysteinkrog.github.io/sc-support/lt/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lt">
+    <link href="https://oysteinkrog.github.io/sc-support/lv/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="lv">
+    <link href="https://oysteinkrog.github.io/sc-support/et/software-features/frontal-plane-torque/index.html" rel="alternate" hreflang="et">
+    <link href="/sc-support/css/auto-complete/auto-complete.min.css?1772520112" rel="stylesheet">
+    <script src="/sc-support/js/auto-complete/auto-complete.min.js?1772520112" defer></script>
+    <script src="/sc-support/js/search-lunr.min.js?1772520112" defer></script>
+    <script src="/sc-support/js/search.min.js?1772520112" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/sc-support/searchindex.ru.js?1772520112";
+    </script>
+    <script src="/sc-support/js/lunr/lunr.min.js?1772520112" defer></script>
+    <script src="/sc-support/js/lunr/lunr.stemmer.support.min.js?1772520112" defer></script>
+    <script src="/sc-support/js/lunr/lunr.multi.min.js?1772520112" defer></script>
+    <script src="/sc-support/js/lunr/lunr.ru.min.js?1772520112" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['ru'];
+    </script>
+    <link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520112" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/sc-support/fonts/fontawesome/css/all.min.css?1772520112" rel="stylesheet"></noscript>
+    <link href="/sc-support/css/perfect-scrollbar/perfect-scrollbar.min.css?1772520112" rel="stylesheet">
+    <link href="/sc-support/css/theme.min.css?1772520112" rel="stylesheet">
+    <link href="/sc-support/css/format-html.min.css?1772520112" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/software-features\/frontal-plane-torque\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/oysteinkrog.github.io\/sc-support';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Копировать текст в буфер обмена`;
+      window.T_Copied_to_clipboard = `Текст скопирован в буфер обмена!`;
+      window.T_Link_copied_to_clipboard = `Ссылка скопирована в буфер обмена!`;
+      window.T_Reset_view = `Вид на сброс`;
+      window.T_View_reset = `Посмотреть сброс!`;
+      window.T_No_results_found = `Ничего не найдено для "{0}"`;
+      window.T_N_results_found = `{1} результатов найдено для "{0}"`;
+      window.T_Browser_unsupported_feature = `Этот браузер не поддерживает эту функцию`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'sc-dark', 'sc-light' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+<style>
+  .sc-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--INTERNAL-PRIMARY-HOVER-color, #CC4A00), var(--INTERNAL-PRIMARY-color, #FF5C00));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--INTERNAL-PRIMARY-color, #FF5C00) 60%, transparent);
+    pointer-events: none;
+  }
+</style>
+<div class="sc-progress" id="sc-progress"></div>
+
+  </head>
+  <body class="mobile-support html" data-origin="/sc-support/ru/software-features/frontal-plane-torque/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Меню (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Оглавление (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#введение">Введение</a>
+      <ul>
+        <li><a href="#что-такое-крутящий-момент-во-фронтальной-плоскости">Что такое крутящий момент во фронтальной плоскости?</a></li>
+        <li><a href="#компоненты-функции">Компоненты функции</a></li>
+        <li><a href="#почему-это-важно">Почему это важно?</a></li>
+        <li><a href="#предварительные-требования">Предварительные требования</a></li>
+      </ul>
+    </li>
+    <li><a href="#начало-работы">Начало работы</a>
+      <ul>
+        <li><a href="#добавление-databox-fpt-в-макет">Добавление DataBox FPT в макет</a></li>
+        <li><a href="#включение-3d-визуализации">Включение 3D Визуализации</a></li>
+        <li><a href="#необходимые-данные">Необходимые данные</a></li>
+      </ul>
+    </li>
+    <li><a href="#понимание-отображения">Понимание отображения</a>
+      <ul>
+        <li><a href="#график">График</a></li>
+        <li><a href="#ключевые-показатели">Ключевые показатели</a></li>
+        <li><a href="#выделение-фаз">Выделение фаз</a></li>
+      </ul>
+    </li>
+    <li><a href="#3d-визуализация">3D Визуализация</a>
+      <ul>
+        <li><a href="#визуализация-плеча-момента">Визуализация плеча момента</a></li>
+        <li><a href="#декомпозиция-вектора-силы">Декомпозиция вектора силы</a></li>
+        <li><a href="#настройки-3d-визуализации">Настройки 3D Визуализации</a></li>
+      </ul>
+    </li>
+    <li><a href="#параметры-конфигурации-график">Параметры конфигурации (график)</a></li>
+    <li><a href="#устранение-неполадок">Устранение неполадок</a>
+      <ul>
+        <li><a href="#сообщение-нет-спортсмена-на-платформе">Сообщение «Нет спортсмена на платформе»</a></li>
+        <li><a href="#пустой-или-отсутствующий-график-данных">Пустой или отсутствующий график данных</a></li>
+        <li><a href="#метрики-временной-последовательности-не-отображаются">Метрики временной последовательности не отображаются</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/index.html"><span itemprop="name">Поддержка Swing Catalyst</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/sc-support/ru/software-features/index.html"><span itemprop="name">Программное обеспечение и функции</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Анализ крутящего момента во фронтальной плоскости — Руководство пользователя</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/ru/software-features/motion-capture-faq/index.html" title="Swing Catalyst Motion Capture FAQ (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/sc-support/ru/software-features/motion-capture-disclosures/index.html" title="Важные раскрытия информации для пользователей инструмента Swing Catalyst Motion Capture (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Еще"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable software-features" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Теги" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/sc-support/ru/tags/force-data/index.html">Force-Data</a></li>
+    <li><a class="term-link" href="/sc-support/ru/tags/motion-capture/index.html">Motion-Capture</a></li>
+    <li><a class="term-link" href="/sc-support/ru/tags/pressure-data/index.html">Pressure-Data</a></li>
+    <li><a class="term-link" href="/sc-support/ru/tags/troubleshooting/index.html">Troubleshooting</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="анализ-крутящего-момента-во-фронтальной-плоскости--руководство-пользователя">Анализ крутящего момента во фронтальной плоскости — Руководство пользователя</h1>
+
+<h2 id="введение">Введение<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="что-такое-крутящий-момент-во-фронтальной-плоскости">Что такое крутящий момент во фронтальной плоскости?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Крутящий момент во фронтальной плоскости (FPT) измеряет ротационную силу, которую ваше тело создаёт вокруг оси фронтальной плоскости во время свинга в гольфе. Представьте это как измерение того, насколько эффективно вы используете силы реакции опоры для создания ротационной мощности.</p>
+<p>Когда вы выполняете свинг клюшкой для гольфа, ваши ноги давят на землю, а земля толкает в ответ. Это взаимодействие между центром масс вашего тела и силами в точках опоры создаёт крутящий момент — ротационную силу, которая помогает придать мощность вашему свингу.</p>
+<h3 id="компоненты-функции">Компоненты функции<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Функция FPT включает два основных компонента:</p>
+<p><strong>График FPT (DataBox)</strong> — временной график, показывающий значения крутящего момента на протяжении всего свинга с ключевыми показателями</p>
+<p><strong>3D Визуализация</strong> — наложение плеча момента и декомпозиции силы в реальном времени на вид скелета в режиме MoCap</p>
+<h3 id="почему-это-важно">Почему это важно?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Понимание крутящего момента во фронтальной плоскости поможет вам:</p>
+<p><strong>Выявить закономерности генерации мощности</strong> — увидеть, насколько эффективно вы преобразуете силы опоры в ротационную энергию</p>
+<p><strong>Визуализировать биомеханический рычаг</strong> — увидеть взаимосвязь плеча момента между вашим центром масс и силами опоры в 3D</p>
+<p><strong>Анализировать временную последовательность</strong> — понять, когда пиковый крутящий момент возникает относительно контакта с мячом</p>
+<p><strong>Разложить компоненты силы</strong> — увидеть, как сила реакции опоры распределяется по различным направлениям</p>
+<p><strong>Сравнивать свинги</strong> — отслеживать изменения в генерации силы с течением времени</p>
+<h3 id="предварительные-требования">Предварительные требования<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Для использования анализа крутящего момента во фронтальной плоскости вам необходимо:</p>
+<p><strong>Обязательно</strong>: запись с силовой платформы с данными о силе реакции опоры</p>
+<p><strong>Обязательно</strong>: данные MoCap для отслеживания центра масс</p>
+<p><strong>Обязательно</strong>: откалиброванная установка камеры</p>
+<p><strong>Обязательно</strong>: измерение веса тела (для нормализованных значений)</p>
+<hr>
+<h2 id="начало-работы">Начало работы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="добавление-databox-fpt-в-макет">Добавление DataBox FPT в макет<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Откройте записанный свинг в режиме анализа</p>
+</li>
+<li>
+<p>Нажмите меню <strong>DataBox</strong> или редактор макета</p>
+</li>
+<li>
+<p>Найдите <strong>Frontal Plane Torque</strong> в списке доступных DataBox</p>
+</li>
+<li>
+<p>Добавьте его в свой макет анализа</p>
+</li>
+<li>
+<p>DataBox автоматически заполнится данными из вашей записи</p>
+</li>
+</ul>
+<h3 id="включение-3d-визуализации">Включение 3D Визуализации<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Визуализация плеча момента и декомпозиции силы отображается в 3D окне просмотра видео вместе со скелетом. Чтобы включить её:</p>
+<ul>
+<li>
+<p>Откройте запись с данными MoCap и силовой платформы</p>
+</li>
+<li>
+<p>Найдите панель <strong>Настройки вектора силы</strong> в виде видео</p>
+</li>
+<li>
+<p>Включите нужные параметры визуализации</p>
+</li>
+</ul>
+<h3 id="необходимые-данные">Необходимые данные<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Для корректной работы анализа FPT ваша запись должна содержать:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Тип данных</th>
+          <th>Обязательно</th>
+          <th>Назначение</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Данные силовой платформы</td>
+          <td>Да</td>
+          <td>Предоставляет силы реакции опоры (Fx, Fz) и центр давления</td>
+      </tr>
+      <tr>
+          <td>MoCap</td>
+          <td>Да</td>
+          <td>Предоставляет положение центра масс для расчёта крутящего момента и 3D Визуализации</td>
+      </tr>
+      <tr>
+          <td>Вес тела</td>
+          <td>Да</td>
+          <td>Используется для нормализации значений крутящего момента для сравнения</td>
+      </tr>
+      <tr>
+          <td>Калибровка камеры</td>
+          <td>Да</td>
+          <td>Необходима для правильного 3D выравнивания</td>
+      </tr>
+      <tr>
+          <td>Закладка контакта</td>
+          <td>Рекомендуется</td>
+          <td>Позволяет рассчитывать метрики временной последовательности относительно контакта с мячом</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="понимание-отображения">Понимание отображения<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="график">График<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Основной график показывает значения крутящего момента во времени:</p>
+<p><strong>Ось X (горизонтальный)</strong>: время от начала свинга до завершающей позиции</p>
+<p><strong>Ось Y (вертикальный компонент)</strong>: значения крутящего момента (могут отображаться в процентах и/или абсолютных величинах)</p>
+<p><strong>Нулевая линия</strong>: горизонтальная линия на нуле — значения выше и ниже указывают на противоположные направления ротации</p>
+<h4 id="двойная-система-осей">Двойная система осей<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>График может одновременно отображать два различных масштаба:</p>
+<p><strong>Левая ось (процентная)</strong>: показывает крутящий момент, нормализованный по весу тела (Нм/кг, отображается как Коэффициент Силы)</p>
+<p><strong>Правая ось (абсолютная)</strong>: показывает фактический крутящий момент в Newton-meter (Нм)</p>
+<h3 id="ключевые-показатели">Ключевые показатели<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Рядом с графиком отображаются три ключевых показателя:</p>
+<h4 id="1-максимальный-крутящий-момент-коэффициент-силы">1. Максимальный крутящий момент (Коэффициент Силы)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Что показывает</strong>: пиковую величину крутящего момента, нормализованную по весу тела</p>
+<p><strong>Единицы</strong>: Нм/кг (отображается как Коэффициент Силы)</p>
+<p><strong>Пример</strong>: значение <strong>0,85</strong> означает, что ваш пиковый крутящий момент составил 0,85 Newton-meter на килограмм веса тела</p>
+<h4 id="2-временная-последовательность-максимального-крутящего-момента">2. Временная последовательность максимального крутящего момента<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Что показывает</strong>: когда пиковый крутящий момент возникает относительно контакта с мячом</p>
+<p><strong>Единицы</strong>: миллисекунды (мс)</p>
+<p><strong>Примечание</strong>: отображается только при установленной закладке контакта</p>
+<p><strong>Пример</strong>: <strong>-50 мс</strong> означает, что пиковый крутящий момент возник за 50 мс <em>до</em> контакта; <strong>+20 мс</strong> — через 20 мс <em>после</em> контакта; <strong>0 мс</strong> — в момент контакта</p>
+<h4 id="3-коэффициент-силы-необработанный">3. Коэффициент Силы (необработанный)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Что показывает</strong>: необработанное нормализованное значение крутящего момента с учётом направления (положительное или отрицательное)</p>
+<p><strong>Единицы</strong>: Нм/кг</p>
+<p><strong>Пример</strong>: <strong>+0,85</strong> и <strong>-0,85</strong> имеют одинаковую величину, но противоположные направления ротации</p>
+<h3 id="выделение-фаз">Выделение фаз<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>При включении этой функции на графике отображаются цветные полосы, обозначающие различные фазы свинга:</p>
+<ul>
+<li>Отмах, Фаза нисходящего взмаха, Контакт, Проводка</li>
+</ul>
+<hr>
+<h2 id="3d-визуализация">3D Визуализация<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="визуализация-плеча-момента">Визуализация плеча момента<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Визуализация плеча момента показывает биомеханическое рычажное соотношение между вашим центром масс (CoM) и силой реакции опоры.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Элемент</th>
+          <th>Внешний вид</th>
+          <th>Что показывает</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Линия плеча момента</strong></td>
+          <td>Оранжевая сплошная линия</td>
+          <td>Перпендикулярное расстояние от вашего CoM до линии действия силы</td>
+      </tr>
+      <tr>
+          <td><strong>Линия действия силы</strong></td>
+          <td>Оранжевая пунктирная линия</td>
+          <td>Продлённая линия, вдоль которой действует сила</td>
+      </tr>
+      <tr>
+          <td><strong>Метка расстояния</strong></td>
+          <td>Белый текст на тёмном фоне</td>
+          <td>Расстояние плеча момента в сантиметрах (±X,X см)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="декомпозиция-вектора-силы">Декомпозиция вектора силы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Визуализация декомпозиции силы разбивает общую силу реакции опоры на три перпендикулярных компонента. Цвета всегда обозначают одно и то же физическое направление силы независимо от вида камеры:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Компонент</th>
+          <th>Цвет</th>
+          <th>Физическое направление</th>
+          <th>Что показывает</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Компонент X</strong></td>
+          <td>Розовый</td>
+          <td>Из стороны в сторону (медиолатеральный)</td>
+          <td>Распределение боковой силы</td>
+      </tr>
+      <tr>
+          <td><strong>Компонент Y</strong></td>
+          <td>Бирюзовый</td>
+          <td>Вверх-вниз (вертикальный компонент)</td>
+          <td>Распределение вертикальной силы</td>
+      </tr>
+      <tr>
+          <td><strong>Компонент Z</strong></td>
+          <td>Зелёный</td>
+          <td>Вперёд-назад (переднезадний)</td>
+          <td>Распределение силы вперёд/назад</td>
+      </tr>
+  </tbody>
+</table>
+<p>Каждая стрелка компонента также отображает <strong>метку в процентах</strong>, показывающую, какая доля общей силы приходится на данное направление.</p>
+<h4 id="поведение-в-зависимости-от-вида-камеры">Поведение в зависимости от вида камеры<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Векторы силы отображаются относительно вида вашей камеры. Компоненты, которые уходят вглубь экрана (по направлению к экрану или от него), скрыты для наглядности:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Вид камеры</th>
+          <th>Видимые компоненты</th>
+          <th>Скрытый компонент</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Вид спереди</strong></td>
+          <td>X (розовый, горизонтальный), Y (бирюзовый, вертикальный компонент)</td>
+          <td>Z (зелёный, глубина)</td>
+      </tr>
+      <tr>
+          <td><strong>По линии движения</strong></td>
+          <td>Z (зелёный, горизонтальный), Y (бирюзовый, вертикальный компонент)</td>
+          <td>X (розовый, глубина)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Примечание</strong>: цвета всегда обозначают одно и то же физическое направление — розовый всегда соответствует медиолатеральной силе, бирюзовый — вертикальной силе, зелёный — переднезадней силе. Изменяется только положение на экране в зависимости от угла камеры.</p>
+<h3 id="настройки-3d-визуализации">Настройки 3D Визуализации<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="настройки-плеча-момента">Настройки плеча момента<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Параметр</th>
+          <th>По умолчанию</th>
+          <th>Описание</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Показать плечо момента</strong></td>
+          <td>Выкл.</td>
+          <td>Включает/выключает оранжевую сплошную линию от CoM до линии силы</td>
+      </tr>
+      <tr>
+          <td><strong>Показать линию действия силы</strong></td>
+          <td>Выкл.</td>
+          <td>Включает/выключает оранжевую пунктирную линию, показывающую продление направления силы</td>
+      </tr>
+      <tr>
+          <td><strong>Показать метку расстояния</strong></td>
+          <td>Выкл.</td>
+          <td>Включает/выключает метку со значением расстояния (±X,X см)</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="настройки-декомпозиции-силы">Настройки декомпозиции силы<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Параметр</th>
+          <th>По умолчанию</th>
+          <th>Описание</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Показать компоненты X/Y/Z</strong></td>
+          <td>Выкл.</td>
+          <td>Включает/выключает все три стрелки компонентов и метки в процентах</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="параметры-конфигурации-график">Параметры конфигурации (график)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><strong>Показать % (процентная ось)</strong>: по умолчанию включено — включает/выключает нормализованный крутящий момент (Нм/кг)</p>
+<p><strong>Показать Newton (абсолютная ось)</strong>: по умолчанию выключено — включает/выключает абсолютный крутящий момент (Нм)</p>
+<p><strong>Выделить фазы</strong>: по умолчанию выключено — показывает цветные полосы, обозначающие фазы свинга</p>
+<p><strong>Показать линии сетки</strong>: по умолчанию включено — отображает горизонтальные линии сетки</p>
+<p><strong>Тип диаграммы</strong>: горная диаграмма (по умолчанию) или линейная диаграмма</p>
+<hr>
+<h2 id="устранение-неполадок">Устранение неполадок<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="сообщение-нет-спортсмена-на-платформе">Сообщение «Нет спортсмена на платформе»<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Убедитесь, что спортсмен стоял на силовой платформе в начале записи</p>
+</li>
+<li>
+<p>Проверьте, что вес тела введён в профиле спортсмена</p>
+</li>
+<li>
+<p>Убедитесь, что калибровка силовой платформы завершена</p>
+</li>
+</ul>
+<h3 id="пустой-или-отсутствующий-график-данных">Пустой или отсутствующий график данных<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>
+<p>Убедитесь, что силовая платформа была активна во время записи</p>
+</li>
+<li>
+<p>Проверьте, что данные MoCap были записаны (необходимы для расчётов FPT)</p>
+</li>
+<li>
+<p>Убедитесь, что запись включает полную длительность свинга</p>
+</li>
+</ul>
+<h3 id="метрики-временной-последовательности-не-отображаются">Метрики временной последовательности не отображаются<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Копировать ссылку в буфер обмена"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li>Установите закладку контакта в вашей записи</li>
+</ul>
+<hr>
+<p><em>Последнее обновление: 09.01.2026</em> | <a href="/sc-support/ru/software-features/frontal-plane-torque/index.html">Посмотреть на официальном сайте поддержки</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/sc-support/ru/index.html">
+          <span class="logo-title default-animation">Поддержка Swing Catalyst</span>
+        </a>
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-fw fa-search" title="Поиск (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Поиск</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Поиск...">
+            <button class="search-clear" type="button" data-search-clear="" title="Очистить поиск"><i class="fas fa-fw fa-times" title="Очистить поиск"></i></button>
+          </div>
+        </search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/sc-support/ru/getting-started/index.html"><a class="padding default-animation" href="/sc-support/ru/getting-started/index.html">Начало работы</a><ul id="R-subsections-87c0363912f379e0725cbe1d504c985c" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/ru/cameras-video/index.html"><a class="padding default-animation" href="/sc-support/ru/cameras-video/index.html">Камеры и видео</a><ul id="R-subsections-b0755dddefc0b312b478b3a1b56842af" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/ru/hardware/index.html"><a class="padding default-animation" href="/sc-support/ru/hardware/index.html">Оборудование</a><ul id="R-subsections-fe9fc031ffaa253b59b13a6e5e459855" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/sc-support/ru/software-features/index.html"><a class="padding default-animation" href="/sc-support/ru/software-features/index.html">Программное обеспечение и функции</a><ul id="R-subsections-ff503e39477585fb9cc5a6d2c1b10c6f" class="collapsible-menu">
+            <li class="" data-nav-id="/sc-support/ru/software-features/motion-capture-faq/index.html"><a class="padding" href="/sc-support/ru/software-features/motion-capture-faq/index.html">Swing Catalyst Motion Capture FAQ</a></li>
+            <li class="active " data-nav-id="/sc-support/ru/software-features/frontal-plane-torque/index.html"><a class="padding" href="/sc-support/ru/software-features/frontal-plane-torque/index.html">Анализ крутящего момента во фронтальной плоскости — Руководство пользователя</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/motion-capture-disclosures/index.html"><a class="padding" href="/sc-support/ru/software-features/motion-capture-disclosures/index.html">Важные раскрытия информации для пользователей инструмента Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/multiple-forces-graph/index.html"><a class="padding" href="/sc-support/ru/software-features/multiple-forces-graph/index.html">Граф Множественных Сил</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/graph-library/index.html"><a class="padding" href="/sc-support/ru/software-features/graph-library/index.html">Использование библиотеки графиков</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/pressure-stance-settings/index.html"><a class="padding" href="/sc-support/ru/software-features/pressure-stance-settings/index.html">Использование новых настроек Давления и Стойки</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/record-a-lesson/index.html"><a class="padding" href="/sc-support/ru/software-features/record-a-lesson/index.html">Как записать урок</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/change-recording-user/index.html"><a class="padding" href="/sc-support/ru/software-features/change-recording-user/index.html">Как изменить пользователя для существующей записи</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/import-from-v1/index.html"><a class="padding" href="/sc-support/ru/software-features/import-from-v1/index.html">Как импортировать видео из V1</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/swing-catalyst-online/index.html"><a class="padding" href="/sc-support/ru/software-features/swing-catalyst-online/index.html">Как использовать Swing Catalyst Online</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/force-vectors/index.html"><a class="padding" href="/sc-support/ru/software-features/force-vectors/index.html">Как использовать Векторы силы</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/microphone-trigger/index.html"><a class="padding" href="/sc-support/ru/software-features/microphone-trigger/index.html">Как использовать микрофон в качестве триггера захвата</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/remote-support/index.html"><a class="padding" href="/sc-support/ru/software-features/remote-support/index.html">Как использовать удалённую поддержку</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/pressure-distribution-overlay/index.html"><a class="padding" href="/sc-support/ru/software-features/pressure-distribution-overlay/index.html">Как использовать функцию наложения Распределения давления</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/multiple-displays/index.html"><a class="padding" href="/sc-support/ru/software-features/multiple-displays/index.html">Как настроить несколько дисплеев в Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/email-sharing/index.html"><a class="padding" href="/sc-support/ru/software-features/email-sharing/index.html">Как настроить отправку по электронной почте в Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/feedback-screen/index.html"><a class="padding" href="/sc-support/ru/software-features/feedback-screen/index.html">Как настроить Экран обратной связи</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/explorer/index.html"><a class="padding" href="/sc-support/ru/software-features/explorer/index.html">Как пользоваться Обозревателем</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/motion-capture-install/index.html"><a class="padding" href="/sc-support/ru/software-features/motion-capture-install/index.html">Как установить компоненты Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/export-contacts/index.html"><a class="padding" href="/sc-support/ru/software-features/export-contacts/index.html">Как экспортировать контактную информацию студентов</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/export-raw-data/index.html"><a class="padding" href="/sc-support/ru/software-features/export-raw-data/index.html">Как экспортировать необработанные данные</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/key-metrics/index.html"><a class="padding" href="/sc-support/ru/software-features/key-metrics/index.html">Ключевые показатели</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/motion-capture-settings/index.html"><a class="padding" href="/sc-support/ru/software-features/motion-capture-settings/index.html">Настройки Захвата движения в Swing Catalyst</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/body-weight-measurement/index.html"><a class="padding" href="/sc-support/ru/software-features/body-weight-measurement/index.html">Новая функция измерения веса тела</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/ios-app-sharing/index.html"><a class="padding" href="/sc-support/ru/software-features/ios-app-sharing/index.html">Отправка записанных видео через приложение Swing Catalyst для iOS</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/markerless-motion-capture/index.html"><a class="padding" href="/sc-support/ru/software-features/markerless-motion-capture/index.html">Повышение качества бесмаркерного захвата движения при замахе в гольфе и бейсболе с использованием RTMPose и RTMDet: подход сверху вниз</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/motion-capture-guide/index.html"><a class="padding" href="/sc-support/ru/software-features/motion-capture-guide/index.html">Руководство пользователя Swing Catalyst Motion Capture</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/keyboard-shortcuts/index.html"><a class="padding" href="/sc-support/ru/software-features/keyboard-shortcuts/index.html">Сочетания клавиш и горячие клавиши</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/force-graph-phases/index.html"><a class="padding" href="/sc-support/ru/software-features/force-graph-phases/index.html">Фазы графика силы</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/raw-data-export-guide/index.html"><a class="padding" href="/sc-support/ru/software-features/raw-data-export-guide/index.html">Что включено в экспорт необработанных данных</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/bookmarks/index.html"><a class="padding" href="/sc-support/ru/software-features/bookmarks/index.html">Что такое закладки?</a></li>
+            <li class="" data-nav-id="/sc-support/ru/software-features/export-recordings/index.html"><a class="padding" href="/sc-support/ru/software-features/export-recordings/index.html">Экспорт записей</a></li></ul></li>
+            <li class="" data-nav-id="/sc-support/ru/account-setup/index.html"><a class="padding default-animation" href="/sc-support/ru/account-setup/index.html">Аккаунт и Стойка</a><ul id="R-subsections-340f06c5dd689cadbcc9031c00d9aea7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/sc-support/ru/reference/index.html"><a class="padding default-animation" href="/sc-support/ru/reference/index.html">Справочник</a><ul id="R-subsections-66002f201bef818664bb81aa67490c58" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+			<li class="R-languageswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-language"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-language">Язык</label>
+                  <select id="R-select-language">
+                    <option id="R-select-language-en" value="en" data-url="/sc-support/en/software-features/frontal-plane-torque/index.html" lang="en">English</option>
+                    <option id="R-select-language-es" value="es" data-url="/sc-support/es/software-features/frontal-plane-torque/index.html" lang="es">Español</option>
+                    <option id="R-select-language-de" value="de" data-url="/sc-support/de/software-features/frontal-plane-torque/index.html" lang="de">Deutsch</option>
+                    <option id="R-select-language-fr" value="fr" data-url="/sc-support/fr/software-features/frontal-plane-torque/index.html" lang="fr">Français</option>
+                    <option id="R-select-language-it" value="it" data-url="/sc-support/it/software-features/frontal-plane-torque/index.html" lang="it">Italiano</option>
+                    <option id="R-select-language-pt" value="pt" data-url="/sc-support/pt/software-features/frontal-plane-torque/index.html" lang="pt">Português</option>
+                    <option id="R-select-language-ru" value="ru" data-url="/sc-support/ru/software-features/frontal-plane-torque/index.html" lang="ru" selected data-selected>Русский</option>
+                    <option id="R-select-language-ja" value="ja" data-url="/sc-support/ja/software-features/frontal-plane-torque/index.html" lang="ja">日本語</option>
+                    <option id="R-select-language-ko" value="ko" data-url="/sc-support/ko/software-features/frontal-plane-torque/index.html" lang="ko">한국어</option>
+                    <option id="R-select-language-zh" value="zh" data-url="/sc-support/zh/software-features/frontal-plane-torque/index.html" lang="zh">简体中文</option>
+                    <option id="R-select-language-hi" value="hi" data-url="/sc-support/hi/software-features/frontal-plane-torque/index.html" lang="hi">हिन्दी</option>
+                    <option id="R-select-language-ar" value="ar" data-url="/sc-support/ar/software-features/frontal-plane-torque/index.html" lang="ar">العربية</option>
+                    <option id="R-select-language-zh-hant" value="zh-hant" data-url="/sc-support/zh-hant/software-features/frontal-plane-torque/index.html" lang="zh-Hant">繁體中文</option>
+                    <option id="R-select-language-th" value="th" data-url="/sc-support/th/software-features/frontal-plane-torque/index.html" lang="th">ไทย</option>
+                    <option id="R-select-language-sv" value="sv" data-url="/sc-support/sv/software-features/frontal-plane-torque/index.html" lang="sv">Svenska</option>
+                    <option id="R-select-language-nb" value="nb" data-url="/sc-support/nb/software-features/frontal-plane-torque/index.html" lang="nb">Norsk Bokmål</option>
+                    <option id="R-select-language-da" value="da" data-url="/sc-support/da/software-features/frontal-plane-torque/index.html" lang="da">Dansk</option>
+                    <option id="R-select-language-is" value="is" data-url="/sc-support/is/software-features/frontal-plane-torque/index.html" lang="is">Íslenska</option>
+                    <option id="R-select-language-id" value="id" data-url="/sc-support/id/software-features/frontal-plane-torque/index.html" lang="id">Bahasa Indonesia</option>
+                    <option id="R-select-language-vi" value="vi" data-url="/sc-support/vi/software-features/frontal-plane-torque/index.html" lang="vi">Tiếng Việt</option>
+                    <option id="R-select-language-nl" value="nl" data-url="/sc-support/nl/software-features/frontal-plane-torque/index.html" lang="nl">Nederlands</option>
+                    <option id="R-select-language-tr" value="tr" data-url="/sc-support/tr/software-features/frontal-plane-torque/index.html" lang="tr">Türkçe</option>
+                    <option id="R-select-language-pl" value="pl" data-url="/sc-support/pl/software-features/frontal-plane-torque/index.html" lang="pl">Polski</option>
+                    <option id="R-select-language-fi" value="fi" data-url="/sc-support/fi/software-features/frontal-plane-torque/index.html" lang="fi">Suomi</option>
+                    <option id="R-select-language-uk" value="uk" data-url="/sc-support/uk/software-features/frontal-plane-torque/index.html" lang="uk">Українська</option>
+                    <option id="R-select-language-ro" value="ro" data-url="/sc-support/ro/software-features/frontal-plane-torque/index.html" lang="ro">Română</option>
+                    <option id="R-select-language-el" value="el" data-url="/sc-support/el/software-features/frontal-plane-torque/index.html" lang="el">Ελληνικά</option>
+                    <option id="R-select-language-cs" value="cs" data-url="/sc-support/cs/software-features/frontal-plane-torque/index.html" lang="cs">Čeština</option>
+                    <option id="R-select-language-hu" value="hu" data-url="/sc-support/hu/software-features/frontal-plane-torque/index.html" lang="hu">Magyar</option>
+                    <option id="R-select-language-bg" value="bg" data-url="/sc-support/bg/software-features/frontal-plane-torque/index.html" lang="bg">Български</option>
+                    <option id="R-select-language-hr" value="hr" data-url="/sc-support/hr/software-features/frontal-plane-torque/index.html" lang="hr">Hrvatski</option>
+                    <option id="R-select-language-sr" value="sr" data-url="/sc-support/sr/software-features/frontal-plane-torque/index.html" lang="sr">Српски</option>
+                    <option id="R-select-language-sk" value="sk" data-url="/sc-support/sk/software-features/frontal-plane-torque/index.html" lang="sk">Slovenčina</option>
+                    <option id="R-select-language-lt" value="lt" data-url="/sc-support/lt/software-features/frontal-plane-torque/index.html" lang="lt">Lietuvių</option>
+                    <option id="R-select-language-lv" value="lv" data-url="/sc-support/lv/software-features/frontal-plane-torque/index.html" lang="lv">Latviešu</option>
+                    <option id="R-select-language-et" value="et" data-url="/sc-support/et/software-features/frontal-plane-torque/index.html" lang="et">Eesti</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Тема</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-sc-dark" value="sc-dark">Sc Dark</option>
+                    <option id="R-select-variant-sc-light" value="sc-light">Sc Light</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/sc-support/js/perfect-scrollbar/perfect-scrollbar.min.js?1772520112" defer></script>
+    <script src="/sc-support/js/theme.min.js?1772520112" defer></script>
+<link rel="stylesheet" href="/sc-support/css/swingcatalyst-theme.css">
+<script src="/sc-support/js/sc-extras.js"></script>
+
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>
